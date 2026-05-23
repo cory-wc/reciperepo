@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bratkartoffeln</title>
+<style>
+  @page { size: Letter; margin: 0; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2e2b28;
+  }
+  .page {
+    width: 8.5in;
+    height: 11in;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 1.15in 1.05in 0.8in 1.05in;
+  }
+  h1 {
+    margin: 0 0 0.24in;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 31pt;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: .01em;
+  }
+  .rule { border-top: 1.2pt solid #504a43; height: 0; }
+  .meta {
+    text-align: center;
+    font-size: 9.5pt;
+    padding: 0.06in 0 0.055in;
+    letter-spacing: .01em;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 2.4in 3.05in;
+    gap: 0.58in;
+    margin-top: 0.22in;
+    align-items: start;
+  }
+  .ingredients { font-size: 14.5pt; line-height: 1.25; }
+  .ingredient-row {
+    display: grid;
+    grid-template-columns: 0.82in 1fr;
+    column-gap: 0.18in;
+    margin: 0 0 .13in;
+    align-items: start;
+  }
+  .ingredient-amount {
+    text-align: right;
+    white-space: nowrap;
+  }
+  .ingredient-name {
+    text-align: left;
+  }
+  .steps { font-size: 13.5pt; line-height: 1.26; }
+  .step-row {
+    display: grid;
+    grid-template-columns: .3in 1fr;
+    column-gap: .2in;
+    margin: 0 0 .16in;
+  }
+  .num { font-family: Georgia, 'Times New Roman', serif; font-weight: 700; }
+</style>
+</head>
+<body>
+  <main class="page">
+    <h1>Bratkartoffeln</h1>
+    <div class="rule"></div>
+    <div class="meta">60m active &nbsp;&bull;&nbsp; serves 4 &nbsp;&bull;&nbsp; 615 calories &nbsp;&bull;&nbsp; 9g fiber</div>
+    <div class="rule"></div>
+    <section class="content">
+      <div class="ingredients">
+        <div class="ingredient-row"><div class="ingredient-amount">3 lb</div><div class="ingredient-name">yukon gold potatoes,<br>1-2&quot; cubes</div></div>
+        <div class="ingredient-row"><div class="ingredient-amount">¼ C</div><div class="ingredient-name">salt</div></div>
+        <div class="ingredient-row"><div class="ingredient-amount">1/5 lb</div><div class="ingredient-name">bacon, thick-cut and<br>diced</div></div>
+        <div class="ingredient-row"><div class="ingredient-amount">2</div><div class="ingredient-name">onions, chopped</div></div>
+        <div class="ingredient-row"><div class="ingredient-amount">2 tbsp</div><div class="ingredient-name">oil</div></div>
+      </div>
+      <div class="steps">
+        <div class="step-row"><div class="num">1.</div><div>Place water, salt, and potatoes in stock pot. Bring to boil, reduce heat, and boil ~10 minutes. Drain potatoes.</div></div>
+        <div class="step-row"><div class="num">2.</div><div>Fry bacon until color begins to change. Add onions and fry until translucent. Remove bacon and onions from pan.</div></div>
+        <div class="step-row"><div class="num">3.</div><div>Add potatoes and oil to frying pan. Cook until browned.</div></div>
+        <div class="step-row"><div class="num">4.</div><div>Add bacon and onions. Cook together for 3 minutes.</div></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
