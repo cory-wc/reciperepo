@@ -1,0 +1,56 @@
+recipe_uuid: wc-kitchen.bratkartoffeln
+recipe_name: Bratkartoffeln
+
+yields:
+  - amount: 4
+    unit: servings
+
+ingredients:
+  - Yukon gold potatoes:
+      amounts:
+        - amount: 3
+          unit: lb
+      processing:
+        - cut into 1-2 inch cubes
+
+  - salt:
+      amounts:
+        - amount: 1/4
+          unit: cup
+
+  - bacon:
+      amounts:
+        - amount: 1/5
+          unit: lb
+      processing:
+        - thick-cut
+        - diced
+
+  - onions:
+      amounts:
+        - amount: 2
+          unit: onions
+      processing:
+        - chopped
+
+  - oil:
+      amounts:
+        - amount: 2
+          unit: tablespoons
+
+steps:
+  - step: Place water, salt, and potatoes in a stock pot. Bring to a boil, reduce heat, and boil for about 10 minutes. Drain potatoes.
+
+  - step: Fry bacon until color begins to change. Add onions and fry until translucent. Remove bacon and onions from pan.
+
+  - step: Add potatoes and oil to frying pan. Cook until browned.
+
+  - step: Add bacon and onions. Cook together for 3 minutes.
+
+X-total_time: 60 minutes
+X-active_time: 15 minutes
+X-nutrition:
+  calories: 615
+  fiber: 9 g
+X-original-source: ../originals/PXL_20260523_105734494.RAW-01.MP.COVER.jpg
+X-flags: []
