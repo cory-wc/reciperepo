@@ -2,6 +2,8 @@
 
 Personal recipe collection in **Open Recipe Format (ORF)** YAML: sources in `originals/`, printable PDFs for a binder, HTML on GitHub Pages, LLM-friendly structure for shopping lists.
 
+**User guide:** see [USER_GUIDE.md](USER_GUIDE.md) (non-technical, step-by-step).
+
 ## Quick start
 
 ```bash
