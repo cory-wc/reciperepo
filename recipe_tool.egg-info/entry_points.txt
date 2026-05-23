@@ -1,0 +1,2 @@
+[console_scripts]
+recipe = recipe_tool.cli:main

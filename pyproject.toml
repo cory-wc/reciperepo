@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recipe-tool"
+version = "0.1.0"
+description = "ORF recipe collection: validate, extract, render, PDF, index, shop"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pyyaml>=6.0",
+    "pydantic>=2.0",
+    "jinja2>=3.1",
+    "playwright>=1.40",
+    "httpx>=0.27",
+    "extruct>=0.16",
+    "lxml>=5.0",
+    "pymupdf>=1.24",
+    "python-dotenv>=1.0",
+    "openai>=1.0",
+    "anthropic>=0.40",
+    "w3lib>=2.0",
+]
+
+[project.scripts]
+recipe = "recipe_tool.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src", "."]
+include = ["recipe_tool*", "schema*"]

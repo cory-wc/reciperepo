@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bratkartoffeln</title>
+<style>
+  
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2e2b28;
+    
+    padding: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    
+  }
+  .page {
+    
+    padding: 0;
+    
+    background: #ffffff;
+  }
+  h1 {
+    margin: 0 0 1rem;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2.2rem;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: .01em;
+  }
+  .rule { border-top: 1.2pt solid #504a43; height: 0; }
+  .meta {
+    text-align: center;
+    font-size: 0.95rem;
+    padding: 0.06in 0 0.055in;
+    letter-spacing: .01em;
+    color: #504a43;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    align-items: start;
+  }
+  @media (max-width: 640px) {
+    .content { grid-template-columns: 1fr; }
+  }
+  .ingredients { font-size: 1.05rem; line-height: 1.25; }
+  .ingredient-row {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    column-gap: 0.18in;
+    margin: 0 0 .13in;
+    align-items: start;
+  }
+  .ingredient-amount { text-align: right; white-space: nowrap; }
+  .ingredient-name { text-align: left; }
+  .steps { font-size: 1rem; line-height: 1.26; }
+  .step-row {
+    display: grid;
+    grid-template-columns: .3in 1fr;
+    column-gap: .2in;
+    margin: 0 0 .16in;
+  }
+  .num { font-family: Georgia, 'Times New Roman', serif; font-weight: 700; }
+  .source-footer {
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    color: #666;
+    text-align: center;
+  }
+  .source-footer a { color: #504a43; }
+  .back-link { margin-bottom: 1rem; font-size: 0.9rem; }
+  .back-link a { color: #504a43; }
+</style>
+</head>
+<body>
+  
+  <p class="back-link"><a href="index.html">All recipes</a></p>
+  
+  <main class="page">
+    <h1>Bratkartoffeln</h1>
+    <div class="rule"></div>
+    
+    <div class="meta">15m active • serves 4 • 615 calories • 9g fiber</div>
+    <div class="rule"></div>
+    
+    <section class="content">
+      <div class="ingredients">
+        
+        <div class="ingredient-row">
+          <div class="ingredient-amount">3 lb</div>
+          <div class="ingredient-name">yukon gold potatoes,<br>1-2 inch cubes</div>
+        </div>
+        
+        <div class="ingredient-row">
+          <div class="ingredient-amount">¼ C</div>
+          <div class="ingredient-name">salt</div>
+        </div>
+        
+        <div class="ingredient-row">
+          <div class="ingredient-amount">1/5 lb</div>
+          <div class="ingredient-name">bacon, thick-cut and<br>diced</div>
+        </div>
+        
+        <div class="ingredient-row">
+          <div class="ingredient-amount">2</div>
+          <div class="ingredient-name">onions, chopped</div>
+        </div>
+        
+        <div class="ingredient-row">
+          <div class="ingredient-amount">2 tbsp</div>
+          <div class="ingredient-name">oil</div>
+        </div>
+        
+      </div>
+      <div class="steps">
+        
+        <div class="step-row">
+          <div class="num">1.</div>
+          <div>Place water, salt, and potatoes in stock pot. Bring to boil, reduce heat, and boil for ~10 minutes. Drain potatoes.</div>
+        </div>
+        
+        <div class="step-row">
+          <div class="num">2.</div>
+          <div>Fry bacon until color begins to change. Add onions and fry until translucent. Remove bacon and onions from pan.</div>
+        </div>
+        
+        <div class="step-row">
+          <div class="num">3.</div>
+          <div>Add potatoes and oil to frying pan. Cook until browned.</div>
+        </div>
+        
+        <div class="step-row">
+          <div class="num">4.</div>
+          <div>Add bacon and onions. Cook together for 3 minutes.</div>
+        </div>
+        
+      </div>
+    </section>
+    
+  </main>
+</body>
+</html>
