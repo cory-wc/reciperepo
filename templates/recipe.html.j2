@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ title }}</title>
+<style>
+  {% if mode == 'print' %}
+  @page { size: Letter; margin: 0; }
+  {% endif %}
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2e2b28;
+    {% if mode == 'screen' %}
+    padding: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    {% endif %}
+  }
+  .page {
+    {% if mode == 'print' %}
+    width: 8.5in;
+    min-height: 11in;
+    margin: 0 auto;
+    padding: 1.15in 1.05in 0.8in 1.05in;
+    {% else %}
+    padding: 0;
+    {% endif %}
+    background: #ffffff;
+  }
+  h1 {
+    margin: 0 0 {% if mode == 'print' %}0.24in{% else %}1rem{% endif %};
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: {% if mode == 'print' %}31pt{% else %}2.2rem{% endif %};
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: .01em;
+  }
+  .rule { border-top: 1.2pt solid #504a43; height: 0; }
+  .meta {
+    text-align: center;
+    font-size: {% if mode == 'print' %}9.5pt{% else %}0.95rem{% endif %};
+    padding: 0.06in 0 0.055in;
+    letter-spacing: .01em;
+    color: #504a43;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: {% if mode == 'print' %}2.4in 3.05in{% else %}1fr 1.2fr{% endif %};
+    gap: {% if mode == 'print' %}0.58in{% else %}2rem{% endif %};
+    margin-top: {% if mode == 'print' %}0.22in{% else %}1.5rem{% endif %};
+    align-items: start;
+  }
+  @media (max-width: 640px) {
+    .content { grid-template-columns: 1fr; }
+  }
+  .ingredients { font-size: {% if mode == 'print' %}14.5pt{% else %}1.05rem{% endif %}; line-height: 1.25; }
+  .ingredient-row {
+    display: grid;
+    grid-template-columns: {% if mode == 'print' %}0.82in 1fr{% else %}5rem 1fr{% endif %};
+    column-gap: 0.18in;
+    margin: 0 0 .13in;
+    align-items: start;
+  }
+  .ingredient-amount { text-align: right; white-space: nowrap; }
+  .ingredient-name { text-align: left; }
+  .steps { font-size: {% if mode == 'print' %}13.5pt{% else %}1rem{% endif %}; line-height: 1.26; }
+  .step-row {
+    display: grid;
+    grid-template-columns: .3in 1fr;
+    column-gap: .2in;
+    margin: 0 0 .16in;
+  }
+  .num { font-family: Georgia, 'Times New Roman', serif; font-weight: 700; }
+  .source-footer {
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    color: #666;
+    text-align: center;
+  }
+  .source-footer a { color: #504a43; }
+  .back-link { margin-bottom: 1rem; font-size: 0.9rem; }
+  .back-link a { color: #504a43; }
+</style>
+</head>
+<body>
+  {% if mode == 'screen' %}
+  <p class="back-link"><a href="index.html">All recipes</a></p>
+  {% endif %}
+  <main class="page">
+    <h1>{{ title }}</h1>
+    <div class="rule"></div>
+    {% if meta %}
+    <div class="meta">{{ meta }}</div>
+    <div class="rule"></div>
+    {% endif %}
+    <section class="content">
+      <div class="ingredients">
+        {% for ing in ingredients %}
+        <div class="ingredient-row">
+          <div class="ingredient-amount">{{ ing.amount }}</div>
+          <div class="ingredient-name">{{ ing.name | safe }}</div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="steps">
+        {% for step in steps %}
+        <div class="step-row">
+          <div class="num">{{ step.num }}.</div>
+          <div>{{ step.text }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+    {% if source_url and mode == 'screen' %}
+    <p class="source-footer">Source: <a href="{{ source_url }}">{{ source_url }}</a></p>
+    {% endif %}
+  </main>
+</body>
+</html>

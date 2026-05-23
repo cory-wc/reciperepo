@@ -1,0 +1,85 @@
+Metadata-Version: 2.4
+Name: recipe-tool
+Version: 0.1.0
+Summary: ORF recipe collection: validate, extract, render, PDF, index, shop
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: pydantic>=2.0
+Requires-Dist: jinja2>=3.1
+Requires-Dist: playwright>=1.40
+Requires-Dist: httpx>=0.27
+Requires-Dist: extruct>=0.16
+Requires-Dist: lxml>=5.0
+Requires-Dist: pymupdf>=1.24
+Requires-Dist: python-dotenv>=1.0
+Requires-Dist: openai>=1.0
+Requires-Dist: anthropic>=0.40
+Requires-Dist: w3lib>=2.0
+
+# reciperepo
+
+Personal recipe collection in **Open Recipe Format (ORF)** YAML: sources in `originals/`, printable PDFs for a binder, HTML on GitHub Pages, LLM-friendly structure for shopping lists.
+
+## Quick start
+
+```bash
+cd ~/Documents/Recipes/reciperepo
+python3 -m venv .venv && source .venv/bin/activate
+pip install -e .
+playwright install chromium
+cp .env.example .env   # optional: for recipe extract (vision/LLM)
+```
+
+## Workflow
+
+```bash
+# Validate ORF YAML
+recipe validate wc-kitchen.bratkartoffeln
+recipe validate --all
+
+# Render cloud HTML → site/
+recipe render wc-kitchen.bratkartoffeln
+recipe render --all
+
+# Printable PDF → pdfs/
+recipe pdf wc-kitchen.bratkartoffeln
+recipe pdf --all
+
+# Index (metadata from YAML, links to HTML/PDF)
+recipe index
+
+# Shopping list
+recipe shop wc-kitchen.bratkartoffeln
+
+# Status dashboard
+recipe status
+```
+
+## Extract (migration)
+
+```bash
+recipe extract wc-kitchen.new-dish --url "https://example.com/recipe"
+recipe extract wc-kitchen.new-dish --source originals/scan.jpg
+recipe extract --pending   # bulk: unreferenced files in originals/
+```
+
+Requires `OPENAI_API_KEY` or `ANTHROPIC_API_KEY` in `.env` for image/text structuring.
+
+## Layout
+
+| Path | Purpose |
+|------|---------|
+| `recipes/` | Strict ORF YAML (+ generated `index.yaml`) |
+| `originals/` | Canonical sources (photos, PDFs, text) |
+| `pdfs/` | Letter-size binder PDFs + `index.pdf` |
+| `site/` | GitHub Pages HTML + `index.html` |
+| `prompts/` | Extraction and shopping-list instructions |
+
+## Conventions
+
+See [`notes.md`](notes.md): namespace `wc-kitchen.{slug}`, dict-key ingredients, `source_url` for web recipes, `X-original-source` for files.
+
+## GitHub Pages
+
+CI builds `site/` on push to `main`. Enable Pages: **Settings → Pages → GitHub Actions**.

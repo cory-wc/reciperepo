@@ -1,0 +1,15 @@
+generated_at: '2026-05-23'
+sort_by: name
+recipes:
+- id: wc-kitchen.bratkartoffeln
+  name: Bratkartoffeln
+  category: []
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: unknown
+  links:
+    html: site/wc-kitchen.bratkartoffeln.html
+    pdf: pdfs/wc-kitchen.bratkartoffeln.pdf
+    yaml: recipes/wc-kitchen.bratkartoffeln.yaml

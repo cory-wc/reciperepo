@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ title }}</title>
+<style>
+  {% if mode == 'print' %}
+  @page { size: Letter; margin: 0.75in; }
+  {% endif %}
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #2e2b28;
+    {% if mode == 'screen' %}
+    max-width: 720px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    {% endif %}
+  }
+  h1 { text-align: center; font-size: {% if mode == 'print' %}24pt{% else %}2rem{% endif %}; }
+  .meta { text-align: center; color: #666; font-size: 0.9rem; margin-bottom: 1.5rem; }
+  table { width: 100%; border-collapse: collapse; font-size: {% if mode == 'print' %}11pt{% else %}1rem{% endif %}; }
+  th, td { text-align: left; padding: 0.35rem 0.5rem; border-bottom: 1px solid #ddd; }
+  th { font-weight: 700; border-bottom: 2px solid #504a43; }
+  .tags { color: #666; font-size: 0.85em; }
+  a { color: #504a43; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .pdf-ref { font-family: Arial, sans-serif; font-size: 0.85em; color: #666; }
+</style>
+</head>
+<body>
+  <h1>{{ title }}</h1>
+  <p class="meta">Generated {{ generated_at }}{% if sort_by != 'name' %} · sorted by {{ sort_by }}{% endif %}</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Recipe</th>
+        {% if mode == 'screen' %}<th>Tags</th>{% endif %}
+        <th>Yield</th>
+        {% if mode == 'print' %}<th>PDF file</th>{% endif %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for recipe in recipes %}
+      <tr>
+        <td>
+          {% if mode == 'screen' %}
+          <a href="{{ recipe.links.html.split('/')[-1] }}">{{ recipe.name }}</a>
+          {% else %}
+          {{ recipe.name }}
+          {% endif %}
+        </td>
+        {% if mode == 'screen' %}
+        <td class="tags">{{ (recipe.tags or []) | join(', ') }}</td>
+        {% endif %}
+        <td>{{ recipe.yield }}</td>
+        {% if mode == 'print' %}
+        <td class="pdf-ref">{{ recipe.links.pdf.split('/')[-1] }}</td>
+        {% endif %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>

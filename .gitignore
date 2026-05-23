@@ -2,3 +2,7 @@
 build/
 __pycache__/
 .venv/
+.env
+lists/
+schema/__pycache__/
+src/recipe_tool/__pycache__/
