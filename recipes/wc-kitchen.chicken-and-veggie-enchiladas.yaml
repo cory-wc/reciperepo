@@ -1,0 +1,74 @@
+recipe_uuid: wc-kitchen.chicken-and-veggie-enchiladas
+recipe_name: Chicken & Veggie Enchiladas
+
+yields:
+  - amount: 8
+    unit: servings
+
+ingredients:
+  - chicken or turkey:
+      amounts:
+        - amount: 2
+          unit: cups
+      processing:
+        - cooked and chopped
+
+  - bell peppers:
+      amounts:
+        - amount: 2
+          unit: bell peppers
+      processing:
+        - chopped
+
+  - onions:
+      amounts:
+        - amount: 2
+          unit: onions
+      processing:
+        - chopped
+
+  - cumin:
+      amounts:
+        - amount: 1
+          unit: teaspoon
+
+  - enchilada sauce:
+      amounts:
+        - amount: 2
+          unit: cups
+
+  - flour tortillas:
+      amounts:
+        - amount: 15
+          unit: tortillas (burrito size)
+
+  - black olives:
+      amounts:
+        - amount: 15
+          unit: oz
+
+  - mexican cheese:
+      amounts:
+        - amount: 1
+          unit: cup
+      processing:
+        - shredded
+
+steps:
+  - step: Preheat oven to 350 degrees.
+  - step: Saute onions and bell peppers in olive oil until soft. Season with cumin, salt, and pepper.
+  - step: Mix chicken/turkey with vegetables.
+  - step: Warm enchilada sauce in large pan.
+  - step: "Assemble enchiladas: Dip a tortilla in warmed enchilada sauce. Place a tortilla in the casserole dish and add a small handful (~1/4 cup) of meat and veggie mix. Roll tortilla."
+  - step: Mix remaining enchilada sauce with any liquid from the sauteed veggies and chicken. Pour liquid over top of casserole dish.
+  - step: Sprinkle shredded cheese and black olives over enchiladas.
+  - step: Bake covered for 30 minutes and uncovered for 15 minutes.
+  - step: Let cool 10-15 minutes before serving.
+
+X-active_time: 40 minutes
+X-total_time: 100 minutes
+X-nutrition:
+  calories: 665
+  fiber: 6 g
+X-original-source: ../originals/PXL_20260523_105812482.RAW-01.COVER.jpg
+X-flags: []

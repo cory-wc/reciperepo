@@ -1,0 +1,108 @@
+recipe_uuid: wc-kitchen.ginger-pork-lettuce-wraps
+recipe_name: Ginger Pork Lettuce Wraps
+
+yields:
+  - amount: 4
+    unit: servings
+
+ingredients:
+  - sesame oil:
+      amounts:
+        - amount: 2
+          unit: teaspoons
+      processing:
+        - divided
+
+  - ground pork:
+      amounts:
+        - amount: 1/2
+          unit: lb
+
+  - mushrooms:
+      amounts:
+        - amount: 1
+          unit: pack
+      processing:
+        - minced
+
+  - red bell pepper:
+      amounts:
+        - amount: 1
+          unit: bell pepper
+      processing:
+        - minced
+
+  - oil:
+      amounts:
+        - amount: 1/2
+          unit: tablespoon
+
+  - garlic:
+      amounts:
+        - amount: 3
+          unit: cloves
+      processing:
+        - minced
+
+  - water chestnuts:
+      amounts:
+        - amount: 4
+          unit: oz
+      processing:
+        - chopped
+
+  - shredded cabbage:
+      amounts:
+        - amount: 1
+          unit: bag
+
+  - hoisin sauce:
+      amounts:
+        - amount: 1/2
+          unit: cup
+
+  - water:
+      amounts:
+        - amount: 1/4
+          unit: cup
+
+  - ginger:
+      amounts:
+        - amount: 2
+          unit: teaspoons
+      processing:
+        - grated
+
+  - rice vinegar:
+      amounts:
+        - amount: 1
+          unit: tablespoon
+
+  - soy sauce:
+      amounts:
+        - amount: 2
+          unit: teaspoons
+
+  - red pepper flakes:
+      amounts:
+        - amount: 1
+          unit: pinch
+
+  - romaine or bibb lettuce:
+      amounts:
+        - amount: 2
+          unit: heads
+
+steps:
+  - step: Heat a skillet with half of the sesame oil. Add the garlic and pork. Cook until pork is done and remove pork.
+  - step: Add bell pepper, mushrooms, water chestnuts, and cabbage to pan. Cook until vegetables start to soften.
+  - step: While vegetables cook, whisk together hoisin, water, ginger, vinegar, remaining sesame oil, soy sauce, and pepper flakes.
+  - step: Add the pork and sauce to pan. Stir well to combine and cook on low for 5 minutes.
+  - step: Serve with lettuce leaves.
+
+X-total_time: 30 minutes
+X-nutrition:
+  calories: 250
+  fiber: 2.5 g
+X-original-source: ../originals/PXL_20260523_105749894.RAW-01.COVER.jpg
+X-flags: [oil-unit-unclear-in-source]

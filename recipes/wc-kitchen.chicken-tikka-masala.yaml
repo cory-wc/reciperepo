@@ -1,0 +1,59 @@
+recipe_uuid: wc-kitchen.chicken-tikka-masala
+recipe_name: Chicken Tikka Masala
+
+yields:
+  - amount: 4
+    unit: servings
+
+ingredients:
+  - tikka masala sauce:
+      amounts:
+        - amount: 1
+          unit: package
+
+  - chicken thighs:
+      amounts:
+        - amount: 3/4
+          unit: lb
+      processing:
+        - cubed
+
+  - olive oil:
+      amounts:
+        - amount: 1
+          unit: teaspoon
+
+  - onion:
+      amounts:
+        - amount: 1
+          unit: onion
+      processing:
+        - chopped
+
+  - bell pepper:
+      amounts:
+        - amount: 1
+          unit: bell pepper
+      processing:
+        - chopped
+
+  - diced tomatoes:
+      amounts:
+        - amount: 1
+          unit: can
+
+  - brown rice:
+      amounts:
+        - amount: 1
+          unit: serving
+
+steps:
+  - step: Prepare rice according to package directions.
+  - step: Heat oil in skillet. Add onion and bell pepper. Cook until onion is translucent.
+  - step: Add cubed chicken thighs and cook through.
+  - step: Mix in diced tomatoes and tikka masala sauce. Cook on low to reduce liquid.
+  - step: Serve with rice.
+
+X-active_time: 45 minutes
+X-original-source: ../originals/PXL_20260523_105800555.RAW-01.COVER.jpg
+X-flags: [rice-amount-unspecified]

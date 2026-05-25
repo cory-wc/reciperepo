@@ -1,0 +1,128 @@
+recipe_uuid: wc-kitchen.the-best-meatloaf-recipe-of-your-life
+recipe_name: The Best Meatloaf Recipe Of Your Life
+
+yields:
+  - amount: 8
+    unit: servings
+
+ingredients:
+  - fresh breadcrumbs:
+      amounts:
+        - amount: 1
+          unit: cup
+
+  - whole milk:
+      amounts:
+        - amount: 2/3
+          unit: cup
+
+  - olive oil:
+      amounts:
+        - amount: 2
+          unit: tablespoons
+
+  - onion:
+      amounts:
+        - amount: 1
+          unit: large
+      processing:
+        - finely chopped
+
+  - coarse salt:
+      amounts:
+        - amount: "2 1/2"
+          unit: teaspoons
+
+  - garlic:
+      amounts:
+        - amount: 3
+          unit: cloves
+      processing:
+        - large
+
+  - ketchup:
+      amounts:
+        - amount: 1/4
+          unit: cup
+        - amount: 1
+          unit: cup
+
+  - Worcestershire sauce:
+      amounts:
+        - amount: 3
+          unit: tablespoons
+        - amount: 3
+          unit: tablespoons
+
+  - fresh parsley:
+      amounts:
+        - amount: 2
+          unit: tablespoons
+      processing:
+        - minced
+
+  - ground black pepper:
+      amounts:
+        - amount: "1 1/4"
+          unit: teaspoons
+
+  - eggs:
+      amounts:
+        - amount: 2
+          unit: large
+
+  - ground beef:
+      amounts:
+        - amount: 1
+          unit: lb
+
+  - ground pork:
+      amounts:
+        - amount: 1
+          unit: lb
+
+  # Handwritten spice additions
+  - garlic powder:
+      amounts:
+        - amount: 1
+          unit: teaspoon
+
+  - onion powder:
+      amounts:
+        - amount: 2
+          unit: teaspoons
+
+  - mustard powder:
+      amounts:
+        - amount: 1
+          unit: teaspoon
+
+  - celery seeds:
+      amounts:
+        - amount: 1/2
+          unit: teaspoon
+
+  # Handwritten sauce (replaces ketchup-only glaze from printed recipe)
+  - molasses:
+      amounts:
+        - amount: "1 1/2"
+          unit: tablespoons
+
+  - prepared horseradish:
+      amounts:
+        - amount: 1
+          unit: teaspoon
+
+steps:
+  - step: In a large bowl, stir together breadcrumbs and milk; let stand to absorb. Line a baking sheet with parchment paper or aluminum foil. Preheat oven to 350°F.
+  - step: Heat olive oil in a large saucepan over medium heat, then cook onion with 1 tsp salt until softened, about 7 minutes. Add garlic and cook until fragrant, about a minute more. Cool for a few minutes, then scrape into breadcrumb mixture.
+  - step: Stir 1/4 cup ketchup into the breadcrumb mixture along with 3 tbsp Worcestershire sauce, parsley, garlic powder, onion powder, mustard powder, celery seeds, remaining salt, and pepper. When mixture is cool to the touch, stir in the eggs then the ground meat. Use your hands to gently but thoroughly work the mixture together.
+  - step: Scrape the meat mixture onto the prepared pan and shape into roughly a 9x5 loaf.
+  - step: Whisk together 1 cup ketchup, 3 tbsp Worcestershire sauce, 1½ tbsp molasses, and 1 tsp prepared horseradish for the sauce. Spread evenly over the top of the loaf.
+  - step: Bake in center rack of oven for about 1 hour, or until center reads 160°F. Allow meatloaf to rest on pan for 10 minutes before slicing.
+
+X-prep_time: 15 minutes
+X-total_time: 75 minutes
+X-handwritten-notes: "Modifications: 1 tsp garlic powder, 2 tsp onion powder, 1 tsp mustard powder, ½ tsp celery seeds. Sauce: 1c ketchup, 3 tsp worcestershire, 1½ tbsp molasses, 1 tsp horseradish with mustard."
+X-original-source: ../originals/PXL_20260523_105740798.RAW-01.COVER.jpg
+X-flags: []
