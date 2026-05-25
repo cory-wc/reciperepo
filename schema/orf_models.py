@@ -7,10 +7,10 @@ from pydantic import BaseModel, ConfigDict, Field, field_validator, model_valida
 
 
 class Amount(BaseModel):
-    model_config = ConfigDict(extra="forbid")
+    model_config = ConfigDict(extra="ignore")
 
-    amount: str | int | float
-    unit: str
+    amount: str | int | float | None = None
+    unit: str | None = None
 
 
 class IngredientDetail(BaseModel):
