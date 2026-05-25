@@ -1,0 +1,75 @@
+recipe_uuid: wc-kitchen.beer-batter-fish
+recipe_name: Beer Batter Fish
+
+yields:
+  - amount: 6
+    unit: servings
+
+ingredients:
+  - white fish:
+      amounts:
+        - amount: 2
+          unit: lb
+
+  - salt:
+      amounts:
+        - amount: 1
+          unit: teaspoon
+
+  - black pepper:
+      amounts:
+        - amount: 1/2
+          unit: teaspoon
+
+  - all purpose flour:
+      amounts:
+        - amount: 1
+          unit: cup
+
+  - garlic powder:
+      amounts:
+        - amount: 1
+          unit: tablespoon
+
+  - paprika:
+      amounts:
+        - amount: 1
+          unit: tablespoon
+
+  - seasoning salt:
+      amounts:
+        - amount: 2
+          unit: teaspoons
+
+  - egg:
+      amounts:
+        - amount: 1
+          unit: egg
+      processing:
+        - lightly beaten
+
+  - light beer:
+      amounts:
+        - amount: "1 1/3"
+          unit: cups
+
+  - canola oil:
+      amounts:
+        - amount: "2-3 inches"
+          unit: in pan
+      processing:
+        - for frying
+
+steps:
+  - step: Heat 2-3 inches of canola oil to 375°F.
+  - step: Cut fish into strips, about 1 inch wide and 3 inches long.
+  - step: Pat fish dry with a paper towel and season with salt and pepper.
+  - step: Make the batter by whisking together flour, garlic powder, paprika, and seasoning salt.
+  - step: Stir in the egg, then whisk in beer until batter is no longer lumpy.
+  - step: Dip fish in the batter, then place in the hot oil.
+  - step: Cook pieces for 3-4 minutes, or until the batter is golden brown.
+  - step: Drain on a wire rack.
+
+X-total_time: 45 minutes
+X-original-source: ../originals/PXL_20260523_105816681.RAW-01.COVER.jpg
+X-flags: []

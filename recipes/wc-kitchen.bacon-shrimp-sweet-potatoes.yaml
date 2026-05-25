@@ -1,0 +1,87 @@
+recipe_uuid: wc-kitchen.bacon-shrimp-sweet-potatoes
+recipe_name: Bacon-Shrimp Sweet Potatoes
+
+yields:
+  - amount: 4
+    unit: servings
+
+ingredients:
+  - sweet potatoes:
+      amounts:
+        - amount: 8
+          unit: sweet potatoes
+
+  - large raw shrimp:
+      amounts:
+        - amount: 1
+          unit: lb
+      processing:
+        - deveined
+        - tails removed
+        - cut into thirds
+
+  - bacon slices:
+      amounts:
+        - amount: 6
+          unit: slices
+      processing:
+        - cooked and crumbled
+
+  - garlic:
+      amounts:
+        - amount: 4
+          unit: cloves
+      processing:
+        - crushed
+
+  - green onions:
+      amounts:
+        - amount: 4
+          unit: green onions
+      processing:
+        - thinly sliced
+
+  - paprika:
+      amounts:
+        - amount: 1
+          unit: tablespoon
+
+  - chili powder:
+      amounts:
+        - amount: 2
+          unit: tablespoons
+
+  - dried oregano:
+      amounts:
+        - amount: 1
+          unit: tablespoon
+
+  - cayenne:
+      amounts:
+        - amount: 1/2
+          unit: teaspoon
+
+  - butter:
+      amounts:
+        - amount: 6
+          unit: tablespoons
+
+  - salt and pepper:
+      amounts:
+        - amount: "to taste"
+          unit: ""
+
+steps:
+  - step: Preheat oven to 450.
+  - step: Rub potatoes with olive oil. Place them on a baking sheet and bake for 40-45 minutes or until soft.
+  - step: While the potatoes are baking, melt butter in skillet and add the garlic and green onions. Cook about 2 minutes.
+  - step: Add the shrimp to the skillet. Cook for 2-3 minutes. Add the paprika, chili powder, dried oregano, and cayenne. Stir and cook until shrimp are done, about 2 more minutes.
+  - step: When the potatoes are done, let them cool. Leave the oven on.
+  - step: Slice the potatoes in half horizontally and scoop out the flesh into a big bowl.
+  - step: Mash the sweet potatoes until smooth.
+  - step: Add the crumbled bacon, shrimp mixture, and butter. Combine everything well.
+  - step: Serve in a bowl and sprinkle with green onions.
+
+X-total_time: 100 minutes
+X-original-source: ../originals/PXL_20260523_105820663.RAW-01.COVER.jpg
+X-flags: []
