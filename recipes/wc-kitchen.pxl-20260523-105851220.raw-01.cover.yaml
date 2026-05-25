@@ -1,0 +1,64 @@
+recipe_uuid: wc-kitchen.pxl-20260523-105851220.raw-01.cover
+recipe_name: Tzatziki
+author: Kay Chun
+source_url: null
+X-original-source: pxl-20260523-105851220.raw-01.cover.jpg
+X-publisher: NYT Cooking
+description: 'Tzatziki is a popular Greek sauce traditionally served with souvlaki
+  and pita bread, but it''s super versatile in its potential: It''s a great snacking
+  dip with crudités and chips, as well as a bright and tangy sauce to drizzle on grain
+  bowls or serve alongside roasted chicken or salmon. Most commonly finished with
+  dill, tzatziki is sometimes made — and equally delicious — with other fresh herbs,
+  like mint or oregano. It can be made a few hours ahead and will keep in the refrigerator
+  for up to 3 days.
+
+  '
+yields:
+- amount: 2.5
+  unit: cups
+X-total_time: 10 minutes
+ingredients:
+- Persian cucumbers:
+    amounts:
+    - amount: 3
+      unit: whole
+- plain whole-milk Greek yogurt:
+    amounts:
+    - amount: 2
+      unit: cup
+- finely chopped dill:
+    amounts:
+    - amount: 2
+      unit: tablespoon
+- lemon juice:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- garlic clove, minced:
+    amounts:
+    - amount: 1
+      unit: whole
+- salt and pepper:
+    amounts: []
+steps:
+- step: 'Using the large holes of a box grater, grate cucumbers. Using your hands,
+    squeeze grated cucumbers to remove excess water, then place cucumbers in a medium
+    bowl (you should have about 1 cup).
+
+    '
+- step: 'Add yogurt, dill, lemon juice and garlic; season with salt and pepper to
+    taste. Mix well.
+
+    '
+X-category: sauce, dip
+X-tags:
+- Greek
+- tzatziki
+- vegetarian
+- quick
+X-source-verification:
+  status: needs-review
+  notes:
+  - Source is a printed NYT Cooking recipe page photographed in a binder; URL not
+    captured.
+  - Rating shown as 4 stars (583 ratings) at time of printing.
