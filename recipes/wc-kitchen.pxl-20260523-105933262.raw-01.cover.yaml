@@ -1,0 +1,64 @@
+recipe_uuid: wc-kitchen.pxl-20260523-105933262.raw-01.cover
+recipe_name: White Bean & Ham Soup
+yields:
+- amount: 4
+  unit: serving
+ingredients:
+- olive oil:
+    amounts:
+    - amount: 2
+      unit: tbsp
+- onions, chopped:
+    amounts:
+    - amount: 2
+      unit: whole
+- celery stalks, diced:
+    amounts:
+    - amount: 2
+      unit: whole
+- carrots, diced:
+    amounts:
+    - amount: 2
+      unit: whole
+- dried thyme:
+    amounts:
+    - amount: 1
+      unit: tsp
+- garlic cloves, crushed:
+    amounts:
+    - amount: 6
+      unit: whole
+- smoked ham hocks:
+    amounts:
+    - amount: 2
+      unit: lb
+- dried Great Northern beans:
+    amounts:
+    - amount: 1
+      unit: lb
+- chicken stock:
+    amounts:
+    - amount: 6
+      unit: cup
+- salt & pepper:
+    amounts: []
+steps:
+- step: Heat oil in skillet on medium high. Add onion, celery, carrots, thyme, and
+    garlic. Cook until vegetables are tender.
+- step: Scrape mixture into slow cooker.
+- step: Add ham hocks, beans, and chicken stock to slow cooker. Cover and cook on
+    low for 8 hours.
+- step: Remove ham hocks and cool slightly.
+- step: Remove meat from bones. Discard fat, skin, and bones. Chop meat and stir into
+    soup.
+- step: Cook 10 minutes on high to develop flavors. Add salt and pepper to taste.
+X-active_time: 30 minutes
+X-total_time: 9 hours
+X-category: soup
+X-original-source: PXL_20260523_105933262.RAW-01.COVER.jpg
+X-source-verification:
+  status: needs-review
+  notes:
+  - Calorie and fiber values shown as placeholder text ("XXX calories", "Xg fiber")
+    in source — omitted.
+  - Nutrition data not available from source.

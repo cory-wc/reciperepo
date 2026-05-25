@@ -1,0 +1,44 @@
+recipe_uuid: wc-kitchen.pxl-20260523-105917519.raw-01.cover
+recipe_name: Macaroni & Hamburger
+yields:
+- amount: 6
+  unit: serving
+ingredients:
+- whole wheat macaroni:
+    amounts:
+    - amount: 2
+      unit: cup
+- olive oil:
+    amounts:
+    - amount: 1
+      unit: tbsp
+- ground beef:
+    amounts:
+    - amount: 1
+      unit: lb
+- onions, diced:
+    amounts:
+    - amount: 2
+      unit: whole
+- diced tomatoes:
+    amounts:
+    - amount: 2
+      unit: can
+- frozen corn, defrosted:
+    amounts:
+    - amount: 1
+      unit: can
+steps:
+- step: Boil water and prepare macaroni.
+- step: Heat oil in skillet. Add onion and cook until translucent.
+- step: Add ground beef to skillet. Break up and cook beef.
+- step: Mix tomatoes, corn, beef, and macaroni.
+- step: Cook on low for 5-10 minutes.
+X-original-source: pxl-20260523-105917519.raw-01.cover
+X-active_time: 45m
+X-nutrition:
+  calories: 430
+  fiber: 6g
+X-source-verification:
+  status: needs-review
+  notes: []

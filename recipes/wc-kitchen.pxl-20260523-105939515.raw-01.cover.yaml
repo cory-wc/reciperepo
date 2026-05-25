@@ -1,0 +1,70 @@
+recipe_uuid: wc-kitchen.pxl-20260523-105939515.raw-01.cover
+recipe_name: Corn Chowder
+X-original-source: pxl-20260523-105939515.raw-01.cover
+yields:
+- amount: 4
+  unit: serving
+ingredients:
+- butter:
+    amounts:
+    - amount: 2
+      unit: tbsp
+- green onions, diced:
+    amounts:
+    - amount: 4
+      unit: whole
+- red bell pepper, chopped:
+    amounts:
+    - amount: 1
+      unit: whole
+- celery stalks, chopped:
+    amounts:
+    - amount: 2
+      unit: whole
+- potatoes, cut in 1/2" cubes:
+    amounts:
+    - amount: 1
+      unit: lb
+- corn kernels:
+    amounts:
+    - amount: 4
+      unit: cup
+- bay leaf:
+    amounts:
+    - amount: 1
+      unit: whole
+- chicken stock:
+    amounts:
+    - amount: 1
+      unit: quart
+- salt:
+    amounts:
+    - amount: 2
+      unit: tsp
+- milk:
+    amounts:
+    - amount: 2
+      unit: cup
+- ground black pepper:
+    amounts:
+    - amount: 0.25
+      unit: tsp
+steps:
+- step: Melt butter in dutch oven. Add scallions, bell pepper, and celery. Cook until
+    soft.
+- step: Stir in potatoes, 2 cups of corn, bay leaf, broth, and salt. Bring to a boil.
+    Reduce heat and simmer 15 minutes.
+- step: Puree the remaining 2 cups of corn with milk. Stir the puree into soup, along
+    with black pepper. Simmer until soup begins to thicken (5-10 minutes).
+X-active_time: 60 minutes
+X-total_time: 9 hours
+X-category: Side Dishes
+X-nutrition:
+  calories: 365
+  fiber: 8g
+X-source-verification:
+  status: needs-review
+  notes:
+  - Step 3 uses "Pure" in source image — interpreted as "Puree".
+  - The 9h total time is unusually long for this recipe; transcribed faithfully from
+    source.
