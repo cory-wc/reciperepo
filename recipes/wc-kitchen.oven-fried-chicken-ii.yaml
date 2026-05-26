@@ -1,0 +1,64 @@
+recipe_uuid: wc-kitchen.oven-fried-chicken-ii
+recipe_name: Oven Fried Chicken II
+source_url: https://www.allrecipes.com
+X-original-source: ../originals/PXL_20260523_110248782.RAW-01.COVER.JPG
+yields:
+- amount: 10
+  unit: servings
+ingredients:
+- chicken thighs:
+    amounts:
+    - amount: 12
+      unit: whole
+- eggs:
+    amounts:
+    - amount: 3
+      unit: whole
+- all-purpose flour:
+    amounts:
+    - amount: 1
+      unit: cup
+- Italian seasoned bread crumbs:
+    amounts:
+    - amount: 1
+      unit: cup
+- salt:
+    amounts:
+    - amount: null
+      unit: to taste
+- pepper:
+    amounts:
+    - amount: null
+      unit: to taste
+- paprika:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- vegetable oil:
+    amounts:
+    - amount: 0.5
+      unit: cup
+steps:
+- step: Preheat oven to 350 degrees F (175 degrees C).
+- step: Place flour in a shallow plate or bowl and season with salt and pepper to
+    taste. Put the bread crumbs in another shallow plate or bowl and beat the eggs
+    in another bowl.
+- step: Dredge the chicken piece by piece in the flour, then the egg, then the bread
+    crumbs, until all pieces are coated. Pour the oil into a 9x13 inch baking dish.
+    Add the chicken to the dish and sprinkle with paprika to taste. Bake in the preheated
+    oven for 30 minutes, then turn pieces over and bake for another 30 minutes. Remove
+    from oven and drain on paper towels. Enjoy!
+X-nutrition:
+  per_serving:
+    calories: 310
+    protein_g: 23.8
+    carbohydrates_g: 18
+    fat_g: 15.1
+    cholesterol_mg: 126.1
+    sodium_mg: 295.8
+X-source-verification:
+  status: needs-review
+  notes:
+  - Printed from allrecipes.com on 01/06/2021
+  - Exact allrecipes URL for this specific recipe not captured; source_url set to
+    allrecipes.com domain only

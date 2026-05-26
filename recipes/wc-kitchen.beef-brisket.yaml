@@ -1,0 +1,153 @@
+recipe_uuid: wc-kitchen.beef-brisket
+recipe_name: Beef Brisket
+source_url: https://www.foodnetwork.com
+X-original-source: ../originals/PXL_20260523_110303451.RAW-01.COVER.JPG
+X-attribution: Tyler Florence
+X-show: Food 911
+X-episode: Two Goys, a Girl and a Brisket!
+X-level: Intermediate
+X-total_time: 4 hr 35 min
+X-active_time: 20 min
+X-inactive_time: 15 min
+X-cook_time: 4 hr
+yields:
+- amount: 10
+  unit: servings
+ingredients:
+- garlic cloves, large, smashed:
+    amounts:
+    - amount: 4
+      unit: clove
+- kosher salt:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+    notes: plus more for seasoning
+- fresh rosemary, needles striped from stem and chopped:
+    amounts:
+    - amount: 4
+      unit: sprig
+- extra-virgin olive oil:
+    amounts:
+    - amount: 0.25
+      unit: cup
+- beef brisket, first-cut:
+    amounts:
+    - amount: 1
+      unit: pound
+    notes: 4-pound brisket
+- coarsely ground black pepper:
+    amounts: []
+- carrots, large, cut in 3-inch chunks:
+    amounts:
+    - amount: 4
+      unit: whole
+- celery stalks, cut in 3-inch chunks:
+    amounts:
+    - amount: 3
+      unit: stalk
+- large red onions, halved:
+    amounts:
+    - amount: 4
+      unit: whole
+- dry red wine:
+    amounts:
+    - amount: 2
+      unit: cup
+- whole tomatoes, hand-crushed:
+    amounts:
+    - amount: 1
+      unit: can
+    notes: 16-ounce can
+- fresh flat-leaf parsley leaves:
+    amounts:
+    - amount: 1
+      unit: handful
+- bay leaves:
+    amounts:
+    - amount: 3
+      unit: leaf
+- all-purpose flour:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+    notes: optional, for thickening sauce
+- potato pancakes:
+    amounts: []
+    notes: recipe follows
+steps:
+- step: Preheat the oven to 325 degrees F.
+- step: On a cutting board, mash the garlic and 1/2 teaspoon of the salt together
+    with the flat-side of a knife into a paste. Add the rosemary and continue to mash
+    until incorporated. Put the garlic-rosemary paste in a small bowl and add 2 tablespoons
+    of olive oil; stir to combine.
+- step: Season both sides of the brisket with a fair amount of kosher salt and ground
+    black pepper. Place a large roasting pan or Dutch oven over medium-high flame
+    and coat with the remaining olive oil. Put the brisket in the roasting pan and
+    sear to form a nice brown crust on both sides. Lay the vegetables all around the
+    brisket and pour the rosemary paste over the whole thing. Add the wine and tomatoes;
+    toss in the parsley and bay leaves. Cover the pan tightly with aluminum foil and
+    transfer to the oven. Bake for about 3 to 4 hours, basting every 30 minutes with
+    the pan juices, until the beef is fork tender.
+- step: Remove the brisket to a cutting board and let it rest for 15 minutes. Scoop
+    the vegetables out of the roasting pan and onto a platter, cover to keep warm.
+    Pour out some of the excess fat, and put the roasting pan with the pan juices
+    on the stove over medium-high heat. Boil and stir for 5 minutes until the sauce
+    is reduced by 1/2. (If you want a thicker sauce, mix 1 tablespoon of flour with
+    2 tablespoons of wine or water and blend into the gravy.)
+- step: Slice the brisket across the grain (the muscle lines) at a slight diagonal.
+    Serve with potato pancakes.
+X-sub-recipes:
+- recipe_name: Crispy Potato Pancakes (Latkes)
+  yields:
+  - amount: 20
+    unit: 4-inch pancakes
+  ingredients:
+  - russet potatoes, medium, peeled:
+      amounts:
+      - amount: 4
+        unit: whole
+  - medium onions:
+      amounts:
+      - amount: 2
+        unit: whole
+  - kosher salt:
+      amounts: []
+  - freshly ground black pepper:
+      amounts: []
+  - egg whites, lightly beaten:
+      amounts:
+      - amount: 2
+        unit: whole
+  - chives, finely chopped:
+      amounts:
+      - amount: 0.25
+        unit: cup
+  - vegetable oil, for frying:
+      amounts: []
+  - applesauce:
+      amounts: []
+      notes: serving suggestion
+  steps:
+  - step: Using a box grater or food processor, coarsely grate the potatoes and onions.
+      Put the grated potatoes and onions together in cheesecloth or a tea towel and
+      twist it to squeeze out the excess liquid. Put the dry potatoes and onions in
+      a bowl and season with salt and pepper. Fold in the egg whites and chives to
+      bind the mixture together.
+  - step: Heat a large non-stick skillet over medium heat and coat with 1/4-inch of
+      oil. For each pancake, take about 2 tablespoons of the potato mixture and drop
+      into the hot oil; gently flatten with a spatula so they fry up thin and crispy.
+      Fry for 3 to 4 minutes on each side, until golden. Remove to paper towels to
+      drain; season with salt while the potato pancakes are still hot. Continue frying,
+      adding more oil as needed, until all of the mixture is used up. Serve immediately
+      with apple sauce, if desired.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe attributed to Tyler Florence, Food Network show Food 911, episode Two Goys
+    a Girl and a Brisket
+  - Beef brisket listed as 1 (4 pound) — entered as 4 pounds in notes; amount field
+    set to 1 to reflect original wording
+  - Kosher salt quantity for latkes not specified beyond to taste
+  - Black pepper quantity for latkes not specified beyond to taste
+  - Vegetable oil quantity for frying not specified

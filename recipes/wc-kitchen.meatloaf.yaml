@@ -1,0 +1,48 @@
+recipe_uuid: wc-kitchen.meatloaf
+recipe_name: Meatloaf
+X-original-source: ../originals/PXL_20260523_110255553.RAW-01.COVER.JPG
+ingredients:
+- ground beef:
+    amounts:
+    - amount: 1
+      unit: lb
+- medium onion diced:
+    amounts:
+    - amount: 0.5
+      unit: null
+- egg:
+    amounts:
+    - amount: 1
+      unit: null
+- bread crumbs:
+    amounts:
+    - amount: 0.5
+      unit: cup
+- molasses:
+    amounts:
+    - amount: null
+      unit: null
+- worcestershire sauce:
+    amounts:
+    - amount: null
+      unit: null
+- ketchup topping:
+    amounts:
+    - amount: null
+      unit: null
+steps: []
+X-source-verification:
+  status: needs-review
+  notes:
+  - Image is blurry and handwriting is difficult to read; transcription is best-effort
+  - Title reads as "Meatloaf" but could be slightly different
+  - First ingredient reads as "1 lb ground beef" — confident
+  - Second ingredient reads as "1/2 medium onion, diced" — moderately confident
+  - Third ingredient reads as "1 egg" — confident
+  - Fourth ingredient reads as "1/2 bread crumbs" — unit (cup?) inferred, not clearly
+    visible
+  - Fifth ingredient reads as something like "molasses" — uncertain
+  - Sixth ingredient reads as "worcestershire sauce" — moderately confident
+  - Seventh line reads as "ketchup (topping?)" — uncertain
+  - No steps or quantities for last three ingredients are legible
+  - No yield, cook time, or temperature information visible

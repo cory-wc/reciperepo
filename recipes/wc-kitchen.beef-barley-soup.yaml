@@ -1,0 +1,105 @@
+recipe_uuid: wc-kitchen.beef-barley-soup
+recipe_name: Beef Barley Soup
+source_url: https://www.spendwithpennies.com
+X-original-source: ../originals/PXL_20260523_110719176.RAW-01.COVER.JPG
+X-active_time: 20 minutes
+X-cook_time: 50 minutes
+X-total_time: 1 hour 10 minutes
+yields:
+- amount: 8
+  unit: servings
+ingredients:
+- olive oil:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- onion:
+    amounts:
+    - amount: 1
+      unit: whole
+    preparation: chopped
+- garlic:
+    amounts:
+    - amount: 1
+      unit: clove
+    preparation: minced
+- carrots:
+    amounts:
+    - amount: 2
+      unit: whole
+    preparation: sliced
+- celery:
+    amounts:
+    - amount: 1
+      unit: rib
+    preparation: sliced
+- cooked beef:
+    amounts:
+    - amount: 2
+      unit: cup
+- reduced sodium beef broth:
+    amounts:
+    - amount: 6
+      unit: cup
+- canned petite diced tomatoes:
+    amounts:
+    - amount: 14.5
+      unit: ounce
+    notes: with juices, 1 can
+- green bell pepper:
+    amounts:
+    - amount: 0.5
+      unit: whole
+    preparation: diced
+- pearl barley:
+    amounts:
+    - amount: 0.667
+      unit: cup
+- Worcestershire sauce:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- dried thyme leaves:
+    amounts:
+    - amount: 0.25
+      unit: teaspoon
+- beef gravy mix:
+    amounts:
+    - amount: 1
+      unit: packet
+- bay leaf:
+    amounts:
+    - amount: 1
+      unit: whole
+- red wine:
+    amounts:
+    - amount: 2
+      unit: tablespoon
+    notes: optional
+- fresh parsley:
+    amounts:
+    - amount: 2
+      unit: tablespoon
+    preparation: chopped
+    notes: or 2 teaspoons dried
+- salt:
+    amounts: []
+    notes: to taste
+- black pepper:
+    amounts: []
+    notes: to taste
+steps:
+- step: Cook onions and garlic in oil over medium heat until softened.
+- step: Add remaining ingredients and bring to a boil. Reduce heat and simmer covered
+    about 40–50 minutes or until barley is cooked.
+- step: Remove bay leaf and serve.
+X-notes:
+- Soup may thicken upon cooling; add extra broth or water to reach desired consistency.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Source printed from SpendWithPennies.com; exact URL not visible in image.
+  - Rating shown as 4.99 from 1023 votes.
+  - Author listed as Holly Nilsson.
+  - Some ingredient quantities may be partially obscured by image orientation; reviewed
+    best available reading.

@@ -1,0 +1,67 @@
+recipe_uuid: wc-kitchen.pork-breakfast-chops
+recipe_name: Pork Breakfast Chops
+source_url: https://www.foodnetwork.com
+X-original-source: ../originals/PXL_20260523_110447772.RAW-01.COVER.JPG
+X-show: The Pioneer Woman
+X-episode: Cowboy Lunch
+X-author: Ree Drummond
+X-copyright: Copyright 2012 Ree Drummond, All Rights Reserved
+X-category: main
+X-tags:
+- pork
+- pan-fried
+- easy
+X-total_time: 25 min
+X-active_time: 25 min
+yields:
+- amount: 8
+  unit: servings
+ingredients:
+- seasoned salt:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+    notes: plus more for seasoning
+- ground black pepper:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+    notes: plus more for seasoning
+- pork breakfast chops:
+    amounts:
+    - amount: 8
+      unit: piece
+- all-purpose flour:
+    amounts:
+    - amount: 1
+      unit: cup
+- cayenne pepper:
+    amounts: []
+    notes: to taste
+- canola oil:
+    amounts:
+    - amount: 0.5
+      unit: cup
+- butter:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- smashed new potatoes:
+    amounts: []
+    notes: for serving
+steps:
+- step: Salt and pepper both sides of the pork chops.
+- step: Combine the flour and some cayenne, salt and black pepper. Dredge each side
+    of the pork chops in the flour mixture, and then set aside on a plate.
+- step: Heat the canola oil over medium to medium-high heat. Add the butter. When
+    the butter is melted and the butter/oil mixture is hot, cook 3 pork chops at a
+    time, 2 to 3 minutes on the first side. Flip and cook until the chops are golden
+    brown on the other side, 1 to 2 minutes (make sure no pink juices remain). Remove
+    to a plate and repeat with the remaining pork chops.
+- step: Delicious and simple! Serve with smashed new potatoes.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe printed from Food Network website, dated 6/23/2021
+  - Source URL is approximate; exact recipe URL not visible in image
+  - Cayenne pepper quantity not specified in source

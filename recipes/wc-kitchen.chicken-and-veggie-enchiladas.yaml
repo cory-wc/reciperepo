@@ -39,7 +39,7 @@ ingredients:
 
   - flour tortillas:
       amounts:
-        - amount: 15
+        - amount: "~15"
           unit: tortillas (burrito size)
 
   - black olives:

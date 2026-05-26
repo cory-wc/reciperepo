@@ -1,0 +1,129 @@
+recipe_uuid: wc-kitchen.instant-pot-teriyaki-turkey-meatballs
+recipe_name: Instant Pot Teriyaki Turkey Meatballs
+source_url: https://mommyshomecooking.com/instant-pot-teriyaki-turkey-mea...
+X-original-source: ../originals/PXL_20260523_110321307.RAW-01.COVER.jpg
+X-category: Main Course
+X-prep_time: 5 minutes
+X-cook_time: 10 minutes
+X-total_time: 15 minutes
+X-nutrition:
+  calories: 244 kcal
+yields:
+- amount: 6
+  unit: servings
+ingredients:
+- ground turkey meat:
+    amounts:
+    - amount: 1
+      unit: lb
+- bread crumbs:
+    amounts:
+    - amount: 0.25
+      unit: cup
+    notes: 'Handwritten substitution replacing original "5 saltine crackers, crushed"
+      and "3 tablespoons buttermilk". Original recipe notes: if no saltines, use 1/2
+      cup plain panko or breadcrumbs; buttermilk can be substituted with 1 egg (also
+      handwritten as "1 egg" on the page).
+
+      '
+- egg:
+    amounts:
+    - amount: 1
+      unit: null
+    notes: Handwritten substitution for buttermilk
+- green onion:
+    amounts:
+    - amount: 0.25
+      unit: cup
+    notes: sliced; plus more for garnish
+- garlic powder:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- black pepper:
+    amounts:
+    - amount: null
+      unit: null
+    notes: to taste; original also listed 1/2 teaspoon kosher salt (crossed out)
+- canola oil:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+    notes: for browning meatballs
+- sesame seeds:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- low sodium soy sauce:
+    amounts:
+    - amount: 0.75
+      unit: cup
+    notes: Teriyaki Sauce; entire sauce section crossed out with note "from bottle"
+- rice vinegar:
+    amounts:
+    - amount: 0.333
+      unit: cup
+    notes: Teriyaki Sauce (crossed out — use bottled teriyaki sauce instead)
+- garlic:
+    amounts:
+    - amount: 3
+      unit: cloves
+    notes: minced; Teriyaki Sauce (crossed out)
+- fresh grated ginger:
+    amounts:
+    - amount: 3
+      unit: teaspoon
+    notes: Teriyaki Sauce (crossed out)
+- canola oil:
+    amounts:
+    - amount: 3
+      unit: tablespoon
+    notes: Teriyaki Sauce (crossed out)
+- brown sugar:
+    amounts:
+    - amount: 4.5
+      unit: tablespoon
+    notes: Teriyaki Sauce (crossed out)
+- black pepper:
+    amounts:
+    - amount: 0.25
+      unit: teaspoon
+    notes: Teriyaki Sauce (crossed out)
+- corn starch:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+    notes: Teriyaki Sauce (crossed out)
+steps:
+- step: In a large bowl combine ground turkey, crushed crackers (or bread crumbs),
+    buttermilk (or egg), green onions, garlic powder, salt, and pepper. Gently shape
+    into 16–18 meatballs.
+- step: Combine teriyaki sauce ingredients in a medium bowl (or use bottled teriyaki
+    sauce as noted by handwritten annotation). Set aside.
+- step: Heat the Instant Pot in sauté mode. Add 1 tablespoon of oil and brown the
+    meatballs, about 2 minutes per side. When brown, add the teriyaki sauce, cover
+    and lock the lid. Cook on high pressure for 10 minutes.
+- step: After 10 minutes, turn off the pot and allow it to release pressure naturally.
+    This will take about 5 minutes.
+- step: Sprinkle with sliced green onions and sesame seeds. Serve with rice or quinoa.
+notes:
+- If you don't have saltine crackers available you can use 1/2 cup of plain panko
+  or breadcrumbs.
+- The original recipe uses buttermilk due to an egg allergy; if no food restriction,
+  substitute buttermilk for 1 egg.
+- Handwritten annotations cross out the saltine crackers and buttermilk, replacing
+  with "1/4 cup bread crumbs" and "1 egg".
+- The entire homemade teriyaki sauce section is crossed out with the handwritten note
+  "from bottle", indicating bottled teriyaki sauce is used instead.
+- Recipe is page 1 of 2; additional notes may appear on page 2.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Source URL is truncated in the printed header; full URL not fully visible.
+  - Handwritten modifications override several printed ingredients; both versions
+    captured above.
+  - Kosher salt (1/2 teaspoon) appears crossed out in the original; omitted from primary
+    ingredients but noted.
+  - Duplicate canola oil entries exist (meatballs and sauce); kept separate for fidelity.
+  - Page 2 of the printed recipe is not visible; additional notes or instructions
+    may be missing.

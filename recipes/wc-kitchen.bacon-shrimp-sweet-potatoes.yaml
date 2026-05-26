@@ -66,15 +66,15 @@ ingredients:
         - amount: 6
           unit: tablespoons
 
-  - salt and pepper:
+  - olive oil:
       amounts:
-        - amount: "to taste"
-          unit: ""
+        - amount: 2
+          unit: tablespoons
 
 steps:
-  - step: Preheat oven to 450.
+  - step: Preheat oven to 450°F.
   - step: Rub potatoes with olive oil. Place them on a baking sheet and bake for 40-45 minutes or until soft.
-  - step: While the potatoes are baking, melt butter in skillet and add the garlic and green onions. Cook about 2 minutes.
+  - step: While the potatoes are baking, melt butter in skillet and add the garlic and green onions (reserve some sliced green onions for garnishing). Cook about 2 minutes.
   - step: Add the shrimp to the skillet. Cook for 2-3 minutes. Add the paprika, chili powder, dried oregano, and cayenne. Stir and cook until shrimp are done, about 2 more minutes.
   - step: When the potatoes are done, let them cool. Leave the oven on.
   - step: Slice the potatoes in half horizontally and scoop out the flesh into a big bowl.
@@ -84,4 +84,5 @@ steps:
 
 X-total_time: 100 minutes
 X-original-source: ../originals/PXL_20260523_105820663.RAW-01.COVER.jpg
-X-flags: []
+X-flags:
+- step 8 references adding butter after potatoes are scooped — unclear if this is a second addition beyond the 6 tbsp listed, or a repeat of the same butter; verify against source

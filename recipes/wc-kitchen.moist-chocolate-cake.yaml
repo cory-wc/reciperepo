@@ -1,0 +1,124 @@
+recipe_uuid: wc-kitchen.moist-chocolate-cake
+recipe_name: Moist Chocolate Cake
+description: 'This moist chocolate cake with chocolate fudge frosting is a decadent
+  dessert with a soft, rich crumb complemented by a creamy, luscious topping.
+
+  '
+author: Angelina Papanikolaou
+yields:
+- amount: 12
+  unit: servings
+X-original-source: ../originals/PXL_20260523_111005883.RAW-01.COVER.jpg
+X-source-verification:
+  status: needs-review
+  notes:
+  - Instructions section is cut off at the bottom of the image and could not be captured.
+  - Prep time, cook time, and total time read from image header fields.
+  - Rating shown as 5 from 72 votes.
+X-category: Dessert
+X-total_time: 45 mins
+X-active_time: 15 mins
+X-cook_time: 30 mins
+X-nutrition:
+  calories: 944 kcal
+equipment:
+- 3 8-inch round cake pans
+- parchment paper
+- Mixing bowls
+- Stand mixer or hand held mixer
+ingredients:
+- all-purpose flour:
+    amounts:
+    - amount: 2
+      unit: cup
+- granulated sugar:
+    amounts:
+    - amount: 1.333
+      unit: cup
+    notes: 1 1/3 cups
+- brown sugar:
+    amounts:
+    - amount: 1
+      unit: cup
+- cocoa powder:
+    amounts:
+    - amount: 1
+      unit: cup
+- baking soda:
+    amounts:
+    - amount: 2.5
+      unit: tsp
+- baking powder:
+    amounts:
+    - amount: 2
+      unit: tsp
+- salt:
+    amounts:
+    - amount: 1
+      unit: tsp
+- buttermilk:
+    amounts:
+    - amount: 1.25
+      unit: cup
+    notes: room temperature
+- coffee:
+    amounts:
+    - amount: 0.75
+      unit: cup
+    notes: room temperature
+- vegetable oil:
+    amounts:
+    - amount: 0.667
+      unit: cup
+    notes: 2/3 cup
+- eggs:
+    amounts:
+    - amount: 3
+      unit: whole
+    notes: room temperature
+- vanilla extract:
+    amounts:
+    - amount: 1
+      unit: tbsp
+- unsalted butter:
+    amounts:
+    - amount: 2
+      unit: cup
+    notes: room temperature, for frosting
+- powdered sugar:
+    amounts:
+    - amount: 2
+      unit: cup
+    notes: for frosting
+- cocoa powder (frosting):
+    amounts:
+    - amount: 1
+      unit: cup
+    notes: for frosting
+- salt (frosting):
+    amounts:
+    - amount: 0.5
+      unit: tsp
+    notes: for frosting
+- chocolate chips:
+    amounts:
+    - amount: 2
+      unit: cup
+    notes: for frosting
+- honey:
+    amounts:
+    - amount: 0.25
+      unit: cup
+    notes: for frosting
+- heavy cream:
+    amounts:
+    - amount: 0.25
+      unit: cup
+    notes: for frosting
+- vanilla extract (frosting):
+    amounts:
+    - amount: 1
+      unit: tsp
+    notes: for frosting
+steps:
+- step: Instructions are not visible in the image — this section was cut off.

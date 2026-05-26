@@ -1,0 +1,97 @@
+recipe_uuid: wc-kitchen.slow-cooker-beef-stew
+recipe_name: Slow Cooker Beef Stew
+yields:
+- amount: 10
+  unit: people
+X-total_time: 6.5 hours
+ingredients:
+- olive oil:
+    amounts:
+    - amount: 1
+      unit: tbsp
+- boneless beef chuck roast:
+    amounts:
+    - amount: 2
+      unit: lbs
+    preparation: cut into 1" cubes
+- mushrooms:
+    amounts:
+    - amount: 8
+      unit: oz
+    preparation: sliced thinly
+- carrots:
+    amounts:
+    - amount: 1.5
+      unit: lbs
+    preparation: sliced 1/2" diagonally
+- garlic cloves:
+    amounts:
+    - amount: 6
+      unit: cloves
+- yellow potatoes:
+    amounts:
+    - amount: 4
+      unit: medium
+    preparation: cut into 1" cubes
+- onion:
+    amounts:
+    - amount: 1
+      unit: medium
+    preparation: chopped
+- beef broth:
+    amounts:
+    - amount: 6
+      unit: cup
+- dry red wine:
+    amounts:
+    - amount: 1
+      unit: cup
+- tomato paste:
+    amounts:
+    - amount: 0.25
+      unit: cup
+- Dijon mustard:
+    amounts:
+    - amount: 1
+      unit: tbsp
+- dried thyme:
+    amounts:
+    - amount: 1
+      unit: tsp
+- pearl barley or farro:
+    amounts:
+    - amount: 0.75
+      unit: cup
+    notes: optional
+- bay leaves:
+    amounts:
+    - amount: 3
+      unit: leaves
+- salt:
+    amounts: []
+    notes: to taste
+- black pepper:
+    amounts: []
+    notes: to taste
+steps:
+- step: Sprinkle beef with salt and pepper. Brown meat in olive oil. Drain excess
+    fat and transfer to slow cooker.
+- step: Add all ingredients to slow cooker and stir.
+- step: Cover and cook on high for 4 hours, then turn heat to low and cook for 2 more
+    hours.
+notes:
+- Serve with fresh baguette.
+X-original-source: ../originals/PXL_20260523_105952998.RAW-01.COVER.jpg
+X-attribution: Original recipe from a farmgirl's dabbles
+X-category: main dish
+X-tags:
+- slow cooker
+- beef
+- stew
+- comfort food
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe transcribed from photograph of a printed binder page.
+  - Salt and pepper quantities not specified in source; listed as "to taste".
+  - Pearl barley or farro marked optional in source.

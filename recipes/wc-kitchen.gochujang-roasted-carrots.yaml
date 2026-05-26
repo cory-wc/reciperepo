@@ -1,0 +1,79 @@
+recipe_uuid: wc-kitchen.gochujang-roasted-carrots
+recipe_name: Gochujang Roasted Carrots
+X-original-source: ../originals/PXL_20260523_110902690.RAW-01.COVER.jpg
+yields:
+- amount: 4
+  unit: servings
+X-category: Side Dish
+X-tags:
+- Korean
+- carrots
+- roasted
+- vegetarian
+X-total_time: 35 minutes
+X-active_time: 5 minutes
+ingredients:
+- carrots:
+    amounts:
+    - amount: 1
+      unit: lb
+    notes: peeled and split in half lengthwise if very large
+- vegetable oil:
+    amounts:
+    - amount: 1
+      unit: T
+- sesame oil:
+    amounts:
+    - amount: 1
+      unit: T
+- soy sauce:
+    amounts:
+    - amount: 1
+      unit: T
+- gochujang:
+    amounts:
+    - amount: 1
+      unit: T
+    notes: Korean chili paste
+- honey:
+    amounts:
+    - amount: 1
+      unit: T
+- rice wine vinegar:
+    amounts:
+    - amount: 1
+      unit: T
+- water:
+    amounts:
+    - amount: 1
+      unit: T
+- sesame seeds:
+    amounts: []
+    notes: Optional, for garnish
+- scallions:
+    amounts: []
+    notes: Optional, chopped, for garnish
+steps:
+- step: Preheat your oven to 400°F.
+- step: Place carrots on a rimmed baking sheet large enough to accommodate them all
+    in one single layer.
+- step: In a small bowl whisk together the oils, soy sauce, gochujang, honey, vinegar,
+    and water.
+- step: Pour this mixture all over the carrots, tossing with your hands to evenly
+    coat.
+- step: Cover the baking sheet tightly with two layers of aluminum foil.
+- step: Roast for 20 minutes.
+- step: Remove foil and roast for an additional 15-30 minutes, turning the carrots
+    halfway through cooking, until they are tender in the middle and brown and caramelized
+    at the edges.
+- step: Garnish with chopped scallions and sesame seeds.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Source is a photograph of a printed recipe page; some text in the right portion
+    of the image is partially obscured by shadow
+  - Cook time range for uncovered roasting read as 15-30 minutes; verify against original
+    source
+  - Author listed as Jo at https://boatkitchen.com (partially visible)
+  - Prep time listed as 10 minutes, Cook time listed as 45 minutes, Total time listed
+    as 55 minutes — conflicts with visible step times; flagged for review

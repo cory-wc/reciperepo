@@ -1,0 +1,71 @@
+recipe_uuid: wc-kitchen.taco-pasta-salad
+recipe_name: Taco Pasta Salad
+yields:
+- amount: 6
+  unit: servings
+ingredients:
+- pasta shells, medium:
+    amounts:
+    - amount: 0.5
+      unit: lb
+- black beans, rinsed:
+    amounts:
+    - amount: 1
+      unit: can
+- corn kernels:
+    amounts:
+    - amount: 1
+      unit: cup
+- tomato, chopped:
+    amounts:
+    - amount: 1
+      unit: whole
+- salsa:
+    amounts:
+    - amount: 0.5
+      unit: cup
+- olive oil:
+    amounts:
+    - amount: 2
+      unit: tbsp
+- lime juice:
+    amounts:
+    - amount: 1
+      unit: tbsp
+- taco seasoning:
+    amounts:
+    - amount: 1
+      unit: tbsp
+- garlic clove:
+    amounts:
+    - amount: 1
+      unit: whole
+- shredded cheese:
+    amounts:
+    - amount: 1
+      unit: cup
+- avocado:
+    amounts:
+    - amount: 1
+      unit: whole
+steps:
+- step: Prepare pasta. Do not use salt in the pasta water.
+- step: In a large bowl, mix pasta, black beans, corn, tomato, and salsa.
+- step: In a small bowl, mix together taco seasoning, lime juice, and olive oil.
+- step: Toss liquid with pasta mixture.
+- step: Place bowl in fridge to cool for at least 30 minutes.
+- step: Serve topped with shredded cheese and sliced avocado.
+X-active_time: 20 minutes
+X-total_time: 50 minutes
+X-category: salad
+X-tags:
+- pasta
+- taco
+- cold
+- make-ahead
+X-original-source: ../originals/PXL_20260523_105925706.RAW-01.COVER.jpg
+X-source-verification:
+  status: needs-review
+  notes:
+  - Step 6 in source reads "Serve topped wish shredded cheese and sliced avocado"
+    — "wish" appears to be a typo for "with"; corrected in transcription.

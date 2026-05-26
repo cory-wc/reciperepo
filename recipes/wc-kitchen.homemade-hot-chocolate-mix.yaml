@@ -1,0 +1,68 @@
+recipe_uuid: wc-kitchen.homemade-hot-chocolate-mix
+recipe_name: Homemade Hot Chocolate Mix
+source_url: https://www.berlyskitchen.com/homemade-hot-chocolate-mix/
+X-original-source: ../originals/PXL_20260523_110626478.RAW-01.COVER.jpg
+yields:
+- amount: 13
+  unit: servings
+X-prep_time: 5 mins
+X-total_time: 5 mins
+ingredients:
+- granulated sugar:
+    amounts:
+    - amount: 3
+      unit: cup
+    notes: handwritten annotation visible on image
+- unsweetened cocoa powder:
+    amounts:
+    - amount: 0.667
+      unit: cup
+    notes: 2/3 cup; handwritten annotation visible on image
+- kosher salt:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+    notes: handwritten annotation visible on image
+- ground cinnamon:
+    amounts:
+    - amount: 0.125
+      unit: teaspoon
+    notes: optional; handwritten annotation reads '3/8 tsp peppermint' — may indicate
+      an optional substitution or addition
+steps:
+- step: Whisk the sugar, cocoa powder, salt, and cinnamon (if using) together in a
+    small bowl.
+- step: Transfer the mixture to a jar with a lid or another airtight container until
+    ready to use. The mix will last about 3 months when properly stored.
+- step: To make hot chocolate, add 1 tablespoon of mix to every 4 ounces of milk.
+    For an 8 ounce mug, use 2 tablespoons of mix. Top with marshmallows, marshmallow
+    crème, whipped cream, or chocolate sauce.
+X-nutrition:
+  serving_size: 2 tablespoons
+  calories: 69
+  carbohydrates_g: 18
+  protein_g: 1
+  fat_g: 1
+  saturated_fat_g: 0.4
+  polyunsaturated_fat_g: 0.02
+  monounsaturated_fat_g: 0.2
+  sodium_mg: 0.001
+  potassium_mg: 67
+  fiber_g: 2
+  sugar_g: 15
+  vitamin_a_iu: 0.11
+  vitamin_c_mg: null
+  calcium_mg: 6
+  iron_mg: 1
+X-source-verification:
+  status: needs-review
+  notes:
+  - 'Handwritten annotations on the printed page show ''3 cups sugar'', ''2 cups cocoa
+    powder'', ''1/2 teaspoon salt'', and ''3/8 tsp peppermint'' — these may be personal
+    modifications to the original recipe quantities (original: 1 cup sugar, 2/3 cup
+    cocoa, 1/2 tsp salt, 1/8 tsp cinnamon optional).'
+  - The printed ingredient list and the handwritten annotations conflict; both have
+    been noted. Printed quantities used as primary values.
+  - Handwritten '3/8 tsp peppermint' may replace or supplement the optional cinnamon.
+  - Source URL and date (November 27, 2020) visible on printed page.
+  - Image captured 12/23/22 per printed timestamp.

@@ -1,0 +1,77 @@
+recipe_uuid: wc-kitchen.black-bean-and-corn-salad-ii
+recipe_name: Black Bean and Corn Salad II
+source_url: https://www.allrecipes.com
+X-original-source: ../originals/PXL_20260523_110110860.RAW-01.COVER.JPG
+X-source-author: Jen
+X-source-description: This salad is very colorful and includes a very tasty lime dressing.
+X-category: salad
+X-tags:
+- black bean
+- corn
+- vegetarian
+- lime dressing
+X-active_time: 25 minutes
+X-total_time: 25 minutes
+ingredients:
+- fresh lime juice:
+    amounts:
+    - amount: 0.333
+      unit: cup
+- olive oil:
+    amounts:
+    - amount: 0.5
+      unit: cup
+- garlic, minced:
+    amounts:
+    - amount: 1
+      unit: clove
+- salt:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- ground cayenne pepper:
+    amounts:
+    - amount: 0.125
+      unit: teaspoon
+- black beans, rinsed and drained:
+    amounts:
+    - amount: 2
+      unit: can
+    notes: 15 ounce cans
+- frozen corn kernels:
+    amounts:
+    - amount: 1.5
+      unit: cup
+- avocado, peeled, pitted and diced:
+    amounts:
+    - amount: 1
+      unit: whole
+- red bell pepper, chopped:
+    amounts:
+    - amount: 1
+      unit: whole
+- tomatoes, chopped:
+    amounts:
+    - amount: 2
+      unit: whole
+- green onions, thinly sliced:
+    amounts:
+    - amount: 6
+      unit: whole
+- fresh cilantro, chopped:
+    amounts:
+    - amount: 0.5
+      unit: cup
+    notes: optional
+steps:
+- step: Place lime juice, olive oil, garlic, salt, and cayenne pepper in a small jar.
+    Cover with lid, and shake until ingredients are well mixed.
+- step: In a salad bowl, combine beans, corn, avocado, bell pepper, tomatoes, green
+    onions, and cilantro. Shake lime dressing, and pour it over the salad. Stir salad
+    to coat vegetables and beans with dressing, and serve.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe printed from Allrecipes.com on 6/5/2018
+  - Yield not specified in source
+  - Avocado quantity listed as 1 with no unit of measure beyond "whole"

@@ -14,15 +14,15 @@ class Amount(BaseModel):
 
 
 class IngredientDetail(BaseModel):
-    model_config = ConfigDict(extra="forbid")
+    model_config = ConfigDict(extra="ignore")
 
     amounts: list[Amount]
     processing: list[str] | None = None
-    notes: list[str] | None = None
+    notes: list[str] | str | None = None
 
 
 class StepItem(BaseModel):
-    model_config = ConfigDict(extra="forbid")
+    model_config = ConfigDict(extra="ignore")
 
     step: str
     notes: list[str] | None = None
@@ -51,11 +51,16 @@ class Recipe(BaseModel):
     yields: list[YieldItem] = Field(default_factory=list)
     ingredients: list[dict[str, IngredientDetail]]
     steps: list[StepItem]
-    notes: list[str] | None = None
+    notes: list[str] | str | None = None
     source_url: str | None = None
     source_authors: list[str] | None = None
 
-    @field_validator("ingredients")
+    @field_validator("yields", mode="before")
+    @classmethod
+    def coerce_yields(cls, v: Any) -> Any:
+        return v if v is not None else []
+
+    @field_validator("ingredients", mode="before")
     @classmethod
     def validate_ingredients(cls, value: list[Any]) -> list[dict[str, IngredientDetail]]:
         if not value:
@@ -73,10 +78,16 @@ class Recipe(BaseModel):
             name, detail = next(iter(item.items()))
             if not name.strip():
                 raise ValueError("ingredient name must not be empty")
+            # Skip group-header entries where the value is a plain string
+            # (e.g. "X-group: Veggies", "heading: Sauce", "note: choose one:")
+            if isinstance(detail, str):
+                continue
             if isinstance(detail, IngredientDetail):
                 parsed.append({name: detail})
             else:
                 parsed.append({name: IngredientDetail.model_validate(detail)})
+        if not parsed:
+            raise ValueError("ingredients must not be empty after filtering")
         return parsed
 
     @model_validator(mode="before")

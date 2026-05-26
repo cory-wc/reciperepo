@@ -1,0 +1,86 @@
+recipe_uuid: wc-kitchen.easy-slow-cooker-beef-stew
+recipe_name: Easy Slow Cooker Beef Stew
+source_url: https://www.allrecipes.com/recipe/25200/slow-cooker-beef-s...
+X-original-source: ../originals/PXL_20260523_110128336.RAW-01.COVER.jpg
+X-active_time: 20 mins
+X-cook_time: 7 hrs
+X-total_time: 7 hrs 20 mins
+yields:
+- amount: 12
+  unit: servings
+ingredients:
+- cubed beef stew meat:
+    amounts:
+    - amount: 3
+      unit: pound
+    preparation: cubed
+- all-purpose flour:
+    amounts:
+    - amount: 0.25
+      unit: cup
+- salt:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+    notes: or to taste
+- olive oil:
+    amounts:
+    - amount: 3
+      unit: tablespoon
+- butter:
+    amounts:
+    - amount: 3
+      unit: tablespoon
+- onions:
+    amounts:
+    - amount: 3
+      unit: whole
+    preparation: sliced
+- red wine:
+    amounts:
+    - amount: 0.25
+      unit: cup
+- large potatoes:
+    amounts:
+    - amount: 4
+      unit: whole
+    preparation: cubed
+- baby carrots:
+    amounts:
+    - amount: 1
+      unit: cup
+- dried parsley:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- ground black pepper:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- boiling water:
+    amounts:
+    - amount: 2
+      unit: cup
+- dry onion soup mix:
+    amounts:
+    - amount: 1
+      unit: package
+    notes: 1 ounce package
+- warm water:
+    amounts:
+    - amount: 0.25
+      unit: cup
+- all-purpose flour:
+    amounts:
+    - amount: 2
+      unit: tablespoon
+    notes: for thickening (second addition)
+steps: []
+X-source-verification:
+  status: needs-review
+  notes:
+  - This is page 1 of 2; steps are on the second page which is not visible in this
+    image.
+  - URL in image is truncated; full URL assumed to be https://www.allrecipes.com/recipe/25200/slow-cooker-beef-stew/
+  - Submitted by IAMROSIE on allrecipes.com
+  - Image dated 12/30/24 08:19

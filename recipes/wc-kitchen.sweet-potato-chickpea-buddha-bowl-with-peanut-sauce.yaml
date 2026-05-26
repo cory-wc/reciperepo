@@ -1,0 +1,105 @@
+recipe_uuid: wc-kitchen.sweet-potato-chickpea-buddha-bowl-with-peanut-sauce
+recipe_name: Sweet Potato Chickpea Buddha Bowl with Peanut Sauce
+source_url: https://bakerbettie.com/wp-json/mv-create/v1/creations/181/print
+X-original-source: ../originals/PXL_20260523_110851524.RAW-01.COVER.jpg
+X-source-verification:
+  status: needs-review
+  notes:
+  - Image shows page 1/2 of a printed recipe; this appears to be page 2 (steps/notes
+    only)
+  - Ingredient list and full recipe header are on the missing first page
+  - Quantities for most ingredients are not visible in this image
+  - Grain type noted as millet used by author but recipe allows rice or quinoa
+  - Peanut sauce quantity noted as 1/4-1/2 cup of water (adjustment note, not full
+    sauce recipe)
+ingredients:
+- sweet potato:
+    amounts:
+    - amount: null
+      unit: null
+    notes: cubed
+- chickpeas:
+    amounts:
+    - amount: null
+      unit: null
+    notes: rinsed
+- spices/seasonings:
+    amounts:
+    - amount: null
+      unit: null
+    notes: all spices listed on missing page 1
+- grain:
+    amounts:
+    - amount: null
+      unit: null
+    notes: millet, rice, or quinoa; cook using 1:2 grain-to-water ratio
+- edamame:
+    amounts:
+    - amount: null
+      unit: null
+- broccoli:
+    amounts:
+    - amount: null
+      unit: null
+    notes: can substitute sautéed kale, asparagus, or roasted broccoli; fresh spinach
+      also works
+- steamed vegetables:
+    amounts:
+    - amount: null
+      unit: null
+    notes: sweet potato and other veggies of choice
+- peanut sauce:
+    amounts:
+    - amount: null
+      unit: null
+    notes: recipe calls for 1/4-1/2 cup water; full sauce recipe on missing page 1
+- avocado:
+    amounts:
+    - amount: null
+      unit: null
+- cilantro:
+    amounts:
+    - amount: null
+      unit: null
+    notes: chopped
+- peanuts:
+    amounts:
+    - amount: null
+      unit: null
+    notes: crushed
+- red pepper flakes:
+    amounts:
+    - amount: null
+      unit: null
+    notes: optional, for extra spice
+steps:
+- step: Add the cubed sweet potato and rinsed chickpeas in a bowl and toss with all
+    spices/seasonings until well combined.
+- step: Add to a baking sheet lined with parchment paper and bake for 30–35 minutes
+    or until the sweet potato can be easily pierced with a fork.
+- step: Cook your grain according to package instructions using a 1:2 grain-to-water
+    ratio. Cook the grain in veggie broth for a little extra flavor.
+- step: Meanwhile, add the edamame and broccoli to a pot with 1 inch of water and
+    steam for 5–7 minutes or until the broccoli is just barely fork tender. Drain
+    off the excess water.
+- step: When the potatoes/chickpeas are done, assemble the bowls with a base of your
+    grain of choice, then add the steamed veggies, sweet potato/chickpeas, avocado
+    and top with a generous serving of peanut sauce, chopped cilantro and crushed
+    peanuts. Add red pepper flakes for extra spice if desired.
+X-notes:
+- In place of broccoli you can use sautéed kale or asparagus, or even roast the broccoli
+  with the sweet potatoes for more flavor. Anything goes — fresh spinach also works
+  and will wilt slightly with the warm grains.
+- For the peanut sauce, the recipe calls for 1/4–1/2 cup of water; author uses closer
+  to 1/2 cup and adds a little extra spice.
+- Almond butter can be substituted for peanut butter in the sauce.
+X-category: main dish
+X-tags:
+- buddha bowl
+- vegan
+- meal prep
+- grain bowl
+X-dietary:
+- vegan
+- gluten-free adaptable
+- dairy-free

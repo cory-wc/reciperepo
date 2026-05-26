@@ -1,0 +1,81 @@
+recipe_uuid: wc-kitchen.creamy-gnocchi-with-sun-dried-tomatoes
+recipe_name: Creamy Gnocchi with Sun-Dried Tomatoes
+yields:
+- amount: 6
+  unit: servings
+X-total_time: 30 minutes
+ingredients:
+- onion:
+    amounts:
+    - amount: 1
+      unit: whole
+    preparation: diced
+- sun-dried tomatoes in oil:
+    amounts:
+    - amount: 1
+      unit: jar
+- italian seasoning:
+    amounts:
+    - amount: 2
+      unit: tsp
+- garlic:
+    amounts:
+    - amount: 3
+      unit: cloves
+    preparation: minced
+- red pepper flakes:
+    amounts:
+    - amount: 0.5
+      unit: tsp
+    notes: to taste (½ tsp)
+- salt:
+    amounts: []
+    notes: to taste
+- pepper:
+    amounts: []
+    notes: to taste
+- chicken:
+    amounts:
+    - amount: 1
+      unit: lb
+    preparation: cubed
+    notes: for vegan, use tofu (pressed and cubed) or mushrooms (sliced)
+- gnocchi:
+    amounts:
+    - amount: 1
+      unit: lb
+- broth:
+    amounts:
+    - amount: 1.5
+      unit: cup
+- roasted vegetable puree:
+    amounts:
+    - amount: 1
+      unit: null
+    notes: optional; 1-2 cubes, added to broth
+- heavy cream:
+    amounts:
+    - amount: 1
+      unit: cup
+    notes: for dairy-free, use thick cashew cream
+- parmesan:
+    amounts:
+    - amount: 0.5
+      unit: cup
+    notes: for dairy-free, use nutritional yeast or vegan parmesan
+steps:
+- step: Using the oil from the sun-dried tomatoes, sauté the onions.
+- step: Add the chicken, tofu, or mushrooms to the pot. Add the seasoning. Cook on
+    high (4-6 min for chicken or tofu, 10 min for mushrooms).
+- step: Reduce heat to low. Add the gnocchi and cover with broth. Cook covered for
+    5 minutes.
+- step: Stir in the heavy cream and parmesan. Allow to thicken as needed.
+X-original-source: ../originals/PXL_20260523_105927231.RAW-01.COVER.jpg
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe transcribed from photograph of a printed recipe page in a binder.
+  - Shadow partially obscures lower portion of page but all recipe content appears
+    legible.
+  - Roasted vegetable puree quantity listed as "1-2 cubes"; captured as 1 unit with
+    note.

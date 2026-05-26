@@ -1,0 +1,103 @@
+recipe_uuid: wc-kitchen.miso-dumpling-soup
+recipe_name: Miso Dumpling Soup (15 Minutes)
+description: Chewy vegetable dumplings in a warm, savory miso broth
+author: Allie Petersen
+X-original-source: ../originals/PXL_20260523_110825062.RAW-01.COVER.jpg
+X-category: Soup
+X-tags:
+- Japanese
+- dumplings
+- miso
+- quick
+X-dietary: []
+X-total_time: 15 mins
+X-active_time: 3 mins
+X-cook_time: 12 mins
+servings: 4
+yields:
+- amount: 4
+  unit: servings
+X-nutrition:
+  calories: 518 kcal per serving
+ingredients:
+- frozen vegetable dumplings (potstickers):
+    amounts:
+    - amount: 1.33
+      unit: lb
+    notes: vegetable brand; used Trader Joe's brand
+- sesame oil:
+    amounts:
+    - amount: 2.67
+      unit: tablespoon
+- minced garlic:
+    amounts:
+    - amount: 5.33
+      unit: clove
+- minced ginger:
+    amounts:
+    - amount: 2.67
+      unit: teaspoon
+- white miso paste:
+    amounts:
+    - amount: 1.33
+      unit: tablespoon
+    notes: low sodium; plus more for topping
+- chili oil:
+    amounts:
+    - amount: 1.33
+      unit: teaspoon
+- diced green onion:
+    amounts:
+    - amount: 0.44
+      unit: cup
+    notes: plus more for topping
+- vegetable broth:
+    amounts:
+    - amount: 5.33
+      unit: cup
+    notes: low sodium
+- julienne carrots:
+    amounts:
+    - amount: 1.33
+      unit: cup
+- spinach:
+    amounts:
+    - amount: 1
+      unit: large handful
+- green onion:
+    amounts: []
+    notes: optional topping; more green onion
+- chili oil:
+    amounts: []
+    notes: optional topping
+- sesame seeds:
+    amounts: []
+    notes: optional topping
+- soy sauce:
+    amounts: []
+    notes: optional topping; if you want it saltier
+steps:
+- step: In a large pan or pot begin heating your sesame oil over medium heat. Add
+    in minced garlic and ginger and cook for a few minutes.
+- step: Add in chili oil, miso paste, diced green onion. Stir and let cook for another
+    minute. Miso paste will still be a little thick and will dissolve fully in broth.
+- step: Add in potstickers and pan fry for 2-3 minutes on each side until they are
+    slightly browned and coated in the garlic onion mixture.
+- step: Add in vegetable broth, carrots, and spinach. Bring to boil for only 2 minutes
+    then remove from heat. (DON'T OVERCOOK POTSTICKERS OR THEY WILL BECOME MUSHY).
+- step: Top individual soup with more green onion, chili oil, and/or sesame seeds.
+    You can also add more soy sauce if you like it saltier.
+notes:
+- The number of servings for this recipe depends how hungry you are! My husband and
+  I together ate the whole thing but you may be able to have this as 4 servings depending
+  on your appetite.
+- Miso paste is often found in the refrigerated section of your grocery store and
+  is usually found near tofu.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Ingredient amounts appear to be scaled (e.g., 1.33, 2.67, 5.33) suggesting this
+    is a scaled version of a base recipe; original serving size may differ.
+  - Duplicate chili oil key in ingredients (used as both a main ingredient and optional
+    topping); listed separately for clarity.
+  - Rating visible on source: 4.95 from 60 votes.

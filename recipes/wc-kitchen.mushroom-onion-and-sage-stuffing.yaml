@@ -1,0 +1,110 @@
+recipe_uuid: wc-kitchen.mushroom-onion-and-sage-stuffing
+recipe_name: Mushroom, Onion, and Sage Stuffing
+source_url: https://www.umami.site
+X-original-source: ../originals/PXL_20260523_110016726.RAW-01.COVER.JPG
+yields:
+- amount: 9
+  unit: servings
+X-active_time: 15 minutes
+X-total_time: 1 hour 5 minutes
+X-nutrition:
+  calories: 247kcal
+  carbohydrates: 37g
+  protein: 10g
+  fat: 6g
+  saturated_fat: 3g
+  cholesterol: 52mg
+  sodium: 545mg
+  potassium: 283mg
+  fiber: 2g
+  sugar: 4g
+  vitamin_a: 5.3%
+  vitamin_c: 2.4%
+  calcium: 7.7%
+  iron: 13.9%
+X-category: Salads
+X-tags:
+- stuffing
+- dressing
+- side dish
+- mushroom
+- Thanksgiving
+ingredients:
+- french bread:
+    amounts:
+    - amount: 1
+      unit: lb
+- white onion:
+    amounts:
+    - amount: 1.5
+      unit: cup
+    preparation: diced
+- celery:
+    amounts:
+    - amount: 1
+      unit: cup
+    preparation: diced
+- mushrooms:
+    amounts:
+    - amount: 2
+      unit: cup
+    preparation: chopped
+- garlic:
+    amounts:
+    - amount: 2
+      unit: tsp
+    preparation: minced
+- sage:
+    amounts:
+    - amount: 2
+      unit: tsp
+    preparation: minced
+- thyme:
+    amounts:
+    - amount: 1.5
+      unit: tsp
+    preparation: minced
+- butter:
+    amounts:
+    - amount: 2
+      unit: tbsp
+- eggs:
+    amounts:
+    - amount: 2
+      unit: whole
+- chicken stock:
+    amounts:
+    - amount: 1
+      unit: cup
+- milk:
+    amounts:
+    - amount: 1
+      unit: cup
+- salt:
+    amounts:
+    - amount: 0.5
+      unit: tsp
+- pepper:
+    amounts:
+    - amount: 0.25
+      unit: tsp
+steps:
+- step: Cut or tear the bread into small bite-sized pieces and leave it out overnight
+    to dry out or lightly toast it on a sheet pan in a 350°F oven for 10 minutes.
+- step: Dice the onion and celery, mince the garlic, sage, and thyme, and chop up
+    the mushrooms. Sauté the vegetables in the butter for 5 to 6 minutes to soften
+    them up.
+- step: In a small bowl whisk the eggs, stock, milk, salt, and pepper together.
+- step: In a large bowl combine the bread, onion, and egg mixtures and let everything
+    sit for 5 minutes, so the bread has time to absorb some of the liquid.
+- step: Pour everything into a lightly greased baking dish and bake in a 350°F oven
+    for 40 to 45 minutes.
+- step: The stuffing is done when everything is nicely browned and crispy on top.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe printed from Umami (www.umami.site) and stored in a physical binder; source
+    URL inferred from attribution line at bottom of page.
+  - Cook time listed as 50 minutes on card but step 5 specifies 40 to 45 minutes;
+    both values preserved in notes.
+  - Total time listed as 1 hour 5 minutes (15 min prep + 50 min cook).

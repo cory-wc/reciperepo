@@ -1,0 +1,146 @@
+recipe_uuid: wc-kitchen.the-best-instant-pot-lentil-soup
+recipe_name: The Best Instant Pot Lentil Soup
+description: 'This is the best Instant Pot Lentil Soup on the web! With a coconut
+  curry broth and red lentils, it''s hearty and vegetarian - all you need is the crusty
+  bread!
+
+  '
+source_url: https://eating-instantly.com/the-best-instant-pot-lentil-soup/
+X-original-source: ../originals/PXL_20260523_105959132.RAW-01.COVER.jpg
+author: Taylor Stinson
+X-category: Soup
+X-tags:
+- coconut milk
+- curry
+- instant pot
+- lentil soup
+- turmeric
+X-dietary:
+- vegetarian
+cuisine: Indian
+yields:
+- amount: 3
+  unit: servings
+X-active_time: 20 mins
+X-total_time: 40 mins
+prep_time: 20 mins
+cook_time: 20 mins
+calories_per_serving: 204kcal
+ingredients:
+- coconut oil:
+    amounts:
+    - amount: 1
+      unit: tbsp
+- yellow onions:
+    amounts:
+    - amount: 2
+      unit: whole
+    preparation: diced
+- garlic:
+    amounts:
+    - amount: 4
+      unit: cloves
+    preparation: minced
+- fresh ginger:
+    amounts:
+    - amount: 1
+      unit: tbsp
+    preparation: minced
+- celery:
+    amounts:
+    - amount: 4
+      unit: stalks
+    preparation: diced
+- carrots:
+    amounts:
+    - amount: 2
+      unit: whole
+    preparation: diced
+- curry powder:
+    amounts:
+    - amount: 1
+      unit: tbsp
+- turmeric:
+    amounts:
+    - amount: 1
+      unit: tbsp
+- cumin:
+    amounts:
+    - amount: 1
+      unit: tsp
+- salt:
+    amounts:
+    - amount: 1
+      unit: tsp
+- pepper:
+    amounts:
+    - amount: 0.5
+      unit: tsp
+- red lentils:
+    amounts:
+    - amount: 1
+      unit: cup
+- green lentils:
+    amounts:
+    - amount: 1
+      unit: cup
+- coconut milk:
+    amounts:
+    - amount: 496
+      unit: mL
+    note: 1 can (496mL)
+- diced tomatoes:
+    amounts:
+    - amount: 796
+      unit: mL
+    note: 1 can (796mL)
+- vegetable broth:
+    amounts:
+    - amount: 2
+      unit: cups
+- spinach:
+    amounts:
+    - amount: 2
+      unit: cups
+    preparation: chopped
+steps:
+- step: 'Add all ingredients to Instant Pot in order that they are listed with the
+    exception of spinach. Place lid on Instant Pot and make sure valve is set to seal.
+
+    '
+- step: 'Press the pressure cook button and set to high, then cook for 5 minutes.
+    Instant Pot will take about 10-15 minutes to come to pressure then pressure cook
+    the 5 minutes.
+
+    '
+- step: 'Do a quick release of the pressure on the Instant Pot by flicking the switch
+    at the top with a spoon. Open the lid when pressure gauge has dropped and the
+    lid opens easily.
+
+    '
+- step: 'Remove 1 cup of the soup and blend in a blender once cooled, then add back
+    to pot of soup (this is an optional step that makes the dish more creamy and delicious).
+    Stir in spinach, then serve with fresh bread and enjoy!
+
+    '
+X-nutrition:
+  calories: 204kcal
+  carbohydrates: 34g
+  protein: 12g
+  fat: 3g
+  saturated_fat: 2g
+  sodium: 557mg
+  potassium: 609mg
+  fiber: 15g
+  sugar: 4g
+  vitamin_a: 2790IU
+  vitamin_c: 5.8mg
+  calcium: 52mg
+  iron: 4.3mg
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe printed 2/23/2020 from eating-instantly.com
+  - Page 1 of 2 visible; page 2 not captured in this image
+  - Nutrition values partially obscured at bottom of page but mostly legible
+  - Potassium value partially cut off; read as 609mg

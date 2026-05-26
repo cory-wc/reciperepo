@@ -1,5 +1,8 @@
 recipe_uuid: wc-kitchen.thai-peanut-sauce
 recipe_name: Thai Peanut Sauce
+source_url: https://eatwithclarity.com/easy-thai-peanut-sauce/
+source_authors:
+  - Claire Cary
 
 yields:
   - amount: 1
@@ -67,6 +70,9 @@ steps:
   - step: Add all ingredients except the water and whisk together until smooth.
   - step: Slowly pour in the water until your desired consistency is reached. Start with ½ cup and add more as needed — more for a dressing, less for a sauce.
   - step: Taste and adjust seasonings as desired. Serve with noodle bowls, tofu, tempeh, chicken, stir fries, etc.
+
+notes:
+  - Sesame oil can be omitted if you don't want any sesame flavor.
 
 X-prep_time: 5 minutes
 X-total_time: 5 minutes

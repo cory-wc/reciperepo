@@ -1,0 +1,102 @@
+recipe_uuid: wc-kitchen.chili-recipe
+recipe_name: Chili Recipe (Vegetarian)
+X-original-source: ../originals/PXL_20260523_105954549.RAW-01.COVER.JPG
+ingredients:
+- onion:
+    amounts:
+    - amount: 1
+      unit: large
+- red bell peppers:
+    amounts:
+    - amount: 2
+      unit: whole
+    preparation: chopped
+- garlic:
+    amounts:
+    - amount: 3
+      unit: clove
+- chili flakes:
+    amounts:
+    - amount: 2
+      unit: tbsp
+    notes: or 2 tbsp jalapeno peppers, minced
+- jalapeno peppers:
+    amounts:
+    - amount: 2
+      unit: tbsp
+    preparation: minced
+    notes: alternative to chili flakes
+- carrots:
+    amounts:
+    - amount: 2
+      unit: whole
+    preparation: diced
+- frozen corn:
+    amounts:
+    - amount: 1.5
+      unit: cup
+    preparation: defrosted
+- crushed tomatoes:
+    amounts:
+    - amount: 1
+      unit: can
+- kidney beans:
+    amounts:
+    - amount: 1
+      unit: can
+- sugar:
+    amounts:
+    - amount: 1
+      unit: tsp
+- ground cumin:
+    amounts:
+    - amount: 1
+      unit: tsp
+- chili powder:
+    amounts:
+    - amount: 1
+      unit: tsp
+- salt:
+    amounts:
+    - amount: 1
+      unit: tsp
+    notes: handwritten addition
+- black beans:
+    amounts:
+    - amount: 1
+      unit: can
+    notes: handwritten addition
+- sour cream:
+    amounts: []
+    notes: optional garnish
+- shredded cheddar:
+    amounts: []
+    notes: optional garnish
+steps:
+- step: Add onion, bell pepper, jalapeno pepper, and garlic to frying pan; cook and
+    stir for 5 minutes until tender.
+- step: Add remaining ingredients to slow cooker, mix well and cook for 4-5 hours
+    on low.
+- step: Garnish with sour cream and cheese.
+X-category: main dish
+X-tags:
+- vegetarian
+- chili
+- slow cooker
+X-dietary:
+- vegetarian
+X-total_time: 4-5 hours
+X-notes:
+- 'Cook''s note: I put a tablespoon instead of teaspoon of the spices in, because
+  I doubled the bell peppers and those made most of the mix. I also put in 3 tablespoons
+  of fresh jalapenos including seeds.'
+- 'Handwritten additions to the printed recipe: 1 tsp salt, 1 can black beans.'
+- Chili flakes and jalapeno peppers are listed as alternatives (2 tbsp of either).
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe extracted from a photograph of a printed page in a binder with handwritten
+    annotations.
+  - Handwritten additions (salt, black beans) have been included in the ingredients
+    list and flagged.
+  - The chili flakes vs. jalapeno peppers alternative has been preserved as written.

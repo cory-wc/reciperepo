@@ -54,19 +54,6 @@ ingredients:
         - amount: 1
           unit: teaspoon
 
-  - guacamole:
-      amounts:
-        - amount: 1
-          unit: serving
-      processing:
-        - for serving
-
-  - sour cream:
-      amounts:
-        - amount: 1
-          unit: serving
-      processing:
-        - for serving
 
 steps:
   - step: Mix the cheese, corn, green onions, cilantro, sour cream, and chipotle in adobo in a large bowl.
@@ -76,6 +63,6 @@ steps:
 
 source_url: https://www.tasteofhome.com
 X-total_time: 20 minutes
-X-notes: Serve with warmed refried beans.
+X-notes: Serve with guacamole, sour cream, and warmed refried beans.
 X-original-source: ../originals/PXL_20260523_105748153.RAW-01.COVER.jpg
 X-flags: []

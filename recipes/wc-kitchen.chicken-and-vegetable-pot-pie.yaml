@@ -39,8 +39,8 @@ ingredients:
 
   - frozen peas and carrots:
       amounts:
-        - amount: 48
-          unit: oz
+        - amount: 2
+          unit: bags (12 oz each)
       processing:
         - defrosted and drained
 

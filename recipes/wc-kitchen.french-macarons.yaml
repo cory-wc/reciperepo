@@ -1,0 +1,76 @@
+recipe_uuid: wc-kitchen.french-macarons
+recipe_name: French Macarons
+source_url: https://sallysbakingaddiction.com/french-macarons/print/95647/
+X-original-source: ../originals/PXL_20260523_110546623.RAW-01.COVER.jpg
+author: Sally
+X-prep_time: 1 hour (plus aging egg whites)
+X-cook_time: 13 minutes
+X-total_time: 1 hour, 30 minutes
+yields:
+- amount: 40
+  unit: shells
+- amount: 20
+  unit: sandwiched macarons
+ingredients:
+- egg whites:
+    amounts:
+    - amount: 100
+      unit: g
+    notes: usually between 3–4 large egg whites; age in refrigerator 24 hours
+- cream of tartar:
+    amounts:
+    - amount: 0.25
+      unit: teaspoon
+    - amount: 1
+      unit: g
+- extract:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+    notes: such as vanilla, almond, coconut, etc; optional
+- superfine sugar:
+    amounts:
+    - amount: 80
+      unit: g
+    notes: aka caster sugar; see recipe note
+- gel food coloring:
+    amounts:
+    - amount: 1
+      unit: drop
+    notes: 1–2 drops; optional
+- almond flour:
+    amounts:
+    - amount: 125
+      unit: g
+- confectioners sugar:
+    amounts:
+    - amount: 125
+      unit: g
+- macaron filling:
+    amounts: []
+    notes: desired filling; some options listed in recipe notes
+steps:
+- step: Wipe down a large glass or metal mixing bowl with lemon juice or vinegar.
+    Add egg whites. Cover and refrigerate for 24 hours, then bring to room temperature.
+- step: Line 3 large baking sheets with silicone baking mats or parchment paper. Set
+    aside.
+- step: Add cream of tartar and extract (if using) to egg whites. Using a handheld
+    mixer or stand mixer fitted with a whisk attachment, beat together on medium speed
+    until very soft peaks form. This takes a few minutes of beating. At first the
+    egg white and cream of tartar mixture will be foamy, then the bubbles will begin
+    to tighten and the beaters will leave tracks as the egg whites build volume. Once
+    they begin leaving tracks, you likely have soft peaks. Stop beating. Add about
+    1/3 of the superfine sugar. Beat on medium-high speed for 5 seconds, then with
+    the mixer continuing to run, add another 1/3 of the sugar. Beat for 5 seconds,
+    then with the mixer continuing to run, add the remaining sugar. Beat on medium-high
+    speed until stiff glossy peaks form. (This means the whites have stiff, smooth,
+    and sharp points in the bowl or on the lifted whisk attachment/beaters. Stiff
+    peaks do not droop down. You can turn the bowl upside down and the egg whites
+    will not move or spill out.) Using a rubber spatula, slowly and gently fold the
+    food coloring (if using) into the egg whites.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe is page 1 of 3; steps are incomplete as only the first page of instructions
+    is visible in the image
+  - Source URL extracted from printed footer of page

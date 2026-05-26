@@ -1,0 +1,67 @@
+recipe_uuid: wc-kitchen.instant-pot-cilantro-lime-rice-recipe
+recipe_name: Instant Pot Cilantro Lime Rice Recipe
+source_url: https://boulderlocavore.com/easy-instant-pot-cilantro-lime-rice-recipe/
+author: Toni Dash
+cuisine: American
+X-category: Side Dish
+X-tags:
+- cilantro lime rice
+- instant pot rice recipe
+- pressure cooker
+X-active_time: 5 minutes
+X-cook_time: 3 minutes
+X-total_time: 18 minutes
+X-nutrition:
+  calories: 270 kcal
+  serving_size: 1 cup
+yields:
+- amount: 5
+  unit: 1-cup servings
+ingredients:
+- long grain white rice:
+    amounts:
+    - amount: 2
+      unit: cup
+    notes: rinsed until water runs clear
+- water:
+    amounts:
+    - amount: 2
+      unit: cup
+- lime zest:
+    amounts:
+    - amount: 1
+      unit: lime
+    notes: zest of 1 lime
+- fresh chopped cilantro:
+    amounts:
+    - amount: 0.333
+      unit: cup
+- freshly squeezed lime juice:
+    amounts:
+    - amount: 2
+      unit: teaspoon
+    notes: optional
+- vegetable oil:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+    notes: optional; 1-2 teaspoons
+steps:
+- step: Place the rinsed rice in the Instant Pot insert. Pour in the water.
+- step: Seal the lid, move the pressure vent to SEALING, set the Instant Pot to MANUAL,
+    HIGH PRESSURE and using the '+/-' buttons set 3 minutes cooking time.
+- step: When the cooking time is complete, allow a SLOW RELEASE for 10 minutes.
+- step: After 10 minutes release the remaining pressure. Fluff the rice with the plastic
+    rice paddle that came with the Instant Pot (or a spatula).
+- step: Stir in the lime zest and chopped cilantro. Taste; add lime juice and/or oil
+    as desired. Serve immediately.
+X-original-source: ../originals/PXL_20260523_110025036.RAW-01.COVER.jpg
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe printed from boulderlocavore.com on 4/10/2019; page 1 of 2 visible.
+  - NOTE from source: The time for the Instant Pot to come to temperature is not included
+      in the cooking time.
+  - Vegetable oil quantity listed as 1-2 teaspoons; minimum value used in amounts
+    field.
+  - Lime juice quantity listed as 2 teaspoons optional.
