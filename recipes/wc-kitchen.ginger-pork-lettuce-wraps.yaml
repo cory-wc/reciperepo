@@ -13,6 +13,13 @@ ingredients:
       processing:
         - divided
 
+  - onion:
+      amounts:
+        - amount: null
+          unit: null
+      notes:
+        - quantity not specified on card
+
   - ground pork:
       amounts:
         - amount: 1/2
@@ -34,8 +41,10 @@ ingredients:
 
   - oil:
       amounts:
-        - amount: 1/2
-          unit: tablespoon
+        - amount: 2
+          unit: teaspoons
+      processing:
+        - divided
 
   - garlic:
       amounts:
@@ -94,9 +103,9 @@ ingredients:
           unit: heads
 
 steps:
-  - step: Heat a skillet with half of the sesame oil. Add the garlic and pork. Cook until pork is done and remove pork.
-  - step: Add bell pepper, mushrooms, water chestnuts, and cabbage to pan. Cook until vegetables start to soften.
-  - step: While vegetables cook, whisk together hoisin, water, ginger, vinegar, remaining sesame oil, soy sauce, and pepper flakes.
+  - step: Heat a skillet with 1 tsp sesame oil. Add the onion, garlic, and pork. Cook until pork is done and remove pork.
+  - step: Add 1 tsp oil to pan. Add onion, bell pepper, mushrooms, water chestnuts, and cabbage. Cook until vegetables start to soften.
+  - step: While vegetables cook, whisk together hoisin, water, ginger, vinegar, remaining 1 tsp sesame oil, soy sauce, and pepper flakes.
   - step: Add the pork and sauce to pan. Stir well to combine and cook on low for 5 minutes.
   - step: Serve with lettuce leaves.
 
@@ -105,4 +114,4 @@ X-nutrition:
   calories: 250
   fiber: 2.5 g
 X-original-source: ../originals/PXL_20260523_105749894.RAW-01.COVER.jpg
-X-flags: [oil-unit-unclear-in-source]
+X-flags: []

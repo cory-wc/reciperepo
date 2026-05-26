@@ -1,0 +1,87 @@
+recipe_uuid: wc-kitchen.baked-oatmeal-with-cranberries-and-almonds
+recipe_name: Baked Oatmeal With Cranberries and Almonds
+source_url: https://www.realsimple.com
+X-original-source: ../originals/PXL_20260523_110216005.RAW-01.COVER.JPG
+X-source-verification:
+  status: needs-review
+  notes:
+  - Source is a photographed printed page from Real Simple, by Real Simple Editors,
+    updated August 20 2022
+  - Some fractions in the image are partially obscured or ambiguous; best-effort transcription
+    applied
+  - Nutrition facts section visible but cut off; not transcribed
+  - Oven temperature reads 350 F
+  - fine salt note references "plus 1/8 teaspoon salt in step 3" but step 3 only shows
+    1/4 tsp — flag for manual review against source
+X-category: breakfast
+X-tags:
+- baked oatmeal
+- cranberry
+- almond
+- make-ahead
+- whole grain
+X-active_time: 10 mins
+X-total_time: 50 mins
+yields:
+- amount: 1
+  unit: 2-quart baking dish
+ingredients:
+- old-fashioned rolled oats:
+    amounts:
+    - amount: 2
+      unit: cup
+- unsalted butter:
+    amounts:
+    - amount: 0.25
+      unit: cup
+    processing:
+    - melted and slightly cooled
+    notes: plus more for the pan
+- almonds:
+    amounts:
+    - amount: 0.5
+      unit: cup
+    processing:
+    - toasted
+    - chopped
+- dried cranberries:
+    amounts:
+    - amount: 0.75
+      unit: cup
+- ground cinnamon:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- fine salt:
+    amounts:
+    - amount: 0.25
+      unit: teaspoon
+- whole milk:
+    amounts:
+    - amount: 1.75
+      unit: cup
+- large eggs:
+    amounts:
+    - amount: 2
+      unit: whole
+    processing:
+    - beaten
+- pure maple syrup:
+    amounts:
+    - amount: 0.75
+      unit: cup
+    notes: image fraction partially obscured; transcribed as ¾ cup
+- pure vanilla extract:
+    amounts:
+    - amount: 2
+      unit: teaspoon
+steps:
+- step: Heat oven to 350°F.
+- step: Butter a 2-quart baking dish.
+- step: Combine the oats, almonds, cranberries, cinnamon, and ¼ teaspoon salt in a
+    large bowl. Stir in the melted butter, milk, eggs, maple syrup, and vanilla. Mix
+    well and spread evenly in the prepared dish.
+- step: Bake until golden and the center is firm, 35 to 45 minutes. Serve warm, drizzled
+    with cream or milk if desired. Leftovers will keep refrigerated up to 1 day.
+X-chefs-notes: 'Tip: Toast raw almonds in a 350°F oven on a rimmed baking sheet until
+  fragrant and golden brown, 8 to 10 minutes. Let cool before chopping.'

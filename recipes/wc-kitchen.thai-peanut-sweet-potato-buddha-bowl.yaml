@@ -1,0 +1,94 @@
+recipe_uuid: wc-kitchen.thai-peanut-sweet-potato-buddha-bowl
+recipe_name: Thai Peanut Sweet Potato Buddha Bowl
+author: claire cary
+description: 'With spicy roasted sweet potato, crispy chickpeas, fluffy quinoa and
+  drizzled in my Thai Peanut Sauce, this is one of my favorite buddha bowls to date!
+  It''s vegan, gluten free and perfect for meal prep.
+
+  '
+yields:
+- amount: 4
+  unit: servings
+X-prep_time: 10 mins
+X-cook_time: 30 mins
+X-total_time: 40 mins
+X-category: main
+X-dietary:
+- vegan
+- gluten-free
+ingredients:
+- sweet_potatoes_peeled_and_cubed:
+    amounts:
+    - amount: 4
+      unit: cup
+    notes: about 2 medium potatoes
+- chickpeas_drained_and_rinsed:
+    amounts:
+    - amount: 1
+      unit: can
+- soy_sauce_or_tamari:
+    amounts:
+    - amount: 1
+      unit: tbsp
+- maple_syrup:
+    amounts:
+    - amount: 1
+      unit: tbsp
+- sriracha:
+    amounts:
+    - amount: null
+      unit: tbsp
+    notes: 1-2 tbsp depending on spice preference
+- minced_garlic:
+    amounts:
+    - amount: 2
+      unit: tsp
+- red_pepper_flakes:
+    amounts:
+    - amount: 0.5
+      unit: tsp
+- oil:
+    amounts:
+    - amount: 2
+      unit: tbsp
+    notes: author used avocado oil
+- uncooked_grain_of_choice:
+    amounts:
+    - amount: 1
+      unit: cup
+    notes: author suggests quinoa, rice or millet
+- broccoli_chopped:
+    amounts:
+    - amount: 1
+      unit: head
+- shelled_edamame:
+    amounts:
+    - amount: 1.5
+      unit: cup
+- avocado:
+    amounts:
+    - amount: 1
+      unit: whole
+- peanut_sauce:
+    amounts:
+    - amount: 0.5
+      unit: batch
+    notes: click for recipe
+- chopped_peanuts:
+    amounts:
+    - amount: 0.5
+      unit: cup
+- chopped_cilantro:
+    amounts:
+    - amount: 0.5
+      unit: cup
+steps:
+- step: Preheat the oven to 400 degrees Fahrenheit.
+X-original-source: ../originals/PXL_20260523_110847736.RAW-01.COVER.JPG
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe is cut off; only the first instruction step is visible in the image.
+  - Sriracha amount listed as 1-2 tbsp; stored as null with note.
+  - Peanut sauce listed as a separate linked recipe not shown in this image.
+  - Oil type noted as avocado in the original text.

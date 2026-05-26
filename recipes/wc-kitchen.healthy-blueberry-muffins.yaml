@@ -1,0 +1,100 @@
+recipe_uuid: wc-kitchen.healthy-blueberry-muffins
+recipe_name: Healthy Blueberry Muffins
+source_url: null
+X-original-source: ../originals/PXL_20260523_111028599.RAW-01.COVER.JPG
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe attributed to Cookie and Kate (author noted on printed page)
+  - Handwritten annotations on the printed page modify the flour ingredient
+  - 'Handwritten note replaces printed flour with: 1/2 c almond flour + 1 1/4 c white
+    flour'
+  - Fine sea salt quantity has handwritten addition of '+ 1/8 tsp' modifying the printed
+    '1/2 teaspoon'
+  - Instructions are partially visible; steps 1-3 captured; remainder of instructions
+    cut off in image
+  - Scale selector shows 1x; yield is 12 muffins
+X-category: Muffin
+X-tags:
+- blueberry
+- healthy
+- whole wheat
+- baked
+X-dietary: []
+X-total_time: 35 minutes
+X-active_time: 13 minutes
+yields:
+- amount: 12
+  unit: muffins
+ingredients:
+- flour:
+    amounts:
+    - amount: 1.75
+      unit: cup
+    notes: 'Printed: 1 3/4 cups plus 1 teaspoon white whole wheat flour or regular
+      whole wheat flour. Handwritten substitution: 1/2 cup almond flour + 1 1/4 cup
+      white flour (replaces printed flour). Captured here as printed; see notes for
+      handwritten variant.
+
+      '
+- baking powder:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- baking soda:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+- fine sea salt:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+    notes: Handwritten annotation adds an additional 1/8 teaspoon (total ~5/8 tsp
+      per annotation)
+- ground cinnamon:
+    amounts:
+    - amount: 0.25
+      unit: teaspoon
+    notes: optional
+- melted coconut oil or extra-virgin olive oil:
+    amounts:
+    - amount: 0.333
+      unit: cup
+- honey or maple syrup:
+    amounts:
+    - amount: 0.5
+      unit: cup
+- eggs:
+    amounts:
+    - amount: 2
+      unit: whole
+    notes: preferably at room temperature
+- plain Greek yogurt:
+    amounts:
+    - amount: 1
+      unit: cup
+- vanilla extract:
+    amounts:
+    - amount: 2
+      unit: teaspoon
+- blueberries:
+    amounts:
+    - amount: 6
+      unit: oz
+    notes: fresh or frozen; approximately 1 cup
+- turbinado sugar:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+    notes: also called raw sugar; for sprinkling on top
+steps:
+- step: Preheat the oven to 400 degrees Fahrenheit. If necessary, grease all 12 cups
+    on your muffin tin with butter, coconut oil or cooking spray (my pan is non-stick
+    and doesn't require any grease).
+- step: In a large mixing bowl, combine 1 3/4 cups of the flour with the baking powder,
+    baking soda, salt and cinnamon. Mix them together with a whisk.
+- step: In a medium mixing bowl, combine the oil and honey or maple syrup and beat
+    together with a whisk. Add the eggs and beat well, then add the yogurt and vanilla.
+    Mix well. (If the coconut oil solidifies in contact with cold ingredients, gently
+    [instructions continue beyond visible area])
+- step: '[Remaining instructions not visible in image]'

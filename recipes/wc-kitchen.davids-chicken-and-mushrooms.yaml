@@ -25,7 +25,7 @@ ingredients:
 
   - flour:
       amounts:
-        - amount: 1
+        - amount: "~1+"
           unit: tablespoon
 
   - frozen peas and carrots:
@@ -40,6 +40,9 @@ steps:
   - step: Add peas, carrots, and mushrooms.
   - step: Bring to a boil, then simmer 10-15 minutes, stirring frequently.
   - step: Serve over rice, barley, or farro.
+
+notes:
+  - Serve over rice, barley, or farro.
 
 X-total_time: 30 minutes
 X-original-source: ../originals/PXL_20260523_105738510.RAW-01.COVER.jpg

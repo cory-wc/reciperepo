@@ -43,7 +43,7 @@ ingredients:
           unit: crusts
 
 steps:
-  - step: Preheat oven to 350.
+  - step: Preheat oven to 350°F.
   - step: Saute onions, bacon, and butter for 30 minutes. Allow to cool.
   - step: Mix eggs and parmesan in a large bowl. Add in onions and bacon. Stir to combine.
   - step: Pour mixture into pie crusts.

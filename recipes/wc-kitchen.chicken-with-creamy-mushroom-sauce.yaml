@@ -1,0 +1,108 @@
+recipe_uuid: wc-kitchen.chicken-with-creamy-mushroom-sauce
+recipe_name: Chicken with Creamy Mushroom Sauce
+X-original-source: ../originals/PXL_20260523_110206301.RAW-01.COVER.JPG
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe printed from a website, attributed to author Nagi
+  - Rated 4.98 from 209 votes
+  - Instructions appear to be cut off after step 8; image may not show full recipe
+  - Notes referenced in ingredients (Note 1, 2, 3, 4) are not visible in image
+X-category: Mains
+X-tags:
+- chicken
+- mushroom sauce
+- creamy sauce
+- western
+X-dietary: []
+X-active_time: 5 mins
+X-total_time: 20 mins
+X-nutrition:
+  calories: 571 kcal
+  servings: 4
+yields:
+- amount: 4
+  unit: servings
+ingredients:
+- name_group: CRISPY CHICKEN
+- chicken breasts, large, boneless skinless:
+    amounts:
+    - amount: 2
+      unit: piece
+    notes: ~600-700g / 1.2-1.4 lb total, see Note 1
+- salt:
+    amounts:
+    - amount: 0.5
+      unit: tsp
+- black pepper:
+    amounts: []
+    notes: to taste
+- flour:
+    amounts:
+    - amount: 0.25
+      unit: cup
+- unsalted butter:
+    amounts:
+    - amount: 15
+      unit: g
+    notes: approximately 1 tbsp
+- name_group: Mushroom Sauce
+- unsalted butter:
+    amounts:
+    - amount: 30
+      unit: g
+    notes: approximately 2 tbsp
+- mushrooms, sliced:
+    amounts:
+    - amount: 300
+      unit: g
+    notes: 10 oz, button or Swiss brown
+- garlic cloves, minced:
+    amounts:
+    - amount: 2
+      unit: clove
+- dry white wine:
+    amounts:
+    - amount: 0.25
+      unit: cup
+    notes: sub more chicken stock, see Note 2
+- chicken or vegetable stock, low sodium:
+    amounts:
+    - amount: 0.5
+      unit: cup
+- thickened/heavy cream, full fat:
+    amounts:
+    - amount: 1
+      unit: cup
+    notes: see Note 3
+- parmesan, finely and freshly grated:
+    amounts:
+    - amount: 0.5
+      unit: cup
+    notes: see Note 4
+- name_group: For Serving
+- chives, finely sliced:
+    amounts:
+    - amount: 2
+      unit: tbsp
+    notes: optional; sub parsley, green onions, or omit
+steps:
+- step: 'Split breast: Cut each breast in half horizontally to form 4 thin steaks
+    in total.'
+- step: 'Dust with flour: Sprinkle each side with salt and pepper, then sprinkle with
+    flour and use your fingers to spread it all over the surface.'
+- step: 'Cook chicken: Melt 15g butter in a large non-stick frying pan over medium
+    high heat. Add chicken and cook each side for 2 1/2 minutes until golden brown
+    and just cooked through. Remove from pan, cover and keep warm.'
+- step: 'Cook mushrooms: In the same frying pan, add remaining butter and increase
+    heat to high. Add mushrooms and cook for 4 minutes, until starting to turn golden
+    brown on the edges.'
+- step: 'Add garlic later: Then add garlic and a pinch of salt and pepper, and continue
+    cooking for another minute until both garlic and mushrooms are golden.'
+- step: 'Deglaze skillet: Add white wine — it will bubble and be steamy! Cook for
+    30 seconds, scraping the bottom of the pan, until wine is mostly evaporated and
+    the alcohol smell is gone.'
+- step: 'Make creamy sauce: Add chicken stock, cook vigorously for 1 minute so it
+    mostly evaporates. Then add cream, lower heat to medium and simmer for 2 minutes
+    until it reduces and thickens slightly.'
+- step: 'Add parmesan: Stir in parmesan, taste and add more salt and pepper if needed.'

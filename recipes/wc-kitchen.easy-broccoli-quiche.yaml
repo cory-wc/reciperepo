@@ -1,0 +1,140 @@
+recipe_uuid: wc-kitchen.easy-broccoli-quiche
+recipe_name: Easy Broccoli Quiche
+source_url: https://www.allrecipes.com/recipe/24148/easy-broccoli-quiche/
+X-original-source: ../originals/PXL_20260523_110657091.RAW-01.COVER.jpg
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe printed from allrecipes.com on 08/03/2020
+  - Handwritten alternate ingredient quantities noted on right side of page (labeled
+    "alt.")
+  - Handwritten optional fillings noted on right side of page
+  - Some text partially obscured by shadow in image
+X-category: quiche
+X-tags:
+- vegetarian
+- broccoli
+- quiche
+- easy
+X-active_time: 20 mins
+X-total_time: 50 mins
+prep_time: 20 mins
+cook_time: 30 mins
+yields:
+- amount: 6
+  unit: servings
+ingredients:
+- pie crust (9 inch, standard-type, prepared from recipe, unbaked):
+    amounts:
+    - amount: 1
+      unit: piece
+- butter, with salt:
+    amounts:
+    - amount: 3
+      unit: tablespoon
+- onions, raw:
+    amounts:
+    - amount: 1
+      unit: whole
+- garlic, raw:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- broccoli, raw:
+    amounts:
+    - amount: 2
+      unit: cup
+- cheese (mozzarella, part skim milk):
+    amounts:
+    - amount: 1.5
+      unit: cup
+- eggs, whole, raw, fresh:
+    amounts:
+    - amount: 4
+      unit: whole
+- milk (reduced fat, fluid, 2% milkfat, with added vitamin A):
+    amounts:
+    - amount: 1.5
+      unit: cup
+- salt, table:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- spices, pepper, black:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+- butter, with salt:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+X-handwritten-alt-ingredients:
+  notes: Handwritten alternate quantities found on page labeled "alt."
+  ingredients:
+  - pie crust:
+      amounts:
+      - amount: 1
+        unit: piece
+  - onion:
+      amounts:
+      - amount: 0.5
+        unit: whole
+  - salted butter:
+      amounts:
+      - amount: 3
+        unit: tablespoon
+  - diced fresh garlic:
+      amounts:
+      - amount: 1
+        unit: teaspoon
+  - broccoli, chopped and dried:
+      amounts:
+      - amount: 2
+        unit: cup
+  - Colby Jack cheese:
+      amounts:
+      - amount: 1
+        unit: cup
+  - parmesan:
+      amounts:
+      - amount: 0.5
+        unit: cup
+  - eggs:
+      amounts:
+      - amount: 8
+        unit: whole
+  - whole milk:
+      amounts:
+      - amount: 0.75
+        unit: cup
+  - Dijon mustard:
+      amounts:
+      - amount: 1
+        unit: tablespoon
+  - diced ham:
+      amounts:
+      - amount: 1
+        unit: cup
+  - tarragon:
+      amounts:
+      - amount: 1
+        unit: teaspoon
+  - pepper:
+      amounts:
+      - amount: 0.25
+        unit: teaspoon
+X-handwritten-optional-fillings:
+  notes: Handwritten optional fillings noted on page
+  items:
+  - zucchini (0.5 cup)
+  - handful sun-dried tomatoes
+  - spinach (0.25 portion, unit unclear)
+steps:
+- step: Preheat oven to 350 degrees F (175 degrees C). Line a 9-inch deep-dish pie
+    pan with crust.
+- step: Melt 2 tablespoons butter in a large saucepan over medium-low heat. Add onion,
+    garlic, and broccoli. Cook slowly, stirring occasionally, until vegetables are
+    soft. Spoon vegetables into crust and sprinkle with cheese.
+- step: Combine eggs and milk. Season with salt and pepper. Stir in remaining 1 tablespoon
+    melted butter. Pour egg mixture over vegetables and cheese.
+- step: Bake in preheated oven until center has set, 30 to 50 minutes.

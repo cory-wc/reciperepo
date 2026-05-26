@@ -1,0 +1,69 @@
+recipe_uuid: wc-kitchen.kashi-oatmeal-chocolate-chip-cookies
+recipe_name: Kashi Oatmeal Chocolate Chip Cookies
+X-original-source: ../originals/PXL_20260523_110642298.RAW-01.COVER.jpg
+X-total_time: ~45 minutes
+yields:
+- amount: 8
+  unit: cookies
+ingredients:
+- all purpose or whole wheat flour:
+    amounts:
+    - amount: 0.5
+      unit: cup
+    notes: all purpose or whole wheat flour
+- old fashioned oats:
+    amounts:
+    - amount: 1.5
+      unit: cup
+- brown sugar:
+    amounts:
+    - amount: 0.25
+      unit: cup
+- baking soda:
+    amounts:
+    - amount: 0.75
+      unit: tsp
+- honey, agave, or maple syrup:
+    amounts:
+    - amount: 0.25
+      unit: cup
+    notes: honey, agave, or maple syrup
+- coconut oil:
+    amounts:
+    - amount: 2
+      unit: tbsp
+- flax egg:
+    amounts:
+    - amount: 1
+      unit: whole
+    notes: 1 TBSP ground flax to 3 TBSP water
+- vanilla:
+    amounts:
+    - amount: 0.5
+      unit: tsp
+- milk:
+    amounts:
+    - amount: null
+      unit: null
+    notes: 1-2 TBSP as needed
+- dark chocolate chips:
+    amounts:
+    - amount: 0.25
+      unit: cup
+steps:
+- step: Preheat oven to 350°F.
+- step: Mix ingredients, starting with dry ingredients then wet. If needed, add milk
+    until dough sticks together.
+- step: Stir in chocolate chips.
+- step: Form cookies by rolling dough into balls, approximately 2 TBSP of dough per
+    cookie.
+- step: Bake for 10-15 minutes.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Ready time listed as ~45 minutes; bake time is 10-15 minutes, prep time not separately
+    specified.
+  - Flour quantity partially obscured in image; read as ½ C.
+  - Milk quantity listed as 1-2 TBSP as needed.
+  - Original recipe source field on document is blank.
+  - Flax egg ratio noted as 1 TBSP ground flax to 3 TBSP water.

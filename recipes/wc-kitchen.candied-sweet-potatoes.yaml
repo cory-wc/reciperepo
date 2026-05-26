@@ -1,0 +1,64 @@
+recipe_uuid: wc-kitchen.candied-sweet-potatoes
+recipe_name: Candied Sweet Potatoes
+ingredients:
+- sweet potatoes, peeled and cut into 1-inch chunks:
+    amounts:
+    - amount: 2
+      unit: pound
+    notes: printed value is 2 lbs; handwritten annotation appears to strike through
+      and write "2" — original may be 2 lbs
+- unsweetened apple cider:
+    amounts:
+    - amount: 2.5
+      unit: cup
+    notes: printed value is 2½ cups; handwritten annotation shows "1¼" struck through
+      — annotated quantity unclear, printed value used
+- dark brown sugar:
+    amounts:
+    - amount: 0.5
+      unit: cup
+    notes: printed value is ½ cup; handwritten annotation shows "¼" — annotated quantity
+      may override
+- unsalted butter:
+    amounts:
+    - amount: 1
+      unit: stick
+    notes: 1 stick = 8 tablespoons per recipe; handwritten annotation shows "½" —
+      annotated quantity may override; recipe body uses 6 tbsp in step 1 and 2 tbsp
+      in step 3
+- cinnamon stick:
+    amounts:
+    - amount: 1
+      unit: 2-inch piece
+    notes: printed value is 1 2-inch piece; handwritten annotation shows "1" with
+      possible strike-through of "2"
+steps:
+- step: In a large nonreactive saucepan, combine the potatoes, cider, brown sugar,
+    6 tablespoons of the butter and the cinnamon stick. Bring to a boil over moderate
+    heat. Reduce the heat to a simmer, partially cover and cook, stirring occasionally,
+    until the potatoes are very tender, about 45 minutes.
+- step: Let cool slightly, remove the cinnamon stick and pass the potatoes through
+    the medium disk of a food mill or puree in batches in a food processor. Transfer
+    to an ovenproof serving dish.
+- step: Preheat the oven to 325°. Dot the potatoes with the remaining 2 tablespoons
+    butter, cover with foil and bake, stirring once or twice, for about 20 minutes,
+    until steaming. Remove the foil and bake for 5 minutes longer.
+X-original-source: ../originals/PXL_20260523_110038901.RAW-01.COVER.jpg
+X-source-verification:
+  status: needs-review
+  notes:
+  - Several ingredients have handwritten annotations that appear to modify the printed
+    quantities (sweet potatoes, apple cider, dark brown sugar, butter, cinnamon stick).
+    It is unclear whether the handwritten values are corrections or scaling adjustments.
+  - Printed sweet potato quantity reads "2½ pounds" but handwritten annotation may
+    change it to "2 pounds".
+  - Printed apple cider quantity reads "2½ cups" but handwritten annotation appears
+    to show "1¼ cups".
+  - Printed dark brown sugar quantity reads "½ cup" but handwritten annotation appears
+    to show "¼ cup".
+  - Printed butter quantity reads "1 stick (8 tablespoons)" but handwritten annotation
+    appears to show "½ stick".
+  - Printed cinnamon stick reads "1 2-inch piece" but handwritten annotation is ambiguous.
+  - Recipe header notes "ADVERTISEMENT" suggesting this was clipped from a publication;
+    no source URL identified.
+  - No yield information provided in the recipe.

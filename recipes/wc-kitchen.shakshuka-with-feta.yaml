@@ -1,0 +1,75 @@
+recipe_uuid: wc-kitchen.shakshuka-with-feta
+recipe_name: Shakshuka With Feta
+author: Melissa Clark
+X-original-source: ../originals/PXL_20260523_110637947.RAW-01.COVER.jpg
+yields:
+- amount: 4
+  unit: servings
+- amount: 6
+  unit: servings
+X-total_time: 50 minutes
+ingredients:
+- extra-virgin olive oil:
+    amounts:
+    - amount: 3
+      unit: tablespoon
+- large onion, halved and thinly sliced:
+    amounts:
+    - amount: 1
+      unit: whole
+- large red bell pepper, seeded and thinly sliced:
+    amounts:
+    - amount: 1
+      unit: whole
+- garlic cloves, thinly sliced:
+    amounts:
+    - amount: 3
+      unit: whole
+- ground cumin:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- sweet paprika:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- ground cayenne, or to taste:
+    amounts:
+    - amount: 0.125
+      unit: teaspoon
+- whole plum tomatoes with their juices, coarsely chopped:
+    amounts:
+    - amount: 1
+      unit: 28-ounce can
+- kosher salt, plus more as needed:
+    amounts:
+    - amount: 0.75
+      unit: teaspoon
+- black pepper, plus more as needed:
+    amounts:
+    - amount: 0.25
+      unit: teaspoon
+- feta, crumbled:
+    amounts:
+    - amount: 5
+      unit: ounce
+    notes: about 1.25 cups
+steps:
+- step: Heat oven to 375 degrees. Heat oil in a large skillet over medium-low. Add
+    onion and bell pepper. Cook gently until very soft, about 20 minutes. Add garlic
+    and cook until tender, 1 to 2 minutes; stir in cumin, paprika and cayenne, and
+    cook 1 minute. Pour in tomatoes and season with 3/4 teaspoon salt and 1/4 teaspoon
+    pepper; simmer until tomatoes have thickened, about 10 minutes. Taste and add
+    more salt and pepper if needed. Stir in crumbled feta.
+- step: Gently crack eggs into skillet over tomatoes. Season eggs with salt and pepper.
+    Transfer skillet to oven and bake until eggs are just set, 7 to 10 minutes. Sprinkle
+    with cilantro and serve with hot sauce.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Egg quantity not visible in image; eggs are referenced in steps but not listed
+    in the visible ingredients section (image may be cut off).
+  - Cilantro and hot sauce mentioned in Step 2 but not visible in ingredients list;
+    image may be partially obscured.
+  - Cayenne listed as 1/8 teaspoon based on image reading of "1/8"; verify original.
+  - Rating shown as 4-5 stars with 15,289 reviews; likely sourced from NYT Cooking.

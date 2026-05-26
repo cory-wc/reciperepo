@@ -1,0 +1,90 @@
+recipe_uuid: wc-kitchen.perfect-pot-roast
+recipe_name: Perfect Pot Roast
+source_url: null
+X-original-source: ../originals/PXL_20260523_110959246.RAW-01.COVER.jpg
+X-author: Ree Drummond
+X-published: Aug 21, 2023
+X-category: Main Dishes
+X-tags:
+- pot roast
+- beef
+- comfort food
+X-prep_time: 20 mins
+X-cook_time: 4 hrs
+X-total_time: 4 hrs 20 mins
+description: Serve it with a big pile of mashed potatoes!
+yields:
+- amount: 10
+  unit: servings
+ingredients:
+- chuck roast:
+    amounts:
+    - amount: 4
+      unit: lb
+    - amount: 5
+      unit: lb
+    notes: whole chuck roast
+- kosher salt:
+    amounts: []
+    notes: to taste, plus more as needed
+- black pepper:
+    amounts: []
+    notes: to taste, plus more as needed
+- olive oil:
+    amounts:
+    - amount: 2
+      unit: tbsp
+    notes: or you can do half butter, half olive oil
+- whole onions:
+    amounts:
+    - amount: 2
+      unit: whole
+- whole carrots:
+    amounts:
+    - amount: 6
+      unit: whole
+    - amount: 8
+      unit: whole
+- red wine:
+    amounts:
+    - amount: 1
+      unit: cup
+    notes: optional; you can use beef broth instead
+- beef stock:
+    amounts:
+    - amount: 2
+      unit: cup
+    - amount: 3
+      unit: cup
+- fresh thyme:
+    amounts:
+    - amount: 3
+      unit: sprigs
+    notes: or more to taste
+- fresh rosemary:
+    amounts:
+    - amount: 3
+      unit: sprigs
+    notes: or more to taste
+steps:
+- step: First and foremost, choose a nicely marbled piece of meat. This will enhance
+    the flavor of your pot roast like nothing else. Generously salt and pepper your
+    chuck roast.
+- step: Preheat the oven to 275°F. Heat a large pot or Dutch oven over medium-high
+    heat. Then, add the olive oil (or you can do half butter, half olive oil).
+- step: Cut the onions in half and cut the carrots into 2-inch slices. When the oil
+    in the pot is very hot (but not smoking), add in the onions, browning them on
+    one side and then the other. Remove the onions to a plate.
+- step: Throw the carrots into the same very hot pan and toss them around a bit until
+    slightly browned.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Image is rotated; text was read accordingly.
+  - Steps 4 and beyond are partially cut off in the image; only the beginning of step
+    4 is visible.
+  - Olive oil amount listed as 2 tbsp in ingredients but notes indicate half butter/half
+    olive oil is optional.
+  - Red wine amount listed as 1 c. in ingredients.
+  - Beef stock listed as 2 to 3 c. in ingredients.
+  - Nutrition information referenced but not visible in image.

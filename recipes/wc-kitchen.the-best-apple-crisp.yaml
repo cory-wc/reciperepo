@@ -1,0 +1,103 @@
+recipe_uuid: wc-kitchen.the-best-apple-crisp
+recipe_name: The Best Apple Crisp
+source_url: https://belleofthekitchen.com/wprm_print/the_best_apple_crisp
+X-original-source: ../originals/PXL_20260523_110616006.RAW-01.COVER.jpg
+X-category: Dessert
+X-tags:
+- apple
+- crisp
+- fall
+X-cuisine: American
+X-author: Ashlyn Edwards | Belle of the Kitchen
+prep_time: 10
+cook_time: 45
+X-total_time: 55
+yields:
+- amount: 8
+  unit: serving
+X-nutrition:
+  calories: 253
+description: 'This Apple Crisp recipe is the best fall dessert ever! Fresh sliced
+  apples are topped with a buttery cinnamon oat topping that tastes divine with a
+  scoop of vanilla ice cream!
+
+  '
+ingredients:
+- filling:
+    amounts: []
+- fresh apples sliced:
+    amounts:
+    - amount: 5
+      unit: cup
+- granulated white sugar:
+    amounts:
+    - amount: 0.5
+      unit: cup
+- cinnamon:
+    amounts:
+    - amount: 2
+      unit: tsp
+- vanilla extract:
+    amounts:
+    - amount: 1
+      unit: tsp
+- topping:
+    amounts: []
+- all purpose flour:
+    amounts:
+    - amount: 0.5
+      unit: cup
+- old fashioned oats:
+    amounts:
+    - amount: 0.333
+      unit: cup
+- packed brown sugar:
+    amounts:
+    - amount: 0.667
+      unit: cup
+- salt:
+    amounts:
+    - amount: 0.25
+      unit: tsp
+- cinnamon:
+    amounts:
+    - amount: 0.5
+      unit: tsp
+- butter melted:
+    amounts:
+    - amount: 0.25
+      unit: cup
+    notes: 1/2 stick
+steps:
+- step: Preheat oven to 350 degrees. Grease a deep dish pie plate or large baking
+    dish with butter or cooking spray and set aside.
+- step: Combine the sliced apples with the sugar, cinnamon, and vanilla extract in
+    a large bowl and mix until all of the apples are evenly coated. Pour into the
+    prepared baking dish.
+- step: In a separate medium size bowl, combine the flour, oats, brown sugar, salt,
+    and cinnamon. Pour in the melted butter and stir until well coated and crumbly.
+    Sprinkle the crumb mixture evenly over the top of the apples.
+- step: Bake in the preheated oven for 45–60 minutes until fruit is soft and the topping
+    is golden brown. Allow to cool slightly before serving. Serve warm with vanilla
+    ice cream on top. Enjoy!
+notes:
+- Slice your apples evenly. Slice apples using a slicer to speed up the process and
+  remove the core easily. Then slice the apples one more time each with a knife so
+  that the widest part of the slice is roughly 1/2 an inch wide. You can also chop
+  them into big chunks if you prefer, but make sure they are a uniform size to ensure
+  even baking.
+- 'Prevent over-browning: If your topping is starting to get too brown but your apples
+  still need more time to cook, simply place some aluminum foil loosely over the top
+  of your pan and continue baking.'
+- 'Optional additions: Chopped nuts like pecans or walnuts would be a delicious addition
+  to the topping (omit if nut allergy).'
+- 'Serving: This apple crisp tastes AMAZING with a scoop of vanilla ice cream on top!
+  You could also top it with whipped cream and a drizzle of caramel sauce.'
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe extracted from printed page photographed at an angle; some text may be
+    imprecise.
+  - Topping cinnamon amount read as 1/2 teaspoon; verify against source URL.
+  - Oats amount read as 1/3 cup; verify against source URL.
+  - Brown sugar amount read as 2/3 cup; verify against source URL.

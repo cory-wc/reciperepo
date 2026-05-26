@@ -1,0 +1,72 @@
+recipe_uuid: wc-kitchen.instant-pot-applesauce
+recipe_name: Instant Pot Applesauce
+source_url: https://tastesbetterfromscratch.com/instant-pot-applesauce/
+X-original-source: ../originals/PXL_20260523_110045869.RAW-01.COVER.jpg
+X-category: Side Dish, Snack
+X-cuisine: American
+X-author: Lauren Allen
+X-servings: 8
+X-prep_time: 5 mins
+X-cook_time: 15 mins
+X-total_time: 20 mins
+X-nutrition:
+  calories: 58 kcal
+description: 'Delicious homemade applesauce just got easier, made in the instant pot
+  or slow cooker. This Instant Pot applesauce recipe has no added sugar and can be
+  made in just 15 minutes.
+
+  '
+ingredients:
+- granny_smith_apples:
+    amounts:
+    - amount: 4
+      unit: large
+    preparation: peeled, cored and roughly chopped
+    notes: or Golden Delicious apples
+- honeycrisp_apples:
+    amounts:
+    - amount: 4
+      unit: large
+    preparation: peeled, cored and roughly chopped
+- water:
+    amounts:
+    - amount: 1
+      unit: cup
+- fresh_lemon_juice:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+    notes: from about 1/2 a lemon
+- ground_cinnamon:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+steps:
+- step: Peel and core apples. Use a johnny apple peeler to do all three steps at once
+    (peel, spice and core).
+- step: Add water, lemon juice and cinnamon to instant pot and stir to combine. Add
+    apples and toss to mix.
+- step: Secure lid and cook on manual (high pressure) for 8 minutes. Do a controlled
+    quick release or allow the pressure to naturally release.
+- step: Mash the apple mixture a few times with a potato masher, if desired. If you
+    like a smoother texture you could pulse it in the blender.
+- step: Transfer contents to a bowl and allow to cool completely. Stir in more cinnamon,
+    if desired, to taste.
+- step: Enjoy warm or cold. Store in the fridge for up to 7-10 days.
+yields:
+- amount: 5
+  unit: cup
+  notes: makes about 5-6 cups applesauce
+- amount: 6
+  unit: cup
+  notes: makes about 5-6 cups applesauce
+notes:
+- Makes about 5-6 cups applesauce.
+- Directions for making applesauce in the slow cooker are detailed in the original
+  post.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Printed page dated 4/20/2019 from tastesbetterfromscratch.com
+  - Page marked 1/2 indicating a second page may exist with additional content
+  - Rating shown as 4.92 from 12 votes at time of printing

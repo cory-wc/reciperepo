@@ -1,0 +1,114 @@
+recipe_uuid: wc-kitchen.ground-turkey-and-potato-skillet
+recipe_name: Ground Turkey & Potato Skillet
+description: Wondering what to make tonight? Quickly throw together this hearty one
+  pot meal of turkey and potatoes! Serve over roasted veggies, traditional rice, or
+  cauliflower rice for a healthy and satisfying dinner.
+yields:
+- amount: 4
+  unit: people
+X-prep_time: 5 mins
+X-cook_time: 20 mins
+X-total_time: 25 mins
+ingredients:
+- lean ground turkey:
+    amounts:
+    - amount: 1
+      unit: lb
+    notes: 93/7 lean. Can substitute ground beef.
+- salt:
+    amounts:
+    - amount: 1
+      unit: tsp
+    notes: for ground turkey
+- black pepper:
+    amounts:
+    - amount: 0.5
+      unit: tsp
+    notes: for ground turkey
+- garlic powder:
+    amounts:
+    - amount: 0.5
+      unit: tsp
+    notes: for ground turkey
+- chili powder:
+    amounts:
+    - amount: 0.5
+      unit: tsp
+    notes: for ground turkey
+- dried oregano:
+    amounts:
+    - amount: 0.5
+      unit: tsp
+    notes: for ground turkey
+- olive or avocado oil:
+    amounts:
+    - amount: 2
+      unit: tbsp
+- diced potatoes:
+    amounts:
+    - amount: 4
+      unit: cup
+    notes: Yellow or gold preferred; russet, sweet, or red also work.
+- canned tomato sauce:
+    amounts:
+    - amount: 8
+      unit: oz
+- water:
+    amounts:
+    - amount: 0.5
+      unit: cup
+- garlic, minced:
+    amounts:
+    - amount: 2
+      unit: tsp
+- dried oregano:
+    amounts:
+    - amount: 1
+      unit: tsp
+    notes: for potatoes
+- dried basil:
+    amounts:
+    - amount: 1
+      unit: tsp
+- dried parsley:
+    amounts:
+    - amount: 0.5
+      unit: tsp
+- salt:
+    amounts:
+    - amount: 0.5
+      unit: tsp
+    notes: for potatoes
+- black pepper:
+    amounts:
+    - amount: 0.5
+      unit: tsp
+    notes: for potatoes
+- onion powder:
+    amounts:
+    - amount: 0.5
+      unit: tsp
+steps:
+- step: Add your ground turkey (or beef) to a skillet on the stovetop. Use your spatula
+    to crumble the meat. Cook on medium high, stirring occasionally, until browned.
+    Stir in salt, pepper, garlic powder, chili powder, and oregano. Remove from pan
+    and set aside.
+- step: Add the oil to the skillet. Once the oil is hot, add the diced potatoes. Sauté
+    on medium high heat, stirring occasionally until sides of potatoes have browned.
+    This can take 5 to 10 minutes depending on your stove and potatoes. (Instructions
+    cut off in image — remainder not visible.)
+X-original-source: ../originals/PXL_20260523_110311047.RAW-01.COVER.jpg
+X-category: main dish
+X-tags:
+- one pot
+- skillet
+- ground turkey
+- potatoes
+- weeknight dinner
+X-source-verification:
+  status: needs-review
+  notes:
+  - Instructions are cut off at step 2; the remainder of the recipe is not visible
+    in the image.
+  - Date printed on page appears to be 6/23/2021.
+  - Recipe rated 5 stars from 17 votes as shown on printed page.

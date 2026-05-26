@@ -1,0 +1,81 @@
+recipe_uuid: wc-kitchen.slow-cooked-southwest-chicken
+recipe_name: Slow-Cooked Southwest Chicken
+source_url: https://www.tasteofhome.com
+X-original-source: ../originals/PXL_20260523_105943630.RAW-01.COVER.JPG
+X-total_time: 3 hours 15 minutes
+X-active_time: 15 minutes
+X-category: main dish
+X-tags:
+- slow cooker
+- chicken
+- southwest
+- low-fat
+yields:
+- amount: 6
+  unit: servings
+ingredients:
+- black beans, rinsed and drained:
+    amounts:
+    - amount: 2
+      unit: can (15 oz each)
+- reduced-sodium chicken broth:
+    amounts:
+    - amount: 1
+      unit: can (14.5 oz)
+- diced tomatoes with mild green chiles, undrained:
+    amounts:
+    - amount: 1
+      unit: can (14.5 oz)
+- boneless skinless chicken breast:
+    amounts:
+    - amount: 0.5
+      unit: pound
+- chunky salsa:
+    amounts:
+    - amount: 1
+      unit: jar (8 oz)
+- frozen corn:
+    amounts:
+    - amount: 1
+      unit: cup
+- dried parsley flakes:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- ground cumin:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- pepper:
+    amounts:
+    - amount: 0.25
+      unit: teaspoon
+- hot cooked rice:
+    amounts:
+    - amount: 3
+      unit: cup
+- lime wedges:
+    amounts:
+    - amount: null
+      unit: null
+    notes: optional garnish
+- fresh cilantro leaves:
+    amounts:
+    - amount: null
+      unit: null
+    notes: optional garnish
+steps:
+- step: In a 2- or 3-qt. slow cooker, combine the beans, broth, tomatoes, chicken,
+    salsa, corn and seasonings. Cover and cook on low 3-4 hours or until a thermometer
+    inserted in chicken reads 165°.
+- step: Serve over hot cooked rice. Garnish with lime wedges and fresh cilantro leaves
+    if desired.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Step 2 (serving over rice) is implied from the ingredients list; the directions
+    text is partially obscured by shadow but step 1 is legible.
+  - Source attributed to Taste of Home, submitted by Brandi Castillo, Santa Maria,
+    California.
+  - Cook time listed as 3 hours on card but directions state 3-4 hours; flagged for
+    review.

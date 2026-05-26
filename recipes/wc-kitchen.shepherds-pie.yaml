@@ -78,8 +78,8 @@ ingredients:
 
   - Worcestershire sauce:
       amounts:
-        - amount: "to taste"
-          unit: ""
+        - amount: "1-2"
+          unit: teaspoons
 
   - potatoes:
       amounts:
@@ -109,7 +109,7 @@ steps:
   - step: Preheat oven to 400.
   - step: Boil potatoes. Drain. Mash with butter, egg, grated cheese, salt, and pepper to taste.
   - step: While potatoes are boiling, brown meat and mushrooms together.
-  - step: Cook carrots, onions, celery, and garlic in fat from meat. When tomatoes are soft, add tomato paste, rosemary, thyme, and several dashes of Worcestershire sauce.
+  - step: Cook carrots, onions, celery, and garlic in fat from meat. When vegetables are soft, add tomato paste, rosemary, thyme, and several dashes of Worcestershire sauce.
   - step: Deglaze pan with beer and reduce. Add the chicken stock. When thick, remove the filling and add to a casserole dish.
   - step: Assemble by spreading potatoes on top of filling, making sure to seal the sides. Texture the top with a fork to help it crisp. Add a sprinkling of cheese over top.
   - step: Bake 10-15 minutes until cheese is melted and top is crispy.
@@ -122,4 +122,4 @@ X-nutrition:
   fiber: 8 g
 X-handwritten-notes: "Potato amount changed from 25oz to 60oz; butter changed to 5¼ tbsp; cheese changed from ½C to ¾C; egg annotation shows 2¼ (interpreted as 2 eggs)."
 X-original-source: ../originals/PXL_20260523_105805605.RAW-01.COVER.jpg
-X-flags: [egg-amount-annotation-unclear, worcestershire-amount-unspecified]
+X-flags: []

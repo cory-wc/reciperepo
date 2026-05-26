@@ -1,0 +1,84 @@
+recipe_uuid: wc-kitchen.taco-salad
+recipe_name: Taco Salad
+source_url: https://www.eatingwell.com
+X-original-source: ../originals/PXL_20260523_110118658.RAW-01.COVER.JPG
+yields:
+- amount: 4
+  unit: servings
+X-total_time: ~25 minutes
+ingredients:
+- ground beef or turkey:
+    amounts:
+    - amount: 1
+      unit: lb
+    notes: ground beef or turkey
+- salsa:
+    amounts:
+    - amount: 0.5
+      unit: cup
+- sour cream:
+    amounts:
+    - amount: 0.25
+      unit: cup
+- oil:
+    amounts:
+    - amount: 1
+      unit: tsp
+- onion:
+    amounts:
+    - amount: 1
+      unit: medium
+    notes: chopped
+- garlic:
+    amounts:
+    - amount: 3
+      unit: cloves
+    notes: minced
+- plum tomatoes:
+    amounts:
+    - amount: 2
+      unit: whole
+    notes: chopped
+- kidney or black beans:
+    amounts:
+    - amount: 1
+      unit: can
+    notes: kidney or black beans
+- cumin:
+    amounts:
+    - amount: 2
+      unit: tsp
+- chili powder:
+    amounts:
+    - amount: 2
+      unit: tsp
+- fresh cilantro:
+    amounts:
+    - amount: 0.25
+      unit: cup
+    notes: chopped
+- romaine lettuce:
+    amounts:
+    - amount: 8
+      unit: cup
+    notes: shredded
+- shredded cheese:
+    amounts:
+    - amount: 0.5
+      unit: cup
+steps:
+- step: Combine salsa and sour cream in a large salad bowl.
+- step: Heat oil in a skillet over medium heat. Saute onion and garlic until soft.
+    Add meat and cook, stirring often, until cooked through.
+- step: Add tomatoes, beans, cumin, and chili powder to the skillet. Cook for 2-3
+    minutes, until the tomatoes start to break down.
+- step: Remove from heat. Stir in cilantro and 1/4 C of the salsa mixture.
+- step: In the large bowl, toss lettuce with the remaining salsa mixture.
+- step: Serve lettuce topped with the meat and sprinkled with cheese.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe transcribed from photograph of a printed binder page.
+  - Original recipe attributed to Eatingwell.com per printed note at bottom of page.
+  - Fraction characters in image interpreted as follows: ½=0.5, ¼=0.25.
+  - Notes section in image appears blank.

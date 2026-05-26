@@ -1,0 +1,60 @@
+recipe_uuid: wc-kitchen.glazed-carrots
+recipe_name: Glazed Carrots
+description: Simple dish with tender carrots with a buttery glaze and a mild sweetness.
+author: Tricia McTamaney
+X-original-source: ../originals/PXL_20260523_110040623.RAW-01.COVER.jpg
+X-active_time:
+  amount: 10
+  unit: minutes
+X-cook_time:
+  amount: 15
+  unit: minutes
+X-total_time:
+  amount: 25
+  unit: minutes
+yields:
+- amount: 8
+  unit: servings
+ingredients:
+- carrots:
+    amounts:
+    - amount: 2
+      unit: pounds
+    preparation: peeled and cut into sticks
+- butter:
+    amounts:
+    - amount: 0.25
+      unit: cup
+- brown sugar:
+    amounts:
+    - amount: 0.25
+      unit: cup
+    preparation: packed
+- salt:
+    amounts:
+    - amount: 0.25
+      unit: teaspoon
+- ground white pepper:
+    amounts:
+    - amount: 0.125
+      unit: teaspoon
+steps:
+- step: Place carrots into a large saucepan, pour in enough water to reach depth of
+    1 inch, and bring to a boil. Reduce heat to low, cover, and simmer carrots until
+    tender, 8 to 10 minutes. Drain and transfer to a bowl.
+- step: Melt butter in the same saucepan; stir brown sugar, salt, and white pepper
+    into butter until brown sugar and salt have dissolved. Transfer carrots into brown
+    sugar sauce; cook and stir until carrots are glazed with sauce, about 5 more minutes.
+X-category: Salads
+X-tags:
+- carrots
+- glazed
+- side dish
+- vegetable
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe transcribed from printed page photographed in a binder
+  - The 1/8 teaspoon ground white pepper quantity was read from small print and may
+    need verification
+  - Author name read as Tricia McTamaney but small print may be slightly different

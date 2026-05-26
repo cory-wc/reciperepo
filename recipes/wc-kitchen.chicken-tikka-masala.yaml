@@ -42,11 +42,6 @@ ingredients:
         - amount: 1
           unit: can
 
-  - brown rice:
-      amounts:
-        - amount: 1
-          unit: serving
-
 steps:
   - step: Prepare rice according to package directions.
   - step: Heat oil in skillet. Add onion and bell pepper. Cook until onion is translucent.
@@ -54,6 +49,9 @@ steps:
   - step: Mix in diced tomatoes and tikka masala sauce. Cook on low to reduce liquid.
   - step: Serve with rice.
 
+notes:
+  - Serve with rice.
+
 X-active_time: 45 minutes
 X-original-source: ../originals/PXL_20260523_105800555.RAW-01.COVER.jpg
-X-flags: [rice-amount-unspecified]
+X-flags: []

@@ -1,0 +1,63 @@
+recipe_uuid: wc-kitchen.honey-lemon-vinaigrette
+recipe_name: Honey Lemon Vinaigrette
+description: This Honey Lemon Vinaigrette dressing is so simple to make and adds a
+  lovely burst of flavor to any salad or dish!
+yields:
+- amount: 1
+  unit: cup
+ingredients:
+- fresh lemon juice:
+    amounts:
+    - amount: 0.25
+      unit: cup
+- fresh lemon zest:
+    amounts:
+    - amount: 0.5
+      unit: tsp
+- honey:
+    amounts:
+    - amount: 2
+      unit: tbsp
+- white vinegar:
+    amounts:
+    - amount: 1
+      unit: tbsp
+- dijon mustard:
+    amounts:
+    - amount: 1
+      unit: tbsp
+- extra virgin olive oil:
+    amounts:
+    - amount: 0.5
+      unit: cup
+- salt and pepper:
+    amounts:
+    - amount: 1
+      unit: pinch
+    notes: to taste
+steps:
+- step: Add all ingredients to a 16 oz mason jar with lid.
+- step: Screw the lid on tight and shake vigorously for a minute or two until emulsified
+    and creamy.
+- step: Taste and add additional salt & pepper if necessary.
+- step: Store in an airtight container in the fridge for one week.
+X-original-source: ../originals/PXL_20260523_110704871.RAW-01.COVER.jpg
+X-category: Condiment, Salad
+X-cuisine: American
+X-total_time: 5 minutes
+X-active_time: 5 minutes
+X-tags:
+- vinaigrette
+- dressing
+- lemon
+- honey
+- quick
+X-equipment:
+- mason jar with lid
+- measuring cups and spoons
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe extracted from printed page photograph; some text may be partially obscured
+    by shadow.
+  - Rating shown as 4.92 from 105 votes.

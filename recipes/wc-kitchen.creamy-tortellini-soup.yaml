@@ -1,0 +1,100 @@
+recipe_uuid: wc-kitchen.creamy-tortellini-soup
+recipe_name: Creamy Tortellini Soup
+description: My favorite cozy weeknight soup made in just 30 min! It's so stinking
+  easy too. Loaded with tender tortellini, sausage and kale!
+yields:
+- amount: 4
+  unit: serving
+- amount: 6
+  unit: serving
+source_url: https://damndelicious.net/2019/01/30/creamy-tortellini-soup/
+X-original-source: ../originals/PXL_20260523_110529376.RAW-01.COVER.jpg
+X-active_time: 15 minutes
+X-total_time: 30 minutes
+X-category: soup
+X-tags:
+- weeknight
+- tortellini
+- sausage
+- kale
+- creamy
+ingredients:
+- olive oil:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- Italian sausage, casing removed:
+    amounts:
+    - amount: 1
+      unit: pound
+- garlic, minced:
+    amounts:
+    - amount: 3
+      unit: clove
+- sweet onion, diced:
+    amounts:
+    - amount: 1
+      unit: medium
+- Italian seasoning:
+    amounts:
+    - amount: 2
+      unit: teaspoon
+- kosher salt:
+    amounts:
+    - amount: null
+      unit: to taste
+- freshly ground black pepper:
+    amounts:
+    - amount: null
+      unit: to taste
+- all-purpose flour:
+    amounts:
+    - amount: 2
+      unit: tablespoon
+- chicken stock:
+    amounts:
+    - amount: 4
+      unit: cup
+- tomato sauce:
+    amounts:
+    - amount: 8
+      unit: ounce
+    notes: 1 can
+- refrigerated three cheese tortellini:
+    amounts:
+    - amount: 9
+      unit: ounce
+    notes: 1 package
+- kale, stems removed and leaves chopped:
+    amounts:
+    - amount: 0.5
+      unit: bunch
+- heavy cream:
+    amounts:
+    - amount: 0.333
+      unit: cup
+- fresh basil, chopped:
+    amounts:
+    - amount: 3
+      unit: tablespoon
+steps:
+- step: Heat olive oil in a large stockpot or Dutch oven over medium heat. Add Italian
+    sausage and cook until browned, about 3-5 minutes, making sure to crumble the
+    sausage as it cooks; drain excess fat.
+- step: Stir in garlic, onion and Italian seasoning. Cook, stirring frequently, until
+    onions have become translucent, about 2-3 minutes; season with salt and pepper,
+    to taste.
+- step: Whisk in flour until lightly browned, about 1 minute.
+- step: Gradually whisk in chicken stock and tomato sauce. Bring to a boil; reduce
+    heat and simmer, stirring occasionally, until reduced and slightly thickened,
+    about 10 minutes.
+- step: Stir in tortellini; cover and cook until tender, about 5-7 minutes.
+- step: Stir in kale until wilted, about 1-2 minutes. Stir in heavy cream and basil
+    until heated through, about 1 minute; season with salt and pepper, to taste.
+- step: Serve immediately.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe printed from damndelicious.net on 3/6/21; print URL visible in footer.
+  - Yield given as range 4-6 servings; both values recorded.
+  - Prep time 15 minutes and cook time 15 minutes visible in header.
