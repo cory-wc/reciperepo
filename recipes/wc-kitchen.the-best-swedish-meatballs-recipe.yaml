@@ -1,166 +1,149 @@
 recipe_uuid: wc-kitchen.the-best-swedish-meatballs-recipe
 recipe_name: The Best Swedish Meatballs Recipe
-author: Karina
-X-original-source: ../originals/PXL_20260523_110403439.RAW-01.COVER.JPG
+X-original-source: ../originals/PXL_20260523_110403439.RAW-01.COVER.jpg
+X-prep_time: 20 minutes
+X-cook_time: 10 minutes
+X-total_time: 30 minutes
 X-category: Dinner
 X-tags:
-- Swedish Meatball Recipe
-- Swedish Meatballs
-X-dietary: []
-X-prep_time: 20 mins
-X-cook_time: 10 mins
-X-total_time: 30 mins
-X-nutrition:
-  calories: 484 kcal
+- swedish meatballs
+- gravy
+source_authors:
+- Karina
+
 yields:
 - amount: 8
-  unit: people
+  unit: servings
+
 ingredients:
+- name_group: Meatballs
 - breadcrumbs:
     amounts:
-    - amount: 0.5
-      unit: cup
-    X-group: Meatballs
+    - amount: "1/2"
+      unit: cups
 - milk:
     amounts:
-    - amount: 0.5
-      unit: cup
-    X-note: 125ml
-    X-group: Meatballs
+    - amount: "1/2"
+      unit: cups
+    notes: 125 mL
 - cream:
     amounts:
     - amount: 35
-      unit: ml
-    X-group: Meatballs
+      unit: mL
+    notes: optional
 - egg:
     amounts:
     - amount: 1
-      unit: large
-    X-group: Meatballs
+      unit: whole
+    notes: large
 - garlic:
     amounts:
     - amount: 1
-      unit: clove
-    X-note: minced
-    X-group: Meatballs
+      unit: cloves
+    processing:
+    - minced
 - salt:
     amounts:
-    - amount: 0.333
-      unit: teaspoon
-    X-group: Meatballs
+    - amount: "1/3"
+      unit: teaspoons
 - black pepper:
     amounts:
-    - amount: 0.25
-      unit: teaspoon
-    X-note: ground
-    X-group: Meatballs
+    - amount: "1/4"
+      unit: teaspoons
 - white pepper:
     amounts:
-    - amount: 0.25
-      unit: teaspoon
-    X-note: ground
-    X-group: Meatballs
+    - amount: "1/4"
+      unit: teaspoons
 - Grillkrydda:
     amounts:
-    - amount: 0.25
-      unit: teaspoon
-    X-note: OR all spice OR all purpose seasoning
-    X-group: Meatballs
+    - amount: "1/4"
+      unit: teaspoons
+    notes: or allspice or all-purpose seasoning
 - onion:
     amounts:
-    - amount: 0.5
+    - amount: "1/2"
       unit: whole
-    X-note: finely chopped
-    X-group: Meatballs
+    processing:
+    - finely chopped
 - ground beef:
     amounts:
     - amount: 1
-      unit: pound
-    X-note: 500g, mince
-    X-group: Meatballs
+      unit: lbs
+    notes: 500g
 - ground pork:
     amounts:
-    - amount: 0.5
-      unit: pound
-    X-note: 250g, mince
-    X-group: Meatballs
-- fresh parsley:
+    - amount: "1/2"
+      unit: lbs
+    notes: 250g
+- parsley:
     amounts:
     - amount: 2
-      unit: tablespoon
-    X-note: finely chopped
-    X-group: Meatballs
-- butter:
+      unit: tablespoons
+    notes: fresh
+    processing:
+    - finely chopped
+- butter (meatballs):
     amounts:
     - amount: 1
-      unit: tablespoon
-    X-group: Meatballs
+      unit: tablespoons
 - olive oil:
     amounts:
     - amount: 2
-      unit: teaspoon
-    X-group: Meatballs
-- butter:
+      unit: teaspoons
+- name_group: Gravy Sauce
+- butter (gravy):
     amounts:
-    - amount: 0.333
-      unit: cup
-    X-group: Gravy Sauce (OPTIONAL)
-- plain all purpose flour:
+    - amount: "1/3"
+      unit: cups
+- all-purpose flour:
     amounts:
-    - amount: 0.25
-      unit: cup
-    X-group: Gravy Sauce (OPTIONAL)
+    - amount: "1/4"
+      unit: cups
 - vegetable broth:
     amounts:
-    - amount: 250
-      unit: ml
-    X-note: 1 cup, or stock
-    X-group: Gravy Sauce (OPTIONAL)
+    - amount: 1
+      unit: cups
+    notes: 250 mL; or stock
 - beef broth:
     amounts:
-    - amount: 250
-      unit: ml
-    X-note: 1 cup, or stock
-    X-group: Gravy Sauce (OPTIONAL)
-- thickened cream:
+    - amount: 1
+      unit: cups
+    notes: 250 mL; or stock
+- heavy cream:
     amounts:
     - amount: 1
-      unit: cup
-    X-note: or heavy cream
-    X-group: Gravy Sauce (OPTIONAL)
+      unit: cups
+    notes: or thickened cream
 - soy sauce:
     amounts:
     - amount: 2
-      unit: teaspoon
-    X-note: regular
-    X-group: Gravy Sauce (OPTIONAL)
+      unit: teaspoons
 - dijon mustard:
     amounts:
     - amount: 1
-      unit: teaspoon
-    X-group: Gravy Sauce (OPTIONAL)
-- salt and pepper:
-    amounts: []
-    X-note: to season
-    X-group: Gravy Sauce (OPTIONAL)
+      unit: teaspoons
+
 steps:
 - step: In a large bowl, mix the breadcrumbs together with the milk, cream (if using),
     egg, garlic, salt, peppers and spice. Allow the milk to soak into the breadcrumbs
     for at least 10 minutes.
-- step: Once the milk has absorbed some, add in the onion, meat(s) and parsley. Mix
-    well with your hands to combine.
-- step: Roll meat into about 24 small balls, or 15 larger balls.
+- step: Once the milk has absorbed, add in the onion, meat(s) and parsley. Mix well
+    with your hands to combine.
+- step: Roll meat into about 24 small balls or 15 larger balls.
 - step: Heat 1 tablespoon of butter and 2 teaspoons of oil in a pan on medium-high
-    heat. Fry meatballs in batches of two so they don't stew or simmer. Transfer to
-    a warm plate and cover with foil.
+    heat. Fry meatballs in batches so they don't stew or simmer. Transfer to a warm
+    plate and cover with foil.
 - step: Add the 1/3 cup butter to the juices in the pan to melt. Whisk in the flour
-    until it dissolves and turns brown in colour. Pour in the broth (or stock), cream,
-    soy sauce and dijon. Bring to a simmer and season with salt and pepper to taste.
-    Mix the sauce through well to combine all of the flavours together.
+    until it dissolves and turns brown. Pour in the broth, cream, soy sauce and dijon.
+    Bring to a simmer and season with salt and pepper to taste.
 - step: Continue to simmer until thickened.
-- step: 'To serve — Non Swedish way: Place meatballs into the gravy in the pan and
-    serve. Traditional Swedish way: Do not make the cream sauce at all. Serve meatballs
-    over plain or stewed macaroni, plain or mashed potatoes, and lingenberry jam (optional).'
+- step: 'To serve — non-Swedish: place meatballs into the gravy in the pan and serve.
+    Traditional Swedish: do not make the cream sauce. Serve meatballs over plain or
+    stewed macaroni, plain or mashed potatoes, and lingonberry jam (optional).'
+
+X-nutrition:
+  calories: 484 kcal
+
 X-source-verification:
   status: needs-review
   notes:

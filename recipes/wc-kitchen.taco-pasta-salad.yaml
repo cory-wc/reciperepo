@@ -1,53 +1,70 @@
 recipe_uuid: wc-kitchen.taco-pasta-salad
 recipe_name: Taco Pasta Salad
+X-original-source: ../originals/PXL_20260523_105925706.RAW-01.COVER.jpg
+X-active_time: 20 minutes
+X-total_time: 50 minutes
+X-category: Salad
+X-tags:
+- pasta
+- taco
+- cold
+- make-ahead
+
 yields:
 - amount: 6
   unit: servings
+
 ingredients:
-- pasta shells, medium:
+- pasta shells:
     amounts:
     - amount: 0.5
-      unit: lb
-- black beans, rinsed:
+      unit: lbs
+    notes: medium
+- black beans:
     amounts:
     - amount: 1
-      unit: can
+      unit: cans
+    processing:
+    - rinsed
 - corn kernels:
     amounts:
     - amount: 1
-      unit: cup
-- tomato, chopped:
+      unit: cups
+- tomato:
     amounts:
     - amount: 1
       unit: whole
+    processing:
+    - chopped
 - salsa:
     amounts:
     - amount: 0.5
-      unit: cup
+      unit: cups
 - olive oil:
     amounts:
     - amount: 2
-      unit: tbsp
+      unit: tablespoons
 - lime juice:
     amounts:
     - amount: 1
-      unit: tbsp
+      unit: tablespoons
 - taco seasoning:
     amounts:
     - amount: 1
-      unit: tbsp
-- garlic clove:
+      unit: tablespoons
+- garlic:
     amounts:
     - amount: 1
-      unit: whole
+      unit: cloves
 - shredded cheese:
     amounts:
     - amount: 1
-      unit: cup
+      unit: cups
 - avocado:
     amounts:
     - amount: 1
       unit: whole
+
 steps:
 - step: Prepare pasta. Do not use salt in the pasta water.
 - step: In a large bowl, mix pasta, black beans, corn, tomato, and salsa.
@@ -55,15 +72,7 @@ steps:
 - step: Toss liquid with pasta mixture.
 - step: Place bowl in fridge to cool for at least 30 minutes.
 - step: Serve topped with shredded cheese and sliced avocado.
-X-active_time: 20 minutes
-X-total_time: 50 minutes
-X-category: salad
-X-tags:
-- pasta
-- taco
-- cold
-- make-ahead
-X-original-source: ../originals/PXL_20260523_105925706.RAW-01.COVER.jpg
+
 X-source-verification:
   status: needs-review
   notes:
