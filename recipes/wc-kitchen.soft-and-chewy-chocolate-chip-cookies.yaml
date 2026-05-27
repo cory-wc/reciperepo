@@ -1,47 +1,56 @@
 recipe_uuid: wc-kitchen.soft-and-chewy-chocolate-chip-cookies
 recipe_name: Soft and Chewy Chocolate Chip Cookies
+source_url: https://bakerbettie.com/wp-json/mv-create/v1/creations/181/print
+X-original-source: ../originals/PXL_20260523_110854841.RAW-01.COVER.jpg
 description: This recipe creates cookies that stay perfectly soft and gooey even after
   cooled!
+X-active_time: 15 minutes
+X-total_time: 27 minutes
+X-category: Dessert
+X-tags:
+- cookies
+- chocolate chip
+- baking
+
 yields:
 - amount: 24
   unit: cookies
-X-active_time: 15 minutes
-X-total_time: 27 minutes
+
 ingredients:
 - brown sugar:
     amounts:
     - amount: 1.5
-      unit: cup
-    notes: 12 oz, 336 gr, preferably dark brown
+      unit: cups
+    notes: 12 oz, 336 gr; preferably dark brown
 - unsalted butter:
     amounts:
     - amount: 2
-      unit: stick
-    notes: 8 oz, 227 gr, room temp
+      unit: sticks
+    notes: 8 oz, 227 gr; room temperature
 - eggs:
     amounts:
     - amount: 2
-      unit: large
-    notes: 3.6 oz, 102 gr, room temp
+      unit: whole
+    notes: large; 3.6 oz, 102 gr; room temperature
 - vanilla:
     amounts:
     - amount: 1
-      unit: tbsp
+      unit: tablespoons
     notes: 0.5 oz, 14 gr
 - baking soda:
     amounts:
     - amount: 1
-      unit: tsp
+      unit: teaspoons
     notes: 7 gr
 - kosher salt:
     amounts:
     - amount: 1
-      unit: tsp
+      unit: teaspoons
     notes: 5 gr
 - all-purpose flour:
     amounts:
     - amount: 2.25
-      unit: cup
+      unit: cups
     notes: 11.25 oz, 318 gr
 - chocolate chips:
     amounts:
@@ -59,17 +68,11 @@ steps:
 - step: Slowly add the flour mixture to the butter mixture, scraping the sides of
     the bowl until thoroughly combined. Mix on medium speed for about 30 seconds more.
 - step: Stir in the chocolate chips.
-- step: Scoop large mounds of dough (about 3 TBSP each) onto baking sheets lined with
+- step: Scoop large mounds of dough (about 3 tablespoons each) onto baking sheets lined with
     parchment paper or a silpat. It is best to only scoop about 9 cookies per sheet
     to allow enough room for spreading.
 - step: Bake for 12 minutes.
-source_url: https://bakerbettie.com/wp-json/mv-create/v1/creations/181/print
-X-original-source: ../originals/PXL_20260523_110854841.RAW-01.COVER.jpg
-X-category: dessert
-X-tags:
-- cookies
-- chocolate chip
-- baking
+
 X-source-verification:
   status: needs-review
   notes:

@@ -1,42 +1,52 @@
 recipe_uuid: wc-kitchen.rice-pilaf
 recipe_name: Rice Pilaf
+X-original-source: ../originals/PXL_20260523_110011912.RAW-01.COVER.jpg
+X-active_time: 35 minutes
+X-total_time: 1 hour 15 minutes
+X-category: Side Dish
+
 yields:
 - amount: 4
   unit: servings
+
 ingredients:
 - rice:
     amounts:
     - amount: 1
-      unit: cup
+      unit: cups
 - chicken broth:
     amounts:
     - amount: 2
-      unit: cup
+      unit: cups
 - butter:
     amounts:
     - amount: 0.5
-      unit: cup
-- onion, diced:
+      unit: cups
+- onion:
     amounts:
     - amount: 0.5
-      unit: cup
-- mushrooms, diced:
+      unit: cups
+    processing:
+    - diced
+- mushrooms:
     amounts:
     - amount: 1
-      unit: cup
-- celery, diced:
+      unit: cups
+    processing:
+    - diced
+- celery:
     amounts:
     - amount: 0.5
-      unit: cup
+      unit: cups
+    processing:
+    - diced
+
 steps:
-- step: Preheat oven to 350.
+- step: Preheat oven to 350°F.
 - step: Saute onions, mushrooms, and celery in butter until soft.
 - step: Add rice to skillet to brown.
 - step: Transfer to casserole dish. Add broth and bake uncovered for 40 minutes.
-X-active_time: 35 minutes
-X-total_time: 1 hour 15 minutes
-X-category: Side Dishes
-X-original-source: ../originals/PXL_20260523_110011912.RAW-01.COVER.JPG
+
 X-source-verification:
   status: needs-review
   notes:

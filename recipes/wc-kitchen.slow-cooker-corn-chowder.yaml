@@ -1,70 +1,81 @@
 recipe_uuid: wc-kitchen.slow-cooker-corn-chowder
 recipe_name: Slow Cooker Corn Chowder
 source_url: https://www.thekitchn.com
-X-original-source: ../originals/PXL_20260523_110430527.RAW-01.COVER.JPG
-yields:
-- amount: 4
-  unit: serving
-- amount: 6
-  unit: serving
+X-original-source: ../originals/PXL_20260523_110430527.RAW-01.COVER.jpg
 X-active_time: 10 minutes
 X-total_time: 8 hours 10 minutes
+X-category: Soup
+X-tags:
+- slow cooker
+- corn
+- chowder
+- vegetarian-adaptable
+
+yields:
+- amount: "4–6"
+  unit: servings
+
 ingredients:
-- diced red bell pepper:
+- red bell pepper:
     amounts:
     - amount: 0.25
-      unit: cup
-- freshly squeezed lemon juice:
+      unit: cups
+    processing:
+    - diced
+- lemon juice:
     amounts:
     - amount: 1
-      unit: tablespoon
-    notes: from 1 lemon
+      unit: tablespoons
+    notes: freshly squeezed; from 1 lemon
 - frozen corn:
     amounts:
     - amount: 32
-      unit: ounce
+      unit: oz
     notes: 1 bag, divided
 - Yukon gold potatoes:
     amounts:
     - amount: 1
-      unit: pound
-    notes: peeled and diced
+      unit: pounds
+    processing:
+    - peeled
+    - diced
 - low-sodium chicken or vegetable broth:
     amounts:
     - amount: 2.5
-      unit: cup
-- chopped yellow onion:
+      unit: cups
+- yellow onion:
     amounts:
     - amount: 0.5
-      unit: cup
+      unit: cups
+    processing:
+    - chopped
 - garlic:
     amounts:
     - amount: 2
-      unit: clove
-    notes: minced
+      unit: cloves
+    processing:
+    - minced
 - fresh thyme:
     amounts:
     - amount: 2
-      unit: sprig
+      unit: sprigs
 - kosher salt:
     amounts:
     - amount: 2
-      unit: teaspoon
+      unit: teaspoons
 - freshly ground black pepper:
     amounts:
     - amount: 0.5
-      unit: teaspoon
+      unit: teaspoons
 - half-and-half or heavy cream:
     amounts:
     - amount: 0.5
-      unit: cup
+      unit: cups
 - unsalted butter:
     amounts:
     - amount: 2
-      unit: tablespoon
-- chopped chives:
-    amounts: []
-    notes: for serving
+      unit: tablespoons
+
 steps:
 - step: Place red bell pepper, lemon juice, and 1/2 cup of the corn in a small bowl
     and stir to combine. Cover and refrigerate until ready to serve.
@@ -75,12 +86,10 @@ steps:
     and blend until smooth. Return the blended soup to the slow cooker. Add the half-and-half
     or cream and butter and stir until the butter melts. Ladle into bowls and serve
     with the corn and red pepper topping and chives.
-X-category: soup
-X-tags:
-- slow cooker
-- corn
-- chowder
-- vegetarian-adaptable
+
+notes:
+- Garnish with chopped chives.
+
 X-source-verification:
   status: needs-review
   notes:

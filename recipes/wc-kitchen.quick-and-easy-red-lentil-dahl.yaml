@@ -5,12 +5,9 @@ description: Ready in 30 minutes or less, this Indian Red Lentil Dahl is easy to
 author: Nora Taylor
 source_url: https://www.noracooks.com/wprm_print/9546
 X-original-source: ../originals/PXL_20260523_110335165.RAW-01.COVER.jpg
-yields:
-- amount: 8
-  unit: servings
-X-active_time: 10 mins
-X-total_time: 30 mins
-X-cook_time: 20 mins
+X-active_time: 10 minutes
+X-total_time: 30 minutes
+X-cook_time: 20 minutes
 X-category:
 - Main
 - Side Dish
@@ -20,78 +17,81 @@ X-dietary:
 X-nutrition:
   calories: 258 kcal
   per: serving
+
+yields:
+- amount: 8
+  unit: servings
+
 ingredients:
 - olive oil:
     amounts:
     - amount: 1
-      unit: tablespoon
+      unit: tablespoons
 - yellow onion:
     amounts:
     - amount: 1
-      unit: large
-    preparation: chopped small
+      unit: whole
+    notes: large
+    processing:
+    - chopped small
 - garlic:
     amounts:
     - amount: 5
       unit: cloves
-    preparation: minced
+    processing:
+    - minced
 - fresh ginger:
     amounts:
     - amount: 1
-      unit: tablespoon
-    preparation: peeled and grated
+      unit: tablespoons
+    processing:
+    - peeled
+    - grated
 - garam masala:
     amounts:
     - amount: 1
-      unit: tablespoon
+      unit: tablespoons
 - ground turmeric:
     amounts:
     - amount: 1
-      unit: teaspoon
+      unit: teaspoons
 - red pepper chili flakes:
     amounts:
     - amount: 0.5
-      unit: teaspoon
+      unit: teaspoons
 - dried red lentils:
     amounts:
     - amount: 1.5
-      unit: cup
+      unit: cups
 - diced tomatoes:
     amounts:
     - amount: 14
-      unit: ounce
-    preparation: canned
+      unit: oz
+    notes: canned
 - full fat coconut milk:
     amounts:
     - amount: 13.5
-      unit: ounce
-    preparation: canned
+      unit: oz
+    notes: canned
 - vegetable broth:
     amounts:
     - amount: 3
-      unit: cup
+      unit: cups
 - salt:
     amounts:
     - amount: 1
-      unit: teaspoon
-    notes: or to taste
-- lemon juice:
+      unit: teaspoons
+- lemon:
     amounts:
     - amount: 0.5
-      unit: lemon
-    preparation: juiced
+      unit: whole
+    processing:
+    - juiced
 - baby spinach:
     amounts:
-    - amount: 3
-      unit: cup
-      range_max: 4
-for_serving:
-- cooked brown or white rice:
-    amounts:
-    - amount: 4
-      unit: cup
-- vegan naan:
-    amounts: []
+    - amount: "3–4"
+      unit: cups
+
 steps:
 - step: In a large pot or pan over medium heat, sauté the chopped onion in the olive
     oil for 5 minutes, stirring frequently. Then add the garlic and ginger and cook
@@ -102,6 +102,10 @@ steps:
     and vegetable broth to the pan. Stir well and turn the heat to high. Bring to
     a boil, then lower heat and simmer for about 15 minutes, until the lentils are
     cooked and soft. Stir occasionally.
+
+notes:
+- Serve with cooked brown or white rice and vegan naan.
+
 X-source-verification:
   status: needs-review
   notes:
@@ -109,7 +113,5 @@ X-source-verification:
     image.
   - Handwritten annotation on image reads "Feb 2022 — yes —" suggesting the recipe
     was tried and approved.
-  - Baby spinach amount given as range 3-4 cups; encoded as amount 3 with range_max
-    4.
-  - for_serving ingredients are not standard ORF fields; included as extension for
-    completeness.
+  - Baby spinach amount given as range 3-4 cups; encoded as string range.
+  - Salt listed as 1 teaspoon; "or to taste" note omitted since amount is specified.

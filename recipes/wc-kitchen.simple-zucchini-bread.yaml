@@ -1,84 +1,94 @@
 recipe_uuid: wc-kitchen.simple-zucchini-bread
 recipe_name: Simple Zucchini Bread
 X-original-source: ../originals/PXL_20260523_111048325.RAW-01.COVER.jpg
-source_url: null
-X-category: quick bread
+X-category: Quick Bread
 X-tags:
 - zucchini
 - loaf
 - vegetarian
+X-active_time: 10 minutes
+X-total_time: 1 hour 5 minutes
+
 yields:
 - amount: 1
   unit: 8.5x4.5 inch loaf
-X-active_time: 10 mins
-X-total_time: 1 hr 5 mins
+
 ingredients:
 - light brown sugar:
     amounts:
     - amount: 0.75
-      unit: cup
+      unit: cups
     notes: 159g, packed; dark brown sugar may be substituted
 - apple juice:
     amounts:
     - amount: 2
-      unit: tablespoon
+      unit: tablespoons
     notes: 28g; or orange juice, milk, water, or the liquid of your choice; or 2 tablespoons
       (43g) boiled cider
 - vegetable oil:
     amounts:
     - amount: 0.5
-      unit: cup
-    notes: 99g; boiled cider listed as alternative above
-- large eggs:
+      unit: cups
+    notes: 99g
+- eggs:
     amounts:
     - amount: 2
       unit: whole
-- King Arthur Pure Vanilla Extract:
+    notes: large
+- vanilla extract:
     amounts:
     - amount: 1
-      unit: teaspoon
+      unit: teaspoons
 - baking powder:
     amounts:
     - amount: 0.25
-      unit: teaspoon
+      unit: teaspoons
 - baking soda:
     amounts:
     - amount: 0.5
-      unit: teaspoon
+      unit: teaspoons
 - table salt:
     amounts:
     - amount: 1
-      unit: teaspoon
+      unit: teaspoons
 - cinnamon:
     amounts:
     - amount: 1.5
-      unit: teaspoon
+      unit: teaspoons
     notes: optional
-- King Arthur Unbleached All-Purpose Flour:
+- all-purpose flour:
     amounts:
     - amount: 1.75
-      unit: cup
+      unit: cups
     notes: 210g
 - zucchini:
     amounts:
     - amount: 2
-      unit: cup
-    notes: 242–300g, grated or shredded, somewhere between firmly and lightly packed
-- chopped walnuts:
+      unit: cups
+    notes: 242–300g; somewhere between firmly and lightly packed
+    processing:
+    - grated or shredded
+- walnuts:
     amounts:
     - amount: 0.75
-      unit: cup
-    notes: 85g, toasted until golden; optional
+      unit: cups
+    notes: 85g; optional
+    processing:
+    - chopped
+    - toasted until golden
 - raisins or currants:
     amounts:
     - amount: 0.75
-      unit: cup
+      unit: cups
     notes: 128g; golden raisins preferred; optional
-- light brown sugar for topping:
+
+- name_group: Topping
+- light brown sugar:
     amounts:
     - amount: 2
-      unit: tablespoon
-    notes: 28g, dark brown sugar may be substituted; for sprinkling on top; optional
+      unit: tablespoons
+    notes: 28g; dark brown sugar may be substituted; optional
+
 steps:
 - step: Preheat the oven to 350°F. Lightly grease an 8½" x 4½" loaf pan.
 - step: In a medium-sized bowl, beat together the brown sugar, boiled cider or other
@@ -97,6 +107,7 @@ steps:
     until it's cool.
 - step: Store the bread at cool room temperature, well wrapped, for several days;
     freeze for longer storage.
+
 X-tips:
 - Shredded zucchini varies a lot in weight depending on the season, the freshness
   of the vegetable, the fineness of the shred, and how firmly you pack it into the
@@ -105,6 +116,7 @@ X-tips:
 - To toast chopped walnuts, spread them in a single layer in a baking pan and toast
   in a preheated 350°F oven for about 8 minutes, or until they're golden brown and
   smell toasty.
+
 X-source-verification:
   status: needs-review
   notes:

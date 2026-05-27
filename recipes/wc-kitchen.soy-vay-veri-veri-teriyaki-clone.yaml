@@ -6,8 +6,8 @@ X-original-source: ../originals/PXL_20260523_105857986.RAW-01.COVER.jpg
 yields:
 - amount: 16
   unit: servings
-X-active_time: 5 mins
-X-total_time: 20 mins
+X-active_time: 5 minutes
+X-total_time: 20 minutes
 X-category: Condiment
 X-tags:
 - teriyaki
@@ -22,57 +22,61 @@ ingredients:
 - soy sauce:
     amounts:
     - amount: 2
-      unit: cup
+      unit: cups
     notes: light soy sauce preferred, but any will work
 - sugar:
     amounts:
     - amount: 0.25
-      unit: cup
+      unit: cups
 - brown sugar:
     amounts:
     - amount: 1
-      unit: tbsp
+      unit: tablespoons
 - garlic:
     amounts:
     - amount: 1
-      unit: tbsp
-    notes: minced
+      unit: tablespoons
+    processing:
+    - minced
 - ginger:
     amounts:
     - amount: 1
-      unit: tbsp
-    notes: grated
+      unit: tablespoons
+    processing:
+    - grated
 - sesame seeds:
     amounts:
     - amount: 0.25
-      unit: cup
+      unit: cups
     notes: toasted
 - sesame oil:
     amounts:
     - amount: 0.25
-      unit: cup
+      unit: cups
 - onion:
     amounts:
     - amount: 0.25
-      unit: cup
-    notes: dried, minced
+      unit: cups
+    notes: dried
+    processing:
+    - minced
 - onion powder:
     amounts:
     - amount: 1
-      unit: tsp
+      unit: teaspoons
 - garlic powder:
     amounts:
     - amount: 1
-      unit: tsp
+      unit: teaspoons
 - ginger powder:
     amounts:
     - amount: 1
-      unit: tsp
+      unit: teaspoons
 - cornstarch:
     amounts:
     - amount: 1
-      unit: tbsp
-    notes: dissolved in water
+      unit: tablespoons
+    notes: dissolved in water before adding
 steps:
 - step: Whisk all the ingredients together in a small bowl.
 - step: Transfer the mixture to a small sauce pan.

@@ -1,58 +1,65 @@
 recipe_uuid: wc-kitchen.roasted-potatoes-and-kielbasa
 recipe_name: Roasted Potatoes and Kielbasa (One-Pan Recipe)
 source_url: https://natashaskitchen.com
-X-original-source: ../originals/PXL_20260523_110340145.RAW-01.COVER.JPG
+X-original-source: ../originals/PXL_20260523_110340145.RAW-01.COVER.jpg
 description: 'These roasted potatoes are ultra crispy and flavorful with a perfect
   browning on the coins of kielbasa. Easy one-pan dinner idea.
 
   '
 author: Natasha of NatashasKitchen.com
-yields:
-- amount: 4
-  unit: servings
 X-prep_time: 5 minutes
 X-cook_time: 50 minutes
 X-total_time: 55 minutes
 X-skill_level: Easy
 X-cost_to_make: $6-$8
-X-category: dinner
+X-category: Dinner
 X-tags:
 - one-pan
 - potatoes
 - kielbasa
 - roasted
+
+yields:
+- amount: 4
+  unit: servings
+
 ingredients:
 - small red potatoes:
     amounts:
     - amount: 3
-      unit: lb
-    preparation: cut into 1/3" to 1/2" thick rings
+      unit: lbs
+    processing:
+    - cut into 1/3" to 1/2" thick rings
 - extra light olive oil:
     amounts:
     - amount: 2
-      unit: tbsp
-    note: or any high heat cooking oil
+      unit: tablespoons
+    notes: or any high heat cooking oil
 - fresh parsley:
     amounts:
     - amount: 2
-      unit: tbsp
-    preparation: minced
-    note: or 1/2 Tbsp dried parsley
+      unit: tablespoons
+    notes: or 1/2 tablespoon dried parsley
+    processing:
+    - minced
 - sea salt:
     amounts:
     - amount: 1
-      unit: tsp
-- garlic cloves:
+      unit: teaspoons
+- garlic:
     amounts:
     - amount: 2
-      unit: clove
-    preparation: pressed
+      unit: cloves
+    processing:
+    - pressed
 - kielbasa:
     amounts:
     - amount: 1
-      unit: lb
-    preparation: cut into 3/4" thick rings
-    note: or sausage; we used Polish kielbasa
+      unit: lbs
+    notes: or sausage; Polish kielbasa used
+    processing:
+    - cut into 3/4" thick rings
+
 steps:
 - step: Preheat oven to 400°F. Line a large baking sheet with parchment paper or Silpat.
 - step: 'Cut potatoes into rings no larger than 1/2" thick. If potatoes are tiny baby
@@ -67,6 +74,7 @@ steps:
     Garnish with fresh parsley if desired.
 
     '
+
 X-source-verification:
   status: needs-review
   notes:

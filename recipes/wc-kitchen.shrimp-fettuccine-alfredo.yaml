@@ -2,42 +2,29 @@ recipe_uuid: wc-kitchen.shrimp-fettuccine-alfredo
 recipe_name: Shrimp Fettuccine Alfredo
 source_url: https://www.foodnetwork.com/recipes/food-network-kitchen/shrimp-fettuccine-alfredo
 X-original-source: ../originals/PXL_20260523_105916122.RAW-01.COVER.jpg
-yields:
-- amount: 4
-  unit: servings
-X-total_time: 25 min
-X-active_time: 25 min
-X-category: main course
+X-total_time: 25 minutes
+X-active_time: 25 minutes
+X-category: Main Course
 X-tags:
 - pasta
 - shrimp
 - alfredo
 - Food Network Kitchen
+
+yields:
+- amount: 4
+  unit: servings
+
 ingredients:
-- kosher salt:
-    amounts:
-    - amount: null
-      unit: null
-    notes: to taste
 - fettuccine:
     amounts:
     - amount: 12
       unit: oz
-- olive oil:
-    amounts:
-    - amount: null
-      unit: null
-    notes: for tossing
-- large shrimp:
+- shrimp:
     amounts:
     - amount: 0.75
-      unit: lb
-    notes: about 16, peeled and deveined, tails removed
-- freshly ground black pepper:
-    amounts:
-    - amount: null
-      unit: null
-    notes: to taste
+      unit: lbs
+    notes: large; about 16, peeled and deveined, tails removed
 - unsalted butter:
     amounts:
     - amount: 1
@@ -46,15 +33,19 @@ ingredients:
 - heavy cream:
     amounts:
     - amount: 2
-      unit: cup
-- freshly grated nutmeg:
+      unit: cups
+- nutmeg:
     amounts:
     - amount: 2
-      unit: pinch
-- freshly grated Parmigiano-Reggiano cheese:
+      unit: pinches
+    notes: freshly grated
+- Parmigiano-Reggiano cheese:
     amounts:
     - amount: 1.5
-      unit: cup
+      unit: cups
+    processing:
+    - freshly grated
+
 steps:
 - step: Bring a large pot of water to a boil, and salt generously. Add the pasta,
     and boil according to package directions until al dente, tender but still slightly
@@ -74,14 +65,17 @@ steps:
     then cook for 2 minutes. Lower the heat to keep the sauce warm.
 - step: Whisk the Parmigiano-Reggiano into the sauce. Add the shrimp and cooked pasta,
     and toss well. Season with salt and pepper. Serve hot in heated bowls.
+
 notes:
-- 'Cook''s Note: Don''t worry if it seems like there is too much sauce. As soon as
-  everything is tossed together, the sauce will start to cling to the pasta and thicken
-  before your eyes.'
+- Don't worry if it seems like there is too much sauce. As soon as everything is
+  tossed together, the sauce will start to cling to the pasta and thicken before
+  your eyes.
 - Copyright 2015 Television Food Network, G.P. All rights reserved.
+
 X-source-verification:
   status: needs-review
   notes:
   - Recipe transcribed from photograph of a printed Food Network Kitchen recipe page
     in a binder.
   - Some ingredient text partially obscured; quantities inferred from visible text.
+  - Salt, pepper, and a splash of oil not included as ingredients (no measured amounts).
