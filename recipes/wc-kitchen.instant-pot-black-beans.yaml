@@ -2,19 +2,10 @@ recipe_uuid: wc-kitchen.instant-pot-black-beans
 recipe_name: Instant Pot Black Beans
 author: Melanie McDonald
 source_url: https://avirtualvegan.com/instant-pot-vegan-seasoned-black-beans/
-X-original-source: ../originals/PXL_20260523_110020503.RAW-01.COVER.JPG
-description: 'My Instant Pot Black Beans recipe makes a simple, tasty, healthy & budget-friendly
+X-original-source: ../originals/PXL_20260523_110020503.RAW-01.COVER.jpg
+description: My Instant Pot Black Beans recipe makes a simple, tasty, healthy & budget-friendly
   dinner. They are really quick and easy to make with no soaking involved. They are
   great to have on hand for simple dinners and meal prep!
-
-  '
-yields:
-- amount: 8
-  unit: servings
-X-prep_time: 7 minutes
-X-cook_time: 25 minutes
-X-pressure_building_and_release_time: 30 minutes
-X-total_time: 32 minutes
 X-category: salads
 X-tags:
 - instant pot
@@ -26,24 +17,34 @@ X-tags:
 X-dietary:
 - vegan
 - vegetarian
+X-prep_time: 7 minutes
+X-cook_time: 25 minutes
+X-pressure_building_and_release_time: 30 minutes
+X-total_time: 32 minutes
+yields:
+- amount: 8
+  unit: servings
 ingredients:
 - dried black beans:
     amounts:
     - amount: 2.5
-      unit: cup
+      unit: cups
     - amount: 450
       unit: g
     notes: no need to soak before using
 - onion:
     amounts:
     - amount: 1
-      unit: medium
-    notes: chopped finely
+      unit: whole
+    notes: medium
+    processing:
+    - finely chopped
 - garlic:
     amounts:
     - amount: 4
-      unit: clove
-    notes: chopped finely
+      unit: cloves
+    processing:
+    - finely chopped
 - chili flakes:
     amounts:
     - amount: 1
@@ -60,23 +61,25 @@ ingredients:
 - bay leaf:
     amounts:
     - amount: 1
-      unit: large
+      unit: whole
+    notes: large
 - dried mint:
     amounts:
     - amount: 1
       unit: teaspoon
     notes: optional but recommended if you have it
-- flavourful broth/stock:
+- flavourful broth or stock:
     amounts:
     - amount: 3
-      unit: cup
+      unit: cups
     - amount: 720
       unit: ml
 - lime:
     amounts:
     - amount: 1
       unit: whole
-    notes: juice only
+    processing:
+    - juiced
 - salt:
     amounts:
     - amount: 1
@@ -85,13 +88,11 @@ ingredients:
 steps:
 - step: Add all ingredients except the lime to the Instant Pot and stir.
 - step: Put the lid on the Instant Pot and seal the vent.
-- step: 'Cook on high pressure MANUAL or PRESSURE COOK in newer models, for 25 minutes
+- step: Cook on high pressure MANUAL or PRESSURE COOK (in newer models) for 25 minutes
     for tender, soft beans (or 30 minutes if you prefer really soft slightly mushy
-    beans) and leave the pressure to release naturally before opening the lid. Please
-    note that the beans continue to cook during the natural pressure release so if
-    you skip this step and vent manually your beans will turn out much firmer.
-
-    '
+    beans) and leave the pressure to release naturally before opening the lid. Note
+    that the beans continue to cook during the natural pressure release so if you skip
+    this step and vent manually your beans will turn out much firmer.
 - step: Add salt to taste then squeeze the juice of the lime into the beans and give
     them a quick stir before serving.
 X-source-verification:

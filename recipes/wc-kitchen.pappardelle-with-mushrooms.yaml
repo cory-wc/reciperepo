@@ -1,45 +1,57 @@
 recipe_uuid: wc-kitchen.pappardelle-with-mushrooms
 recipe_name: Pappardelle with Mushrooms
+X-original-source: ../originals/PXL_20260523_105859991.RAW-01.COVER.jpg
+X-active_time: 30 minutes
+X-category: Pasta
+X-tags:
+- mushrooms
+- pasta
+- vegetarian
+
 yields:
 - amount: 4
   unit: servings
+
 ingredients:
-- mushrooms, sliced thinly:
+- mushrooms:
     amounts:
     - amount: 16
       unit: oz
+    processing:
+    - sliced thinly
 - olive oil:
     amounts:
     - amount: 3
-      unit: tbsp
-- garlic clove, minced:
+      unit: tablespoons
+- garlic:
     amounts:
     - amount: 1
-      unit: clove
+      unit: cloves
+    processing:
+    - minced
 - red pepper flakes:
     amounts:
     - amount: 0.5
-      unit: tsp
-- lemon, juiced:
+      unit: teaspoons
+- lemon:
     amounts:
     - amount: 0.5
-      unit: lemon
+      unit: whole
+    processing:
+    - juiced
 - pappardelle:
     amounts:
     - amount: 1
-      unit: lb
+      unit: lbs
 - grated parmesan:
     amounts:
     - amount: 0.5
-      unit: cup
+      unit: cups
 - butter:
     amounts:
     - amount: 2
       unit: oz
-- salt and pepper:
-    amounts:
-    - amount: null
-      unit: to taste
+
 steps:
 - step: Boil salted water and prepare pasta.
 - step: Brush dirt off mushrooms and slice thinly.
@@ -48,13 +60,7 @@ steps:
 - step: Turn off heat and toss lemon juice with mushrooms.
 - step: Toss the pasta with mushrooms, parmesan, butter, salt and pepper. Serve with
     extra parmesan.
-X-active_time: 30 minutes
-X-category: pasta
-X-tags:
-- mushrooms
-- pasta
-- vegetarian
-X-original-source: ../originals/PXL_20260523_105859991.RAW-01.COVER.JPG
+
 X-source-verification:
   status: needs-review
   notes:

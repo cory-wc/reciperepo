@@ -35,9 +35,9 @@ ingredients:
     notes: aka caster sugar; see recipe note
 - gel food coloring:
     amounts:
-    - amount: 1
-      unit: drop
-    notes: 1–2 drops; optional
+    - amount: "1–2"
+      unit: drops
+    notes: optional
 - almond flour:
     amounts:
     - amount: 125
@@ -46,9 +46,6 @@ ingredients:
     amounts:
     - amount: 125
       unit: g
-- macaron filling:
-    amounts: []
-    notes: desired filling; some options listed in recipe notes
 steps:
 - step: Wipe down a large glass or metal mixing bowl with lemon juice or vinegar.
     Add egg whites. Cover and refrigerate for 24 hours, then bring to room temperature.
@@ -68,6 +65,8 @@ steps:
     peaks do not droop down. You can turn the bowl upside down and the egg whites
     will not move or spill out.) Using a rubber spatula, slowly and gently fold the
     food coloring (if using) into the egg whites.
+notes:
+- Fill shells with desired filling (buttercream, ganache, jam, etc.).
 X-source-verification:
   status: needs-review
   notes:

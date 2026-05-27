@@ -25,62 +25,66 @@ ingredients:
 - unsalted butter:
     amounts:
     - amount: 0.5
-      unit: cup
-    preparation: i.e. 1 stick
+      unit: cups
+    notes: 1 stick
 - light brown sugar:
     amounts:
     - amount: 0.5
-      unit: cup
-    preparation: packed
+      unit: cups
+    notes: packed
 - granulated sugar:
     amounts:
     - amount: 0.25
-      unit: cup
-- large egg:
+      unit: cups
+- egg:
     amounts:
     - amount: 1
       unit: whole
+    notes: large
 - vanilla extract:
     amounts:
     - amount: 2
-      unit: teaspoon
+      unit: teaspoons
 - baking soda:
     amounts:
     - amount: 0.5
-      unit: teaspoon
+      unit: teaspoons
 - salt:
     amounts:
     - amount: 0.25
-      unit: teaspoon
+      unit: teaspoons
 - all-purpose flour:
     amounts:
     - amount: 1.25
-      unit: cup
+      unit: cups
 - chocolate chips:
     amounts:
     - amount: 1
-      unit: cup
-    preparation: did half semi-sweet and half milk chocolate
+      unit: cups
+    notes: half semi-sweet and half milk chocolate
 - pretzels:
     amounts:
     - amount: 0.5
-      unit: cup
-    preparation: chopped
+      unit: cups
+    processing:
+    - chopped
 - caramels:
     amounts:
     - amount: 0.5
-      unit: cup
-    preparation: chopped; used ~10 Kraft caramels (can use Kraft caramel bits but
-      they don't melt as well)
-- chopped chocolate chips:
+      unit: cups
+    notes: ~10 Kraft caramels; can use Kraft caramel bits but they don't melt as well
+    processing:
+    - chopped
+- chocolate chips (topping):
     amounts:
     - amount: 0.5
-      unit: cup
-    preparation: whole chocolate chips chopped
-- chopped pretzels:
+      unit: cups
+    processing:
+    - chopped
+- pretzels (topping):
     amounts:
     - amount: 0.5
-      unit: cup
+      unit: cups
 steps:
 - step: Preheat oven to 350°F.
 - step: 'Chop half of the chocolate chips (½ cup) into small shards and slivers. Cut

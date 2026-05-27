@@ -13,28 +13,23 @@ ingredients:
 - fresh lemon zest:
     amounts:
     - amount: 0.5
-      unit: tsp
+      unit: teaspoon
 - honey:
     amounts:
     - amount: 2
-      unit: tbsp
+      unit: tablespoons
 - white vinegar:
     amounts:
     - amount: 1
-      unit: tbsp
+      unit: tablespoon
 - dijon mustard:
     amounts:
     - amount: 1
-      unit: tbsp
+      unit: tablespoon
 - extra virgin olive oil:
     amounts:
     - amount: 0.5
       unit: cup
-- salt and pepper:
-    amounts:
-    - amount: 1
-      unit: pinch
-    notes: to taste
 steps:
 - step: Add all ingredients to a 16 oz mason jar with lid.
 - step: Screw the lid on tight and shake vigorously for a minute or two until emulsified

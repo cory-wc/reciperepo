@@ -1,7 +1,7 @@
 recipe_uuid: wc-kitchen.oven-fried-chicken-ii
 recipe_name: Oven Fried Chicken II
 source_url: https://www.allrecipes.com
-X-original-source: ../originals/PXL_20260523_110248782.RAW-01.COVER.JPG
+X-original-source: ../originals/PXL_20260523_110248782.RAW-01.COVER.jpg
 yields:
 - amount: 10
   unit: servings
@@ -17,29 +17,21 @@ ingredients:
 - all-purpose flour:
     amounts:
     - amount: 1
-      unit: cup
+      unit: cups
 - Italian seasoned bread crumbs:
     amounts:
     - amount: 1
-      unit: cup
-- salt:
-    amounts:
-    - amount: null
-      unit: to taste
-- pepper:
-    amounts:
-    - amount: null
-      unit: to taste
+      unit: cups
 - paprika:
     amounts:
     - amount: 1
-      unit: teaspoon
+      unit: teaspoons
 - vegetable oil:
     amounts:
     - amount: 0.5
-      unit: cup
+      unit: cups
 steps:
-- step: Preheat oven to 350 degrees F (175 degrees C).
+- step: Preheat oven to 350°F (175°C).
 - step: Place flour in a shallow plate or bowl and season with salt and pepper to
     taste. Put the bread crumbs in another shallow plate or bowl and beat the eggs
     in another bowl.

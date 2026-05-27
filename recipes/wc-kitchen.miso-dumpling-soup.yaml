@@ -9,73 +9,68 @@ X-tags:
 - dumplings
 - miso
 - quick
-X-dietary: []
-X-total_time: 15 mins
-X-active_time: 3 mins
-X-cook_time: 12 mins
-servings: 4
+X-total_time: 15 minutes
+X-active_time: 3 minutes
+X-cook_time: 12 minutes
 yields:
 - amount: 4
   unit: servings
 X-nutrition:
-  calories: 518 kcal per serving
+  calories: 518 kcal
+  per: serving
 ingredients:
 - frozen vegetable dumplings (potstickers):
     amounts:
     - amount: 1.33
-      unit: lb
+      unit: pounds
     notes: vegetable brand; used Trader Joe's brand
 - sesame oil:
     amounts:
     - amount: 2.67
-      unit: tablespoon
-- minced garlic:
+      unit: tablespoons
+- garlic:
     amounts:
     - amount: 5.33
-      unit: clove
-- minced ginger:
+      unit: cloves
+    processing:
+    - minced
+- ginger:
     amounts:
     - amount: 2.67
-      unit: teaspoon
+      unit: teaspoons
+    processing:
+    - minced
 - white miso paste:
     amounts:
     - amount: 1.33
-      unit: tablespoon
+      unit: tablespoons
     notes: low sodium; plus more for topping
 - chili oil:
     amounts:
     - amount: 1.33
-      unit: teaspoon
-- diced green onion:
+      unit: teaspoons
+- green onion:
     amounts:
     - amount: 0.44
-      unit: cup
+      unit: cups
     notes: plus more for topping
+    processing:
+    - diced
 - vegetable broth:
     amounts:
     - amount: 5.33
-      unit: cup
+      unit: cups
     notes: low sodium
-- julienne carrots:
+- carrots:
     amounts:
     - amount: 1.33
-      unit: cup
+      unit: cups
+    processing:
+    - julienned
 - spinach:
     amounts:
     - amount: 1
       unit: large handful
-- green onion:
-    amounts: []
-    notes: optional topping; more green onion
-- chili oil:
-    amounts: []
-    notes: optional topping
-- sesame seeds:
-    amounts: []
-    notes: optional topping
-- soy sauce:
-    amounts: []
-    notes: optional topping; if you want it saltier
 steps:
 - step: In a large pan or pot begin heating your sesame oil over medium heat. Add
     in minced garlic and ginger and cook for a few minutes.
@@ -88,11 +83,9 @@ steps:
 - step: Top individual soup with more green onion, chili oil, and/or sesame seeds.
     You can also add more soy sauce if you like it saltier.
 notes:
-- The number of servings for this recipe depends how hungry you are! My husband and
-  I together ate the whole thing but you may be able to have this as 4 servings depending
-  on your appetite.
-- Miso paste is often found in the refrigerated section of your grocery store and
-  is usually found near tofu.
+- The number of servings depends on appetite; the recipe may serve 2–4.
+- Miso paste is often found in the refrigerated section near tofu.
+- Optional toppings: more green onion, chili oil, sesame seeds, soy sauce (if you want it saltier).
 X-source-verification:
   status: needs-review
   notes:

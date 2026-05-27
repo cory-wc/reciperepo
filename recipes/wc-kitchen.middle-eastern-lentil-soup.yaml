@@ -19,53 +19,54 @@ ingredients:
 - olive oil:
     amounts:
     - amount: 2
-      unit: tbsp
+      unit: tablespoons
 - yellow onion:
     amounts:
     - amount: 1
       unit: whole
-    preparation: finely diced
+    processing:
+    - finely diced
 - carrots:
     amounts:
-    - amount: 1
+    - amount: "1–2"
       unit: whole
-    - amount: 2
-      unit: whole
-    preparation: finely diced
-    notes: 1-2 carrots
+    processing:
+    - finely diced
 - potato:
     amounts:
     - amount: 1
       unit: whole
-    preparation: peeled, finely diced
+    processing:
+    - peeled
+    - finely diced
 - red lentils:
     amounts:
     - amount: 1
-      unit: cup
+      unit: cups
 - water:
     amounts:
     - amount: 6
-      unit: cup
+      unit: cups
 - chicken or vegetable stock cubes:
     amounts:
     - amount: 2
-      unit: cube
+      unit: cubes
 - dried mint:
     amounts:
     - amount: 1
-      unit: tbsp
+      unit: tablespoon
 - cumin:
     amounts:
     - amount: 1
-      unit: tsp
+      unit: teaspoons
 - paprika:
     amounts:
     - amount: 0.25
-      unit: tsp
+      unit: teaspoons
 - turmeric:
     amounts:
     - amount: 0.5
-      unit: tsp
+      unit: teaspoons
 - cayenne pepper:
     amounts:
     - amount: 1
@@ -74,21 +75,21 @@ ingredients:
 - salt:
     amounts:
     - amount: 0.5
-      unit: tsp
-    notes: plus any extra to taste
+      unit: teaspoons
+    notes: plus more to taste
 - black pepper:
     amounts:
     - amount: 0.5
-      unit: tsp
+      unit: teaspoons
 - flour:
     amounts:
     - amount: 1
-      unit: tbsp
-    notes: heaped tablespoon
+      unit: tablespoon
+    notes: heaping
 - butter:
     amounts:
     - amount: 1.5
-      unit: tbsp
+      unit: tablespoons
 steps:
 - step: Heat the olive oil in a large saucepan over medium high heat. Add the diced
     onion, carrot and potato. Sauté for about five minutes until onions have softened,

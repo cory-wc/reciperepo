@@ -5,72 +5,66 @@ description: 'This moist chocolate cake with chocolate fudge frosting is a decad
 
   '
 author: Angelina Papanikolaou
+X-original-source: ../originals/PXL_20260523_111005883.RAW-01.COVER.jpg
+X-category: Dessert
+X-total_time: 45 minutes
+X-active_time: 15 minutes
+X-cook_time: 30 minutes
+X-nutrition:
+  calories: 944 kcal
+X-equipment:
+- 3 8-inch round cake pans
+- parchment paper
+- mixing bowls
+- stand mixer or hand held mixer
+
 yields:
 - amount: 12
   unit: servings
-X-original-source: ../originals/PXL_20260523_111005883.RAW-01.COVER.jpg
-X-source-verification:
-  status: needs-review
-  notes:
-  - Instructions section is cut off at the bottom of the image and could not be captured.
-  - Prep time, cook time, and total time read from image header fields.
-  - Rating shown as 5 from 72 votes.
-X-category: Dessert
-X-total_time: 45 mins
-X-active_time: 15 mins
-X-cook_time: 30 mins
-X-nutrition:
-  calories: 944 kcal
-equipment:
-- 3 8-inch round cake pans
-- parchment paper
-- Mixing bowls
-- Stand mixer or hand held mixer
+
 ingredients:
 - all-purpose flour:
     amounts:
     - amount: 2
-      unit: cup
+      unit: cups
 - granulated sugar:
     amounts:
-    - amount: 1.333
-      unit: cup
-    notes: 1 1/3 cups
+    - amount: "1 1/3"
+      unit: cups
 - brown sugar:
     amounts:
     - amount: 1
-      unit: cup
+      unit: cups
 - cocoa powder:
     amounts:
     - amount: 1
-      unit: cup
+      unit: cups
 - baking soda:
     amounts:
     - amount: 2.5
-      unit: tsp
+      unit: teaspoons
 - baking powder:
     amounts:
     - amount: 2
-      unit: tsp
+      unit: teaspoons
 - salt:
     amounts:
     - amount: 1
-      unit: tsp
+      unit: teaspoon
 - buttermilk:
     amounts:
     - amount: 1.25
-      unit: cup
+      unit: cups
     notes: room temperature
 - coffee:
     amounts:
     - amount: 0.75
-      unit: cup
+      unit: cups
     notes: room temperature
 - vegetable oil:
     amounts:
-    - amount: 0.667
-      unit: cup
-    notes: 2/3 cup
+    - amount: "2/3"
+      unit: cups
 - eggs:
     amounts:
     - amount: 3
@@ -79,46 +73,49 @@ ingredients:
 - vanilla extract:
     amounts:
     - amount: 1
-      unit: tbsp
+      unit: tablespoon
+
+- name_group: Frosting
 - unsalted butter:
     amounts:
     - amount: 2
-      unit: cup
-    notes: room temperature, for frosting
+      unit: cups
+    notes: room temperature
 - powdered sugar:
     amounts:
     - amount: 2
-      unit: cup
-    notes: for frosting
-- cocoa powder (frosting):
+      unit: cups
+- cocoa powder:
     amounts:
     - amount: 1
-      unit: cup
-    notes: for frosting
-- salt (frosting):
+      unit: cups
+- salt:
     amounts:
     - amount: 0.5
-      unit: tsp
-    notes: for frosting
+      unit: teaspoons
 - chocolate chips:
     amounts:
     - amount: 2
-      unit: cup
-    notes: for frosting
+      unit: cups
 - honey:
     amounts:
     - amount: 0.25
-      unit: cup
-    notes: for frosting
+      unit: cups
 - heavy cream:
     amounts:
     - amount: 0.25
-      unit: cup
-    notes: for frosting
-- vanilla extract (frosting):
+      unit: cups
+- vanilla extract:
     amounts:
     - amount: 1
-      unit: tsp
-    notes: for frosting
+      unit: teaspoon
+
 steps:
 - step: Instructions are not visible in the image — this section was cut off.
+
+X-source-verification:
+  status: needs-review
+  notes:
+  - Instructions section is cut off at the bottom of the image and could not be captured.
+  - Prep time, cook time, and total time read from image header fields.
+  - Rating shown as 5 from 72 votes.

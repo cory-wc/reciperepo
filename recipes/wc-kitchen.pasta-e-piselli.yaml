@@ -7,74 +7,78 @@ description: 'Pasta e Piselli (pasta with peas) is a delicious, one-pot meal tha
 
   '
 author: Chef Dennis Littley
-yields:
-- amount: 8
-  unit: servings
-X-active_time: 5 mins
-X-cook_time: 25 mins
-X-total_time: 30 mins
+X-original-source: ../originals/PXL_20260523_105931657.RAW-01.COVER.jpg
+X-active_time: 5 minutes
+X-cook_time: 25 minutes
+X-total_time: 30 minutes
 X-category:
-- pasta course
+- Pasta
 - Side Dish
 X-tags:
 - Italian
 - Italian-American
 - one-pot
 X-nutrition:
-  calories: 432kcal
-  notes: per serving
+  calories: 432 kcal
+  per: serving
+
+yields:
+- amount: 8
+  unit: servings
+
 ingredients:
 - ditalini pasta:
     amounts:
     - amount: 1
-      unit: lb
+      unit: lbs
     notes: or other small shape pasta
 - extra virgin olive oil:
     amounts:
     - amount: 0.5
-      unit: cup
+      unit: cups
 - sweet onion:
     amounts:
     - amount: 1
-      unit: large
-    notes: finely diced
+      unit: whole
+    notes: large
+    processing:
+    - finely diced
 - garlic:
     amounts:
     - amount: 1
-      unit: clove
-    notes: finely diced
+      unit: cloves
+    processing:
+    - finely diced
 - red pepper flakes:
     amounts:
     - amount: 0.25
-      unit: teaspoon
-    notes: to taste
+      unit: teaspoons
 - water:
     amounts:
     - amount: 4
-      unit: cup
+      unit: cups
     notes: more as needed
 - salt:
     amounts:
     - amount: 1
-      unit: teaspoon
-    notes: to taste
+      unit: teaspoons
 - black pepper:
     amounts:
     - amount: 0.25
-      unit: teaspoon
-    notes: to taste
+      unit: teaspoons
 - baby peas:
     amounts:
-    - amount: 14
-      unit: oz
-    - amount: 16
+    - amount: "14–16"
       unit: oz
     notes: frozen or fresh
 - Pecorino Romano cheese:
     amounts:
     - amount: 1
-      unit: cup
-    notes: grated; or parmesan cheese
+      unit: cups
+    notes: or parmesan cheese
+    processing:
+    - grated
+
 steps:
 - step: Add the olive oil and chopped onions to a large pan over medium-high heat.
 - step: Cook the onions until soft (4–5 minutes). Don't let the onions brown.
@@ -92,6 +96,7 @@ steps:
 - step: Taste and season the pasta with peas to taste with salt and black pepper.
     If the pasta seems dry, add a little water to loosen it up.
 - step: Serve the pasta with additional grated cheese, black pepper, and crusty bread.
+
 notes:
 - Traditionally ditalini is used, but other small pasta shapes such as small shells,
   farfalle, pennette, elbow macaroni, and orzo can also be used.
@@ -101,12 +106,12 @@ notes:
 - Chicken broth or vegetable broth can be used instead of water for a more flavorful
   dish, or use half water and half broth. Cut back on the salt if using broth.
 - Parsley is mentioned in step 6 but not listed in the ingredients.
-X-original-source: ../originals/PXL_20260523_105931657.RAW-01.COVER.jpg
+
 X-source-verification:
   status: needs-review
   notes:
-  - Ingredient amounts for baby peas listed as a range (14–16 oz); captured as two
-    separate amount entries.
+  - Ingredient amounts for baby peas listed as a range (14–16 oz); consolidated to
+    a single range amount entry.
   - Chopped parsley is referenced in step 6 but does not appear in the ingredients
     list; not added to ingredients per fidelity rules.
   - Nutrition section was partially obscured at bottom of image; only calories captured.

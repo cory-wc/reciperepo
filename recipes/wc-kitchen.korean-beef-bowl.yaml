@@ -1,6 +1,7 @@
 recipe_uuid: wc-kitchen.korean-beef-bowl
 recipe_name: Korean Beef Bowl
 source_url: https://damndelicious.net/2013/07/07/korean-beef-bowl/
+X-original-source: ../originals/PXL_20260523_110326010.RAW-01.COVER.jpg
 description: Tastes like Korean BBQ and is on your dinner table in just 15 min from
   start to finish! Seriously. It doesn't get any easier than this!
 yields:
@@ -10,27 +11,28 @@ X-active_time: 5 minutes
 X-cook_time: 10 minutes
 X-total_time: 15 minutes
 ingredients:
-- brown sugar, packed:
+- brown sugar:
     amounts:
     - amount: 0.25
-      unit: cup
+      unit: cups
+    notes: packed
 - reduced sodium soy sauce:
     amounts:
     - amount: 0.25
-      unit: cup
+      unit: cups
 - sesame oil:
     amounts:
     - amount: 2
-      unit: teaspoon
+      unit: teaspoons
 - crushed red pepper flakes:
     amounts:
     - amount: 0.5
-      unit: teaspoon
-    preparation: or more to taste
+      unit: teaspoons
+    notes: or more to taste
 - ground ginger:
     amounts:
     - amount: 0.25
-      unit: teaspoon
+      unit: teaspoons
 - vegetable oil:
     amounts:
     - amount: 1
@@ -38,29 +40,31 @@ ingredients:
 - garlic:
     amounts:
     - amount: 3
-      unit: clove
-    preparation: minced
+      unit: cloves
+    processing:
+    - minced
 - ground beef:
     amounts:
     - amount: 1
       unit: pound
-- half onion:
+- onion:
     amounts:
     - amount: 0.5
       unit: whole
-    preparation: diced, cooked with meat
+    processing:
+    - diced
 - green onions:
     amounts:
     - amount: 2
       unit: whole
-    preparation: thinly sliced
+    processing:
+    - thinly sliced
 - sesame seeds:
     amounts:
     - amount: 0.25
-      unit: teaspoon
-- red onion and radish:
-    amounts: []
-    preparation: quick pickled
+      unit: teaspoons
+    notes: for garnish
+
 steps:
 - step: In a small bowl, whisk together brown sugar, soy sauce, sesame oil, red pepper
     flakes and ginger.
@@ -71,7 +75,10 @@ steps:
 - step: Stir in soy sauce mixture and green onions until well combined, allowing to
     simmer until heated through, about 2 minutes.
 - step: Serve immediately, garnished with green onion and sesame seeds, if desired.
-X-original-source: ../originals/PXL_20260523_110326010.RAW-01.COVER.jpg
+
+notes:
+- Handwritten additions: quick-pickled red onion and radish for topping.
+
 X-source-verification:
   status: needs-review
   notes:

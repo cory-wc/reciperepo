@@ -3,58 +3,57 @@ recipe_name: Instant Pot Red Beans and Rice
 X-original-source: ../originals/PXL_20260523_110408496.RAW-01.COVER.jpg
 X-category: Main Course
 X-cuisine: American
-X-prep_time: 30 mins
-X-cook_time: 45 mins
-X-total_time: 1 hr 15 mins
+X-prep_time: 30 minutes
+X-cook_time: 45 minutes
+X-total_time: 1 hour 15 minutes
+
 ingredients:
 - onion:
     amounts:
     - amount: 1
       unit: whole
-    preparation: chopped
+    processing:
+    - chopped
 - green bell pepper:
     amounts:
     - amount: 1
       unit: whole
-    preparation: chopped
+    processing:
+    - chopped
 - dried red kidney beans:
     amounts:
     - amount: 1
-      unit: lb
+      unit: pounds
 - garlic:
     amounts:
     - amount: 3
-      unit: clove
-    preparation: minced
+      unit: cloves
+    processing:
+    - minced
 - creole seasoning:
     amounts:
     - amount: 2
-      unit: tbsp
+      unit: tablespoons
 - bay leaves:
     amounts:
     - amount: 2
       unit: whole
     notes: optional
-- salt:
-    amounts: []
-- pepper:
-    amounts: []
 - water:
     amounts:
     - amount: 6.5
-      unit: cup
+      unit: cups
     notes: original printed value crossed out; handwritten correction appears to be
       6.5 cups
 - sausage:
     amounts:
     - amount: 1
-      unit: lb
-    preparation: sliced
+      unit: pounds
     notes: original text says andouille, crossed out and handwritten as kielbasa,
       low sodium
-- rice:
-    amounts: []
-    notes: for serving
+    processing:
+    - sliced
+
 steps:
 - step: Add all ingredients besides sausage to instant pot, close lid and manually
     cook for 45 minutes. (Original printed value of 30 minutes crossed out and corrected
@@ -64,6 +63,10 @@ steps:
 - step: Once pin is up remove lid and using a potato masher or whatever you have mash
     about half of your beans.
 - step: Stir and serve over rice.
+
+notes:
+- Serve over rice.
+
 X-source-verification:
   status: needs-review
   notes:
@@ -72,3 +75,4 @@ X-source-verification:
   - First cook time crossed out (30 min) and corrected by hand to 45 minutes.
   - Sausage type crossed out from andouille and annotated as kielbasa, low sodium.
   - Recipe printed date noted on page as 6/23/2021.
+  - Salt and pepper listed without quantities (to taste); omitted from ingredients.

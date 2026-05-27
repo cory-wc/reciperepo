@@ -11,18 +11,15 @@ ingredients:
 - granulated sugar:
     amounts:
     - amount: 3
-      unit: cup
-    notes: handwritten annotation visible on image
+      unit: cups
 - unsweetened cocoa powder:
     amounts:
     - amount: 0.667
       unit: cup
-    notes: 2/3 cup; handwritten annotation visible on image
 - kosher salt:
     amounts:
     - amount: 0.5
       unit: teaspoon
-    notes: handwritten annotation visible on image
 - ground cinnamon:
     amounts:
     - amount: 0.125

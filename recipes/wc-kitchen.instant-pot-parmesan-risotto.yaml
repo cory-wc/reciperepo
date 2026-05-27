@@ -1,5 +1,8 @@
 recipe_uuid: wc-kitchen.instant-pot-parmesan-risotto
 recipe_name: Instant Pot Parmesan Risotto
+source_url: https://www.365daysofcrockpot.com
+X-original-source: ../originals/PXL_20260523_105753595.RAW-01.COVER.jpg
+X-total_time: 45 minutes
 
 yields:
   - amount: 6
@@ -14,7 +17,8 @@ ingredients:
   - onion:
       amounts:
         - amount: 1
-          unit: medium
+          unit: whole
+      notes: medium
       processing:
         - diced
 
@@ -34,8 +38,7 @@ ingredients:
       amounts:
         - amount: 6
           unit: cups
-      processing:
-        - divided
+      notes: divided
 
   - grated parmesan:
       amounts:
@@ -44,33 +47,33 @@ ingredients:
 
   - salt:
       amounts:
-        - amount: 1/2
+        - amount: "1/2"
           unit: teaspoon
 
   - black pepper:
       amounts:
-        - amount: 1/4
+        - amount: "1/4"
           unit: teaspoon
 
   - parsley or green onions:
       amounts:
-        - amount: 1/2
+        - amount: "1/2"
           unit: cup
+      notes: for garnish
       processing:
         - chopped
-        - for garnish
 
 steps:
   - step: Using the Saute setting, melt the butter and saute onions for 3-5 minutes.
   - step: Add garlic and rice. Saute for 1 additional minute.
-  - step: Pour in 2 C of broth. Stir for 2-3 minutes until the broth is absorbed by the rice.
+  - step: Pour in 2 cups of broth. Stir for 2-3 minutes until the broth is absorbed by the rice.
   - step: Add remaining broth, salt, and pepper. Close and lock the lid.
   - step: Using the Manual pressure cook setting, adjust the time to 10 minutes. After the timer beeps, allow the pressure to release naturally for 10 minutes, then release any additional pressure.
   - step: Stir in parmesan cheese.
   - step: Serve topped with parsley or green onions.
 
-source_url: https://www.365daysofcrockpot.com
-X-total_time: 45 minutes
-X-notes: Serve with simple roasted veggies like cauliflower, broccoli, or sweet potatoes.
-X-original-source: ../originals/PXL_20260523_105753595.RAW-01.COVER.jpg
-X-flags: []
+notes:
+  - Serve with simple roasted veggies like cauliflower, broccoli, or sweet potatoes.
+
+X-source-verification:
+  status: needs-review

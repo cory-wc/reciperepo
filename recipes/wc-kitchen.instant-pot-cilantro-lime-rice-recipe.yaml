@@ -2,7 +2,6 @@ recipe_uuid: wc-kitchen.instant-pot-cilantro-lime-rice-recipe
 recipe_name: Instant Pot Cilantro Lime Rice Recipe
 source_url: https://boulderlocavore.com/easy-instant-pot-cilantro-lime-rice-recipe/
 author: Toni Dash
-cuisine: American
 X-category: Side Dish
 X-tags:
 - cilantro lime rice
@@ -21,25 +20,28 @@ ingredients:
 - long grain white rice:
     amounts:
     - amount: 2
-      unit: cup
-    notes: rinsed until water runs clear
+      unit: cups
+    processing:
+    - rinsed until water runs clear
 - water:
     amounts:
     - amount: 2
-      unit: cup
+      unit: cups
 - lime zest:
     amounts:
     - amount: 1
       unit: lime
     notes: zest of 1 lime
-- fresh chopped cilantro:
+- fresh cilantro:
     amounts:
     - amount: 0.333
       unit: cup
+    processing:
+    - chopped
 - freshly squeezed lime juice:
     amounts:
     - amount: 2
-      unit: teaspoon
+      unit: teaspoons
     notes: optional
 - vegetable oil:
     amounts:
