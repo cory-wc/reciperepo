@@ -2,69 +2,68 @@ recipe_uuid: wc-kitchen.everyday-instant-pot-dal
 recipe_name: Everyday Instant Pot Dal
 source_url: https://www.hookedonheat.com
 X-original-source: ../originals/PXL_20260523_111039285.RAW-01.COVER.jpg
-yields:
-- amount: 4
-  unit: servings
 X-prep_time: 10 mins
 X-cook_time: 20 mins
 X-total_time: 30 mins
+yields:
+- amount: 4
+  unit: servings
 ingredients:
 - light cooking oil:
     amounts:
     - amount: 2
-      unit: tbsp
+      unit: tablespoons
 - cumin seeds:
     amounts:
     - amount: 1
-      unit: tsp
-- large garlic cloves:
+      unit: teaspoon
+- garlic:
     amounts:
-    - amount: 2-3
-      unit: null
-    notes: bruised
+    - amount: "2–3"
+      unit: cloves
+    notes: large
+    processing:
+    - bruised
 - ginger:
     amounts:
-    - amount: 2-3
-      unit: thin slices
-- medium-sized onion:
+    - amount: "2–3"
+      unit: slices
+    notes: thin slices
+- onion:
     amounts:
     - amount: 1
-      unit: null
-    notes: finely chopped
+      unit: whole
+    notes: medium
+    processing:
+    - finely chopped
 - turmeric powder:
     amounts:
     - amount: 0.25
-      unit: tsp
+      unit: teaspoon
 - red chilli powder:
     amounts:
     - amount: 0.25
-      unit: tsp
+      unit: teaspoon
 - coriander powder:
     amounts:
     - amount: 0.5
-      unit: tsp
-- salt:
-    amounts:
-    - amount: null
-      unit: to taste
-- large tomato:
+      unit: teaspoon
+- tomato:
     amounts:
     - amount: 1
-      unit: null
-    notes: finely chopped; also known as masoor dal, thoroughly washed and drained
+      unit: whole
+    notes: large
+    processing:
+    - finely chopped
 - red lentils:
     amounts:
     - amount: 2
       unit: cups
+    notes: also known as masoor dal; thoroughly washed and drained
 - water:
     amounts:
     - amount: 3
       unit: cups
-- fresh cilantro leaves:
-    amounts:
-    - amount: null
-      unit: null
-    notes: finely chopped, for garnish
 steps:
 - step: Turn on the Instant Pot and set to Saute mode. Once it's heated, add in oil
     and cumin seeds.
@@ -78,17 +77,17 @@ steps:
 - step: Let the pressure release naturally before removing the lid. Give it a good
     stir and garnish with cilantro leaves before serving.
 notes:
-- Once the Dal is done cooking, if you'd like the consistency on the Dal thinner,
-  then set the Instant Pot to Saute mode, add in some water and let it come to a boil.
-  If you'd like it thicker, then set the Instant Pot to Saute mode and let it cook
-  down slightly, stirring occasionally to avoid burning.
+- Garnish with finely chopped fresh cilantro leaves.
+- Once the Dal is done cooking, if you'd like the consistency thinner, set the Instant
+  Pot to Saute mode, add in some water and let it come to a boil. If you'd like it
+  thicker, set to Saute mode and let it cook down slightly, stirring occasionally
+  to avoid burning.
 X-source-verification:
   status: needs-review
   notes:
   - Recipe extracted from printed page photographed at an angle; some text may be
     partially obscured.
-  - The tomato ingredient line in the source appears to conflate the tomato description
+  - The tomato ingredient line in the source appeared to conflate the tomato description
     with the lentil description ("also known as masoor dal, thoroughly washed and
-    drained") — likely the lentils qualifier was printed on the same bullet line due
-    to layout; interpreted accordingly.
+    drained") — lentil qualifier moved to the red lentils entry.
   - Quantity range "2-3" for garlic cloves and ginger slices preserved as written.

@@ -21,7 +21,7 @@ ingredients:
         - amount: 1/2
           unit: teaspoon
 
-  - all purpose flour:
+  - all-purpose flour:
       amounts:
         - amount: 1
           unit: cup
@@ -44,7 +44,7 @@ ingredients:
   - egg:
       amounts:
         - amount: 1
-          unit: egg
+          unit: whole
       processing:
         - lightly beaten
 
@@ -54,11 +54,8 @@ ingredients:
           unit: cups
 
   - canola oil:
-      amounts:
-        - amount: "2-3 inches"
-          unit: in pan
-      processing:
-        - for frying
+      amounts: []
+      notes: 2–3 inches deep in pan, for frying
 
 steps:
   - step: Heat 2-3 inches of canola oil to 375°F.
@@ -72,4 +69,3 @@ steps:
 
 X-total_time: 45 minutes
 X-original-source: ../originals/PXL_20260523_105816681.RAW-01.COVER.jpg
-X-flags: []

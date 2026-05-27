@@ -29,7 +29,7 @@ ingredients:
   - onions:
       amounts:
         - amount: 2
-          unit: onions
+          unit: whole
       processing:
         - chopped
 
@@ -53,4 +53,3 @@ X-nutrition:
   calories: 615
   fiber: 9 g
 X-original-source: ../originals/PXL_20260523_105734494.RAW-01.MP.COVER.jpg
-X-flags: []

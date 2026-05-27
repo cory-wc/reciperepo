@@ -1,8 +1,13 @@
 recipe_uuid: wc-kitchen.creamy-tomato-soup
 recipe_name: Creamy Tomato Soup
+X-original-source: ../originals/PXL_20260523_105942465.RAW-01.COVER.jpg
+X-active_time: 60 minutes
+X-nutrition:
+  calories: 385
+  fiber: 3g
 yields:
 - amount: 6
-  unit: serving
+  unit: servings
 ingredients:
 - butter:
     amounts:
@@ -11,31 +16,33 @@ ingredients:
 - olive oil:
     amounts:
     - amount: 2
-      unit: tbsp
-- onion, chopped:
+      unit: tablespoons
+- onion:
     amounts:
     - amount: 1
       unit: whole
+    processing:
+    - chopped
 - thyme:
     amounts:
     - amount: 1
-      unit: tsp
+      unit: teaspoon
 - basil:
     amounts:
     - amount: 1
-      unit: tsp
+      unit: teaspoon
 - salt:
     amounts:
     - amount: 1
-      unit: tsp
+      unit: teaspoon
 - diced tomatoes:
     amounts:
     - amount: 2.5
-      unit: lb
+      unit: lbs
 - tomato paste:
     amounts:
     - amount: 3
-      unit: tbsp
+      unit: tablespoons
 - flour:
     amounts:
     - amount: 0.25
@@ -43,11 +50,11 @@ ingredients:
 - chicken broth:
     amounts:
     - amount: 4
-      unit: cup
+      unit: cups
 - sugar:
     amounts:
     - amount: 1
-      unit: tsp
+      unit: teaspoon
 - heavy cream:
     amounts:
     - amount: 1
@@ -61,11 +68,6 @@ steps:
     stirring frequently.
 - step: Puree mixture in blender or food processor.
 - step: Return puree to dutch oven. Add sugar and cream. Heat through, stirring occasionally.
-X-active_time: 60 minutes
-X-nutrition:
-  calories: 385
-  fiber: 3g
-X-original-source: ../originals/PXL_20260523_105942465.RAW-01.COVER.JPG
 X-source-verification:
   status: needs-review
   notes:

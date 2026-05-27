@@ -1,5 +1,6 @@
 recipe_uuid: wc-kitchen.couscous-feta-salad
 recipe_name: Couscous Feta Salad
+source_url: https://www.allrecipes.com
 X-original-source: ../originals/PXL_20260523_110112441.RAW-01.COVER.jpg
 X-active_time: 20 minutes
 X-total_time: 45 minutes
@@ -8,7 +9,7 @@ X-nutrition:
   fiber: 4g
 yields:
 - amount: 4
-  unit: serving
+  unit: servings
 ingredients:
 - dry couscous:
     amounts:
@@ -21,44 +22,41 @@ ingredients:
 - olive oil:
     amounts:
     - amount: 1
-      unit: tsp
+      unit: teaspoon
     notes: for cooking couscous
 - cucumber:
     amounts:
     - amount: 1
-      unit: large
+      unit: whole
+    notes: large
 - tomatoes:
     amounts:
     - amount: 2
-      unit: medium
+      unit: whole
+    notes: medium
 - red onion:
     amounts:
     - amount: 1
-      unit: null
+      unit: whole
 - feta:
     amounts:
     - amount: 1
       unit: cup
-    notes: crumbled or cubed
+    processing:
+    - crumbled or cubed
 - balsamic vinegar:
     amounts:
     - amount: 2
-      unit: tbsp
+      unit: tablespoons
 - olive oil:
     amounts:
     - amount: 2
-      unit: tbsp
+      unit: tablespoons
     notes: for dressing
-- salt:
-    amounts: []
-    notes: to taste
-- pepper:
-    amounts: []
-    notes: to taste
 steps:
 - step: Boil water and 1 tbsp olive oil. Add couscous, stir, remove from heat, cover,
     and let sit 10 minutes.
-- step: While couscous is cooking, cut cucumber, tomatoes, and onion into 1/2 - 1"
+- step: While couscous is cooking, cut cucumber, tomatoes, and onion into 1/2–1 inch
     cubes.
 - step: Whisk together olive oil, vinegar, salt, and pepper.
 - step: Toss couscous, feta, vegetables, and dressing. Chill for 20 minutes.
@@ -68,4 +66,4 @@ X-source-verification:
   - Recipe printed from allrecipes.com (URL partially visible at top of page)
   - 1 tbsp olive oil referenced in step 1 but only 1 tsp listed in ingredients; flagged
     as possible discrepancy
-  - Red onion quantity listed as 1 with no unit (assumed 1 whole onion)
+  - Red onion quantity listed as 1 with no unit — assumed 1 whole onion

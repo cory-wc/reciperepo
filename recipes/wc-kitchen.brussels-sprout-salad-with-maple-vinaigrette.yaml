@@ -2,7 +2,7 @@ recipe_uuid: wc-kitchen.brussels-sprout-salad-with-maple-vinaigrette
 recipe_name: Brussels Sprout Salad with Maple Vinaigrette
 yields:
 - amount: 4
-  unit: serving
+  unit: servings
 X-original-source: ../originals/PXL_20260523_110104931.RAW-01.COVER.jpg
 X-active_time: 10 minutes
 X-cook_time: 15 minutes
@@ -13,14 +13,19 @@ ingredients:
     amounts:
     - amount: 8
       unit: ounce
-- bacon, cooked crisp and crumbled:
+- bacon:
     amounts:
     - amount: 2
-      unit: slice
-- chopped hazelnuts:
+      unit: slices
+    processing:
+    - cooked crisp
+    - crumbled
+- hazelnuts:
     amounts:
     - amount: 1
       unit: tablespoon
+    processing:
+    - chopped
 - maple syrup:
     amounts:
     - amount: 2
@@ -37,8 +42,6 @@ ingredients:
     amounts:
     - amount: 1
       unit: tablespoon
-- cracked black pepper:
-    amounts: []
 steps:
 - step: Prepare the brussels sprouts by cutting off and discarding the stem. Beginning
     at the stem end, slice into very thin rounds. Discard any tough white centers.

@@ -1,59 +1,67 @@
 recipe_uuid: wc-kitchen.best-bean-salad
 recipe_name: Best Bean Salad
 description: 'This three-bean salad is delicious. I''d turned my nose up at this for
-  years, but suddenly I can''t get enough of it. Thanks, Momma D!
-
-  '
+  years, but suddenly I can''t get enough of it. Thanks, Momma D!'
 source_url: https://www.allrecipes.com
-X-original-source: ../originals/PXL_20260523_110106862.RAW-01.COVER.JPG
+X-original-source: ../originals/PXL_20260523_110106862.RAW-01.COVER.jpg
 X-author: chemjo
-X-active_time:
-  amount: 20
-  unit: minutes
-X-additional_time:
-  amount: 8
-  unit: hours
-X-total_time:
-  amount: 500
-  unit: minutes
+X-active_time: 20 minutes
+X-additional_time: 8 hours
+X-total_time: 8 hours 20 minutes
 ingredients:
-- garbanzo beans, drained:
+- garbanzo beans:
     amounts:
     - amount: 15.5
       unit: ounce
-    note: 1 can
-- kidney beans, drained:
+    notes: 1 can
+    processing:
+    - drained
+- kidney beans:
     amounts:
     - amount: 14.5
       unit: ounce
-    note: 1 can
-- black beans, drained:
+    notes: 1 can
+    processing:
+    - drained
+- black beans:
     amounts:
     - amount: 14.5
       unit: ounce
-    note: 1 can
-- green beans, drained:
+    notes: 1 can
+    processing:
+    - drained
+- green beans:
     amounts:
     - amount: 14.5
       unit: ounce
-    note: 1 can
-- wax beans, drained:
+    notes: 1 can
+    processing:
+    - drained
+- wax beans:
     amounts:
     - amount: 14.5
       unit: ounce
-    note: 1 can
-- green pepper, chopped:
+    notes: 1 can
+    processing:
+    - drained
+- green pepper:
     amounts:
     - amount: 0.5
       unit: cup
-- onion, chopped:
+    processing:
+    - chopped
+- onion:
     amounts:
     - amount: 0.5
       unit: cup
-- celery, chopped:
+    processing:
+    - chopped
+- celery:
     amounts:
     - amount: 0.5
       unit: cup
+    processing:
+    - chopped
 - white sugar:
     amounts:
     - amount: 0.75
@@ -105,5 +113,4 @@ X-source-verification:
   notes:
   - Recipe sourced from allrecipes.com as printed in a binder; exact URL not captured
     from image.
-  - Total time of 8 hrs 20 mins converted to 500 minutes for numeric field.
   - Serving count not specified in visible image.

@@ -29,6 +29,8 @@ ingredients:
       amounts:
         - amount: 2
           unit: cloves
+      processing:
+        - minced
 
   - ground beef:
       amounts:
@@ -71,7 +73,7 @@ ingredients:
           unit: tablespoon
 
 steps:
-  - step: Preheat oven to 450.
+  - step: Preheat oven to 450°F.
   - step: Rinse parsnips, pat dry, and halve lengthwise. Cut carrot and onion in ¼ inch dice. Mince garlic.
   - step: Toss parsnips with olive oil, salt, and pepper. Arrange cut-side down and roast until browned and tender, 15-20 minutes.
   - step: While parsnips roast, heat olive oil in skillet. Cook beef, breaking up, until browned, about 5 minutes. Transfer meat to a plate.
@@ -84,4 +86,3 @@ X-active_time: 40 minutes
 X-nutrition:
   calories: 740
 X-original-source: ../originals/PXL_20260523_105827260.RAW-01.COVER.jpg
-X-flags: []

@@ -1,9 +1,7 @@
 recipe_uuid: wc-kitchen.easy-pad-thai
-recipe_name: easy pad thai
-description: 'This is a simple straight forward pad Thai that uses easy to get ingredients.
+recipe_name: Easy Pad Thai
+description: This is a simple straight forward pad Thai that uses easy to get ingredients.
   Do your prep before you start cooking. This dish comes together in under 10 minutes.
-
-  '
 X-original-source: ../originals/PXL_20260523_110807056.RAW-01.COVER.jpg
 X-category: Main
 X-tags:
@@ -18,96 +16,85 @@ yields:
 - amount: 4
   unit: servings
 ingredients:
-- pad_thai_sauce_fish_sauce:
+- name_group: PAD THAI SAUCE
+- fish sauce:
     amounts:
     - amount: 8
-      unit: Tbsp
-    note: fish sauce (pad thai sauce)
-- pad_thai_sauce_tamarind_paste:
+      unit: tablespoons
+- tamarind paste:
     amounts:
     - amount: 4
-      unit: Tbsp
-    note: tamarind paste - not tamarind concentrate, that is way too strong
-- pad_thai_sauce_tomato_paste:
+      unit: tablespoons
+    notes: not tamarind concentrate, that is way too strong
+- tomato paste:
     amounts:
     - amount: 2
-      unit: Tbsp
-    note: tomato paste (pad thai sauce)
-- pad_thai_sauce_sambal_oelek:
+      unit: tablespoons
+- sambal oelek:
     amounts:
     - amount: 4
-      unit: tsp
-    note: sambal oelek (pad thai sauce)
-- pad_thai_sauce_brown_sugar:
+      unit: teaspoons
+- brown sugar:
     amounts:
     - amount: 6
-      unit: Tbsp
-    note: brown sugar (pad thai sauce)
-- rice noodles (ban pho):
+      unit: tablespoons
+- name_group: MAIN
+- rice noodles:
     amounts:
     - amount: 16
-      unit: oz
-    note: about 1/2 a package
+      unit: ounces
+    notes: ban pho; about 1/2 a package
 - vegetable oil:
     amounts:
     - amount: 8
-      unit: Tbsp
+      unit: tablespoons
 - chicken thighs:
     amounts:
     - amount: 16
-      unit: oz
-    note: boneless, skinless chicken thighs (or one large chicken breast)
+      unit: ounces
+    notes: boneless, skinless; or one large chicken breast
 - shrimp:
     amounts:
     - amount: 12
       unit: whole
-    note: optional, 31-40 per lb works well
+    notes: optional; 31–40 per lb size works well
 - garlic:
     amounts:
     - amount: 4
       unit: cloves
-    note: minced
+    processing:
+    - minced
 - garlic chives:
     amounts:
     - amount: 6
       unit: stalks
-    note: 6-8, chopped
+    notes: 6–8 stalks
+    processing:
+    - chopped
 - bean sprouts:
     amounts:
     - amount: 2
-      unit: cup
+      unit: cups
 - peanuts:
     amounts:
     - amount: 4
-      unit: Tbsp
-    note: chopped
+      unit: tablespoons
+    processing:
+    - chopped
 - cilantro:
     amounts:
     - amount: 2
-      unit: Tbsp
-- lime wedges:
-    amounts: []
-    note: to serve
-- cilantro_garnish:
-    amounts: []
-    note: to serve
-- vinegar soaked chilies:
-    amounts: []
-    note: to serve, see notes
-- chopped peanuts garnish:
-    amounts: []
-    note: to serve
+      unit: tablespoons
 steps:
-- step: 'Do your prep. Soak the rice noodles in fairly hot water for 30-45 minutes.
+- step: 'Do your prep. Soak the rice noodles in fairly hot water for 30–45 minutes.
     They will turn white but still be quite firm. You want them a little toothy. Not
     hard. Just toothy. Pliable. 85 percent of the way there. Start checking them after
-    about 20 minutes. This is important.
-
-    '
-- step: 'While the noodles are soaking, do your prep. Chop your vegetables. Cut the
+    about 20 minutes. This is important.'
+- step: While the noodles are soaking, do your prep. Chop your vegetables. Cut the
     chicken into 3/4 inch cubes. Peel your shrimp if using.
-
-    '
+notes:
+- Serve with lime wedges, extra cilantro, chopped peanuts, and vinegar-soaked chilies.
+- For vinegar-soaked chilies, soak dried chilies in rice vinegar.
 X-source-verification:
   status: needs-review
   notes:
