@@ -8,7 +8,8 @@ ingredients:
     amounts:
     - amount: 1
       unit: lb
-    preparation: cut into bite-sized pieces
+    processing:
+    - cut into bite-sized pieces
 - small pasta:
     amounts:
     - amount: 12
@@ -16,7 +17,7 @@ ingredients:
 - water:
     amounts:
     - amount: 4.5
-      unit: cup
+      unit: cups
 - whole milk plain Greek yogurt:
     amounts:
     - amount: 0.5
@@ -24,21 +25,22 @@ ingredients:
 - olive oil:
     amounts:
     - amount: 2
-      unit: tbsp
+      unit: tablespoons
 - garlic:
     amounts:
     - amount: 4
-      unit: clove
-    preparation: minced
+      unit: cloves
+    processing:
+    - minced
 - salt:
     amounts:
     - amount: 1
-      unit: tsp
+      unit: teaspoon
     notes: plus more to taste
 - black pepper:
     amounts:
     - amount: 0.25
-      unit: tsp
+      unit: teaspoon
 - red pepper flakes:
     amounts:
     - amount: 1
@@ -56,9 +58,9 @@ steps:
 - step: Remove from heat. Stir in cheese and yogurt. Taste and season as needed.
 - step: Serve topped with more cheese.
 X-total_time: ~20 minutes
-X-original-source: ../originals/PXL_20260523_105903933.RAW-01.COVER.JPG
+X-original-source: ../originals/PXL_20260523_105903933.RAW-01.COVER.jpg
 source_url: https://www.thekitchn.com
-X-notes:
+notes:
 - Doesn't turn out well with frozen broccoli.
 X-source-verification:
   status: needs-review

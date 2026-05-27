@@ -1,22 +1,25 @@
 recipe_uuid: wc-kitchen.candied-sweet-potatoes
 recipe_name: Candied Sweet Potatoes
 ingredients:
-- sweet potatoes, peeled and cut into 1-inch chunks:
+- sweet potatoes:
     amounts:
     - amount: 2
-      unit: pound
+      unit: pounds
+    processing:
+    - peeled
+    - cut into 1-inch chunks
     notes: printed value is 2 lbs; handwritten annotation appears to strike through
       and write "2" — original may be 2 lbs
 - unsweetened apple cider:
     amounts:
     - amount: 2.5
-      unit: cup
+      unit: cups
     notes: printed value is 2½ cups; handwritten annotation shows "1¼" struck through
       — annotated quantity unclear, printed value used
 - dark brown sugar:
     amounts:
     - amount: 0.5
-      unit: cup
+      unit: cups
     notes: printed value is ½ cup; handwritten annotation shows "¼" — annotated quantity
       may override
 - unsalted butter:
@@ -40,7 +43,7 @@ steps:
 - step: Let cool slightly, remove the cinnamon stick and pass the potatoes through
     the medium disk of a food mill or puree in batches in a food processor. Transfer
     to an ovenproof serving dish.
-- step: Preheat the oven to 325°. Dot the potatoes with the remaining 2 tablespoons
+- step: Preheat the oven to 325°F. Dot the potatoes with the remaining 2 tablespoons
     butter, cover with foil and bake, stirring once or twice, for about 20 minutes,
     until steaming. Remove the foil and bake for 5 minutes longer.
 X-original-source: ../originals/PXL_20260523_110038901.RAW-01.COVER.jpg

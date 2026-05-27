@@ -17,8 +17,8 @@ yields:
   unit: tablespoons
 X-active_time: 1 min
 X-total_time: 6 mins
-prep_time: 5 mins
-cook_time: 1 min
+X-prep_time: 5 mins
+X-cook_time: 1 min
 ingredients:
 - mayo:
     amounts:
@@ -27,20 +27,18 @@ ingredients:
 - sriracha chili sauce:
     amounts:
     - amount: 3
-      unit: tablespoon
+      unit: tablespoons
 - lemon juice:
     amounts:
-    - amount: 0.5
-      unit: lemon
-    notes: juice from about 1/2 a lemon, about 2 tablespoons
-- garlic clove:
+    - amount: 2
+      unit: tablespoons
+    notes: juice from about 1/2 a lemon
+- garlic:
     amounts:
     - amount: 1
       unit: clove
-    notes: minced
-- salt:
-    amounts: []
-    notes: to taste
+    processing:
+    - minced
 steps:
 - step: Whisk together the mayo, Sriracha chili sauce, lemon juice, garlic and a pinch
     of salt in a small bowl. Make sure it is nicely blended.

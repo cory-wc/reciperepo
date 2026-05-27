@@ -1,34 +1,45 @@
 recipe_uuid: wc-kitchen.corn-chowder
 recipe_name: Corn Chowder
 X-original-source: ../originals/PXL_20260523_105939515.RAW-01.COVER.jpg
+X-category: Side Dishes
+X-active_time: 60 minutes
+X-total_time: 9 hours
 yields:
 - amount: 4
-  unit: serving
+  unit: servings
 ingredients:
 - butter:
     amounts:
     - amount: 2
-      unit: tbsp
-- green onions, diced:
+      unit: tablespoons
+- green onions:
     amounts:
     - amount: 4
       unit: whole
-- red bell pepper, chopped:
+    processing:
+    - diced
+- red bell pepper:
     amounts:
     - amount: 1
       unit: whole
-- celery stalks, chopped:
+    processing:
+    - chopped
+- celery:
     amounts:
     - amount: 2
-      unit: whole
-- potatoes, cut in 1/2" cubes:
+      unit: stalks
+    processing:
+    - chopped
+- potatoes:
     amounts:
     - amount: 1
       unit: lb
+    processing:
+    - cut in 1/2-inch cubes
 - corn kernels:
     amounts:
     - amount: 4
-      unit: cup
+      unit: cups
 - bay leaf:
     amounts:
     - amount: 1
@@ -40,25 +51,22 @@ ingredients:
 - salt:
     amounts:
     - amount: 2
-      unit: tsp
+      unit: teaspoons
 - milk:
     amounts:
     - amount: 2
-      unit: cup
+      unit: cups
 - ground black pepper:
     amounts:
     - amount: 0.25
-      unit: tsp
+      unit: teaspoon
 steps:
 - step: Melt butter in dutch oven. Add scallions, bell pepper, and celery. Cook until
     soft.
 - step: Stir in potatoes, 2 cups of corn, bay leaf, broth, and salt. Bring to a boil.
     Reduce heat and simmer 15 minutes.
 - step: Puree the remaining 2 cups of corn with milk. Stir the puree into soup, along
-    with black pepper. Simmer until soup begins to thicken (5-10 minutes).
-X-active_time: 60 minutes
-X-total_time: 9 hours
-X-category: Side Dishes
+    with black pepper. Simmer until soup begins to thicken (5–10 minutes).
 X-nutrition:
   calories: 365
   fiber: 8g

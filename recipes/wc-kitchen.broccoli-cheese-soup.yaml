@@ -22,7 +22,8 @@ ingredients:
     amounts:
     - amount: 1
       unit: whole
-    preparation: chopped
+    processing:
+    - chopped
 - frozen chopped broccoli:
     amounts:
     - amount: 16
@@ -31,17 +32,19 @@ ingredients:
 - chicken broth:
     amounts:
     - amount: 4
-      unit: can
+      unit: cans
     notes: 14.5 oz cans
 - processed cheese food:
     amounts:
     - amount: 1
       unit: lb
-    notes: loaf, cubed
+    notes: 1-pound loaf
+    processing:
+    - cubed
 - milk:
     amounts:
     - amount: 2
-      unit: cup
+      unit: cups
 - garlic powder:
     amounts:
     - amount: 1

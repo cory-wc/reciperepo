@@ -1,7 +1,7 @@
 recipe_uuid: wc-kitchen.beef-barley-soup
 recipe_name: Beef Barley Soup
 source_url: https://www.spendwithpennies.com
-X-original-source: ../originals/PXL_20260523_110719176.RAW-01.COVER.JPG
+X-original-source: ../originals/PXL_20260523_110719176.RAW-01.COVER.jpg
 X-active_time: 20 minutes
 X-cook_time: 50 minutes
 X-total_time: 1 hour 10 minutes
@@ -17,22 +17,26 @@ ingredients:
     amounts:
     - amount: 1
       unit: whole
-    preparation: chopped
+    processing:
+    - chopped
 - garlic:
     amounts:
     - amount: 1
       unit: clove
-    preparation: minced
+    processing:
+    - minced
 - carrots:
     amounts:
     - amount: 2
       unit: whole
-    preparation: sliced
+    processing:
+    - sliced
 - celery:
     amounts:
     - amount: 1
       unit: rib
-    preparation: sliced
+    processing:
+    - sliced
 - cooked beef:
     amounts:
     - amount: 2
@@ -50,7 +54,8 @@ ingredients:
     amounts:
     - amount: 0.5
       unit: whole
-    preparation: diced
+    processing:
+    - diced
 - pearl barley:
     amounts:
     - amount: 0.667
@@ -80,14 +85,9 @@ ingredients:
     amounts:
     - amount: 2
       unit: tablespoon
-    preparation: chopped
+    processing:
+    - chopped
     notes: or 2 teaspoons dried
-- salt:
-    amounts: []
-    notes: to taste
-- black pepper:
-    amounts: []
-    notes: to taste
 steps:
 - step: Cook onions and garlic in oil over medium heat until softened.
 - step: Add remaining ingredients and bring to a boil. Reduce heat and simmer covered

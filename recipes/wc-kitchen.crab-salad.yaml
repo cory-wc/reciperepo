@@ -18,23 +18,27 @@ yields:
 - amount: 2
   unit: servings
 ingredients:
-- imitation crab krab meat:
+- imitation crab meat:
     amounts:
     - amount: 0.5
       unit: pound
-- shallot minced:
+- shallot:
     amounts:
     - amount: 0.5
       unit: whole
     notes: you can use red onion if you need
+    processing:
+    - minced
 - mayonnaise:
     amounts:
     - amount: 0.25
       unit: cup
-- celery minced:
+- celery:
     amounts:
     - amount: 0.25
       unit: cup
+    processing:
+    - minced
 - paprika:
     amounts:
     - amount: 0.25

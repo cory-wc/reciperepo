@@ -1,20 +1,12 @@
 recipe_uuid: wc-kitchen.chicken-with-creamy-mushroom-sauce
 recipe_name: Chicken with Creamy Mushroom Sauce
-X-original-source: ../originals/PXL_20260523_110206301.RAW-01.COVER.JPG
-X-source-verification:
-  status: needs-review
-  notes:
-  - Recipe printed from a website, attributed to author Nagi
-  - Rated 4.98 from 209 votes
-  - Instructions appear to be cut off after step 8; image may not show full recipe
-  - Notes referenced in ingredients (Note 1, 2, 3, 4) are not visible in image
+X-original-source: ../originals/PXL_20260523_110206301.RAW-01.COVER.jpg
 X-category: Mains
 X-tags:
 - chicken
 - mushroom sauce
 - creamy sauce
 - western
-X-dietary: []
 X-active_time: 5 mins
 X-total_time: 20 mins
 X-nutrition:
@@ -25,18 +17,15 @@ yields:
   unit: servings
 ingredients:
 - name_group: CRISPY CHICKEN
-- chicken breasts, large, boneless skinless:
+- chicken breasts:
     amounts:
     - amount: 2
-      unit: piece
-    notes: ~600-700g / 1.2-1.4 lb total, see Note 1
+      unit: pieces
+    notes: large, boneless skinless; ~600–700g / 1.2–1.4 lb total
 - salt:
     amounts:
     - amount: 0.5
-      unit: tsp
-- black pepper:
-    amounts: []
-    notes: to taste
+      unit: teaspoon
 - flour:
     amounts:
     - amount: 0.25
@@ -45,47 +34,47 @@ ingredients:
     amounts:
     - amount: 15
       unit: g
-    notes: approximately 1 tbsp
-- name_group: Mushroom Sauce
+    notes: approximately 1 tablespoon
+- name_group: MUSHROOM SAUCE
 - unsalted butter:
     amounts:
     - amount: 30
       unit: g
-    notes: approximately 2 tbsp
-- mushrooms, sliced:
+    notes: approximately 2 tablespoons
+- mushrooms:
     amounts:
     - amount: 300
       unit: g
     notes: 10 oz, button or Swiss brown
-- garlic cloves, minced:
+    processing:
+    - sliced
+- garlic:
     amounts:
     - amount: 2
-      unit: clove
+      unit: cloves
+    processing:
+    - minced
 - dry white wine:
     amounts:
     - amount: 0.25
       unit: cup
-    notes: sub more chicken stock, see Note 2
-- chicken or vegetable stock, low sodium:
+    notes: or sub more chicken stock
+- chicken or vegetable stock:
     amounts:
     - amount: 0.5
       unit: cup
-- thickened/heavy cream, full fat:
+    notes: low sodium
+- heavy cream:
     amounts:
     - amount: 1
       unit: cup
-    notes: see Note 3
-- parmesan, finely and freshly grated:
+    notes: full fat
+- parmesan:
     amounts:
     - amount: 0.5
       unit: cup
-    notes: see Note 4
-- name_group: For Serving
-- chives, finely sliced:
-    amounts:
-    - amount: 2
-      unit: tbsp
-    notes: optional; sub parsley, green onions, or omit
+    processing:
+    - finely grated
 steps:
 - step: 'Split breast: Cut each breast in half horizontally to form 4 thin steaks
     in total.'
@@ -106,3 +95,12 @@ steps:
     mostly evaporates. Then add cream, lower heat to medium and simmer for 2 minutes
     until it reduces and thickens slightly.'
 - step: 'Add parmesan: Stir in parmesan, taste and add more salt and pepper if needed.'
+notes:
+- Garnish with finely sliced chives, parsley, or green onions (optional).
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe printed from a website, attributed to author Nagi
+  - Rated 4.98 from 209 votes
+  - Instructions appear to be cut off after step 8; image may not show full recipe
+  - Notes referenced in ingredients (Note 1, 2, 3, 4) are not visible in image

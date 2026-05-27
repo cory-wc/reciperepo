@@ -1,7 +1,7 @@
 recipe_uuid: wc-kitchen.black-bean-and-corn-salad-ii
 recipe_name: Black Bean and Corn Salad II
 source_url: https://www.allrecipes.com
-X-original-source: ../originals/PXL_20260523_110110860.RAW-01.COVER.JPG
+X-original-source: ../originals/PXL_20260523_110110860.RAW-01.COVER.jpg
 X-source-author: Jen
 X-source-description: This salad is very colorful and includes a very tasty lime dressing.
 X-category: salad
@@ -21,10 +21,12 @@ ingredients:
     amounts:
     - amount: 0.5
       unit: cup
-- garlic, minced:
+- garlic:
     amounts:
     - amount: 1
       unit: clove
+    processing:
+    - minced
 - salt:
     amounts:
     - amount: 1
@@ -33,36 +35,51 @@ ingredients:
     amounts:
     - amount: 0.125
       unit: teaspoon
-- black beans, rinsed and drained:
+- black beans:
     amounts:
     - amount: 2
-      unit: can
-    notes: 15 ounce cans
+      unit: cans
+    notes: 15-ounce cans
+    processing:
+    - rinsed
+    - drained
 - frozen corn kernels:
     amounts:
     - amount: 1.5
       unit: cup
-- avocado, peeled, pitted and diced:
+- avocado:
     amounts:
     - amount: 1
       unit: whole
-- red bell pepper, chopped:
+    processing:
+    - peeled
+    - pitted
+    - diced
+- red bell pepper:
     amounts:
     - amount: 1
       unit: whole
-- tomatoes, chopped:
+    processing:
+    - chopped
+- tomatoes:
     amounts:
     - amount: 2
       unit: whole
-- green onions, thinly sliced:
+    processing:
+    - chopped
+- green onions:
     amounts:
     - amount: 6
       unit: whole
-- fresh cilantro, chopped:
+    processing:
+    - thinly sliced
+- fresh cilantro:
     amounts:
     - amount: 0.5
       unit: cup
     notes: optional
+    processing:
+    - chopped
 steps:
 - step: Place lime juice, olive oil, garlic, salt, and cayenne pepper in a small jar.
     Cover with lid, and shake until ingredients are well mixed.
@@ -74,4 +91,3 @@ X-source-verification:
   notes:
   - Recipe printed from Allrecipes.com on 6/5/2018
   - Yield not specified in source
-  - Avocado quantity listed as 1 with no unit of measure beyond "whole"

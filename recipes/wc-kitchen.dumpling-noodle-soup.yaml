@@ -1,16 +1,12 @@
 recipe_uuid: wc-kitchen.dumpling-noodle-soup
 recipe_name: Dumpling Noodle Soup
 author: Hetty Mckinnon
+X-original-source: ../originals/PXL_20260523_110821899.RAW-01.COVER.jpg
+X-total_time: 25 minutes
 yields:
 - amount: 4
   unit: servings
-X-total_time: 25 minutes
 ingredients:
-- kosher salt (Diamond Crystal):
-    amounts:
-    - amount: null
-      unit: to taste
-    notes: to taste
 - thin dried wheat, egg, or rice noodles:
     amounts:
     - amount: 6
@@ -19,14 +15,20 @@ ingredients:
     amounts:
     - amount: 1
       unit: tablespoon
-- fresh ginger, peeled and grated:
+- fresh ginger:
     amounts:
     - amount: 1
       unit: 2-inch piece
-- garlic cloves, peeled and grated:
+    processing:
+    - peeled
+    - grated
+- garlic:
     amounts:
     - amount: 2
-      unit: clove
+      unit: cloves
+    processing:
+    - peeled
+    - grated
 - ground turmeric:
     amounts:
     - amount: 1
@@ -39,26 +41,26 @@ ingredients:
     amounts:
     - amount: 2
       unit: tablespoons
-- frozen dumplings, not thawed:
+- frozen dumplings:
     amounts:
     - amount: 16
       unit: ounces
-    notes: about 12 ounces
-- baby bok choy, trimmed and each cut into 4 pieces through the stem:
+    notes: not thawed; about 12 ounces also noted in source — see verification
+- baby bok choy:
     amounts:
     - amount: 4
-      unit: head
-    notes: about 9 ounces
-- small head broccoli, cut into bite-size florets:
+      unit: heads
+    notes: about 9 ounces total
+    processing:
+    - trimmed
+    - cut into 4 pieces through the stem
+- broccoli:
     amounts:
     - amount: 1
       unit: head
-    notes: about 9 ounces
-- cilantro or chopped scallions:
-    amounts:
-    - amount: null
-      unit: handful
-    notes: for serving
+    notes: small, about 9 ounces
+    processing:
+    - cut into bite-size florets
 steps:
 - step: Bring a large pot of salted water to a boil. Add the noodles and cook according
     to package instructions, until the noodles are just tender. Drain, rinse with
@@ -75,15 +77,16 @@ steps:
     for about 2 minutes, just until the broccoli is crisp-tender.
 - step: Ladle the broth, dumplings, baby bok choy and broccoli into the four bowls
     over the noodles. To serve, top with cilantro or chopped scallions.
-X-original-source: ../originals/PXL_20260523_110821899.RAW-01.COVER.jpg
+notes:
+- Garnish with fresh cilantro or chopped scallions.
 X-source-verification:
   status: needs-review
   notes:
   - Recipe extracted from printed page photograph; some text partially obscured by
-    shadow
+    shadow.
   - Broccoli quantity listed as "about 9 ounces" in image but also described as "1
-    small head"; both noted
+    small head"; both noted.
   - Frozen dumplings listed as "about 12 ounces" in ingredients but "16 ounces" also
     appears; image reads "16 ounces frozen dumplings (not thawed)" with "about 12
-    ounces" as a parenthetical — flagged for review
-  - Rating shown as 4 stars (1524 reviews)
+    ounces" as a parenthetical — flagged for review.
+  - Rating shown as 4 stars (1524 reviews).

@@ -12,7 +12,7 @@ ingredients:
 - boneless skinless chicken thighs:
     amounts:
     - amount: 2
-      unit: pound
+      unit: pounds
     notes: medium
 - kosher salt:
     amounts:
@@ -22,15 +22,17 @@ ingredients:
     amounts:
     - amount: 0.5
       unit: teaspoon
-    notes: coarsely ground
+    processing:
+    - coarsely ground
 - all-purpose flour:
     amounts:
     - amount: 0.5
       unit: cup
-- large eggs:
+- eggs:
     amounts:
     - amount: 2
       unit: whole
+    notes: large
 - sour cream:
     amounts:
     - amount: 0.25
@@ -38,21 +40,12 @@ ingredients:
 - panko breadcrumbs:
     amounts:
     - amount: 2
-      unit: cup
+      unit: cups
 - neutral oil:
     amounts:
     - amount: 1
       unit: cup
     notes: such as vegetable or canola
-- tonkatsu sauce:
-    amounts: []
-    notes: for serving, optional
-- green cabbage:
-    amounts: []
-    notes: thinly sliced, for serving, optional
-- white rice:
-    amounts: []
-    notes: cooked, for serving, optional
 steps:
 - step: Pound 2 pounds medium boneless, skinless chicken thighs a few pieces at a
     time. Place in a large zip-top bag and pound with a rolling pin or the flat side
@@ -73,6 +66,8 @@ steps:
     minutes per side. Transfer to a paper towel-lined plate or wire rack set over
     a baking sheet. Skim off any breadcrumbs in the oil between each batch. Serve
     with tonkatsu sauce, thinly sliced green cabbage, and rice if desired.
+notes:
+- Serve with tonkatsu sauce, thinly sliced green cabbage, and cooked white rice.
 X-source-verification:
   status: needs-review
   notes:

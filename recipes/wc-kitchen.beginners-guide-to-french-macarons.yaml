@@ -1,58 +1,39 @@
 recipe_uuid: wc-kitchen.beginners-guide-to-french-macarons
 recipe_name: Beginner's Guide to French Macarons
 source_url: https://sallysbakingaddiction.com/french-macarons/print/95647/
-X-original-source: ../originals/PXL_20260523_110554041.RAW-01.COVER.JPG
+X-original-source: ../originals/PXL_20260523_110554041.RAW-01.COVER.jpg
 X-category: dessert, cookie
 X-tags:
 - french macarons
 - macarons
 - almond flour
 - meringue
-X-source-verification:
-  status: needs-review
-  notes:
-  - Image shows printed pages of the recipe; some content is partially obscured or
-    cut off at page edges
-  - Ingredient quantities are not fully visible in this image — only notes and steps
-    pages are shown
-  - Ingredient list (almond flour, confectioners sugar, egg whites, superfine sugar
-    amounts) not fully legible; approximate noted in text as "about 1 cup + 1 tsp"
-    for superfine sugar but full list not captured
-  - Steps 1-14 partially reconstructed from visible text; some step numbers and text
-    are cut off
-  - Adapted from Les Petits Macarons and Mad About Macarons per visible text
+yields:
+- amount: null
+  unit: macarons
+  notes: Yield not visible in image
 ingredients:
-- almond_flour:
-    amounts:
-    - amount: null
-      unit: null
+- almond flour:
+    amounts: []
     notes: Use almond flour, not almond meal. Bob's Red Mill brand recommended. Sifted.
-- confectioners_sugar:
-    amounts:
-    - amount: null
-      unit: null
+- confectioners sugar:
+    amounts: []
     notes: Sifted together with almond flour.
-- egg_whites:
+- egg whites:
+    amounts: []
+    notes: Aged egg whites preferred over liquid egg whites from carton. Beaten to stiff peaks.
+- superfine sugar:
+    amounts: []
+    notes: About 1 cup + 1 tsp visible in notes but full quantity not confirmed. Can make own by pulsing granulated sugar in blender 10–15x.
+- gel food coloring:
     amounts:
-    - amount: null
-      unit: null
-    notes: Aged egg whites preferred over liquid egg whites from carton. Beaten to
-      stiff peaks.
-- superfine_sugar:
-    amounts:
-    - amount: null
-      unit: null
-    notes: About 1 cup + 1 tsp visible in notes but full quantity not confirmed. Can
-      make own by pulsing granulated sugar in blender 10-15x.
-- gel_food_coloring:
-    amounts:
-    - amount: 1
-      unit: to 2 drops
+    - amount: "1–2"
+      unit: drops
     notes: Optional. Avoid liquid food coloring. Powder food coloring also acceptable.
-- extract_or_flavoring:
+- extract or flavoring:
     amounts:
     - amount: 0.5
-      unit: tsp
+      unit: teaspoon
     notes: Optional. Vanilla, coconut, lemon, etc.
 steps:
 - step: Sift the almond flour and confectioners' sugar together in a large glass or
@@ -98,13 +79,7 @@ steps:
     them 12–24 hours so the macarons and flavors can mature. Bring to room temperature
     before serving.
 - step: Cover leftover macarons and refrigerate for up to 5 days.
-yield:
-- amount: null
-  unit: macarons
-  notes: Yield not visible in image
-X-total_time: null
-X-active_time: null
-X-notes:
+notes:
 - Cooled macaron shells and finished assembled macarons can be frozen for up to 1
   month. Thaw at room temperature before filling/serving.
 - Using weights and a food scale is the best way to guarantee success with this recipe.
@@ -112,3 +87,16 @@ X-notes:
   frosting, cream cheese frosting, champagne frosting, peanut butter frosting, and
   cooled salted caramel.
 - Adapted from Les Petits Macarons and Mad About Macarons.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Image shows printed pages of the recipe; some content is partially obscured or
+    cut off at page edges
+  - Ingredient quantities are not fully visible in this image — only notes and steps
+    pages are shown
+  - Ingredient list (almond flour, confectioners sugar, egg whites, superfine sugar
+    amounts) not fully legible; approximate noted in text as "about 1 cup + 1 tsp"
+    for superfine sugar but full list not captured
+  - Steps 1-14 partially reconstructed from visible text; some step numbers and text
+    are cut off
+  - Adapted from Les Petits Macarons and Mad About Macarons per visible text

@@ -12,8 +12,10 @@ X-prep_time: 15 minutes
 X-cook_time: 45 minutes
 X-cooling_time: 30 minutes
 X-total_time: 1 hour 35 minutes
-servings: 24
 X-calories: 305 kcal
+yields:
+- amount: 24
+  unit: cookies
 equipment:
 - Mixing bowls
 - Baking sheet
@@ -21,24 +23,18 @@ ingredients:
 - butter:
     amounts:
     - amount: 12
-      unit: tablespoon
+      unit: tablespoons
     notes: 170g, unsalted, softened
 - granulated sugar:
     amounts:
     - amount: 1.5
-      unit: cup
-    notes: 265g, room temperature preferred
+      unit: cups
+    notes: 265g
 - all-purpose flour:
     amounts:
     - amount: 2.75
-      unit: cup
+      unit: cups
     notes: 345g
-- granulated sugar:
-    amounts:
-    - amount: 0.25
-      unit: cup
-    notes: 50g, natural unsweetened cocoa powder — see note below; this entry may
-      be misread
 - cocoa powder:
     amounts:
     - amount: 0.25
@@ -52,14 +48,15 @@ ingredients:
     amounts:
     - amount: 0.5
       unit: teaspoon
-- large eggs:
+- eggs:
     amounts:
     - amount: 3
       unit: whole
+    notes: large
 - vanilla extract:
     amounts:
     - amount: 2
-      unit: teaspoon
+      unit: teaspoons
 - mini chocolate chips:
     amounts:
     - amount: 0.75
@@ -78,8 +75,8 @@ steps:
     in 3–4 parts, stirring until flour is completely incorporated after each addition.
 - step: Stir in chocolate chips.
 - step: Divide dough into two mounds on prepared baking sheet spacing at least 4–7
-    (10cm) apart as the dough will spread and you don't want the biscotti loaves to
-    bake together. If the dough is too sticky to manage easily, lightly dust your
+    inches (10cm) apart as the dough will spread and you don't want the biscotti loaves
+    to bake together. If the dough is too sticky to manage easily, lightly dust your
     hands with flour to help you form it.
 - step: Transfer to 350°F (175°C) oven and bake for 30 minutes. Remove from oven and
     allow to cool completely before proceeding.
@@ -88,9 +85,6 @@ steps:
     bake for 12 minutes, then carefully flip each slice of biscotti and return to
     oven to bake for another 10–12 minutes.
 - step: Allow biscotti to cool completely before enjoying.
-yield:
-- amount: 24
-  unit: cookies
 notes:
 - 'Cocoa powder: You may substitute Dutch-process cocoa powder, note that the flavor
   will be slightly deeper and more intense.'
@@ -106,9 +100,9 @@ X-source-verification:
   notes:
   - Image is rotated; text was read from a printed page photographed at an angle —
     some quantities may be misread.
-  - The sugar and cocoa powder quantities around the ¼ cup entries were difficult
-    to distinguish clearly; flagged for review.
-  - Baking powder quantity listed in ingredients section appeared as ½ teaspoon but
-    the instructions mention 1 tablespoon baking powder — discrepancy flagged.
+  - A duplicate "granulated sugar" entry (¼ cup) appeared in the extracted ingredients
+    alongside a separate "cocoa powder" (¼ cup) entry; the duplicate was removed as
+    a likely misread of the cocoa powder line.
+  - Baking powder discrepancy: ingredients list ½ teaspoon, but step 4 in the instructions
+    mentions "1 tablespoon baking powder" — flagged, ingredients value retained.
   - Calories listed as 305 kcal per serving (24 servings).
-  - Source URL visible at bottom of page: sugarspunrun.com/chocolate-walnut-biscotti/
