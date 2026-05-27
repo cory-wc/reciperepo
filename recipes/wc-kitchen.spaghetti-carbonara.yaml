@@ -4,45 +4,49 @@ description: The easiest pasta dish you will ever make with just 5 ingredients i
   15 minutes, loaded with Parmesan and bacon!
 source_url: https://damndelicious.net/2014/03/29/spaghetti-carbonara/
 X-original-source: ../originals/PXL_20260523_105912092.RAW-01.COVER.jpg
-yields:
-- amount: 4
-  unit: servings
 X-active_time: 5 minutes
 X-cook_time: 15 minutes
 X-total_time: 20 minutes
+
+yields:
+- amount: 4
+  unit: servings
+
 ingredients:
 - spaghetti:
     amounts:
     - amount: 8
-      unit: ounce
-- large eggs:
+      unit: oz
+- eggs:
     amounts:
     - amount: 2
       unit: whole
-- freshly grated Parmesan:
+    notes: large
+- Parmesan:
     amounts:
     - amount: 0.5
-      unit: cup
-- bacon, diced:
+      unit: cups
+    processing:
+    - freshly grated
+- bacon:
     amounts:
     - amount: 4
-      unit: slice
-- garlic, minced:
+      unit: slices
+    processing:
+    - diced
+- garlic:
     amounts:
     - amount: 4
-      unit: clove
-- kosher salt:
-    amounts:
-    - amount: null
-      unit: to taste
-- freshly ground black pepper:
-    amounts:
-    - amount: null
-      unit: to taste
-- chopped fresh parsley leaves:
+      unit: cloves
+    processing:
+    - minced
+- fresh parsley:
     amounts:
     - amount: 2
-      unit: tablespoon
+      unit: tablespoons
+    processing:
+    - chopped
+
 steps:
 - step: In a large pot of boiling salted water, cook pasta according to package instructions;
     reserve 1/2 cup water and drain well.
@@ -54,8 +58,10 @@ steps:
     season with salt and pepper, to taste. Add reserved pasta water, one tablespoon
     at a time, until desired consistency is reached.
 - step: Serve immediately, garnished with parsley, if desired.
+
 X-source-verification:
   status: needs-review
   notes:
   - Recipe printed from Damn Delicious; noted as adapted from The Chic Site.
   - Source URL visible at bottom of printed page.
+  - Salt and pepper not included as ingredients (no measured amounts; to taste).

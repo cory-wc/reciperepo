@@ -1,19 +1,29 @@
 recipe_uuid: wc-kitchen.salmon-burgers-with-slaw
 recipe_name: Salmon Burgers with Slaw
+source_url: https://pinchofyum.com/yummy-salmon-burgers-slaw
 author: Lindsay
+X-original-source: ../originals/PXL_20260523_110917350.RAW-01.COVER.jpg
+X-category: Main Course
+X-tags:
+- salmon
+- burgers
+- slaw
+- seafood
+X-total_time: 15 minutes
+
 yields:
-- amount: 3
+- amount: "3–4"
   unit: burgers
-- amount: 4
-  unit: burgers
+
 ingredients:
-- salmon_cooked_flaked:
+- salmon:
     amounts:
-    - amount: 12
+    - amount: "12–14"
       unit: oz
-    - amount: 14
-      unit: oz
-    preparation: cooked, flaked apart (canned is great – see notes)
+    notes: canned salmon works well; see notes
+    processing:
+    - cooked
+    - flaked
 - eggs:
     amounts:
     - amount: 2
@@ -21,92 +31,77 @@ ingredients:
 - breadcrumbs:
     amounts:
     - amount: 0.5
-      unit: cup
+      unit: cups
 - salt:
     amounts:
     - amount: 1
-      unit: teaspoon
-- garlic_powder:
+      unit: teaspoons
+- garlic powder:
     amounts:
     - amount: 0.5
-      unit: teaspoon
-- fresh_herbs_chopped:
+      unit: teaspoons
+- fresh herbs:
     amounts:
     - amount: 0.25
-      unit: cup
-    preparation: chopped, such as chives, parsley, or dill
-- lemon_juice:
-    amounts:
-    - amount: 1
-      unit: squeeze
+      unit: cups
+    notes: such as chives, parsley, or dill
+    processing:
+    - chopped
+- lemon juice:
+    amounts: []
     notes: a squeeze
-- olive_oil:
-    amounts: []
-    preparation: for pan-frying
-- green_cabbage:
+
+- name_group: Cabbage Slaw
+- green cabbage:
     amounts:
     - amount: 1
-      unit: head
-    preparation: finely shredded
-    section: Cabbage Slaw
-- plain_greek_yogurt:
+      unit: whole
+    notes: head
+    processing:
+    - finely shredded
+- plain greek yogurt:
     amounts:
     - amount: 1
-      unit: cup
-    section: Cabbage Slaw
-- white_distilled_vinegar:
+      unit: cups
+- white distilled vinegar:
     amounts:
-    - amount: 2
-      unit: tablespoon
-    - amount: 3
-      unit: tablespoon
+    - amount: "2–3"
+      unit: tablespoons
     notes: more to taste
-    section: Cabbage Slaw
-- salt_slaw:
+- salt:
     amounts:
     - amount: 1
-      unit: teaspoon
-    section: Cabbage Slaw
-- garlic_powder_slaw:
+      unit: teaspoons
+- garlic powder:
     amounts:
     - amount: 0.5
-      unit: teaspoon
-    section: Cabbage Slaw
-- fresh_herbs_chopped_slaw:
+      unit: teaspoons
+- fresh herbs:
     amounts:
     - amount: 0.5
-      unit: cup
-    preparation: chopped, such as chives, parsley, and dill
-    section: Cabbage Slaw
-- olive_oil_slaw:
-    amounts: []
-    preparation: a drizzle
-    section: Cabbage Slaw
+      unit: cups
+    notes: such as chives, parsley, and dill
+    processing:
+    - chopped
+
 steps:
 - step: 'For the salmon: Flake the salmon apart. Mix all burger ingredients together
-    and form into 3 large or [4] patties. Fry the burgers in a nonstick skillet over
+    and form into 3 large or 4 patties. Fry the burgers in a nonstick skillet over
     medium heat, ideally with a little olive oil, for a few minutes on each side until
     golden brown and crispy. Place on a paper towel lined plate and sprinkle with
     salt.'
 - step: 'For the slaw: Mix all slaw ingredients together. Taste and adjust.'
 - step: 'Serve: Serve up those hot salmon burgers on a bed of creamy slaw. Top with
-    a dollop of extra Greek yogurt and a swirl of olive oil and more herbs. Can''t
-    stop me.'
-source_url: https://pinchofyum.com/yummy-salmon-burgers-slaw
-X-original-source: ../originals/PXL_20260523_110917350.RAW-01.COVER.jpg
-X-category: main course
-X-tags:
-- salmon
-- burgers
-- slaw
-- seafood
-X-total_time: 15 minutes
+    a dollop of extra Greek yogurt and a swirl of olive oil and more herbs.'
+
+notes:
+- Olive oil for pan-frying burgers and a drizzle for the slaw (amounts unspecified).
+
 X-source-verification:
   status: needs-review
   notes:
   - Some instruction text is partially obscured by shadow on the right side of the
     image; steps reconstructed from visible text and source URL context.
   - Yield listed as 3-4 burgers; exact patty count depends on salmon quantity used.
-  - Olive oil amounts for both burger and slaw are unspecified (pan-frying amount
-    and drizzle).
+  - Olive oil amounts for both burger and slaw are unspecified; recorded in notes.
   - The range for salmon is 12-14 ounces as printed.

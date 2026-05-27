@@ -1,36 +1,43 @@
 recipe_uuid: wc-kitchen.quick-pickled-red-onion
 recipe_name: Quick Pickled Red Onion
 author: Naz Deravian
-yields:
-- amount: 2
-  unit: cups
-  note: with pickling liquid
+X-original-source: ../originals/PXL_20260523_110715136.RAW-01.COVER.jpg
 X-total_time: 50 minutes
 X-active_time: 5 minutes
 X-cook_time: 45 minutes
+
+yields:
+- amount: 2
+  unit: cups
+  notes: with pickling liquid
+
 ingredients:
 - red onion:
     amounts:
     - amount: 1
-      unit: large
+      unit: whole
+    notes: large
+    processing:
+    - thinly sliced
 - kosher salt:
     amounts:
     - amount: 2
-      unit: teaspoon
-    note: such as Diamond Crystal
+      unit: teaspoons
+    notes: such as Diamond Crystal
 - granulated sugar:
     amounts:
     - amount: 2
-      unit: teaspoon
+      unit: teaspoons
 - vinegar:
     amounts:
     - amount: 0.75
-      unit: cup
-    note: white or red wine, distilled or apple cider
+      unit: cups
+    notes: white or red wine, distilled, or apple cider
 - water:
     amounts:
     - amount: 0.25
-      unit: cup
+      unit: cups
+
 steps:
 - step: Thinly slice the red onion by halving through the root and slicing in the
     same direction. Separate the slices by hand, as best you can, without getting
@@ -45,7 +52,7 @@ steps:
 - step: Cover and give the jar a gentle shake. Set aside to pickle for about 30 minutes.
     Serve right away, or cool to room temperature and place in the fridge in the pickling
     liquid, covered, for up to 1 week.
-X-original-source: ../originals/PXL_20260523_110715136.RAW-01.COVER.jpg
+
 X-source-verification:
   status: needs-review
   notes:

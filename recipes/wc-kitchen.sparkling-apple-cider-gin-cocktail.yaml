@@ -2,7 +2,7 @@ recipe_uuid: wc-kitchen.sparkling-apple-cider-gin-cocktail
 recipe_name: Sparkling Apple Cider Gin Cocktail
 author: Aberdeen
 source_url: https://www.aberdeenskitchen.com/2020/11/sparkling-apple-cider-gin-cocktail/
-X-original-source: ../originals/PXL_20260523_110520251.RAW-01.COVER.JPG
+X-original-source: ../originals/PXL_20260523_110520251.RAW-01.COVER.jpg
 description: Refreshing, simple, and easy holiday beverage with just 4 ingredients.
   Cheers to that!
 yields:
@@ -12,19 +12,18 @@ ingredients:
 - gin:
     amounts:
     - amount: 1.5
-      unit: ounce
-- freshly squeezed lemon juice:
+      unit: oz
+- lemon juice:
     amounts:
     - amount: 1
-      unit: teaspoon
+      unit: teaspoons
+    notes: freshly squeezed
 - orange bitters:
     amounts:
     - amount: 1
       unit: dash
 - sparkling apple cider:
-    amounts:
-    - amount: null
-      unit: null
+    amounts: []
     notes: to top; Martinelli's recommended
 steps:
 - step: 'Optional: To rim your glasses, pour 1 tablespoon of white sugar and 1 tablespoon
@@ -34,7 +33,7 @@ steps:
 - step: Strain into rimmed glasses over ice. Top with sparkling apple cider and a
     sprig of thyme to garnish. Serve immediately.
 X-total_time: 5 minutes
-X-category: cocktail
+X-category: Cocktail
 X-tags:
 - holiday
 - gin
