@@ -1,21 +1,20 @@
 recipe_uuid: wc-kitchen.homemade-drop-biscuits-recipe
 recipe_name: Homemade Drop Biscuits Recipe (No Milk)
 author: Brianna May
-cuisine: American
 X-course: Bread, Breakfast
 X-original-source: ../originals/PXL_20260523_110943607.RAW-01.COVER.jpg
-yields:
-- amount: 15
-  unit: biscuits
 X-prep_time: 35 mins
 X-cook_time: 20 mins
 X-total_time: 55 mins
+yields:
+- amount: 15
+  unit: biscuits
 ingredients:
-- all purpose flour:
+- all-purpose flour:
     amounts:
     - amount: 2.25
-      unit: cup
-    notes: 293 g
+      unit: cups
+    notes: 293g
 - baking powder:
     amounts:
     - amount: 1
@@ -32,41 +31,19 @@ ingredients:
     amounts:
     - amount: 1
       unit: tablespoon
-    notes: marked with asterisk; see Notes — can swap for 1 Tablespoon white or brown
-      sugar
+    notes: can swap for 1 tablespoon white or brown sugar
 - white vinegar:
     amounts:
     - amount: 1
       unit: tablespoon
-    notes: marked with asterisk
 - unsalted butter:
     amounts:
     - amount: 1
       unit: stick
-    notes: chilled in freezer for 30 minutes to 1 hour, then grated; marked with asterisk
-optional_add_ins_and_topping:
-- garlic powder:
-    amounts:
-    - amount: 0.5
-      unit: teaspoon
-- cheddar cheese:
-    amounts:
-    - amount: 0.75
-      unit: cup
-- chives:
-    amounts:
-    - amount: 0.25
-      unit: cup
-honey_butter:
-- honey:
-    amounts:
-    - amount: 1
-      unit: tablespoon
-- unsalted butter:
-    amounts:
-    - amount: 2
-      unit: tablespoon
-    notes: melted
+    notes: 8 tablespoons
+    processing:
+    - chilled in freezer 30 minutes to 1 hour
+    - grated
 steps:
 - step: Preheat the oven to 425°F. Line a baking sheet with parchment paper.
 - step: In a medium bowl, whisk together the flour, baking powder, and salt.
@@ -81,13 +58,13 @@ steps:
 - step: Bake for 16–18 minutes or until the tops begin to turn golden brown. Brush
     with additional melted butter or honey butter before serving.
 notes:
-- 'Honey: Swap honey for 1 Tablespoon of white or brown sugar.'
-- 'Butter asterisk note: chilled in freezer for 30 minutes to 1 hour and grated.'
-- Optional add-ins and honey butter topping are listed separately from core ingredients.
+- Honey can be swapped for 1 tablespoon white or brown sugar.
+- Optional add-ins: 1/2 tsp garlic powder, 3/4 cup cheddar cheese, 1/4 cup chives.
+- Honey butter topping: whisk together 1 tablespoon honey + 2 tablespoons melted unsalted butter.
 X-source-verification:
   status: needs-review
   notes:
   - Image is a printed recipe page; some text partially obscured by shadow but content
     appears fully legible.
   - Prep time column header partially cut off but inferred as 35 mins from context.
-  - Rating shown as 5 stars from 95 votes — not included in ORF fields.
+  - Rating shown as 5 stars from 95 votes.

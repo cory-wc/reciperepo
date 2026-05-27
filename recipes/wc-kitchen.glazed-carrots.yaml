@@ -3,15 +3,9 @@ recipe_name: Glazed Carrots
 description: Simple dish with tender carrots with a buttery glaze and a mild sweetness.
 author: Tricia McTamaney
 X-original-source: ../originals/PXL_20260523_110040623.RAW-01.COVER.jpg
-X-active_time:
-  amount: 10
-  unit: minutes
-X-cook_time:
-  amount: 15
-  unit: minutes
-X-total_time:
-  amount: 25
-  unit: minutes
+X-active_time: 10 minutes
+X-cook_time: 15 minutes
+X-total_time: 25 minutes
 yields:
 - amount: 8
   unit: servings
@@ -20,7 +14,9 @@ ingredients:
     amounts:
     - amount: 2
       unit: pounds
-    preparation: peeled and cut into sticks
+    processing:
+    - peeled
+    - cut into sticks
 - butter:
     amounts:
     - amount: 0.25
@@ -29,7 +25,7 @@ ingredients:
     amounts:
     - amount: 0.25
       unit: cup
-    preparation: packed
+    notes: packed
 - salt:
     amounts:
     - amount: 0.25

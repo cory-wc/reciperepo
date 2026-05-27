@@ -5,7 +5,7 @@ description: Wondering what to make tonight? Quickly throw together this hearty 
   cauliflower rice for a healthy and satisfying dinner.
 yields:
 - amount: 4
-  unit: people
+  unit: servings
 X-prep_time: 5 mins
 X-cook_time: 20 mins
 X-total_time: 25 mins
@@ -18,76 +18,80 @@ ingredients:
 - salt:
     amounts:
     - amount: 1
-      unit: tsp
+      unit: teaspoon
     notes: for ground turkey
 - black pepper:
     amounts:
     - amount: 0.5
-      unit: tsp
+      unit: teaspoon
     notes: for ground turkey
 - garlic powder:
     amounts:
     - amount: 0.5
-      unit: tsp
+      unit: teaspoon
     notes: for ground turkey
 - chili powder:
     amounts:
     - amount: 0.5
-      unit: tsp
+      unit: teaspoon
     notes: for ground turkey
 - dried oregano:
     amounts:
     - amount: 0.5
-      unit: tsp
+      unit: teaspoon
     notes: for ground turkey
 - olive or avocado oil:
     amounts:
     - amount: 2
-      unit: tbsp
-- diced potatoes:
+      unit: tablespoons
+- potatoes:
     amounts:
     - amount: 4
-      unit: cup
-    notes: Yellow or gold preferred; russet, sweet, or red also work.
+      unit: cups
+    notes: yellow or gold preferred; russet, sweet, or red also work
+    processing:
+    - diced
 - canned tomato sauce:
     amounts:
     - amount: 8
-      unit: oz
+      unit: ounces
 - water:
     amounts:
     - amount: 0.5
       unit: cup
-- garlic, minced:
+- garlic:
     amounts:
     - amount: 2
-      unit: tsp
+      unit: teaspoons
+    processing:
+    - minced
 - dried oregano:
     amounts:
     - amount: 1
-      unit: tsp
+      unit: teaspoon
     notes: for potatoes
 - dried basil:
     amounts:
     - amount: 1
-      unit: tsp
+      unit: teaspoon
 - dried parsley:
     amounts:
     - amount: 0.5
-      unit: tsp
+      unit: teaspoon
 - salt:
     amounts:
     - amount: 0.5
-      unit: tsp
+      unit: teaspoon
     notes: for potatoes
 - black pepper:
     amounts:
     - amount: 0.5
-      unit: tsp
+      unit: teaspoon
     notes: for potatoes
 - onion powder:
     amounts:
     - amount: 0.5
-      unit: tsp
+      unit: teaspoon
 steps:
 - step: Add your ground turkey (or beef) to a skillet on the stovetop. Use your spatula
     to crumble the meat. Cook on medium high, stirring occasionally, until browned.

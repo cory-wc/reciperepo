@@ -23,12 +23,12 @@ ingredients:
 - eggs:
     amounts:
     - amount: 3
-      unit: large
+      unit: whole
+    notes: large
 - vanilla extract:
     amounts:
     - amount: 2
-      unit: tablespoon
-    notes: vanilla
+      unit: tablespoons
 - whole milk:
     amounts:
     - amount: 0.5
@@ -46,7 +46,7 @@ ingredients:
 - almond flour:
     amounts:
     - amount: 2
-      unit: cup
+      unit: cups
     notes: blanched, finely ground
 - baking soda:
     amounts:

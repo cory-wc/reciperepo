@@ -1,71 +1,62 @@
 recipe_uuid: wc-kitchen.perfect-pot-roast
 recipe_name: Perfect Pot Roast
-source_url: null
+author: Ree Drummond
 X-original-source: ../originals/PXL_20260523_110959246.RAW-01.COVER.jpg
-X-author: Ree Drummond
 X-published: Aug 21, 2023
 X-category: Main Dishes
 X-tags:
 - pot roast
 - beef
 - comfort food
-X-prep_time: 20 mins
-X-cook_time: 4 hrs
-X-total_time: 4 hrs 20 mins
+X-prep_time: 20 minutes
+X-cook_time: 4 hours
+X-total_time: 4 hours 20 minutes
 description: Serve it with a big pile of mashed potatoes!
+
 yields:
 - amount: 10
   unit: servings
+
 ingredients:
 - chuck roast:
     amounts:
-    - amount: 4
-      unit: lb
-    - amount: 5
-      unit: lb
-    notes: whole chuck roast
-- kosher salt:
-    amounts: []
-    notes: to taste, plus more as needed
-- black pepper:
-    amounts: []
-    notes: to taste, plus more as needed
+    - amount: "4–5"
+      unit: lbs
 - olive oil:
     amounts:
     - amount: 2
-      unit: tbsp
-    notes: or you can do half butter, half olive oil
-- whole onions:
+      unit: tablespoons
+    notes: or half butter, half olive oil
+- onions:
     amounts:
     - amount: 2
       unit: whole
-- whole carrots:
+    processing:
+    - halved
+- carrots:
     amounts:
-    - amount: 6
+    - amount: "6–8"
       unit: whole
-    - amount: 8
-      unit: whole
+    processing:
+    - cut into 2-inch slices
 - red wine:
     amounts:
     - amount: 1
-      unit: cup
-    notes: optional; you can use beef broth instead
+      unit: cups
+    notes: optional; beef broth can be used instead
 - beef stock:
     amounts:
-    - amount: 2
-      unit: cup
-    - amount: 3
-      unit: cup
+    - amount: "2–3"
+      unit: cups
 - fresh thyme:
     amounts:
     - amount: 3
       unit: sprigs
-    notes: or more to taste
 - fresh rosemary:
     amounts:
     - amount: 3
       unit: sprigs
-    notes: or more to taste
+
 steps:
 - step: First and foremost, choose a nicely marbled piece of meat. This will enhance
     the flavor of your pot roast like nothing else. Generously salt and pepper your
@@ -77,6 +68,7 @@ steps:
     one side and then the other. Remove the onions to a plate.
 - step: Throw the carrots into the same very hot pan and toss them around a bit until
     slightly browned.
+
 X-source-verification:
   status: needs-review
   notes:
@@ -87,4 +79,6 @@ X-source-verification:
     olive oil is optional.
   - Red wine amount listed as 1 c. in ingredients.
   - Beef stock listed as 2 to 3 c. in ingredients.
+  - Chuck roast listed as 4 to 5 lb; consolidated to range.
   - Nutrition information referenced but not visible in image.
+  - Salt and pepper to taste not included (no measured amounts).

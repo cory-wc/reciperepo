@@ -1,54 +1,73 @@
 recipe_uuid: wc-kitchen.potato-leek-soup
 recipe_name: Potato Leek Soup
+source_url: https://www.onceuponachef.com
+X-original-source: ../originals/PXL_20260523_110422385.RAW-01.COVER.jpg
 description: A French classic, this creamy potato leek soup is quick, easy, and delicious!
+X-category: Soup
+X-tags:
+- French
+- creamy
+- potato
+- leek
+- freezer-friendly
+X-active_time: 25 minutes
+X-total_time: 65 minutes
+
 yields:
 - amount: 6
   unit: servings
+
 ingredients:
 - unsalted butter:
     amounts:
     - amount: 3
-      unit: tablespoon
-- leeks, white and light green parts only, roughly chopped:
+      unit: tablespoons
+- leeks:
     amounts:
     - amount: 4
-      unit: large
-    notes: about 5 cups
-- garlic, peeled and smashed:
+      unit: whole
+    notes: white and light green parts only; about 5 cups
+    processing:
+    - roughly chopped
+- garlic:
     amounts:
     - amount: 3
-      unit: clove
-- Yukon Gold potatoes, peeled and roughly chopped into 1/2-inch pieces:
+      unit: cloves
+    processing:
+    - peeled
+    - smashed
+- Yukon Gold potatoes:
     amounts:
     - amount: 2
-      unit: pound
+      unit: pounds
+    processing:
+    - peeled
+    - roughly chopped into 1/2-inch pieces
 - low sodium chicken or vegetable broth:
     amounts:
     - amount: 7
-      unit: cup
+      unit: cups
 - bay leaves:
     amounts:
     - amount: 2
-      unit: leaf
+      unit: leaves
 - fresh thyme:
     amounts:
     - amount: 3
-      unit: sprig
+      unit: sprigs
 - salt:
     amounts:
     - amount: 1
-      unit: teaspoon
+      unit: teaspoons
 - ground black pepper:
     amounts:
     - amount: 0.25
-      unit: teaspoon
+      unit: teaspoons
 - heavy cream:
     amounts:
     - amount: 1
-      unit: cup
-- chives, finely chopped:
-    amounts: []
-    notes: for serving
+      unit: cups
+
 steps:
 - step: Melt the butter over medium heat in a large soup pot. Add the leeks and garlic
     and cook, stirring regularly, until soft and wilted, about 10 minutes. Adjust
@@ -62,6 +81,7 @@ steps:
     and adjust seasoning with salt and pepper. If soup is too thin, simmer until thickened.
     If it's too thick, add water or stock to thin it out. Garnish with fresh herbs
     if desired.
+
 notes:
 - 'If using a standard blender to purée the soup: be sure not to fill the jar more
   than halfway; leave the hole in the lid open and cover loosely with a dishtowel
@@ -70,23 +90,10 @@ notes:
   to 3 months. Defrost the soup in the refrigerator for 12 hours and then reheat it
   on the stovetop over medium heat until hot. Once heated through, add the cream and
   bring to a simmer before serving.'
+- Garnish with fresh chives if desired.
 - 'Handwritten margin annotations present on original image next to ingredients (possibly
   scaling multipliers): 1.5, 2, 1.5, 1, 4.5, 1, 1.5, 5, 1/8, 1/2'
-source_url: https://www.onceuponachef.com
-X-original-source: ../originals/PXL_20260523_110422385.RAW-01.COVER.jpg
-X-category: soup
-X-tags:
-- French
-- creamy
-- potato
-- leek
-- freezer-friendly
-X-active_time:
-  amount: 25
-  unit: minute
-X-total_time:
-  amount: 65
-  unit: minute
+
 X-source-verification:
   status: needs-review
   notes:

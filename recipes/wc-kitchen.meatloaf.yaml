@@ -1,36 +1,34 @@
 recipe_uuid: wc-kitchen.meatloaf
 recipe_name: Meatloaf
-X-original-source: ../originals/PXL_20260523_110255553.RAW-01.COVER.JPG
+X-original-source: ../originals/PXL_20260523_110255553.RAW-01.COVER.jpg
 ingredients:
 - ground beef:
     amounts:
     - amount: 1
-      unit: lb
-- medium onion diced:
+      unit: pounds
+- onion:
     amounts:
     - amount: 0.5
-      unit: null
+      unit: whole
+    notes: medium
+    processing:
+    - diced
 - egg:
     amounts:
     - amount: 1
-      unit: null
+      unit: whole
 - bread crumbs:
     amounts:
     - amount: 0.5
-      unit: cup
+      unit: cups
 - molasses:
-    amounts:
-    - amount: null
-      unit: null
+    amounts: []
 - worcestershire sauce:
-    amounts:
-    - amount: null
-      unit: null
-- ketchup topping:
-    amounts:
-    - amount: null
-      unit: null
+    amounts: []
 steps: []
+
+notes:
+- Ketchup for topping.
 X-source-verification:
   status: needs-review
   notes:

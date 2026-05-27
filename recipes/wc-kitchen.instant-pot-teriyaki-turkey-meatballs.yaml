@@ -8,18 +8,20 @@ X-cook_time: 10 minutes
 X-total_time: 15 minutes
 X-nutrition:
   calories: 244 kcal
+
 yields:
 - amount: 6
   unit: servings
+
 ingredients:
-- ground turkey meat:
+- ground turkey:
     amounts:
     - amount: 1
-      unit: lb
+      unit: pounds
 - bread crumbs:
     amounts:
     - amount: 0.25
-      unit: cup
+      unit: cups
     notes: 'Handwritten substitution replacing original "5 saltine crackers, crushed"
       and "3 tablespoons buttermilk". Original recipe notes: if no saltines, use 1/2
       cup plain panko or breadcrumbs; buttermilk can be substituted with 1 egg (also
@@ -29,22 +31,19 @@ ingredients:
 - egg:
     amounts:
     - amount: 1
-      unit: null
-    notes: Handwritten substitution for buttermilk
+      unit: whole
+    notes: handwritten substitution for buttermilk
 - green onion:
     amounts:
     - amount: 0.25
-      unit: cup
-    notes: sliced; plus more for garnish
+      unit: cups
+    notes: plus more for garnish
+    processing:
+    - sliced
 - garlic powder:
     amounts:
     - amount: 1
       unit: teaspoon
-- black pepper:
-    amounts:
-    - amount: null
-      unit: null
-    notes: to taste; original also listed 1/2 teaspoon kosher salt (crossed out)
 - canola oil:
     amounts:
     - amount: 1
@@ -57,43 +56,48 @@ ingredients:
 - low sodium soy sauce:
     amounts:
     - amount: 0.75
-      unit: cup
-    notes: Teriyaki Sauce; entire sauce section crossed out with note "from bottle"
+      unit: cups
+    notes: Teriyaki Sauce (crossed out — use bottled teriyaki sauce instead)
 - rice vinegar:
     amounts:
-    - amount: 0.333
-      unit: cup
-    notes: Teriyaki Sauce (crossed out — use bottled teriyaki sauce instead)
+    - amount: "1/3"
+      unit: cups
+    notes: Teriyaki Sauce (crossed out)
 - garlic:
     amounts:
     - amount: 3
       unit: cloves
-    notes: minced; Teriyaki Sauce (crossed out)
-- fresh grated ginger:
+    notes: Teriyaki Sauce (crossed out)
+    processing:
+    - minced
+- ginger:
     amounts:
     - amount: 3
-      unit: teaspoon
-    notes: Teriyaki Sauce (crossed out)
+      unit: teaspoons
+    notes: fresh; Teriyaki Sauce (crossed out)
+    processing:
+    - grated
 - canola oil:
     amounts:
     - amount: 3
-      unit: tablespoon
+      unit: tablespoons
     notes: Teriyaki Sauce (crossed out)
 - brown sugar:
     amounts:
     - amount: 4.5
-      unit: tablespoon
+      unit: tablespoons
     notes: Teriyaki Sauce (crossed out)
 - black pepper:
     amounts:
     - amount: 0.25
       unit: teaspoon
     notes: Teriyaki Sauce (crossed out)
-- corn starch:
+- cornstarch:
     amounts:
     - amount: 1
       unit: tablespoon
     notes: Teriyaki Sauce (crossed out)
+
 steps:
 - step: In a large bowl combine ground turkey, crushed crackers (or bread crumbs),
     buttermilk (or egg), green onions, garlic powder, salt, and pepper. Gently shape
@@ -106,6 +110,7 @@ steps:
 - step: After 10 minutes, turn off the pot and allow it to release pressure naturally.
     This will take about 5 minutes.
 - step: Sprinkle with sliced green onions and sesame seeds. Serve with rice or quinoa.
+
 notes:
 - If you don't have saltine crackers available you can use 1/2 cup of plain panko
   or breadcrumbs.
@@ -116,6 +121,7 @@ notes:
 - The entire homemade teriyaki sauce section is crossed out with the handwritten note
   "from bottle", indicating bottled teriyaki sauce is used instead.
 - Recipe is page 1 of 2; additional notes may appear on page 2.
+
 X-source-verification:
   status: needs-review
   notes:

@@ -8,22 +8,16 @@ description: 'Tested and retested to come up perfect farro every time. When cook
   '
 ingredients:
 - farro:
-    amounts:
-    - amount: null
-      unit: null
+    amounts: []
     notes: pearled, semi-pearled, whole, or 10-minute farro — quantity not specified
 - water:
     amounts:
     - amount: 7
-      unit: cup
+      unit: cups
       notes: with strainer
     - amount: 3
-      unit: cup
+      unit: cups
       notes: without strainer
-- salt:
-    amounts:
-    - amount: null
-      unit: null
 steps:
 - step: 'Choose your water amount: 7 cups if using a strainer (takes 10 min to come
     to pressure), or 3 cups without a strainer (takes 5 min to come to pressure).
@@ -49,7 +43,6 @@ steps:
     — it must be porous enough to let steam through.
 
     '
-yields: null
 X-original-source: ../originals/PXL_20260523_110032550.RAW-01.COVER.jpg
 X-category: side dish, grain
 X-tags:

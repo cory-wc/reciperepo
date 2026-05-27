@@ -7,86 +7,91 @@ description: 'This Mexican Street Corn Salad, also known as Esquites, is smoky, 
   '
 yields:
 - amount: 4
-  unit: serving
+  unit: servings
 ingredients:
 - corn:
     amounts:
     - amount: 4
-      unit: cup
-    preparation: cut from the cob (about 5 ears)
-    notes: can also use canned or frozen corn
+      unit: cups
+    notes: about 5 ears; can also use canned or frozen corn
 - olive oil:
     amounts:
     - amount: 1
-      unit: tbsp
+      unit: tablespoon
 - red bell pepper:
     amounts:
     - amount: 0.5
       unit: whole
-    preparation: chopped
+    processing:
+    - chopped
 - red onion:
     amounts:
     - amount: 0.5
-      unit: small
-    preparation: finely chopped
+      unit: whole
+    notes: small
+    processing:
+    - finely chopped
 - fresh cilantro:
     amounts:
     - amount: 0.5
-      unit: cup
-    preparation: chopped
+      unit: cups
+    processing:
+    - chopped
 - green onions:
     amounts:
     - amount: 6
       unit: whole
-    preparation: chopped
+    processing:
+    - chopped
 - jalapeno pepper:
     amounts:
     - amount: 1
       unit: whole
-    preparation: diced
+    processing:
+    - diced
 - avocado:
     amounts:
     - amount: 0.5
       unit: whole
-    preparation: chopped
+    processing:
+    - chopped
 - lime juice:
     amounts:
     - amount: 4
-      unit: tbsp
+      unit: tablespoons
     notes: from about 2 limes
-- cumin:
+- ground cumin:
     amounts:
     - amount: 0.5
-      unit: tsp
-    preparation: ground
+      unit: teaspoons
 - smoked paprika:
     amounts:
     - amount: 0.5
-      unit: tsp
+      unit: teaspoons
 - black pepper:
     amounts:
     - amount: 0.25
-      unit: tsp
-    preparation: ground
+      unit: teaspoons
 - salt:
     amounts:
     - amount: 0.25
-      unit: tsp
+      unit: teaspoons
 - sour cream:
     amounts:
     - amount: 2
-      unit: tbsp
+      unit: tablespoons
     notes: or yogurt
 - mayonnaise:
     amounts:
     - amount: 2
-      unit: tbsp
+      unit: tablespoons
 - cotija cheese:
     amounts:
     - amount: 0.5
-      unit: cup
-    preparation: crumbled
+      unit: cups
     notes: or feta
+    processing:
+    - crumbled
 steps:
 - step: Cut the corn off the cob. You can use about 5 ears to get 4 cups. You can
     also use canned corn or frozen corn. If using frozen, no need to thaw it out.
@@ -98,13 +103,11 @@ steps:
 - step: To the same bowl, add the remaining ingredients. Stir everything together
     until well combined. Adjust lime juice and salt and pepper as necessary.
 - step: Serve garnished with additional cheese and cilantro, if preferred.
-equipment:
+X-equipment:
 - 12-inch Cast Iron Skillet
-X-active_time: 10 mins
-X-total_time: 20 mins
-X-category:
-- Main Course
-- Salad
+X-active_time: 10 minutes
+X-total_time: 20 minutes
+X-category: Main Course, Salad
 X-tags:
 - corn salad
 - mexican recipes
@@ -113,8 +116,8 @@ X-tags:
 X-nutrition:
   calories: 344 kcal
   per: serving
-X-original-source: ../originals/PXL_20260523_110059887.RAW-01.COVER.JPG
-X-author: Joanna Cismaru
+X-original-source: ../originals/PXL_20260523_110059887.RAW-01.COVER.jpg
+author: Joanna Cismaru
 X-rating: 4.5/5 from 635 votes
 X-source-verification:
   status: needs-review

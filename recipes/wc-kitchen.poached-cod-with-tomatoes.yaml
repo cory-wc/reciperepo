@@ -1,75 +1,71 @@
 recipe_uuid: wc-kitchen.poached-cod-with-tomatoes
 recipe_name: Poached Cod with Tomatoes
+X-original-source: ../originals/PXL_20260523_105811108.RAW-01.COVER.jpg
+X-total_time: 45 minutes
 
 yields:
-  - amount: 4
-    unit: servings
+- amount: 4
+  unit: servings
 
 ingredients:
-  - olive oil:
-      amounts:
-        - amount: 3
-          unit: tablespoons
-
-  - red bell pepper:
-      amounts:
-        - amount: 1
-          unit: bell pepper
-      processing:
-        - chopped
-
-  - onion:
-      amounts:
-        - amount: 1
-          unit: onion
-      processing:
-        - chopped
-
-  - yellow squash:
-      amounts:
-        - amount: 1
-          unit: squash
-      processing:
-        - chopped
-
-  - tomatoes:
-      amounts:
-        - amount: "1 1/4"
-          unit: lb
-      processing:
-        - chopped
-
-  - butter or cannellini beans:
-      amounts:
-        - amount: 1
-          unit: can
-      processing:
-        - rinsed
-
-  - boneless skinless cod:
-      amounts:
-        - amount: 24
-          unit: oz
-      processing:
-        - cut into 4 fillets
-
-  - salt:
-      amounts:
-        - amount: 3/4
-          unit: teaspoon
-
-  - black pepper:
-      amounts:
-        - amount: 1/4
-          unit: teaspoon
+- olive oil:
+    amounts:
+    - amount: 3
+      unit: tablespoons
+- red bell pepper:
+    amounts:
+    - amount: 1
+      unit: whole
+    processing:
+    - chopped
+- onion:
+    amounts:
+    - amount: 1
+      unit: whole
+    processing:
+    - chopped
+- yellow squash:
+    amounts:
+    - amount: 1
+      unit: whole
+    processing:
+    - chopped
+- tomatoes:
+    amounts:
+    - amount: "1 1/4"
+      unit: lbs
+    processing:
+    - chopped
+- butter or cannellini beans:
+    amounts:
+    - amount: 1
+      unit: cans
+    processing:
+    - rinsed
+- cod:
+    amounts:
+    - amount: 24
+      unit: oz
+    notes: boneless, skinless
+    processing:
+    - cut into 4 fillets
+- salt:
+    amounts:
+    - amount: "3/4"
+      unit: teaspoons
+- black pepper:
+    amounts:
+    - amount: "1/4"
+      unit: teaspoons
 
 steps:
-  - step: Heat oil in a dutch oven.
-  - step: Add the bell pepper and onion. Saute until soft, 8-10 minutes.
-  - step: Add the squash, tomatoes, salt, and pepper. Cook, stirring occasionally, until the tomatoes have broken down and the sauce has thickened, 10-12 minutes.
-  - step: Add the beans and stir to combine. Place the cod on top of the liquid. Cover and simmer until the cod is cooked through, 7-9 minutes.
-  - step: Serve with crusty french bread.
+- step: Heat oil in a dutch oven.
+- step: Add the bell pepper and onion. Saute until soft, 8-10 minutes.
+- step: Add the squash, tomatoes, salt, and pepper. Cook, stirring occasionally, until the tomatoes have broken down and the sauce has thickened, 10-12 minutes.
+- step: Add the beans and stir to combine. Place the cod on top of the liquid. Cover and simmer until the cod is cooked through, 7-9 minutes.
 
-X-total_time: 45 minutes
-X-original-source: ../originals/PXL_20260523_105811108.RAW-01.COVER.jpg
-X-flags: []
+notes:
+- Serve with crusty french bread.
+
+X-source-verification:
+  status: needs-review
