@@ -1,67 +1,78 @@
 recipe_uuid: wc-kitchen.tomato-relish
 recipe_name: Tomato Relish
-yields:
-- amount: 2
-  unit: kg
-ingredients:
-- tomatoes, chopped:
-    amounts:
-    - amount: 2
-      unit: kg
-- medium-sized onions, peeled and chopped:
-    amounts:
-    - amount: 3
-      unit: whole
-- salt:
-    amounts:
-    - amount: 2
-      unit: tablespoon
-- mustard powder:
-    amounts:
-    - amount: 3
-      unit: teaspoon
-- curry powder:
-    amounts:
-    - amount: 3
-      unit: teaspoon
-- sugar:
-    amounts:
-    - amount: 500
-      unit: g
-- white or cider vinegar:
-    amounts:
-    - amount: 3
-      unit: cup
-- cornflour:
-    amounts:
-    - amount: 1
-      unit: tablespoon
-- vinegar, extra:
-    amounts:
-    - amount: 0.25
-      unit: cup
-steps:
-- step: Place the tomatoes, onions, salt, mustard powder, curry powder, sugar and
-    vinegar in a large saucepan. Bring to the boil, stirring until the sugar is dissolved,
-    and continue to boil for 1½ hours.
-- step: Mix the cornflour to a paste with the extra vinegar, add some or all to the
-    boiling mixture and stir till thickened. Pour into sterilised jars and seal immediately.
 X-original-source: ../originals/PXL_20260523_110441574.RAW-01.COVER.jpg
-X-category: preserves
+X-total_time: 1 hour 45 minutes
+X-category: Preserves
 X-tags:
 - relish
 - tomato
 - condiment
 - preserving
-X-total_time: 1 hour 45 minutes approximately
+
+yields:
+- amount: 2
+  unit: kg
+
+ingredients:
+- tomatoes:
+    amounts:
+    - amount: 2
+      unit: kg
+    processing:
+    - chopped
+- onion:
+    amounts:
+    - amount: 3
+      unit: whole
+    notes: medium
+    processing:
+    - peeled
+    - chopped
+- salt:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+- mustard powder:
+    amounts:
+    - amount: 3
+      unit: teaspoons
+- curry powder:
+    amounts:
+    - amount: 3
+      unit: teaspoons
+- sugar:
+    amounts:
+    - amount: 500
+      unit: g
+- vinegar:
+    amounts:
+    - amount: 3
+      unit: cups
+    notes: white or cider
+- cornflour:
+    amounts:
+    - amount: 1
+      unit: tablespoons
+- vinegar (extra):
+    amounts:
+    - amount: "1/4"
+      unit: cups
+
+steps:
+- step: Place the tomatoes, onions, salt, mustard powder, curry powder, sugar and vinegar
+    in a large saucepan. Bring to the boil, stirring until the sugar is dissolved,
+    and continue to boil for 1½ hours.
+- step: Mix the cornflour to a paste with the extra vinegar, add some or all to the
+    boiling mixture and stir till thickened. Pour into sterilised jars and seal immediately.
+
 X-source-verification:
   status: needs-review
   notes:
-  - Page 86 of an unidentified cookbook
-  - Handwritten annotation on page reads 'about 12 cups' next to the yield
+  - Page 86 of an unidentified cookbook.
+  - Handwritten annotation on page reads 'about 12 cups' next to the yield.
   - The fraction for extra vinegar reads '¼ cup' — partially obscured but interpreted
-    as one quarter
+    as one quarter.
   - The top of the page is partially cut off; recipe title and ingredient list appear
-    complete
+    complete.
   - Tomato Chutney recipe begins at bottom of page but is cut off — not extracted
-    here
+    here.

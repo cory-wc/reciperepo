@@ -1,94 +1,111 @@
 recipe_uuid: wc-kitchen.thai-peanut-sweet-potato-buddha-bowl
 recipe_name: Thai Peanut Sweet Potato Buddha Bowl
-author: claire cary
-description: 'With spicy roasted sweet potato, crispy chickpeas, fluffy quinoa and
-  drizzled in my Thai Peanut Sauce, this is one of my favorite buddha bowls to date!
-  It''s vegan, gluten free and perfect for meal prep.
-
-  '
-yields:
-- amount: 4
-  unit: servings
-X-prep_time: 10 mins
-X-cook_time: 30 mins
-X-total_time: 40 mins
-X-category: main
+source_url: https://eatwithclarity.com/easy-thai-peanut-sauce/
+X-original-source: ../originals/PXL_20260523_110847736.RAW-01.COVER.jpg
+X-prep_time: 10 minutes
+X-cook_time: 30 minutes
+X-total_time: 40 minutes
+X-category: Main Dish
 X-dietary:
 - vegan
 - gluten-free
+source_authors:
+- Claire Cary
+
+yields:
+- amount: 4
+  unit: servings
+
 ingredients:
-- sweet_potatoes_peeled_and_cubed:
+- sweet potatoes:
     amounts:
     - amount: 4
-      unit: cup
+      unit: cups
     notes: about 2 medium potatoes
-- chickpeas_drained_and_rinsed:
+    processing:
+    - peeled
+    - cubed
+- chickpeas:
     amounts:
     - amount: 1
-      unit: can
-- soy_sauce_or_tamari:
+      unit: cans
+    processing:
+    - drained
+    - rinsed
+- soy sauce:
     amounts:
     - amount: 1
-      unit: tbsp
-- maple_syrup:
+      unit: tablespoons
+    notes: or tamari
+- maple syrup:
     amounts:
     - amount: 1
-      unit: tbsp
+      unit: tablespoons
 - sriracha:
-    amounts:
-    - amount: null
-      unit: tbsp
-    notes: 1-2 tbsp depending on spice preference
-- minced_garlic:
+    amounts: []
+    notes: 1–2 tablespoons depending on spice preference
+- garlic:
     amounts:
     - amount: 2
-      unit: tsp
-- red_pepper_flakes:
+      unit: teaspoons
+    processing:
+    - minced
+- red pepper flakes:
     amounts:
-    - amount: 0.5
-      unit: tsp
+    - amount: "1/2"
+      unit: teaspoons
 - oil:
     amounts:
     - amount: 2
-      unit: tbsp
-    notes: author used avocado oil
-- uncooked_grain_of_choice:
+      unit: tablespoons
+    notes: avocado oil recommended
+- grain:
     amounts:
     - amount: 1
-      unit: cup
-    notes: author suggests quinoa, rice or millet
-- broccoli_chopped:
+      unit: cups
+    notes: uncooked; quinoa, rice, or millet
+- broccoli:
     amounts:
     - amount: 1
-      unit: head
-- shelled_edamame:
+      unit: whole
+    notes: 1 head
+    processing:
+    - chopped
+- edamame:
     amounts:
-    - amount: 1.5
-      unit: cup
+    - amount: "1 1/2"
+      unit: cups
+    notes: shelled
 - avocado:
     amounts:
     - amount: 1
       unit: whole
-- peanut_sauce:
+- peanut sauce:
     amounts:
-    - amount: 0.5
+    - amount: "1/2"
       unit: batch
-    notes: click for recipe
-- chopped_peanuts:
+    notes: see Thai Peanut Sauce recipe
+- peanuts:
     amounts:
-    - amount: 0.5
-      unit: cup
-- chopped_cilantro:
+    - amount: "1/2"
+      unit: cups
+    processing:
+    - chopped
+- cilantro:
     amounts:
-    - amount: 0.5
-      unit: cup
+    - amount: "1/2"
+      unit: cups
+    processing:
+    - chopped
+
 steps:
-- step: Preheat the oven to 400 degrees Fahrenheit.
-X-original-source: ../originals/PXL_20260523_110847736.RAW-01.COVER.JPG
+- step: Preheat the oven to 400°F.
+
 X-source-verification:
   status: needs-review
   notes:
   - Recipe is cut off; only the first instruction step is visible in the image.
-  - Sriracha amount listed as 1-2 tbsp; stored as null with note.
+  - Sriracha amount listed as 1-2 tbsp; stored as empty with note.
   - Peanut sauce listed as a separate linked recipe not shown in this image.
   - Oil type noted as avocado in the original text.
+  - Source URL is for the associated peanut sauce recipe; bowl recipe URL not captured.
