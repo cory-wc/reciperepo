@@ -1,5 +1,7 @@
 # Recipe collection — user guide
 
+Non-technical walkthrough for day-to-day use. For CLI details, CI, and repo layout see [README.md](README.md). For YAML rules see [notes.md](notes.md). Doc roles: [docs/documentation.md](docs/documentation.md).
+
 Your recipes live in a Git repo. Each recipe usually has:
 
 - **Source files** (`originals/`) — photos, PDFs, or prints (canonical truth)
