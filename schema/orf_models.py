@@ -1,9 +1,31 @@
 from __future__ import annotations
 
-from typing import Any
+from typing import Any, Self
 
 import yaml
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
+
+
+def _recipe_flags(data: dict[str, Any]) -> list[str]:
+    flags = data.get("X-flags") or []
+    if isinstance(flags, str):
+        return [flags]
+    return list(flags)
+
+
+def is_reference_entry(data: dict[str, Any]) -> bool:
+    return "index-page-not-a-recipe" in _recipe_flags(data)
+
+
+def _coerce_note_item(item: Any) -> str:
+    if isinstance(item, str):
+        return item
+    if isinstance(item, dict):
+        if len(item) != 1:
+            raise ValueError("each note entry must be a string or single-key dict")
+        key, val = next(iter(item.items()))
+        return f"{key}: {val}"
+    raise ValueError(f"invalid note entry: {item!r}")
 
 
 class Amount(BaseModel):
@@ -49,8 +71,8 @@ class Recipe(BaseModel):
     recipe_name: str
     recipe_uuid: str
     yields: list[YieldItem] = Field(default_factory=list)
-    ingredients: list[dict[str, IngredientDetail]]
-    steps: list[StepItem]
+    ingredients: list[dict[str, IngredientDetail]] = Field(default_factory=list)
+    steps: list[StepItem] = Field(default_factory=list)
     notes: list[str] | str | None = None
     source_url: str | None = None
     source_authors: list[str] | None = None
@@ -62,9 +84,9 @@ class Recipe(BaseModel):
 
     @field_validator("ingredients", mode="before")
     @classmethod
-    def validate_ingredients(cls, value: list[Any]) -> list[dict[str, IngredientDetail]]:
+    def validate_ingredients(cls, value: Any) -> list[dict[str, IngredientDetail]]:
         if not value:
-            raise ValueError("ingredients must not be empty")
+            return []
         parsed: list[dict[str, IngredientDetail]] = []
         for item in value:
             if not isinstance(item, dict):
@@ -86,20 +108,42 @@ class Recipe(BaseModel):
                 parsed.append({name: detail})
             else:
                 parsed.append({name: IngredientDetail.model_validate(detail)})
-        if not parsed:
-            raise ValueError("ingredients must not be empty after filtering")
         return parsed
 
     @model_validator(mode="before")
     @classmethod
-    def reject_legacy_ingredient_field(cls, data: Any) -> Any:
-        if isinstance(data, dict):
-            for item in data.get("ingredients") or []:
-                if isinstance(item, dict) and "ingredient" in item:
-                    raise ValueError(
-                        "non-ORF 'ingredient:' field detected; use dict-key form (- sugar:)"
-                    )
+    def prepare_recipe_data(cls, data: Any) -> Any:
+        if not isinstance(data, dict):
+            return data
+        for item in data.get("ingredients") or []:
+            if isinstance(item, dict) and "ingredient" in item:
+                raise ValueError(
+                    "non-ORF 'ingredient:' field detected; use dict-key form (- sugar:)"
+                )
+        notes = data.get("notes")
+        if notes is not None:
+            if isinstance(notes, str):
+                data["notes"] = [notes]
+            elif isinstance(notes, list):
+                data["notes"] = [_coerce_note_item(n) for n in notes]
+        if is_reference_entry(data):
+            data.setdefault("ingredients", [])
+            data.setdefault("steps", [])
         return data
+
+    @model_validator(mode="after")
+    def require_recipe_body(self) -> Self:
+        extras = self.__pydantic_extra__ or {}
+        flags = extras.get("X-flags") or []
+        if isinstance(flags, str):
+            flags = [flags]
+        if "index-page-not-a-recipe" in flags:
+            return self
+        if not self.ingredients:
+            raise ValueError("ingredients must not be empty")
+        if not self.steps:
+            raise ValueError("steps must not be empty")
+        return self
 
 
 def parse_recipe_yaml(text: str) -> Recipe:
