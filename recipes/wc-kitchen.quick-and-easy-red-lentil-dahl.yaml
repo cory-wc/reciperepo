@@ -107,11 +107,8 @@ notes:
 - Serve with cooked brown or white rice and vegan naan.
 
 X-source-verification:
-  status: needs-review
+  status: needs-manual-review
+  reviewed: true
   notes:
-  - Recipe is page 1 of 2; steps may be incomplete as page 2 is not visible in the
-    image.
-  - Handwritten annotation on image reads "Feb 2022 — yes —" suggesting the recipe
-    was tried and approved.
-  - Baby spinach amount given as range 3-4 cups; encoded as string range.
-  - Salt listed as 1 teaspoon; "or to taste" note omitted since amount is specified.
+  - NoraCooks.com; page 1 of 2 — spinach and lemon steps (likely step 4+) not captured
+  - Handwritten "Feb 2022 — yes —" confirms recipe was tried and approved

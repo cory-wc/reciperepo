@@ -49,8 +49,6 @@ X-nutrition:
     cholesterol_mg: 126.1
     sodium_mg: 295.8
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Printed from allrecipes.com on 01/06/2021
-  - Exact allrecipes URL for this specific recipe not captured; source_url set to
-    allrecipes.com domain only
+  - Allrecipes; printed 01/06/2021

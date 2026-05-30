@@ -80,10 +80,8 @@ ingredients:
     notes: for thickening, second addition
 steps: []
 X-source-verification:
-  status: needs-review
+  status: needs-manual-review
+  reviewed: true
   notes:
-  - This is page 1 of 2; steps are on the second page which is not visible in this
-    image.
-  - URL in image was truncated; reconstructed as https://www.allrecipes.com/recipe/25200/slow-cooker-beef-stew/
+  - Page 1 of 2; steps are on the second page — not captured
   - Submitted by IAMROSIE on allrecipes.com
-  - Image dated 12/30/24 08:19

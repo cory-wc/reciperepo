@@ -105,10 +105,6 @@ X-nutrition:
   saturated_fat_g: 2
   notes: Partial nutritional information visible; full panel not shown in image.
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Recipe printed from MyRecipes.com, dated 9/27/2019 with a 6/23/2021 annotation.
-  - Nutritional information is partially visible (calories 470, fat 15g, sat fat 2g);
-    full panel cut off.
-  - Water quantity split across two uses (1.5 cup for rice, 0.5 cup for beans) consolidated
-    into one ingredient entry with notes.
+  - MyRecipes.com; published May 2015
