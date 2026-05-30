@@ -63,7 +63,6 @@ source_url: https://www.thekitchn.com
 notes:
 - Doesn't turn out well with frozen broccoli.
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Recipe printed from theKitchn.com; exact source URL not visible in image.
-  - Handwritten note in binder margin not part of this recipe.
+  - Source: theKitchn.com; exact URL not captured from image

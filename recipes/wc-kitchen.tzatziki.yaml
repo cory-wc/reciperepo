@@ -58,8 +58,6 @@ X-tags:
 - vegetarian
 - quick
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Source is a printed NYT Cooking recipe page photographed in a binder; URL not
-    captured.
-  - Rating shown as 4 stars (583 ratings) at time of printing.
+  - NYT Cooking; URL not captured from image

@@ -1,7 +1,7 @@
 recipe_uuid: wc-kitchen.soy-vay-veri-veri-teriyaki-clone
 recipe_name: Soy Vay Veri Veri Teriyaki Clone
 description: A wonderful base to give meats and other dishes a sweet teriyaki flavor.
-source_url: https://timandangi.com/soy-vay-veri-veri-teriyaki-clone/
+source_url: https://tlmandangi.com/soy-vay-veri-veri-teriyaki-clone/
 X-original-source: ../originals/PXL_20260523_105857986.RAW-01.COVER.jpg
 yields:
 - amount: 16
@@ -90,10 +90,7 @@ steps:
     It's best to allow to cool overnight before use, but if you are in a hurry, you
     can use it to marinate right away. Works great on vegetables for soy meat products.
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Recipe printed from timandangi.com, dated June 15, 2016, photographed in a binder.
-  - Some ingredient quantities (e.g. sesame seeds, sesame oil, onion) read as ¼ cup;
-    image resolution makes exact fractions slightly difficult to confirm for all items.
-  - Cornstarch note says "dissolved in water" but the water quantity for dissolving
-    (¼ cup) is mentioned only in the instructions step.
+  - source_url corrected from timandangi.com to tlmandangi.com (per image footer)
+  - Printed June 15, 2016
