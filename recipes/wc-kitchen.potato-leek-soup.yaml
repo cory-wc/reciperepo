@@ -11,6 +11,7 @@ X-tags:
 - leek
 - freezer-friendly
 X-active_time: 25 minutes
+X-cook_time: 40 minutes
 X-total_time: 65 minutes
 
 yields:
@@ -95,7 +96,7 @@ notes:
   scaling multipliers): 1.5, 2, 1.5, 1, 4.5, 1, 1.5, 5, 1/8, 1/2'
 
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
   - Recipe sourced from a printed/photographed page of onceuponachef.com by Jenn Segal.
   - Handwritten red annotations in margins next to each ingredient line; their meaning

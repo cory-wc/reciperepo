@@ -77,7 +77,7 @@ X-nutrition:
   calcium_mg: 5
   iron_mg: 0.2
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
   - Ingredient quantity for shallot listed as 0.5 shallot (minced); interpreted as
     0.5 whole shallot.

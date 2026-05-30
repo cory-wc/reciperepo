@@ -4,13 +4,17 @@ X-original-source: ../originals/PXL_20260523_110515493.RAW-01.COVER.jpg
 X-hands_on_time: 30 minutes
 X-total_time: 3 hours 49 minutes
 X-category: dessert
+
+yields:
+- amount: 8
+  unit: servings
 X-tags:
 - galette
 - apple
 - pastry
 - dessert
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
   - From a magazine feature ("The Big Finish" section); publication name not clearly visible
   - Several assembly ingredient amounts and some dough quantities partially cut off at page edge — verify

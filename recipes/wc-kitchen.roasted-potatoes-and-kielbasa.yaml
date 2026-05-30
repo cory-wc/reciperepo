@@ -76,7 +76,7 @@ steps:
     '
 
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
   - Recipe printed from NatashasKitchen.com; print date shown as 6/23/2021.
   - Copyright 2019 Natasha's Kitchen noted on source document.
