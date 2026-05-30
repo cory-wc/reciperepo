@@ -11,6 +11,7 @@ from .paths import RepoPaths
 from .pdf import generate_all_pdfs, generate_index_pdf, generate_recipe_pdf
 from .render import render_all_recipes, render_recipe_html
 from .shop import format_shopping_list
+from .metadata_audit import audit_all, format_report
 from .status import full_status, pending_extractions
 from .validate import validate_all, validate_recipe_id
 
@@ -99,6 +100,13 @@ def cmd_status(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_audit_metadata(args: argparse.Namespace) -> int:
+    paths = RepoPaths()
+    report = audit_all(paths)
+    print(format_report(report, verbose=args.verbose), end="")
+    return 1 if args.fail and report.issues else 0
+
+
 def cmd_new(args: argparse.Namespace) -> int:
     paths = RepoPaths()
     out = paths.recipe_yaml(args.recipe_id)
@@ -169,6 +177,14 @@ def build_parser() -> argparse.ArgumentParser:
 
     p = sub.add_parser("status", help="Migration and artifact status")
     p.set_defaults(func=cmd_status)
+
+    p = sub.add_parser(
+        "audit-metadata",
+        help="Report metadata gaps (category, bare URL, verification, etc.)",
+    )
+    p.add_argument("--verbose", action="store_true")
+    p.add_argument("--fail", action="store_true", help="Exit 1 if issues found")
+    p.set_defaults(func=cmd_audit_metadata)
 
     p = sub.add_parser("new", help="Scaffold a new recipe YAML")
     p.add_argument("recipe_id")

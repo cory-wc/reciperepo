@@ -55,13 +55,6 @@ X-dietary:
 - vegan
 - vegetarian
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Recipe is a technique/how-to page; no specific farro quantity is given in the
-    source.
-  - Water amounts vary by method (with strainer vs. without) and farro type; both
-    options captured.
-  - Cooking times vary by farro type; all variants captured as separate steps.
-  - Recommended equipment references (perforated strainer, IP mesh strainer combo)
-    noted but not transcribed as ingredients.
-  - Source appears to be a printed web article stored in a binder; original URL unknown.
+  - Technique guide; no specific farro quantity given; source URL not visible in image

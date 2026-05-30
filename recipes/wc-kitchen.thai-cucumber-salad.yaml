@@ -81,9 +81,6 @@ X-nutrition:
   fiber: 1.4g
 
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Red pepper flakes quantity given as a range (1/4 to 1/2 tsp); consolidated to
-    string range.
-  - Source URL partially visible at top of page but confirmed by footer citation.
-  - Author listed as Beth - Budget Bytes.
+  - Budget Bytes; author Beth Moncel

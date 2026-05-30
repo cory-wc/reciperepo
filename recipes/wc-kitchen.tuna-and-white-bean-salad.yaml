@@ -91,8 +91,6 @@ X-tags:
 - no-cook
 - quick
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Source URL partially visible at top of page but cut off; publication identified
-    as Food & Wine.
-  - Yields not stated in visible text.
+  - Food & Wine; updated May 31, 2017; URL not captured
