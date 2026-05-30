@@ -11,7 +11,7 @@ from .paths import RepoPaths
 from .pdf import generate_all_pdfs, generate_index_pdf, generate_recipe_pdf
 from .render import render_all_recipes, render_recipe_html
 from .shop import format_shopping_list
-from .metadata_audit import audit_all, format_report
+from .metadata_audit import audit_all, format_report, write_audit_log
 from .status import full_status, pending_extractions
 from .validate import validate_all, validate_recipe_id
 
@@ -104,6 +104,8 @@ def cmd_audit_metadata(args: argparse.Namespace) -> int:
     paths = RepoPaths()
     report = audit_all(paths)
     print(format_report(report, verbose=args.verbose), end="")
+    log_path = write_audit_log(report, verbose=args.verbose, paths=paths)
+    print(f"Log written to {log_path}", file=sys.stderr)
     return 1 if args.fail and report.issues else 0
 
 
