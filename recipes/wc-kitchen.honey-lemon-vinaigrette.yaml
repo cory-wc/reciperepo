@@ -30,6 +30,10 @@ ingredients:
     amounts:
     - amount: 0.5
       unit: cup
+- salt and pepper:
+    amounts: []
+    notes: pinch, to taste
+
 steps:
 - step: Add all ingredients to a 16 oz mason jar with lid.
 - step: Screw the lid on tight and shake vigorously for a minute or two until emulsified
@@ -51,7 +55,7 @@ X-equipment:
 - mason jar with lid
 - measuring cups and spoons
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
   - Recipe extracted from printed page photograph; some text may be partially obscured
     by shadow.

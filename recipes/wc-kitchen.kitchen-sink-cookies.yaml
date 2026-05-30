@@ -133,7 +133,7 @@ steps:
 
     '
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
   - Recipe transcribed from printed page photograph; some fractions may be approximate
     due to image angle and shadow.

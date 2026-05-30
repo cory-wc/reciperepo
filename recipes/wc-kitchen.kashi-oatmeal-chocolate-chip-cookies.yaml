@@ -55,7 +55,7 @@ steps:
     cookie.
 - step: Bake for 10-15 minutes.
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
   - Ready time listed as ~45 minutes; bake time is 10-15 minutes, prep time not separately
     specified.
