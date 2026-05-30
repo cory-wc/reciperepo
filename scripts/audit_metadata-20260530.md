@@ -1,7 +1,7 @@
 # Recipe metadata audit
 
 **Date:** 2026-05-30
-**Issues:** 274 across 143 recipe(s)
+**Issues:** 270 across 141 recipe(s)
 
 ## reference-category (2)
 
@@ -45,7 +45,7 @@
 - `wc-kitchen.yule-log-cake` — uses 'author:' — prefer source_authors: list
 - `wc-kitchen.zucchini-bread-muffins` — uses 'author:' — prefer source_authors: list
 
-## missing-category (52)
+## missing-category (50)
 
 - `wc-kitchen.bacon-onion-tart` — missing X-category
 - `wc-kitchen.bacon-shrimp-sweet-potatoes` — missing X-category
@@ -72,7 +72,6 @@
 - `wc-kitchen.curried-chicken-salad` — missing X-category
 - `wc-kitchen.davids-chicken-and-mushrooms` — missing X-category
 - `wc-kitchen.dumpling-noodle-soup` — missing X-category
-- `wc-kitchen.easy-slow-cooker-beef-stew` — missing X-category
 - `wc-kitchen.everyday-instant-pot-dal` — missing X-category
 - `wc-kitchen.french-macarons` — missing X-category
 - `wc-kitchen.ginger-pork-lettuce-wraps` — missing X-category
@@ -82,7 +81,6 @@
 - `wc-kitchen.kashi-oatmeal-chocolate-chip-cookies` — missing X-category
 - `wc-kitchen.korean-beef-bowl` — missing X-category
 - `wc-kitchen.macaroni-and-hamburger` — missing X-category
-- `wc-kitchen.meatloaf` — missing X-category
 - `wc-kitchen.oven-fried-chicken-ii` — missing X-category
 - `wc-kitchen.poached-cod-with-tomatoes` — missing X-category
 - `wc-kitchen.quick-pickled-red-onion` — missing X-category
@@ -189,7 +187,7 @@
 - `wc-kitchen.your-strawberry-jam-recipe` — X-category should be a list (e.g. [dinner])
 - `wc-kitchen.yule-log-cake` — X-category should be a list (e.g. [dinner])
 
-## missing-tags (64)
+## missing-tags (62)
 
 - `wc-kitchen.bacon-onion-tart` — missing X-tags
 - `wc-kitchen.bacon-shrimp-sweet-potatoes` — missing X-tags
@@ -218,7 +216,6 @@
 - `wc-kitchen.curried-chicken-salad` — missing X-tags
 - `wc-kitchen.davids-chicken-and-mushrooms` — missing X-tags
 - `wc-kitchen.dumpling-noodle-soup` — missing X-tags
-- `wc-kitchen.easy-slow-cooker-beef-stew` — missing X-tags
 - `wc-kitchen.everyday-instant-pot-dal` — missing X-tags
 - `wc-kitchen.fluffy-almond-flour-pancakes` — missing X-tags
 - `wc-kitchen.french-macarons` — missing X-tags
@@ -232,7 +229,6 @@
 - `wc-kitchen.kashi-oatmeal-chocolate-chip-cookies` — missing X-tags
 - `wc-kitchen.korean-beef-bowl` — missing X-tags
 - `wc-kitchen.macaroni-and-hamburger` — missing X-tags
-- `wc-kitchen.meatloaf` — missing X-tags
 - `wc-kitchen.middle-eastern-lentil-soup` — missing X-tags
 - `wc-kitchen.moist-chocolate-cake` — missing X-tags
 - `wc-kitchen.oven-fried-chicken-ii` — missing X-tags
@@ -303,5 +299,5 @@
 
 ## Summary
 
-- Recipes with issues: 143
-- Total issues: 274
+- Recipes with issues: 141
+- Total issues: 270
