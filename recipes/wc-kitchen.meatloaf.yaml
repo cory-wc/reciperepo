@@ -30,17 +30,10 @@ steps: []
 notes:
 - Ketchup for topping.
 X-source-verification:
-  status: needs-review
+  status: needs-manual-review
+  reviewed: true
   notes:
-  - Image is blurry and handwriting is difficult to read; transcription is best-effort
-  - Title reads as "Meatloaf" but could be slightly different
-  - First ingredient reads as "1 lb ground beef" — confident
-  - Second ingredient reads as "1/2 medium onion, diced" — moderately confident
-  - Third ingredient reads as "1 egg" — confident
-  - Fourth ingredient reads as "1/2 bread crumbs" — unit (cup?) inferred, not clearly
-    visible
-  - Fifth ingredient reads as something like "molasses" — uncertain
-  - Sixth ingredient reads as "worcestershire sauce" — moderately confident
-  - Seventh line reads as "ketchup (topping?)" — uncertain
-  - No steps or quantities for last three ingredients are legible
-  - No yield, cook time, or temperature information visible
+  - Handwritten notepad card; image is blurry — transcription is best-effort
+  - "molasses" may actually read as "applesauce" — verify in person
+  - Quantities for worcestershire sauce and applesauce/molasses not legible
+  - No steps, yield, cook time, or temperature visible

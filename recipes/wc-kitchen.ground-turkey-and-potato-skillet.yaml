@@ -110,9 +110,8 @@ X-tags:
 - potatoes
 - weeknight dinner
 X-source-verification:
-  status: needs-review
+  status: needs-manual-review
+  reviewed: true
   notes:
-  - Instructions are cut off at step 2; the remainder of the recipe is not visible
-    in the image.
-  - Date printed on page appears to be 6/23/2021.
-  - Recipe rated 5 stars from 17 votes as shown on printed page.
+  - Instructions cut off partway through step 2; source URL not visible in image
+  - Steps 3+ (combining turkey back with potatoes + sauce) not captured
