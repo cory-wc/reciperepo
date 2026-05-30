@@ -5,50 +5,49 @@ yields:
 - amount: 12
   unit: servings
 ingredients:
-- potatoes_small:
+- potatoes (small):
     amounts:
     - amount: 700
       unit: g
     - amount: 1.4
-      unit: lb
-    note: small potatoes (12-14); choose small OR medium — see note
-- potatoes_medium:
+      unit: pounds
+    notes: 12–14 small potatoes; choose small OR medium — see note
+- potatoes (medium):
     amounts:
     - amount: 1.2
       unit: kg
     - amount: 2.4
-      unit: lb
-    note: medium potatoes (6-8); alternative to small potatoes
-- salt_boiling:
+      unit: pounds
+    notes: 6–8 medium potatoes; alternative to small potatoes
+- salt (for boiling):
     amounts:
     - amount: 1
-      unit: tbsp
-    note: for boiling
-- unsalted_butter:
+      unit: tablespoon
+- unsalted butter:
     amounts:
     - amount: 30
       unit: g
     - amount: 2
-      unit: tbsp
-    note: melted
-- olive_oil:
+      unit: tablespoons
+    processing:
+    - melted
+- olive oil:
     amounts:
     - amount: 1
-      unit: tbsp
-- salt_sprinkling:
+      unit: tablespoon
+- salt (for sprinkling):
     amounts:
     - amount: 0.75
-      unit: tsp
-    note: for sprinkling
-- black_pepper:
+      unit: teaspoons
+- black pepper:
     amounts:
     - amount: 0.25
-      unit: tsp
-- parsley_finely_chopped:
-    amounts:
-    - amount: null
-      unit: null
-    note: optional garnish
+      unit: teaspoons
+- parsley:
+    amounts: []
+    notes: optional garnish
+    processing:
+    - finely chopped
 steps:
 - step: 'Cook potatoes: Bring a pot of water to the boil, add 1 tbsp salt. Cook potatoes
     until soft — small ones should take around 20 to 25 minutes, medium ones might
@@ -72,8 +71,8 @@ X-tags:
 - smashed potatoes
 - crispy
 - potato
-X-active_time: 10 mins
-X-total_time: 1 hr 10 mins
+X-active_time: 10 minutes
+X-total_time: 1 hour 10 minutes
 X-nutrition:
   calories: 85
   per: serving

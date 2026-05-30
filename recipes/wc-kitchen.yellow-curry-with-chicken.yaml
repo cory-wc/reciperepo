@@ -14,7 +14,7 @@ ingredients:
   - onion:
       amounts:
         - amount: 1
-          unit: onion
+          unit: whole
       processing:
         - diced
 
@@ -28,21 +28,22 @@ ingredients:
   - potatoes:
       amounts:
         - amount: 1
-          unit: lb
+          unit: pounds
       processing:
         - cubed
 
   - boneless skinless chicken:
       amounts:
         - amount: 1
-          unit: lb
+          unit: pounds
 
   - chickpeas:
       amounts:
         - amount: 15
           unit: oz
       processing:
-        - drained and rinsed
+        - drained
+        - rinsed
 
   - brown sugar:
       amounts:
@@ -68,7 +69,7 @@ ingredients:
 
   - ground coriander:
       amounts:
-        - amount: 1/2
+        - amount: "1/2"
           unit: teaspoon
 
   - salt:
@@ -78,7 +79,7 @@ ingredients:
 
   - crushed red pepper:
       amounts:
-        - amount: 1/2
+        - amount: "1/2"
           unit: teaspoon
 
   - chicken broth:
@@ -116,6 +117,7 @@ steps:
   - step: Serve with rice.
 
 X-total_time: 40 minutes
-X-notes: To make rice at the same time as curry, use the pot-in-pot method with 1½ C rice and 1½ C water.
 X-original-source: ../originals/PXL_20260523_105802137.RAW-01.COVER.jpg
-X-flags: []
+
+notes:
+- To make rice at the same time as curry, use the pot-in-pot method with 1½ cups rice and 1½ cups water.

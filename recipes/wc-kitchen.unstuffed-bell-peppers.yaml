@@ -9,12 +9,12 @@ ingredients:
   - ground beef or turkey:
       amounts:
         - amount: 1
-          unit: lb
+          unit: pounds
 
   - yellow onion:
       amounts:
-        - amount: 1/2
-          unit: cup
+        - amount: "1/2"
+          unit: cups
       processing:
         - chopped
 
@@ -51,18 +51,17 @@ ingredients:
       amounts:
         - amount: "1 1/2"
           unit: cups
-      processing:
-        - uncooked
+      notes: uncooked
 
   - water:
       amounts:
-        - amount: 3/4
-          unit: cup
+        - amount: "3/4"
+          unit: cups
 
   - shredded cheese:
       amounts:
-        - amount: 1/2
-          unit: cup
+        - amount: "1/2"
+          unit: cups
 
 steps:
   - step: Heat a large skillet over medium-high heat. Add beef, onion, bell pepper, garlic, and salt. Cook until meat is no longer pink and vegetables are tender.
@@ -71,4 +70,3 @@ steps:
 
 X-total_time: 45 minutes
 X-original-source: ../originals/PXL_20260523_105744343.RAW-01.COVER.jpg
-X-flags: []

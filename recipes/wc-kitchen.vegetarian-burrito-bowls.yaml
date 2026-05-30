@@ -1,7 +1,7 @@
 recipe_uuid: wc-kitchen.vegetarian-burrito-bowls
 recipe_name: Vegetarian Burrito Bowls
 source_url: https://www.myrecipes.com/recipe/vegetarian-burrito-bowls
-X-original-source: ../originals/PXL_20260523_110314740.RAW-01.COVER.JPG
+X-original-source: ../originals/PXL_20260523_110314740.RAW-01.COVER.jpg
 description: These easy, delicious veggie bowls can be on your table in less time
   than it takes to drive to the local taco joint.
 yields:
@@ -22,31 +22,35 @@ ingredients:
 - olive oil:
     amounts:
     - amount: 2
-      unit: tablespoon
+      unit: tablespoons
 - basmati rice:
     amounts:
     - amount: 1
-      unit: cup
+      unit: cups
 - salt:
     amounts:
     - amount: 0.5
-      unit: tsp
+      unit: teaspoons
     notes: plus more to taste
 - water:
     amounts:
     - amount: 1.5
-      unit: cup
+      unit: cups
     notes: for rice; plus 0.5 cup for beans
 - garlic:
     amounts:
     - amount: 2
-      unit: clove
-    notes: minced
+      unit: cloves
+    processing:
+    - minced
 - black beans:
     amounts:
     - amount: 2
-      unit: can
-    notes: 15.5-oz. cans, drained and rinsed
+      unit: cans
+    notes: 15.5-oz. cans
+    processing:
+    - drained
+    - rinsed
 - chili powder:
     amounts:
     - amount: 1
@@ -59,25 +63,25 @@ ingredients:
     amounts:
     - amount: 1
       unit: whole
-    notes: pitted, peeled, diced
+    processing:
+    - pitted
+    - peeled
+    - diced
 - lime juice:
     amounts:
     - amount: 2
-      unit: tablespoon
+      unit: tablespoons
 - corn kernels:
     amounts:
     - amount: 1.5
-      unit: cup
-    notes: fresh or frozen, thawed if frozen
+      unit: cups
+    notes: fresh or frozen; thaw if frozen
 - cherry tomatoes:
     amounts:
     - amount: 1.5
-      unit: cup
-    notes: quartered
-- garnishes:
-    amounts: []
-    notes: 'optional: sour cream, shredded Cheddar, cilantro leaves, sliced radishes,
-      chopped pickled jalapeños, and tortilla chips'
+      unit: cups
+    processing:
+    - quartered
 steps:
 - step: Warm 1 Tbsp. oil in a saucepan over medium-high heat. Add rice and cook, stirring,
     until fragrant, 1 to 2 minutes. Add 1 1/2 cups water and 1/2 tsp. salt. Bring
@@ -90,6 +94,11 @@ steps:
 - step: Combine avocados and lime juice in a medium bowl. Divide rice among 4 bowls.
     Top with bean mixture, corn, tomatoes and avocados. Serve with garnishes and chips
     on the side, if desired.
+
+notes:
+- 'Optional garnishes: sour cream, shredded Cheddar, cilantro leaves, sliced radishes,
+  chopped pickled jalapeños, and tortilla chips.'
+
 X-nutrition:
   calories: 470
   fat_g: 15
