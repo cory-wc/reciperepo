@@ -12,6 +12,7 @@ X-tags:
 - kale
 - creamy
 X-active_time: 15 minutes
+X-cook_time: 15 minutes
 X-total_time: 30 minutes
 yields:
 - amount: "4–6"
@@ -95,7 +96,7 @@ steps:
     until heated through, about 1 minute; season with salt and pepper, to taste.
 - step: Serve immediately.
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
   - Recipe printed from damndelicious.net on 3/6/21; print URL visible in footer.
   - Yield given as range 4–6 servings; consolidated to single range entry.

@@ -46,6 +46,9 @@ ingredients:
     amounts:
     - amount: 125
       unit: g
+- macaron filling:
+    amounts: []
+    notes: desired filling; options include buttercream, ganache, jam, etc.
 steps:
 - step: Wipe down a large glass or metal mixing bowl with lemon juice or vinegar.
     Add egg whites. Cover and refrigerate for 24 hours, then bring to room temperature.
