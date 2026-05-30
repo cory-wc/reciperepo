@@ -1,0 +1,92 @@
+recipe_uuid: wc-kitchen.dumpling-noodle-soup
+recipe_name: Dumpling Noodle Soup
+author: Hetty Mckinnon
+X-original-source: ../originals/dumpling-noodle-soup-20260523.jpg
+X-total_time: 25 minutes
+yields:
+- amount: 4
+  unit: servings
+ingredients:
+- thin dried wheat, egg, or rice noodles:
+    amounts:
+    - amount: 6
+      unit: ounces
+- sesame oil:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- fresh ginger:
+    amounts:
+    - amount: 1
+      unit: 2-inch piece
+    processing:
+    - peeled
+    - grated
+- garlic:
+    amounts:
+    - amount: 2
+      unit: cloves
+    processing:
+    - peeled
+    - grated
+- ground turmeric:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- vegetable stock:
+    amounts:
+    - amount: 6
+      unit: cups
+- white miso paste:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+- frozen dumplings:
+    amounts:
+    - amount: 16
+      unit: ounces
+    notes: not thawed; about 12 ounces also noted in source — see verification
+- baby bok choy:
+    amounts:
+    - amount: 4
+      unit: heads
+    notes: about 9 ounces total
+    processing:
+    - trimmed
+    - cut into 4 pieces through the stem
+- broccoli:
+    amounts:
+    - amount: 1
+      unit: head
+    notes: small, about 9 ounces
+    processing:
+    - cut into bite-size florets
+steps:
+- step: Bring a large pot of salted water to a boil. Add the noodles and cook according
+    to package instructions, until the noodles are just tender. Drain, rinse with
+    cold water, and drain well again. Divide them among four serving bowls.
+- step: Place the same large pot over medium heat, and add sesame oil, ginger, and
+    garlic. Stir and cook for 30 seconds, until aromatic. Add turmeric, and stir for
+    15 seconds, until fragrant.
+- step: Pour the vegetable stock into the pot, then season with 1 teaspoon of salt.
+    Cover and cook for 8 to 10 minutes on medium heat, to allow flavors to meld.
+- step: Remove the lid and add the miso paste, stirring constantly until it is dissolved.
+    Taste, and season with more salt, if needed.
+- step: Increase the heat to medium-high, and carefully drop the dumplings into the
+    broth. When they float to the top, add the baby bok choy and broccoli, and cook
+    for about 2 minutes, just until the broccoli is crisp-tender.
+- step: Ladle the broth, dumplings, baby bok choy and broccoli into the four bowls
+    over the noodles. To serve, top with cilantro or chopped scallions.
+notes:
+- Garnish with fresh cilantro or chopped scallions.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe extracted from printed page photograph; some text partially obscured by
+    shadow.
+  - Broccoli quantity listed as "about 9 ounces" in image but also described as "1
+    small head"; both noted.
+  - Frozen dumplings listed as "about 12 ounces" in ingredients but "16 ounces" also
+    appears; image reads "16 ounces frozen dumplings (not thawed)" with "about 12
+    ounces" as a parenthetical — flagged for review.
+  - Rating shown as 4 stars (1524 reviews).

@@ -1,8 +1,91 @@
-generated_at: '2026-05-23'
+generated_at: '2026-05-30'
 sort_by: name
 recipes:
-- id: wc-kitchen.bratkartoffeln
-  name: Bratkartoffeln
+- id: wc-kitchen.15-minute-miso-soup-with-greens-and-tofu
+  name: 15-Minute Miso Soup with Greens and Tofu
+  category:
+  - Appetizer
+  - Entrée
+  - Side
+  tags:
+  - Gluten-Free
+  - Japanese-Inspired
+  - Vegan
+  dietary:
+  - gluten-free
+  - vegan
+  yield: 4 bowls
+  source: url
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.15-minute-miso-soup-with-greens-and-tofu.html
+    pdf: pdfs/wc-kitchen.15-minute-miso-soup-with-greens-and-tofu.pdf
+    yaml: recipes/wc-kitchen.15-minute-miso-soup-with-greens-and-tofu.yaml
+- id: wc-kitchen.30-minute-dairy-free-potato-soup
+  name: 30 Minute Dairy Free Potato Soup
+  category: soup
+  tags:
+  - dairy-free
+  - gluten-free
+  - Whole30
+  - potato soup
+  dietary:
+  - dairy-free
+  - gluten-free
+  - Whole30
+  yield: 8 cup servings
+  source: url
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.30-minute-dairy-free-potato-soup.html
+    pdf: pdfs/wc-kitchen.30-minute-dairy-free-potato-soup.pdf
+    yaml: recipes/wc-kitchen.30-minute-dairy-free-potato-soup.yaml
+- id: wc-kitchen.actually-delicious-turkey-burgers
+  name: Actually Delicious Turkey Burgers
+  category: main dish
+  tags:
+  - turkey
+  - burgers
+  - ground turkey
+  dietary: []
+  yield: 12 patties
+  source: url
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.actually-delicious-turkey-burgers.html
+    pdf: pdfs/wc-kitchen.actually-delicious-turkey-burgers.pdf
+    yaml: recipes/wc-kitchen.actually-delicious-turkey-burgers.yaml
+- id: wc-kitchen.all-purpose-thai-basil-sauce
+  name: All-Purpose Thai Basil Sauce
+  category: Sauces
+  tags:
+  - Thai
+  - basil
+  - stir fry
+  - pantry staples
+  dietary:
+  - vegetarian-adaptable
+  yield: 4 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.all-purpose-thai-basil-sauce.html
+    pdf: pdfs/wc-kitchen.all-purpose-thai-basil-sauce.pdf
+    yaml: recipes/wc-kitchen.all-purpose-thai-basil-sauce.yaml
+- id: wc-kitchen.bacon-onion-tart
+  name: Bacon Onion Tart
+  category: []
+  tags: []
+  dietary: []
+  yield: 12 servings
+  source: file
+  verification: unknown
+  links:
+    html: site/wc-kitchen.bacon-onion-tart.html
+    pdf: pdfs/wc-kitchen.bacon-onion-tart.pdf
+    yaml: recipes/wc-kitchen.bacon-onion-tart.yaml
+- id: wc-kitchen.bacon-shrimp-sweet-potatoes
+  name: Bacon-Shrimp Sweet Potatoes
   category: []
   tags: []
   dietary: []
@@ -10,6 +93,2082 @@ recipes:
   source: file
   verification: unknown
   links:
+    html: site/wc-kitchen.bacon-shrimp-sweet-potatoes.html
+    pdf: pdfs/wc-kitchen.bacon-shrimp-sweet-potatoes.pdf
+    yaml: recipes/wc-kitchen.bacon-shrimp-sweet-potatoes.yaml
+- id: wc-kitchen.baked-acorn-squash-with-butter-and-brown-sugar
+  name: Baked Acorn Squash with Butter and Brown Sugar
+  category: []
+  tags:
+  - squash
+  - fall
+  - side dish
+  - vegetarian
+  dietary: []
+  yield: 2 servings
+  source: url
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.baked-acorn-squash-with-butter-and-brown-sugar.html
+    pdf: pdfs/wc-kitchen.baked-acorn-squash-with-butter-and-brown-sugar.pdf
+    yaml: recipes/wc-kitchen.baked-acorn-squash-with-butter-and-brown-sugar.yaml
+- id: wc-kitchen.baked-oatmeal-with-cranberries-and-almonds
+  name: Baked Oatmeal With Cranberries and Almonds
+  category: breakfast
+  tags:
+  - baked oatmeal
+  - cranberry
+  - almond
+  - make-ahead
+  - whole grain
+  dietary: []
+  yield: 1 2-quart baking dish
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.baked-oatmeal-with-cranberries-and-almonds.html
+    pdf: pdfs/wc-kitchen.baked-oatmeal-with-cranberries-and-almonds.pdf
+    yaml: recipes/wc-kitchen.baked-oatmeal-with-cranberries-and-almonds.yaml
+- id: wc-kitchen.ball-realfruit-low-or-no-sugar-jam
+  name: Ball RealFruit Low or No-Sugar Jam (Scaling Reference Table)
+  category: preserve
+  tags:
+  - jam
+  - canning
+  - low-sugar
+  - no-sugar
+  - Ball RealFruit pectin
+  - scaling table
+  dietary: []
+  yield: 1 to 9 half-pint jars (see scaling table)
+  source: file
+  verification: needs-manual-review
+  links:
+    html: site/wc-kitchen.ball-realfruit-low-or-no-sugar-jam.html
+    pdf: pdfs/wc-kitchen.ball-realfruit-low-or-no-sugar-jam.pdf
+    yaml: recipes/wc-kitchen.ball-realfruit-low-or-no-sugar-jam.yaml
+- id: wc-kitchen.beef-barley-soup
+  name: Beef Barley Soup
+  category: []
+  tags: []
+  dietary: []
+  yield: 8 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.beef-barley-soup.html
+    pdf: pdfs/wc-kitchen.beef-barley-soup.pdf
+    yaml: recipes/wc-kitchen.beef-barley-soup.yaml
+- id: wc-kitchen.beef-bolognese-with-parsnips
+  name: Beef Bolognese with Parsnips
+  category: []
+  tags: []
+  dietary: []
+  yield: 2 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.beef-bolognese-with-parsnips.html
+    pdf: pdfs/wc-kitchen.beef-bolognese-with-parsnips.pdf
+    yaml: recipes/wc-kitchen.beef-bolognese-with-parsnips.yaml
+- id: wc-kitchen.beef-brisket
+  name: Beef Brisket
+  category: []
+  tags: []
+  dietary: []
+  yield: 10 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.beef-brisket.html
+    pdf: pdfs/wc-kitchen.beef-brisket.pdf
+    yaml: recipes/wc-kitchen.beef-brisket.yaml
+- id: wc-kitchen.beer-batter-fish
+  name: Beer Batter Fish
+  category: []
+  tags: []
+  dietary: []
+  yield: 6 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.beer-batter-fish.html
+    pdf: pdfs/wc-kitchen.beer-batter-fish.pdf
+    yaml: recipes/wc-kitchen.beer-batter-fish.yaml
+- id: wc-kitchen.beginners-guide-to-french-macarons
+  name: Beginner's Guide to French Macarons
+  category: dessert, cookie
+  tags:
+  - french macarons
+  - macarons
+  - almond flour
+  - meringue
+  dietary: []
+  yield: None macarons
+  source: url
+  verification: needs-manual-review
+  links:
+    html: site/wc-kitchen.beginners-guide-to-french-macarons.html
+    pdf: pdfs/wc-kitchen.beginners-guide-to-french-macarons.pdf
+    yaml: recipes/wc-kitchen.beginners-guide-to-french-macarons.yaml
+- id: wc-kitchen.best-bean-salad
+  name: Best Bean Salad
+  category: salad
+  tags:
+  - bean salad
+  - three-bean salad
+  - make-ahead
+  - vegetarian
+  dietary: []
+  yield: ''
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.best-bean-salad.html
+    pdf: pdfs/wc-kitchen.best-bean-salad.pdf
+    yaml: recipes/wc-kitchen.best-bean-salad.yaml
+- id: wc-kitchen.vegetable-lasagna
+  name: Best Vegetable Lasagna
+  category: entree
+  tags:
+  - lasagna
+  - vegetarian
+  - pasta
+  - baked
+  dietary: []
+  yield: 8 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.vegetable-lasagna.html
+    pdf: pdfs/wc-kitchen.vegetable-lasagna.pdf
+    yaml: recipes/wc-kitchen.vegetable-lasagna.yaml
+- id: wc-kitchen.binder-index-page-1
+  name: Binder Index (page 1)
+  category: []
+  tags: []
+  dietary: []
+  yield: ''
+  source: file
+  verification: unknown
+  links:
+    html: site/wc-kitchen.binder-index-page-1.html
+    pdf: pdfs/wc-kitchen.binder-index-page-1.pdf
+    yaml: recipes/wc-kitchen.binder-index-page-1.yaml
+- id: wc-kitchen.binder-index
+  name: Binder Index (page 2)
+  category: []
+  tags: []
+  dietary: []
+  yield: ''
+  source: file
+  verification: unknown
+  links:
+    html: site/wc-kitchen.binder-index.html
+    pdf: pdfs/wc-kitchen.binder-index.pdf
+    yaml: recipes/wc-kitchen.binder-index.yaml
+- id: wc-kitchen.black-bean-and-corn-salad-ii
+  name: Black Bean and Corn Salad II
+  category: salad
+  tags:
+  - black bean
+  - corn
+  - vegetarian
+  - lime dressing
+  dietary: []
+  yield: ''
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.black-bean-and-corn-salad-ii.html
+    pdf: pdfs/wc-kitchen.black-bean-and-corn-salad-ii.pdf
+    yaml: recipes/wc-kitchen.black-bean-and-corn-salad-ii.yaml
+- id: wc-kitchen.black-bean-soup
+  name: Black Bean Soup
+  category: Soup
+  tags:
+  - black bean
+  - vegetarian
+  - Mexican
+  - easy
+  dietary:
+  - vegetarian
+  yield: 4 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.black-bean-soup.html
+    pdf: pdfs/wc-kitchen.black-bean-soup.pdf
+    yaml: recipes/wc-kitchen.black-bean-soup.yaml
+- id: wc-kitchen.blackened-mahi-mahi
+  name: Blackened Mahi Mahi
+  category: seafood
+  tags:
+  - blackened
+  - mahi mahi
+  - cajun
+  - fish
+  - quick
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.blackened-mahi-mahi.html
+    pdf: pdfs/wc-kitchen.blackened-mahi-mahi.pdf
+    yaml: recipes/wc-kitchen.blackened-mahi-mahi.yaml
+- id: wc-kitchen.bratkartoffeln
+  name: Bratkartoffeln
+  category: side dish
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: verified
+  links:
     html: site/wc-kitchen.bratkartoffeln.html
     pdf: pdfs/wc-kitchen.bratkartoffeln.pdf
     yaml: recipes/wc-kitchen.bratkartoffeln.yaml
+- id: wc-kitchen.broccoli-cheese-soup
+  name: Broccoli Cheese Soup
+  category: []
+  tags: []
+  dietary: []
+  yield: 12 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.broccoli-cheese-soup.html
+    pdf: pdfs/wc-kitchen.broccoli-cheese-soup.pdf
+    yaml: recipes/wc-kitchen.broccoli-cheese-soup.yaml
+- id: wc-kitchen.brussels-sprout-salad-with-maple-vinaigrette
+  name: Brussels Sprout Salad with Maple Vinaigrette
+  category: salad
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.brussels-sprout-salad-with-maple-vinaigrette.html
+    pdf: pdfs/wc-kitchen.brussels-sprout-salad-with-maple-vinaigrette.pdf
+    yaml: recipes/wc-kitchen.brussels-sprout-salad-with-maple-vinaigrette.yaml
+- id: wc-kitchen.cabbage-soup
+  name: Cabbage Soup
+  category: []
+  tags: []
+  dietary: []
+  yield: 8 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.cabbage-soup.html
+    pdf: pdfs/wc-kitchen.cabbage-soup.pdf
+    yaml: recipes/wc-kitchen.cabbage-soup.yaml
+- id: wc-kitchen.candied-sweet-potatoes
+  name: Candied Sweet Potatoes
+  category: []
+  tags: []
+  dietary: []
+  yield: ''
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.candied-sweet-potatoes.html
+    pdf: pdfs/wc-kitchen.candied-sweet-potatoes.pdf
+    yaml: recipes/wc-kitchen.candied-sweet-potatoes.yaml
+- id: wc-kitchen.chana-masala
+  name: Chana Masala
+  category: []
+  tags: []
+  dietary: []
+  yield: 6 servings
+  source: url
+  verification: unknown
+  links:
+    html: site/wc-kitchen.chana-masala.html
+    pdf: pdfs/wc-kitchen.chana-masala.pdf
+    yaml: recipes/wc-kitchen.chana-masala.yaml
+- id: wc-kitchen.chicken-and-vegetable-pot-pie
+  name: Chicken & Vegetable Pot Pie
+  category: []
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: unknown
+  links:
+    html: site/wc-kitchen.chicken-and-vegetable-pot-pie.html
+    pdf: pdfs/wc-kitchen.chicken-and-vegetable-pot-pie.pdf
+    yaml: recipes/wc-kitchen.chicken-and-vegetable-pot-pie.yaml
+- id: wc-kitchen.chicken-and-veggie-enchiladas
+  name: Chicken & Veggie Enchiladas
+  category: []
+  tags: []
+  dietary: []
+  yield: 8 servings
+  source: file
+  verification: unknown
+  links:
+    html: site/wc-kitchen.chicken-and-veggie-enchiladas.html
+    pdf: pdfs/wc-kitchen.chicken-and-veggie-enchiladas.pdf
+    yaml: recipes/wc-kitchen.chicken-and-veggie-enchiladas.yaml
+- id: wc-kitchen.chicken-katsu-recipe
+  name: Chicken Katsu Recipe
+  category: []
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.chicken-katsu-recipe.html
+    pdf: pdfs/wc-kitchen.chicken-katsu-recipe.pdf
+    yaml: recipes/wc-kitchen.chicken-katsu-recipe.yaml
+- id: wc-kitchen.chicken-soup
+  name: Chicken Soup
+  category: soup
+  tags:
+  - soup
+  - chicken
+  dietary: []
+  yield: 8 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.chicken-soup.html
+    pdf: pdfs/wc-kitchen.chicken-soup.pdf
+    yaml: recipes/wc-kitchen.chicken-soup.yaml
+- id: wc-kitchen.chicken-tikka-masala
+  name: Chicken Tikka Masala
+  category: []
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: unknown
+  links:
+    html: site/wc-kitchen.chicken-tikka-masala.html
+    pdf: pdfs/wc-kitchen.chicken-tikka-masala.pdf
+    yaml: recipes/wc-kitchen.chicken-tikka-masala.yaml
+- id: wc-kitchen.chicken-with-creamy-mushroom-sauce
+  name: Chicken with Creamy Mushroom Sauce
+  category: Mains
+  tags:
+  - chicken
+  - mushroom sauce
+  - creamy sauce
+  - western
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.chicken-with-creamy-mushroom-sauce.html
+    pdf: pdfs/wc-kitchen.chicken-with-creamy-mushroom-sauce.pdf
+    yaml: recipes/wc-kitchen.chicken-with-creamy-mushroom-sauce.yaml
+- id: wc-kitchen.chili-recipe
+  name: Chili Recipe (Vegetarian)
+  category: main dish
+  tags:
+  - vegetarian
+  - chili
+  - slow cooker
+  dietary:
+  - vegetarian
+  yield: ''
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.chili-recipe.html
+    pdf: pdfs/wc-kitchen.chili-recipe.pdf
+    yaml: recipes/wc-kitchen.chili-recipe.yaml
+- id: wc-kitchen.chocolate-biscotti
+  name: Chocolate Biscotti
+  category: Breakfast, cookie, Dessert
+  tags:
+  - Italian
+  - chocolate
+  - biscotti
+  dietary: []
+  yield: 24 cookies
+  source: url
+  verification: needs-manual-review
+  links:
+    html: site/wc-kitchen.chocolate-biscotti.html
+    pdf: pdfs/wc-kitchen.chocolate-biscotti.pdf
+    yaml: recipes/wc-kitchen.chocolate-biscotti.yaml
+- id: wc-kitchen.chocolate-olive-oil-cake
+  name: Chocolate Olive Oil Cake
+  category: dessert
+  tags:
+  - cake
+  - chocolate
+  - vegan
+  dietary: []
+  yield: 8 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.chocolate-olive-oil-cake.html
+    pdf: pdfs/wc-kitchen.chocolate-olive-oil-cake.pdf
+    yaml: recipes/wc-kitchen.chocolate-olive-oil-cake.yaml
+- id: wc-kitchen.corn-chowder
+  name: Corn Chowder
+  category: soup
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.corn-chowder.html
+    pdf: pdfs/wc-kitchen.corn-chowder.pdf
+    yaml: recipes/wc-kitchen.corn-chowder.yaml
+- id: wc-kitchen.corn-quesadillas
+  name: Corn Quesadillas
+  category: []
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: url
+  verification: unknown
+  links:
+    html: site/wc-kitchen.corn-quesadillas.html
+    pdf: pdfs/wc-kitchen.corn-quesadillas.pdf
+    yaml: recipes/wc-kitchen.corn-quesadillas.yaml
+- id: wc-kitchen.couscous-feta-salad
+  name: Couscous Feta Salad
+  category: []
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.couscous-feta-salad.html
+    pdf: pdfs/wc-kitchen.couscous-feta-salad.pdf
+    yaml: recipes/wc-kitchen.couscous-feta-salad.yaml
+- id: wc-kitchen.crab-salad
+  name: Crab Salad (Seafood Salad)
+  category: Salad
+  tags:
+  - crab
+  - seafood
+  - American
+  - no-cook
+  dietary: []
+  yield: 2 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.crab-salad.html
+    pdf: pdfs/wc-kitchen.crab-salad.pdf
+    yaml: recipes/wc-kitchen.crab-salad.yaml
+- id: wc-kitchen.creamy-broccoli-pasta
+  name: Creamy Broccoli Pasta
+  category: []
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.creamy-broccoli-pasta.html
+    pdf: pdfs/wc-kitchen.creamy-broccoli-pasta.pdf
+    yaml: recipes/wc-kitchen.creamy-broccoli-pasta.yaml
+- id: wc-kitchen.creamy-gnocchi-with-sun-dried-tomatoes
+  name: Creamy Gnocchi with Sun-Dried Tomatoes
+  category: []
+  tags: []
+  dietary: []
+  yield: 6 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.creamy-gnocchi-with-sun-dried-tomatoes.html
+    pdf: pdfs/wc-kitchen.creamy-gnocchi-with-sun-dried-tomatoes.pdf
+    yaml: recipes/wc-kitchen.creamy-gnocchi-with-sun-dried-tomatoes.yaml
+- id: wc-kitchen.creamy-sriracha-mayo-recipe
+  name: Creamy Sriracha Mayo Recipe
+  category: Appetizer, sauce
+  tags:
+  - recipe
+  - sauce
+  - spicy
+  - sriracha
+  dietary: []
+  yield: 20 tablespoons
+  source: url
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.creamy-sriracha-mayo-recipe.html
+    pdf: pdfs/wc-kitchen.creamy-sriracha-mayo-recipe.pdf
+    yaml: recipes/wc-kitchen.creamy-sriracha-mayo-recipe.yaml
+- id: wc-kitchen.creamy-tomato-soup
+  name: Creamy Tomato Soup
+  category: []
+  tags: []
+  dietary: []
+  yield: 6 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.creamy-tomato-soup.html
+    pdf: pdfs/wc-kitchen.creamy-tomato-soup.pdf
+    yaml: recipes/wc-kitchen.creamy-tomato-soup.yaml
+- id: wc-kitchen.creamy-tortellini-soup
+  name: Creamy Tortellini Soup
+  category: soup
+  tags:
+  - weeknight
+  - tortellini
+  - sausage
+  - kale
+  - creamy
+  dietary: []
+  yield: 4–6 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.creamy-tortellini-soup.html
+    pdf: pdfs/wc-kitchen.creamy-tortellini-soup.pdf
+    yaml: recipes/wc-kitchen.creamy-tortellini-soup.yaml
+- id: wc-kitchen.crispy-slow-cooker-carnitas
+  name: Crispy Slow Cooker Carnitas
+  category: []
+  tags: []
+  dietary: []
+  yield: 6-8 servings
+  source: url
+  verification: unknown
+  links:
+    html: site/wc-kitchen.crispy-slow-cooker-carnitas.html
+    pdf: pdfs/wc-kitchen.crispy-slow-cooker-carnitas.pdf
+    yaml: recipes/wc-kitchen.crispy-slow-cooker-carnitas.yaml
+- id: wc-kitchen.cucumber-salad
+  name: Cucumber Salad
+  category: []
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.cucumber-salad.html
+    pdf: pdfs/wc-kitchen.cucumber-salad.pdf
+    yaml: recipes/wc-kitchen.cucumber-salad.yaml
+- id: wc-kitchen.curried-chicken-salad
+  name: Curried Chicken Salad
+  category: []
+  tags: []
+  dietary: []
+  yield: 6 servings
+  source: file
+  verification: unknown
+  links:
+    html: site/wc-kitchen.curried-chicken-salad.html
+    pdf: pdfs/wc-kitchen.curried-chicken-salad.pdf
+    yaml: recipes/wc-kitchen.curried-chicken-salad.yaml
+- id: wc-kitchen.dairy-free-quiche-lorraine
+  name: Dairy Free Quiche Lorraine
+  category: Breakfast
+  tags:
+  - dairy-free
+  - quiche
+  - French
+  - brunch
+  dietary:
+  - dairy-free
+  yield: 8 servings
+  source: file
+  verification: needs-manual-review
+  links:
+    html: site/wc-kitchen.dairy-free-quiche-lorraine.html
+    pdf: pdfs/wc-kitchen.dairy-free-quiche-lorraine.pdf
+    yaml: recipes/wc-kitchen.dairy-free-quiche-lorraine.yaml
+- id: wc-kitchen.davids-chicken-and-mushrooms
+  name: David's Chicken & Mushrooms
+  category: []
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: unknown
+  links:
+    html: site/wc-kitchen.davids-chicken-and-mushrooms.html
+    pdf: pdfs/wc-kitchen.davids-chicken-and-mushrooms.pdf
+    yaml: recipes/wc-kitchen.davids-chicken-and-mushrooms.yaml
+- id: wc-kitchen.dumpling-noodle-soup
+  name: Dumpling Noodle Soup
+  category: []
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.dumpling-noodle-soup.html
+    pdf: pdfs/wc-kitchen.dumpling-noodle-soup.pdf
+    yaml: recipes/wc-kitchen.dumpling-noodle-soup.yaml
+- id: wc-kitchen.easy-broccoli-quiche
+  name: Easy Broccoli Quiche
+  category: quiche
+  tags:
+  - vegetarian
+  - broccoli
+  - quiche
+  - easy
+  dietary: []
+  yield: 6 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.easy-broccoli-quiche.html
+    pdf: pdfs/wc-kitchen.easy-broccoli-quiche.pdf
+    yaml: recipes/wc-kitchen.easy-broccoli-quiche.yaml
+- id: wc-kitchen.easy-pad-thai
+  name: Easy Pad Thai
+  category: Main
+  tags:
+  - pad thai
+  - Thai
+  - noodles
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.easy-pad-thai.html
+    pdf: pdfs/wc-kitchen.easy-pad-thai.pdf
+    yaml: recipes/wc-kitchen.easy-pad-thai.yaml
+- id: wc-kitchen.everyday-instant-pot-dal
+  name: Everyday Instant Pot Dal
+  category: []
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: url
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.everyday-instant-pot-dal.html
+    pdf: pdfs/wc-kitchen.everyday-instant-pot-dal.pdf
+    yaml: recipes/wc-kitchen.everyday-instant-pot-dal.yaml
+- id: wc-kitchen.fluffy-almond-flour-pancakes
+  name: Fluffy Almond Flour Pancakes
+  category: Breakfast
+  tags: []
+  dietary:
+  - Gluten Free
+  yield: 10 pancakes
+  source: url
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.fluffy-almond-flour-pancakes.html
+    pdf: pdfs/wc-kitchen.fluffy-almond-flour-pancakes.pdf
+    yaml: recipes/wc-kitchen.fluffy-almond-flour-pancakes.yaml
+- id: wc-kitchen.french-macarons
+  name: French Macarons
+  category: []
+  tags: []
+  dietary: []
+  yield: 40 shells
+  source: url
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.french-macarons.html
+    pdf: pdfs/wc-kitchen.french-macarons.pdf
+    yaml: recipes/wc-kitchen.french-macarons.yaml
+- id: wc-kitchen.ginger-pork-lettuce-wraps
+  name: Ginger Pork Lettuce Wraps
+  category: []
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: unknown
+  links:
+    html: site/wc-kitchen.ginger-pork-lettuce-wraps.html
+    pdf: pdfs/wc-kitchen.ginger-pork-lettuce-wraps.pdf
+    yaml: recipes/wc-kitchen.ginger-pork-lettuce-wraps.yaml
+- id: wc-kitchen.glazed-carrots
+  name: Glazed Carrots
+  category: side dish
+  tags:
+  - carrots
+  - glazed
+  - side dish
+  - vegetable
+  dietary: []
+  yield: 8 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.glazed-carrots.html
+    pdf: pdfs/wc-kitchen.glazed-carrots.pdf
+    yaml: recipes/wc-kitchen.glazed-carrots.yaml
+- id: wc-kitchen.gochujang-roasted-carrots
+  name: Gochujang Roasted Carrots
+  category: Side Dish
+  tags:
+  - Korean
+  - carrots
+  - roasted
+  - vegetarian
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.gochujang-roasted-carrots.html
+    pdf: pdfs/wc-kitchen.gochujang-roasted-carrots.pdf
+    yaml: recipes/wc-kitchen.gochujang-roasted-carrots.yaml
+- id: wc-kitchen.grilled-broccoli
+  name: Grilled Broccoli
+  category: side dish
+  tags:
+  - grilled
+  - broccoli
+  - vegetarian
+  - side dish
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.grilled-broccoli.html
+    pdf: pdfs/wc-kitchen.grilled-broccoli.pdf
+    yaml: recipes/wc-kitchen.grilled-broccoli.yaml
+- id: wc-kitchen.ground-turkey-and-potato-skillet
+  name: Ground Turkey & Potato Skillet
+  category: main dish
+  tags:
+  - one pot
+  - skillet
+  - ground turkey
+  - potatoes
+  - weeknight dinner
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: needs-manual-review
+  links:
+    html: site/wc-kitchen.ground-turkey-and-potato-skillet.html
+    pdf: pdfs/wc-kitchen.ground-turkey-and-potato-skillet.pdf
+    yaml: recipes/wc-kitchen.ground-turkey-and-potato-skillet.yaml
+- id: wc-kitchen.healthy-blueberry-muffins
+  name: Healthy Blueberry Muffins
+  category: Muffin
+  tags:
+  - blueberry
+  - healthy
+  - whole wheat
+  - baked
+  dietary: []
+  yield: 12 muffins
+  source: file
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.healthy-blueberry-muffins.html
+    pdf: pdfs/wc-kitchen.healthy-blueberry-muffins.pdf
+    yaml: recipes/wc-kitchen.healthy-blueberry-muffins.yaml
+- id: wc-kitchen.healthy-sloppy-joes
+  name: Healthy Sloppy Joes
+  category: dinner
+  tags:
+  - sloppy joes
+  - ground beef
+  - American
+  - healthy
+  dietary: []
+  yield: 6 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.healthy-sloppy-joes.html
+    pdf: pdfs/wc-kitchen.healthy-sloppy-joes.pdf
+    yaml: recipes/wc-kitchen.healthy-sloppy-joes.yaml
+- id: wc-kitchen.homemade-drop-biscuits-recipe
+  name: Homemade Drop Biscuits Recipe (No Milk)
+  category: []
+  tags: []
+  dietary: []
+  yield: 15 biscuits
+  source: file
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.homemade-drop-biscuits-recipe.html
+    pdf: pdfs/wc-kitchen.homemade-drop-biscuits-recipe.pdf
+    yaml: recipes/wc-kitchen.homemade-drop-biscuits-recipe.yaml
+- id: wc-kitchen.homemade-hot-chocolate-mix
+  name: Homemade Hot Chocolate Mix
+  category: []
+  tags: []
+  dietary: []
+  yield: 13 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.homemade-hot-chocolate-mix.html
+    pdf: pdfs/wc-kitchen.homemade-hot-chocolate-mix.pdf
+    yaml: recipes/wc-kitchen.homemade-hot-chocolate-mix.yaml
+- id: wc-kitchen.honey-apple-galette-with-pistachio-sugar
+  name: Honey Apple Galette With Pistachio Sugar
+  category: dessert
+  tags:
+  - galette
+  - apple
+  - pastry
+  - dessert
+  dietary: []
+  yield: 8 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.honey-apple-galette-with-pistachio-sugar.html
+    pdf: pdfs/wc-kitchen.honey-apple-galette-with-pistachio-sugar.pdf
+    yaml: recipes/wc-kitchen.honey-apple-galette-with-pistachio-sugar.yaml
+- id: wc-kitchen.honey-lemon-vinaigrette
+  name: Honey Lemon Vinaigrette
+  category: Condiment, Salad
+  tags:
+  - vinaigrette
+  - dressing
+  - lemon
+  - honey
+  - quick
+  dietary: []
+  yield: 1 cup
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.honey-lemon-vinaigrette.html
+    pdf: pdfs/wc-kitchen.honey-lemon-vinaigrette.pdf
+    yaml: recipes/wc-kitchen.honey-lemon-vinaigrette.yaml
+- id: wc-kitchen.how-to-make-instant-pot-farro
+  name: How to Make Instant Pot Farro
+  category: side dish, grain
+  tags:
+  - instant pot
+  - pressure cooker
+  - farro
+  - whole grain
+  - quick
+  dietary:
+  - vegan
+  - vegetarian
+  yield: ''
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.how-to-make-instant-pot-farro.html
+    pdf: pdfs/wc-kitchen.how-to-make-instant-pot-farro.pdf
+    yaml: recipes/wc-kitchen.how-to-make-instant-pot-farro.yaml
+- id: wc-kitchen.instant-pot-applesauce
+  name: Instant Pot Applesauce
+  category: Side Dish, Snack
+  tags: []
+  dietary: []
+  yield: 5–6 cups
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.instant-pot-applesauce.html
+    pdf: pdfs/wc-kitchen.instant-pot-applesauce.pdf
+    yaml: recipes/wc-kitchen.instant-pot-applesauce.yaml
+- id: wc-kitchen.instant-pot-baked-potato-soup
+  name: Instant Pot Baked Potato Soup
+  category: soup
+  tags:
+  - soup
+  - potato
+  - instant pot
+  - comfort food
+  dietary: []
+  yield: 8 servings
+  source: file
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.instant-pot-baked-potato-soup.html
+    pdf: pdfs/wc-kitchen.instant-pot-baked-potato-soup.pdf
+    yaml: recipes/wc-kitchen.instant-pot-baked-potato-soup.yaml
+- id: wc-kitchen.instant-pot-black-beans
+  name: Instant Pot Black Beans
+  category: side dish
+  tags:
+  - instant pot
+  - pressure cooker
+  - black beans
+  - vegan
+  - budget-friendly
+  - meal prep
+  dietary:
+  - vegan
+  - vegetarian
+  yield: 8 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.instant-pot-black-beans.html
+    pdf: pdfs/wc-kitchen.instant-pot-black-beans.pdf
+    yaml: recipes/wc-kitchen.instant-pot-black-beans.yaml
+- id: wc-kitchen.instant-pot-cilantro-lime-rice-recipe
+  name: Instant Pot Cilantro Lime Rice Recipe
+  category: Side Dish
+  tags:
+  - cilantro lime rice
+  - instant pot rice recipe
+  - pressure cooker
+  dietary: []
+  yield: 5 1-cup servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.instant-pot-cilantro-lime-rice-recipe.html
+    pdf: pdfs/wc-kitchen.instant-pot-cilantro-lime-rice-recipe.pdf
+    yaml: recipes/wc-kitchen.instant-pot-cilantro-lime-rice-recipe.yaml
+- id: wc-kitchen.instant-pot-parmesan-risotto
+  name: Instant Pot Parmesan Risotto
+  category: []
+  tags: []
+  dietary: []
+  yield: 6 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.instant-pot-parmesan-risotto.html
+    pdf: pdfs/wc-kitchen.instant-pot-parmesan-risotto.pdf
+    yaml: recipes/wc-kitchen.instant-pot-parmesan-risotto.yaml
+- id: wc-kitchen.instant-pot-ramen-noodles
+  name: Instant Pot Ramen Noodles
+  category: Soup
+  tags:
+  - Asian
+  - instant pot
+  - 21 Day Fix
+  - dorm room dinner
+  dietary: []
+  yield: 4 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.instant-pot-ramen-noodles.html
+    pdf: pdfs/wc-kitchen.instant-pot-ramen-noodles.pdf
+    yaml: recipes/wc-kitchen.instant-pot-ramen-noodles.yaml
+- id: wc-kitchen.instant-pot-red-beans-and-rice
+  name: Instant Pot Red Beans and Rice
+  category: Main Course
+  tags: []
+  dietary: []
+  yield: ''
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.instant-pot-red-beans-and-rice.html
+    pdf: pdfs/wc-kitchen.instant-pot-red-beans-and-rice.pdf
+    yaml: recipes/wc-kitchen.instant-pot-red-beans-and-rice.yaml
+- id: wc-kitchen.instant-pot-teriyaki-turkey-meatballs
+  name: Instant Pot Teriyaki Turkey Meatballs
+  category: Main Course
+  tags: []
+  dietary: []
+  yield: 6 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.instant-pot-teriyaki-turkey-meatballs.html
+    pdf: pdfs/wc-kitchen.instant-pot-teriyaki-turkey-meatballs.pdf
+    yaml: recipes/wc-kitchen.instant-pot-teriyaki-turkey-meatballs.yaml
+- id: wc-kitchen.kashi-oatmeal-chocolate-chip-cookies
+  name: Kashi Oatmeal Chocolate Chip Cookies
+  category: []
+  tags: []
+  dietary: []
+  yield: 8 cookies
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.kashi-oatmeal-chocolate-chip-cookies.html
+    pdf: pdfs/wc-kitchen.kashi-oatmeal-chocolate-chip-cookies.pdf
+    yaml: recipes/wc-kitchen.kashi-oatmeal-chocolate-chip-cookies.yaml
+- id: wc-kitchen.kitchen-sink-cookies
+  name: Kitchen Sink Cookies (Panera Copycat!)
+  category: Dessert
+  tags:
+  - kitchen sink cookies
+  - panera copycat recipe
+  - cookie
+  dietary: []
+  yield: 9 large cookies
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.kitchen-sink-cookies.html
+    pdf: pdfs/wc-kitchen.kitchen-sink-cookies.pdf
+    yaml: recipes/wc-kitchen.kitchen-sink-cookies.yaml
+- id: wc-kitchen.korean-beef-bowl
+  name: Korean Beef Bowl
+  category: []
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.korean-beef-bowl.html
+    pdf: pdfs/wc-kitchen.korean-beef-bowl.pdf
+    yaml: recipes/wc-kitchen.korean-beef-bowl.yaml
+- id: wc-kitchen.macaroni-and-hamburger
+  name: Macaroni & Hamburger
+  category: []
+  tags: []
+  dietary: []
+  yield: 6 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.macaroni-and-hamburger.html
+    pdf: pdfs/wc-kitchen.macaroni-and-hamburger.pdf
+    yaml: recipes/wc-kitchen.macaroni-and-hamburger.yaml
+- id: wc-kitchen.mediterranean-stuffed-pork-tenderloin
+  name: Mediterranean Stuffed Pork Tenderloin
+  category: Main Dish
+  tags:
+  - baked pork tenderloin
+  - pork tenderloin recipe
+  - stuffed pork tenderloin
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.mediterranean-stuffed-pork-tenderloin.html
+    pdf: pdfs/wc-kitchen.mediterranean-stuffed-pork-tenderloin.pdf
+    yaml: recipes/wc-kitchen.mediterranean-stuffed-pork-tenderloin.yaml
+- id: wc-kitchen.mexican-street-corn-salad
+  name: Mexican Street Corn Salad
+  category: Main Course, Salad
+  tags:
+  - corn salad
+  - mexican recipes
+  - mexican street corn salad
+  - esquites
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.mexican-street-corn-salad.html
+    pdf: pdfs/wc-kitchen.mexican-street-corn-salad.pdf
+    yaml: recipes/wc-kitchen.mexican-street-corn-salad.yaml
+- id: wc-kitchen.middle-eastern-lentil-soup
+  name: Middle Eastern Lentil Soup
+  category: Soup
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.middle-eastern-lentil-soup.html
+    pdf: pdfs/wc-kitchen.middle-eastern-lentil-soup.pdf
+    yaml: recipes/wc-kitchen.middle-eastern-lentil-soup.yaml
+- id: wc-kitchen.miso-dumpling-soup
+  name: Miso Dumpling Soup (15 Minutes)
+  category: Soup
+  tags:
+  - Japanese
+  - dumplings
+  - miso
+  - quick
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.miso-dumpling-soup.html
+    pdf: pdfs/wc-kitchen.miso-dumpling-soup.pdf
+    yaml: recipes/wc-kitchen.miso-dumpling-soup.yaml
+- id: wc-kitchen.moist-chocolate-cake
+  name: Moist Chocolate Cake
+  category: Dessert
+  tags: []
+  dietary: []
+  yield: 12 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.moist-chocolate-cake.html
+    pdf: pdfs/wc-kitchen.moist-chocolate-cake.pdf
+    yaml: recipes/wc-kitchen.moist-chocolate-cake.yaml
+- id: wc-kitchen.mushroom-onion-and-sage-stuffing
+  name: Mushroom, Onion, and Sage Stuffing
+  category: Side Dish
+  tags:
+  - stuffing
+  - dressing
+  - side dish
+  - mushroom
+  - Thanksgiving
+  dietary: []
+  yield: 9 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.mushroom-onion-and-sage-stuffing.html
+    pdf: pdfs/wc-kitchen.mushroom-onion-and-sage-stuffing.pdf
+    yaml: recipes/wc-kitchen.mushroom-onion-and-sage-stuffing.yaml
+- id: wc-kitchen.oven-fried-chicken-ii
+  name: Oven Fried Chicken II
+  category: []
+  tags: []
+  dietary: []
+  yield: 10 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.oven-fried-chicken-ii.html
+    pdf: pdfs/wc-kitchen.oven-fried-chicken-ii.pdf
+    yaml: recipes/wc-kitchen.oven-fried-chicken-ii.yaml
+- id: wc-kitchen.pappardelle-with-mushrooms
+  name: Pappardelle with Mushrooms
+  category: Pasta
+  tags:
+  - mushrooms
+  - pasta
+  - vegetarian
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.pappardelle-with-mushrooms.html
+    pdf: pdfs/wc-kitchen.pappardelle-with-mushrooms.pdf
+    yaml: recipes/wc-kitchen.pappardelle-with-mushrooms.yaml
+- id: wc-kitchen.pasta-e-piselli
+  name: Pasta e Piselli (Pasta with Peas)
+  category:
+  - Pasta
+  - Side Dish
+  tags:
+  - Italian
+  - Italian-American
+  - one-pot
+  dietary: []
+  yield: 8 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.pasta-e-piselli.html
+    pdf: pdfs/wc-kitchen.pasta-e-piselli.pdf
+    yaml: recipes/wc-kitchen.pasta-e-piselli.yaml
+- id: wc-kitchen.perfect-pie-dough
+  name: Perfect Pie Dough
+  category: Pastry
+  tags:
+  - pie dough
+  - pie crust
+  - pastry
+  - make-ahead
+  dietary: []
+  yield: 1 9- or 10-inch pie crust
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.perfect-pie-dough.html
+    pdf: pdfs/wc-kitchen.perfect-pie-dough.pdf
+    yaml: recipes/wc-kitchen.perfect-pie-dough.yaml
+- id: wc-kitchen.perfect-pot-roast
+  name: Perfect Pot Roast
+  category: Main Dishes
+  tags:
+  - pot roast
+  - beef
+  - comfort food
+  dietary: []
+  yield: 10 servings
+  source: file
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.perfect-pot-roast.html
+    pdf: pdfs/wc-kitchen.perfect-pot-roast.pdf
+    yaml: recipes/wc-kitchen.perfect-pot-roast.yaml
+- id: wc-kitchen.poached-cod-with-tomatoes
+  name: Poached Cod with Tomatoes
+  category: []
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.poached-cod-with-tomatoes.html
+    pdf: pdfs/wc-kitchen.poached-cod-with-tomatoes.pdf
+    yaml: recipes/wc-kitchen.poached-cod-with-tomatoes.yaml
+- id: wc-kitchen.pork-breakfast-chops
+  name: Pork Breakfast Chops
+  category: Main
+  tags:
+  - pork
+  - pan-fried
+  - easy
+  dietary: []
+  yield: 8 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.pork-breakfast-chops.html
+    pdf: pdfs/wc-kitchen.pork-breakfast-chops.pdf
+    yaml: recipes/wc-kitchen.pork-breakfast-chops.yaml
+- id: wc-kitchen.potato-leek-soup
+  name: Potato Leek Soup
+  category: Soup
+  tags:
+  - French
+  - creamy
+  - potato
+  - leek
+  - freezer-friendly
+  dietary: []
+  yield: 6 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.potato-leek-soup.html
+    pdf: pdfs/wc-kitchen.potato-leek-soup.pdf
+    yaml: recipes/wc-kitchen.potato-leek-soup.yaml
+- id: wc-kitchen.quick-and-easy-red-lentil-dahl
+  name: Quick & Easy Red Lentil Dahl
+  category:
+  - Main
+  - Side Dish
+  tags: []
+  dietary:
+  - vegan
+  yield: 8 servings
+  source: url
+  verification: needs-manual-review
+  links:
+    html: site/wc-kitchen.quick-and-easy-red-lentil-dahl.html
+    pdf: pdfs/wc-kitchen.quick-and-easy-red-lentil-dahl.pdf
+    yaml: recipes/wc-kitchen.quick-and-easy-red-lentil-dahl.yaml
+- id: wc-kitchen.quick-pickled-red-onion
+  name: Quick Pickled Red Onion
+  category: []
+  tags: []
+  dietary: []
+  yield: 2 cups
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.quick-pickled-red-onion.html
+    pdf: pdfs/wc-kitchen.quick-pickled-red-onion.pdf
+    yaml: recipes/wc-kitchen.quick-pickled-red-onion.yaml
+- id: wc-kitchen.ratatouille
+  name: Ratatouille
+  category: Side Dish
+  tags:
+  - vegetarian
+  - stovetop
+  dietary: []
+  yield: 6 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.ratatouille.html
+    pdf: pdfs/wc-kitchen.ratatouille.pdf
+    yaml: recipes/wc-kitchen.ratatouille.yaml
+- id: wc-kitchen.rice-pilaf
+  name: Rice Pilaf
+  category: Side Dish
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.rice-pilaf.html
+    pdf: pdfs/wc-kitchen.rice-pilaf.pdf
+    yaml: recipes/wc-kitchen.rice-pilaf.yaml
+- id: wc-kitchen.roasted-potatoes-and-kielbasa
+  name: Roasted Potatoes and Kielbasa (One-Pan Recipe)
+  category: Dinner
+  tags:
+  - one-pan
+  - potatoes
+  - kielbasa
+  - roasted
+  dietary: []
+  yield: 4 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.roasted-potatoes-and-kielbasa.html
+    pdf: pdfs/wc-kitchen.roasted-potatoes-and-kielbasa.pdf
+    yaml: recipes/wc-kitchen.roasted-potatoes-and-kielbasa.yaml
+- id: wc-kitchen.roasted-shiitake-bibimbap
+  name: Roasted Shiitake Bibimbap
+  category: []
+  tags: []
+  dietary: []
+  yield: 2 servings
+  source: file
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.roasted-shiitake-bibimbap.html
+    pdf: pdfs/wc-kitchen.roasted-shiitake-bibimbap.pdf
+    yaml: recipes/wc-kitchen.roasted-shiitake-bibimbap.yaml
+- id: wc-kitchen.salmon-burgers-with-slaw
+  name: Salmon Burgers with Slaw
+  category: Main Course
+  tags:
+  - salmon
+  - burgers
+  - slaw
+  - seafood
+  dietary: []
+  yield: 3–4 burgers
+  source: url
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.salmon-burgers-with-slaw.html
+    pdf: pdfs/wc-kitchen.salmon-burgers-with-slaw.pdf
+    yaml: recipes/wc-kitchen.salmon-burgers-with-slaw.yaml
+- id: wc-kitchen.shakshuka-with-feta
+  name: Shakshuka With Feta
+  category: []
+  tags: []
+  dietary: []
+  yield: 4–6 servings
+  source: file
+  verification: needs-manual-review
+  links:
+    html: site/wc-kitchen.shakshuka-with-feta.html
+    pdf: pdfs/wc-kitchen.shakshuka-with-feta.pdf
+    yaml: recipes/wc-kitchen.shakshuka-with-feta.yaml
+- id: wc-kitchen.shepherds-pie
+  name: Shepherd's Pie
+  category: []
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.shepherds-pie.html
+    pdf: pdfs/wc-kitchen.shepherds-pie.pdf
+    yaml: recipes/wc-kitchen.shepherds-pie.yaml
+- id: wc-kitchen.shrimp-fettuccine-alfredo
+  name: Shrimp Fettuccine Alfredo
+  category: Main Course
+  tags:
+  - pasta
+  - shrimp
+  - alfredo
+  - Food Network Kitchen
+  dietary: []
+  yield: 4 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.shrimp-fettuccine-alfredo.html
+    pdf: pdfs/wc-kitchen.shrimp-fettuccine-alfredo.pdf
+    yaml: recipes/wc-kitchen.shrimp-fettuccine-alfredo.yaml
+- id: wc-kitchen.simple-zucchini-bread
+  name: Simple Zucchini Bread
+  category: Quick Bread
+  tags:
+  - zucchini
+  - loaf
+  - vegetarian
+  dietary: []
+  yield: 1 8.5x4.5 inch loaf
+  source: file
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.simple-zucchini-bread.html
+    pdf: pdfs/wc-kitchen.simple-zucchini-bread.pdf
+    yaml: recipes/wc-kitchen.simple-zucchini-bread.yaml
+- id: wc-kitchen.slow-cooker-beef-stew
+  name: Slow Cooker Beef Stew
+  category: Main Dish
+  tags:
+  - slow cooker
+  - beef
+  - stew
+  - comfort food
+  dietary: []
+  yield: 10 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.slow-cooker-beef-stew.html
+    pdf: pdfs/wc-kitchen.slow-cooker-beef-stew.pdf
+    yaml: recipes/wc-kitchen.slow-cooker-beef-stew.yaml
+- id: wc-kitchen.slow-cooker-corn-chowder
+  name: Slow Cooker Corn Chowder
+  category: Soup
+  tags:
+  - slow cooker
+  - corn
+  - chowder
+  - vegetarian-adaptable
+  dietary: []
+  yield: 4–6 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.slow-cooker-corn-chowder.html
+    pdf: pdfs/wc-kitchen.slow-cooker-corn-chowder.pdf
+    yaml: recipes/wc-kitchen.slow-cooker-corn-chowder.yaml
+- id: wc-kitchen.slow-cooked-southwest-chicken
+  name: Slow-Cooked Southwest Chicken
+  category: Main Dish
+  tags:
+  - slow cooker
+  - chicken
+  - southwest
+  - low-fat
+  dietary: []
+  yield: 6 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.slow-cooked-southwest-chicken.html
+    pdf: pdfs/wc-kitchen.slow-cooked-southwest-chicken.pdf
+    yaml: recipes/wc-kitchen.slow-cooked-southwest-chicken.yaml
+- id: wc-kitchen.soft-and-chewy-chocolate-chip-cookies
+  name: Soft and Chewy Chocolate Chip Cookies
+  category: Dessert
+  tags:
+  - cookies
+  - chocolate chip
+  - baking
+  dietary: []
+  yield: 24 cookies
+  source: url
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.soft-and-chewy-chocolate-chip-cookies.html
+    pdf: pdfs/wc-kitchen.soft-and-chewy-chocolate-chip-cookies.pdf
+    yaml: recipes/wc-kitchen.soft-and-chewy-chocolate-chip-cookies.yaml
+- id: wc-kitchen.soy-vay-veri-veri-teriyaki-clone
+  name: Soy Vay Veri Veri Teriyaki Clone
+  category: Condiment
+  tags:
+  - teriyaki
+  - sauce
+  - marinade
+  - freezer friendly
+  dietary: []
+  yield: 16 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.soy-vay-veri-veri-teriyaki-clone.html
+    pdf: pdfs/wc-kitchen.soy-vay-veri-veri-teriyaki-clone.pdf
+    yaml: recipes/wc-kitchen.soy-vay-veri-veri-teriyaki-clone.yaml
+- id: wc-kitchen.spaghetti-carbonara
+  name: Spaghetti Carbonara
+  category: []
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.spaghetti-carbonara.html
+    pdf: pdfs/wc-kitchen.spaghetti-carbonara.pdf
+    yaml: recipes/wc-kitchen.spaghetti-carbonara.yaml
+- id: wc-kitchen.sparkling-apple-cider-gin-cocktail
+  name: Sparkling Apple Cider Gin Cocktail
+  category: Cocktail
+  tags:
+  - holiday
+  - gin
+  - apple cider
+  - sparkling
+  - easy
+  dietary: []
+  yield: 1 serving
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.sparkling-apple-cider-gin-cocktail.html
+    pdf: pdfs/wc-kitchen.sparkling-apple-cider-gin-cocktail.pdf
+    yaml: recipes/wc-kitchen.sparkling-apple-cider-gin-cocktail.yaml
+- id: wc-kitchen.split-pea-soup
+  name: Split Pea Soup (Instant Pot)
+  category: Soup
+  tags:
+  - instant pot
+  - split pea
+  - ham
+  - slow cooker option
+  dietary: []
+  yield: 8 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.split-pea-soup.html
+    pdf: pdfs/wc-kitchen.split-pea-soup.pdf
+    yaml: recipes/wc-kitchen.split-pea-soup.yaml
+- id: wc-kitchen.sweet-pickled-radishes
+  name: Sweet Pickled Radishes
+  category: condiment
+  tags:
+  - pickles
+  - radishes
+  - refrigerator pickles
+  dietary: []
+  yield: 1 pint jar
+  source: url
+  verification: needs-manual-review
+  links:
+    html: site/wc-kitchen.sweet-pickled-radishes.html
+    pdf: pdfs/wc-kitchen.sweet-pickled-radishes.pdf
+    yaml: recipes/wc-kitchen.sweet-pickled-radishes.yaml
+- id: wc-kitchen.sweet-potato-chickpea-buddha-bowl-with-peanut-sauce
+  name: Sweet Potato Chickpea Buddha Bowl with Peanut Sauce
+  category: Main Dish
+  tags:
+  - buddha bowl
+  - vegan
+  - meal prep
+  - grain bowl
+  dietary:
+  - vegan
+  - gluten-free adaptable
+  - dairy-free
+  yield: ''
+  source: file
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.sweet-potato-chickpea-buddha-bowl-with-peanut-sauce.html
+    pdf: pdfs/wc-kitchen.sweet-potato-chickpea-buddha-bowl-with-peanut-sauce.pdf
+    yaml: recipes/wc-kitchen.sweet-potato-chickpea-buddha-bowl-with-peanut-sauce.yaml
+- id: wc-kitchen.taco-pasta-salad
+  name: Taco Pasta Salad
+  category: Salad
+  tags:
+  - pasta
+  - taco
+  - cold
+  - make-ahead
+  dietary: []
+  yield: 6 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.taco-pasta-salad.html
+    pdf: pdfs/wc-kitchen.taco-pasta-salad.pdf
+    yaml: recipes/wc-kitchen.taco-pasta-salad.yaml
+- id: wc-kitchen.taco-salad
+  name: Taco Salad
+  category: []
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.taco-salad.html
+    pdf: pdfs/wc-kitchen.taco-salad.pdf
+    yaml: recipes/wc-kitchen.taco-salad.yaml
+- id: wc-kitchen.teriyaki-turkey-rice-bowl
+  name: Teriyaki Turkey Rice Bowl
+  category: []
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.teriyaki-turkey-rice-bowl.html
+    pdf: pdfs/wc-kitchen.teriyaki-turkey-rice-bowl.pdf
+    yaml: recipes/wc-kitchen.teriyaki-turkey-rice-bowl.yaml
+- id: wc-kitchen.thai-cucumber-salad
+  name: Thai Cucumber Salad
+  category: Salad
+  tags:
+  - thai
+  - cucumber
+  - summer
+  - side dish
+  - asian-inspired
+  dietary:
+  - vegan
+  - vegetarian
+  - gluten-free
+  yield: 6 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.thai-cucumber-salad.html
+    pdf: pdfs/wc-kitchen.thai-cucumber-salad.pdf
+    yaml: recipes/wc-kitchen.thai-cucumber-salad.yaml
+- id: wc-kitchen.thai-peanut-sauce
+  name: Thai Peanut Sauce
+  category: []
+  tags: []
+  dietary: []
+  yield: 1 batch
+  source: url
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.thai-peanut-sauce.html
+    pdf: pdfs/wc-kitchen.thai-peanut-sauce.pdf
+    yaml: recipes/wc-kitchen.thai-peanut-sauce.yaml
+- id: wc-kitchen.thai-peanut-sauce-jessica-hylton
+  name: Thai Peanut Sauce
+  category: []
+  tags: []
+  dietary: []
+  yield: 9 servings
+  source: url
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.thai-peanut-sauce-jessica-hylton.html
+    pdf: pdfs/wc-kitchen.thai-peanut-sauce-jessica-hylton.pdf
+    yaml: recipes/wc-kitchen.thai-peanut-sauce-jessica-hylton.yaml
+- id: wc-kitchen.thai-peanut-sweet-potato-buddha-bowl
+  name: Thai Peanut Sweet Potato Buddha Bowl
+  category: Main Dish
+  tags: []
+  dietary:
+  - vegan
+  - gluten-free
+  yield: 4 servings
+  source: url
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.thai-peanut-sweet-potato-buddha-bowl.html
+    pdf: pdfs/wc-kitchen.thai-peanut-sweet-potato-buddha-bowl.pdf
+    yaml: recipes/wc-kitchen.thai-peanut-sweet-potato-buddha-bowl.yaml
+- id: wc-kitchen.the-best-apple-crisp
+  name: The Best Apple Crisp
+  category: Dessert
+  tags:
+  - apple
+  - crisp
+  - fall
+  dietary: []
+  yield: 8 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.the-best-apple-crisp.html
+    pdf: pdfs/wc-kitchen.the-best-apple-crisp.pdf
+    yaml: recipes/wc-kitchen.the-best-apple-crisp.yaml
+- id: wc-kitchen.the-best-instant-pot-lentil-soup
+  name: The Best Instant Pot Lentil Soup
+  category: Soup
+  tags:
+  - coconut milk
+  - curry
+  - instant pot
+  - lentil soup
+  - turmeric
+  dietary:
+  - vegetarian
+  yield: 3 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.the-best-instant-pot-lentil-soup.html
+    pdf: pdfs/wc-kitchen.the-best-instant-pot-lentil-soup.pdf
+    yaml: recipes/wc-kitchen.the-best-instant-pot-lentil-soup.yaml
+- id: wc-kitchen.the-best-meatloaf-recipe-of-your-life
+  name: The Best Meatloaf Recipe Of Your Life
+  category: []
+  tags: []
+  dietary: []
+  yield: 8 servings
+  source: file
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.the-best-meatloaf-recipe-of-your-life.html
+    pdf: pdfs/wc-kitchen.the-best-meatloaf-recipe-of-your-life.pdf
+    yaml: recipes/wc-kitchen.the-best-meatloaf-recipe-of-your-life.yaml
+- id: wc-kitchen.the-best-swedish-meatballs-recipe
+  name: The Best Swedish Meatballs Recipe
+  category: Dinner
+  tags:
+  - swedish meatballs
+  - gravy
+  dietary: []
+  yield: 8 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.the-best-swedish-meatballs-recipe.html
+    pdf: pdfs/wc-kitchen.the-best-swedish-meatballs-recipe.pdf
+    yaml: recipes/wc-kitchen.the-best-swedish-meatballs-recipe.yaml
+- id: wc-kitchen.tomato-relish
+  name: Tomato Relish
+  category: Preserves
+  tags:
+  - relish
+  - tomato
+  - condiment
+  - preserving
+  dietary: []
+  yield: 2 kg
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.tomato-relish.html
+    pdf: pdfs/wc-kitchen.tomato-relish.pdf
+    yaml: recipes/wc-kitchen.tomato-relish.yaml
+- id: wc-kitchen.toum
+  name: Toum (Garlic Whip)
+  category: Condiment
+  tags:
+  - garlic
+  - Lebanese
+  - emulsion
+  - sauce
+  - Middle Eastern
+  dietary: []
+  yield: 4 1/2 cups
+  source: file
+  verification: needs-manual-review
+  links:
+    html: site/wc-kitchen.toum.html
+    pdf: pdfs/wc-kitchen.toum.pdf
+    yaml: recipes/wc-kitchen.toum.yaml
+- id: wc-kitchen.tuna-and-white-bean-salad
+  name: Tuna-and-White-Bean Salad
+  category: salad
+  tags:
+  - tuna
+  - white bean
+  - Tuscan
+  - no-cook
+  - quick
+  dietary: []
+  yield: ''
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.tuna-and-white-bean-salad.html
+    pdf: pdfs/wc-kitchen.tuna-and-white-bean-salad.pdf
+    yaml: recipes/wc-kitchen.tuna-and-white-bean-salad.yaml
+- id: wc-kitchen.tzatziki
+  name: Tzatziki
+  category: sauce, dip
+  tags:
+  - Greek
+  - tzatziki
+  - vegetarian
+  - quick
+  dietary: []
+  yield: 2.5 cups
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.tzatziki.html
+    pdf: pdfs/wc-kitchen.tzatziki.pdf
+    yaml: recipes/wc-kitchen.tzatziki.yaml
+- id: wc-kitchen.ultimate-bean-dip
+  name: Ultimate Bean Dip
+  category: []
+  tags: []
+  dietary: []
+  yield: 1 batch
+  source: url
+  verification: unknown
+  links:
+    html: site/wc-kitchen.ultimate-bean-dip.html
+    pdf: pdfs/wc-kitchen.ultimate-bean-dip.pdf
+    yaml: recipes/wc-kitchen.ultimate-bean-dip.yaml
+- id: wc-kitchen.ultra-crispy-smashed-potatoes
+  name: Ultra Crispy Smashed Potatoes
+  category: Sides
+  tags:
+  - smashed potatoes
+  - crispy
+  - potato
+  dietary: []
+  yield: 12 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.ultra-crispy-smashed-potatoes.html
+    pdf: pdfs/wc-kitchen.ultra-crispy-smashed-potatoes.pdf
+    yaml: recipes/wc-kitchen.ultra-crispy-smashed-potatoes.yaml
+- id: wc-kitchen.unstuffed-bell-peppers
+  name: Unstuffed Bell Peppers
+  category: []
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.unstuffed-bell-peppers.html
+    pdf: pdfs/wc-kitchen.unstuffed-bell-peppers.pdf
+    yaml: recipes/wc-kitchen.unstuffed-bell-peppers.yaml
+- id: wc-kitchen.vegetarian-burrito-bowls
+  name: Vegetarian Burrito Bowls
+  category: main dish
+  tags:
+  - vegetarian
+  - bowls
+  - Mexican-inspired
+  - quick
+  dietary:
+  - vegetarian
+  yield: 4 servings
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.vegetarian-burrito-bowls.html
+    pdf: pdfs/wc-kitchen.vegetarian-burrito-bowls.pdf
+    yaml: recipes/wc-kitchen.vegetarian-burrito-bowls.yaml
+- id: wc-kitchen.vegetarian-lentil-tortilla-soup
+  name: Vegetarian Lentil Tortilla Soup
+  category: Main Dish
+  tags:
+  - vegetarian
+  - soup
+  - Mexican
+  - lentil
+  - make-ahead
+  dietary:
+  - vegetarian
+  yield: 6 cups
+  source: file
+  verification: needs-manual-review
+  links:
+    html: site/wc-kitchen.vegetarian-lentil-tortilla-soup.html
+    pdf: pdfs/wc-kitchen.vegetarian-lentil-tortilla-soup.pdf
+    yaml: recipes/wc-kitchen.vegetarian-lentil-tortilla-soup.yaml
+- id: wc-kitchen.waffles-i
+  name: Waffles I
+  category: breakfast
+  tags:
+  - waffles
+  - breakfast
+  dietary: []
+  yield: ''
+  source: url
+  verification: verified
+  links:
+    html: site/wc-kitchen.waffles-i.html
+    pdf: pdfs/wc-kitchen.waffles-i.pdf
+    yaml: recipes/wc-kitchen.waffles-i.yaml
+- id: wc-kitchen.white-bean-and-ham-soup
+  name: White Bean & Ham Soup
+  category: soup
+  tags: []
+  dietary: []
+  yield: 4 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.white-bean-and-ham-soup.html
+    pdf: pdfs/wc-kitchen.white-bean-and-ham-soup.pdf
+    yaml: recipes/wc-kitchen.white-bean-and-ham-soup.yaml
+- id: wc-kitchen.yellow-curry-with-chicken
+  name: Yellow Curry with Chicken (Instant Pot)
+  category: []
+  tags: []
+  dietary: []
+  yield: 6 servings
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.yellow-curry-with-chicken.html
+    pdf: pdfs/wc-kitchen.yellow-curry-with-chicken.pdf
+    yaml: recipes/wc-kitchen.yellow-curry-with-chicken.yaml
+- id: wc-kitchen.your-strawberry-jam-recipe
+  name: Your Strawberry Jam Recipe (Ball RealFruit Low/No-Sugar Pectin)
+  category: jam / preserve
+  tags:
+  - strawberry
+  - jam
+  - canning
+  - low sugar
+  - no sugar
+  - Ball RealFruit
+  dietary: []
+  yield: 3 half pints (8 oz)
+  source: file
+  verification: needs-review
+  links:
+    html: site/wc-kitchen.your-strawberry-jam-recipe.html
+    pdf: pdfs/wc-kitchen.your-strawberry-jam-recipe.pdf
+    yaml: recipes/wc-kitchen.your-strawberry-jam-recipe.yaml
+- id: wc-kitchen.yule-log-cake
+  name: Yule Log Cake (Bûche de Noël)
+  category: Dessert
+  tags:
+  - yule log
+  - christmas
+  - buche de noel
+  - chocolate
+  - cake
+  dietary: []
+  yield: 8 servings
+  source: file
+  verification: needs-manual-review
+  links:
+    html: site/wc-kitchen.yule-log-cake.html
+    pdf: pdfs/wc-kitchen.yule-log-cake.pdf
+    yaml: recipes/wc-kitchen.yule-log-cake.yaml
+- id: wc-kitchen.zucchini-bread-muffins
+  name: Zucchini Bread Muffins
+  category: []
+  tags: []
+  dietary: []
+  yield: 12 muffins
+  source: file
+  verification: verified
+  links:
+    html: site/wc-kitchen.zucchini-bread-muffins.html
+    pdf: pdfs/wc-kitchen.zucchini-bread-muffins.pdf
+    yaml: recipes/wc-kitchen.zucchini-bread-muffins.yaml
+warnings:
+- 'wc-kitchen.15-minute-miso-soup-with-greens-and-tofu: missing pdf at pdfs/wc-kitchen.15-minute-miso-soup-with-greens-and-tofu.pdf'
+- 'wc-kitchen.30-minute-dairy-free-potato-soup: missing pdf at pdfs/wc-kitchen.30-minute-dairy-free-potato-soup.pdf'
+- 'wc-kitchen.actually-delicious-turkey-burgers: missing pdf at pdfs/wc-kitchen.actually-delicious-turkey-burgers.pdf'
+- 'wc-kitchen.all-purpose-thai-basil-sauce: missing pdf at pdfs/wc-kitchen.all-purpose-thai-basil-sauce.pdf'
+- 'wc-kitchen.bacon-onion-tart: missing pdf at pdfs/wc-kitchen.bacon-onion-tart.pdf'
+- 'wc-kitchen.bacon-shrimp-sweet-potatoes: missing pdf at pdfs/wc-kitchen.bacon-shrimp-sweet-potatoes.pdf'
+- 'wc-kitchen.baked-acorn-squash-with-butter-and-brown-sugar: missing pdf at pdfs/wc-kitchen.baked-acorn-squash-with-butter-and-brown-sugar.pdf'
+- 'wc-kitchen.baked-oatmeal-with-cranberries-and-almonds: missing pdf at pdfs/wc-kitchen.baked-oatmeal-with-cranberries-and-almonds.pdf'
+- 'wc-kitchen.ball-realfruit-low-or-no-sugar-jam: missing pdf at pdfs/wc-kitchen.ball-realfruit-low-or-no-sugar-jam.pdf'
+- 'wc-kitchen.beef-barley-soup: missing pdf at pdfs/wc-kitchen.beef-barley-soup.pdf'
+- 'wc-kitchen.beef-bolognese-with-parsnips: missing pdf at pdfs/wc-kitchen.beef-bolognese-with-parsnips.pdf'
+- 'wc-kitchen.beef-brisket: missing pdf at pdfs/wc-kitchen.beef-brisket.pdf'
+- 'wc-kitchen.beer-batter-fish: missing pdf at pdfs/wc-kitchen.beer-batter-fish.pdf'
+- 'wc-kitchen.beginners-guide-to-french-macarons: missing pdf at pdfs/wc-kitchen.beginners-guide-to-french-macarons.pdf'
+- 'wc-kitchen.best-bean-salad: missing pdf at pdfs/wc-kitchen.best-bean-salad.pdf'
+- 'wc-kitchen.vegetable-lasagna: missing pdf at pdfs/wc-kitchen.vegetable-lasagna.pdf'
+- 'wc-kitchen.binder-index-page-1: missing pdf at pdfs/wc-kitchen.binder-index-page-1.pdf'
+- 'wc-kitchen.binder-index: missing pdf at pdfs/wc-kitchen.binder-index.pdf'
+- 'wc-kitchen.black-bean-and-corn-salad-ii: missing pdf at pdfs/wc-kitchen.black-bean-and-corn-salad-ii.pdf'
+- 'wc-kitchen.black-bean-soup: missing pdf at pdfs/wc-kitchen.black-bean-soup.pdf'
+- 'wc-kitchen.blackened-mahi-mahi: missing pdf at pdfs/wc-kitchen.blackened-mahi-mahi.pdf'
+- 'wc-kitchen.bratkartoffeln: stale pdf (older than YAML)'
+- 'wc-kitchen.broccoli-cheese-soup: missing pdf at pdfs/wc-kitchen.broccoli-cheese-soup.pdf'
+- 'wc-kitchen.brussels-sprout-salad-with-maple-vinaigrette: missing pdf at pdfs/wc-kitchen.brussels-sprout-salad-with-maple-vinaigrette.pdf'
+- 'wc-kitchen.cabbage-soup: missing pdf at pdfs/wc-kitchen.cabbage-soup.pdf'
+- 'wc-kitchen.candied-sweet-potatoes: missing pdf at pdfs/wc-kitchen.candied-sweet-potatoes.pdf'
+- 'wc-kitchen.chana-masala: missing pdf at pdfs/wc-kitchen.chana-masala.pdf'
+- 'wc-kitchen.chicken-and-vegetable-pot-pie: missing pdf at pdfs/wc-kitchen.chicken-and-vegetable-pot-pie.pdf'
+- 'wc-kitchen.chicken-and-veggie-enchiladas: missing pdf at pdfs/wc-kitchen.chicken-and-veggie-enchiladas.pdf'
+- 'wc-kitchen.chicken-katsu-recipe: missing pdf at pdfs/wc-kitchen.chicken-katsu-recipe.pdf'
+- 'wc-kitchen.chicken-soup: missing pdf at pdfs/wc-kitchen.chicken-soup.pdf'
+- 'wc-kitchen.chicken-tikka-masala: missing pdf at pdfs/wc-kitchen.chicken-tikka-masala.pdf'
+- 'wc-kitchen.chicken-with-creamy-mushroom-sauce: missing pdf at pdfs/wc-kitchen.chicken-with-creamy-mushroom-sauce.pdf'
+- 'wc-kitchen.chili-recipe: missing pdf at pdfs/wc-kitchen.chili-recipe.pdf'
+- 'wc-kitchen.chocolate-biscotti: missing pdf at pdfs/wc-kitchen.chocolate-biscotti.pdf'
+- 'wc-kitchen.chocolate-olive-oil-cake: missing pdf at pdfs/wc-kitchen.chocolate-olive-oil-cake.pdf'
+- 'wc-kitchen.corn-chowder: missing pdf at pdfs/wc-kitchen.corn-chowder.pdf'
+- 'wc-kitchen.corn-quesadillas: missing pdf at pdfs/wc-kitchen.corn-quesadillas.pdf'
+- 'wc-kitchen.couscous-feta-salad: missing pdf at pdfs/wc-kitchen.couscous-feta-salad.pdf'
+- 'wc-kitchen.crab-salad: missing pdf at pdfs/wc-kitchen.crab-salad.pdf'
+- 'wc-kitchen.creamy-broccoli-pasta: missing pdf at pdfs/wc-kitchen.creamy-broccoli-pasta.pdf'
+- 'wc-kitchen.creamy-gnocchi-with-sun-dried-tomatoes: missing pdf at pdfs/wc-kitchen.creamy-gnocchi-with-sun-dried-tomatoes.pdf'
+- 'wc-kitchen.creamy-sriracha-mayo-recipe: missing pdf at pdfs/wc-kitchen.creamy-sriracha-mayo-recipe.pdf'
+- 'wc-kitchen.creamy-tomato-soup: missing pdf at pdfs/wc-kitchen.creamy-tomato-soup.pdf'
+- 'wc-kitchen.creamy-tortellini-soup: missing pdf at pdfs/wc-kitchen.creamy-tortellini-soup.pdf'
+- 'wc-kitchen.crispy-slow-cooker-carnitas: missing pdf at pdfs/wc-kitchen.crispy-slow-cooker-carnitas.pdf'
+- 'wc-kitchen.cucumber-salad: missing pdf at pdfs/wc-kitchen.cucumber-salad.pdf'
+- 'wc-kitchen.curried-chicken-salad: missing pdf at pdfs/wc-kitchen.curried-chicken-salad.pdf'
+- 'wc-kitchen.dairy-free-quiche-lorraine: missing pdf at pdfs/wc-kitchen.dairy-free-quiche-lorraine.pdf'
+- 'wc-kitchen.davids-chicken-and-mushrooms: missing pdf at pdfs/wc-kitchen.davids-chicken-and-mushrooms.pdf'
+- 'wc-kitchen.dumpling-noodle-soup: missing pdf at pdfs/wc-kitchen.dumpling-noodle-soup.pdf'
+- 'wc-kitchen.easy-broccoli-quiche: missing pdf at pdfs/wc-kitchen.easy-broccoli-quiche.pdf'
+- 'wc-kitchen.easy-pad-thai: missing pdf at pdfs/wc-kitchen.easy-pad-thai.pdf'
+- 'wc-kitchen.everyday-instant-pot-dal: missing pdf at pdfs/wc-kitchen.everyday-instant-pot-dal.pdf'
+- 'wc-kitchen.fluffy-almond-flour-pancakes: missing pdf at pdfs/wc-kitchen.fluffy-almond-flour-pancakes.pdf'
+- 'wc-kitchen.french-macarons: missing pdf at pdfs/wc-kitchen.french-macarons.pdf'
+- 'wc-kitchen.ginger-pork-lettuce-wraps: missing pdf at pdfs/wc-kitchen.ginger-pork-lettuce-wraps.pdf'
+- 'wc-kitchen.glazed-carrots: missing pdf at pdfs/wc-kitchen.glazed-carrots.pdf'
+- 'wc-kitchen.gochujang-roasted-carrots: missing pdf at pdfs/wc-kitchen.gochujang-roasted-carrots.pdf'
+- 'wc-kitchen.grilled-broccoli: missing pdf at pdfs/wc-kitchen.grilled-broccoli.pdf'
+- 'wc-kitchen.ground-turkey-and-potato-skillet: missing pdf at pdfs/wc-kitchen.ground-turkey-and-potato-skillet.pdf'
+- 'wc-kitchen.healthy-blueberry-muffins: missing pdf at pdfs/wc-kitchen.healthy-blueberry-muffins.pdf'
+- 'wc-kitchen.healthy-sloppy-joes: missing pdf at pdfs/wc-kitchen.healthy-sloppy-joes.pdf'
+- 'wc-kitchen.homemade-drop-biscuits-recipe: missing pdf at pdfs/wc-kitchen.homemade-drop-biscuits-recipe.pdf'
+- 'wc-kitchen.homemade-hot-chocolate-mix: missing pdf at pdfs/wc-kitchen.homemade-hot-chocolate-mix.pdf'
+- 'wc-kitchen.honey-apple-galette-with-pistachio-sugar: missing pdf at pdfs/wc-kitchen.honey-apple-galette-with-pistachio-sugar.pdf'
+- 'wc-kitchen.honey-lemon-vinaigrette: missing pdf at pdfs/wc-kitchen.honey-lemon-vinaigrette.pdf'
+- 'wc-kitchen.how-to-make-instant-pot-farro: missing pdf at pdfs/wc-kitchen.how-to-make-instant-pot-farro.pdf'
+- 'wc-kitchen.instant-pot-applesauce: missing pdf at pdfs/wc-kitchen.instant-pot-applesauce.pdf'
+- 'wc-kitchen.instant-pot-baked-potato-soup: missing pdf at pdfs/wc-kitchen.instant-pot-baked-potato-soup.pdf'
+- 'wc-kitchen.instant-pot-black-beans: missing pdf at pdfs/wc-kitchen.instant-pot-black-beans.pdf'
+- 'wc-kitchen.instant-pot-cilantro-lime-rice-recipe: missing pdf at pdfs/wc-kitchen.instant-pot-cilantro-lime-rice-recipe.pdf'
+- 'wc-kitchen.instant-pot-parmesan-risotto: missing pdf at pdfs/wc-kitchen.instant-pot-parmesan-risotto.pdf'
+- 'wc-kitchen.instant-pot-ramen-noodles: missing pdf at pdfs/wc-kitchen.instant-pot-ramen-noodles.pdf'
+- 'wc-kitchen.instant-pot-red-beans-and-rice: missing pdf at pdfs/wc-kitchen.instant-pot-red-beans-and-rice.pdf'
+- 'wc-kitchen.instant-pot-teriyaki-turkey-meatballs: missing pdf at pdfs/wc-kitchen.instant-pot-teriyaki-turkey-meatballs.pdf'
+- 'wc-kitchen.kashi-oatmeal-chocolate-chip-cookies: missing pdf at pdfs/wc-kitchen.kashi-oatmeal-chocolate-chip-cookies.pdf'
+- 'wc-kitchen.kitchen-sink-cookies: missing pdf at pdfs/wc-kitchen.kitchen-sink-cookies.pdf'
+- 'wc-kitchen.korean-beef-bowl: missing pdf at pdfs/wc-kitchen.korean-beef-bowl.pdf'
+- 'wc-kitchen.macaroni-and-hamburger: missing pdf at pdfs/wc-kitchen.macaroni-and-hamburger.pdf'
+- 'wc-kitchen.mediterranean-stuffed-pork-tenderloin: missing pdf at pdfs/wc-kitchen.mediterranean-stuffed-pork-tenderloin.pdf'
+- 'wc-kitchen.mexican-street-corn-salad: missing pdf at pdfs/wc-kitchen.mexican-street-corn-salad.pdf'
+- 'wc-kitchen.middle-eastern-lentil-soup: missing pdf at pdfs/wc-kitchen.middle-eastern-lentil-soup.pdf'
+- 'wc-kitchen.miso-dumpling-soup: missing pdf at pdfs/wc-kitchen.miso-dumpling-soup.pdf'
+- 'wc-kitchen.moist-chocolate-cake: missing pdf at pdfs/wc-kitchen.moist-chocolate-cake.pdf'
+- 'wc-kitchen.mushroom-onion-and-sage-stuffing: missing pdf at pdfs/wc-kitchen.mushroom-onion-and-sage-stuffing.pdf'
+- 'wc-kitchen.oven-fried-chicken-ii: missing pdf at pdfs/wc-kitchen.oven-fried-chicken-ii.pdf'
+- 'wc-kitchen.pappardelle-with-mushrooms: missing pdf at pdfs/wc-kitchen.pappardelle-with-mushrooms.pdf'
+- 'wc-kitchen.pasta-e-piselli: missing pdf at pdfs/wc-kitchen.pasta-e-piselli.pdf'
+- 'wc-kitchen.perfect-pie-dough: missing pdf at pdfs/wc-kitchen.perfect-pie-dough.pdf'
+- 'wc-kitchen.perfect-pot-roast: missing pdf at pdfs/wc-kitchen.perfect-pot-roast.pdf'
+- 'wc-kitchen.poached-cod-with-tomatoes: missing pdf at pdfs/wc-kitchen.poached-cod-with-tomatoes.pdf'
+- 'wc-kitchen.pork-breakfast-chops: missing pdf at pdfs/wc-kitchen.pork-breakfast-chops.pdf'
+- 'wc-kitchen.potato-leek-soup: missing pdf at pdfs/wc-kitchen.potato-leek-soup.pdf'
+- 'wc-kitchen.quick-and-easy-red-lentil-dahl: missing pdf at pdfs/wc-kitchen.quick-and-easy-red-lentil-dahl.pdf'
+- 'wc-kitchen.quick-pickled-red-onion: missing pdf at pdfs/wc-kitchen.quick-pickled-red-onion.pdf'
+- 'wc-kitchen.ratatouille: missing pdf at pdfs/wc-kitchen.ratatouille.pdf'
+- 'wc-kitchen.rice-pilaf: missing pdf at pdfs/wc-kitchen.rice-pilaf.pdf'
+- 'wc-kitchen.roasted-potatoes-and-kielbasa: missing pdf at pdfs/wc-kitchen.roasted-potatoes-and-kielbasa.pdf'
+- 'wc-kitchen.roasted-shiitake-bibimbap: missing pdf at pdfs/wc-kitchen.roasted-shiitake-bibimbap.pdf'
+- 'wc-kitchen.salmon-burgers-with-slaw: missing pdf at pdfs/wc-kitchen.salmon-burgers-with-slaw.pdf'
+- 'wc-kitchen.shakshuka-with-feta: missing pdf at pdfs/wc-kitchen.shakshuka-with-feta.pdf'
+- 'wc-kitchen.shepherds-pie: missing pdf at pdfs/wc-kitchen.shepherds-pie.pdf'
+- 'wc-kitchen.shrimp-fettuccine-alfredo: missing pdf at pdfs/wc-kitchen.shrimp-fettuccine-alfredo.pdf'
+- 'wc-kitchen.simple-zucchini-bread: missing pdf at pdfs/wc-kitchen.simple-zucchini-bread.pdf'
+- 'wc-kitchen.slow-cooker-beef-stew: missing pdf at pdfs/wc-kitchen.slow-cooker-beef-stew.pdf'
+- 'wc-kitchen.slow-cooker-corn-chowder: missing pdf at pdfs/wc-kitchen.slow-cooker-corn-chowder.pdf'
+- 'wc-kitchen.slow-cooked-southwest-chicken: missing pdf at pdfs/wc-kitchen.slow-cooked-southwest-chicken.pdf'
+- 'wc-kitchen.soft-and-chewy-chocolate-chip-cookies: missing pdf at pdfs/wc-kitchen.soft-and-chewy-chocolate-chip-cookies.pdf'
+- 'wc-kitchen.soy-vay-veri-veri-teriyaki-clone: missing pdf at pdfs/wc-kitchen.soy-vay-veri-veri-teriyaki-clone.pdf'
+- 'wc-kitchen.spaghetti-carbonara: missing pdf at pdfs/wc-kitchen.spaghetti-carbonara.pdf'
+- 'wc-kitchen.sparkling-apple-cider-gin-cocktail: missing pdf at pdfs/wc-kitchen.sparkling-apple-cider-gin-cocktail.pdf'
+- 'wc-kitchen.split-pea-soup: missing pdf at pdfs/wc-kitchen.split-pea-soup.pdf'
+- 'wc-kitchen.sweet-pickled-radishes: missing pdf at pdfs/wc-kitchen.sweet-pickled-radishes.pdf'
+- 'wc-kitchen.sweet-potato-chickpea-buddha-bowl-with-peanut-sauce: missing pdf at
+  pdfs/wc-kitchen.sweet-potato-chickpea-buddha-bowl-with-peanut-sauce.pdf'
+- 'wc-kitchen.taco-pasta-salad: missing pdf at pdfs/wc-kitchen.taco-pasta-salad.pdf'
+- 'wc-kitchen.taco-salad: missing pdf at pdfs/wc-kitchen.taco-salad.pdf'
+- 'wc-kitchen.teriyaki-turkey-rice-bowl: missing pdf at pdfs/wc-kitchen.teriyaki-turkey-rice-bowl.pdf'
+- 'wc-kitchen.thai-cucumber-salad: missing pdf at pdfs/wc-kitchen.thai-cucumber-salad.pdf'
+- 'wc-kitchen.thai-peanut-sauce: missing pdf at pdfs/wc-kitchen.thai-peanut-sauce.pdf'
+- 'wc-kitchen.thai-peanut-sauce-jessica-hylton: missing pdf at pdfs/wc-kitchen.thai-peanut-sauce-jessica-hylton.pdf'
+- 'wc-kitchen.thai-peanut-sweet-potato-buddha-bowl: missing pdf at pdfs/wc-kitchen.thai-peanut-sweet-potato-buddha-bowl.pdf'
+- 'wc-kitchen.the-best-apple-crisp: missing pdf at pdfs/wc-kitchen.the-best-apple-crisp.pdf'
+- 'wc-kitchen.the-best-instant-pot-lentil-soup: missing pdf at pdfs/wc-kitchen.the-best-instant-pot-lentil-soup.pdf'
+- 'wc-kitchen.the-best-meatloaf-recipe-of-your-life: missing pdf at pdfs/wc-kitchen.the-best-meatloaf-recipe-of-your-life.pdf'
+- 'wc-kitchen.the-best-swedish-meatballs-recipe: missing pdf at pdfs/wc-kitchen.the-best-swedish-meatballs-recipe.pdf'
+- 'wc-kitchen.tomato-relish: missing pdf at pdfs/wc-kitchen.tomato-relish.pdf'
+- 'wc-kitchen.toum: missing pdf at pdfs/wc-kitchen.toum.pdf'
+- 'wc-kitchen.tuna-and-white-bean-salad: missing pdf at pdfs/wc-kitchen.tuna-and-white-bean-salad.pdf'
+- 'wc-kitchen.tzatziki: missing pdf at pdfs/wc-kitchen.tzatziki.pdf'
+- 'wc-kitchen.ultimate-bean-dip: missing pdf at pdfs/wc-kitchen.ultimate-bean-dip.pdf'
+- 'wc-kitchen.ultra-crispy-smashed-potatoes: missing pdf at pdfs/wc-kitchen.ultra-crispy-smashed-potatoes.pdf'
+- 'wc-kitchen.unstuffed-bell-peppers: missing pdf at pdfs/wc-kitchen.unstuffed-bell-peppers.pdf'
+- 'wc-kitchen.vegetarian-burrito-bowls: missing pdf at pdfs/wc-kitchen.vegetarian-burrito-bowls.pdf'
+- 'wc-kitchen.vegetarian-lentil-tortilla-soup: missing pdf at pdfs/wc-kitchen.vegetarian-lentil-tortilla-soup.pdf'
+- 'wc-kitchen.waffles-i: missing pdf at pdfs/wc-kitchen.waffles-i.pdf'
+- 'wc-kitchen.white-bean-and-ham-soup: missing pdf at pdfs/wc-kitchen.white-bean-and-ham-soup.pdf'
+- 'wc-kitchen.yellow-curry-with-chicken: missing pdf at pdfs/wc-kitchen.yellow-curry-with-chicken.pdf'
+- 'wc-kitchen.your-strawberry-jam-recipe: missing pdf at pdfs/wc-kitchen.your-strawberry-jam-recipe.pdf'
+- 'wc-kitchen.yule-log-cake: missing pdf at pdfs/wc-kitchen.yule-log-cake.pdf'
+- 'wc-kitchen.zucchini-bread-muffins: missing pdf at pdfs/wc-kitchen.zucchini-bread-muffins.pdf'

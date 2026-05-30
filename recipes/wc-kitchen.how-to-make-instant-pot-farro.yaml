@@ -1,0 +1,60 @@
+recipe_uuid: wc-kitchen.how-to-make-instant-pot-farro
+recipe_name: How to Make Instant Pot Farro
+description: 'Tested and retested to come up perfect farro every time. When cooking
+  farro, a strainer was used for ease, but it is not necessary. With strainer: Use
+  7 cups of water (takes 10 min to come to pressure). Without strainer: Use 3 cups
+  of water (takes 5 min to come to pressure).
+
+  '
+ingredients:
+- farro:
+    amounts: []
+    notes: pearled, semi-pearled, whole, or 10-minute farro — quantity not specified
+- water:
+    amounts:
+    - amount: 7
+      unit: cups
+      notes: with strainer
+    - amount: 3
+      unit: cups
+      notes: without strainer
+steps:
+- step: 'Choose your water amount: 7 cups if using a strainer (takes 10 min to come
+    to pressure), or 3 cups without a strainer (takes 5 min to come to pressure).
+
+    '
+- step: 'For pearled or semi-pearled farro: Add farro, water, and salt to the Instant
+    Pot. Manually set to HIGH pressure for 7 minutes for al dente (great for salads)
+    or 8 minutes for softer farro (perfect for soups). Quick release, or give 5 minutes
+    natural release before releasing remaining pressure.
+
+    '
+- step: 'For whole farro: Add farro, water, and salt. Cook on HIGH pressure for 10
+    minutes with valve set to sealing. Give 5 minutes natural release.
+
+    '
+- step: 'For 10-minute farro: Adjust water with or without the strainer and cook on
+    LOW pressure for 1 minute, set valve to the sealing position. Let natural release
+    for 5 minutes.
+
+    '
+- step: 'Tip: When venting early, place a thin folded kitchen towel over the valve
+    so pressure does not spew liquids. If using a thicker towel, use just one layer
+    — it must be porous enough to let steam through.
+
+    '
+X-original-source: ../originals/how-to-make-instant-pot-farro-20260523.jpg
+X-category: side dish, grain
+X-tags:
+- instant pot
+- pressure cooker
+- farro
+- whole grain
+- quick
+X-dietary:
+- vegan
+- vegetarian
+X-source-verification:
+  status: verified
+  notes:
+  - Technique guide; no specific farro quantity given; source URL not visible in image

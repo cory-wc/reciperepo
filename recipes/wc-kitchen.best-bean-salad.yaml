@@ -1,0 +1,115 @@
+recipe_uuid: wc-kitchen.best-bean-salad
+recipe_name: Best Bean Salad
+description: 'This three-bean salad is delicious. I''d turned my nose up at this for
+  years, but suddenly I can''t get enough of it. Thanks, Momma D!'
+source_url: https://www.allrecipes.com
+X-original-source: ../originals/best-bean-salad-20260523.jpg
+X-author: chemjo
+X-active_time: 20 minutes
+X-additional_time: 8 hours
+X-total_time: 8 hours 20 minutes
+ingredients:
+- garbanzo beans:
+    amounts:
+    - amount: 15.5
+      unit: ounce
+    notes: 1 can
+    processing:
+    - drained
+- kidney beans:
+    amounts:
+    - amount: 14.5
+      unit: ounce
+    notes: 1 can
+    processing:
+    - drained
+- black beans:
+    amounts:
+    - amount: 14.5
+      unit: ounce
+    notes: 1 can
+    processing:
+    - drained
+- green beans:
+    amounts:
+    - amount: 14.5
+      unit: ounce
+    notes: 1 can
+    processing:
+    - drained
+- wax beans:
+    amounts:
+    - amount: 14.5
+      unit: ounce
+    notes: 1 can
+    processing:
+    - drained
+- green pepper:
+    amounts:
+    - amount: 0.5
+      unit: cup
+    processing:
+    - chopped
+- onion:
+    amounts:
+    - amount: 0.5
+      unit: cup
+    processing:
+    - chopped
+- celery:
+    amounts:
+    - amount: 0.5
+      unit: cup
+    processing:
+    - chopped
+- white sugar:
+    amounts:
+    - amount: 0.75
+      unit: cup
+- salad oil:
+    amounts:
+    - amount: 0.5
+      unit: cup
+- vinegar:
+    amounts:
+    - amount: 0.5
+      unit: cup
+- salt:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+- ground black pepper:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+steps:
+- step: Combine garbanzo beans, kidney beans, black beans, green beans, wax beans,
+    green pepper, onion, and celery in a large bowl; toss to mix.
+- step: Whisk together sugar, oil, vinegar, salt, and pepper in a separate bowl until
+    sugar is dissolved; pour over bean mixture. Mix well.
+- step: Refrigerate salad for 8 hours to overnight before serving.
+X-nutrition:
+  per_serving:
+    calories: 167
+    total_fat_g: 7
+    saturated_fat_g: 1
+    sodium_mg: 412
+    total_carbohydrate_g: 24
+    dietary_fiber_g: 5
+    total_sugars_g: 9
+    protein_g: 4
+    vitamin_c_mg: 7
+    calcium_mg: 36
+    iron_mg: 1
+    potassium_mg: 161
+X-category: salad
+X-tags:
+- bean salad
+- three-bean salad
+- make-ahead
+- vegetarian
+X-source-verification:
+  status: verified
+  notes:
+  - Recipe sourced from allrecipes.com; exact URL not captured from image
+  - Serving count not specified in source image

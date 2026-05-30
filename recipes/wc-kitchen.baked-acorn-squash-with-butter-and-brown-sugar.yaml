@@ -1,0 +1,74 @@
+recipe_uuid: wc-kitchen.baked-acorn-squash-with-butter-and-brown-sugar
+recipe_name: Baked Acorn Squash with Butter and Brown Sugar
+source_url: https://www.simplyrecipes.com/recipes/classic_baked_acorn_squash/
+X-original-source: ../originals/baked-acorn-squash-with-butter-and-brown-sugar-20260523.jpg
+description: Easy baked acorn squash recipe, perfect for the fall. Squash is cut in
+  half, insides scooped out, then baked with a little butter, brown sugar, and maple
+  syrup.
+yields:
+- amount: 2
+  unit: servings
+- amount: 4
+  unit: servings
+X-active_time: 10 minutes
+X-total_time: 1 hour 25 minutes
+ingredients:
+- acorn squash:
+    amounts:
+    - amount: 1
+      unit: whole
+- butter:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- brown sugar:
+    amounts:
+    - amount: 2
+      unit: tablespoon
+- maple syrup:
+    amounts:
+    - amount: 2
+      unit: teaspoon
+- salt:
+    amounts:
+    - amount: 1
+      unit: dash
+steps:
+- step: Preheat your oven to 400°F (205°C).
+- step: If you have a microwave, microwave the squash for a minute each to make it
+    easier to cut. Stabilize the squash on a cutting board as best you can, stem end
+    down if the stem is short enough, otherwise on the side. Using a sharp, sturdy
+    chef's knife, carefully cut the acorn squash in half, from tip to stem. If on
+    its side, the squash can rock back and forth, so take care as you are cutting
+    it.
+- step: Use a sturdy metal spoon to scrape out the seeds and stringy bits inside each
+    squash half, until the inside is smooth.
+- step: Take a sharp paring knife and score the insides of the acorn squash halves
+    in a cross-hatch pattern, about a half-inch deep cuts.
+- step: Place the squash halves cut side up in a roasting pan. Pour 1/4-inch of water
+    over the bottom of the pan so that the squash doesn't burn or get dried out in
+    the oven.
+- step: Rub a half tablespoon of butter into the insides of each half. Sprinkle with
+    a little salt if you are using unsalted butter.
+- step: Crumble a tablespoon of brown sugar into the center of each half and drizzle
+    with a teaspoon of maple syrup.
+- step: Bake at 400°F (205°C) for about an hour to an hour 15 minutes, until the tops
+    of the squash halves are nicely browned and the squash flesh is very soft and
+    cooked through. It's hard to overcook squash, it just gets better with more caramelization.
+    But don't undercook it.
+- step: When done, remove the squash halves from the oven and let them cool for a
+    bit before serving. Spoon any buttery sugar sauce that has not already been absorbed
+    by the squash over the exposed areas.
+X-tags:
+- squash
+- fall
+- side dish
+- vegetarian
+X-source-verification:
+  status: needs-review
+  notes:
+  - Yield stated as "Serves 2 to 4, depending on how much squash you like to eat"
+    — captured as a range.
+  - Prep time 10 minutes and cook time 1 hour 15 minutes read from image; total calculated
+    as 1 hour 25 minutes.
+  - Source URL transcribed from printed footer; verify accuracy.

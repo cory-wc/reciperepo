@@ -1,0 +1,77 @@
+recipe_uuid: wc-kitchen.perfect-pie-dough
+recipe_name: Perfect Pie Dough
+source_url: https://www.surlatable.com
+X-original-source: ../originals/perfect-pie-dough-20260523.jpg
+X-category: Pastry
+X-tags:
+- pie dough
+- pie crust
+- pastry
+- make-ahead
+
+yields:
+- amount: 1
+  unit: 9- or 10-inch pie crust
+
+ingredients:
+- unbleached all-purpose flour:
+    amounts:
+    - amount: 1.25
+      unit: cups
+    - amount: 6.25
+      unit: oz
+- granulated sugar:
+    amounts:
+    - amount: 1
+      unit: tablespoons
+- fine sea salt:
+    amounts:
+    - amount: 0.5
+      unit: teaspoons
+- unsalted butter:
+    amounts:
+    - amount: 1
+      unit: stick
+    - amount: 4
+      unit: oz
+    notes: cold
+    processing:
+    - cut into 1/2-inch cubes
+- ice water:
+    amounts:
+    - amount: "3–4"
+      unit: tablespoons
+
+steps:
+- step: Place flour, sugar, and salt in the bowl of a food processor or large mixing
+    bowl. By pulsing or using a pastry blender, cut the butter into the flour until
+    the butter is the size of small peas.
+- step: Sprinkle ice water, 1 tablespoon at a time, over the flour mixture. Pulse
+    or stir mixture until large clumps form.
+- step: When enough water has been added for the dough to hold together, transfer
+    to a lightly floured work surface. Gather the dough together to form a ball.
+- step: Flatten the dough into a disk about 6 inches wide, cover in plastic wrap,
+    and refrigerate for 30 minutes before using. If refrigerating the dough for longer
+    than 30 minutes, remove it 15 minutes before rolling out.
+
+notes:
+- This recipe produces a simple, lightly sweetened crust that can be used with both
+  sweet and savory fillings. The dough can be made ahead of time, wrapped in plastic,
+  and refrigerated up to 2 days, or frozen for 1 month.
+- >-
+  A second handwritten recipe titled "Other Pie Dough" appears on the same page
+  (attributed to Cory) with ingredients: 5 cups AP flour, 1 lb soft butter (or 1/2
+  lard), 1 cup cool water, 1 tbsp vinegar (any), 1/2-1 tbsp salt. No steps were
+  provided for that recipe.
+
+X-source-verification:
+  status: verified
+  notes:
+  - Ice water quantity given as a range (3 to 4 tablespoons); consolidated to range
+    amount.
+  - Butter quantity given in two units (1 stick / 4 ounces); both captured.
+  - Flour quantity given in two units (1 1/4 cups / 6 1/4 ounces); both captured.
+  - A second handwritten recipe ("Other Pie Dough" by Cory) appears on the same page
+    but has no steps; captured in notes.
+  - Source is a Sur La Table printed recipe card; instructor name "Cory" visible on
+    card.

@@ -1,0 +1,127 @@
+recipe_uuid: wc-kitchen.yellow-curry-with-chicken
+recipe_name: Yellow Curry with Chicken (Instant Pot)
+
+yields:
+  - amount: 6
+    unit: servings
+
+ingredients:
+  - olive oil:
+      amounts:
+        - amount: 1
+          unit: teaspoon
+
+  - onion:
+      amounts:
+        - amount: 1
+          unit: whole
+      processing:
+        - diced
+
+  - garlic:
+      amounts:
+        - amount: 2
+          unit: cloves
+      processing:
+        - crushed
+
+  - potatoes:
+      amounts:
+        - amount: 1
+          unit: pounds
+      processing:
+        - cubed
+
+  - boneless skinless chicken:
+      amounts:
+        - amount: 1
+          unit: pounds
+
+  - chickpeas:
+      amounts:
+        - amount: 15
+          unit: oz
+      processing:
+        - drained
+        - rinsed
+
+  - brown sugar:
+      amounts:
+        - amount: 2
+          unit: tablespoons
+
+  - ginger:
+      amounts:
+        - amount: 1
+          unit: tablespoon
+      processing:
+        - minced
+
+  - ground turmeric:
+      amounts:
+        - amount: 1
+          unit: teaspoon
+
+  - curry powder:
+      amounts:
+        - amount: 1
+          unit: teaspoon
+
+  - ground coriander:
+      amounts:
+        - amount: "1/2"
+          unit: teaspoon
+
+  - salt:
+      amounts:
+        - amount: 1
+          unit: teaspoon
+
+  - crushed red pepper:
+      amounts:
+        - amount: "1/2"
+          unit: teaspoon
+
+  - chicken broth:
+      amounts:
+        - amount: 2
+          unit: cups
+
+  - coconut milk:
+      amounts:
+        - amount: 15
+          unit: oz
+
+  - cornstarch:
+      amounts:
+        - amount: 3
+          unit: tablespoons
+
+  - water:
+      amounts:
+        - amount: 3
+          unit: tablespoons
+
+  - lime juice:
+      amounts:
+        - amount: 1
+          unit: tablespoon
+
+steps:
+  - step: Using oil, saute onion and garlic until translucent.
+  - step: Add the potatoes, chicken, chickpeas, brown sugar, spices, and stock.
+  - step: Cook on high pressure for 5 minutes.
+  - step: Allow pressure to release for 10 minutes.
+  - step: While cooking, mix cornstarch and water in a small bowl.
+  - step: Stir in cornstarch slurry, lime juice, and coconut milk. Add salt and pepper to taste.
+  - step: Serve with rice.
+
+X-total_time: 40 minutes
+X-original-source: ../originals/yellow-curry-with-chicken-20260523.jpg
+X-source-verification:
+  status: verified
+  notes:
+  - Custom recipe card; no source URL visible
+
+notes:
+- To make rice at the same time as curry, use the pot-in-pot method with 1½ cups rice and 1½ cups water.

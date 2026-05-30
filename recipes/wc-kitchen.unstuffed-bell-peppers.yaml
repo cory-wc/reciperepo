@@ -1,0 +1,76 @@
+recipe_uuid: wc-kitchen.unstuffed-bell-peppers
+recipe_name: Unstuffed Bell Peppers
+
+yields:
+  - amount: 4
+    unit: servings
+
+ingredients:
+  - ground beef or turkey:
+      amounts:
+        - amount: 1
+          unit: pounds
+
+  - yellow onion:
+      amounts:
+        - amount: "1/2"
+          unit: cups
+      processing:
+        - chopped
+
+  - green bell pepper:
+      amounts:
+        - amount: 2
+          unit: cups
+      processing:
+        - chopped
+
+  - garlic:
+      amounts:
+        - amount: 1
+          unit: teaspoon
+      processing:
+        - minced
+
+  - salt:
+      amounts:
+        - amount: 1
+          unit: teaspoon
+
+  - tomato sauce:
+      amounts:
+        - amount: 2
+          unit: cans (8 oz)
+
+  - tomato paste:
+      amounts:
+        - amount: 2
+          unit: tablespoons
+
+  - instant white rice:
+      amounts:
+        - amount: "1 1/2"
+          unit: cups
+      notes: uncooked
+
+  - water:
+      amounts:
+        - amount: "3/4"
+          unit: cups
+
+  - shredded cheese:
+      amounts:
+        - amount: "1/2"
+          unit: cups
+
+steps:
+  - step: Heat a large skillet over medium-high heat. Add beef, onion, bell pepper, garlic, and salt. Cook until meat is no longer pink and vegetables are tender.
+  - step: Add tomato sauce, tomato paste, rice, and water. Stir to combine. Bring to a boil. Reduce heat; cover and simmer for 10 minutes or until rice is tender.
+  - step: Remove from heat and stir. Sprinkle with cheese. Let stand 2 minutes or until cheese melts.
+
+X-total_time: 45 minutes
+X-original-source: ../originals/unstuffed-bell-peppers-20260523.jpg
+X-source-verification:
+  status: verified
+  notes:
+  - Custom recipe card; no source URL visible

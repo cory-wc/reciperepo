@@ -1,66 +1,120 @@
 # reciperepo
 
-Personal recipe collection in **Open Recipe Format (ORF)** YAML: sources in `originals/`, printable PDFs for a binder, HTML on GitHub Pages, LLM-friendly structure for shopping lists.
+Personal recipe collection in **Open Recipe Format (ORF)** YAML: canonical sources in `originals/`, printable PDFs for a binder, HTML on GitHub Pages, and LLM-friendly structure for shopping lists.
 
-## Quick start
+| Doc | Audience |
+|-----|----------|
+| This file | Setup, forking, CI, and day-to-day CLI workflows |
+| [USER_GUIDE.md](USER_GUIDE.md) | Non-technical, step-by-step usage |
+| [notes.md](notes.md) | YAML shape, metadata rules, and audit reference |
+| [to-do.md](to-do.md) | Incomplete recipes and tooling backlog |
+| [docs/documentation.md](docs/documentation.md) | **What goes where** when editing docs |
+
+## Setup
 
 ```bash
-cd ~/Documents/Recipes/reciperepo
+git clone git@github.com:cory-wc/reciperepo.git   # or fork first
+cd reciperepo
 python3 -m venv .venv && source .venv/bin/activate
 pip install -e .
-playwright install chromium
-cp .env.example .env   # optional: for recipe extract (vision/LLM)
+playwright install chromium   # required for PDF generation
+cp .env.example .env          # optional: only for `recipe extract`
 ```
 
-## Workflow
+For extract from photos, set `OPENAI_API_KEY` or `ANTHROPIC_API_KEY` in `.env`.
 
-```bash
-# Validate ORF YAML
-recipe validate wc-kitchen.bratkartoffeln
-recipe validate --all
+**Forking:** Change the `wc-kitchen` namespace in YAML filenames and `recipe_uuid` values if you maintain a separate collection. Conventions are in [notes.md](notes.md).
 
-# Render cloud HTML → site/
-recipe render wc-kitchen.bratkartoffeln
-recipe render --all
-
-# Printable PDF → pdfs/
-recipe pdf wc-kitchen.bratkartoffeln
-recipe pdf --all
-
-# Index (metadata from YAML, links to HTML/PDF)
-recipe index
-
-# Shopping list
-recipe shop wc-kitchen.bratkartoffeln
-
-# Status dashboard
-recipe status
-```
-
-## Extract (migration)
-
-```bash
-recipe extract wc-kitchen.new-dish --url "https://example.com/recipe"
-recipe extract wc-kitchen.new-dish --source originals/scan.jpg
-recipe extract --pending   # bulk: unreferenced files in originals/
-```
-
-Requires `OPENAI_API_KEY` or `ANTHROPIC_API_KEY` in `.env` for image/text structuring.
-
-## Layout
+## Repository layout
 
 | Path | Purpose |
 |------|---------|
-| `recipes/` | Strict ORF YAML (+ generated `index.yaml`) |
-| `originals/` | Canonical sources (photos, PDFs, text) |
-| `pdfs/` | Letter-size binder PDFs + `index.pdf` |
-| `site/` | GitHub Pages HTML + `index.html` |
-| `prompts/` | Extraction and shopping-list instructions |
+| `recipes/` | Published ORF YAML; included in validate, render, index, and CI |
+| `recipes/in-progress/` | Draft YAML excluded from CI until moved to `recipes/` |
+| `originals/` | Canonical source files (photos, PDFs, scans) |
+| `pdfs/` | Generated letter-size PDFs + `index.pdf` |
+| `site/` | Generated HTML + `index.html` (GitHub Pages) |
+| `prompts/` | LLM prompts for extract and shopping lists |
+| `src/recipe_tool/` | Python CLI package |
+| `schema/` | Pydantic ORF models |
+
+Do not edit `pdfs/`, `site/`, or `recipes/index.yaml` by hand — regenerate with `recipe render`, `recipe pdf`, and `recipe index`.
+
+## Day-to-day workflows
+
+Recipe ids and filenames use `wc-kitchen.{slug}` (see [notes.md](notes.md#naming)).
+
+### Add a recipe
+
+**From a URL or photo (extract):**
+
+```bash
+recipe extract wc-kitchen.my-recipe --url "https://example.com/recipe/12345/..."
+recipe extract wc-kitchen.my-recipe --source originals/scan.jpg
+recipe extract --pending   # bulk: one YAML per unreferenced file in originals/
+```
+
+Review and fix the generated YAML against the source. Use [notes.md](notes.md) for required metadata.
+
+**By hand:** Create `recipes/wc-kitchen.my-recipe.yaml` following [notes.md](notes.md). Put source files in `originals/` and set `X-original-source`.
+
+**Not ready for CI?** Save to `recipes/in-progress/` instead of `recipes/` (see [notes.md — in-progress drafts](notes.md#special-entry-types)). Track work in [to-do.md](to-do.md).
+
+**Publish** (single recipe):
+
+```bash
+recipe validate wc-kitchen.my-recipe
+recipe render wc-kitchen.my-recipe
+recipe pdf wc-kitchen.my-recipe
+recipe index
+```
+
+### Update a recipe
+
+1. Edit `recipes/wc-kitchen.my-recipe.yaml` (or finish a draft in `recipes/in-progress/` and move it to `recipes/`).
+2. Re-run validate → render → pdf → index for that id (or `--all` if you changed many).
+3. Commit YAML plus regenerated `pdfs/`, `site/`, and `recipes/index.yaml`.
+
+If you only changed metadata (tags, category), `recipe index` alone may be enough after validate.
+
+### Remove a recipe
+
+1. Delete `recipes/wc-kitchen.my-recipe.yaml`.
+2. Delete `pdfs/wc-kitchen.my-recipe.pdf` and `site/wc-kitchen.my-recipe.html` if present.
+3. Run `recipe index` to refresh the library list and binder TOC.
+4. Commit. Keep files in `originals/` unless you intentionally discard the source.
+
+### Batch publish
+
+```bash
+recipe validate --all
+recipe render --all --allow-missing
+recipe pdf --all
+recipe index --allow-missing
+```
+
+### Other commands
+
+```bash
+recipe shop wc-kitchen.a wc-kitchen.b   # shopping list
+recipe status                           # missing/stale outputs, review flags
+recipe audit-metadata                   # metadata gaps; see notes.md for issue codes
+recipe audit-metadata --fail            # exit non-zero if issues (optional CI gate)
+```
+
+## CI and GitHub Pages
+
+On push/PR to `main`, [`.github/workflows/recipes.yml`](.github/workflows/recipes.yml) runs:
+
+1. `recipe validate --all` — top-level `recipes/*.yaml` only
+2. `recipe render --all --allow-missing`
+3. `recipe pdf --all` and `recipe index --allow-missing`
+4. Deploy `site/` to GitHub Pages (push to `main` only)
+
+**One-time repo setup:** Settings → Pages → Source → **GitHub Actions**.
+
+Files in `recipes/in-progress/` are not validated or published until moved to `recipes/`.
 
 ## Conventions
 
-See [`notes.md`](notes.md): namespace `wc-kitchen.{slug}`, dict-key ingredients, `source_url` for web recipes, `X-original-source` for files.
-
-## GitHub Pages
-
-CI builds `site/` on push to `main`. Enable Pages: **Settings → Pages → GitHub Actions**.
+YAML naming, ingredients, provenance, verification, and special entry types: [notes.md](notes.md).

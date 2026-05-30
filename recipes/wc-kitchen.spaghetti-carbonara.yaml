@@ -1,0 +1,65 @@
+recipe_uuid: wc-kitchen.spaghetti-carbonara
+recipe_name: Spaghetti Carbonara
+description: The easiest pasta dish you will ever make with just 5 ingredients in
+  15 minutes, loaded with Parmesan and bacon!
+source_url: https://damndelicious.net/2014/03/29/spaghetti-carbonara/
+X-original-source: ../originals/spaghetti-carbonara-20260523.jpg
+X-active_time: 5 minutes
+X-cook_time: 15 minutes
+X-total_time: 20 minutes
+
+yields:
+- amount: 4
+  unit: servings
+
+ingredients:
+- spaghetti:
+    amounts:
+    - amount: 8
+      unit: oz
+- eggs:
+    amounts:
+    - amount: 2
+      unit: whole
+    notes: large
+- Parmesan:
+    amounts:
+    - amount: 0.5
+      unit: cups
+    processing:
+    - freshly grated
+- bacon:
+    amounts:
+    - amount: 4
+      unit: slices
+    processing:
+    - diced
+- garlic:
+    amounts:
+    - amount: 4
+      unit: cloves
+    processing:
+    - minced
+- fresh parsley:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+    processing:
+    - chopped
+
+steps:
+- step: In a large pot of boiling salted water, cook pasta according to package instructions;
+    reserve 1/2 cup water and drain well.
+- step: In a small bowl, whisk together eggs and Parmesan; set aside.
+- step: Heat a large skillet over medium high heat. Add bacon and cook until brown
+    and crispy, about 6-8 minutes; reserve excess fat.
+- step: Stir in garlic until fragrant, about 1 minute. Reduce heat to low.
+- step: Working quickly, stir in pasta and egg mixture, and gently toss to combine;
+    season with salt and pepper, to taste. Add reserved pasta water, one tablespoon
+    at a time, until desired consistency is reached.
+- step: Serve immediately, garnished with parsley, if desired.
+
+X-source-verification:
+  status: verified
+  notes:
+  - Damn Delicious; adapted from The Chic Site per source

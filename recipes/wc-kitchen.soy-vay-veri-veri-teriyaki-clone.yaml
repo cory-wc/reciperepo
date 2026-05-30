@@ -1,0 +1,96 @@
+recipe_uuid: wc-kitchen.soy-vay-veri-veri-teriyaki-clone
+recipe_name: Soy Vay Veri Veri Teriyaki Clone
+description: A wonderful base to give meats and other dishes a sweet teriyaki flavor.
+source_url: https://tlmandangi.com/soy-vay-veri-veri-teriyaki-clone/
+X-original-source: ../originals/soy-vay-veri-veri-teriyaki-clone-20260523.jpg
+yields:
+- amount: 16
+  unit: servings
+X-active_time: 5 minutes
+X-total_time: 20 minutes
+X-category: Condiment
+X-tags:
+- teriyaki
+- sauce
+- marinade
+- freezer friendly
+X-cuisine: Chinese
+X-nutrition:
+  calories: 106 kcal
+  per: serving
+ingredients:
+- soy sauce:
+    amounts:
+    - amount: 2
+      unit: cups
+    notes: light soy sauce preferred, but any will work
+- sugar:
+    amounts:
+    - amount: 0.25
+      unit: cups
+- brown sugar:
+    amounts:
+    - amount: 1
+      unit: tablespoons
+- garlic:
+    amounts:
+    - amount: 1
+      unit: tablespoons
+    processing:
+    - minced
+- ginger:
+    amounts:
+    - amount: 1
+      unit: tablespoons
+    processing:
+    - grated
+- sesame seeds:
+    amounts:
+    - amount: 0.25
+      unit: cups
+    notes: toasted
+- sesame oil:
+    amounts:
+    - amount: 0.25
+      unit: cups
+- onion:
+    amounts:
+    - amount: 0.25
+      unit: cups
+    notes: dried
+    processing:
+    - minced
+- onion powder:
+    amounts:
+    - amount: 1
+      unit: teaspoons
+- garlic powder:
+    amounts:
+    - amount: 1
+      unit: teaspoons
+- ginger powder:
+    amounts:
+    - amount: 1
+      unit: teaspoons
+- cornstarch:
+    amounts:
+    - amount: 1
+      unit: tablespoons
+    notes: dissolved in water before adding
+steps:
+- step: Whisk all the ingredients together in a small bowl.
+- step: Transfer the mixture to a small sauce pan.
+- step: Heat the sauce over low heat until the sugar begins to dissolve. This should
+    take between 10–15 minutes. It's alright if all the sugar doesn't completely dissolve;
+    it will eventually dissolve over time.
+- step: In the last 5 minutes of cooking, dissolve the cornstarch in ¼ cup of water
+    and add to mixture. This will help to make the sauce a little thicker without
+    changing the flavor very much.
+- step: Allow to cool and transfer to a bottle so you can put it in the refrigerator.
+    It's best to allow to cool overnight before use, but if you are in a hurry, you
+    can use it to marinate right away. Works great on vegetables for soy meat products.
+X-source-verification:
+  status: verified
+  notes:
+  - source_url corrected from timandangi.com to tlmandangi.com (per image footer)
+  - Printed June 15, 2016

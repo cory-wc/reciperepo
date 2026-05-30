@@ -1,0 +1,156 @@
+recipe_uuid: wc-kitchen.the-best-swedish-meatballs-recipe
+recipe_name: The Best Swedish Meatballs Recipe
+X-original-source: ../originals/the-best-swedish-meatballs-recipe-20260523.jpg
+X-prep_time: 20 minutes
+X-cook_time: 10 minutes
+X-total_time: 30 minutes
+X-category: Dinner
+X-tags:
+- swedish meatballs
+- gravy
+source_authors:
+- Karina
+
+yields:
+- amount: 8
+  unit: servings
+
+ingredients:
+- name_group: Meatballs
+- breadcrumbs:
+    amounts:
+    - amount: "1/2"
+      unit: cups
+- milk:
+    amounts:
+    - amount: "1/2"
+      unit: cups
+    notes: 125 mL
+- cream:
+    amounts:
+    - amount: 35
+      unit: mL
+    notes: optional
+- egg:
+    amounts:
+    - amount: 1
+      unit: whole
+    notes: large
+- garlic:
+    amounts:
+    - amount: 1
+      unit: cloves
+    processing:
+    - minced
+- salt:
+    amounts:
+    - amount: "1/3"
+      unit: teaspoons
+- black pepper:
+    amounts:
+    - amount: "1/4"
+      unit: teaspoons
+- white pepper:
+    amounts:
+    - amount: "1/4"
+      unit: teaspoons
+- Grillkrydda:
+    amounts:
+    - amount: "1/4"
+      unit: teaspoons
+    notes: or allspice or all-purpose seasoning
+- onion:
+    amounts:
+    - amount: "1/2"
+      unit: whole
+    processing:
+    - finely chopped
+- ground beef:
+    amounts:
+    - amount: 1
+      unit: lbs
+    notes: 500g
+- ground pork:
+    amounts:
+    - amount: "1/2"
+      unit: lbs
+    notes: 250g
+- parsley:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+    notes: fresh
+    processing:
+    - finely chopped
+- butter (meatballs):
+    amounts:
+    - amount: 1
+      unit: tablespoons
+- olive oil:
+    amounts:
+    - amount: 2
+      unit: teaspoons
+- name_group: Gravy Sauce
+- butter (gravy):
+    amounts:
+    - amount: "1/3"
+      unit: cups
+- all-purpose flour:
+    amounts:
+    - amount: "1/4"
+      unit: cups
+- vegetable broth:
+    amounts:
+    - amount: 1
+      unit: cups
+    notes: 250 mL; or stock
+- beef broth:
+    amounts:
+    - amount: 1
+      unit: cups
+    notes: 250 mL; or stock
+- heavy cream:
+    amounts:
+    - amount: 1
+      unit: cups
+    notes: or thickened cream
+- soy sauce:
+    amounts:
+    - amount: 2
+      unit: teaspoons
+- dijon mustard:
+    amounts:
+    - amount: 1
+      unit: teaspoons
+
+steps:
+- step: In a large bowl, mix the breadcrumbs together with the milk, cream (if using),
+    egg, garlic, salt, peppers and spice. Allow the milk to soak into the breadcrumbs
+    for at least 10 minutes.
+- step: Once the milk has absorbed, add in the onion, meat(s) and parsley. Mix well
+    with your hands to combine.
+- step: Roll meat into about 24 small balls or 15 larger balls.
+- step: Heat 1 tablespoon of butter and 2 teaspoons of oil in a pan on medium-high
+    heat. Fry meatballs in batches so they don't stew or simmer. Transfer to a warm
+    plate and cover with foil.
+- step: Add the 1/3 cup butter to the juices in the pan to melt. Whisk in the flour
+    until it dissolves and turns brown. Pour in the broth, cream, soy sauce and dijon.
+    Bring to a simmer and season with salt and pepper to taste.
+- step: Continue to simmer until thickened.
+- step: 'To serve — non-Swedish: place meatballs into the gravy in the pan and serve.
+    Traditional Swedish: do not make the cream sauce. Serve meatballs over plain or
+    stewed macaroni, plain or mashed potatoes, and lingonberry jam (optional).'
+
+X-nutrition:
+  calories: 484 kcal
+
+X-source-verification:
+  status: verified
+  notes:
+  - Recipe extracted from printed page photographed at an angle; some text on the
+    back page is partially visible but belongs to a different recipe.
+  - Steps 4–6 and serving instructions are visible on the page behind the main sheet;
+    attributed to this recipe based on context.
+  - Calories per serving listed as 484 kcal; full nutrition panel not fully visible.
+  - Cuisine listed as Swedish; course listed as Dinner.
+  - Rating shown as 4.89 from 67 votes.

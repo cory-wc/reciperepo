@@ -1,0 +1,93 @@
+recipe_uuid: wc-kitchen.chili-recipe
+recipe_name: Chili Recipe (Vegetarian)
+X-original-source: ../originals/chili-recipe-20260523.jpg
+X-category: main dish
+X-tags:
+- vegetarian
+- chili
+- slow cooker
+X-dietary:
+- vegetarian
+X-total_time: 4–5 hours
+ingredients:
+- onion:
+    amounts:
+    - amount: 1
+      unit: whole
+    notes: large
+- red bell peppers:
+    amounts:
+    - amount: 2
+      unit: whole
+    processing:
+    - chopped
+- garlic:
+    amounts:
+    - amount: 3
+      unit: cloves
+- chili flakes:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+    notes: or substitute 2 tbsp minced jalapeno peppers
+- carrots:
+    amounts:
+    - amount: 2
+      unit: whole
+    processing:
+    - diced
+- frozen corn:
+    amounts:
+    - amount: 1.5
+      unit: cups
+    processing:
+    - defrosted
+- crushed tomatoes:
+    amounts:
+    - amount: 1
+      unit: can
+- kidney beans:
+    amounts:
+    - amount: 1
+      unit: can
+- black beans:
+    amounts:
+    - amount: 1
+      unit: can
+    notes: handwritten addition to printed recipe
+- sugar:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- ground cumin:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- chili powder:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- salt:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+    notes: handwritten addition to printed recipe
+steps:
+- step: Add onion, bell pepper, jalapeno pepper, and garlic to frying pan; cook and
+    stir for 5 minutes until tender.
+- step: Add remaining ingredients to slow cooker, mix well and cook for 4–5 hours
+    on low.
+- step: Garnish with sour cream and cheese.
+notes:
+- >-
+  Cook's note: I put a tablespoon instead of teaspoon of the spices in, because I
+  doubled the bell peppers and those made most of the mix. I also put in 3 tablespoons
+  of fresh jalapenos including seeds.
+- Handwritten additions to the printed recipe: 1 tsp salt, 1 can black beans.
+- Chili flakes and jalapeno peppers are listed as alternatives (2 tbsp of either).
+- Optional garnishes: sour cream, shredded cheddar.
+X-source-verification:
+  status: verified
+  notes:
+  - Custom printed recipe with handwritten additions (salt, black beans) incorporated into ingredients
+  - No external source URL visible

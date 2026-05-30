@@ -1,0 +1,110 @@
+recipe_uuid: wc-kitchen.vegetarian-burrito-bowls
+recipe_name: Vegetarian Burrito Bowls
+source_url: https://www.myrecipes.com/recipe/vegetarian-burrito-bowls
+X-original-source: ../originals/vegetarian-burrito-bowls-20260523.jpg
+description: These easy, delicious veggie bowls can be on your table in less time
+  than it takes to drive to the local taco joint.
+yields:
+- amount: 4
+  unit: servings
+X-prep_time: 15 minutes
+X-cook_time: 20 minutes
+X-total_time: 35 minutes
+X-category: main dish
+X-tags:
+- vegetarian
+- bowls
+- Mexican-inspired
+- quick
+X-dietary:
+- vegetarian
+ingredients:
+- olive oil:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+- basmati rice:
+    amounts:
+    - amount: 1
+      unit: cups
+- salt:
+    amounts:
+    - amount: 0.5
+      unit: teaspoons
+    notes: plus more to taste
+- water:
+    amounts:
+    - amount: 1.5
+      unit: cups
+    notes: for rice; plus 0.5 cup for beans
+- garlic:
+    amounts:
+    - amount: 2
+      unit: cloves
+    processing:
+    - minced
+- black beans:
+    amounts:
+    - amount: 2
+      unit: cans
+    notes: 15.5-oz. cans
+    processing:
+    - drained
+    - rinsed
+- chili powder:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- cumin:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- avocado:
+    amounts:
+    - amount: 1
+      unit: whole
+    processing:
+    - pitted
+    - peeled
+    - diced
+- lime juice:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+- corn kernels:
+    amounts:
+    - amount: 1.5
+      unit: cups
+    notes: fresh or frozen; thaw if frozen
+- cherry tomatoes:
+    amounts:
+    - amount: 1.5
+      unit: cups
+    processing:
+    - quartered
+steps:
+- step: Warm 1 Tbsp. oil in a saucepan over medium-high heat. Add rice and cook, stirring,
+    until fragrant, 1 to 2 minutes. Add 1 1/2 cups water and 1/2 tsp. salt. Bring
+    to a boil, cover, reduce heat to low and simmer until water is absorbed, about
+    15 minutes.
+- step: Warm remaining 1 Tbsp. oil in a skillet over medium heat. Add garlic and sauté
+    until fragrant, about 30 seconds. Stir in 1/2 cup water, beans, chili powder and
+    cumin. Bring to a simmer and cook until most of liquid has evaporated, 5 to 7
+    minutes, stirring once or twice. Season lightly with salt.
+- step: Combine avocados and lime juice in a medium bowl. Divide rice among 4 bowls.
+    Top with bean mixture, corn, tomatoes and avocados. Serve with garnishes and chips
+    on the side, if desired.
+
+notes:
+- 'Optional garnishes: sour cream, shredded Cheddar, cilantro leaves, sliced radishes,
+  chopped pickled jalapeños, and tortilla chips.'
+
+X-nutrition:
+  calories: 470
+  fat_g: 15
+  saturated_fat_g: 2
+  notes: Partial nutritional information visible; full panel not shown in image.
+X-source-verification:
+  status: verified
+  notes:
+  - MyRecipes.com; published May 2015

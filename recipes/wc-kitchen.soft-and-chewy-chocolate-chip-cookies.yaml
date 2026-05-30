@@ -1,0 +1,83 @@
+recipe_uuid: wc-kitchen.soft-and-chewy-chocolate-chip-cookies
+recipe_name: Soft and Chewy Chocolate Chip Cookies
+source_url: https://bakerbettie.com/wp-json/mv-create/v1/creations/181/print
+X-original-source: ../originals/soft-and-chewy-chocolate-chip-cookies-20260523.jpg
+description: This recipe creates cookies that stay perfectly soft and gooey even after
+  cooled!
+X-active_time: 15 minutes
+X-total_time: 27 minutes
+X-category: Dessert
+X-tags:
+- cookies
+- chocolate chip
+- baking
+
+yields:
+- amount: 24
+  unit: cookies
+
+ingredients:
+- brown sugar:
+    amounts:
+    - amount: 1.5
+      unit: cups
+    notes: 12 oz, 336 gr; preferably dark brown
+- unsalted butter:
+    amounts:
+    - amount: 2
+      unit: sticks
+    notes: 8 oz, 227 gr; room temperature
+- eggs:
+    amounts:
+    - amount: 2
+      unit: whole
+    notes: large; 3.6 oz, 102 gr; room temperature
+- vanilla:
+    amounts:
+    - amount: 1
+      unit: tablespoons
+    notes: 0.5 oz, 14 gr
+- baking soda:
+    amounts:
+    - amount: 1
+      unit: teaspoons
+    notes: 7 gr
+- kosher salt:
+    amounts:
+    - amount: 1
+      unit: teaspoons
+    notes: 5 gr
+- all-purpose flour:
+    amounts:
+    - amount: 2.25
+      unit: cups
+    notes: 11.25 oz, 318 gr
+- chocolate chips:
+    amounts:
+    - amount: 10
+      unit: oz
+    notes: about 2 cups; author uses dark chocolate chips
+steps:
+- step: Preheat oven to 350°F (177°C).
+- step: Cream the butter and brown sugar on medium speed in the bowl of a stand mixer
+    fitted with a paddle attachment or in a large bowl with a hand mixer. Cream until
+    light and fluffy, about 3–5 minutes.
+- step: Reduce the speed and add the eggs 1 at a time and the vanilla. Increase the
+    speed and mix until well combined.
+- step: Sift together the flour, salt, and baking soda in a separate mixing bowl.
+- step: Slowly add the flour mixture to the butter mixture, scraping the sides of
+    the bowl until thoroughly combined. Mix on medium speed for about 30 seconds more.
+- step: Stir in the chocolate chips.
+- step: Scoop large mounds of dough (about 3 tablespoons each) onto baking sheets lined with
+    parchment paper or a silpat. It is best to only scoop about 9 cookies per sheet
+    to allow enough room for spreading.
+- step: Bake for 12 minutes.
+
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe printed from bakerbettie.com, dated 1/19/2019
+  - Page is marked 1/2; a second page may exist with additional instructions not visible
+    in this image
+  - Bake time of 12 minutes and total time of 27 minutes are visible; full baking
+    instructions may continue on page 2

@@ -1,0 +1,99 @@
+recipe_uuid: wc-kitchen.shakshuka-with-feta
+recipe_name: Shakshuka With Feta
+author: Melissa Clark
+X-original-source: ../originals/shakshuka-with-feta-20260523.jpg
+X-total_time: 50 minutes
+
+yields:
+- amount: "4–6"
+  unit: servings
+
+ingredients:
+- extra-virgin olive oil:
+    amounts:
+    - amount: 3
+      unit: tablespoons
+- onion:
+    amounts:
+    - amount: 1
+      unit: whole
+    notes: large
+    processing:
+    - halved
+    - thinly sliced
+- red bell pepper:
+    amounts:
+    - amount: 1
+      unit: whole
+    notes: large
+    processing:
+    - seeded
+    - thinly sliced
+- garlic:
+    amounts:
+    - amount: 3
+      unit: cloves
+    processing:
+    - thinly sliced
+- ground cumin:
+    amounts:
+    - amount: 1
+      unit: teaspoons
+- sweet paprika:
+    amounts:
+    - amount: 1
+      unit: teaspoons
+- ground cayenne:
+    amounts:
+    - amount: "1/8"
+      unit: teaspoons
+- whole plum tomatoes:
+    amounts:
+    - amount: 1
+      unit: 28-oz can
+    notes: with their juices
+    processing:
+    - coarsely chopped
+- kosher salt:
+    amounts:
+    - amount: "3/4"
+      unit: teaspoons
+- black pepper:
+    amounts:
+    - amount: "1/4"
+      unit: teaspoons
+- feta:
+    amounts:
+    - amount: 5
+      unit: oz
+    notes: about 1 1/4 cups
+    processing:
+    - crumbled
+- eggs:
+    amounts: []
+    notes: quantity not visible in image (below feta, page cut off); typically 6 large
+- fresh cilantro:
+    amounts: []
+    notes: for garnish; mentioned in step 2 only
+- hot sauce:
+    amounts: []
+    notes: for serving; mentioned in step 2 only
+
+steps:
+- step: Heat oven to 375°F. Heat oil in a large skillet over medium-low. Add onion
+    and bell pepper. Cook gently until very soft, about 20 minutes. Add garlic and
+    cook until tender, 1 to 2 minutes; stir in cumin, paprika and cayenne, and cook
+    1 minute. Pour in tomatoes and season with 3/4 teaspoon salt and 1/4 teaspoon
+    pepper; simmer until tomatoes have thickened, about 10 minutes. Taste and add
+    more salt and pepper if needed. Stir in crumbled feta.
+- step: Gently crack eggs into skillet over tomatoes. Season eggs with salt and pepper.
+    Transfer skillet to oven and bake until eggs are just set, 7 to 10 minutes. Sprinkle
+    with cilantro and serve with hot sauce.
+
+X-source-verification:
+  status: needs-manual-review
+  notes:
+  - Image cut off below feta; eggs, cilantro, and hot sauce are in step text but not
+    in the visible ingredient list — quantities unknown
+  - Cayenne confirmed as 1/8 teaspoon (reads "1/8 teaspoon ground cayenne, or to taste")
+  - Rating 4-5 stars with 15,289 reviews; NYT Cooking, by Melissa Clark

@@ -1,0 +1,72 @@
+recipe_uuid: wc-kitchen.curried-chicken-salad
+recipe_name: Curried Chicken Salad
+
+yields:
+  - amount: 6
+    unit: servings
+
+ingredients:
+  - chicken thighs or breasts:
+      amounts:
+        - amount: 3
+          unit: cups
+      processing:
+        - roasted and diced
+
+  - mayonnaise:
+      amounts:
+        - amount: "1 1/2"
+          unit: cups
+
+  - dry white wine:
+      amounts:
+        - amount: 1/3
+          unit: cup
+
+  - chutney:
+      amounts:
+        - amount: 1/4
+          unit: cup
+      notes:
+        - optional
+
+  - curry powder:
+      amounts:
+        - amount: 3
+          unit: tablespoons
+
+  - celery stalks:
+      amounts:
+        - amount: 2
+          unit: stalks
+      processing:
+        - diced
+
+  - scallions:
+      amounts:
+        - amount: 2
+          unit: scallions
+      processing:
+        - diced
+
+  - whole roasted cashews or almonds:
+      amounts:
+        - amount: 1
+          unit: cup
+      notes:
+        - optional
+
+steps:
+  - step: Preheat oven to 350. Rub chicken with olive oil. Season with salt and pepper. Roast for 35-40 minutes. Set aside to cool.
+  - step: Dice celery and scallions while chicken cooks.
+  - step: Combine mayonnaise, wine, chutney, and curry powder. Mix together all ingredients except cashews.
+  - step: Refrigerate for 1-2 hours to allow the flavors to blend.
+  - step: Add the cashews and serve at room temperature.
+
+X-active_time: 2 hours
+X-total_time: 165 minutes
+X-nutrition:
+  calories: 170
+  fiber: 2 g
+X-original-source: ../originals/curried-chicken-salad-20260523.jpg
+X-flags: []

@@ -1,0 +1,97 @@
+recipe_uuid: wc-kitchen.slow-cooker-corn-chowder
+recipe_name: Slow Cooker Corn Chowder
+source_url: https://www.thekitchn.com
+X-original-source: ../originals/slow-cooker-corn-chowder-20260523.jpg
+X-active_time: 10 minutes
+X-total_time: 8 hours 10 minutes
+X-category: Soup
+X-tags:
+- slow cooker
+- corn
+- chowder
+- vegetarian-adaptable
+
+yields:
+- amount: "4–6"
+  unit: servings
+
+ingredients:
+- red bell pepper:
+    amounts:
+    - amount: 0.25
+      unit: cups
+    processing:
+    - diced
+- lemon juice:
+    amounts:
+    - amount: 1
+      unit: tablespoons
+    notes: freshly squeezed; from 1 lemon
+- frozen corn:
+    amounts:
+    - amount: 32
+      unit: oz
+    notes: 1 bag, divided
+- Yukon gold potatoes:
+    amounts:
+    - amount: 1
+      unit: pounds
+    processing:
+    - peeled
+    - diced
+- low-sodium chicken or vegetable broth:
+    amounts:
+    - amount: 2.5
+      unit: cups
+- yellow onion:
+    amounts:
+    - amount: 0.5
+      unit: cups
+    processing:
+    - chopped
+- garlic:
+    amounts:
+    - amount: 2
+      unit: cloves
+    processing:
+    - minced
+- fresh thyme:
+    amounts:
+    - amount: 2
+      unit: sprigs
+- kosher salt:
+    amounts:
+    - amount: 2
+      unit: teaspoons
+- freshly ground black pepper:
+    amounts:
+    - amount: 0.5
+      unit: teaspoons
+- half-and-half or heavy cream:
+    amounts:
+    - amount: 0.5
+      unit: cups
+- unsalted butter:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+
+steps:
+- step: Place red bell pepper, lemon juice, and 1/2 cup of the corn in a small bowl
+    and stir to combine. Cover and refrigerate until ready to serve.
+- step: Place potatoes, broth, onion, garlic, thyme, salt, pepper, and remaining corn
+    in a 4- to 5-quart slow cooker and stir to combine. Cover and cook on the LOW
+    setting until the potatoes are very tender, about 8 hours.
+- step: Remove and discard the thyme sprigs. Transfer 2 cups of the soup to a blender
+    and blend until smooth. Return the blended soup to the slow cooker. Add the half-and-half
+    or cream and butter and stir until the butter melts. Ladle into bowls and serve
+    with the corn and red pepper topping and chives.
+
+notes:
+- Garnish with chopped chives.
+
+X-source-verification:
+  status: verified
+  notes:
+  - Recipe notes section visible in image but content not shown; may be truncated.
+  - Source attributed to Kitchn (thekitchn.com); exact URL not visible in image.

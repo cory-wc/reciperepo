@@ -1,0 +1,77 @@
+recipe_uuid: wc-kitchen.15-minute-miso-soup-with-greens-and-tofu
+recipe_name: 15-Minute Miso Soup with Greens and Tofu
+author: Minimalist Baker
+description: An inspired take on Japanese miso soup with tofu, green onion, and loads
+  of greens. Just 15 minutes from start to finish, and so flavorful and comforting.
+yields:
+- amount: 4
+  unit: bowls
+X-total_time: 15 minutes
+X-active_time: 5 minutes
+X-prep_time: 5 minutes
+X-cook_time: 10 minutes
+X-category:
+- Appetizer
+- Entrée
+- Side
+X-tags:
+- Gluten-Free
+- Japanese-Inspired
+- Vegan
+X-dietary:
+- gluten-free
+- vegan
+X-freezer_friendly: false
+X-storage: Best when fresh
+X-rating: 4.76
+X-rating_count: 185
+ingredients:
+- vegetable broth:
+    amounts:
+    - amount: 8
+      unit: cup
+    notes: use dashi for more traditional miso soup; see notes above
+- dried seaweed (nori):
+    amounts:
+    - amount: 2
+      unit: sheet
+    notes: optional; cut into large rectangles; 1 sheet yields 1/4 cup
+- miso paste:
+    amounts:
+    - amount: 6
+      unit: tbsp
+    - amount: 8
+      unit: tbsp
+    notes: white or yellow miso paste (fermented soy bean or chickpea paste) with
+      or without bonito; bonito (fish flavor) makes it non vegan-vegetarian-friendly;
+      use lesser end of range
+- chopped green chard:
+    amounts:
+    - amount: 1
+      unit: cup
+    notes: or other sturdy green
+- chopped green onion:
+    amounts:
+    - amount: 1
+      unit: cup
+- firm tofu:
+    amounts:
+    - amount: 0.5
+      unit: cup
+    notes: cubed; use silken tofu for more traditional miso soup
+steps:
+  - step: Place vegetable broth in a medium saucepan and bring to a low simmer.
+  - step: Place miso (starting with lesser end of range) into a small bowl, add a little hot water and whisk until smooth. This will ensure it doesn't clump when added to the soup later. Set aside.
+  - step: Add chopped chard (or preferred greens), green onion, and firm tofu cubes to the simmering broth. Cook for 5 minutes. If using silken tofu, add it at the end instead.
+  - step: Stir in nori sheets.
+  - step: Remove from heat and add the prepared miso mixture, stirring to combine thoroughly.
+  - step: Taste and adjust saltiness by adding more miso or a pinch of sea salt if desired.
+  - step: Serve warm. Best eaten fresh.
+
+source_url: https://minimalistbaker.com/15-minute-miso-soup-with-greens-and-tofu/
+
+X-original-source: ../originals/15-minute-miso-soup-with-greens-and-tofu-20260523.jpg
+X-source-verification:
+  status: needs-review
+  notes:
+  - Miso paste quantity given as a range (6-8 Tbsp); both values recorded.

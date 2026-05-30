@@ -1,0 +1,86 @@
+recipe_uuid: wc-kitchen.dairy-free-quiche-lorraine
+recipe_name: Dairy Free Quiche Lorraine
+description: 'Made with oat milk, smoky bacon and caramelized shallots, this dairy
+  free quiche is everything you''ve been missing - flaky, tender crust with a delicate
+  and creamy egg filling. Serve it for a classic dairy free brunch, or enjoy it as
+  a light dinner alongside a simple green salad.'
+X-original-source: ../originals/dairy-free-quiche-lorraine-20260523.jpg
+X-category: Breakfast
+X-tags:
+- dairy-free
+- quiche
+- French
+- brunch
+X-dietary:
+- dairy-free
+X-prep_time: 15 mins
+X-cook_time: 55 mins
+X-total_time: 1 hr 10 mins
+X-nutrition:
+  calories: 267
+yields:
+- amount: 8
+  unit: servings
+ingredients:
+- olive oil:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- shallots:
+    amounts:
+    - amount: 3
+      unit: whole
+    processing:
+    - thinly sliced
+- bacon:
+    amounts:
+    - amount: 5
+      unit: slices
+    notes: thick-cut
+    processing:
+    - cooked
+- eggs:
+    amounts:
+    - amount: 6
+      unit: whole
+    notes: 6–7 eggs
+- dairy free milk:
+    amounts:
+    - amount: 1.25
+      unit: cups
+    notes: unsweetened
+- nutritional yeast:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- coarse salt:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+- ground nutmeg:
+    amounts:
+    - amount: 1
+      unit: pinch
+- black pepper:
+    amounts: []
+    notes: to taste
+- pie crust:
+    amounts:
+    - amount: 1
+      unit: whole
+    notes: prepared
+steps:
+- step: Preheat oven to 375°F.
+- step: Roll a prepared pie crust into a 9-inch pie plate and pierce the bottom with
+    a fork. Using pie weights, blind bake the crust for 10 minutes. Remove from the
+    oven and allow the crust to cool before filling.
+- step: In a large skillet, heat olive oil and add shallots. Allow them to caramelize,
+    stirring as needed, until golden brown and completely softened.
+- step: In a large mixing bowl, whisk the eggs, dairy free milk, nutritional yeast,
+    salt and nutmeg together until smooth.
+X-source-verification:
+  status: needs-manual-review
+  notes:
+  - Steps 5+ not visible — image shows only steps 1–4; filling/baking steps missing
+  - Added black pepper (to taste) from ingredients list; was missing from YAML
+  - Egg quantity confirmed as range 6–7

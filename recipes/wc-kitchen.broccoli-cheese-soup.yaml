@@ -1,0 +1,79 @@
+recipe_uuid: wc-kitchen.broccoli-cheese-soup
+recipe_name: Broccoli Cheese Soup
+source_url: https://www.allrecipes.com
+X-original-source: ../originals/broccoli-cheese-soup-20260523.jpg
+description: 'This is a great, very flavorful soup. Good for serving at luncheons
+  or special gatherings with a quiche. To make this soup a little fancier, add 1 cup
+  sliced mushrooms and 1 cup white wine with the onions.
+
+  '
+yields:
+- amount: 12
+  unit: servings
+X-prep_time: 10 mins
+X-cook_time: 30 mins
+X-total_time: 40 mins
+ingredients:
+- butter:
+    amounts:
+    - amount: 0.5
+      unit: cup
+- onion:
+    amounts:
+    - amount: 1
+      unit: whole
+    processing:
+    - chopped
+- frozen chopped broccoli:
+    amounts:
+    - amount: 16
+      unit: oz
+    notes: 1 package
+- chicken broth:
+    amounts:
+    - amount: 4
+      unit: cans
+    notes: 14.5 oz cans
+- processed cheese food:
+    amounts:
+    - amount: 1
+      unit: lb
+    notes: 1-pound loaf
+    processing:
+    - cubed
+- milk:
+    amounts:
+    - amount: 2
+      unit: cups
+- garlic powder:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- cornstarch:
+    amounts:
+    - amount: 0.667
+      unit: cup
+- water:
+    amounts:
+    - amount: 1
+      unit: cup
+steps:
+- step: In a stockpot, melt butter over medium heat. Cook onion in butter until softened.
+    Stir in broccoli, and cover with chicken broth. Simmer until broccoli is tender,
+    10 to 15 minutes.
+- step: Reduce heat, and stir in cheese cubes until melted. Mix in milk and garlic
+    powder.
+- step: In a small bowl, stir cornstarch into water until dissolved. Stir into soup;
+    cook, stirring frequently, until thick.
+X-nutrition:
+  per_serving:
+    calories: 265
+    protein_g: 10
+    carbohydrates_g: 15.1
+    fat_g: 18.2
+    cholesterol_mg: 56.5
+    sodium_mg: 1136.4
+X-source-verification:
+  status: verified
+  notes:
+  - Printed from allrecipes.com, 12/20/2020

@@ -1,0 +1,47 @@
+recipe_uuid: wc-kitchen.candied-sweet-potatoes
+recipe_name: Candied Sweet Potatoes
+ingredients:
+- sweet potatoes:
+    amounts:
+    - amount: 2.5
+      unit: pounds
+    notes: about 2 average-sized sweet potatoes
+    processing:
+    - peeled
+    - cut into 1-inch chunks
+- unsweetened apple cider:
+    amounts:
+    - amount: 2.5
+      unit: cups
+- dark brown sugar:
+    amounts:
+    - amount: 0.5
+      unit: cups
+- unsalted butter:
+    amounts:
+    - amount: 1
+      unit: stick
+    notes: 8 tablespoons; 6 tbsp used in step 1, 2 tbsp in step 3
+- cinnamon stick:
+    amounts:
+    - amount: 1
+      unit: 2-inch piece
+steps:
+- step: In a large nonreactive saucepan, combine the potatoes, cider, brown sugar,
+    6 tablespoons of the butter and the cinnamon stick. Bring to a boil over moderate
+    heat. Reduce the heat to a simmer, partially cover and cook, stirring occasionally,
+    until the potatoes are very tender, about 45 minutes.
+- step: Let cool slightly, remove the cinnamon stick and pass the potatoes through
+    the medium disk of a food mill or puree in batches in a food processor. Transfer
+    to an ovenproof serving dish.
+- step: Preheat the oven to 325°F. Dot the potatoes with the remaining 2 tablespoons
+    butter, cover with foil and bake, stirring once or twice, for about 20 minutes,
+    until steaming. Remove the foil and bake for 5 minutes longer.
+X-original-source: ../originals/candied-sweet-potatoes-20260523.jpg
+X-source-verification:
+  status: verified
+  notes:
+  - Handwritten amended (larger) quantities used throughout; smaller printed values on source card not used
+  - Butter split confirmed by recipe body: 6 tbsp in step 1, 2 tbsp in step 3
+  - No source URL identified; "ADVERTISEMENT" header suggests clipped from a publication
+  - No yield specified in source

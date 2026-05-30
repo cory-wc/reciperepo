@@ -1,0 +1,70 @@
+recipe_uuid: wc-kitchen.homemade-drop-biscuits-recipe
+recipe_name: Homemade Drop Biscuits Recipe (No Milk)
+author: Brianna May
+X-course: Bread, Breakfast
+X-original-source: ../originals/homemade-drop-biscuits-recipe-20260523.jpg
+X-prep_time: 35 mins
+X-cook_time: 20 mins
+X-total_time: 55 mins
+yields:
+- amount: 15
+  unit: biscuits
+ingredients:
+- all-purpose flour:
+    amounts:
+    - amount: 2.25
+      unit: cups
+    notes: 293g
+- baking powder:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- salt:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- cold water:
+    amounts:
+    - amount: 1
+      unit: cup
+- honey:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+    notes: can swap for 1 tablespoon white or brown sugar
+- white vinegar:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- unsalted butter:
+    amounts:
+    - amount: 1
+      unit: stick
+    notes: 8 tablespoons
+    processing:
+    - chilled in freezer 30 minutes to 1 hour
+    - grated
+steps:
+- step: Preheat the oven to 425°F. Line a baking sheet with parchment paper.
+- step: In a medium bowl, whisk together the flour, baking powder, and salt.
+- step: In a separate bowl, whisk together the water, honey, and vinegar.
+- step: Add the butter to the dry ingredients and stir until well combined.
+- step: Pour about half of the water mixture over the butter and dry ingredients.
+    Stir gently.
+- step: Add the rest of the water mixture. Continue stirring just until the dough
+    comes together.
+- step: Drop about 2 heaping tablespoons of dough onto the baking sheet to form about
+    15 biscuits.
+- step: Bake for 16–18 minutes or until the tops begin to turn golden brown. Brush
+    with additional melted butter or honey butter before serving.
+notes:
+- Honey can be swapped for 1 tablespoon white or brown sugar.
+- Optional add-ins: 1/2 tsp garlic powder, 3/4 cup cheddar cheese, 1/4 cup chives.
+- Honey butter topping: whisk together 1 tablespoon honey + 2 tablespoons melted unsalted butter.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Image is a printed recipe page; some text partially obscured by shadow but content
+    appears fully legible.
+  - Prep time column header partially cut off but inferred as 35 mins from context.
+  - Rating shown as 5 stars from 95 votes.

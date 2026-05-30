@@ -1,0 +1,93 @@
+recipe_uuid: wc-kitchen.everyday-instant-pot-dal
+recipe_name: Everyday Instant Pot Dal
+source_url: https://www.hookedonheat.com
+X-original-source: ../originals/everyday-instant-pot-dal-20260523.jpg
+X-prep_time: 10 mins
+X-cook_time: 20 mins
+X-total_time: 30 mins
+yields:
+- amount: 4
+  unit: servings
+ingredients:
+- light cooking oil:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+- cumin seeds:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- garlic:
+    amounts:
+    - amount: "2–3"
+      unit: cloves
+    notes: large
+    processing:
+    - bruised
+- ginger:
+    amounts:
+    - amount: "2–3"
+      unit: slices
+    notes: thin slices
+- onion:
+    amounts:
+    - amount: 1
+      unit: whole
+    notes: medium
+    processing:
+    - finely chopped
+- turmeric powder:
+    amounts:
+    - amount: 0.25
+      unit: teaspoon
+- red chilli powder:
+    amounts:
+    - amount: 0.25
+      unit: teaspoon
+- coriander powder:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+- tomato:
+    amounts:
+    - amount: 1
+      unit: whole
+    notes: large
+    processing:
+    - finely chopped
+- red lentils:
+    amounts:
+    - amount: 2
+      unit: cups
+    notes: also known as masoor dal; thoroughly washed and drained
+- water:
+    amounts:
+    - amount: 3
+      unit: cups
+steps:
+- step: Turn on the Instant Pot and set to Saute mode. Once it's heated, add in oil
+    and cumin seeds.
+- step: Once the cumin seeds start to sizzle, add in the garlic, ginger and chopped
+    onions. Fry for a few minutes, stirring occasionally, till onions start to brown.
+- step: Add in spices and salt, and give it a quick mix. Add in chopped tomatoes and
+    let it cook for a couple of minutes till the tomatoes start to soften and pulp.
+- step: Mix in the lentils and water and let it come to a quick boil. Put on the lid
+    and set the Instant Pot to manual Pressure Cook mode for 8 minutes, making sure
+    that the valve is on the sealing position.
+- step: Let the pressure release naturally before removing the lid. Give it a good
+    stir and garnish with cilantro leaves before serving.
+notes:
+- Garnish with finely chopped fresh cilantro leaves.
+- Once the Dal is done cooking, if you'd like the consistency thinner, set the Instant
+  Pot to Saute mode, add in some water and let it come to a boil. If you'd like it
+  thicker, set to Saute mode and let it cook down slightly, stirring occasionally
+  to avoid burning.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe extracted from printed page photographed at an angle; some text may be
+    partially obscured.
+  - The tomato ingredient line in the source appeared to conflate the tomato description
+    with the lentil description ("also known as masoor dal, thoroughly washed and
+    drained") — lentil qualifier moved to the red lentils entry.
+  - Quantity range "2-3" for garlic cloves and ginger slices preserved as written.
