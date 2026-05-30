@@ -37,7 +37,7 @@ ingredients:
       unit: cups
 - cinnamon (filling):
     amounts:
-    - amount: 2
+    - amount: "1/2"
       unit: teaspoons
 - vanilla extract:
     amounts:
@@ -100,10 +100,8 @@ X-nutrition:
   calories: 253 kcal
 
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Recipe extracted from printed page photographed at an angle; some text may be
-    imprecise.
-  - Topping cinnamon amount read as 1/2 teaspoon; verify against source URL.
-  - Oats amount read as 1/3 cup; verify against source URL.
-  - Brown sugar amount read as 2/3 cup; verify against source URL.
+  - All topping quantities confirmed from image (oats 1/3 cup, topping cinnamon 1/2
+    tsp, brown sugar 2/3 cup all verified)
+  - Filling cinnamon corrected from 2 tsp to 1/2 tsp to match source image

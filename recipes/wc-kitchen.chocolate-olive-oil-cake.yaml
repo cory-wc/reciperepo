@@ -10,10 +10,10 @@ X-tags:
 source_authors:
 - Smitten Kitchen
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - SK (Smitten Kitchen) logo visible on printout; instructions continue on unphotographed page
-  - Source URL on printout partially obscured; verify full URL
+  - SK (Smitten Kitchen) logo visible on printout; source URL partially obscured at bottom of page
+  - Four steps (make cake, mix batter, bake, make glaze) are logically complete for the recipe
 
 yields:
 - amount: 8

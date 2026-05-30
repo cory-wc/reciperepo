@@ -10,8 +10,8 @@ X-total_time: 5 mins
 ingredients:
 - granulated sugar:
     amounts:
-    - amount: 3
-      unit: cups
+    - amount: 1
+      unit: cup
 - unsweetened cocoa powder:
     amounts:
     - amount: 0.667
@@ -52,14 +52,11 @@ X-nutrition:
   calcium_mg: 6
   iron_mg: 1
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - 'Handwritten annotations on the printed page show ''3 cups sugar'', ''2 cups cocoa
-    powder'', ''1/2 teaspoon salt'', and ''3/8 tsp peppermint'' — these may be personal
-    modifications to the original recipe quantities (original: 1 cup sugar, 2/3 cup
-    cocoa, 1/2 tsp salt, 1/8 tsp cinnamon optional).'
-  - The printed ingredient list and the handwritten annotations conflict; both have
-    been noted. Printed quantities used as primary values.
-  - Handwritten '3/8 tsp peppermint' may replace or supplement the optional cinnamon.
-  - Source URL and date (November 27, 2020) visible on printed page.
-  - Image captured 12/23/22 per printed timestamp.
+  - Printed quantities used (1 cup sugar, 2/3 cup cocoa, 1/2 tsp salt, 1/8 tsp cinnamon);
+    consistent with 13 servings at 2 tbsp each
+  - Handwritten annotations are personal modifications — 3 cups sugar, 2 cups cocoa,
+    1½ tsp salt, 3/8 tsp peppermint replacing cinnamon; sugar corrected from erroneous
+    3 cups back to printed 1 cup
+  - Source URL and date (November 27, 2020) visible on printed page; image captured 12/23/22
