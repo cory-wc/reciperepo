@@ -74,11 +74,6 @@ X-nutrition:
     cholesterol_mg: 56.5
     sodium_mg: 1136.4
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Cornstarch amount reads as 2/3 cup — confirmed from image.
-  - Chicken broth quantity reads as 4 (14.5 ounce) cans — confirmed.
-  - Processed cheese food reads as 1 (1 pound) loaf, cubed — confirmed.
-  - Image is rotated; text was read accordingly. Some characters may be misread due
-    to image angle and print quality.
-  - Source printed from allrecipes.com, copyright 2020, printed 12/20/2020.
+  - Printed from allrecipes.com, 12/20/2020

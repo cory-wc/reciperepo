@@ -69,9 +69,6 @@ steps:
 notes:
 - Serve with tonkatsu sauce, thinly sliced green cabbage, and cooked white rice.
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Recipe printed from thekitchn.com, print date shown as 3/27/25
-  - Source URL partially visible at bottom of page as https://www.thekitchn.com/_/print;
-    full canonical URL may differ
-  - Image is rotated and partially shadowed; all text appears legible
+  - Printed from thekitchn.com; full canonical URL may differ from print URL

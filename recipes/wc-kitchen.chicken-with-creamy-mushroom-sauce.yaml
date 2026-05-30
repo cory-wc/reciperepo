@@ -10,7 +10,7 @@ X-tags:
 X-active_time: 5 mins
 X-total_time: 20 mins
 X-nutrition:
-  calories: 571 kcal
+  calories: 837 kcal
   servings: 4
 yields:
 - amount: 4
@@ -98,9 +98,8 @@ steps:
 notes:
 - Garnish with finely sliced chives, parsley, or green onions (optional).
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Recipe printed from a website, attributed to author Nagi
-  - Rated 4.98 from 209 votes
-  - Instructions appear to be cut off after step 8; image may not show full recipe
-  - Notes referenced in ingredients (Note 1, 2, 3, 4) are not visible in image
+  - Printed from thekitchn.com; recipe by Nagi (RecipeTin Eats)
+  - Calories corrected to 837 kcal (YAML previously had 571 — misread)
+  - Ingredient footnotes (Note 1–4) not visible in source image

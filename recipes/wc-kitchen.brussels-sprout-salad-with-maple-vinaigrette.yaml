@@ -50,9 +50,7 @@ steps:
     lid and shake well to combine. Pour the dressing over the salad. Let sit 5 minutes.
     Season with cracked black pepper.
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Source is a printed recipe page photographed in a binder; original publication
-    unknown.
-  - Step 1 in image reads "bacon an hazelnuts" — interpreted as "bacon and hazelnuts"
-    (likely typo in source).
+  - Custom printed recipe card; no source URL visible
+  - "bacon an hazelnuts" in source interpreted as "bacon and hazelnuts" (typo)
