@@ -59,11 +59,35 @@ def _format_unit(unit: str, amount_display: str) -> str:
 
 
 def format_ingredient_row(name: str, detail: dict[str, Any]) -> dict[str, str]:
-    amounts = detail.get("amounts") or [{}]
+    amounts = detail.get("amounts") or []
+    if not amounts:
+        notes = detail.get("notes")
+        note_str = ""
+        if isinstance(notes, str):
+            note_str = notes
+        elif isinstance(notes, list) and notes:
+            note_str = str(notes[0])
+        name_html = name.lower()
+        if note_str:
+            name_html = f"{name_html} ({note_str})"
+        return {"amount": "", "name": name_html}
+
     first = amounts[0]
-    amount_raw = first.get("amount", "")
-    unit = first.get("unit", "")
-    amount_display = _format_amount(amount_raw)
+    amount_raw = first.get("amount")
+    unit = str(first.get("unit") or "")
+    if amount_raw is None and not unit:
+        notes = detail.get("notes")
+        note_str = ""
+        if isinstance(notes, str):
+            note_str = notes
+        elif isinstance(notes, list) and notes:
+            note_str = str(notes[0])
+        name_html = name.lower()
+        if note_str:
+            name_html = f"{name_html} ({note_str})"
+        return {"amount": "", "name": name_html}
+
+    amount_display = _format_amount(amount_raw) if amount_raw is not None else ""
 
     if unit.lower() == "cup" and amount_display == "1/4":
         amount_str = "¼ C"
@@ -96,6 +120,16 @@ def format_ingredient_row(name: str, detail: dict[str, Any]) -> dict[str, str]:
         name_html = name_lower
 
     return {"amount": amount_str, "name": name_html}
+
+
+def format_ingredient_group(name: str, detail: str) -> dict[str, str]:
+    if name == "name_group":
+        label = detail
+    elif detail:
+        label = f"{name}: {detail}"
+    else:
+        label = name.replace("_", " ")
+    return {"amount": "", "name": f"<strong>{label}</strong>"}
 
 
 def build_meta_line(data: dict[str, Any]) -> str:
@@ -131,7 +165,11 @@ def recipe_context(recipe_id: str, paths: RepoPaths | None = None) -> dict[str, 
     ingredients = []
     for item in data.get("ingredients") or []:
         name, detail = next(iter(item.items()))
-        ingredients.append(format_ingredient_row(name, detail))
+        if isinstance(detail, str):
+            ingredients.append(format_ingredient_group(name, detail))
+            continue
+        if isinstance(detail, dict):
+            ingredients.append(format_ingredient_row(name, detail))
 
     steps = []
     for i, step_item in enumerate(data.get("steps") or [], start=1):
