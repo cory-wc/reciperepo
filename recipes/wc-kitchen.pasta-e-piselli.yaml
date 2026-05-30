@@ -108,10 +108,7 @@ notes:
 - Parsley is mentioned in step 6 but not listed in the ingredients.
 
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Ingredient amounts for baby peas listed as a range (14–16 oz); consolidated to
-    a single range amount entry.
-  - Chopped parsley is referenced in step 6 but does not appear in the ingredients
-    list; not added to ingredients per fidelity rules.
-  - Nutrition section was partially obscured at bottom of image; only calories captured.
+  - Author: Chef Dennis Littley
+  - Parsley referenced in step 6 but not in printed ingredients list

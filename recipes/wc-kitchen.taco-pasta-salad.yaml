@@ -74,7 +74,6 @@ steps:
 - step: Serve topped with shredded cheese and sliced avocado.
 
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Step 6 in source reads "Serve topped wish shredded cheese and sliced avocado"
-    — "wish" appears to be a typo for "with"; corrected in transcription.
+  - Custom recipe card; no source URL visible

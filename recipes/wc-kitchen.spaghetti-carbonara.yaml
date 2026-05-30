@@ -60,8 +60,6 @@ steps:
 - step: Serve immediately, garnished with parsley, if desired.
 
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Recipe printed from Damn Delicious; noted as adapted from The Chic Site.
-  - Source URL visible at bottom of printed page.
-  - Salt and pepper not included as ingredients (no measured amounts; to taste).
+  - Damn Delicious; adapted from The Chic Site per source

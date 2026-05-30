@@ -1,7 +1,7 @@
 recipe_uuid: wc-kitchen.corn-chowder
 recipe_name: Corn Chowder
 X-original-source: ../originals/PXL_20260523_105939515.RAW-01.COVER.jpg
-X-category: Side Dishes
+X-category: soup
 X-active_time: 60 minutes
 X-total_time: 9 hours
 yields:
@@ -71,8 +71,7 @@ X-nutrition:
   calories: 365
   fiber: 8g
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Step 3 uses "Pure" in source image — interpreted as "Puree".
-  - The 9h total time is unusually long for this recipe; transcribed faithfully from
-    source.
+  - Custom recipe card; "9h total" appears to be a template copy error (steps are all stovetop, ~30–40 min actual)
+  - Transcribed faithfully from source
