@@ -3,10 +3,10 @@ recipe_name: Middle Eastern Lentil Soup
 description: A thick and hearty spiced lentil soup that's a complete comfort dish
   and popular with the whole family!
 author: Farah Abumaizar
-X-original-source: ../originals/PXL_20260523_105947569.RAW-01.COVER.jpg
+X-original-source: ../originals/mideast-lentil.pdf
 X-category: Soup
 X-cuisine: Middle Eastern
-X-active_time: 10 minutes
+X-prep_time: 10 minutes
 X-cook_time: 20 minutes
 X-total_time: 30 minutes
 yields:
@@ -102,10 +102,18 @@ steps:
     soup come to a boil, stirring occasionally, then reduce heat to medium and let
     the mixture cook uncovered for 25–30 minutes, or until lentils and vegetables
     are cooked through.
+- step: In a separate small skillet, melt the butter over medium heat, then add the
+    flour and whisk constantly until the mixture bubbles and thickens slightly. Add
+    this to the lentil soup pot.
+- step: Once soup is totally cooked through, use an immersion blender or a normal
+    blender (in batches) and blend to desired consistency.
+- step: Serve hot, with a slice of lemon and green olives on the side.
+
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Instructions appear to be cut off at the bottom of the image; steps involving
-    flour and butter are not visible and may be on a subsequent page.
-  - Carrot quantity listed as 1-2; captured as a range in amounts with a note.
-  - Rating shown as 5 stars in source.
+  - Full recipe confirmed from mideast-lentil.pdf (Farah Abumaizar).
+  - All ingredients verified against PDF; amounts match exactly.
+  - Carrot quantity 1–2 confirmed in PDF.
+  - Steps 4–6 (flour/butter roux, blending, serving) were cut off in original image;
+    now complete from PDF.
