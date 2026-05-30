@@ -22,6 +22,7 @@ Parenthetical disambiguation when titles collide: `Thai Peanut Sauce (Eat With C
 - **File/photo sources:** `X-original-source: ../originals/...` (from top-level `recipes/`)
 - **Both:** web recipes you printed can have `source_url` **and** `X-original-source` (screenshot)
 
+<!-- See to-do.md -->
 Group headers in ingredients (plain-string values like `- Sauce:`) are allowed; they are ignored at render time.
 
 ---
