@@ -48,4 +48,6 @@ steps:
 - step: Cook on low for 5-10 minutes.
 
 X-source-verification:
-  status: needs-review
+  status: verified
+  notes:
+  - Custom recipe card; no source URL visible
