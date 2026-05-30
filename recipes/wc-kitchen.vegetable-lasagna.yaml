@@ -12,53 +12,29 @@ X-source-verification:
   - Quantities mentioned in steps have been captured in ingredients where possible
 ingredients:
 - olive oil:
-    amounts:
-    - amount: null
-      unit: null
+    amounts: []
 - carrots:
-    amounts:
-    - amount: null
-      unit: null
+    amounts: []
 - bell pepper:
-    amounts:
-    - amount: null
-      unit: null
+    amounts: []
 - zucchini:
-    amounts:
-    - amount: null
-      unit: null
+    amounts: []
 - yellow onion:
-    amounts:
-    - amount: null
-      unit: null
-- salt:
-    amounts:
-    - amount: null
-      unit: null
+    amounts: []
 - spinach:
-    amounts:
-    - amount: null
-      unit: null
+    amounts: []
 - tomatoes:
-    amounts:
-    - amount: null
-      unit: null
+    amounts: []
 - basil:
-    amounts:
-    - amount: null
-      unit: null
+    amounts: []
 - garlic:
-    amounts:
-    - amount: null
-      unit: null
+    amounts: []
 - red pepper flakes:
-    amounts:
-    - amount: null
-      unit: null
+    amounts: []
 - cottage cheese:
     amounts:
     - amount: 2
-      unit: cup
+      unit: cups
 - lasagna noodles:
     amounts:
     - amount: 9
@@ -66,11 +42,7 @@ ingredients:
 - shredded cheese:
     amounts:
     - amount: 2.25
-      unit: cup
-- black pepper:
-    amounts:
-    - amount: null
-      unit: null
+      unit: cups
 steps:
 - step: Preheat the oven to 425 degrees Fahrenheit.
 - step: To prepare the veggies, in a large skillet over medium heat, warm the olive

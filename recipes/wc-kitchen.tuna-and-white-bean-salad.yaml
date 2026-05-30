@@ -1,7 +1,6 @@
 recipe_uuid: wc-kitchen.tuna-and-white-bean-salad
 recipe_name: Tuna-and-White-Bean Salad
-source_url: null
-X-original-source: ../originals/PXL_20260523_110101482.RAW-01.COVER.JPG
+X-original-source: ../originals/PXL_20260523_110101482.RAW-01.COVER.jpg
 X-source-publication: Food & Wine
 X-source-author: Food & Wine Editors
 X-source-updated: May 31, 2017
@@ -16,31 +15,38 @@ ingredients:
     amounts:
     - amount: 2
       unit: 6-ounce cans
-    notes: packed in oil
 - canned white beans:
     amounts:
     - amount: 3
-      unit: cup
-    notes: drained and rinsed, preferably cannellini (from two 15-ounce cans)
+      unit: cups
+    notes: preferably cannellini; from two 15-ounce cans
+    processing:
+    - drained
+    - rinsed
 - red onion:
     amounts:
     - amount: 1
       unit: whole
-    notes: sliced thin
+    processing:
+    - sliced thin
 - capers:
     amounts:
     - amount: 1
       unit: tablespoon
-    notes: drained
+    processing:
+    - drained
 - watercress:
     amounts:
     - amount: 2
-      unit: bunch
-    notes: about 3/4 pound, tough stems removed and leaves chopped (about 2 quarts)
+      unit: bunches
+    notes: about 3/4 pound; about 2 quarts once chopped
+    processing:
+    - tough stems removed
+    - chopped
 - olive oil:
     amounts:
     - amount: 2
-      unit: tablespoon
+      unit: tablespoons
 - red- or white-wine vinegar:
     amounts:
     - amount: 1
@@ -48,11 +54,12 @@ ingredients:
 - salt:
     amounts:
     - amount: 0.75
-      unit: teaspoon
-- fresh-ground black pepper:
+      unit: teaspoons
+- black pepper:
     amounts:
     - amount: 1
       unit: teaspoon
+    notes: fresh-ground
 steps:
 - step: 'Put the tuna with its oil, the beans, onion, capers, watercress, olive oil,
     vinegar, salt, and pepper in a large bowl. Toss gently to combine.

@@ -14,17 +14,14 @@ X-tags:
 - buche de noel
 - chocolate
 - cake
-X-dietary: []
 X-prep_time: 1 hour 30 minutes
 X-cook_time: 12 minutes
 X-total_time: 1 hour 42 minutes
 X-method: Oven
 X-cuisine: American
-X-description: 'This classic Yule Log Cake is a tender chocolate sponge cake filled
+description: 'This classic Yule Log Cake is a tender chocolate sponge cake filled
   with mascarpone whipped cream and covered with whipped chocolate ganache. It''s
-  delicious, festive and made completely from scratch!
-
-  '
+  delicious, festive and made completely from scratch!'
 X-nutrition:
   serving_size: 1 slice
   servings: 10
@@ -42,75 +39,77 @@ ingredients:
 - all-purpose flour:
     amounts:
     - amount: 0.75
-      unit: cup
+      unit: cups
     notes: 98g
 - Hershey's Special Dark cocoa powder:
     amounts:
-    - amount: 0.333
-      unit: cup
+    - amount: "1/3"
+      unit: cups
     notes: 38g
 - baking powder:
     amounts:
     - amount: 1
-      unit: tsp
+      unit: teaspoons
 - salt:
     amounts:
     - amount: 0.5
-      unit: tsp
-- large eggs:
+      unit: teaspoons
+- eggs:
     amounts:
     - amount: 4
       unit: whole
-    notes: divided
+    notes: large; divided
 - granulated sugar:
     amounts:
     - amount: 0.75
-      unit: cup
+      unit: cups
     notes: 155g
 - sour cream:
     amounts:
     - amount: 5
-      unit: tbsp
+      unit: tablespoons
     notes: 72g
 - butter:
     amounts:
     - amount: 0.25
-      unit: cup
-    notes: melted
+      unit: cups
+    processing:
+    - melted
 - vanilla extract:
     amounts:
     - amount: 1
-      unit: tsp
+      unit: teaspoons
 - _group: Mascarpone Whipped Cream Filling
 - heavy whipping cream:
     amounts:
     - amount: 1.25
-      unit: cup
-    notes: 300ml, cold
+      unit: cups
+    notes: 300ml; cold
 - powdered sugar:
     amounts:
     - amount: 0.75
-      unit: cup
+      unit: cups
     notes: 86g
 - vanilla extract:
     amounts:
     - amount: 1
-      unit: tsp
+      unit: teaspoons
 - salt:
     amounts:
     - amount: 0.125
-      unit: tsp
+      unit: teaspoons
 - mascarpone cheese:
     amounts:
     - amount: 8
       unit: oz
-    notes: 226g, softened but still chilled
+    notes: 226g; softened but still chilled
 - _group: Whipped Chocolate Ganache
 - semi-sweet chocolate:
     amounts:
     - amount: 8
       unit: oz
-    notes: finely chopped
+    processing:
+    - finely chopped
 steps:
 - step: '(Partial — page 2 of recipe visible.) Heat the cream in the microwave just
     until it begins to boil. Pour it over the chocolate.

@@ -2,46 +2,52 @@ recipe_uuid: wc-kitchen.white-bean-and-ham-soup
 recipe_name: White Bean & Ham Soup
 yields:
 - amount: 4
-  unit: serving
+  unit: servings
 ingredients:
 - olive oil:
     amounts:
     - amount: 2
-      unit: tbsp
-- onions, chopped:
+      unit: tablespoons
+- onions:
     amounts:
     - amount: 2
       unit: whole
-- celery stalks, diced:
+    processing:
+    - chopped
+- celery stalks:
     amounts:
     - amount: 2
       unit: whole
-- carrots, diced:
+    processing:
+    - diced
+- carrots:
     amounts:
     - amount: 2
       unit: whole
+    processing:
+    - diced
 - dried thyme:
     amounts:
     - amount: 1
-      unit: tsp
-- garlic cloves, crushed:
+      unit: teaspoons
+- garlic:
     amounts:
     - amount: 6
-      unit: whole
+      unit: cloves
+    processing:
+    - crushed
 - smoked ham hocks:
     amounts:
     - amount: 2
-      unit: lb
+      unit: pounds
 - dried Great Northern beans:
     amounts:
     - amount: 1
-      unit: lb
+      unit: pounds
 - chicken stock:
     amounts:
     - amount: 6
-      unit: cup
-- salt & pepper:
-    amounts: []
+      unit: cups
 steps:
 - step: Heat oil in skillet on medium high. Add onion, celery, carrots, thyme, and
     garlic. Cook until vegetables are tender.

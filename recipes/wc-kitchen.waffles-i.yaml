@@ -1,7 +1,7 @@
 recipe_uuid: wc-kitchen.waffles-i
 recipe_name: Waffles I
 source_url: https://www.allrecipes.com
-X-original-source: ../originals/PXL_20260523_110414516.RAW-01.COVER.JPG
+X-original-source: ../originals/PXL_20260523_110414516.RAW-01.COVER.jpg
 X-author: OneShyOfABunch
 X-category: breakfast
 X-tags:
@@ -22,15 +22,15 @@ ingredients:
 - all-purpose flour:
     amounts:
     - amount: 2
-      unit: cup
+      unit: cups
 - milk:
     amounts:
     - amount: 1.75
-      unit: cup
+      unit: cups
 - vegetable oil:
     amounts:
     - amount: 0.5
-      unit: cup
+      unit: cups
 - white sugar:
     amounts:
     - amount: 1
@@ -38,23 +38,22 @@ ingredients:
 - baking powder:
     amounts:
     - amount: 4
-      unit: teaspoon
+      unit: teaspoons
 - salt:
     amounts:
     - amount: 0.25
-      unit: teaspoon
+      unit: teaspoons
 - vanilla extract:
     amounts:
     - amount: 0.5
-      unit: teaspoon
+      unit: teaspoons
 steps:
 - step: Preheat waffle iron. Beat eggs in large bowl with hand beater until fluffy.
     Beat in flour, milk, vegetable oil, sugar, baking powder, salt and vanilla, just
     until smooth.
 - step: Spray preheated waffle iron with non-stick cooking spray. Pour mix onto hot
     waffle iron. Cook until golden brown. Serve hot.
-prep_time: 5 minutes
-cook_time: 15 minutes
+X-cook_time: 15 minutes
 X-source-verification:
   status: needs-review
   notes:

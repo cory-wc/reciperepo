@@ -11,7 +11,7 @@ ingredients:
 - all-purpose flour:
     amounts:
     - amount: 1.75
-      unit: cup
+      unit: cups
     - amount: 220
       unit: g
     notes: or whole wheat flour, or mix of both; spooned and leveled
@@ -30,58 +30,60 @@ ingredients:
 - ground cinnamon:
     amounts:
     - amount: 1.5
-      unit: teaspoon
+      unit: teaspoons
 - ground nutmeg:
     amounts:
     - amount: 0.25
-      unit: teaspoon
+      unit: teaspoons
 - vegetable oil:
     amounts:
     - amount: 0.5
-      unit: cup
+      unit: cups
     - amount: 120
       unit: ml
     notes: or melted coconut oil
 - granulated sugar:
     amounts:
     - amount: 0.5
-      unit: cup
+      unit: cups
     - amount: 100
       unit: g
 - brown sugar:
     amounts:
-    - amount: 0.333
-      unit: cup
+    - amount: "1/3"
+      unit: cups
     - amount: 67
       unit: g
     notes: packed light or dark
 - eggs:
     amounts:
     - amount: 2
-      unit: large
-    notes: at room temperature
+      unit: whole
+    notes: large; at room temperature
 - pure vanilla extract:
     amounts:
     - amount: 2
-      unit: teaspoon
+      unit: teaspoons
 - milk:
     amounts:
     - amount: 2
-      unit: tablespoon
+      unit: tablespoons
     - amount: 30
       unit: ml
-    notes: dairy or non dairy
-- shredded zucchini:
+    notes: dairy or non-dairy
+- zucchini:
     amounts:
     - amount: 1.75
-      unit: cup
+      unit: cups
     - amount: 210
       unit: g
     notes: no need to blot
+    processing:
+    - shredded
 - semi-sweet chocolate chips:
     amounts:
     - amount: 1
-      unit: cup
+      unit: cups
     - amount: 180
       unit: g
     notes: optional; or chopped nuts, raisins, etc

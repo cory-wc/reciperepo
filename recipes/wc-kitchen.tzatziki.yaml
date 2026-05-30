@@ -1,8 +1,7 @@
 recipe_uuid: wc-kitchen.tzatziki
 recipe_name: Tzatziki
 author: Kay Chun
-source_url: null
-X-original-source: ../originals/PXL_20260523_105851220.RAW-01.COVER.JPG
+X-original-source: ../originals/PXL_20260523_105851220.RAW-01.COVER.jpg
 X-publisher: NYT Cooking
 description: 'Tzatziki is a popular Greek sauce traditionally served with souvlaki
   and pita bread, but it''s super versatile in its potential: It''s a great snacking
@@ -25,21 +24,23 @@ ingredients:
 - plain whole-milk Greek yogurt:
     amounts:
     - amount: 2
-      unit: cup
-- finely chopped dill:
+      unit: cups
+- dill:
     amounts:
     - amount: 2
-      unit: tablespoon
+      unit: tablespoons
+    processing:
+    - finely chopped
 - lemon juice:
     amounts:
     - amount: 1
       unit: tablespoon
-- garlic clove, minced:
+- garlic:
     amounts:
     - amount: 1
-      unit: whole
-- salt and pepper:
-    amounts: []
+      unit: cloves
+    processing:
+    - minced
 steps:
 - step: 'Using the large holes of a box grater, grate cucumbers. Using your hands,
     squeeze grated cucumbers to remove excess water, then place cucumbers in a medium
