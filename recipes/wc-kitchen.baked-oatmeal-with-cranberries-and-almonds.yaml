@@ -1,18 +1,16 @@
 recipe_uuid: wc-kitchen.baked-oatmeal-with-cranberries-and-almonds
 recipe_name: Baked Oatmeal With Cranberries and Almonds
 source_url: https://www.realsimple.com
-X-original-source: ../originals/PXL_20260523_110216005.RAW-01.COVER.JPG
+X-original-source: ../originals/PXL_20260523_110216005.RAW-01.COVER.jpg
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Source is a photographed printed page from Real Simple, by Real Simple Editors,
-    updated August 20 2022
-  - Some fractions in the image are partially obscured or ambiguous; best-effort transcription
-    applied
-  - Nutrition facts section visible but cut off; not transcribed
-  - Oven temperature reads 350 F
-  - fine salt note references "plus 1/8 teaspoon salt in step 3" but step 3 only shows
-    1/4 tsp — flag for manual review against source
+  - Source confirmed against original image (Real Simple, by Real Simple Editors,
+    updated August 20, 2022).
+  - Salt confirmed as ¼ teaspoon — matches step 3; earlier 1/8 tsp reference was a misread.
+  - Almonds corrected to ¾ cup (was erroneously transcribed as ½ cup).
+  - Maple syrup corrected to ⅔ cup (was partially obscured; previously guessed as ¾ cup).
+  - Nutrition facts visible but cut off; not transcribed.
 X-category: breakfast
 X-tags:
 - baked oatmeal
@@ -20,8 +18,8 @@ X-tags:
 - almond
 - make-ahead
 - whole grain
-X-active_time: 10 mins
-X-total_time: 50 mins
+X-active_time: 10 minutes
+X-total_time: 50 minutes
 yields:
 - amount: 1
   unit: 2-quart baking dish
@@ -29,25 +27,26 @@ ingredients:
 - old-fashioned rolled oats:
     amounts:
     - amount: 2
-      unit: cup
+      unit: cups
 - unsalted butter:
     amounts:
     - amount: 0.25
-      unit: cup
-    processing:
-    - melted and slightly cooled
+      unit: cups
     notes: plus more for the pan
+    processing:
+    - melted
+    - slightly cooled
 - almonds:
     amounts:
-    - amount: 0.5
-      unit: cup
+    - amount: 0.75
+      unit: cups
     processing:
     - toasted
     - chopped
 - dried cranberries:
     amounts:
     - amount: 0.75
-      unit: cup
+      unit: cups
 - ground cinnamon:
     amounts:
     - amount: 1
@@ -55,26 +54,26 @@ ingredients:
 - fine salt:
     amounts:
     - amount: 0.25
-      unit: teaspoon
+      unit: teaspoons
 - whole milk:
     amounts:
     - amount: 1.75
-      unit: cup
-- large eggs:
+      unit: cups
+- eggs:
     amounts:
     - amount: 2
       unit: whole
+    notes: large
     processing:
     - beaten
 - pure maple syrup:
     amounts:
-    - amount: 0.75
-      unit: cup
-    notes: image fraction partially obscured; transcribed as ¾ cup
+    - amount: "2/3"
+      unit: cups
 - pure vanilla extract:
     amounts:
     - amount: 2
-      unit: teaspoon
+      unit: teaspoons
 steps:
 - step: Heat oven to 350°F.
 - step: Butter a 2-quart baking dish.
@@ -83,5 +82,6 @@ steps:
     well and spread evenly in the prepared dish.
 - step: Bake until golden and the center is firm, 35 to 45 minutes. Serve warm, drizzled
     with cream or milk if desired. Leftovers will keep refrigerated up to 1 day.
-X-chefs-notes: 'Tip: Toast raw almonds in a 350°F oven on a rimmed baking sheet until
-  fragrant and golden brown, 8 to 10 minutes. Let cool before chopping.'
+notes:
+- 'Tip: Toast raw almonds in a 350°F oven on a rimmed baking sheet until fragrant
+  and golden brown, 8 to 10 minutes. Let cool before chopping.'
