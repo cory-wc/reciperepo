@@ -65,10 +65,9 @@ steps:
     and emulsified later.)
 
 X-source-verification:
-  status: needs-review
+  status: needs-manual-review
+  reviewed: true
   notes:
-  - Recipe is truncated in image; only Steps 1 and 2 are visible. Additional steps
-    (likely involving alternating additions of remaining lemon juice and oil, plus ice
-    water) are cut off behind a NYT Cooking paywall notice.
-  - Full preparation steps should be verified against the original NYT Cooking source.
-  - Recipe adapted by Brett Anderson from Phoenicia restaurant (Birmingham, MI).
+  - Only Steps 1–2 visible; remaining steps (alternating lemon juice and oil additions) cut off by NYT paywall notice
+  - Full steps should be verified against original NYT Cooking source
+  - Recipe from Phoenicia restaurant (Birmingham, MI), adapted by Brett Anderson
