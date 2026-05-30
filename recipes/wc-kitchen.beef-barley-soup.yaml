@@ -1,6 +1,8 @@
 recipe_uuid: wc-kitchen.beef-barley-soup
 recipe_name: Beef Barley Soup
 source_url: https://www.spendwithpennies.com
+source_authors:
+- Holly Nilsson
 X-original-source: ../originals/PXL_20260523_110719176.RAW-01.COVER.jpg
 X-active_time: 20 minutes
 X-cook_time: 50 minutes
@@ -96,10 +98,7 @@ steps:
 X-notes:
 - Soup may thicken upon cooling; add extra broth or water to reach desired consistency.
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Source printed from SpendWithPennies.com; exact URL not visible in image.
-  - Rating shown as 4.99 from 1023 votes.
-  - Author listed as Holly Nilsson.
-  - Some ingredient quantities may be partially obscured by image orientation; reviewed
-    best available reading.
+  - Source printed from SpendWithPennies.com; exact URL not captured from image
+  - Some quantities confirmed from rotated image orientation

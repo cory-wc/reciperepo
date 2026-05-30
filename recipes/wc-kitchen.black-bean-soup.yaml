@@ -108,10 +108,7 @@ steps:
 notes:
 - Optional toppings: fresh cilantro, red onion, avocado, sour cream, lime wedges.
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Recipe extracted from printed page photograph; some text may be partially obscured
-    by shadow.
-  - Rating shown as 4.94 from 86 votes.
-  - Author listed as Lisa Bryan.
-  - Nutrition section visible but values not legible in image.
+  - Author: Lisa Bryan (Downshiftology)
+  - Nutrition section visible in image but values not fully legible

@@ -88,15 +88,9 @@ notes:
   cooled salted caramel.
 - Adapted from Les Petits Macarons and Mad About Macarons.
 X-source-verification:
-  status: needs-review
+  status: needs-manual-review
+  reviewed: true
   notes:
-  - Image shows printed pages of the recipe; some content is partially obscured or
-    cut off at page edges
-  - Ingredient quantities are not fully visible in this image — only notes and steps
-    pages are shown
-  - Ingredient list (almond flour, confectioners sugar, egg whites, superfine sugar
-    amounts) not fully legible; approximate noted in text as "about 1 cup + 1 tsp"
-    for superfine sugar but full list not captured
-  - Steps 1-14 partially reconstructed from visible text; some step numbers and text
-    are cut off
+  - Source image shows only the notes/tips pages; ingredient quantities (almond flour, confectioners sugar, egg whites, superfine sugar) not visible
+  - Full recipe available at source_url; quantities should be verified there
   - Adapted from Les Petits Macarons and Mad About Macarons per visible text

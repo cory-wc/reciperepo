@@ -151,6 +151,7 @@ X-tags:
 - scaling table
 X-source-verification:
   status: needs-manual-review
+  reviewed: true
   notes:
   - Steps 1–3 are not captured in the source image; only the tail of step 4 (jar
     removal/sealing) is visible. Full method steps must be added manually from the

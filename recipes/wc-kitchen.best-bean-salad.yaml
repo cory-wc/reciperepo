@@ -109,8 +109,7 @@ X-tags:
 - make-ahead
 - vegetarian
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Recipe sourced from allrecipes.com as printed in a binder; exact URL not captured
-    from image.
-  - Serving count not specified in visible image.
+  - Recipe sourced from allrecipes.com; exact URL not captured from image
+  - Serving count not specified in source image
