@@ -1,0 +1,91 @@
+recipe_uuid: wc-kitchen.your-strawberry-jam-recipe
+recipe_name: Your Strawberry Jam Recipe (Ball RealFruit Low/No-Sugar Pectin)
+X-original-source: ../originals/your-strawberry-jam-recipe-20260523.jpg
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe extracted from a printed page photographed at an angle; some text is partially
+    obscured or difficult to read precisely.
+  - Two variants are presented in a table (Low Sugar and No Sugar); both are captured
+    below as named variant notes.
+  - Yields are per every 3 (8 oz) half pints.
+  - Fresh Preserve step 3 is cut off at the bottom of the image; full text not visible.
+  - Source appears to be freshpreserving.com (Ball/Kerr), copyright 2015.
+  - Altitude adjustment note references https://www.freshpreserving.com/adjust-high-altitude-canning/
+description: 'Strawberry jam made with Ball RealFruit Low or No-Sugar Needed Pectin.
+  Two sugar-level variants provided. Includes instructions for Enjoy Now (refrigerator)
+  and Fresh Preserve (waterbath canning) methods.
+
+  '
+yields:
+- amount: 3
+  unit: half pints (8 oz)
+X-category: jam / preserve
+X-tags:
+- strawberry
+- jam
+- canning
+- low sugar
+- no sugar
+- Ball RealFruit
+ingredients:
+- strawberries:
+    amounts:
+    - amount: "1 1/3"
+      unit: cups
+    processing:
+    - washed
+    - hulled
+    - crushed one layer at a time
+    X-variant-low-sugar: 1 1/3 cups
+    X-variant-no-sugar: 2 cups
+- unsweetened fruit juice or thawed concentrate or water:
+    amounts:
+    - amount: "1/3"
+      unit: cups
+    X-variant-low-sugar: 1/3 cup
+    X-variant-no-sugar: 1/3 cup
+- Ball RealFruit Low or No-Sugar Needed Pectin:
+    amounts:
+    - amount: 1.5
+      unit: tablespoons
+    X-variant-low-sugar: 1 1/2 tablespoons
+    X-variant-no-sugar: 1 1/2 tablespoons
+- granulated sugar or sugar substitute or honey:
+    amounts: []
+    notes: Low Sugar up to 1/2 cup; No Sugar — none
+    X-variant-low-sugar: up to 1/2 cup
+    X-variant-no-sugar: none
+- butter or margarine:
+    amounts:
+    - amount: 0.25
+      unit: teaspoons
+    notes: optional; adding up to 1/4 tsp will reduce foaming
+steps:
+- step: PREPARE waterbath canner, jars and lids according to manufacturer's instructions,
+    if preserving. Prepare and measure ingredients for recipe.
+- step: COMBINE prepared fruit with fruit juice in a large saucepan. Gradually stir
+    in Ball RealFruit Pectin. Add butter, if using. Bring mixture to a full rolling
+    boil that cannot be stirred down, over high heat, stirring constantly.
+- step: ADD sugar, sugar substitute or honey, if using. Return mixture to a full rolling
+    boil. Boil hard 1 minute, stirring constantly. Remove from heat. Skim foam if
+    necessary.
+- step: PACK based on Enjoy Now or Fresh Preserve steps below.
+- step: '[Enjoy Now] LADLE hot jelly/jam into hot jars. Cool to room temperature,
+    about 30 minutes.'
+- step: '[Enjoy Now] REFRIGERATE jelly/jam or serve immediately.'
+- step: '[Fresh Preserve] LADLE hot jelly/jam into hot jars, one at a time, leaving
+    1/4-inch headspace. Wipe rims. Center lids on jars. Apply bands and adjust to
+    fingertip tight.'
+- step: '[Fresh Preserve] PLACE filled jars in canner, ensuring jars are covered by
+    1 to 2 inches of water. Place lid on canner. Bring water to gentle, steady boil.'
+- step: '[Fresh Preserve] PROCESS jars for 10 minutes, adjusting for altitude. Turn
+    off heat, remove lid and let jars stand for 5 [minutes — text cut off in image].'
+notes:
+- If you are preserving at an altitude higher than 1,000 feet above sea level, adjust
+  processing time as indicated by the altitude chart at https://www.freshpreserving.com/adjust-high-altitude-canning/
+- 'Quick tip: Adding up to 1/4 tsp butter or margarine will reduce foaming.'
+- Fresh Preserve step 3 is partially cut off in the source image; '5 minutes' assumed
+  based on standard Ball canning instructions but not fully confirmed.
+- Source copyright 2015, freshpreserving.com / Ball. Print/duplicate directly from
+  website only.

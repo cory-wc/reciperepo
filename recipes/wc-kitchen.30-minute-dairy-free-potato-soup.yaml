@@ -1,0 +1,125 @@
+recipe_uuid: wc-kitchen.30-minute-dairy-free-potato-soup
+recipe_name: 30 Minute Dairy Free Potato Soup
+source_url: https://thewholecook.com/30-minute-dairy-free-potato-soup/
+source_authors:
+  - The Whole Cook
+description: 'This 30 Minute Dairy Free Potato Soup is so creamy and easy to make!
+  You''ll be surprised it''s dairy free, gluten free, and Whole30 compliant!
+
+  '
+yields:
+- amount: 8
+  unit: cup servings
+X-active_time: 15 mins
+X-total_time: 30 mins
+ingredients:
+- potatoes:
+    amounts:
+    - amount: 2.5
+      unit: lbs
+    preparation: russet, yellow, or gold potatoes work best, peeled and diced
+- chicken stock or broth:
+    amounts:
+    - amount: 32
+      unit: oz
+- white or yellow onion:
+    amounts:
+    - amount: 0.5
+      unit: whole
+    preparation: sliced
+- canned coconut milk:
+    amounts:
+    - amount: 1
+      unit: cup
+    notes: unsweetened
+- garlic powder:
+    amounts:
+    - amount: 0.25
+      unit: tsp
+- salt:
+    amounts:
+    - amount: 1.5
+      unit: tsp
+- pepper:
+    amounts:
+    - amount: 0.5
+      unit: tsp
+- dried thyme or dried chives:
+    amounts:
+    - amount: 0.25
+      unit: tsp
+steps:
+- step: 'Add chicken stock, onion, and potatoes (peeled and diced into 1 inch cubes)
+    to a soup pot. Bring to boiling and cook for approximately 5–8 minutes or until
+    potatoes are easily pierced with a fork. Be careful to not overcook your potatoes
+    or you''ll end up decreasing the amount of chicken stock you have.
+
+    '
+- step: 'Once cooked, remove 1 cup of the diced potatoes from chicken stock. Set aside
+    in a separate dish.
+
+    '
+- step: 'Blend the diced potatoes (excluding the 1 cup you set aside), onion, chicken
+    stock, and 1 cup canned coconut milk until smooth.
+
+    '
+- step: 'Pour the blended soup back into your pot. Add the 1 cup diced potatoes you
+    set aside earlier, salt, pepper, garlic powder, and dried thyme (or dried chives).
+    Stir.
+
+    '
+- step: 'Ladle the finished soup into bowls and top with fresh chopped chives and
+    crispy bacon.
+
+    '
+notes:
+- 'Optional toppings: fresh chopped chives, crispy bacon, drizzle of canned coconut
+  milk.
+
+  '
+- 'If you accidentally boil your potatoes too long you can still recover! Just add
+  a little extra chicken stock as you''re blending until you get the consistency you
+  want.
+
+  '
+- 'Recommend using canned full fat unsweetened coconut milk. Full fat just means it
+  doesn''t say light on the label. The ingredient list should be coconut, water, and
+  guar gum. Just give it a good stir when you open it because it does separate.
+
+  '
+- 'Nutritional information is calculated based on a 1 cup serving. If the meal is
+  the soup alone you may want a 2 cup serving.
+
+  '
+X-nutrition:
+  serving: 1 cup
+  calories: 210 kcal
+  carbohydrates: 24g
+  protein: 7g
+  fat: 10g
+  saturated_fat: 8g
+  cholesterol: 3mg
+  sodium: 617mg
+  potassium: 793mg
+  fiber: 4g
+  sugar: 3g
+  vitamin_c: 17.7mg
+  calcium: 52mg
+  iron: 5.4mg
+X-category: soup
+X-tags:
+- dairy-free
+- gluten-free
+- Whole30
+- potato soup
+X-dietary:
+- dairy-free
+- gluten-free
+- Whole30
+X-original-source: ../originals/30-minute-dairy-free-potato-soup-20260523.jpg
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe sourced from printed page attributed to @thewholecook on Instagram.
+  - Prep time 15 mins and cook time 15 mins read from image; total time 30 mins confirmed.
+  - Rating shown as 4.92 from 50 votes on source page.

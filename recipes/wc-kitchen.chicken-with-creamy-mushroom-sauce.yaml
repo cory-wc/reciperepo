@@ -1,0 +1,105 @@
+recipe_uuid: wc-kitchen.chicken-with-creamy-mushroom-sauce
+recipe_name: Chicken with Creamy Mushroom Sauce
+X-original-source: ../originals/chicken-with-creamy-mushroom-sauce-20260523.jpg
+X-category: Mains
+X-tags:
+- chicken
+- mushroom sauce
+- creamy sauce
+- western
+X-active_time: 5 mins
+X-total_time: 20 mins
+X-nutrition:
+  calories: 837 kcal
+  servings: 4
+yields:
+- amount: 4
+  unit: servings
+ingredients:
+- name_group: CRISPY CHICKEN
+- chicken breasts:
+    amounts:
+    - amount: 2
+      unit: pieces
+    notes: large, boneless skinless; ~600–700g / 1.2–1.4 lb total
+- salt:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+- flour:
+    amounts:
+    - amount: 0.25
+      unit: cup
+- unsalted butter:
+    amounts:
+    - amount: 15
+      unit: g
+    notes: approximately 1 tablespoon
+- name_group: MUSHROOM SAUCE
+- unsalted butter:
+    amounts:
+    - amount: 30
+      unit: g
+    notes: approximately 2 tablespoons
+- mushrooms:
+    amounts:
+    - amount: 300
+      unit: g
+    notes: 10 oz, button or Swiss brown
+    processing:
+    - sliced
+- garlic:
+    amounts:
+    - amount: 2
+      unit: cloves
+    processing:
+    - minced
+- dry white wine:
+    amounts:
+    - amount: 0.25
+      unit: cup
+    notes: or sub more chicken stock
+- chicken or vegetable stock:
+    amounts:
+    - amount: 0.5
+      unit: cup
+    notes: low sodium
+- heavy cream:
+    amounts:
+    - amount: 1
+      unit: cup
+    notes: full fat
+- parmesan:
+    amounts:
+    - amount: 0.5
+      unit: cup
+    processing:
+    - finely grated
+steps:
+- step: 'Split breast: Cut each breast in half horizontally to form 4 thin steaks
+    in total.'
+- step: 'Dust with flour: Sprinkle each side with salt and pepper, then sprinkle with
+    flour and use your fingers to spread it all over the surface.'
+- step: 'Cook chicken: Melt 15g butter in a large non-stick frying pan over medium
+    high heat. Add chicken and cook each side for 2 1/2 minutes until golden brown
+    and just cooked through. Remove from pan, cover and keep warm.'
+- step: 'Cook mushrooms: In the same frying pan, add remaining butter and increase
+    heat to high. Add mushrooms and cook for 4 minutes, until starting to turn golden
+    brown on the edges.'
+- step: 'Add garlic later: Then add garlic and a pinch of salt and pepper, and continue
+    cooking for another minute until both garlic and mushrooms are golden.'
+- step: 'Deglaze skillet: Add white wine — it will bubble and be steamy! Cook for
+    30 seconds, scraping the bottom of the pan, until wine is mostly evaporated and
+    the alcohol smell is gone.'
+- step: 'Make creamy sauce: Add chicken stock, cook vigorously for 1 minute so it
+    mostly evaporates. Then add cream, lower heat to medium and simmer for 2 minutes
+    until it reduces and thickens slightly.'
+- step: 'Add parmesan: Stir in parmesan, taste and add more salt and pepper if needed.'
+notes:
+- Garnish with finely sliced chives, parsley, or green onions (optional).
+X-source-verification:
+  status: verified
+  notes:
+  - Printed from thekitchn.com; recipe by Nagi (RecipeTin Eats)
+  - Calories corrected to 837 kcal (YAML previously had 571 — misread)
+  - Ingredient footnotes (Note 1–4) not visible in source image

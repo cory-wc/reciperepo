@@ -1,0 +1,114 @@
+recipe_uuid: wc-kitchen.all-purpose-thai-basil-sauce
+recipe_name: All-Purpose Thai Basil Sauce
+author: Pailin Chongchitnant
+source_url: https://hot-thai-kitchen.com/thai-basil-sauce/#recipe
+description: 'This versatile, easy basil sauce is a great way to use up any kind of
+  basil you have on hand. Pour it onto any protein, or use it as a stir fry sauce.
+  It uses only pantry staples, is it''s quick to make and will last in the fridge
+  for a week!'
+X-prep_time: 15 minutes
+X-cook_time: 10 minutes
+X-cuisine: Thai
+yields:
+- amount: 4
+  unit: servings
+ingredients:
+- oyster sauce:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+    notes: use vegetarian oyster sauce to make vegetarian
+- soy sauce:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- fish sauce:
+    amounts:
+    - amount: 2
+      unit: teaspoons
+    notes: substitute more soy sauce for vegetarian version
+- granulated sugar:
+    amounts:
+    - amount: 2
+      unit: teaspoons
+- neutral oil:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+- onion:
+    amounts:
+    - amount: 0.5
+      unit: whole
+    processing:
+    - julienned
+- garlic:
+    amounts:
+    - amount: 6
+      unit: cloves
+    processing:
+    - chopped
+- Thai chilies:
+    amounts:
+    - amount: "1–2"
+      unit: whole
+    notes: optional
+    processing:
+    - chopped
+- chicken, pork, or vegetable stock:
+    amounts:
+    - amount: 1
+      unit: cups
+    notes: unsalted
+- black or dark soy sauce:
+    amounts:
+    - amount: "1/2"
+      unit: teaspoons
+    notes: optional; adds colour
+- red bell pepper:
+    amounts:
+    - amount: "1/2"
+      unit: cups
+    processing:
+    - julienned
+- basil leaves:
+    amounts:
+    - amount: 1.5
+      unit: cups
+    notes: any kind; amount is a suggestion — use whatever you have
+steps:
+- step: Combine the oyster sauce, soy sauce, fish sauce and sugar together in a bowl.
+- step: In a wok or a skillet, heat the oil over medium heat. Add the onions and
+    saute until soft and translucent, about 5 minutes. To help the onions cook faster
+    you can add a splash of water and close the lid to allow it to steam for a minute.
+    Then uncover and cook until all the water has evaporated.
+- step: Once the onions are soft and translucent, add the garlic and Thai chilies
+    and stir until the garlic starts to brown.
+- step: Add about ¾ cup (180 ml) of the stock, the sauce mixture, and ground black
+    or white pepper then stir to mix. If you want to darken the colour, add a dash
+    of black/dark soy sauce.
+- step: Add the bell pepper and cook for about a minute, then turn off the heat and
+    stir in the basil just until wilted. Taste the sauce, and if it is too salty,
+    add the remaining stock or water to dilute; however, it should taste slightly too
+    salty at this point because you will be adding protein to it.
+- step: Use right away, or allow to cool and keep in the fridge for at least a week.
+    When ready to use, reheat the sauce and pour over pan seared protein such as fish,
+    thinly sliced steak or pork chops — or use it as a stir fry sauce.
+notes:
+- To make vegetarian, use vegetarian oyster sauce and substitute more soy sauce for the fish sauce.
+- The basil amount is a suggestion — use less for milder flavour, or scale up if you have more.
+X-original-source: ../originals/all-purpose-thai-basil-sauce-20260523.jpg
+X-category: Sauces
+X-tags:
+- Thai
+- basil
+- stir fry
+- pantry staples
+X-dietary:
+- vegetarian-adaptable
+X-source-verification:
+  status: verified
+  notes:
+  - Full recipe confirmed against source text provided by user (hot-thai-kitchen.com).
+  - Yield metadata row partially obscured by binder ring but reads 4 servings; confirmed by source.
+  - Thai chilies recorded as range "1–2"; optional per source.
+  - Author name confirmed as Pailin Chongchitnant.

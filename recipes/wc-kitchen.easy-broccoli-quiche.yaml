@@ -1,0 +1,140 @@
+recipe_uuid: wc-kitchen.easy-broccoli-quiche
+recipe_name: Easy Broccoli Quiche
+source_url: https://www.allrecipes.com/recipe/24148/easy-broccoli-quiche/
+X-original-source: ../originals/easy-broccoli-quiche-20260523.jpg
+X-category: quiche
+X-tags:
+- vegetarian
+- broccoli
+- quiche
+- easy
+X-active_time: 20 mins
+X-prep_time: 20 mins
+X-cook_time: 30 mins
+X-total_time: 50 mins
+yields:
+- amount: 6
+  unit: servings
+ingredients:
+- pie crust:
+    amounts:
+    - amount: 1
+      unit: whole
+    notes: 9-inch, unbaked
+- salted butter:
+    amounts:
+    - amount: 3
+      unit: tablespoons
+- onion:
+    amounts:
+    - amount: 1
+      unit: whole
+- garlic:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- broccoli:
+    amounts:
+    - amount: 2
+      unit: cups
+- mozzarella:
+    amounts:
+    - amount: 1.5
+      unit: cups
+    notes: part-skim
+- eggs:
+    amounts:
+    - amount: 4
+      unit: whole
+- milk:
+    amounts:
+    - amount: 1.5
+      unit: cups
+    notes: 2%
+- salt:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- black pepper:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+steps:
+- step: Preheat oven to 350°F (175°C). Line a 9-inch deep-dish pie pan with crust.
+- step: Melt 2 tablespoons butter in a large saucepan over medium-low heat. Add onion,
+    garlic, and broccoli. Cook slowly, stirring occasionally, until vegetables are
+    soft. Spoon vegetables into crust and sprinkle with cheese.
+- step: Combine eggs and milk. Season with salt and pepper. Stir in remaining 1 tablespoon
+    melted butter. Pour egg mixture over vegetables and cheese.
+- step: Bake in preheated oven until center has set, 30 to 50 minutes.
+X-handwritten-alt-ingredients:
+  notes: Handwritten alternate quantities found on page labeled "alt."
+  ingredients:
+  - pie crust:
+      amounts:
+      - amount: 1
+        unit: piece
+  - onion:
+      amounts:
+      - amount: 0.5
+        unit: whole
+  - salted butter:
+      amounts:
+      - amount: 3
+        unit: tablespoons
+  - diced fresh garlic:
+      amounts:
+      - amount: 1
+        unit: teaspoon
+  - broccoli:
+      amounts:
+      - amount: 2
+        unit: cups
+      notes: chopped and dried
+  - Colby Jack cheese:
+      amounts:
+      - amount: 1
+        unit: cup
+  - parmesan:
+      amounts:
+      - amount: 0.5
+        unit: cup
+  - eggs:
+      amounts:
+      - amount: 8
+        unit: whole
+  - whole milk:
+      amounts:
+      - amount: 0.75
+        unit: cup
+  - Dijon mustard:
+      amounts:
+      - amount: 1
+        unit: tablespoon
+  - diced ham:
+      amounts:
+      - amount: 1
+        unit: cup
+  - tarragon:
+      amounts:
+      - amount: 1
+        unit: teaspoon
+  - pepper:
+      amounts:
+      - amount: 0.25
+        unit: teaspoon
+X-handwritten-optional-fillings:
+  notes: Handwritten optional fillings noted on page
+  items:
+  - zucchini (0.5 cup)
+  - handful sun-dried tomatoes
+  - spinach (0.25 portion, unit unclear)
+X-source-verification:
+  status: verified
+  notes:
+  - Recipe printed from allrecipes.com on 08/03/2020
+  - Handwritten alternate ingredient quantities noted on right side of page (labeled "alt.")
+  - Handwritten optional fillings noted on right side of page
+  - Some text partially obscured by shadow in image
+  - Original ingredient names were AllRecipes nutritional database format; simplified
+    to plain names

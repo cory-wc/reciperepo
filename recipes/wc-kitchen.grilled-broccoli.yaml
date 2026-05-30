@@ -1,0 +1,68 @@
+recipe_uuid: wc-kitchen.grilled-broccoli
+recipe_name: Grilled Broccoli
+X-original-source: ../originals/grilled-broccoli-20260523.jpg
+X-total_time: 30 minutes
+X-category: side dish
+X-tags:
+- grilled
+- broccoli
+- vegetarian
+- side dish
+source_authors:
+- Joe Carroll
+- Sam Sifton
+X-source-verification:
+  status: verified
+  notes:
+  - NYT Cooking recipe; recipe from Joe Carroll, adapted by Sam Sifton
+  - Full recipe visible on printed page
+
+yields:
+- amount: 4
+  unit: servings
+
+ingredients:
+- tamari:
+    amounts:
+    - amount: 3
+      unit: tablespoons
+    notes: or soy sauce
+- balsamic vinegar:
+    amounts:
+    - amount: 3
+      unit: tablespoons
+- extra-virgin olive oil:
+    amounts:
+    - amount: 1
+      unit: tablespoons
+    notes: plus more for drizzling
+- broccoli:
+    amounts:
+    - amount: 2
+      unit: lbs
+    notes: about 1 head; cored and cut into 1-inch florets
+- kosher salt:
+    amounts: []
+    notes: to taste
+- fresh parsley:
+    amounts:
+    - amount: 1
+      unit: tablespoons
+    processing:
+    - finely chopped
+- flaky sea salt:
+    amounts: []
+    notes: optional
+
+steps:
+- step: Build a fire in your grill, leaving about ⅓ of grill free of coals, or set
+    a gas grill to high.
+- step: In a large bowl, whisk together the tamari or soy sauce with the vinegar. Add
+    the olive oil while whisking vigorously. Add the broccoli and toss to coat. Sprinkle
+    lightly with kosher salt.
+- step: Place a grill basket on the grill and add the broccoli. Grill, tossing frequently,
+    until the florets are crisp at the edges and tender within with just a little bite,
+    approximately 10 to 12 minutes. If you don't have a grill basket, lay the florets
+    out on the grill in a single layer and use tongs to turn them often.
+- step: Transfer the cooked broccoli to a platter, drizzle with olive oil, sprinkle
+    with parsley and, if using, a pinch or two of flaky sea salt.

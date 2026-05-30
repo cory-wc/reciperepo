@@ -1,0 +1,84 @@
+recipe_uuid: wc-kitchen.perfect-pot-roast
+recipe_name: Perfect Pot Roast
+author: Ree Drummond
+X-original-source: ../originals/perfect-pot-roast-20260523.jpg
+X-published: Aug 21, 2023
+X-category: Main Dishes
+X-tags:
+- pot roast
+- beef
+- comfort food
+X-prep_time: 20 minutes
+X-cook_time: 4 hours
+X-total_time: 4 hours 20 minutes
+description: Serve it with a big pile of mashed potatoes!
+
+yields:
+- amount: 10
+  unit: servings
+
+ingredients:
+- chuck roast:
+    amounts:
+    - amount: "4–5"
+      unit: lbs
+- olive oil:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+    notes: or half butter, half olive oil
+- onions:
+    amounts:
+    - amount: 2
+      unit: whole
+    processing:
+    - halved
+- carrots:
+    amounts:
+    - amount: "6–8"
+      unit: whole
+    processing:
+    - cut into 2-inch slices
+- red wine:
+    amounts:
+    - amount: 1
+      unit: cups
+    notes: optional; beef broth can be used instead
+- beef stock:
+    amounts:
+    - amount: "2–3"
+      unit: cups
+- fresh thyme:
+    amounts:
+    - amount: 3
+      unit: sprigs
+- fresh rosemary:
+    amounts:
+    - amount: 3
+      unit: sprigs
+
+steps:
+- step: First and foremost, choose a nicely marbled piece of meat. This will enhance
+    the flavor of your pot roast like nothing else. Generously salt and pepper your
+    chuck roast.
+- step: Preheat the oven to 275°F. Heat a large pot or Dutch oven over medium-high
+    heat. Then, add the olive oil (or you can do half butter, half olive oil).
+- step: Cut the onions in half and cut the carrots into 2-inch slices. When the oil
+    in the pot is very hot (but not smoking), add in the onions, browning them on
+    one side and then the other. Remove the onions to a plate.
+- step: Throw the carrots into the same very hot pan and toss them around a bit until
+    slightly browned.
+
+X-source-verification:
+  status: needs-review
+  notes:
+  - Image is rotated; text was read accordingly.
+  - Steps 4 and beyond are partially cut off in the image; only the beginning of step
+    4 is visible.
+  - Olive oil amount listed as 2 tbsp in ingredients but notes indicate half butter/half
+    olive oil is optional.
+  - Red wine amount listed as 1 c. in ingredients.
+  - Beef stock listed as 2 to 3 c. in ingredients.
+  - Chuck roast listed as 4 to 5 lb; consolidated to range.
+  - Nutrition information referenced but not visible in image.
+  - Salt and pepper to taste not included (no measured amounts).

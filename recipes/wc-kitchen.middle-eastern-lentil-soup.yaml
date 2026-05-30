@@ -1,0 +1,119 @@
+recipe_uuid: wc-kitchen.middle-eastern-lentil-soup
+recipe_name: Middle Eastern Lentil Soup
+description: A thick and hearty spiced lentil soup that's a complete comfort dish
+  and popular with the whole family!
+author: Farah Abumaizar
+X-original-source: ../originals/middle-eastern-lentil-soup-20260530.pdf
+X-category: Soup
+X-cuisine: Middle Eastern
+X-prep_time: 10 minutes
+X-cook_time: 20 minutes
+X-total_time: 30 minutes
+yields:
+- amount: 4
+  unit: servings
+X-nutrition:
+  calories: 233 kcal
+  per: serving
+ingredients:
+- olive oil:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+- yellow onion:
+    amounts:
+    - amount: 1
+      unit: whole
+    processing:
+    - finely diced
+- carrots:
+    amounts:
+    - amount: "1–2"
+      unit: whole
+    processing:
+    - finely diced
+- potato:
+    amounts:
+    - amount: 1
+      unit: whole
+    processing:
+    - peeled
+    - finely diced
+- red lentils:
+    amounts:
+    - amount: 1
+      unit: cups
+- water:
+    amounts:
+    - amount: 6
+      unit: cups
+- chicken or vegetable stock cubes:
+    amounts:
+    - amount: 2
+      unit: cubes
+- dried mint:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- cumin:
+    amounts:
+    - amount: 1
+      unit: teaspoons
+- paprika:
+    amounts:
+    - amount: 0.25
+      unit: teaspoons
+- turmeric:
+    amounts:
+    - amount: 0.5
+      unit: teaspoons
+- cayenne pepper:
+    amounts:
+    - amount: 1
+      unit: pinch
+    notes: optional
+- salt:
+    amounts:
+    - amount: 0.5
+      unit: teaspoons
+    notes: plus more to taste
+- black pepper:
+    amounts:
+    - amount: 0.5
+      unit: teaspoons
+- flour:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+    notes: heaping
+- butter:
+    amounts:
+    - amount: 1.5
+      unit: tablespoons
+steps:
+- step: Heat the olive oil in a large saucepan over medium high heat. Add the diced
+    onion, carrot and potato. Sauté for about five minutes until onions have softened,
+    stirring occasionally.
+- step: Rinse the lentils well, removing any debris. Add to the saucepan, and sauté
+    for three minutes, stirring constantly so they don't stick to the bottom of the
+    pan.
+- step: Add the six cups of water, the stock cubes, and all the dried herbs plus the
+    salt and pepper (the dried mint all the way through to black pepper). Let the
+    soup come to a boil, stirring occasionally, then reduce heat to medium and let
+    the mixture cook uncovered for 25–30 minutes, or until lentils and vegetables
+    are cooked through.
+- step: In a separate small skillet, melt the butter over medium heat, then add the
+    flour and whisk constantly until the mixture bubbles and thickens slightly. Add
+    this to the lentil soup pot.
+- step: Once soup is totally cooked through, use an immersion blender or a normal
+    blender (in batches) and blend to desired consistency.
+- step: Serve hot, with a slice of lemon and green olives on the side.
+
+X-source-verification:
+  status: verified
+  notes:
+  - Full recipe confirmed from mideast-lentil.pdf (Farah Abumaizar).
+  - All ingredients verified against PDF; amounts match exactly.
+  - Carrot quantity 1–2 confirmed in PDF.
+  - Steps 4–6 (flour/butter roux, blending, serving) were cut off in original image;
+    now complete from PDF.

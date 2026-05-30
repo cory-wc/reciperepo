@@ -1,0 +1,112 @@
+recipe_uuid: wc-kitchen.chana-masala
+recipe_name: Chana Masala
+
+yields:
+  - amount: 6
+    unit: servings
+
+ingredients:
+  - oil:
+      amounts:
+        - amount: 3
+          unit: tablespoons
+
+  - onion:
+      amounts:
+        - amount: 1
+          unit: medium
+      processing:
+        - finely diced
+
+  - cumin:
+      amounts:
+        - amount: 1
+          unit: tablespoon
+
+  - salt:
+      amounts:
+        - amount: 3/4
+          unit: teaspoon
+      processing:
+        - divided
+
+  - garlic:
+      amounts:
+        - amount: 6
+          unit: cloves
+      processing:
+        - minced
+
+  - fresh ginger:
+      amounts:
+        - amount: 2
+          unit: tablespoons
+      processing:
+        - minced
+
+  - fresh cilantro:
+      amounts:
+        - amount: 1/2
+          unit: cup
+      processing:
+        - chopped
+
+  - fresh green chiles:
+      amounts:
+        - amount: 2
+          unit: chiles
+      processing:
+        - sliced with seeds removed
+        - serrano recommended
+
+  - coriander:
+      amounts:
+        - amount: 1
+          unit: tablespoon
+
+  - chili powder:
+      amounts:
+        - amount: 1
+          unit: teaspoon
+
+  - turmeric:
+      amounts:
+        - amount: 1
+          unit: teaspoon
+
+  - finely diced or pureed tomatoes:
+      amounts:
+        - amount: 2
+          unit: cans (15 oz)
+
+  - chickpeas:
+      amounts:
+        - amount: 2
+          unit: cans (15 oz)
+      processing:
+        - drained
+
+  - garam masala:
+      amounts:
+        - amount: 1
+          unit: teaspoon
+
+  - lemon juice:
+      amounts:
+        - amount: 2
+          unit: tablespoons
+
+steps:
+  - step: Heat oil in a skillet over medium heat. Saute onion, cumin, and ¼ tsp salt.
+  - step: Grind garlic, ginger, cilantro, and chiles into a paste. Add to the skillet.
+  - step: Add coriander, chili powder, and turmeric to the skillet. Stir to coat and add a bit more oil if the pan is looking dry.
+  - step: Add pureed tomatoes and chickpeas with remaining salt. If the mixture is looking too dry, add up to 1 C of water.
+  - step: Increase heat to medium high until it reaches a rolling simmer, then reduce to low and simmer for 15-20 minutes. Stir occasionally.
+  - step: Taste and add salt, sugar, or chili powder as needed.
+  - step: Remove from heat. Add lemon juice and garam masala. Stir to mix and let cool slightly.
+  - step: Serve over rice or as a stew.
+
+source_url: https://www.minimalistbaker.com
+X-total_time: 35 minutes
+X-original-source: ../originals/chana-masala-20260523.jpg
+X-flags: []

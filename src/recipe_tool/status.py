@@ -53,14 +53,25 @@ def full_status(paths: RepoPaths | None = None) -> list[StatusLine]:
     return results
 
 
+def _is_referenced_in_recipes(filename: str, paths: RepoPaths) -> bool:
+    for ypath in paths.recipes.glob("*.yaml"):
+        if ypath.name == "index.yaml":
+            continue
+        if filename in ypath.read_text(encoding="utf-8"):
+            return True
+    return False
+
+
 def pending_extractions(paths: RepoPaths | None = None) -> list[str]:
-    """Recipe IDs in originals/ that lack YAML (heuristic for bulk migration)."""
+    """Original files in originals/ not referenced by any recipe YAML."""
     paths = paths or RepoPaths()
-    existing = set(paths.list_recipe_ids())
     pending: list[str] = []
     for p in sorted(paths.originals.glob("*")):
-        if p.suffix.lower() in {".jpg", ".jpeg", ".png", ".pdf", ".txt", ".webp"}:
-            stem = p.stem.split(".")[0] if p.name.startswith("PXL_") else p.stem
-            if stem not in existing and p.name not in {x for x in existing}:
-                pending.append(p.name)
+        if not p.is_file():
+            continue
+        if p.suffix.lower() not in {".jpg", ".jpeg", ".png", ".pdf", ".txt", ".webp"}:
+            continue
+        if _is_referenced_in_recipes(p.name, paths):
+            continue
+        pending.append(p.name)
     return pending

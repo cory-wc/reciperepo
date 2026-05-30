@@ -1,0 +1,83 @@
+recipe_uuid: wc-kitchen.ultra-crispy-smashed-potatoes
+recipe_name: Ultra Crispy Smashed Potatoes
+author: Nagi
+yields:
+- amount: 12
+  unit: servings
+ingredients:
+- potatoes (small):
+    amounts:
+    - amount: 700
+      unit: g
+    - amount: 1.4
+      unit: pounds
+    notes: 12–14 small potatoes; choose small OR medium — see note
+- potatoes (medium):
+    amounts:
+    - amount: 1.2
+      unit: kg
+    - amount: 2.4
+      unit: pounds
+    notes: 6–8 medium potatoes; alternative to small potatoes
+- salt (for boiling):
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- unsalted butter:
+    amounts:
+    - amount: 30
+      unit: g
+    - amount: 2
+      unit: tablespoons
+    processing:
+    - melted
+- olive oil:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- salt (for sprinkling):
+    amounts:
+    - amount: 0.75
+      unit: teaspoons
+- black pepper:
+    amounts:
+    - amount: 0.25
+      unit: teaspoons
+- parsley:
+    amounts: []
+    notes: optional garnish
+    processing:
+    - finely chopped
+steps:
+- step: 'Cook potatoes: Bring a pot of water to the boil, add 1 tbsp salt. Cook potatoes
+    until soft — small ones should take around 20 to 25 minutes, medium ones might
+    take 30 minutes. It''s ok if the skin splits. Alternatively, steam or microwave
+    them.'
+- step: Preheat oven to 200°C/390°F (180°C fan).
+- step: 'Steam dry: Drain the potatoes and let them dry in the colander for 5 minutes
+    or so.'
+- step: Smash! Place on the tray then use a large fork or potato masher to squish
+    them, keeping them in one piece. Thin = crisper. Thicker = fluffier insides. (Both
+    good!) More nubbly surface = better crunch!
+- step: 'Steam dry again: Leave on the tray to steam dry for 5 minutes or so — makes
+    them crispier!'
+- step: 'Drizzle: Drizzle with butter, then olive oil. Sprinkle with salt and pepper.'
+- step: 'Bake: Bake for 45 minutes (small potatoes) to 55 minutes (medium) or until
+    deep golden and crispy. Do not flip!'
+- step: Serve hot, sprinkled with parsley if desired.
+X-original-source: ../originals/ultra-crispy-smashed-potatoes-20260523.jpg
+X-category: Sides
+X-tags:
+- smashed potatoes
+- crispy
+- potato
+X-active_time: 10 minutes
+X-total_time: 1 hour 10 minutes
+X-nutrition:
+  calories: 85
+  per: serving
+X-source-verification:
+  status: verified
+  notes:
+  - Author Nagi (RecipeTin Eats); URL not visible in source image
+  - Two potato size options; use one or the other

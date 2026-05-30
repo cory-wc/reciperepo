@@ -1,14 +1,52 @@
 from __future__ import annotations
 
 import base64
+import io
 import os
 from pathlib import Path
 
 from dotenv import load_dotenv
 
 
+# Anthropic base64 image limit is 5 MB; target raw bytes well under that
+_MAX_IMAGE_BYTES = 3_500_000  # ~3.5 MB raw → ~4.7 MB base64, safely under 5 MB limit
+
+
+def _prepare_image(image_path: Path) -> tuple[bytes, str]:
+    """Return (image_bytes, media_type), resizing/recompressing if needed."""
+    from PIL import Image
+
+    raw = image_path.read_bytes()
+    suffix = image_path.suffix.lower()
+    media_map = {".jpg": "image/jpeg", ".jpeg": "image/jpeg",
+                 ".png": "image/png", ".webp": "image/webp", ".gif": "image/gif"}
+    media_type = media_map.get(suffix, "image/jpeg")
+
+    if len(raw) <= _MAX_IMAGE_BYTES:
+        return raw, media_type
+
+    # Image is too large — resize to fit within 1568 px (Anthropic recommendation)
+    # then recompress as JPEG, stepping quality down until it fits.
+    img = Image.open(io.BytesIO(raw))
+    if img.mode not in ("RGB", "L"):
+        img = img.convert("RGB")
+
+    max_dim = 1568
+    if max(img.size) > max_dim:
+        img.thumbnail((max_dim, max_dim), Image.LANCZOS)
+
+    for quality in (85, 75, 65, 50):
+        buf = io.BytesIO()
+        img.save(buf, format="JPEG", quality=quality)
+        data = buf.getvalue()
+        if len(data) <= _MAX_IMAGE_BYTES:
+            return data, "image/jpeg"
+
+    raise RuntimeError(f"Cannot compress {image_path.name} below {_MAX_IMAGE_BYTES} bytes")
+
+
 def load_env(repo_root: Path) -> None:
-    load_dotenv(repo_root / ".env")
+    load_dotenv(repo_root / ".env", override=True)
 
 
 def read_prompt(repo_root: Path, name: str) -> str:
@@ -52,7 +90,7 @@ def structure_text_to_yaml(source_text: str, repo_root: Path, extra: str = "") -
 
     client = Anthropic()
     resp = client.messages.create(
-        model="claude-sonnet-4-20250514",
+        model="claude-sonnet-4-6",
         max_tokens=4096,
         system=system,
         messages=[{"role": "user", "content": user}],
@@ -64,15 +102,8 @@ def structure_text_to_yaml(source_text: str, repo_root: Path, extra: str = "") -
 def image_to_yaml(image_path: Path, repo_root: Path, recipe_id: str) -> str:
     provider = get_provider()
     system = read_prompt(repo_root, "extract-orf.md")
-    suffix = image_path.suffix.lower()
-    media = {
-        ".jpg": "image/jpeg",
-        ".jpeg": "image/jpeg",
-        ".png": "image/png",
-        ".webp": "image/webp",
-        ".gif": "image/gif",
-    }.get(suffix, "image/jpeg")
-    b64 = base64.standard_b64encode(image_path.read_bytes()).decode("ascii")
+    image_bytes, media = _prepare_image(image_path)
+    b64 = base64.standard_b64encode(image_bytes).decode("ascii")
     user_text = f"Extract recipe {recipe_id} from this image into strict ORF YAML."
 
     if provider == "openai":
@@ -99,7 +130,7 @@ def image_to_yaml(image_path: Path, repo_root: Path, recipe_id: str) -> str:
 
     client = Anthropic()
     resp = client.messages.create(
-        model="claude-sonnet-4-20250514",
+        model="claude-sonnet-4-6",
         max_tokens=4096,
         system=system,
         messages=[

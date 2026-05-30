@@ -1,0 +1,68 @@
+recipe_uuid: wc-kitchen.creamy-broccoli-pasta
+recipe_name: Creamy Broccoli Pasta
+yields:
+- amount: 4
+  unit: servings
+ingredients:
+- fresh broccoli:
+    amounts:
+    - amount: 1
+      unit: lb
+    processing:
+    - cut into bite-sized pieces
+- small pasta:
+    amounts:
+    - amount: 12
+      unit: oz
+- water:
+    amounts:
+    - amount: 4.5
+      unit: cups
+- whole milk plain Greek yogurt:
+    amounts:
+    - amount: 0.5
+      unit: cup
+- olive oil:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+- garlic:
+    amounts:
+    - amount: 4
+      unit: cloves
+    processing:
+    - minced
+- salt:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+    notes: plus more to taste
+- black pepper:
+    amounts:
+    - amount: 0.25
+      unit: teaspoon
+- red pepper flakes:
+    amounts:
+    - amount: 1
+      unit: pinch
+- grated parmesan or romano:
+    amounts:
+    - amount: 0.5
+      unit: cup
+    notes: plus more for serving
+steps:
+- step: Place the broccoli, pasta, water, olive oil, garlic, salt, pepper, and red
+    pepper flakes in a pot and stir to combine.
+- step: Bring to a boil over high heat. Boil uncovered, stirring occasionally, until
+    pasta is al dente and liquid is mostly evaporated, 8–9 minutes.
+- step: Remove from heat. Stir in cheese and yogurt. Taste and season as needed.
+- step: Serve topped with more cheese.
+X-total_time: ~20 minutes
+X-original-source: ../originals/creamy-broccoli-pasta-20260523.jpg
+source_url: https://www.thekitchn.com
+notes:
+- Doesn't turn out well with frozen broccoli.
+X-source-verification:
+  status: verified
+  notes:
+  - Source: theKitchn.com; exact URL not captured from image

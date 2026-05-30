@@ -1,0 +1,48 @@
+recipe_uuid: wc-kitchen.cabbage-soup
+recipe_name: Cabbage Soup
+X-original-source: ../originals/cabbage-soup-20260523.jpg
+yields:
+- amount: 8
+  unit: servings
+X-active_time: 25 minutes
+X-total_time: 3 hours 25 minutes
+ingredients:
+- bacon:
+    amounts:
+    - amount: 0.5
+      unit: lb
+    processing:
+    - diced
+- onions:
+    amounts:
+    - amount: 2
+      unit: whole
+    processing:
+    - diced
+- chicken broth:
+    amounts:
+    - amount: 12
+      unit: cups
+- diced tomatoes:
+    amounts:
+    - amount: 2
+      unit: cans
+- italian seasoning:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- cabbage:
+    amounts:
+    - amount: 1
+      unit: lb
+    processing:
+    - shredded
+steps:
+- step: In a stock pan or dutch oven, saute bacon until fat starts to melt. Add onions
+    and saute until soft.
+- step: Add broth, tomatoes, italian seasoning, and cabbage.
+- step: Simmer for 3 hours.
+X-source-verification:
+  status: verified
+  notes:
+  - Custom recipe card format; no external source URL visible

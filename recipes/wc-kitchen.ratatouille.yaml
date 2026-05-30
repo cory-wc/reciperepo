@@ -1,0 +1,62 @@
+recipe_uuid: wc-kitchen.ratatouille
+recipe_name: Ratatouille
+X-original-source: ../originals/ratatouille-20260523.jpg
+X-total_time: 1 hour 15 minutes
+X-category: Side Dish
+X-tags:
+- vegetarian
+- stovetop
+
+yields:
+- amount: 6
+  unit: servings
+
+ingredients:
+- olive oil:
+    amounts:
+    - amount: 1
+      unit: tablespoons
+- onion:
+    amounts:
+    - amount: 1
+      unit: whole
+    notes: medium
+    processing:
+    - chopped
+- red bell peppers:
+    amounts:
+    - amount: 3
+      unit: whole
+    processing:
+    - chopped
+- zucchini:
+    amounts:
+    - amount: 2
+      unit: whole
+    notes: medium
+    processing:
+    - chopped
+- garlic:
+    amounts:
+    - amount: 4
+      unit: cloves
+    processing:
+    - crushed
+- stewed tomatoes:
+    amounts:
+    - amount: 2
+      unit: cans
+
+steps:
+- step: Heat oil over medium heat in a dutch oven or stock pot.
+- step: Add onions and bell peppers. Cook until they start to soften.
+- step: Add zucchini, garlic, and stewed tomatoes with juices.
+- step: Cook 30-60 minutes, until all ingredients have softened and mixture has thickened.
+
+notes:
+- Serve with crusty french bread.
+
+X-source-verification:
+  status: verified
+  notes:
+  - Custom recipe card; no source URL visible

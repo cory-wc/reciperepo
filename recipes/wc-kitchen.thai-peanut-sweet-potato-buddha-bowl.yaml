@@ -1,0 +1,111 @@
+recipe_uuid: wc-kitchen.thai-peanut-sweet-potato-buddha-bowl
+recipe_name: Thai Peanut Sweet Potato Buddha Bowl
+source_url: https://eatwithclarity.com/easy-thai-peanut-sauce/
+X-original-source: ../originals/thai-peanut-sweet-potato-buddha-bowl-20260523.jpg
+X-prep_time: 10 minutes
+X-cook_time: 30 minutes
+X-total_time: 40 minutes
+X-category: Main Dish
+X-dietary:
+- vegan
+- gluten-free
+source_authors:
+- Claire Cary
+
+yields:
+- amount: 4
+  unit: servings
+
+ingredients:
+- sweet potatoes:
+    amounts:
+    - amount: 4
+      unit: cups
+    notes: about 2 medium potatoes
+    processing:
+    - peeled
+    - cubed
+- chickpeas:
+    amounts:
+    - amount: 1
+      unit: cans
+    processing:
+    - drained
+    - rinsed
+- soy sauce:
+    amounts:
+    - amount: 1
+      unit: tablespoons
+    notes: or tamari
+- maple syrup:
+    amounts:
+    - amount: 1
+      unit: tablespoons
+- sriracha:
+    amounts: []
+    notes: 1–2 tablespoons depending on spice preference
+- garlic:
+    amounts:
+    - amount: 2
+      unit: teaspoons
+    processing:
+    - minced
+- red pepper flakes:
+    amounts:
+    - amount: "1/2"
+      unit: teaspoons
+- oil:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+    notes: avocado oil recommended
+- grain:
+    amounts:
+    - amount: 1
+      unit: cups
+    notes: uncooked; quinoa, rice, or millet
+- broccoli:
+    amounts:
+    - amount: 1
+      unit: whole
+    notes: 1 head
+    processing:
+    - chopped
+- edamame:
+    amounts:
+    - amount: "1 1/2"
+      unit: cups
+    notes: shelled
+- avocado:
+    amounts:
+    - amount: 1
+      unit: whole
+- peanut sauce:
+    amounts:
+    - amount: "1/2"
+      unit: batch
+    notes: see Thai Peanut Sauce recipe
+- peanuts:
+    amounts:
+    - amount: "1/2"
+      unit: cups
+    processing:
+    - chopped
+- cilantro:
+    amounts:
+    - amount: "1/2"
+      unit: cups
+    processing:
+    - chopped
+
+steps:
+- step: Preheat the oven to 400°F.
+
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe is cut off; only the first instruction step is visible in the image.
+  - Sriracha amount listed as 1-2 tbsp; stored as empty with note.
+  - Peanut sauce listed as a separate linked recipe not shown in this image.
+  - Oil type noted as avocado in the original text.
+  - Source URL is for the associated peanut sauce recipe; bowl recipe URL not captured.

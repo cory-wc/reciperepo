@@ -1,0 +1,92 @@
+recipe_uuid: wc-kitchen.chicken-soup
+recipe_name: Chicken Soup
+X-original-source: ../originals/chicken-soup-20260523.jpg
+X-total_time: 2 hours
+X-category: soup
+X-tags:
+- soup
+- chicken
+X-source-verification:
+  status: verified
+  notes:
+  - Custom/original recipe; no external source URL on printed card
+
+yields:
+- amount: 8
+  unit: servings
+
+ingredients:
+- olive oil:
+    amounts:
+    - amount: 1
+      unit: tablespoons
+- chicken thighs:
+    amounts:
+    - amount: 1
+      unit: lbs
+    processing:
+    - cubed
+- celery:
+    amounts:
+    - amount: 4
+      unit: stalks
+    notes: 4–5 stalks
+    processing:
+    - diced
+- carrots:
+    amounts:
+    - amount: 4
+      unit: whole
+    notes: 4–5 carrots
+    processing:
+    - chopped
+- onions:
+    amounts:
+    - amount: 2
+      unit: whole
+    processing:
+    - chopped
+- zucchini:
+    amounts:
+    - amount: 1
+      unit: whole
+    notes: medium
+    processing:
+    - diced
+- mushrooms:
+    amounts:
+    - amount: "1/2"
+      unit: lbs
+    processing:
+    - diced
+- garlic:
+    amounts:
+    - amount: 4
+      unit: cloves
+    processing:
+    - crushed
+- chicken broth:
+    amounts:
+    - amount: 6
+      unit: cups
+- cumin:
+    amounts:
+    - amount: 2
+      unit: teaspoons
+- turmeric:
+    amounts:
+    - amount: 2
+      unit: teaspoons
+- pasta:
+    amounts:
+    - amount: 2
+      unit: cups
+    notes: small shells or elbows
+
+steps:
+- step: Heat oil over medium heat in a dutch oven or stock pot.
+- step: Add chicken and onions. Saute until chicken is cooked through and onions are
+    translucent.
+- step: Add remaining vegetables, garlic, broth, and spices.
+- step: Bring to a boil, then cover and reduce heat to simmer for 45 minutes.
+- step: Add pasta and continue to cook until pasta is al dente.

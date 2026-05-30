@@ -1,0 +1,106 @@
+recipe_uuid: wc-kitchen.easy-pad-thai
+recipe_name: Easy Pad Thai
+description: This is a simple straight forward pad Thai that uses easy to get ingredients.
+  Do your prep before you start cooking. This dish comes together in under 10 minutes.
+X-original-source: ../originals/easy-pad-thai-20260523.jpg
+X-category: Main
+X-tags:
+- pad thai
+- Thai
+- noodles
+X-active_time: 40 mins
+X-total_time: 50 mins
+X-nutrition:
+  calories: 952 kcal
+yields:
+- amount: 4
+  unit: servings
+ingredients:
+- name_group: PAD THAI SAUCE
+- fish sauce:
+    amounts:
+    - amount: 8
+      unit: tablespoons
+- tamarind paste:
+    amounts:
+    - amount: 4
+      unit: tablespoons
+    notes: not tamarind concentrate, that is way too strong
+- tomato paste:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+- sambal oelek:
+    amounts:
+    - amount: 4
+      unit: teaspoons
+- brown sugar:
+    amounts:
+    - amount: 6
+      unit: tablespoons
+- name_group: MAIN
+- rice noodles:
+    amounts:
+    - amount: 16
+      unit: ounces
+    notes: ban pho; about 1/2 a package
+- vegetable oil:
+    amounts:
+    - amount: 8
+      unit: tablespoons
+- chicken thighs:
+    amounts:
+    - amount: 16
+      unit: ounces
+    notes: boneless, skinless; or one large chicken breast
+- shrimp:
+    amounts:
+    - amount: 12
+      unit: whole
+    notes: optional; 31–40 per lb size works well
+- garlic:
+    amounts:
+    - amount: 4
+      unit: cloves
+    processing:
+    - minced
+- garlic chives:
+    amounts:
+    - amount: 6
+      unit: stalks
+    notes: 6–8 stalks
+    processing:
+    - chopped
+- bean sprouts:
+    amounts:
+    - amount: 2
+      unit: cups
+- peanuts:
+    amounts:
+    - amount: 4
+      unit: tablespoons
+    processing:
+    - chopped
+- cilantro:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+steps:
+- step: 'Do your prep. Soak the rice noodles in fairly hot water for 30–45 minutes.
+    They will turn white but still be quite firm. You want them a little toothy. Not
+    hard. Just toothy. Pliable. 85 percent of the way there. Start checking them after
+    about 20 minutes. This is important.'
+- step: While the noodles are soaking, do your prep. Chop your vegetables. Cut the
+    chicken into 3/4 inch cubes. Peel your shrimp if using.
+notes:
+- Serve with lime wedges, extra cilantro, chopped peanuts, and vinegar-soaked chilies.
+- For vinegar-soaked chilies, soak dried chilies in rice vinegar.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe printed from a website attributed to author "glebe kitchen"; source URL
+    not visible in image.
+  - Instructions appear to continue beyond what is visible in the image; steps may
+    be incomplete.
+  - Shrimp quantity noted as "31-40 per lb" size range; count given as 12.
+  - Garlic chives quantity given as "6-8"; used 6 as lower bound.

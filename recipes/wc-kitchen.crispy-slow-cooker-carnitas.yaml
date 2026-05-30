@@ -1,0 +1,81 @@
+recipe_uuid: wc-kitchen.crispy-slow-cooker-carnitas
+recipe_name: Crispy Slow Cooker Carnitas
+
+yields:
+  - amount: "6-8"
+    unit: servings
+
+ingredients:
+  - lean boneless pork roast:
+      amounts:
+        - amount: "4-5"
+          unit: lb
+      processing:
+        - excess fat trimmed
+        - cut into 3-inch chunks
+
+  - beer:
+      amounts:
+        - amount: 1
+          unit: cup
+      processing:
+        - or chicken stock
+
+  - white onion:
+      amounts:
+        - amount: 1
+          unit: medium
+      processing:
+        - diced
+
+  - garlic:
+      amounts:
+        - amount: 4
+          unit: cloves
+      processing:
+        - peeled and minced
+
+  - chipotle powder:
+      amounts:
+        - amount: 1
+          unit: tablespoon
+      processing:
+        - or 1 chipotle in adobo sauce, minced
+
+  - ground cumin:
+      amounts:
+        - amount: 2
+          unit: teaspoons
+
+  - black pepper:
+      amounts:
+        - amount: 1
+          unit: teaspoon
+
+  - chili powder:
+      amounts:
+        - amount: 1
+          unit: teaspoon
+
+  - fine sea salt:
+      amounts:
+        - amount: "1 1/2"
+          unit: teaspoons
+
+steps:
+  - step: Combine all ingredients in a large slow cooker and stir. Cook on low for 6-8 hours or on high for 4-5 hours, until pork shreds easily with a fork.
+  - step: Preheat broiler to high. Line two baking sheets with aluminum foil. Shred meat with a fork into bite-sized pieces. Using a slotted spoon, transfer to baking sheets in a single layer, reserving juices in the slow cooker.
+  - step: Broil one sheet for approximately 5 minutes until edges brown and crisp. Remove and ladle ¼ cup reserved juices over meat; toss with tongs. Broil another 5 minutes, then add another ¼ cup juices.
+  - step: Repeat with the second baking sheet.
+  - step: Serve immediately in tacos, burritos, salads, or other dishes.
+
+notes:
+  - Refrigerate in a sealed container up to 3 days, or freeze up to 3 months.
+
+source_url: https://www.gimmesomeoven.com/crispy-slow-cooker-carnitas/
+
+X-prep_time: 10 minutes
+X-cook_time: 360-480 minutes
+X-total_time: 370 minutes
+X-original-source: ../originals/crispy-slow-cooker-carnitas-20260523.jpg
+X-flags: []

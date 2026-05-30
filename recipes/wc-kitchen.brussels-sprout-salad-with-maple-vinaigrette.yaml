@@ -1,0 +1,56 @@
+recipe_uuid: wc-kitchen.brussels-sprout-salad-with-maple-vinaigrette
+recipe_name: Brussels Sprout Salad with Maple Vinaigrette
+yields:
+- amount: 4
+  unit: servings
+X-original-source: ../originals/brussels-sprout-salad-with-maple-vinaigrette-20260523.jpg
+X-active_time: 10 minutes
+X-cook_time: 15 minutes
+X-total_time: 25 minutes
+X-category: salad
+ingredients:
+- brussels sprouts:
+    amounts:
+    - amount: 8
+      unit: ounce
+- bacon:
+    amounts:
+    - amount: 2
+      unit: slices
+    processing:
+    - cooked crisp
+    - crumbled
+- hazelnuts:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+    processing:
+    - chopped
+- maple syrup:
+    amounts:
+    - amount: 2
+      unit: tablespoon
+- apple cider vinegar:
+    amounts:
+    - amount: 2
+      unit: tablespoon
+- grainy dijon mustard:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- extra virgin olive oil:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+steps:
+- step: Prepare the brussels sprouts by cutting off and discarding the stem. Beginning
+    at the stem end, slice into very thin rounds. Discard any tough white centers.
+    Add to a bowl and gently toss with a fork to separate. Add the bacon and hazelnuts.
+- step: Combine the maple syrup, vinegar, mustard, and oil in a small jar. Close the
+    lid and shake well to combine. Pour the dressing over the salad. Let sit 5 minutes.
+    Season with cracked black pepper.
+X-source-verification:
+  status: verified
+  notes:
+  - Custom printed recipe card; no source URL visible
+  - '"bacon an hazelnuts" in source interpreted as "bacon and hazelnuts" (typo)'

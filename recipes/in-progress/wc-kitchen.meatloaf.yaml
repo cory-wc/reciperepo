@@ -1,0 +1,39 @@
+recipe_uuid: wc-kitchen.meatloaf
+recipe_name: Meatloaf
+X-original-source: ../../originals/meatloaf-20260523.jpg
+ingredients:
+- ground beef:
+    amounts:
+    - amount: 1
+      unit: pounds
+- onion:
+    amounts:
+    - amount: 0.5
+      unit: whole
+    notes: medium
+    processing:
+    - diced
+- egg:
+    amounts:
+    - amount: 1
+      unit: whole
+- bread crumbs:
+    amounts:
+    - amount: 0.5
+      unit: cups
+- molasses:
+    amounts: []
+- worcestershire sauce:
+    amounts: []
+steps: []
+
+notes:
+- Ketchup for topping.
+X-source-verification:
+  status: needs-manual-review
+  reviewed: true
+  notes:
+  - Handwritten notepad card; image is blurry — transcription is best-effort
+  - '"molasses" may actually read as "applesauce" — verify in person'
+  - Quantities for worcestershire sauce and applesauce/molasses not legible
+  - No steps, yield, cook time, or temperature visible

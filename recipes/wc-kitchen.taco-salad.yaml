@@ -1,0 +1,89 @@
+recipe_uuid: wc-kitchen.taco-salad
+recipe_name: Taco Salad
+source_url: https://www.eatingwell.com
+X-original-source: ../originals/taco-salad-20260523.jpg
+X-total_time: ~25 minutes
+
+yields:
+- amount: 4
+  unit: servings
+
+ingredients:
+- ground beef or turkey:
+    amounts:
+    - amount: 1
+      unit: lbs
+- salsa:
+    amounts:
+    - amount: 0.5
+      unit: cups
+- sour cream:
+    amounts:
+    - amount: 0.25
+      unit: cups
+- oil:
+    amounts:
+    - amount: 1
+      unit: teaspoons
+- onion:
+    amounts:
+    - amount: 1
+      unit: whole
+    notes: medium
+    processing:
+    - chopped
+- garlic:
+    amounts:
+    - amount: 3
+      unit: cloves
+    processing:
+    - minced
+- plum tomatoes:
+    amounts:
+    - amount: 2
+      unit: whole
+    processing:
+    - chopped
+- kidney or black beans:
+    amounts:
+    - amount: 1
+      unit: cans
+- cumin:
+    amounts:
+    - amount: 2
+      unit: teaspoons
+- chili powder:
+    amounts:
+    - amount: 2
+      unit: teaspoons
+- fresh cilantro:
+    amounts:
+    - amount: 0.25
+      unit: cups
+    processing:
+    - chopped
+- romaine lettuce:
+    amounts:
+    - amount: 8
+      unit: cups
+    processing:
+    - shredded
+- shredded cheese:
+    amounts:
+    - amount: 0.5
+      unit: cups
+
+steps:
+- step: Combine salsa and sour cream in a large salad bowl.
+- step: Heat oil in a skillet over medium heat. Saute onion and garlic until soft.
+    Add meat and cook, stirring often, until cooked through.
+- step: Add tomatoes, beans, cumin, and chili powder to the skillet. Cook for 2-3
+    minutes, until the tomatoes start to break down.
+- step: Remove from heat. Stir in cilantro and 1/4 C of the salsa mixture.
+- step: In the large bowl, toss lettuce with the remaining salsa mixture.
+- step: Serve lettuce topped with the meat and sprinkled with cheese.
+
+X-source-verification:
+  status: verified
+  notes:
+  - Source: EatingWell.com per printed attribution at bottom of page

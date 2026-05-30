@@ -1,0 +1,114 @@
+recipe_uuid: wc-kitchen.pasta-e-piselli
+recipe_name: Pasta e Piselli (Pasta with Peas)
+description: 'Pasta e Piselli (pasta with peas) is a delicious, one-pot meal that
+  has been loved by Italians and Italian Americans for generations. Made with just
+  a few ingredients, this simple pasta dish, with its creamy texture and sweet peas,
+  is sure to bring smiles to your dinner table.
+
+  '
+author: Chef Dennis Littley
+X-original-source: ../originals/pasta-e-piselli-20260523.jpg
+X-active_time: 5 minutes
+X-cook_time: 25 minutes
+X-total_time: 30 minutes
+X-category:
+- Pasta
+- Side Dish
+X-tags:
+- Italian
+- Italian-American
+- one-pot
+X-nutrition:
+  calories: 432 kcal
+  per: serving
+
+yields:
+- amount: 8
+  unit: servings
+
+ingredients:
+- ditalini pasta:
+    amounts:
+    - amount: 1
+      unit: lbs
+    notes: or other small shape pasta
+- extra virgin olive oil:
+    amounts:
+    - amount: 0.5
+      unit: cups
+- sweet onion:
+    amounts:
+    - amount: 1
+      unit: whole
+    notes: large
+    processing:
+    - finely diced
+- garlic:
+    amounts:
+    - amount: 1
+      unit: cloves
+    processing:
+    - finely diced
+- red pepper flakes:
+    amounts:
+    - amount: 0.25
+      unit: teaspoons
+- water:
+    amounts:
+    - amount: 4
+      unit: cups
+    notes: more as needed
+- salt:
+    amounts:
+    - amount: 1
+      unit: teaspoons
+- black pepper:
+    amounts:
+    - amount: 0.25
+      unit: teaspoons
+- baby peas:
+    amounts:
+    - amount: "14–16"
+      unit: oz
+    notes: frozen or fresh
+- Pecorino Romano cheese:
+    amounts:
+    - amount: 1
+      unit: cups
+    notes: or parmesan cheese
+    processing:
+    - grated
+
+steps:
+- step: Add the olive oil and chopped onions to a large pan over medium-high heat.
+- step: Cook the onions until soft (4–5 minutes). Don't let the onions brown.
+- step: Add the chopped garlic and red pepper flakes to the onions and continue to
+    cook for 1 minute. Add the water, salt, and baby peas to the onion mixture and
+    bring to a boil (used frozen peas).
+- step: Once boiling, remove some of the peas and mash them with a large spoon or
+    fork.
+- step: Add the pasta and mashed peas to the pot and reduce the heat to medium heat.
+    Let the pasta cook per instructions on the package for al dente. Stir the mixture
+    often to keep it from sticking.
+- step: If the pasta isn't fully cooked, add more water until the pasta is cooked
+    to the desired doneness. When the pasta has reached al dente, remove the pot from
+    the stove and mix in the cheese and chopped parsley.
+- step: Taste and season the pasta with peas to taste with salt and black pepper.
+    If the pasta seems dry, add a little water to loosen it up.
+- step: Serve the pasta with additional grated cheese, black pepper, and crusty bread.
+
+notes:
+- Traditionally ditalini is used, but other small pasta shapes such as small shells,
+  farfalle, pennette, elbow macaroni, and orzo can also be used.
+- If you're not a fan of peas or want to add additional vegetables, asparagus, spinach,
+  grape tomatoes, broccoli, broccolini, and red peppers would make nice additions.
+  Cut into small pieces to keep the style consistent.
+- Chicken broth or vegetable broth can be used instead of water for a more flavorful
+  dish, or use half water and half broth. Cut back on the salt if using broth.
+- Parsley is mentioned in step 6 but not listed in the ingredients.
+
+X-source-verification:
+  status: verified
+  notes:
+  - Author: Chef Dennis Littley
+  - Parsley referenced in step 6 but not in printed ingredients list

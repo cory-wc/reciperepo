@@ -1,0 +1,73 @@
+recipe_uuid: wc-kitchen.instant-pot-baked-potato-soup
+recipe_name: Instant Pot Baked Potato Soup
+X-original-source: ../originals/instant-pot-baked-potato-soup-20260523.jpg
+X-total_time: 25 minutes
+X-category: soup
+X-tags:
+- soup
+- potato
+- instant pot
+- comfort food
+X-source-verification:
+  status: needs-review
+  notes:
+  - Some ingredient amounts not clearly legible in source image; verify cream cheese and cheddar quantities
+  - Sour cream mentioned in instructions but not clearly listed in ingredients — verify
+
+yields:
+- amount: 8
+  unit: servings
+
+ingredients:
+- potatoes:
+    amounts:
+    - amount: 5
+      unit: lbs
+    notes: peeled and cubed
+- chicken broth:
+    amounts:
+    - amount: 6
+      unit: cups
+- butter:
+    amounts:
+    - amount: 4
+      unit: tablespoons
+- cream cheese:
+    amounts: []
+    notes: softened; amount not clearly legible — verify
+- shredded cheddar cheese:
+    amounts: []
+    notes: amount not clearly legible — verify
+- sour cream:
+    amounts: []
+    notes: amount not clearly visible in source
+- salt:
+    amounts:
+    - amount: "1/2"
+      unit: teaspoons
+- black pepper:
+    amounts:
+    - amount: "1/4"
+      unit: teaspoons
+- milk or heavy cream:
+    amounts: []
+    notes: for thinning, to taste
+- real bacon bits:
+    amounts:
+    - amount: "1/2"
+      unit: cups
+    notes: optional; heated
+- green onion:
+    amounts: []
+    notes: chopped; for garnish, optional
+
+steps:
+- step: Add potatoes and chicken broth to an Instant Pot. Seal the lid and cook on
+    manual or soup setting for 10 minutes.
+- step: Release pressure by turning the valve from sealing to venting. Mash potatoes
+    to desired texture with a potato masher or large fork, or blend for a smoother soup.
+- step: Add butter, cream cheese, sour cream, and cheddar cheese. Stir well to combine.
+    Add salt and pepper and adjust to taste.
+- step: Add milk or heavy cream as needed to reach desired consistency.
+- step: Heat bacon bits in microwave for 30 to 60 seconds until crispy. Serve soup
+    topped with bacon bits, green onion, and additional cheddar as desired.

@@ -1,0 +1,80 @@
+recipe_uuid: wc-kitchen.fluffy-almond-flour-pancakes
+recipe_name: Fluffy Almond Flour Pancakes
+source_url: https://healthyrecipesblogs.com/wprm_print/fluffy-almond-flour-pancakes
+X-original-source: ../originals/fluffy-almond-flour-pancakes-20260523.jpg
+description: 'These almond flour pancakes are big, fluffy, and delicious. Making them
+  is effortless – the batter is thick and easy to work with.
+
+  '
+X-category: Breakfast
+X-cuisine: American
+X-dietary:
+- Gluten Free
+X-prep_time: 15 minutes
+X-active_time: 15 minutes
+X-total_time: 30 minutes
+X-nutrition:
+  calories: 355kcal
+author: Vered DeLeeuw
+yields:
+- amount: 10
+  unit: pancakes
+ingredients:
+- eggs:
+    amounts:
+    - amount: 3
+      unit: whole
+    notes: large
+- vanilla extract:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+- whole milk:
+    amounts:
+    - amount: 0.5
+      unit: cup
+- stevia glycerite:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+    notes: equals about 2.5 tablespoons of sugar
+- kosher salt:
+    amounts:
+    - amount: 0.25
+      unit: teaspoon
+    notes: Diamond Crystal kosher salt, or a pinch of any other salt
+- almond flour:
+    amounts:
+    - amount: 2
+      unit: cups
+    notes: blanched, finely ground
+- baking soda:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- avocado oil spray:
+    amounts: []
+    notes: for the griddle
+steps:
+- step: In a medium bowl, whisk the eggs, vanilla, milk, stevia, and salt.
+- step: Gradually whisk in the almond flour. Whisk patiently until very smooth and
+    free of lumps. Whisk in the baking soda.
+- step: Heat a nonstick double burner griddle over medium heat for 4-5 minutes. Spray
+    it with oil. Use a 4-tablespoon scoop to scoop out the pancakes into the griddle.
+    My griddle fits 6 pancakes, so I work in two batches.
+- step: Cook the pancakes for about 3 minutes on each side until puffed, golden brown,
+    and cooked through.
+- step: Serve immediately.
+notes:
+- Occasionally, baking soda can cause a reaction in baked goods, resulting in an ammonia
+  smell. If you're concerned about it happening, use a tablespoon of fresh, gluten-free
+  baking powder instead.
+X-source-verification:
+  status: needs-review
+  notes:
+  - Source is a printed page photographed at an angle; some text may be partially
+    obscured by shadow on the right side.
+  - Stevia amount reads "½ teaspoon" — transcribed as 0.5 teaspoon.
+  - Milk amount reads "½ cup" — transcribed as 0.5 cup.
+  - Almond flour note reads "blanched, finely ground; 8 ounces" — weight of 8 ounces
+    noted but not included as a separate amount entry to avoid duplication.

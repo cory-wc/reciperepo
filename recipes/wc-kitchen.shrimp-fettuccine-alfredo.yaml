@@ -1,0 +1,78 @@
+recipe_uuid: wc-kitchen.shrimp-fettuccine-alfredo
+recipe_name: Shrimp Fettuccine Alfredo
+source_url: https://www.foodnetwork.com/recipes/food-network-kitchen/shrimp-fettuccine-alfredo
+X-original-source: ../originals/shrimp-fettuccine-alfredo-20260523.jpg
+X-total_time: 25 minutes
+X-active_time: 25 minutes
+X-category: Main Course
+X-tags:
+- pasta
+- shrimp
+- alfredo
+- Food Network Kitchen
+
+yields:
+- amount: 4
+  unit: servings
+
+ingredients:
+- fettuccine:
+    amounts:
+    - amount: 12
+      unit: oz
+- shrimp:
+    amounts:
+    - amount: 0.75
+      unit: lbs
+    notes: large; about 16, peeled and deveined, tails removed
+- unsalted butter:
+    amounts:
+    - amount: 1
+      unit: stick
+    notes: 8 tablespoons
+- heavy cream:
+    amounts:
+    - amount: 2
+      unit: cups
+- nutmeg:
+    amounts:
+    - amount: 2
+      unit: pinches
+    notes: freshly grated
+- Parmigiano-Reggiano cheese:
+    amounts:
+    - amount: 1.5
+      unit: cups
+    processing:
+    - freshly grated
+
+steps:
+- step: Bring a large pot of water to a boil, and salt generously. Add the pasta,
+    and boil according to package directions until al dente, tender but still slightly
+    firm. Strain, and toss with a splash of oil.
+- step: Meanwhile, arrange the shrimp in a single layer on a large pie pan or paper
+    plate, and pat them with a paper towel until completely dry. Season with salt
+    and pepper.
+- step: Heat a large skillet over medium heat, and add 2 tablespoons of the butter.
+    When the butter melts, raise the heat to medium-high, and invert the plate of
+    shrimp over the skillet so the shrimp fall into the pan all at once. Cook the
+    shrimp, without moving them, until the underside is pink, 1 to 2 minutes. Flip
+    the shrimp, and cook until fully pink and cooked through, about 2 minutes more.
+    Transfer the shrimp to a bowl.
+- step: Reduce the heat to medium, and add the remaining 6 tablespoons butter. Scrape
+    the bottom of the skillet with a wooden spoon to release any browned bits. When
+    the butter has mostly melted, whisk in the cream and nutmeg and bring to a simmer,
+    then cook for 2 minutes. Lower the heat to keep the sauce warm.
+- step: Whisk the Parmigiano-Reggiano into the sauce. Add the shrimp and cooked pasta,
+    and toss well. Season with salt and pepper. Serve hot in heated bowls.
+
+notes:
+- Don't worry if it seems like there is too much sauce. As soon as everything is
+  tossed together, the sauce will start to cling to the pasta and thicken before
+  your eyes.
+- Copyright 2015 Television Food Network, G.P. All rights reserved.
+
+X-source-verification:
+  status: verified
+  notes:
+  - Food Network Kitchen; Copyright 2015 Television Food Network

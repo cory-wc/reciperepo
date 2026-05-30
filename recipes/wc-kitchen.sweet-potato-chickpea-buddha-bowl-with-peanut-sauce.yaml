@@ -1,0 +1,85 @@
+recipe_uuid: wc-kitchen.sweet-potato-chickpea-buddha-bowl-with-peanut-sauce
+recipe_name: Sweet Potato Chickpea Buddha Bowl with Peanut Sauce
+X-original-source: ../originals/sweet-potato-chickpea-buddha-bowl-with-peanut-sauce-20260523.jpg
+X-category: Main Dish
+X-tags:
+- buddha bowl
+- vegan
+- meal prep
+- grain bowl
+X-dietary:
+- vegan
+- gluten-free adaptable
+- dairy-free
+
+ingredients:
+- sweet potato:
+    amounts: []
+    processing:
+    - cubed
+- chickpeas:
+    amounts: []
+    processing:
+    - rinsed
+- spices/seasonings:
+    amounts: []
+    notes: all spices listed on missing page 1
+- grain:
+    amounts: []
+    notes: millet, rice, or quinoa; cook using 1:2 grain-to-water ratio
+- edamame:
+    amounts: []
+- broccoli:
+    amounts: []
+    notes: can substitute sautéed kale, asparagus, or fresh spinach
+- peanut sauce:
+    amounts: []
+    notes: recipe calls for 1/4–1/2 cup water; full sauce recipe on missing page 1
+- avocado:
+    amounts: []
+- cilantro:
+    amounts: []
+    processing:
+    - chopped
+- peanuts:
+    amounts: []
+    processing:
+    - crushed
+- red pepper flakes:
+    amounts: []
+    notes: optional, for extra spice
+
+steps:
+- step: Add the cubed sweet potato and rinsed chickpeas in a bowl and toss with all
+    spices/seasonings until well combined.
+- step: Add to a baking sheet lined with parchment paper and bake for 30–35 minutes
+    or until the sweet potato can be easily pierced with a fork.
+- step: Cook your grain according to package instructions using a 1:2 grain-to-water
+    ratio. Cook the grain in veggie broth for a little extra flavor.
+- step: Meanwhile, add the edamame and broccoli to a pot with 1 inch of water and
+    steam for 5–7 minutes or until the broccoli is just barely fork tender. Drain
+    off the excess water.
+- step: When the potatoes/chickpeas are done, assemble the bowls with a base of your
+    grain of choice, then add the steamed veggies, sweet potato/chickpeas, avocado
+    and top with a generous serving of peanut sauce, chopped cilantro and crushed
+    peanuts. Add red pepper flakes for extra spice if desired.
+
+notes:
+- In place of broccoli you can use sautéed kale or asparagus, or even roast the broccoli
+  with the sweet potatoes for more flavor. Anything goes — fresh spinach also works
+  and will wilt slightly with the warm grains.
+- For the peanut sauce, the recipe calls for 1/4–1/2 cup of water; author uses closer
+  to 1/2 cup and adds a little extra spice.
+- Almond butter can be substituted for peanut butter in the sauce.
+
+X-source-verification:
+  status: needs-review
+  notes:
+  - Image shows page 1/2 of a printed recipe; this appears to be page 2 (steps/notes
+    only)
+  - Ingredient list and full recipe header are on the missing first page
+  - Quantities for most ingredients are not visible in this image
+  - Grain type noted as millet used by author but recipe allows rice or quinoa
+  - Peanut sauce quantity noted as 1/4-1/2 cup of water (adjustment note, not full
+    sauce recipe)
+  - source_url was incorrectly captured as a Baker Bettie URL; removed pending correct URL.

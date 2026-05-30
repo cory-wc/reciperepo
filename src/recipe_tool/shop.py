@@ -31,6 +31,8 @@ def collect_ingredients(recipe_ids: list[str], paths: RepoPaths | None = None) -
         _, data, _ = load_recipe(recipe_id, paths)
         for ing in data.get("ingredients") or []:
             name, detail = next(iter(ing.items()))
+            if not isinstance(detail, dict):
+                continue
             for amt in detail.get("amounts") or []:
                 items.append(
                     {

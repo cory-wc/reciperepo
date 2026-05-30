@@ -12,6 +12,7 @@ src/recipe_tool/__init__.py
 src/recipe_tool/cli.py
 src/recipe_tool/index.py
 src/recipe_tool/load.py
+src/recipe_tool/metadata_audit.py
 src/recipe_tool/paths.py
 src/recipe_tool/pdf.py
 src/recipe_tool/render.py
