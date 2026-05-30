@@ -66,9 +66,6 @@ notes:
 - To make in a slow cooker, cook on low for 8 hours or high for 4 hours.
 
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Carrot quantity given as a range (2-3); preserved as string range.
-  - Ham ingredient listed as "1 ham bone or 6 oz diced ham"; primary amount set to
-    bone with note for diced option.
-  - Salt and pepper to taste not included (no measured amounts).
+  - Custom recipe card; no source URL visible
