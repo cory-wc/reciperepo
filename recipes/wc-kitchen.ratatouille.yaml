@@ -57,8 +57,6 @@ notes:
 - Serve with crusty french bread.
 
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Total time listed as "1h15 total" on recipe card; interpreted as 1 hour 15 minutes.
-  - Cook time in step 4 given as a range of 30-60 minutes.
-  - Can size for stewed tomatoes not specified.
+  - Custom recipe card; no source URL visible

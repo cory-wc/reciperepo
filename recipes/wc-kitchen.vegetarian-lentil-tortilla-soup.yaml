@@ -125,12 +125,8 @@ notes:
   sliced jalapeños, chopped red onion.'
 
 X-source-verification:
-  status: needs-review
+  status: needs-manual-review
+  reviewed: true
   notes:
-  - Steps/instructions page not visible in image; only ingredients and metadata were
-    captured.
-  - Cook time listed as 15 minutes but total time is 50 minutes — discrepancy may
-    reflect pressure cooker come-up time or slow cooker variation; preserved as written.
-  - Heavy cream quantity given as a range (1/4–1/2 cup); amount set to null with note.
-  - Source attributed to Jenn Laughlin at Peas and Crayons; original URL unknown from
-    image alone.
+  - Only ingredients page photographed; instructions not visible — find at Peas and Crayons (peasandcrayons.com)
+  - Author: Jenn Laughlin

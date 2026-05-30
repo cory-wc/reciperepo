@@ -6,7 +6,7 @@ X-original-source: ../originals/PXL_20260523_110020503.RAW-01.COVER.jpg
 description: My Instant Pot Black Beans recipe makes a simple, tasty, healthy & budget-friendly
   dinner. They are really quick and easy to make with no soaking involved. They are
   great to have on hand for simple dinners and meal prep!
-X-category: salads
+X-category: side dish
 X-tags:
 - instant pot
 - pressure cooker
@@ -96,9 +96,8 @@ steps:
 - step: Add salt to taste then squeeze the juice of the lime into the beans and give
     them a quick stir before serving.
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Recipe transcribed from printed page photographed in image.
-  - Total time listed as 32 minutes on the card but pressure building and release
-    time is an additional 30 minutes not included in that total.
-  - Rating shown as 4.81 from 46 votes on the printed card.
+  - A Virtual Vegan; Author: Melanie McDonald
+  - X-category corrected from "salads" to "side dish"
+  - Total time 32 min excludes pressure build/release time (additional ~30 min)

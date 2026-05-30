@@ -36,7 +36,7 @@ ingredients:
       unit: pounds
 - white onion:
     amounts:
-    - amount: 1.5
+    - amount: "1 1/3"
       unit: cups
     processing:
     - diced
@@ -107,10 +107,6 @@ steps:
     for 40 to 45 minutes.
 - step: The stuffing is done when everything is nicely browned and crispy on top.
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Recipe printed from Umami (www.umami.site) and stored in a physical binder; source
-    URL inferred from attribution line at bottom of page.
-  - Cook time listed as 50 minutes on card but step 5 specifies 40 to 45 minutes;
-    both values preserved in notes.
-  - Total time listed as 1 hour 5 minutes (15 min prep + 50 min cook).
+  - Source: umami.site; onion corrected from 1.5 cups to 1⅓ cups per image

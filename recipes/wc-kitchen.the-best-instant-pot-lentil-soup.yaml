@@ -1,6 +1,6 @@
 recipe_uuid: wc-kitchen.the-best-instant-pot-lentil-soup
 recipe_name: The Best Instant Pot Lentil Soup
-source_url: https://eating-instantly.com/the-best-instant-pot-lentil-soup/
+source_url: https://eatinginstantly.com/the-best-instant-pot-lentil-soup/
 X-original-source: ../originals/PXL_20260523_105959132.RAW-01.COVER.jpg
 X-prep_time: 20 minutes
 X-cook_time: 20 minutes
@@ -142,9 +142,7 @@ X-nutrition:
   iron: 4.3mg
 
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Recipe printed 2/23/2020 from eating-instantly.com.
-  - Page 1 of 2 visible; page 2 not captured in this image.
-  - Nutrition values partially obscured at bottom of page but mostly legible.
-  - Potassium value partially cut off; read as 609mg.
+  - Printed 2/23/2020; source_url corrected (eating-instantly → eatinginstantly per image footer)
+  - Author: Taylor Stinson
