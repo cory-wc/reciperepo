@@ -5,9 +5,12 @@ from __future__ import annotations
 
 import argparse
 import sys
+from pathlib import Path
 
-from recipe_tool.metadata_audit import audit_all, format_report
+from recipe_tool.metadata_audit import audit_all, format_report, write_audit_log
 from recipe_tool.paths import RepoPaths
+
+SCRIPT_DIR = Path(__file__).resolve().parent
 
 
 def main() -> int:
@@ -29,6 +32,9 @@ def main() -> int:
     paths = RepoPaths()
     report = audit_all(paths)
     print(format_report(report, verbose=args.verbose), end="")
+
+    log_path = write_audit_log(report, verbose=args.verbose, script_dir=SCRIPT_DIR)
+    print(f"Log written to {log_path}", file=sys.stderr)
 
     if args.fail and report.issues:
         return 1

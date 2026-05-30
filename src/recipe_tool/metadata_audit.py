@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from datetime import date
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -208,22 +209,7 @@ def format_report(report: AuditReport, *, verbose: bool = False) -> str:
     grouped = report.by_code()
     lines = [f"Metadata audit: {len(report.issues)} issue(s) across recipes\n"]
 
-    code_order = [
-        "parse-error",
-        "reference-category",
-        "missing-name",
-        "legacy-author",
-        "missing-category",
-        "category-format",
-        "missing-tags",
-        "missing-verification",
-        "empty-flags-only",
-        "verification-status",
-        "bare-source-url",
-        "missing-provenance",
-    ]
-
-    for code in code_order:
+    for code in _CODE_ORDER:
         items = grouped.get(code, [])
         if not items:
             continue
@@ -232,7 +218,7 @@ def format_report(report: AuditReport, *, verbose: bool = False) -> str:
             lines.append(f"  {issue.recipe_id}: {issue.message}")
 
     if verbose:
-        other = set(grouped) - set(code_order)
+        other = set(grouped) - set(_CODE_ORDER)
         for code in sorted(other):
             lines.append(f"\n{code} ({len(grouped[code])})")
             for issue in grouped[code]:
@@ -241,3 +227,91 @@ def format_report(report: AuditReport, *, verbose: bool = False) -> str:
     recipe_ids = {i.recipe_id for i in report.issues}
     lines.append(f"\nRecipes with issues: {len(recipe_ids)}")
     return "\n".join(lines) + "\n"
+
+
+AUDIT_SCRIPT_NAME = "audit_metadata"
+
+_CODE_ORDER = [
+    "parse-error",
+    "reference-category",
+    "missing-name",
+    "legacy-author",
+    "missing-category",
+    "category-format",
+    "missing-tags",
+    "missing-verification",
+    "empty-flags-only",
+    "verification-status",
+    "bare-source-url",
+    "missing-provenance",
+]
+
+
+def audit_log_path(
+    script_dir: Path | None = None,
+    *,
+    on_date: date | None = None,
+    paths: RepoPaths | None = None,
+) -> Path:
+    """Return `{script_dir}/{AUDIT_SCRIPT_NAME}-YYYYMMDD.md`."""
+    directory = script_dir or (paths or RepoPaths()).root / "scripts"
+    stamp = on_date or date.today()
+    return directory / f"{AUDIT_SCRIPT_NAME}-{stamp:%Y%m%d}.md"
+
+
+def format_report_md(report: AuditReport, *, verbose: bool = False) -> str:
+    stamp = date.today()
+    if not report.issues:
+        return (
+            f"# Recipe metadata audit\n\n"
+            f"**Date:** {stamp:%Y-%m-%d}\n\n"
+            f"No metadata issues found.\n"
+        )
+
+    grouped = report.by_code()
+    recipe_ids = {i.recipe_id for i in report.issues}
+    lines = [
+        "# Recipe metadata audit",
+        "",
+        f"**Date:** {stamp:%Y-%m-%d}",
+        f"**Issues:** {len(report.issues)} across {len(recipe_ids)} recipe(s)",
+        "",
+    ]
+
+    for code in _CODE_ORDER:
+        items = grouped.get(code, [])
+        if not items:
+            continue
+        lines.append(f"## {code} ({len(items)})")
+        lines.append("")
+        for issue in sorted(items, key=lambda i: i.recipe_id):
+            lines.append(f"- `{issue.recipe_id}` — {issue.message}")
+        lines.append("")
+
+    if verbose:
+        other = set(grouped) - set(_CODE_ORDER)
+        for code in sorted(other):
+            lines.append(f"## {code} ({len(grouped[code])})")
+            lines.append("")
+            for issue in grouped[code]:
+                lines.append(f"- `{issue.recipe_id}` — {issue.message}")
+            lines.append("")
+
+    lines.append("## Summary")
+    lines.append("")
+    lines.append(f"- Recipes with issues: {len(recipe_ids)}")
+    lines.append(f"- Total issues: {len(report.issues)}")
+    lines.append("")
+    return "\n".join(lines)
+
+
+def write_audit_log(
+    report: AuditReport,
+    *,
+    verbose: bool = False,
+    script_dir: Path | None = None,
+    paths: RepoPaths | None = None,
+) -> Path:
+    log_path = audit_log_path(script_dir, paths=paths)
+    log_path.write_text(format_report_md(report, verbose=verbose), encoding="utf-8")
+    return log_path
