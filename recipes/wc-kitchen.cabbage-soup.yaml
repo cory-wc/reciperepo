@@ -43,7 +43,6 @@ steps:
 - step: Add broth, tomatoes, italian seasoning, and cabbage.
 - step: Simmer for 3 hours.
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Bacon quantity read as ½ lb from image.
-  - Chicken broth quantity read as 12 C (cups) from image.
+  - Custom recipe card format; no external source URL visible

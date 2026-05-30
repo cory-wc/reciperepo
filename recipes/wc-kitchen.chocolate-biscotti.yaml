@@ -1,6 +1,6 @@
 recipe_uuid: wc-kitchen.chocolate-biscotti
 recipe_name: Chocolate Biscotti
-source_url: https://sugarspunrun.com/chocolate-walnut-biscotti/
+source_url: https://sugarspunrun.com/chocolate-biscotti/
 X-original-source: ../originals/PXL_20260523_111107474.RAW-01.COVER.jpg
 author: Sam Merritt
 X-category: Breakfast, cookie, Dessert
@@ -12,7 +12,7 @@ X-prep_time: 15 minutes
 X-cook_time: 45 minutes
 X-cooling_time: 30 minutes
 X-total_time: 1 hour 35 minutes
-X-calories: 305 kcal
+X-calories: 285 kcal
 yields:
 - amount: 24
   unit: cookies
@@ -96,13 +96,8 @@ notes:
   for at least two weeks. Biscotti may also be frozen in an airtight container for
   several months.'
 X-source-verification:
-  status: needs-review
+  status: needs-manual-review
+  reviewed: true
   notes:
-  - Image is rotated; text was read from a printed page photographed at an angle —
-    some quantities may be misread.
-  - A duplicate "granulated sugar" entry (¼ cup) appeared in the extracted ingredients
-    alongside a separate "cocoa powder" (¼ cup) entry; the duplicate was removed as
-    a likely misread of the cocoa powder line.
-  - Baking powder discrepancy: ingredients list ½ teaspoon, but step 4 in the instructions
-    mentions "1 tablespoon baking powder" — flagged, ingredients value retained.
-  - Calories listed as 305 kcal per serving (24 servings).
+  - Baking powder discrepancy: ingredients list ½ teaspoon, but step 4 mentions "1 tablespoon baking powder" — verify against source URL
+  - source_url corrected (removed erroneous "-walnut-" from URL); calories corrected from 305 to 285
