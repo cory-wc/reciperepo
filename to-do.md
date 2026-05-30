@@ -36,3 +36,5 @@ Incomplete drafts excluded from CI (validate, render, index). Move to `recipes/`
 - [ ] Add `list_draft_recipe_ids()` in `paths.py` and `recipe validate --drafts` for validating in-progress files while working on them
 - [ ] Update `_is_referenced_in_recipes` in `status.py` to scan `recipes/**/*.yaml` so originals referenced only from drafts don't show as unreferenced
 - [ ] Update other flat `recipes/*.yaml` globs (`extract --pending`, `rename_originals.py`) to include `recipes/in-progress/` where reference lookups matter
+- [ ] **Optional:** Stop committing `site/` and `pdfs/` — let CI generate and deploy; commit only `recipes/` (and `originals/` as needed). Bigger workflow change: update `.gitignore`, README/USER_GUIDE, and binder workflow (print PDFs from CI artifacts or local `recipe pdf` on demand).
+- [ ] YAML (notes.md) notes that group headers in ingredients (plain-string values like `- Sauce:`) are allowed; they are ignored at render time. | ideally, these would render, as they improve usability in recipe.
