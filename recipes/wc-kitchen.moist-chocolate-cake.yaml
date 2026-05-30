@@ -5,13 +5,30 @@ description: 'This moist chocolate cake with chocolate fudge frosting is a decad
 
   '
 author: Angelina Papanikolaou
-X-original-source: ../originals/PXL_20260523_111005883.RAW-01.COVER.jpg
+X-original-source: ../originals/moist-chocolate-cake-ap.pdf
 X-category: Dessert
 X-total_time: 45 minutes
 X-active_time: 15 minutes
 X-cook_time: 30 minutes
 X-nutrition:
+  serving_size: 1 slice
   calories: 944 kcal
+  carbohydrates_g: 111
+  protein_g: 8
+  fat_g: 57
+  saturated_fat_g: 30
+  polyunsaturated_fat_g: 9
+  monounsaturated_fat_g: 12
+  trans_fat_g: 1
+  cholesterol_mg: 131
+  sodium_mg: 646
+  potassium_mg: 420
+  fiber_g: 6
+  sugar_g: 84
+  vitamin_a_iu: 1119
+  vitamin_c_mg: 0.1
+  calcium_mg: 146
+  iron_mg: 3
 X-equipment:
 - 3 8-inch round cake pans
 - parchment paper
@@ -111,11 +128,44 @@ ingredients:
       unit: teaspoon
 
 steps:
-- step: Instructions are not visible in the image — this section was cut off.
+- step: Preheat oven to 350°F (175°C). Grease 3 8-inch round cake pans and line the
+    bottoms with parchment paper.
+- step: In a large bowl, whisk together the flour, granulated sugar, brown sugar, cocoa
+    powder, baking soda, baking powder, and salt.
+- step: In another bowl, whisk together the buttermilk, coffee, oil, eggs, and vanilla
+    extract.
+- step: Add the wet ingredients to the dry ingredients and mix until combined. Make
+    sure there are no pockets of flour but avoid overmixing.
+- step: Divide the batter equally between the prepared cake pans. Tap the pans on the
+    countertop to remove any air bubbles. Bake for 25–30 minutes or until a toothpick
+    inserted into the center comes out with a few crumbs.
+- step: Remove the cakes from the oven and allow them to cool in the pans for 10 minutes
+    before removing and transferring to wire racks to cool completely.
+- step: 'Fudge Frosting: In a microwave-safe bowl or using a double boiler, melt the
+    chocolate chips, honey, and heavy cream. Cool slightly.'
+- step: In a large mixing bowl or stand mixer fitted with the paddle attachment, beat
+    the butter until smooth and creamy.
+- step: Add the powdered sugar, cocoa powder, and salt. Beat to combine.
+- step: Add the melted chocolate mixture and vanilla to the frosting and beat until
+    smooth and creamy.
+- step: 'Assemble: Place one cake layer on a serving platter. Spread a generous amount
+    of frosting on top. Place the second cake layer on top and spread a layer of frosting.
+    Add the final cake layer and frost the top and sides with the remaining frosting.'
+- step: Optional — decorate with chocolate shavings, sprinkles, or anything else you like.
+
+notes:
+- 'Store: Wrap leftover cake in plastic wrap or place in an airtight container. Refrigerate
+  for up to a week.'
+- 'Freeze: Place cake uncovered in the freezer for 1 hour, then wrap with plastic wrap
+  and aluminum foil. Freeze for up to 3 months. Thaw in the refrigerator overnight
+  or at room temperature.'
+- 'Make ahead: Cake layers can be prepared a day ahead. Once cooled, wrap unfrosted
+  layers in plastic wrap. Refrigerate for up to 3 days or freeze for up to 3 months.
+  Prepare frosting on the day of assembly.'
 
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Instructions section is cut off at the bottom of the image and could not be captured.
-  - Prep time, cook time, and total time read from image header fields.
-  - Rating shown as 5 from 72 votes.
+  - Full recipe confirmed from moist-chocolate-cake-ap.pdf (bakedambrosia.com, Angelina Papanikolaou).
+  - All ingredients verified; amounts match PDF exactly.
+  - Rating shown as 5 from 80 votes in PDF (72 votes in original printed image).
