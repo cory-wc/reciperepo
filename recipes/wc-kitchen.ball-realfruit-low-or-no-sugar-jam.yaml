@@ -150,12 +150,13 @@ X-tags:
 - Ball RealFruit pectin
 - scaling table
 X-source-verification:
-  status: needs-review
+  status: needs-manual-review
   notes:
-  - Image shows only the bottom portion of the full recipe; steps 1–3 are not captured.
+  - Steps 1–3 are not captured in the source image; only the tail of step 4 (jar
+    removal/sealing) is visible. Full method steps must be added manually from the
+    original Ball/freshpreserving.com source.
   - Copyright notice visible at bottom reads "2015 - All Rights Reserved" with partial
-    URL.
-  - Source appears to be the Ball/Bernardin website or a printout thereof.
+    URL. Source appears to be the Ball/Bernardin website or a printout thereof.
   - Rows 6 and 9 are circled in blue ink on the physical printout, possibly indicating
     preferred batch sizes.
   - The "1 cup" entry for No Sugar prepared fruit in the 1-jar row may double as both
