@@ -6,6 +6,9 @@ description: 'This versatile, easy basil sauce is a great way to use up any kind
   basil you have on hand. Pour it onto any protein, or use it as a stir fry sauce.
   It uses only pantry staples, is it''s quick to make and will last in the fridge
   for a week!'
+X-prep_time: 15 minutes
+X-cook_time: 10 minutes
+X-cuisine: Thai
 yields:
 - amount: 4
   unit: servings
@@ -13,25 +16,25 @@ ingredients:
 - oyster sauce:
     amounts:
     - amount: 2
-      unit: tbsp
+      unit: tablespoons
     notes: use vegetarian oyster sauce to make vegetarian
 - soy sauce:
     amounts:
     - amount: 1
-      unit: tbsp
+      unit: tablespoon
 - fish sauce:
     amounts:
     - amount: 2
-      unit: tsp
+      unit: teaspoons
     notes: substitute more soy sauce for vegetarian version
 - granulated sugar:
     amounts:
     - amount: 2
-      unit: tsp
+      unit: teaspoons
 - neutral oil:
     amounts:
     - amount: 2
-      unit: tbsp
+      unit: tablespoons
 - onion:
     amounts:
     - amount: 0.5
@@ -46,29 +49,31 @@ ingredients:
     - chopped
 - Thai chilies:
     amounts:
-    - amount: 1
-      unit: to 2
-    notes: chopped, optional
+    - amount: "1–2"
+      unit: whole
+    notes: optional
+    processing:
+    - chopped
 - chicken, pork, or vegetable stock:
     amounts:
     - amount: 1
-      unit: cup
+      unit: cups
     notes: unsalted
 - black or dark soy sauce:
     amounts:
-    - amount: 0.5
-      unit: tsp
+    - amount: "1/2"
+      unit: teaspoons
     notes: optional; adds colour
 - red bell pepper:
     amounts:
-    - amount: 0.5
-      unit: cup
+    - amount: "1/2"
+      unit: cups
     processing:
     - julienned
 - basil leaves:
     amounts:
     - amount: 1.5
-      unit: cup
+      unit: cups
     notes: any kind; amount is a suggestion — use whatever you have
 steps:
 - step: Combine the oyster sauce, soy sauce, fish sauce and sugar together in a bowl.
@@ -91,8 +96,8 @@ steps:
 notes:
 - To make vegetarian, use vegetarian oyster sauce and substitute more soy sauce for the fish sauce.
 - The basil amount is a suggestion — use less for milder flavour, or scale up if you have more.
-X-original-source: ../originals/PXL_20260523_105852946.RAW-01.COVER.JPG
-X-category: sauce
+X-original-source: ../originals/PXL_20260523_105852946.RAW-01.COVER.jpg
+X-category: Sauces
 X-tags:
 - Thai
 - basil
@@ -103,8 +108,7 @@ X-dietary:
 X-source-verification:
   status: verified
   notes:
-  - Steps 4-6 completed from source URL (user-provided raw text).
-  - Yield metadata row partially obscured by binder ring but reads 4 servings.
-  - Unit for Thai chilies recorded as a range (1-2); ORF does not natively support
-    ranges — captured in notes.
-  - Author name read as Pailin Chongchitnant from printed text.
+  - Full recipe confirmed against source text provided by user (hot-thai-kitchen.com).
+  - Yield metadata row partially obscured by binder ring but reads 4 servings; confirmed by source.
+  - Thai chilies recorded as range "1–2"; optional per source.
+  - Author name confirmed as Pailin Chongchitnant.
