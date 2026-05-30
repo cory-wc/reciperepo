@@ -53,4 +53,4 @@ X-source-verification:
   status: verified
   notes:
   - Custom printed recipe card; no source URL visible
-  - "bacon an hazelnuts" in source interpreted as "bacon and hazelnuts" (typo)
+  - '"bacon an hazelnuts" in source interpreted as "bacon and hazelnuts" (typo)'
