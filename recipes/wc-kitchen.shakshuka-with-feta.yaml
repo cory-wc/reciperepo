@@ -69,6 +69,15 @@ ingredients:
     notes: about 1 1/4 cups
     processing:
     - crumbled
+- eggs:
+    amounts: []
+    notes: quantity not visible in image (below feta, page cut off); typically 6 large
+- fresh cilantro:
+    amounts: []
+    notes: for garnish; mentioned in step 2 only
+- hot sauce:
+    amounts: []
+    notes: for serving; mentioned in step 2 only
 
 steps:
 - step: Heat oven to 375°F. Heat oil in a large skillet over medium-low. Add onion
@@ -82,11 +91,9 @@ steps:
     with cilantro and serve with hot sauce.
 
 X-source-verification:
-  status: needs-review
+  status: needs-manual-review
   notes:
-  - Egg quantity not visible in image; eggs are referenced in steps but not listed
-    in the visible ingredients section (image may be cut off).
-  - Cilantro and hot sauce mentioned in Step 2 but not visible in ingredients list;
-    image may be partially obscured.
-  - Cayenne listed as 1/8 teaspoon based on image reading of "1/8"; verify original.
-  - Rating shown as 4-5 stars with 15,289 reviews; likely sourced from NYT Cooking.
+  - Image cut off below feta; eggs, cilantro, and hot sauce are in step text but not
+    in the visible ingredient list — quantities unknown
+  - Cayenne confirmed as 1/8 teaspoon (reads "1/8 teaspoon ground cayenne, or to taste")
+  - Rating 4-5 stars with 15,289 reviews; NYT Cooking, by Melissa Clark

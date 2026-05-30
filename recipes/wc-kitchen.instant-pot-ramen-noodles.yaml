@@ -27,7 +27,7 @@ ingredients:
 - ginger:
     amounts:
     - amount: 2
-      unit: teaspoons
+      unit: tablespoons
     processing:
     - grated or finely chopped
 - garlic:
@@ -58,11 +58,11 @@ ingredients:
     amounts:
     - amount: 2
       unit: cakes
-- baby bok choy greens:
+- baby kale:
     amounts:
     - amount: 1
       unit: cups
-    notes: or finely chopped baby kale; 1–2 cups
+    notes: or baby bok choy greens; 1–2 cups
     processing:
     - finely chopped
 - carrots:
@@ -72,6 +72,9 @@ ingredients:
     notes: 1–2 cups
     processing:
     - shredded
+- kosher or sea salt:
+    amounts: []
+    notes: to taste
 
 steps:
 - step: Set Instant Pot to sauté and add sesame oil once the pot is hot. Stir in garlic
@@ -95,12 +98,10 @@ notes:
   soft-boiled eggs.
 
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Recipe printed 3/20/25 at 4:54 PM; image is page 1 of 2 — step 4 and 5 details
-    and any remaining instructions on page 2 are not visible.
-  - Sriracha quantity not specified in visible text; recorded as optional garnish.
-  - Salt to taste not included (no measured amount).
-  - Baby bok choy / kale and carrot quantities given as ranges (1-2 cups); recorded
-    as 1 cup with notes.
-  - Coconut aminos amount read as 1/3 cup.
+  - All 5 steps visible on single page; prior note about page 2 being cut off was incorrect
+  - Ginger corrected from 2 tsp to 2 tablespoons per image
+  - Primary green corrected to baby kale (image text); bok choy moved to alternative note
+  - Added salt (to taste) and corrected ingredient omissions
+  - Coconut aminos confirmed as 1/3 cup

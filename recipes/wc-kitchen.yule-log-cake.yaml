@@ -147,7 +147,7 @@ steps:
 
     '
 X-source-verification:
-  status: needs-review
+  status: needs-manual-review
   notes:
   - Recipe spans two printed pages; only page 1 (ingredients/header) and partial page
     2 (assembly/decoration steps) are visible in the image.

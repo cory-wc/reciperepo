@@ -54,7 +54,7 @@ steps:
     liquid, covered, for up to 1 week.
 
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
   - Recipe sourced from printed page, appears to be from The New York Times (photo
     credit references NYT)
