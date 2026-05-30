@@ -23,10 +23,15 @@ ingredients:
     amounts:
     - amount: 1
       unit: teaspoons
+    notes: plus more for seasoning
 - ground black pepper:
     amounts:
     - amount: 1
       unit: teaspoons
+    notes: plus more for seasoning
+- cayenne pepper:
+    amounts: []
+    notes: to taste; no quantity specified in source
 - pork breakfast chops:
     amounts:
     - amount: 8
@@ -58,8 +63,9 @@ notes:
 - Serve with smashed new potatoes.
 
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
   - Recipe printed from Food Network website, dated 6/23/2021
   - Source URL is approximate; exact recipe URL not visible in image
-  - Cayenne pepper listed in steps but no quantity specified; omitted from ingredients.
+  - Cayenne pepper listed as ingredient in source with no quantity; added with empty
+    amounts and note.

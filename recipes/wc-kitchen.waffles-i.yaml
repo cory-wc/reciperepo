@@ -55,7 +55,7 @@ steps:
     waffle iron. Cook until golden brown. Serve hot.
 X-cook_time: 15 minutes
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
   - Printed from Allrecipes.com on 6/9/2019
   - Exact allrecipes URL not captured; source domain confirmed as allrecipes.com
