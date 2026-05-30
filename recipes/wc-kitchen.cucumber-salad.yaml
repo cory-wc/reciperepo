@@ -35,7 +35,6 @@ steps:
 - step: Toss cucumber slices with salt and sugar.
 - step: Stir in vinegar and onion. Refrigerate for 10 minutes, then serve.
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Original recipe source field in image is blank.
-  - Notes field in image is blank.
+  - Custom recipe card; source field blank in original

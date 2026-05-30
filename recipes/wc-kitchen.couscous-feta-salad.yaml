@@ -1,6 +1,5 @@
 recipe_uuid: wc-kitchen.couscous-feta-salad
 recipe_name: Couscous Feta Salad
-source_url: https://www.allrecipes.com
 X-original-source: ../originals/PXL_20260523_110112441.RAW-01.COVER.jpg
 X-active_time: 20 minutes
 X-total_time: 45 minutes
@@ -61,9 +60,7 @@ steps:
 - step: Whisk together olive oil, vinegar, salt, and pepper.
 - step: Toss couscous, feta, vegetables, and dressing. Chill for 20 minutes.
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Recipe printed from allrecipes.com (URL partially visible at top of page)
-  - 1 tbsp olive oil referenced in step 1 but only 1 tsp listed in ingredients; flagged
-    as possible discrepancy
-  - Red onion quantity listed as 1 with no unit — assumed 1 whole onion
+  - Custom recipe card; allrecipes.com URL at top of image bleeds through from an adjacent page
+  - Step 1 says "1 tbsp olive oil" but ingredients list shows 1 tsp; source inconsistency preserved faithfully

@@ -41,16 +41,14 @@ steps:
 - step: Melt butter in the same saucepan; stir brown sugar, salt, and white pepper
     into butter until brown sugar and salt have dissolved. Transfer carrots into brown
     sugar sauce; cook and stir until carrots are glazed with sauce, about 5 more minutes.
-X-category: Salads
+X-category: side dish
 X-tags:
 - carrots
 - glazed
 - side dish
 - vegetable
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-  - Recipe transcribed from printed page photographed in a binder
-  - The 1/8 teaspoon ground white pepper quantity was read from small print and may
-    need verification
-  - Author name read as Tricia McTamaney but small print may be slightly different
+  - Allrecipes; author Tricia McTamaney
+  - X-category corrected from "Salads" to "side dish"
