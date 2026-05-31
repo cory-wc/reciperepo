@@ -13,6 +13,14 @@ import yaml
 
 REPO = Path(__file__).resolve().parents[1]
 
+BURGERS_SANDWICHES_DISH_TYPE = "burgers+sandwiches"
+
+BURGER_CARRIER_SCRUB_RE = re.compile(
+    r"bread\s*crumbs?|breadcrumbs?",
+    re.IGNORECASE,
+)
+BURGER_CARRIER_RE = re.compile(r"\b(?:buns?|tortillas?|bread)\b", re.IGNORECASE)
+
 # Import title-tag filter from sibling script
 sys.path.insert(0, str(REPO / "scripts"))
 from clean_title_tags import is_title_restate  # noqa: E402
@@ -35,6 +43,7 @@ SPECIAL_DISH_TYPE: dict[str, list[str]] = {
     "wc-kitchen.creamy-tomato-soup": ["soup"],
     "wc-kitchen.spaghetti-carbonara": ["pasta"],
     "wc-kitchen.15-minute-miso-soup-with-greens-and-tofu": ["soup"],
+    "wc-kitchen.chicken-and-veggie-enchiladas": ["one_dish"],
 }
 
 # Tags to apply when legacy metadata was sparse (manual curation per notes.md rules).
@@ -631,7 +640,88 @@ def _name_has(text: str, *words: str) -> bool:
     return any(word in text for word in words)
 
 
-def _infer_categories_from_name(recipe_id: str, recipe_name: str) -> tuple[list[str], list[str]]:
+def _burgers_sandwiches_name_match(recipe_id: str, recipe_name: str) -> bool:
+    slug = recipe_id.removeprefix("wc-kitchen.").replace("-", " ")
+    text = norm(f"{recipe_name} {slug}")
+    if _name_has(text, "macaroni") and _name_has(text, "hamburger"):
+        return False
+    return _name_has(
+        text,
+        "burger",
+        "burgers",
+        "sloppy joe",
+        "sloppy joes",
+        "sandwich",
+        "wraps",
+        "quesadilla",
+        "quesadillas",
+    )
+
+
+def _mentions_burger_carrier(data: dict[str, Any]) -> bool:
+    text = _recipe_search_text(data)
+    for note in data.get("notes") or []:
+        text += " " + str(note)
+    text = BURGER_CARRIER_SCRUB_RE.sub(" ", text)
+    return bool(BURGER_CARRIER_RE.search(text))
+
+
+def _is_burgers_sandwiches_recipe(data: dict[str, Any], recipe_id: str) -> bool:
+    if not _burgers_sandwiches_name_match(recipe_id, str(data.get("recipe_name", ""))):
+        return False
+    return _mentions_burger_carrier(data)
+
+
+def _correct_burgers_sandwiches_dish_type(
+    data: dict[str, Any], recipe_id: str
+) -> list[str]:
+    categories = dict(data.get("X-categories") or {})
+    dish = list(categories.get("dish_type") or [])
+    qualifies = _is_burgers_sandwiches_recipe(data, recipe_id)
+
+    if dish == [BURGERS_SANDWICHES_DISH_TYPE] and not qualifies:
+        categories["dish_type"] = ["main"]
+        data["X-categories"] = categories
+        return [
+            f"dish_type {BURGERS_SANDWICHES_DISH_TYPE} → main "
+            "(no bread/bun/tortilla in recipe)"
+        ]
+
+    if not qualifies:
+        return []
+    if dish == [BURGERS_SANDWICHES_DISH_TYPE]:
+        return []
+    if dish == ["main"]:
+        categories["dish_type"] = [BURGERS_SANDWICHES_DISH_TYPE]
+        data["X-categories"] = categories
+        return [f"dish_type main → {BURGERS_SANDWICHES_DISH_TYPE}"]
+    return []
+
+
+def _correct_enchilada_casserole_dish_type(
+    data: dict[str, Any], recipe_id: str
+) -> list[str]:
+    text = norm(
+        f"{recipe_id} {data.get('recipe_name', '')} "
+        f"{recipe_id.removeprefix('wc-kitchen.').replace('-', ' ')}"
+    )
+    if not _name_has(text, "enchilada", "enchiladas"):
+        return []
+    categories = dict(data.get("X-categories") or {})
+    dish = list(categories.get("dish_type") or [])
+    if dish == ["one_dish"]:
+        return []
+    categories["dish_type"] = ["one_dish"]
+    categories["meal_role"] = _unique(
+        list(categories.get("meal_role") or []) + ["one_dish_meal"]
+    )
+    data["X-categories"] = categories
+    return ["dish_type → one_dish (casserole)"]
+
+
+def _infer_categories_from_name(
+    recipe_id: str, recipe_name: str, data: dict[str, Any] | None = None
+) -> tuple[list[str], list[str]]:
     """Infer dish_type / meal_type from recipe name and slug when metadata is sparse."""
     slug = recipe_id.removeprefix("wc-kitchen.").replace("-", " ")
     text = norm(f"{recipe_name} {slug}")
@@ -659,18 +749,18 @@ def _infer_categories_from_name(recipe_id: str, recipe_name: str) -> tuple[list[
         "bolognese",
     ):
         dish_types.append("pasta")
+    elif data is not None and _is_burgers_sandwiches_recipe(data, recipe_id):
+        dish_types.append(BURGERS_SANDWICHES_DISH_TYPE)
+    elif _name_has(text, "enchilada", "enchiladas"):
+        dish_types.append("one_dish")
     elif _name_has(
         text,
-        "quesadilla",
-        "enchilada",
-        "burger",
         "meatloaf",
         "katsu",
         "carnitas",
         "pot pie",
         "shakshuka",
         "brisket",
-        "lettuce wraps",
         "fried chicken",
         "tikka masala",
         "unstuffed bell peppers",
@@ -681,10 +771,10 @@ def _infer_categories_from_name(recipe_id: str, recipe_name: str) -> tuple[list[
         dish_types.append("main")
     elif _name_has(text, "dip"):
         dish_types.append("sauce")
-    elif _name_has(text, "sauce", "relish") and "salad" not in text:
+    elif _name_has(text, "sauce") and "salad" not in text:
         dish_types.append("sauce")
-    elif _name_has(text, "pickled", "pickles"):
-        dish_types.append("sauce")
+    elif _name_has(text, "pickled", "pickles", "pickle", "jam", "relish", "chutney"):
+        dish_types.append("preserve")
     elif _name_has(text, "macaron", "cookie"):
         dish_types.extend(["dessert"])
         meal_types.append("dessert")
@@ -753,7 +843,7 @@ def _fill_missing_categories(
 
     if not dish_types:
         name_dish, name_meal = _infer_categories_from_name(
-            recipe_id, str(data.get("recipe_name", ""))
+            recipe_id, str(data.get("recipe_name", "")), data
         )
         dish_types.extend(name_dish)
         meal_types.extend(name_meal)
@@ -1307,6 +1397,8 @@ def migrate_recipe(data: dict[str, Any]) -> tuple[dict[str, Any], list[str]]:
         changes.append(f"added X-categories {categories}")
 
     changes.extend(_fill_missing_categories(data, recipe_id=recipe_id, is_reference=is_reference))
+    changes.extend(_correct_enchilada_casserole_dish_type(data, recipe_id))
+    changes.extend(_correct_burgers_sandwiches_dish_type(data, recipe_id))
 
     prior_tags = data.get("X-tags")
     structured_tags, dropped_tags = _build_structured_tags(data, legacy_cats)

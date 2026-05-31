@@ -118,9 +118,9 @@ What format the recipe is. **Prefer 1–2 values** per recipe (guidance only —
 | `salad` | Green, bean, pasta, grain salads |
 | `pasta` | Pasta as the main format |
 | `main` | Generic entrées (stir-fry, pan-seared protein, bratkartoffeln) |
-| `one_dish` | Casseroles, skillets, sheet-pan roasts, pot pies, lasagna |
+| `one_dish` | Casseroles, baked enchiladas, skillets, sheet-pan roasts, pot pies, lasagna |
 | `bowl` | Burrito bowls, buddha bowls, composed grain bowls |
-| `burger` | Burgers, sandwiches, wraps, and other handheld mains |
+| `burgers+sandwiches` | Burgers, sandwiches, wraps, quesadillas, and other handheld mains — only when the recipe mentions bread, buns, or tortilla (not breadcrumbs alone) |
 | `side` | Finished sides served alongside a meal |
 | `sauce` | Sauces, condiments, dips, dressings |
 | `component` | Prep/base for other dishes (farro method, IP black beans, pie dough) |
@@ -415,6 +415,7 @@ The batch fix script also:
 - Moves `X-tags.planning` values (`make_ahead`, `meal_prep`, `leftovers_friendly`, `freezer-friendly`) → `X-tags.context`
 - Moves `X-tips`, `X-notes`, and `X-handwritten-*` fields into ORF `notes`
 - Infers missing `X-categories` from `X-course`, recipe name, and `SPECIAL_DISH_TYPE`
+- Infers `burgers+sandwiches` when the name/slug matches (burger, sandwich, wrap, quesadilla, etc.) **and** the recipe text mentions bread, buns, or tortilla (breadcrumbs alone do not count)
 - Drops redundant `X-course` when categories are already set
 - Consolidates duplicate fields: `X-author` / `X-source-author` → `source_authors`; `X-equipment` → `equipment`; `X-method` → `X-tags.method`; `X-source-description` → `description`; `X-calories` → `X-nutrition.calories`; `X-hands_on_time` → `X-active_time` (when missing)
 - Drops TV/provenance duplicates: `X-show`, `X-episode`, `X-publisher`, `X-copyright`, `X-published`, `X-source-publication`, `X-source-updated`, `X-attribution`

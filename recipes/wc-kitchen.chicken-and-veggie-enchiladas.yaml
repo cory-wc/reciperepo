@@ -60,9 +60,11 @@ steps:
 - step: Let cool 10-15 minutes before serving.
 X-categories:
   dish_type:
-  - main
+  - one_dish
   meal_type:
   - dinner
+  meal_role:
+  - one_dish_meal
 X-tags:
   method:
   - oven
