@@ -64,6 +64,9 @@ X-categories:
 X-tags:
   cuisine:
   - american
+  method:
+  - slow_cooker
+  - instant_pot
 X-source-verification:
   status: verified
   notes:

@@ -68,6 +68,9 @@ X-categories:
   - pasta
   meal_type:
   - dinner
+X-tags:
+  method:
+  - instant_pot
 X-source-verification:
   status: verified
   notes:

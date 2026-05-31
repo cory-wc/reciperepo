@@ -74,6 +74,8 @@ X-tags:
   - french
   dietary:
   - dairy_free
+  method:
+  - oven
 X-source-verification:
   status: needs-manual-review
   notes:

@@ -70,6 +70,9 @@ X-categories:
   - main
   meal_type:
   - dinner
+X-tags:
+  method:
+  - slow_cooker
 X-source-verification:
   status: needs-review
   notes: []

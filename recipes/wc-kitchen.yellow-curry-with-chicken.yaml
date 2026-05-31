@@ -104,6 +104,9 @@ X-categories:
   - main
   meal_type:
   - dinner
+X-tags:
+  method:
+  - instant_pot
 X-source-verification:
   status: verified
   notes:

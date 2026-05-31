@@ -55,6 +55,9 @@ X-categories:
   - sauce
   meal_type:
   - anytime
+X-tags:
+  method:
+  - slow_cooker
 X-source-verification:
   status: needs-review
   notes: []

@@ -98,6 +98,9 @@ X-tags:
   dietary:
   - vegan
   - gluten_free
+  - vegetarian
+  method:
+  - oven
 X-source-verification:
   status: needs-review
   notes:

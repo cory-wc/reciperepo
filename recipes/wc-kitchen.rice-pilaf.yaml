@@ -44,6 +44,9 @@ X-categories:
   - side
   meal_type:
   - dinner
+X-tags:
+  method:
+  - oven
 X-source-verification:
   status: verified
   notes:

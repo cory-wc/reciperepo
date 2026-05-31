@@ -111,6 +111,8 @@ X-categories:
 X-tags:
   dietary:
   - vegetarian
+  method:
+  - oven
 X-source-verification:
   status: needs-review
   notes:

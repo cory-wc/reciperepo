@@ -231,6 +231,19 @@ SLOW_COOKER_RE = re.compile(
 )
 INSTANT_POT_RE = re.compile(r"\binstant[\s-]?pot\b", re.IGNORECASE)
 
+# Oven as appliance (not Dutch oven cookware). Temperature cues cover preheat/bake phrasing.
+OVEN_TEMP_RE = re.compile(
+    r"(?:"
+    r"preheat(?:\s+the|\s+your)?\s+oven\s+to\s+\d+"
+    r"|heat\s+oven\s+to\s+\d+"
+    r"|\d+\s*(?:°|degrees?(?:\s+(?:[FCfc]|Fahrenheit|Celsius))?)\s+oven\b"
+    r"|\boven\s+temperature\s+to\s+\d+"
+    r"|\bbake\s+(?:at|in\s+(?:the\s+|a\s+)?(?:preheated\s+)?)\d+"
+    r")",
+    re.IGNORECASE,
+)
+OVEN_MENTION_RE = re.compile(r"\boven\b", re.IGNORECASE)
+
 DIETARY_FALSE_POSITIVE_PATTERNS: tuple[re.Pattern[str], ...] = tuple(
     re.compile(p, re.IGNORECASE)
     for p in (
@@ -424,7 +437,23 @@ def _infer_methods_from_text(data: dict[str, Any]) -> list[str]:
         methods.append("slow_cooker")
     if INSTANT_POT_RE.search(text):
         methods.append("instant_pot")
+    if _recipe_uses_oven(data):
+        methods.append("oven")
     return methods
+
+
+def _oven_search_text(data: dict[str, Any]) -> str:
+    text = _recipe_search_text(data)
+    for note in data.get("notes") or []:
+        text += " " + str(note)
+    return re.sub(r"\bdutch\s+oven\b", " ", text, flags=re.IGNORECASE)
+
+
+def _recipe_uses_oven(data: dict[str, Any]) -> bool:
+    text = _oven_search_text(data)
+    if OVEN_TEMP_RE.search(text):
+        return True
+    return bool(OVEN_MENTION_RE.search(text))
 
 
 def _apply_inferred_methods(data: dict[str, Any]) -> list[str]:

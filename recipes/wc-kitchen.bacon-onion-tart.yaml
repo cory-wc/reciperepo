@@ -46,6 +46,9 @@ X-categories:
   - main
   meal_type:
   - dinner
+X-tags:
+  method:
+  - oven
 X-source-verification:
   status: needs-review
   notes: []

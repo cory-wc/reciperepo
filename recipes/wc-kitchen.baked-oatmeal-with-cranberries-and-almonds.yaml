@@ -72,6 +72,8 @@ X-categories:
   meal_type:
   - breakfast
 X-tags:
+  method:
+  - oven
   context:
   - make_ahead
 X-source-verification:

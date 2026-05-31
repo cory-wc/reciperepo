@@ -93,6 +93,8 @@ X-categories:
 X-tags:
   cuisine:
   - italian
+  method:
+  - oven
 X-source-verification:
   status: needs-manual-review
   reviewed: true
