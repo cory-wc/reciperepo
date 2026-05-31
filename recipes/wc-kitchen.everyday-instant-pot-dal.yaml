@@ -78,6 +78,11 @@ notes:
   Pot to Saute mode, add in some water and let it come to a boil. If you'd like it
   thicker, set to Saute mode and let it cook down slightly, stirring occasionally
   to avoid burning.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-source-verification:
   status: needs-review
   notes:

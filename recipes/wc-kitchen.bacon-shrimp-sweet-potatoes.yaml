@@ -76,6 +76,11 @@ steps:
 - step: Add the crumbled bacon and shrimp mixture (including the butter from the skillet).
     Combine everything well.
 - step: Serve in a bowl and sprinkle with green onions.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-source-verification:
   status: needs-review
   notes: []

@@ -46,6 +46,11 @@ steps:
 - step: Cover and give the jar a gentle shake. Set aside to pickle for about 30 minutes.
     Serve right away, or cool to room temperature and place in the fridge in the pickling
     liquid, covered, for up to 1 week.
+X-categories:
+  dish_type:
+  - sauce
+  meal_type:
+  - anytime
 X-source-verification:
   status: verified
   notes:

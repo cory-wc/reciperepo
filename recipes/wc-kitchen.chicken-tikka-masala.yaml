@@ -42,6 +42,11 @@ steps:
 - step: Serve with rice.
 notes:
 - Serve with rice.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-source-verification:
   status: needs-review
   notes: []

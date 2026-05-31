@@ -113,6 +113,11 @@ steps:
     Allow meatloaf to rest on pan for 10 minutes before slicing.
 notes:
 - Ground pork can be omitted — just use 2 lbs total ground beef instead.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-source-verification:
   status: needs-review
   notes:

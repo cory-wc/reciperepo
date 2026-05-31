@@ -68,6 +68,11 @@ steps:
 - step: Spoon mixture into pie crust and seal top with second pie crust. Brush the
     top of pastry with egg wash and cut vents.
 - step: Bake 15-20 minutes until crust is golden. Cool for 10 minutes and serve.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-source-verification:
   status: needs-review
   notes: []

@@ -64,6 +64,11 @@ steps:
     with tonkatsu sauce, thinly sliced green cabbage, and rice if desired.
 notes:
 - Serve with tonkatsu sauce, thinly sliced green cabbage, and cooked white rice.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:

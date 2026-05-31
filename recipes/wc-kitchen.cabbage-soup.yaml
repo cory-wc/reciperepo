@@ -39,6 +39,11 @@ steps:
     and saute until soft.
 - step: Add broth, tomatoes, italian seasoning, and cabbage.
 - step: Simmer for 3 hours.
+X-categories:
+  dish_type:
+  - soup
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:

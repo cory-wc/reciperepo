@@ -67,6 +67,11 @@ steps:
     food coloring (if using) into the egg whites.
 notes:
 - Fill shells with desired filling (buttercream, ganache, jam, etc.).
+X-categories:
+  dish_type:
+  - dessert
+  meal_type:
+  - dessert
 X-source-verification:
   status: needs-review
   notes:

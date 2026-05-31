@@ -73,6 +73,11 @@ steps:
     to reduce.
 - step: Stir in heavy cream and simmer until warmed through, about 1 minute.
 - step: Serve parsnips with spoonfuls of bolognese. Garnish with parmesan.
+X-categories:
+  dish_type:
+  - pasta
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:

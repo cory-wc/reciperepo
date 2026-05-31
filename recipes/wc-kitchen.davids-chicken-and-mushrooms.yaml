@@ -35,6 +35,11 @@ steps:
 - step: Serve over rice, barley, or farro.
 notes:
 - Serve over rice, barley, or farro.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-source-verification:
   status: needs-review
   notes: []

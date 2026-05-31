@@ -58,6 +58,11 @@ steps:
 - step: Sprinkle shredded cheese and black olives over enchiladas.
 - step: Bake covered for 30 minutes and uncovered for 15 minutes.
 - step: Let cool 10-15 minutes before serving.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-source-verification:
   status: needs-review
   notes: []

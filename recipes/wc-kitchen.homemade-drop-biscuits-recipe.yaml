@@ -58,6 +58,11 @@ notes:
 - Optional add-ins: 1/2 tsp garlic powder, 3/4 cup cheddar cheese, 1/4 cup chives.
 - Honey butter topping: whisk together 1 tablespoon honey + 2 tablespoons melted unsalted
     butter.
+X-categories:
+  dish_type:
+  - bread
+  meal_type:
+  - breakfast
 X-source-verification:
   status: needs-review
   notes:
@@ -69,4 +74,3 @@ X-original-source: ../originals/homemade-drop-biscuits-recipe-20260523.jpg
 X-prep_time: 35 mins
 X-cook_time: 20 mins
 X-total_time: 55 mins
-X-course: Bread, Breakfast

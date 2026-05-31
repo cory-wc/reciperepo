@@ -52,6 +52,11 @@ steps:
 - step: This can be made ahead of time and stored in the fridge, or used immediately.
 notes:
 - To make this gluten free, use gluten-free low sodium soy sauce, or liquid aminos.
+X-categories:
+  dish_type:
+  - sauce
+  meal_type:
+  - anytime
 X-source-verification:
   status: needs-review
 X-original-source: ../originals/thai-peanut-sauce-jessica-hylton-20260523.jpg

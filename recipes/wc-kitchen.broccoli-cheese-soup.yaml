@@ -61,6 +61,11 @@ steps:
     powder.
 - step: In a small bowl, stir cornstarch into water until dissolved. Stir into soup;
     cook, stirring frequently, until thick.
+X-categories:
+  dish_type:
+  - soup
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:

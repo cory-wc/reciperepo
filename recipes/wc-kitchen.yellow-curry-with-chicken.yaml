@@ -99,6 +99,11 @@ steps:
 notes:
 - To make rice at the same time as curry, use the pot-in-pot method with 1½ cups rice
   and 1½ cups water.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:

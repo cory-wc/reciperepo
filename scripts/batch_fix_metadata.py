@@ -80,6 +80,8 @@ DROP_FIELDS = frozenset(
         "X-handwritten-notes",
         "X-handwritten-alt-ingredients",
         "X-handwritten-optional-fillings",
+        "X-notes",
+        "X-course",
     }
 )
 
@@ -159,6 +161,7 @@ DISH_TYPE_FROM_LEGACY: dict[str, str] = {
     "seafood": "main",
     "appetizer": "side",
     "reference": "reference",
+    "bread": "bread",
 }
 
 MEAL_TYPE_FROM_LEGACY: dict[str, str] = {
@@ -373,10 +376,194 @@ def _append_note(data: dict[str, Any], text: str) -> bool:
 
 def _append_notes(data: dict[str, Any], items: Any) -> int:
     added = 0
-    for item in _as_list(items):
+    for item in _note_items(items):
         if _append_note(data, item):
             added += 1
     return added
+
+
+def _note_items(value: Any) -> list[str]:
+    """Expand a notes field value without splitting prose on commas."""
+    if value is None:
+        return []
+    if isinstance(value, list):
+        return [str(v) for v in value if str(v).strip()]
+    if isinstance(value, str):
+        return [value.strip()] if value.strip() else []
+    return [str(value)]
+
+
+def _parse_x_course(course: Any) -> tuple[list[str], list[str]]:
+    """Map legacy X-course values to dish_type / meal_type hints."""
+    dish_types: list[str] = []
+    meal_types: list[str] = []
+    if course is None:
+        return dish_types, meal_types
+
+    parts: list[str] = []
+    for raw in _as_list(course):
+        parts.extend(p.strip() for p in str(raw).split(",") if p.strip())
+
+    for part in parts:
+        key = norm(part)
+        if key in MEAL_TYPE_FROM_LEGACY and key != "dessert":
+            meal_types.append(MEAL_TYPE_FROM_LEGACY[key])
+            continue
+        mapped = DISH_TYPE_FROM_LEGACY.get(key)
+        if mapped:
+            dish_types.append(mapped)
+        elif key == "dessert":
+            dish_types.append("dessert")
+            meal_types.append("dessert")
+
+    return _unique(dish_types), _unique(meal_types)
+
+
+def _name_has(text: str, *words: str) -> bool:
+    return any(word in text for word in words)
+
+
+def _infer_categories_from_name(recipe_id: str, recipe_name: str) -> tuple[list[str], list[str]]:
+    """Infer dish_type / meal_type from recipe name and slug when metadata is sparse."""
+    slug = recipe_id.removeprefix("wc-kitchen.").replace("-", " ")
+    text = norm(f"{recipe_name} {slug}")
+
+    dish_types: list[str] = []
+    meal_types: list[str] = []
+
+    if _name_has(text, "soup"):
+        dish_types.append("soup")
+    elif _name_has(text, "salad"):
+        dish_types.append("salad")
+    elif _name_has(text, "bowl", "bibimbap"):
+        dish_types.append("bowl")
+    elif _name_has(
+        text,
+        "pasta",
+        "gnocchi",
+        "macaroni",
+        "risotto",
+        "spaghetti",
+        "fettuccine",
+        "pappardelle",
+        "lasagna",
+        "tortellini",
+        "bolognese",
+    ):
+        dish_types.append("pasta")
+    elif _name_has(
+        text,
+        "quesadilla",
+        "enchilada",
+        "burger",
+        "meatloaf",
+        "katsu",
+        "carnitas",
+        "pot pie",
+        "shakshuka",
+        "brisket",
+        "lettuce wraps",
+        "fried chicken",
+        "tikka masala",
+        "unstuffed bell peppers",
+        "tart",
+    ) and "soup" not in text:
+        dish_types.append("main")
+    elif _name_has(text, "curry") and "soup" not in text:
+        dish_types.append("main")
+    elif _name_has(text, "dip"):
+        dish_types.append("sauce")
+    elif _name_has(text, "sauce", "relish") and "salad" not in text:
+        dish_types.append("sauce")
+    elif _name_has(text, "pickled", "pickles"):
+        dish_types.append("sauce")
+    elif _name_has(text, "macaron", "cookie"):
+        dish_types.extend(["dessert"])
+        meal_types.append("dessert")
+    elif _name_has(text, "biscuit", "muffin"):
+        dish_types.append("bread")
+    elif _name_has(text, "bread") and _name_has(text, "zucchini"):
+        dish_types.append("bread")
+    elif _name_has(text, "hot chocolate") and _name_has(text, "mix"):
+        dish_types.append("component")
+        meal_types.append("anytime")
+    elif _name_has(text, "dal"):
+        dish_types.append("main")
+    elif _name_has(text, "fish", "cod") and "soup" not in text:
+        dish_types.append("main")
+    elif _name_has(text, "candied") and _name_has(text, "sweet potato"):
+        dish_types.append("side")
+    elif _name_has(text, "acorn squash"):
+        dish_types.append("side")
+    else:
+        dish_types.append("main")
+
+    if not meal_types:
+        if "dessert" in dish_types:
+            meal_types.append("dessert")
+        elif "bread" in dish_types and _name_has(text, "breakfast", "biscuit"):
+            meal_types.append("breakfast")
+        elif dish_types[0] in {"sauce", "preserve", "component"}:
+            meal_types.append("anytime")
+        else:
+            meal_types.append("dinner")
+
+    return dish_types[:2], meal_types[:2]
+
+
+def _fill_missing_categories(
+    data: dict[str, Any], *, recipe_id: str, is_reference: bool
+) -> list[str]:
+    """Infer X-categories from X-course, SPECIAL_DISH_TYPE, and recipe name."""
+    if is_reference:
+        return []
+
+    changes: list[str] = []
+    categories = dict(data.get("X-categories") or {})
+    has_dish_type = bool(categories.get("dish_type"))
+
+    course_dish: list[str] = []
+    course_meal: list[str] = []
+    if "X-course" in data:
+        course = data.pop("X-course")
+        if has_dish_type:
+            changes.append(f"removed X-course (already categorized: {course!r})")
+        else:
+            course_dish, course_meal = _parse_x_course(course)
+            changes.append(f"X-course {course!r} → dish={course_dish} meal={course_meal}")
+
+    if has_dish_type:
+        return changes
+
+    dish_types: list[str] = []
+    meal_types: list[str] = []
+
+    if recipe_id in SPECIAL_DISH_TYPE:
+        dish_types.extend(SPECIAL_DISH_TYPE[recipe_id])
+    dish_types.extend(course_dish)
+    meal_types.extend(course_meal)
+
+    if not dish_types:
+        name_dish, name_meal = _infer_categories_from_name(
+            recipe_id, str(data.get("recipe_name", ""))
+        )
+        dish_types.extend(name_dish)
+        meal_types.extend(name_meal)
+
+    dish_types = _unique(dish_types)[:2]
+    meal_types = _unique(meal_types)[:2]
+    if not meal_types:
+        meal_types = _infer_meal_type(recipe_id, _legacy_categories(data), dish_types)
+
+    new_categories: dict[str, list[str]] = {"dish_type": dish_types}
+    if meal_types:
+        new_categories["meal_type"] = meal_types
+    if "one_dish" in dish_types:
+        new_categories["meal_role"] = ["one_dish_meal"]
+
+    data["X-categories"] = new_categories
+    changes.append(f"inferred X-categories {new_categories}")
+    return changes
 
 
 def _format_ingredient_line(entry: Any) -> str:
@@ -400,9 +587,22 @@ def _format_ingredient_line(entry: Any) -> str:
     return str(entry)
 
 
-def _migrate_handwritten_and_tips(data: dict[str, Any]) -> list[str]:
-    """Move X-tips and X-handwritten-* fields into ORF `notes`."""
+def _migrate_recipe_notes(data: dict[str, Any]) -> list[str]:
+    """Move X-tips, X-notes, and X-handwritten-* fields into ORF `notes`."""
     changes: list[str] = []
+
+    if "X-notes" in data:
+        value = data.pop("X-notes")
+        if not value or (
+            isinstance(value, list) and not any(str(v).strip() for v in value)
+        ):
+            changes.append("removed empty X-notes")
+        else:
+            added = _append_notes(data, value)
+            if added:
+                changes.append(f"X-notes → notes ({added} item(s))")
+            else:
+                changes.append("removed X-notes (already in notes)")
 
     if "X-tips" in data:
         added = _append_notes(data, data.pop("X-tips"))
@@ -751,6 +951,8 @@ def migrate_recipe(data: dict[str, Any]) -> tuple[dict[str, Any], list[str]]:
         data["X-categories"] = categories
         changes.append(f"added X-categories {categories}")
 
+    changes.extend(_fill_missing_categories(data, recipe_id=recipe_id, is_reference=is_reference))
+
     prior_tags = data.get("X-tags")
     structured_tags, dropped_tags = _build_structured_tags(data, legacy_cats)
     if structured_tags:
@@ -784,7 +986,7 @@ def migrate_recipe(data: dict[str, Any]) -> tuple[dict[str, Any], list[str]]:
         changes.append("normalized cuisine tags (dropped -inspired)")
     if _relocate_freezer_friendly(data):
         changes.append("freezer-friendly: planning → context")
-    changes.extend(_migrate_handwritten_and_tips(data))
+    changes.extend(_migrate_recipe_notes(data))
 
     return data, changes
 

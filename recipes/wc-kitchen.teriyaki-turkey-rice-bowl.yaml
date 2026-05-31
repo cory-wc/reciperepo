@@ -61,6 +61,11 @@ notes:
 - Bulgogi sauce can be substituted to make a bulgogi rice bowl.
 - Top with quick-pickled onions.
 - Garnish with diced green onions.
+X-categories:
+  dish_type:
+  - bowl
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:

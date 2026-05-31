@@ -38,6 +38,11 @@ steps:
 - step: Add ground beef to skillet. Break up and cook beef.
 - step: Mix tomatoes, corn, beef, and macaroni.
 - step: Cook on low for 5-10 minutes.
+X-categories:
+  dish_type:
+  - pasta
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:

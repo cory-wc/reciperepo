@@ -65,6 +65,11 @@ steps:
 - step: Serve immediately in tacos, burritos, salads, or other dishes.
 notes:
 - Refrigerate in a sealed container up to 3 days, or freeze up to 3 months.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-source-verification:
   status: needs-review
   notes: []

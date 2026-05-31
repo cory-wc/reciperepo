@@ -72,6 +72,11 @@ steps:
 - step: Serve immediately, garnished with green onion and sesame seeds, if desired.
 notes:
 - Handwritten additions: quick-pickled red onion and radish for topping.
+X-categories:
+  dish_type:
+  - bowl
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:

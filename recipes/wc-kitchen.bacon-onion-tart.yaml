@@ -41,6 +41,11 @@ steps:
 - step: Pour mixture into pie crusts.
 - step: Bake 40 minutes, or until egg is set.
 - step: Cool and serve.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-source-verification:
   status: needs-review
   notes: []

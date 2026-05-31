@@ -1,0 +1,69 @@
+recipe_uuid: wc-kitchen.split-pea-soup
+recipe_name: Split Pea Soup (Instant Pot)
+yields:
+- amount: 8
+  unit: servings
+ingredients:
+- butter:
+    amounts:
+    - amount: 3
+      unit: tablespoons
+- onion:
+    amounts:
+    - amount: 1
+      unit: whole
+    processing:
+    - diced
+- celery:
+    amounts:
+    - amount: 2
+      unit: ribs
+    processing:
+    - diced
+- carrots:
+    amounts:
+    - amount: 2–3
+      unit: whole
+    processing:
+    - diced
+- ham bone or diced ham:
+    amounts:
+    - amount: 1
+      unit: whole
+    notes: 1 ham bone or 6 oz diced ham
+- dry split peas:
+    amounts:
+    - amount: 1
+      unit: lbs
+- chicken or veggie stock:
+    amounts:
+    - amount: 6
+      unit: cups
+- bay leaves:
+    amounts:
+    - amount: 2
+      unit: whole
+steps:
+- step: Using butter, sauté onion, celery, and carrots in the Instant Pot until soft.
+    Season with salt and pepper.
+- step: Add the split peas, stock, ham, and bay leaves.
+- step: Cook on high pressure for 15 minutes.
+- step: Allow pressure to release for 10–15 minutes.
+- step: (For ham bone only) Remove the meat from the bone and add back into soup.
+notes:
+- To make in a slow cooker, cook on low for 8 hours or high for 4 hours.
+X-categories:
+  dish_type:
+  - soup
+  meal_type:
+  - dinner
+X-tags:
+  method:
+  - instant_pot
+  - slow_cooker
+X-source-verification:
+  status: verified
+  notes:
+  - Custom recipe card; no source URL visible
+X-original-source: ../../originals/split-pea-soup-20260523.jpg
+X-total_time: 50 minutes

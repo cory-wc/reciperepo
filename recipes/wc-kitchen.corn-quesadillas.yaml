@@ -52,9 +52,15 @@ steps:
     and remaining tortillas. Brush tops with remaining oil.
 - step: Cook quesadillas 1-2 minutes on each side on a skillet over medium-high heat.
 - step: Cut each quesadilla into six wedges. Serve with guacamole and sour cream.
+notes:
+- Serve with guacamole, sour cream, and warmed refried beans.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-source-verification:
   status: needs-review
   notes: []
 X-original-source: ../originals/corn-quesadillas-20260523.jpg
 X-total_time: 20 minutes
-X-notes: Serve with guacamole, sour cream, and warmed refried beans.
