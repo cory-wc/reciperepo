@@ -225,6 +225,36 @@ METHOD_TAGS: dict[str, str] = {
     "blackened": "stovetop",
 }
 
+SLOW_COOKER_RE = re.compile(
+    r"\b(?:slow[\s-]?cooker|crock[\s-]?pot|crockpot)\b",
+    re.IGNORECASE,
+)
+INSTANT_POT_RE = re.compile(r"\binstant[\s-]?pot\b", re.IGNORECASE)
+
+DIETARY_FALSE_POSITIVE_PATTERNS: tuple[re.Pattern[str], ...] = tuple(
+    re.compile(p, re.IGNORECASE)
+    for p in (
+        r"non[\s-]?vegan[\s-]?vegetarian[\s-]?friendly",
+        r"vegan[\s-]?vegetarian[\s-]?friendly",
+        r"vegetarian[\s-]?adaptable",
+        r"vegan[\s-]?adaptable",
+        r"non[\s-]?vegan",
+        r"non[\s-]?vegetarian",
+        r"not[\s-]?vegan",
+        r"not[\s-]?vegetarian",
+        r"vegetarian oyster sauce",
+        r"\bto make vegetarian\b",
+        r"\bto make vegan\b",
+        r"\bfor vegan\b",
+        r"\bfor vegetarian\b",
+        r"\bmake it vegetarian\b",
+        r"\bmake it vegan\b",
+        r"\bvegetarian version\b",
+        r"\bvegan version\b",
+        r"\bvegan parmesan\b",
+    )
+)
+
 CONTEXT_TAGS: dict[str, str] = {
     "weeknight": "weeknight",
     "weeknight dinner": "weeknight",
@@ -360,6 +390,134 @@ def _ensure_structured_tags(data: dict[str, Any]) -> dict[str, list[str]]:
     elif "X-tags" in data:
         del data["X-tags"]
     return data.get("X-tags") or {}
+
+
+def _recipe_search_text(data: dict[str, Any]) -> str:
+    """Collect prose fields to scan for cooking-method keywords."""
+    parts: list[str] = [
+        str(data.get("recipe_name", "")),
+        str(data.get("recipe_uuid", "")),
+        str(data.get("description", "")),
+    ]
+    for step in data.get("steps") or []:
+        if isinstance(step, dict):
+            parts.append(str(step.get("step", "")))
+        else:
+            parts.append(str(step))
+    for ing in data.get("ingredients") or []:
+        if not isinstance(ing, dict):
+            continue
+        for name, body in ing.items():
+            parts.append(str(name))
+            if not isinstance(body, dict):
+                continue
+            parts.append(str(body.get("notes", "")))
+            for proc in body.get("processing") or []:
+                parts.append(str(proc))
+    return " ".join(parts)
+
+
+def _infer_methods_from_text(data: dict[str, Any]) -> list[str]:
+    text = _recipe_search_text(data)
+    methods: list[str] = []
+    if SLOW_COOKER_RE.search(text):
+        methods.append("slow_cooker")
+    if INSTANT_POT_RE.search(text):
+        methods.append("instant_pot")
+    return methods
+
+
+def _apply_inferred_methods(data: dict[str, Any]) -> list[str]:
+    """Add method tags inferred from recipe text when not already present."""
+    inferred = _infer_methods_from_text(data)
+    if not inferred:
+        return []
+
+    tags = _ensure_structured_tags(data)
+    existing = set(tags.get("method") or [])
+    added = [m for m in inferred if m not in existing]
+    if not added:
+        return []
+
+    tags.setdefault("method", []).extend(added)
+    tags["method"] = _unique(tags["method"])
+    structured = {k: v for k, v in tags.items() if v}
+    if structured:
+        data["X-tags"] = structured
+    elif "X-tags" in data:
+        del data["X-tags"]
+    return added
+
+
+def _scrub_dietary_false_positives(text: str) -> str:
+    for pattern in DIETARY_FALSE_POSITIVE_PATTERNS:
+        text = pattern.sub(" ", text)
+    return text
+
+
+def _text_mentions_dietary(text: str, term: str) -> bool:
+    scrubbed = _scrub_dietary_false_positives(text)
+    return bool(re.search(rf"\b{term}\b", scrubbed, re.IGNORECASE))
+
+
+def _strong_dietary_text(data: dict[str, Any]) -> str:
+    return " ".join(
+        [
+            str(data.get("recipe_name", "")),
+            str(data.get("recipe_uuid", "")),
+            str(data.get("description", "")),
+        ]
+    )
+
+
+def _full_dietary_text(data: dict[str, Any]) -> str:
+    text = _recipe_search_text(data)
+    for note in data.get("notes") or []:
+        text += " " + str(note)
+    return text
+
+
+def _infer_dietary_from_text(data: dict[str, Any]) -> list[str]:
+    existing = set((_ensure_structured_tags(data).get("dietary") or []))
+    adaptable_only = existing <= {"vegetarian_adaptable", "vegan_adaptable"}
+    text = (
+        _strong_dietary_text(data)
+        if adaptable_only and existing
+        else _full_dietary_text(data)
+    )
+
+    dietary: list[str] = []
+    if _text_mentions_dietary(text, "vegan"):
+        dietary.append("vegan")
+    if _text_mentions_dietary(text, "vegetarian"):
+        dietary.append("vegetarian")
+    if "vegan" in dietary and "vegetarian" not in dietary:
+        dietary.append("vegetarian")
+    return dietary
+
+
+def _apply_inferred_dietary(data: dict[str, Any]) -> list[str]:
+    """Add dietary tags inferred from recipe text when not already present."""
+    inferred = _infer_dietary_from_text(data)
+    tags = _ensure_structured_tags(data)
+    existing = set(tags.get("dietary") or [])
+    if "vegan" in existing or "vegan" in inferred:
+        inferred = _unique(inferred + ["vegetarian"])
+    if not inferred:
+        return []
+
+    added = [d for d in inferred if d not in existing]
+    if not added:
+        return []
+
+    tags.setdefault("dietary", []).extend(added)
+    tags["dietary"] = _unique(tags["dietary"])
+    structured = {k: v for k, v in tags.items() if v}
+    if structured:
+        data["X-tags"] = structured
+    elif "X-tags" in data:
+        del data["X-tags"]
+    return added
 
 
 def _normalize_cuisine_in_tags(data: dict[str, Any]) -> bool:
@@ -1135,6 +1293,14 @@ def migrate_recipe(data: dict[str, Any]) -> tuple[dict[str, Any], list[str]]:
             changes.append("removed X-tags")
     if dropped_tags:
         changes.append(f"dropped flat tags: {dropped_tags}")
+
+    inferred_methods = _apply_inferred_methods(data)
+    if inferred_methods:
+        changes.append(f"inferred method from text: {inferred_methods}")
+
+    inferred_dietary = _apply_inferred_dietary(data)
+    if inferred_dietary:
+        changes.append(f"inferred dietary from text: {inferred_dietary}")
 
     for legacy_key in ("X-category", "X-dietary", "X-cuisine"):
         if legacy_key in data:
