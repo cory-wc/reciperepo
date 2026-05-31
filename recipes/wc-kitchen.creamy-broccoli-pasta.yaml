@@ -1,5 +1,6 @@
 recipe_uuid: wc-kitchen.creamy-broccoli-pasta
 recipe_name: Creamy Broccoli Pasta
+source_url: https://www.thekitchn.com
 yields:
 - amount: 4
   unit: servings
@@ -57,12 +58,16 @@ steps:
     pasta is al dente and liquid is mostly evaporated, 8–9 minutes.
 - step: Remove from heat. Stir in cheese and yogurt. Taste and season as needed.
 - step: Serve topped with more cheese.
-X-total_time: ~20 minutes
-X-original-source: ../originals/creamy-broccoli-pasta-20260523.jpg
-source_url: https://www.thekitchn.com
 notes:
 - Doesn't turn out well with frozen broccoli.
+X-categories:
+  dish_type:
+  - pasta
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:
   - Source: theKitchn.com; exact URL not captured from image
+X-original-source: ../originals/creamy-broccoli-pasta-20260523.jpg
+X-total_time: ~20 minutes

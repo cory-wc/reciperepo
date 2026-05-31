@@ -1,11 +1,8 @@
 recipe_uuid: wc-kitchen.french-macarons
 recipe_name: French Macarons
 source_url: https://sallysbakingaddiction.com/french-macarons/print/95647/
-X-original-source: ../originals/french-macarons-20260523.jpg
-author: Sally
-X-prep_time: 1 hour (plus aging egg whites)
-X-cook_time: 13 minutes
-X-total_time: 1 hour, 30 minutes
+source_authors:
+- Sally
 yields:
 - amount: 40
   unit: shells
@@ -35,7 +32,7 @@ ingredients:
     notes: aka caster sugar; see recipe note
 - gel food coloring:
     amounts:
-    - amount: "1–2"
+    - amount: 1–2
       unit: drops
     notes: optional
 - almond flour:
@@ -70,9 +67,18 @@ steps:
     food coloring (if using) into the egg whites.
 notes:
 - Fill shells with desired filling (buttercream, ganache, jam, etc.).
+X-categories:
+  dish_type:
+  - dessert
+  meal_type:
+  - dessert
 X-source-verification:
   status: needs-review
   notes:
   - Recipe is page 1 of 3; steps are incomplete as only the first page of instructions
     is visible in the image
   - Source URL extracted from printed footer of page
+X-original-source: ../originals/french-macarons-20260523.jpg
+X-prep_time: 1 hour (plus aging egg whites)
+X-cook_time: 13 minutes
+X-total_time: 1 hour, 30 minutes

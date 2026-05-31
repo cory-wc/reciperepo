@@ -3,10 +3,6 @@ recipe_name: Beef Barley Soup
 source_url: https://www.spendwithpennies.com
 source_authors:
 - Holly Nilsson
-X-original-source: ../originals/beef-barley-soup-20260523.jpg
-X-active_time: 20 minutes
-X-cook_time: 50 minutes
-X-total_time: 1 hour 10 minutes
 yields:
 - amount: 8
   unit: servings
@@ -95,10 +91,19 @@ steps:
 - step: Add remaining ingredients and bring to a boil. Reduce heat and simmer covered
     about 40–50 minutes or until barley is cooked.
 - step: Remove bay leaf and serve.
-X-notes:
+notes:
 - Soup may thicken upon cooling; add extra broth or water to reach desired consistency.
+X-categories:
+  dish_type:
+  - soup
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:
   - Source printed from SpendWithPennies.com; exact URL not captured from image
   - Some quantities confirmed from rotated image orientation
+X-original-source: ../originals/beef-barley-soup-20260523.jpg
+X-cook_time: 50 minutes
+X-active_time: 20 minutes
+X-total_time: 1 hour 10 minutes

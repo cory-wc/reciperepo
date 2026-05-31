@@ -1,15 +1,11 @@
 recipe_uuid: wc-kitchen.korean-beef-bowl
 recipe_name: Korean Beef Bowl
-source_url: https://damndelicious.net/2013/07/07/korean-beef-bowl/
-X-original-source: ../originals/korean-beef-bowl-20260523.jpg
 description: Tastes like Korean BBQ and is on your dinner table in just 15 min from
   start to finish! Seriously. It doesn't get any easier than this!
+source_url: https://damndelicious.net/2013/07/07/korean-beef-bowl/
 yields:
 - amount: 4
   unit: servings
-X-active_time: 5 minutes
-X-cook_time: 10 minutes
-X-total_time: 15 minutes
 ingredients:
 - brown sugar:
     amounts:
@@ -64,7 +60,6 @@ ingredients:
     - amount: 0.25
       unit: teaspoons
     notes: for garnish
-
 steps:
 - step: In a small bowl, whisk together brown sugar, soy sauce, sesame oil, red pepper
     flakes and ginger.
@@ -75,12 +70,20 @@ steps:
 - step: Stir in soy sauce mixture and green onions until well combined, allowing to
     simmer until heated through, about 2 minutes.
 - step: Serve immediately, garnished with green onion and sesame seeds, if desired.
-
 notes:
 - Handwritten additions: quick-pickled red onion and radish for topping.
-
+X-categories:
+  dish_type:
+  - bowl
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:
   - Damn Delicious; adapted from Six Sisters' Stuff
-  - Handwritten additions: ½ onion diced (cooked w/ meat); red onion/radish quick pickled (topping)
+  - Handwritten additions: ½ onion diced (cooked w/ meat); red onion/radish quick
+      pickled (topping)
+X-original-source: ../originals/korean-beef-bowl-20260523.jpg
+X-cook_time: 10 minutes
+X-active_time: 5 minutes
+X-total_time: 15 minutes

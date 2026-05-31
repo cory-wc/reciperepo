@@ -1,15 +1,13 @@
 recipe_uuid: wc-kitchen.tuna-and-white-bean-salad
 recipe_name: Tuna-and-White-Bean Salad
-X-original-source: ../originals/tuna-and-white-bean-salad-20260523.jpg
-X-source-publication: Food & Wine
-X-source-author: Food & Wine Editors
-X-source-updated: May 31, 2017
 description: 'Purists would insist on imported Italian canned tuna fish for the Tuscan
   classic, but we think plain old tuna from the supermarket is just fine, too. However,
   make sure the fish is packed in oil; not only will the tuna be infinitely more flavorful,
   we use the oil as part of the dressing.
 
   '
+source_authors:
+- Food & Wine Editors
 ingredients:
 - tuna packed in oil:
     amounts:
@@ -83,14 +81,20 @@ notes:
   almond flavors will blend well with the earthiness of the beans.
 
   '
-X-category: salad
+X-categories:
+  dish_type:
+  - salad
+  meal_type:
+  - dinner
 X-tags:
-- tuna
-- white bean
-- Tuscan
-- no-cook
-- quick
+  cuisine:
+  - italian
+  method:
+  - no_cook
+  context:
+  - quick
 X-source-verification:
   status: verified
   notes:
   - Food & Wine; updated May 31, 2017; URL not captured
+X-original-source: ../originals/tuna-and-white-bean-salad-20260523.jpg

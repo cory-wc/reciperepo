@@ -2,19 +2,11 @@ recipe_uuid: wc-kitchen.middle-eastern-lentil-soup
 recipe_name: Middle Eastern Lentil Soup
 description: A thick and hearty spiced lentil soup that's a complete comfort dish
   and popular with the whole family!
-author: Farah Abumaizar
-X-original-source: ../originals/middle-eastern-lentil-soup-20260530.pdf
-X-category: Soup
-X-cuisine: Middle Eastern
-X-prep_time: 10 minutes
-X-cook_time: 20 minutes
-X-total_time: 30 minutes
+source_authors:
+- Farah Abumaizar
 yields:
 - amount: 4
   unit: servings
-X-nutrition:
-  calories: 233 kcal
-  per: serving
 ingredients:
 - olive oil:
     amounts:
@@ -28,7 +20,7 @@ ingredients:
     - finely diced
 - carrots:
     amounts:
-    - amount: "1–2"
+    - amount: 1–2
       unit: whole
     processing:
     - finely diced
@@ -108,7 +100,14 @@ steps:
 - step: Once soup is totally cooked through, use an immersion blender or a normal
     blender (in batches) and blend to desired consistency.
 - step: Serve hot, with a slice of lemon and green olives on the side.
-
+X-categories:
+  dish_type:
+  - soup
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - middle_eastern
 X-source-verification:
   status: verified
   notes:
@@ -117,3 +116,10 @@ X-source-verification:
   - Carrot quantity 1–2 confirmed in PDF.
   - Steps 4–6 (flour/butter roux, blending, serving) were cut off in original image;
     now complete from PDF.
+X-original-source: ../originals/middle-eastern-lentil-soup-20260530.pdf
+X-prep_time: 10 minutes
+X-cook_time: 20 minutes
+X-total_time: 30 minutes
+X-nutrition:
+  calories: 233 kcal
+  per: serving

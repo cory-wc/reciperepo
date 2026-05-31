@@ -1,26 +1,11 @@
 recipe_uuid: wc-kitchen.instant-pot-black-beans
 recipe_name: Instant Pot Black Beans
-author: Melanie McDonald
-source_url: https://avirtualvegan.com/instant-pot-vegan-seasoned-black-beans/
-X-original-source: ../originals/instant-pot-black-beans-20260523.jpg
 description: My Instant Pot Black Beans recipe makes a simple, tasty, healthy & budget-friendly
   dinner. They are really quick and easy to make with no soaking involved. They are
   great to have on hand for simple dinners and meal prep!
-X-category: side dish
-X-tags:
-- instant pot
-- pressure cooker
-- black beans
-- vegan
-- budget-friendly
-- meal prep
-X-dietary:
-- vegan
-- vegetarian
-X-prep_time: 7 minutes
-X-cook_time: 25 minutes
-X-pressure_building_and_release_time: 30 minutes
-X-total_time: 32 minutes
+source_url: https://avirtualvegan.com/instant-pot-vegan-seasoned-black-beans/
+source_authors:
+- Melanie McDonald
 yields:
 - amount: 8
   unit: servings
@@ -91,13 +76,32 @@ steps:
 - step: Cook on high pressure MANUAL or PRESSURE COOK (in newer models) for 25 minutes
     for tender, soft beans (or 30 minutes if you prefer really soft slightly mushy
     beans) and leave the pressure to release naturally before opening the lid. Note
-    that the beans continue to cook during the natural pressure release so if you skip
-    this step and vent manually your beans will turn out much firmer.
+    that the beans continue to cook during the natural pressure release so if you
+    skip this step and vent manually your beans will turn out much firmer.
 - step: Add salt to taste then squeeze the juice of the lime into the beans and give
     them a quick stir before serving.
+X-categories:
+  dish_type:
+  - component
+  - side
+  meal_type:
+  - anytime
+X-tags:
+  dietary:
+  - vegan
+  - vegetarian
+  method:
+  - instant_pot
+  context:
+  - meal_prep
 X-source-verification:
   status: verified
   notes:
   - A Virtual Vegan; Author: Melanie McDonald
   - X-category corrected from "salads" to "side dish"
   - Total time 32 min excludes pressure build/release time (additional ~30 min)
+X-original-source: ../originals/instant-pot-black-beans-20260523.jpg
+X-prep_time: 7 minutes
+X-cook_time: 25 minutes
+X-total_time: 32 minutes
+X-pressure_building_and_release_time: 30 minutes

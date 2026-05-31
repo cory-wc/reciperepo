@@ -1,28 +1,15 @@
 recipe_uuid: wc-kitchen.roasted-potatoes-and-kielbasa
 recipe_name: Roasted Potatoes and Kielbasa (One-Pan Recipe)
-source_url: https://natashaskitchen.com
-X-original-source: ../originals/roasted-potatoes-and-kielbasa-20260523.jpg
 description: 'These roasted potatoes are ultra crispy and flavorful with a perfect
   browning on the coins of kielbasa. Easy one-pan dinner idea.
 
   '
-author: Natasha of NatashasKitchen.com
-X-prep_time: 5 minutes
-X-cook_time: 50 minutes
-X-total_time: 55 minutes
-X-skill_level: Easy
-X-cost_to_make: $6-$8
-X-category: Dinner
-X-tags:
-- one-pan
-- potatoes
-- kielbasa
-- roasted
-
+source_url: https://natashaskitchen.com
+source_authors:
+- Natasha of NatashasKitchen.com
 yields:
 - amount: 4
   unit: servings
-
 ingredients:
 - small red potatoes:
     amounts:
@@ -59,7 +46,6 @@ ingredients:
     notes: or sausage; Polish kielbasa used
     processing:
     - cut into 3/4" thick rings
-
 steps:
 - step: Preheat oven to 400°F. Line a large baking sheet with parchment paper or Silpat.
 - step: 'Cut potatoes into rings no larger than 1/2" thick. If potatoes are tiny baby
@@ -74,7 +60,14 @@ steps:
     Garnish with fresh parsley if desired.
 
     '
-
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
+X-tags:
+  method:
+  - oven
 X-source-verification:
   status: verified
   notes:
@@ -82,3 +75,9 @@ X-source-verification:
   - Copyright 2019 Natasha's Kitchen noted on source document.
   - Source URL inferred from author attribution; exact URL not visible on printed
     page.
+X-original-source: ../originals/roasted-potatoes-and-kielbasa-20260523.jpg
+X-prep_time: 5 minutes
+X-cook_time: 50 minutes
+X-total_time: 55 minutes
+X-cost_to_make: $6-$8
+X-skill_level: Easy

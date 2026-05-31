@@ -1,34 +1,9 @@
 recipe_uuid: wc-kitchen.mushroom-onion-and-sage-stuffing
 recipe_name: Mushroom, Onion, and Sage Stuffing
 source_url: https://www.umami.site
-X-original-source: ../originals/mushroom-onion-and-sage-stuffing-20260523.jpg
 yields:
 - amount: 9
   unit: servings
-X-active_time: 15 minutes
-X-total_time: 1 hour 5 minutes
-X-nutrition:
-  calories: 247 kcal
-  carbohydrates: 37g
-  protein: 10g
-  fat: 6g
-  saturated_fat: 3g
-  cholesterol: 52mg
-  sodium: 545mg
-  potassium: 283mg
-  fiber: 2g
-  sugar: 4g
-  vitamin_a: 5.3%
-  vitamin_c: 2.4%
-  calcium: 7.7%
-  iron: 13.9%
-X-category: Side Dish
-X-tags:
-- stuffing
-- dressing
-- side dish
-- mushroom
-- Thanksgiving
 ingredients:
 - french bread:
     amounts:
@@ -36,7 +11,7 @@ ingredients:
       unit: pounds
 - white onion:
     amounts:
-    - amount: "1 1/3"
+    - amount: 1 1/3
       unit: cups
     processing:
     - diced
@@ -106,7 +81,35 @@ steps:
 - step: Pour everything into a lightly greased baking dish and bake in a 350°F oven
     for 40 to 45 minutes.
 - step: The stuffing is done when everything is nicely browned and crispy on top.
+X-categories:
+  dish_type:
+  - side
+  meal_type:
+  - dinner
+X-tags:
+  method:
+  - oven
+  season:
+  - fall
 X-source-verification:
   status: verified
   notes:
   - Source: umami.site; onion corrected from 1.5 cups to 1⅓ cups per image
+X-original-source: ../originals/mushroom-onion-and-sage-stuffing-20260523.jpg
+X-active_time: 15 minutes
+X-total_time: 1 hour 5 minutes
+X-nutrition:
+  calories: 247 kcal
+  carbohydrates: 37g
+  protein: 10g
+  fat: 6g
+  saturated_fat: 3g
+  cholesterol: 52mg
+  sodium: 545mg
+  potassium: 283mg
+  fiber: 2g
+  sugar: 4g
+  vitamin_a: 5.3%
+  vitamin_c: 2.4%
+  calcium: 7.7%
+  iron: 13.9%

@@ -6,9 +6,6 @@ description: Wondering what to make tonight? Quickly throw together this hearty 
 yields:
 - amount: 4
   unit: servings
-X-prep_time: 5 mins
-X-cook_time: 20 mins
-X-total_time: 25 mins
 ingredients:
 - lean ground turkey:
     amounts:
@@ -101,17 +98,23 @@ steps:
     on medium high heat, stirring occasionally until sides of potatoes have browned.
     This can take 5 to 10 minutes depending on your stove and potatoes. (Instructions
     cut off in image — remainder not visible.)
-X-original-source: ../originals/ground-turkey-and-potato-skillet-20260523.jpg
-X-category: main dish
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-tags:
-- one pot
-- skillet
-- ground turkey
-- potatoes
-- weeknight dinner
+  method:
+  - stovetop
+  context:
+  - weeknight
 X-source-verification:
   status: needs-manual-review
   reviewed: true
   notes:
   - Instructions cut off partway through step 2; source URL not visible in image
   - Steps 3+ (combining turkey back with potatoes + sauce) not captured
+X-original-source: ../originals/ground-turkey-and-potato-skillet-20260523.jpg
+X-prep_time: 5 mins
+X-cook_time: 20 mins
+X-total_time: 25 mins

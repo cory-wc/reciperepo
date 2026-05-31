@@ -1,11 +1,8 @@
 recipe_uuid: wc-kitchen.cabbage-soup
 recipe_name: Cabbage Soup
-X-original-source: ../originals/cabbage-soup-20260523.jpg
 yields:
 - amount: 8
   unit: servings
-X-active_time: 25 minutes
-X-total_time: 3 hours 25 minutes
 ingredients:
 - bacon:
     amounts:
@@ -42,7 +39,15 @@ steps:
     and saute until soft.
 - step: Add broth, tomatoes, italian seasoning, and cabbage.
 - step: Simmer for 3 hours.
+X-categories:
+  dish_type:
+  - soup
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:
   - Custom recipe card format; no external source URL visible
+X-original-source: ../originals/cabbage-soup-20260523.jpg
+X-active_time: 25 minutes
+X-total_time: 3 hours 25 minutes

@@ -1,19 +1,8 @@
 recipe_uuid: wc-kitchen.slow-cooker-beef-stew
 recipe_name: Slow Cooker Beef Stew
-X-original-source: ../originals/slow-cooker-beef-stew-20260523.jpg
-X-attribution: Original recipe from a farmgirl's dabbles
-X-category: Main Dish
-X-tags:
-- slow cooker
-- beef
-- stew
-- comfort food
-X-total_time: 6 hours 30 minutes
-
 yields:
 - amount: 10
   unit: servings
-
 ingredients:
 - olive oil:
     amounts:
@@ -84,18 +73,27 @@ ingredients:
     amounts:
     - amount: 3
       unit: leaves
-
 steps:
 - step: Sprinkle beef with salt and pepper. Brown meat in olive oil. Drain excess
     fat and transfer to slow cooker.
 - step: Add all ingredients to slow cooker and stir.
 - step: Cover and cook on high for 4 hours, then turn heat to low and cook for 2 more
     hours.
-
 notes:
 - Serve with fresh baguette.
-
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
+X-tags:
+  method:
+  - slow_cooker
+  context:
+  - comfort_food
 X-source-verification:
   status: verified
   notes:
-  - Source: "a farmgirl's dabbles"
+  - Source: a farmgirl's dabbles
+X-original-source: ../originals/slow-cooker-beef-stew-20260523.jpg
+X-total_time: 6 hours 30 minutes

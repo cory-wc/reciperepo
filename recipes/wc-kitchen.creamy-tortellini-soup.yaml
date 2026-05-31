@@ -3,19 +3,8 @@ recipe_name: Creamy Tortellini Soup
 description: My favorite cozy weeknight soup made in just 30 min! It's so stinking
   easy too. Loaded with tender tortellini, sausage and kale!
 source_url: https://damndelicious.net/2019/01/30/creamy-tortellini-soup/
-X-original-source: ../originals/creamy-tortellini-soup-20260523.jpg
-X-category: soup
-X-tags:
-- weeknight
-- tortellini
-- sausage
-- kale
-- creamy
-X-active_time: 15 minutes
-X-cook_time: 15 minutes
-X-total_time: 30 minutes
 yields:
-- amount: "4–6"
+- amount: 4–6
   unit: servings
 ingredients:
 - olive oil:
@@ -95,9 +84,21 @@ steps:
 - step: Stir in kale until wilted, about 1–2 minutes. Stir in heavy cream and basil
     until heated through, about 1 minute; season with salt and pepper, to taste.
 - step: Serve immediately.
+X-categories:
+  dish_type:
+  - soup
+  meal_type:
+  - dinner
+X-tags:
+  context:
+  - weeknight
 X-source-verification:
   status: verified
   notes:
   - Recipe printed from damndelicious.net on 3/6/21; print URL visible in footer.
   - Yield given as range 4–6 servings; consolidated to single range entry.
   - Prep time 15 minutes and cook time 15 minutes visible in header.
+X-original-source: ../originals/creamy-tortellini-soup-20260523.jpg
+X-cook_time: 15 minutes
+X-active_time: 15 minutes
+X-total_time: 30 minutes

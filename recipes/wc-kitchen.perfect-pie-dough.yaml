@@ -1,18 +1,9 @@
 recipe_uuid: wc-kitchen.perfect-pie-dough
 recipe_name: Perfect Pie Dough
 source_url: https://www.surlatable.com
-X-original-source: ../originals/perfect-pie-dough-20260523.jpg
-X-category: Pastry
-X-tags:
-- pie dough
-- pie crust
-- pastry
-- make-ahead
-
 yields:
 - amount: 1
   unit: 9- or 10-inch pie crust
-
 ingredients:
 - unbleached all-purpose flour:
     amounts:
@@ -39,9 +30,8 @@ ingredients:
     - cut into 1/2-inch cubes
 - ice water:
     amounts:
-    - amount: "3–4"
+    - amount: 3–4
       unit: tablespoons
-
 steps:
 - step: Place flour, sugar, and salt in the bowl of a food processor or large mixing
     bowl. By pulsing or using a pastry blender, cut the butter into the flour until
@@ -53,17 +43,22 @@ steps:
 - step: Flatten the dough into a disk about 6 inches wide, cover in plastic wrap,
     and refrigerate for 30 minutes before using. If refrigerating the dough for longer
     than 30 minutes, remove it 15 minutes before rolling out.
-
 notes:
 - This recipe produces a simple, lightly sweetened crust that can be used with both
   sweet and savory fillings. The dough can be made ahead of time, wrapped in plastic,
   and refrigerated up to 2 days, or frozen for 1 month.
-- >-
-  A second handwritten recipe titled "Other Pie Dough" appears on the same page
-  (attributed to Cory) with ingredients: 5 cups AP flour, 1 lb soft butter (or 1/2
-  lard), 1 cup cool water, 1 tbsp vinegar (any), 1/2-1 tbsp salt. No steps were
-  provided for that recipe.
-
+- 'A second handwritten recipe titled "Other Pie Dough" appears on the same page (attributed
+  to Cory) with ingredients: 5 cups AP flour, 1 lb soft butter (or 1/2 lard), 1 cup
+  cool water, 1 tbsp vinegar (any), 1/2-1 tbsp salt. No steps were provided for that
+  recipe.'
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
+X-tags:
+  context:
+  - make_ahead
 X-source-verification:
   status: verified
   notes:
@@ -75,3 +70,4 @@ X-source-verification:
     but has no steps; captured in notes.
   - Source is a Sur La Table printed recipe card; instructor name "Cory" visible on
     card.
+X-original-source: ../originals/perfect-pie-dough-20260523.jpg

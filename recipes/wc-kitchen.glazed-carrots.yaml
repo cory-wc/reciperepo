@@ -1,11 +1,8 @@
 recipe_uuid: wc-kitchen.glazed-carrots
 recipe_name: Glazed Carrots
 description: Simple dish with tender carrots with a buttery glaze and a mild sweetness.
-author: Tricia McTamaney
-X-original-source: ../originals/glazed-carrots-20260523.jpg
-X-active_time: 10 minutes
-X-cook_time: 15 minutes
-X-total_time: 25 minutes
+source_authors:
+- Tricia McTamaney
 yields:
 - amount: 8
   unit: servings
@@ -41,14 +38,17 @@ steps:
 - step: Melt butter in the same saucepan; stir brown sugar, salt, and white pepper
     into butter until brown sugar and salt have dissolved. Transfer carrots into brown
     sugar sauce; cook and stir until carrots are glazed with sauce, about 5 more minutes.
-X-category: side dish
-X-tags:
-- carrots
-- glazed
-- side dish
-- vegetable
+X-categories:
+  dish_type:
+  - side
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:
   - Allrecipes; author Tricia McTamaney
   - X-category corrected from "Salads" to "side dish"
+X-original-source: ../originals/glazed-carrots-20260523.jpg
+X-cook_time: 15 minutes
+X-active_time: 10 minutes
+X-total_time: 25 minutes

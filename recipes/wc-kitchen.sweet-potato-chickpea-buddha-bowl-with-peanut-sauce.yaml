@@ -1,17 +1,5 @@
 recipe_uuid: wc-kitchen.sweet-potato-chickpea-buddha-bowl-with-peanut-sauce
 recipe_name: Sweet Potato Chickpea Buddha Bowl with Peanut Sauce
-X-original-source: ../originals/sweet-potato-chickpea-buddha-bowl-with-peanut-sauce-20260523.jpg
-X-category: Main Dish
-X-tags:
-- buddha bowl
-- vegan
-- meal prep
-- grain bowl
-X-dietary:
-- vegan
-- gluten-free adaptable
-- dairy-free
-
 ingredients:
 - sweet potato:
     amounts: []
@@ -48,7 +36,6 @@ ingredients:
 - red pepper flakes:
     amounts: []
     notes: optional, for extra spice
-
 steps:
 - step: Add the cubed sweet potato and rinsed chickpeas in a bowl and toss with all
     spices/seasonings until well combined.
@@ -63,7 +50,6 @@ steps:
     grain of choice, then add the steamed veggies, sweet potato/chickpeas, avocado
     and top with a generous serving of peanut sauce, chopped cilantro and crushed
     peanuts. Add red pepper flakes for extra spice if desired.
-
 notes:
 - In place of broccoli you can use sautéed kale or asparagus, or even roast the broccoli
   with the sweet potatoes for more flavor. Anything goes — fresh spinach also works
@@ -71,7 +57,19 @@ notes:
 - For the peanut sauce, the recipe calls for 1/4–1/2 cup of water; author uses closer
   to 1/2 cup and adds a little extra spice.
 - Almond butter can be substituted for peanut butter in the sauce.
-
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
+X-tags:
+  dietary:
+  - vegan
+  - gluten_free_adaptable
+  - dairy_free
+  - vegetarian
+  context:
+  - meal_prep
 X-source-verification:
   status: needs-review
   notes:
@@ -82,4 +80,6 @@ X-source-verification:
   - Grain type noted as millet used by author but recipe allows rice or quinoa
   - Peanut sauce quantity noted as 1/4-1/2 cup of water (adjustment note, not full
     sauce recipe)
-  - source_url was incorrectly captured as a Baker Bettie URL; removed pending correct URL.
+  - source_url was incorrectly captured as a Baker Bettie URL; removed pending correct
+    URL.
+X-original-source: ../originals/sweet-potato-chickpea-buddha-bowl-with-peanut-sauce-20260523.jpg

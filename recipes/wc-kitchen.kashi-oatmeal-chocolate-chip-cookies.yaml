@@ -1,7 +1,5 @@
 recipe_uuid: wc-kitchen.kashi-oatmeal-chocolate-chip-cookies
 recipe_name: Kashi Oatmeal Chocolate Chip Cookies
-X-original-source: ../originals/kashi-oatmeal-chocolate-chip-cookies-20260523.jpg
-X-total_time: ~45 minutes
 yields:
 - amount: 8
   unit: cookies
@@ -51,9 +49,17 @@ steps:
 - step: Mix ingredients, starting with dry ingredients then wet. If needed, add milk
     until dough sticks together.
 - step: Stir in chocolate chips.
-- step: Form cookies by rolling dough into balls, approximately 2 tablespoons of dough per
-    cookie.
+- step: Form cookies by rolling dough into balls, approximately 2 tablespoons of dough
+    per cookie.
 - step: Bake for 10-15 minutes.
+X-categories:
+  dish_type:
+  - dessert
+  meal_type:
+  - dessert
+X-tags:
+  method:
+  - oven
 X-source-verification:
   status: verified
   notes:
@@ -63,3 +69,5 @@ X-source-verification:
   - Milk quantity listed as 1-2 TBSP as needed.
   - Original recipe source field on document is blank.
   - Flax egg ratio noted as 1 TBSP ground flax to 3 TBSP water.
+X-original-source: ../originals/kashi-oatmeal-chocolate-chip-cookies-20260523.jpg
+X-total_time: ~45 minutes

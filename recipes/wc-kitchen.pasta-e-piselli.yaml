@@ -6,26 +6,11 @@ description: 'Pasta e Piselli (pasta with peas) is a delicious, one-pot meal tha
   is sure to bring smiles to your dinner table.
 
   '
-author: Chef Dennis Littley
-X-original-source: ../originals/pasta-e-piselli-20260523.jpg
-X-active_time: 5 minutes
-X-cook_time: 25 minutes
-X-total_time: 30 minutes
-X-category:
-- Pasta
-- Side Dish
-X-tags:
-- Italian
-- Italian-American
-- one-pot
-X-nutrition:
-  calories: 432 kcal
-  per: serving
-
+source_authors:
+- Chef Dennis Littley
 yields:
 - amount: 8
   unit: servings
-
 ingredients:
 - ditalini pasta:
     amounts:
@@ -68,7 +53,7 @@ ingredients:
       unit: teaspoons
 - baby peas:
     amounts:
-    - amount: "14–16"
+    - amount: 14–16
       unit: oz
     notes: frozen or fresh
 - Pecorino Romano cheese:
@@ -78,7 +63,6 @@ ingredients:
     notes: or parmesan cheese
     processing:
     - grated
-
 steps:
 - step: Add the olive oil and chopped onions to a large pan over medium-high heat.
 - step: Cook the onions until soft (4–5 minutes). Don't let the onions brown.
@@ -96,7 +80,6 @@ steps:
 - step: Taste and season the pasta with peas to taste with salt and black pepper.
     If the pasta seems dry, add a little water to loosen it up.
 - step: Serve the pasta with additional grated cheese, black pepper, and crusty bread.
-
 notes:
 - Traditionally ditalini is used, but other small pasta shapes such as small shells,
   farfalle, pennette, elbow macaroni, and orzo can also be used.
@@ -106,9 +89,25 @@ notes:
 - Chicken broth or vegetable broth can be used instead of water for a more flavorful
   dish, or use half water and half broth. Cut back on the salt if using broth.
 - Parsley is mentioned in step 6 but not listed in the ingredients.
-
+X-categories:
+  dish_type:
+  - pasta
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - italian
+  method:
+  - stovetop
 X-source-verification:
   status: verified
   notes:
   - Author: Chef Dennis Littley
   - Parsley referenced in step 6 but not in printed ingredients list
+X-original-source: ../originals/pasta-e-piselli-20260523.jpg
+X-cook_time: 25 minutes
+X-active_time: 5 minutes
+X-total_time: 30 minutes
+X-nutrition:
+  calories: 432 kcal
+  per: serving

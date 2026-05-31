@@ -1,18 +1,8 @@
 recipe_uuid: wc-kitchen.instant-pot-cilantro-lime-rice-recipe
 recipe_name: Instant Pot Cilantro Lime Rice Recipe
 source_url: https://boulderlocavore.com/easy-instant-pot-cilantro-lime-rice-recipe/
-author: Toni Dash
-X-category: Side Dish
-X-tags:
-- cilantro lime rice
-- instant pot rice recipe
-- pressure cooker
-X-active_time: 5 minutes
-X-cook_time: 3 minutes
-X-total_time: 18 minutes
-X-nutrition:
-  calories: 270 kcal
-  serving_size: 1 cup
+source_authors:
+- Toni Dash
 yields:
 - amount: 5
   unit: 1-cup servings
@@ -57,9 +47,23 @@ steps:
     rice paddle that came with the Instant Pot (or a spatula).
 - step: Stir in the lime zest and chopped cilantro. Taste; add lime juice and/or oil
     as desired. Serve immediately.
-X-original-source: ../originals/instant-pot-cilantro-lime-rice-recipe-20260523.jpg
+X-categories:
+  dish_type:
+  - side
+  meal_type:
+  - dinner
+X-tags:
+  method:
+  - instant_pot
 X-source-verification:
   status: verified
   notes:
   - Printed from boulderlocavore.com, 4/10/2019; author Toni Dash
   - IP come-to-pressure time not included in stated cook time
+X-original-source: ../originals/instant-pot-cilantro-lime-rice-recipe-20260523.jpg
+X-cook_time: 3 minutes
+X-active_time: 5 minutes
+X-total_time: 18 minutes
+X-nutrition:
+  calories: 270 kcal
+  serving_size: 1 cup

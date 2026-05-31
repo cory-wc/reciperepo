@@ -1,117 +1,109 @@
 recipe_uuid: wc-kitchen.ginger-pork-lettuce-wraps
 recipe_name: Ginger Pork Lettuce Wraps
-
 yields:
-  - amount: 4
-    unit: servings
-
+- amount: 4
+  unit: servings
 ingredients:
-  - sesame oil:
-      amounts:
-        - amount: 2
-          unit: teaspoons
-      processing:
-        - divided
-
-  - onion:
-      amounts:
-        - amount: null
-          unit: null
-      notes:
-        - quantity not specified on card
-
-  - ground pork:
-      amounts:
-        - amount: 1/2
-          unit: lb
-
-  - mushrooms:
-      amounts:
-        - amount: 1
-          unit: pack
-      processing:
-        - minced
-
-  - red bell pepper:
-      amounts:
-        - amount: 1
-          unit: bell pepper
-      processing:
-        - minced
-
-  - oil:
-      amounts:
-        - amount: 2
-          unit: teaspoons
-      processing:
-        - divided
-
-  - garlic:
-      amounts:
-        - amount: 3
-          unit: cloves
-      processing:
-        - minced
-
-  - water chestnuts:
-      amounts:
-        - amount: 4
-          unit: oz
-      processing:
-        - chopped
-
-  - shredded cabbage:
-      amounts:
-        - amount: 1
-          unit: bag
-
-  - hoisin sauce:
-      amounts:
-        - amount: 1/2
-          unit: cup
-
-  - water:
-      amounts:
-        - amount: 1/4
-          unit: cup
-
-  - ginger:
-      amounts:
-        - amount: 2
-          unit: teaspoons
-      processing:
-        - grated
-
-  - rice vinegar:
-      amounts:
-        - amount: 1
-          unit: tablespoon
-
-  - soy sauce:
-      amounts:
-        - amount: 2
-          unit: teaspoons
-
-  - red pepper flakes:
-      amounts:
-        - amount: 1
-          unit: pinch
-
-  - romaine or bibb lettuce:
-      amounts:
-        - amount: 2
-          unit: heads
-
+- sesame oil:
+    amounts:
+    - amount: 2
+      unit: teaspoons
+    processing:
+    - divided
+- onion:
+    amounts:
+    - amount: null
+      unit: null
+    notes:
+    - quantity not specified on card
+- ground pork:
+    amounts:
+    - amount: 1/2
+      unit: lb
+- mushrooms:
+    amounts:
+    - amount: 1
+      unit: pack
+    processing:
+    - minced
+- red bell pepper:
+    amounts:
+    - amount: 1
+      unit: bell pepper
+    processing:
+    - minced
+- oil:
+    amounts:
+    - amount: 2
+      unit: teaspoons
+    processing:
+    - divided
+- garlic:
+    amounts:
+    - amount: 3
+      unit: cloves
+    processing:
+    - minced
+- water chestnuts:
+    amounts:
+    - amount: 4
+      unit: oz
+    processing:
+    - chopped
+- shredded cabbage:
+    amounts:
+    - amount: 1
+      unit: bag
+- hoisin sauce:
+    amounts:
+    - amount: 1/2
+      unit: cup
+- water:
+    amounts:
+    - amount: 1/4
+      unit: cup
+- ginger:
+    amounts:
+    - amount: 2
+      unit: teaspoons
+    processing:
+    - grated
+- rice vinegar:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- soy sauce:
+    amounts:
+    - amount: 2
+      unit: teaspoons
+- red pepper flakes:
+    amounts:
+    - amount: 1
+      unit: pinch
+- romaine or bibb lettuce:
+    amounts:
+    - amount: 2
+      unit: heads
 steps:
-  - step: Heat a skillet with 1 tsp sesame oil. Add the onion, garlic, and pork. Cook until pork is done and remove pork.
-  - step: Add 1 tsp oil to pan. Add onion, bell pepper, mushrooms, water chestnuts, and cabbage. Cook until vegetables start to soften.
-  - step: While vegetables cook, whisk together hoisin, water, ginger, vinegar, remaining 1 tsp sesame oil, soy sauce, and pepper flakes.
-  - step: Add the pork and sauce to pan. Stir well to combine and cook on low for 5 minutes.
-  - step: Serve with lettuce leaves.
-
+- step: Heat a skillet with 1 tsp sesame oil. Add the onion, garlic, and pork. Cook
+    until pork is done and remove pork.
+- step: Add 1 tsp oil to pan. Add onion, bell pepper, mushrooms, water chestnuts,
+    and cabbage. Cook until vegetables start to soften.
+- step: While vegetables cook, whisk together hoisin, water, ginger, vinegar, remaining
+    1 tsp sesame oil, soy sauce, and pepper flakes.
+- step: Add the pork and sauce to pan. Stir well to combine and cook on low for 5
+    minutes.
+- step: Serve with lettuce leaves.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
+X-source-verification:
+  status: needs-review
+  notes: []
+X-original-source: ../originals/ginger-pork-lettuce-wraps-20260523.jpg
 X-total_time: 30 minutes
 X-nutrition:
   calories: 250
   fiber: 2.5 g
-X-original-source: ../originals/ginger-pork-lettuce-wraps-20260523.jpg
-X-flags: []

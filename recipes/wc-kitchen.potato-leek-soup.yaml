@@ -1,23 +1,10 @@
 recipe_uuid: wc-kitchen.potato-leek-soup
 recipe_name: Potato Leek Soup
-source_url: https://www.onceuponachef.com
-X-original-source: ../originals/potato-leek-soup-20260523.jpg
 description: A French classic, this creamy potato leek soup is quick, easy, and delicious!
-X-category: Soup
-X-tags:
-- French
-- creamy
-- potato
-- leek
-- freezer-friendly
-X-active_time: 25 minutes
-X-cook_time: 40 minutes
-X-total_time: 65 minutes
-
+source_url: https://www.onceuponachef.com
 yields:
 - amount: 6
   unit: servings
-
 ingredients:
 - unsalted butter:
     amounts:
@@ -68,7 +55,6 @@ ingredients:
     amounts:
     - amount: 1
       unit: cups
-
 steps:
 - step: Melt the butter over medium heat in a large soup pot. Add the leeks and garlic
     and cook, stirring regularly, until soft and wilted, about 10 minutes. Adjust
@@ -82,7 +68,6 @@ steps:
     and adjust seasoning with salt and pepper. If soup is too thin, simmer until thickened.
     If it's too thick, add water or stock to thin it out. Garnish with fresh herbs
     if desired.
-
 notes:
 - 'If using a standard blender to purée the soup: be sure not to fill the jar more
   than halfway; leave the hole in the lid open and cover loosely with a dishtowel
@@ -94,7 +79,16 @@ notes:
 - Garnish with fresh chives if desired.
 - 'Handwritten margin annotations present on original image next to ingredients (possibly
   scaling multipliers): 1.5, 2, 1.5, 1, 4.5, 1, 1.5, 5, 1/8, 1/2'
-
+X-categories:
+  dish_type:
+  - soup
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - french
+  context:
+  - freezer-friendly
 X-source-verification:
   status: verified
   notes:
@@ -103,3 +97,7 @@ X-source-verification:
     is unclear — possibly scaling factors or personal notes. Values recorded in recipe
     notes above.
   - Source URL inferred from page header; exact article URL not visible in image.
+X-original-source: ../originals/potato-leek-soup-20260523.jpg
+X-cook_time: 40 minutes
+X-active_time: 25 minutes
+X-total_time: 65 minutes

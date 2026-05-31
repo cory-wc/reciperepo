@@ -1,20 +1,9 @@
 recipe_uuid: wc-kitchen.slow-cooked-southwest-chicken
 recipe_name: Slow-Cooked Southwest Chicken
 source_url: https://www.tasteofhome.com
-X-original-source: ../originals/slow-cooked-southwest-chicken-20260523.jpg
-X-total_time: 3 hours 15 minutes
-X-active_time: 15 minutes
-X-category: Main Dish
-X-tags:
-- slow cooker
-- chicken
-- southwest
-- low-fat
-
 yields:
 - amount: 6
   unit: servings
-
 ingredients:
 - black beans:
     amounts:
@@ -57,20 +46,31 @@ ingredients:
     amounts:
     - amount: 0.25
       unit: teaspoons
-
 steps:
 - step: In a 2- or 3-qt. slow cooker, combine the beans, broth, tomatoes, chicken,
     salsa, corn and seasonings. Cover and cook on low 3-4 hours or until a thermometer
     inserted in chicken reads 165°F.
 - step: Serve over hot cooked rice. Garnish with lime wedges and fresh cilantro leaves
     if desired.
-
 notes:
 - Serve over 3 cups hot cooked rice.
 - Optional garnishes: lime wedges, fresh cilantro leaves.
-
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
+X-tags:
+  dietary:
+  - low_fat
+  method:
+  - slow_cooker
 X-source-verification:
   status: verified
   notes:
   - Taste of Home; submitted by Brandi Castillo, Santa Maria, CA
-  - Cook time header says 3 hours but directions specify 3–4 hours; preserved as 3h15m total
+  - Cook time header says 3 hours but directions specify 3–4 hours; preserved as 3h15m
+    total
+X-original-source: ../originals/slow-cooked-southwest-chicken-20260523.jpg
+X-active_time: 15 minutes
+X-total_time: 3 hours 15 minutes

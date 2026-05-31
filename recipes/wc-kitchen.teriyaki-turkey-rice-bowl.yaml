@@ -1,17 +1,13 @@
 recipe_uuid: wc-kitchen.teriyaki-turkey-rice-bowl
 recipe_name: Teriyaki Turkey Rice Bowl
 source_url: https://www.yellowblissroad.com
-X-original-source: ../originals/teriyaki-turkey-rice-bowl-20260523.jpg
-X-total_time: 25 minutes
-
 yields:
 - amount: 4
   unit: servings
-
 ingredients:
 - teriyaki sauce:
     amounts:
-    - amount: "1 3/4"
+    - amount: 1 3/4
       unit: cups
 - oil:
     amounts:
@@ -50,23 +46,32 @@ ingredients:
     amounts:
     - amount: 4
       unit: cups
-
 steps:
 - step: Start the rice in a rice cooker, stovetop, or instant pot.
 - step: Heat oil in a large skillet over medium-high heat. Cook onions until soft.
-- step: Add ground turkey and garlic. Cook for 3-4 minutes, until the turkey is about half done.
+- step: Add ground turkey and garlic. Cook for 3-4 minutes, until the turkey is about
+    half done.
 - step: Add veggies (carrots, broccoli). Cook until the turkey is done.
-- step: Pour teriyaki sauce over the meat and vegetable mixture and stir. Simmer on low for 5 minutes.
+- step: Pour teriyaki sauce over the meat and vegetable mixture and stir. Simmer on
+    low for 5 minutes.
 - step: Spoon meat over rice or noodles. Garnish with green onion.
-
 notes:
 - Ground beef can be substituted for turkey.
 - Add minced or grated mushrooms for extra veggies.
 - Bulgogi sauce can be substituted to make a bulgogi rice bowl.
 - Top with quick-pickled onions.
 - Garnish with diced green onions.
-
+X-categories:
+  dish_type:
+  - bowl
+  meal_type:
+  - dinner
+X-tags:
+  method:
+  - instant_pot
 X-source-verification:
   status: verified
   notes:
   - Source: YellowBlissRoad.com
+X-original-source: ../originals/teriyaki-turkey-rice-bowl-20260523.jpg
+X-total_time: 25 minutes

@@ -4,41 +4,11 @@ description: 'This moist chocolate cake with chocolate fudge frosting is a decad
   dessert with a soft, rich crumb complemented by a creamy, luscious topping.
 
   '
-author: Angelina Papanikolaou
-X-original-source: ../originals/moist-chocolate-cake-20260530.pdf
-X-category: Dessert
-X-total_time: 45 minutes
-X-active_time: 15 minutes
-X-cook_time: 30 minutes
-X-nutrition:
-  serving_size: 1 slice
-  calories: 944 kcal
-  carbohydrates_g: 111
-  protein_g: 8
-  fat_g: 57
-  saturated_fat_g: 30
-  polyunsaturated_fat_g: 9
-  monounsaturated_fat_g: 12
-  trans_fat_g: 1
-  cholesterol_mg: 131
-  sodium_mg: 646
-  potassium_mg: 420
-  fiber_g: 6
-  sugar_g: 84
-  vitamin_a_iu: 1119
-  vitamin_c_mg: 0.1
-  calcium_mg: 146
-  iron_mg: 3
-X-equipment:
-- 3 8-inch round cake pans
-- parchment paper
-- mixing bowls
-- stand mixer or hand held mixer
-
+source_authors:
+- Angelina Papanikolaou
 yields:
 - amount: 12
   unit: servings
-
 ingredients:
 - all-purpose flour:
     amounts:
@@ -46,7 +16,7 @@ ingredients:
       unit: cups
 - granulated sugar:
     amounts:
-    - amount: "1 1/3"
+    - amount: 1 1/3
       unit: cups
 - brown sugar:
     amounts:
@@ -80,7 +50,7 @@ ingredients:
     notes: room temperature
 - vegetable oil:
     amounts:
-    - amount: "2/3"
+    - amount: 2/3
       unit: cups
 - eggs:
     amounts:
@@ -91,7 +61,6 @@ ingredients:
     amounts:
     - amount: 1
       unit: tablespoon
-
 - name_group: Frosting
 - unsalted butter:
     amounts:
@@ -126,18 +95,17 @@ ingredients:
     amounts:
     - amount: 1
       unit: teaspoon
-
 steps:
 - step: Preheat oven to 350°F (175°C). Grease 3 8-inch round cake pans and line the
     bottoms with parchment paper.
-- step: In a large bowl, whisk together the flour, granulated sugar, brown sugar, cocoa
-    powder, baking soda, baking powder, and salt.
+- step: In a large bowl, whisk together the flour, granulated sugar, brown sugar,
+    cocoa powder, baking soda, baking powder, and salt.
 - step: In another bowl, whisk together the buttermilk, coffee, oil, eggs, and vanilla
     extract.
 - step: Add the wet ingredients to the dry ingredients and mix until combined. Make
     sure there are no pockets of flour but avoid overmixing.
-- step: Divide the batter equally between the prepared cake pans. Tap the pans on the
-    countertop to remove any air bubbles. Bake for 25–30 minutes or until a toothpick
+- step: Divide the batter equally between the prepared cake pans. Tap the pans on
+    the countertop to remove any air bubbles. Bake for 25–30 minutes or until a toothpick
     inserted into the center comes out with a few crumbs.
 - step: Remove the cakes from the oven and allow them to cool in the pans for 10 minutes
     before removing and transferring to wire racks to cool completely.
@@ -151,21 +119,57 @@ steps:
 - step: 'Assemble: Place one cake layer on a serving platter. Spread a generous amount
     of frosting on top. Place the second cake layer on top and spread a layer of frosting.
     Add the final cake layer and frost the top and sides with the remaining frosting.'
-- step: Optional — decorate with chocolate shavings, sprinkles, or anything else you like.
-
+- step: Optional — decorate with chocolate shavings, sprinkles, or anything else you
+    like.
 notes:
 - 'Store: Wrap leftover cake in plastic wrap or place in an airtight container. Refrigerate
   for up to a week.'
-- 'Freeze: Place cake uncovered in the freezer for 1 hour, then wrap with plastic wrap
-  and aluminum foil. Freeze for up to 3 months. Thaw in the refrigerator overnight
+- 'Freeze: Place cake uncovered in the freezer for 1 hour, then wrap with plastic
+  wrap and aluminum foil. Freeze for up to 3 months. Thaw in the refrigerator overnight
   or at room temperature.'
 - 'Make ahead: Cake layers can be prepared a day ahead. Once cooled, wrap unfrosted
   layers in plastic wrap. Refrigerate for up to 3 days or freeze for up to 3 months.
   Prepare frosting on the day of assembly.'
-
+equipment:
+- 3 8-inch round cake pans
+- parchment paper
+- mixing bowls
+- stand mixer or hand held mixer
+X-categories:
+  dish_type:
+  - dessert
+  meal_type:
+  - dessert
+X-tags:
+  method:
+  - oven
 X-source-verification:
   status: verified
   notes:
-  - Full recipe confirmed from moist-chocolate-cake-ap.pdf (bakedambrosia.com, Angelina Papanikolaou).
+  - Full recipe confirmed from moist-chocolate-cake-ap.pdf (bakedambrosia.com, Angelina
+    Papanikolaou).
   - All ingredients verified; amounts match PDF exactly.
   - Rating shown as 5 from 80 votes in PDF (72 votes in original printed image).
+X-original-source: ../originals/moist-chocolate-cake-20260530.pdf
+X-cook_time: 30 minutes
+X-active_time: 15 minutes
+X-total_time: 45 minutes
+X-nutrition:
+  serving_size: 1 slice
+  calories: 944 kcal
+  carbohydrates_g: 111
+  protein_g: 8
+  fat_g: 57
+  saturated_fat_g: 30
+  polyunsaturated_fat_g: 9
+  monounsaturated_fat_g: 12
+  trans_fat_g: 1
+  cholesterol_mg: 131
+  sodium_mg: 646
+  potassium_mg: 420
+  fiber_g: 6
+  sugar_g: 84
+  vitamin_a_iu: 1119
+  vitamin_c_mg: 0.1
+  calcium_mg: 146
+  iron_mg: 3

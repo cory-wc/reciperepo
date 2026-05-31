@@ -1,29 +1,19 @@
 recipe_uuid: wc-kitchen.the-best-swedish-meatballs-recipe
 recipe_name: The Best Swedish Meatballs Recipe
-X-original-source: ../originals/the-best-swedish-meatballs-recipe-20260523.jpg
-X-prep_time: 20 minutes
-X-cook_time: 10 minutes
-X-total_time: 30 minutes
-X-category: Dinner
-X-tags:
-- swedish meatballs
-- gravy
 source_authors:
 - Karina
-
 yields:
 - amount: 8
   unit: servings
-
 ingredients:
 - name_group: Meatballs
 - breadcrumbs:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: cups
 - milk:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: cups
     notes: 125 mL
 - cream:
@@ -44,24 +34,24 @@ ingredients:
     - minced
 - salt:
     amounts:
-    - amount: "1/3"
+    - amount: 1/3
       unit: teaspoons
 - black pepper:
     amounts:
-    - amount: "1/4"
+    - amount: 1/4
       unit: teaspoons
 - white pepper:
     amounts:
-    - amount: "1/4"
+    - amount: 1/4
       unit: teaspoons
 - Grillkrydda:
     amounts:
-    - amount: "1/4"
+    - amount: 1/4
       unit: teaspoons
     notes: or allspice or all-purpose seasoning
 - onion:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: whole
     processing:
     - finely chopped
@@ -72,7 +62,7 @@ ingredients:
     notes: 500g
 - ground pork:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: lbs
     notes: 250g
 - parsley:
@@ -93,11 +83,11 @@ ingredients:
 - name_group: Gravy Sauce
 - butter (gravy):
     amounts:
-    - amount: "1/3"
+    - amount: 1/3
       unit: cups
 - all-purpose flour:
     amounts:
-    - amount: "1/4"
+    - amount: 1/4
       unit: cups
 - vegetable broth:
     amounts:
@@ -122,7 +112,6 @@ ingredients:
     amounts:
     - amount: 1
       unit: teaspoons
-
 steps:
 - step: In a large bowl, mix the breadcrumbs together with the milk, cream (if using),
     egg, garlic, salt, peppers and spice. Allow the milk to soak into the breadcrumbs
@@ -140,10 +129,16 @@ steps:
 - step: 'To serve — non-Swedish: place meatballs into the gravy in the pan and serve.
     Traditional Swedish: do not make the cream sauce. Serve meatballs over plain or
     stewed macaroni, plain or mashed potatoes, and lingonberry jam (optional).'
-
-X-nutrition:
-  calories: 484 kcal
-
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - scandinavian
+  method:
+  - stovetop
 X-source-verification:
   status: verified
   notes:
@@ -154,3 +149,9 @@ X-source-verification:
   - Calories per serving listed as 484 kcal; full nutrition panel not fully visible.
   - Cuisine listed as Swedish; course listed as Dinner.
   - Rating shown as 4.89 from 67 votes.
+X-original-source: ../originals/the-best-swedish-meatballs-recipe-20260523.jpg
+X-prep_time: 20 minutes
+X-cook_time: 10 minutes
+X-total_time: 30 minutes
+X-nutrition:
+  calories: 484 kcal

@@ -6,3 +6,9 @@ __pycache__/
 lists/
 schema/__pycache__/
 src/recipe_tool/__pycache__/
+
+# Generated HTML (recipe render, recipe index)
+site/*.html
+
+# Sample YAML files
+recipes/sample/

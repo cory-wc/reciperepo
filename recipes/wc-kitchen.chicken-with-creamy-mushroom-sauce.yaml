@@ -1,17 +1,5 @@
 recipe_uuid: wc-kitchen.chicken-with-creamy-mushroom-sauce
 recipe_name: Chicken with Creamy Mushroom Sauce
-X-original-source: ../originals/chicken-with-creamy-mushroom-sauce-20260523.jpg
-X-category: Mains
-X-tags:
-- chicken
-- mushroom sauce
-- creamy sauce
-- western
-X-active_time: 5 mins
-X-total_time: 20 mins
-X-nutrition:
-  calories: 837 kcal
-  servings: 4
 yields:
 - amount: 4
   unit: servings
@@ -97,9 +85,23 @@ steps:
 - step: 'Add parmesan: Stir in parmesan, taste and add more salt and pepper if needed.'
 notes:
 - Garnish with finely sliced chives, parsley, or green onions (optional).
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - american
 X-source-verification:
   status: verified
   notes:
   - Printed from thekitchn.com; recipe by Nagi (RecipeTin Eats)
   - Calories corrected to 837 kcal (YAML previously had 571 — misread)
   - Ingredient footnotes (Note 1–4) not visible in source image
+X-original-source: ../originals/chicken-with-creamy-mushroom-sauce-20260523.jpg
+X-active_time: 5 mins
+X-total_time: 20 mins
+X-nutrition:
+  calories: 837 kcal
+  servings: 4

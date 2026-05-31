@@ -1,24 +1,11 @@
 recipe_uuid: wc-kitchen.chocolate-biscotti
 recipe_name: Chocolate Biscotti
 source_url: https://sugarspunrun.com/chocolate-biscotti/
-X-original-source: ../originals/chocolate-biscotti-20260523.jpg
-author: Sam Merritt
-X-category: Breakfast, cookie, Dessert
-X-tags:
-- Italian
-- chocolate
-- biscotti
-X-prep_time: 15 minutes
-X-cook_time: 45 minutes
-X-cooling_time: 30 minutes
-X-total_time: 1 hour 35 minutes
-X-calories: 285 kcal
+source_authors:
+- Sam Merritt
 yields:
 - amount: 24
   unit: cookies
-equipment:
-- Mixing bowls
-- Baking sheet
 ingredients:
 - butter:
     amounts:
@@ -95,9 +82,31 @@ notes:
 - 'Storing: Store in an airtight container at room temperature. Biscotti will keep
   for at least two weeks. Biscotti may also be frozen in an airtight container for
   several months.'
+equipment:
+- Mixing bowls
+- Baking sheet
+X-categories:
+  dish_type:
+  - dessert
+  meal_type:
+  - breakfast
+X-tags:
+  cuisine:
+  - italian
+  method:
+  - oven
 X-source-verification:
   status: needs-manual-review
   reviewed: true
   notes:
-  - Baking powder discrepancy: ingredients list ½ teaspoon, but step 4 mentions "1 tablespoon baking powder" — verify against source URL
-  - source_url corrected (removed erroneous "-walnut-" from URL); calories corrected from 305 to 285
+  - Baking powder discrepancy: ingredients list ½ teaspoon, but step 4 mentions "1
+      tablespoon baking powder" — verify against source URL
+  - source_url corrected (removed erroneous "-walnut-" from URL); calories corrected
+    from 305 to 285
+X-original-source: ../originals/chocolate-biscotti-20260523.jpg
+X-prep_time: 15 minutes
+X-cook_time: 45 minutes
+X-total_time: 1 hour 35 minutes
+X-cooling_time: 30 minutes
+X-nutrition:
+  calories: 285 kcal

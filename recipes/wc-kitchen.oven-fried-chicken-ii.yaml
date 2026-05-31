@@ -1,7 +1,6 @@
 recipe_uuid: wc-kitchen.oven-fried-chicken-ii
 recipe_name: Oven Fried Chicken II
 source_url: https://www.allrecipes.com
-X-original-source: ../originals/oven-fried-chicken-ii-20260523.jpg
 yields:
 - amount: 10
   unit: servings
@@ -40,6 +39,19 @@ steps:
     Add the chicken to the dish and sprinkle with paprika to taste. Bake in the preheated
     oven for 30 minutes, then turn pieces over and bake for another 30 minutes. Remove
     from oven and drain on paper towels. Enjoy!
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
+X-tags:
+  method:
+  - oven
+X-source-verification:
+  status: verified
+  notes:
+  - Allrecipes; printed 01/06/2021
+X-original-source: ../originals/oven-fried-chicken-ii-20260523.jpg
 X-nutrition:
   per_serving:
     calories: 310
@@ -48,7 +60,3 @@ X-nutrition:
     fat_g: 15.1
     cholesterol_mg: 126.1
     sodium_mg: 295.8
-X-source-verification:
-  status: verified
-  notes:
-  - Allrecipes; printed 01/06/2021
