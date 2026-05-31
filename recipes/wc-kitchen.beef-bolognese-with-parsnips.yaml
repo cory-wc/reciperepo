@@ -1,93 +1,92 @@
 recipe_uuid: wc-kitchen.beef-bolognese-with-parsnips
 recipe_name: Beef Bolognese with Parsnips
-
 yields:
-  - amount: 2
-    unit: servings
-
+- amount: 2
+  unit: servings
 ingredients:
-  - parsnips:
-      amounts:
-        - amount: 1
-          unit: lb
-
-  - carrot:
-      amounts:
-        - amount: 1
-          unit: carrot
-      processing:
-        - diced
-
-  - yellow onion:
-      amounts:
-        - amount: 1
-          unit: onion
-      processing:
-        - diced
-
-  - garlic:
-      amounts:
-        - amount: 2
-          unit: cloves
-      processing:
-        - minced
-
-  - ground beef:
-      amounts:
-        - amount: 12
-          unit: oz
-
-  - dried oregano:
-      amounts:
-        - amount: 1
-          unit: teaspoon
-
-  - tomato paste:
-      amounts:
-        - amount: 1
-          unit: tablespoon
-
-  - chicken stock:
-      amounts:
-        - amount: 8
-          unit: oz
-
-  - red wine:
-      amounts:
-        - amount: 1/4
-          unit: cup
-
-  - heavy cream:
-      amounts:
-        - amount: 2
-          unit: tablespoons
-
-  - grated parmesan:
-      amounts:
-        - amount: 2
-          unit: tablespoons
-
-  - olive oil:
-      amounts:
-        - amount: 1
-          unit: tablespoon
-
+- parsnips:
+    amounts:
+    - amount: 1
+      unit: lb
+- carrot:
+    amounts:
+    - amount: 1
+      unit: carrot
+    processing:
+    - diced
+- yellow onion:
+    amounts:
+    - amount: 1
+      unit: onion
+    processing:
+    - diced
+- garlic:
+    amounts:
+    - amount: 2
+      unit: cloves
+    processing:
+    - minced
+- ground beef:
+    amounts:
+    - amount: 12
+      unit: oz
+- dried oregano:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- tomato paste:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- chicken stock:
+    amounts:
+    - amount: 8
+      unit: oz
+- red wine:
+    amounts:
+    - amount: 1/4
+      unit: cup
+- heavy cream:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+- grated parmesan:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+- olive oil:
+    amounts:
+    - amount: 1
+      unit: tablespoon
 steps:
-  - step: Preheat oven to 450°F.
-  - step: Rinse parsnips, pat dry, and halve lengthwise. Cut carrot and onion in ¼ inch dice. Mince garlic.
-  - step: Toss parsnips with olive oil, salt, and pepper. Arrange cut-side down and roast until browned and tender, 15-20 minutes.
-  - step: While parsnips roast, heat olive oil in skillet. Cook beef, breaking up, until browned, about 5 minutes. Transfer meat to a plate.
-  - step: Add ½ tbsp of olive oil to skillet. When oil is hot, add onion, carrot, garlic, and oregano. Saute about 5 minutes. Stir in tomato paste.
-  - step: Return beef to pan with vegetables. Stir in chicken stock and red wine. Increase to high and bring to boil. Turn heat to medium high and simmer about 8 minutes to reduce.
-  - step: Stir in heavy cream and simmer until warmed through, about 1 minute.
-  - step: Serve parsnips with spoonfuls of bolognese. Garnish with parmesan.
-
-X-active_time: 40 minutes
-X-nutrition:
-  calories: 740
-X-original-source: ../originals/beef-bolognese-with-parsnips-20260523.jpg
+- step: Preheat oven to 450°F.
+- step: Rinse parsnips, pat dry, and halve lengthwise. Cut carrot and onion in ¼ inch
+    dice. Mince garlic.
+- step: Toss parsnips with olive oil, salt, and pepper. Arrange cut-side down and
+    roast until browned and tender, 15-20 minutes.
+- step: While parsnips roast, heat olive oil in skillet. Cook beef, breaking up, until
+    browned, about 5 minutes. Transfer meat to a plate.
+- step: Add ½ tbsp of olive oil to skillet. When oil is hot, add onion, carrot, garlic,
+    and oregano. Saute about 5 minutes. Stir in tomato paste.
+- step: Return beef to pan with vegetables. Stir in chicken stock and red wine. Increase
+    to high and bring to boil. Turn heat to medium high and simmer about 8 minutes
+    to reduce.
+- step: Stir in heavy cream and simmer until warmed through, about 1 minute.
+- step: Serve parsnips with spoonfuls of bolognese. Garnish with parmesan.
+X-categories:
+  dish_type:
+  - pasta
+  meal_type:
+  - dinner
+X-tags:
+  method:
+  - oven
 X-source-verification:
   status: verified
   notes:
   - Meal kit-style card (HelloFresh or similar); no external source URL visible
   - All ingredients and steps match image exactly
+X-original-source: ../originals/beef-bolognese-with-parsnips-20260523.jpg
+X-active_time: 40 minutes
+X-nutrition:
+  calories: 740

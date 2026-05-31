@@ -1,18 +1,5 @@
 recipe_uuid: wc-kitchen.toum
 recipe_name: Toum (Garlic Whip)
-X-original-source: ../originals/toum-20260523.jpg
-X-total_time: 15 minutes, plus chilling
-X-category: Condiment
-X-tags:
-- garlic
-- Lebanese
-- emulsion
-- sauce
-- Middle Eastern
-X-publisher: New York Times Cooking
-source_authors:
-- Brett Anderson
-
 description: This toum recipe comes from Marjayoun, Lebanon, where Sameer Eid grew
   up eating it with shawarma. Samy, Sameer's son, learned how to make it after he
   started working at Phoenicia, the family's restaurant in Birmingham, Mich. The key
@@ -21,11 +8,11 @@ description: This toum recipe comes from Marjayoun, Lebanon, where Sameer Eid gr
   It's served with roasted chicken and kebabs; some customers even request it with
   babyback ribs. It's versatile, and also great drizzled over roasted vegetables and
   avocado toast.
-
+source_authors:
+- Brett Anderson
 yields:
-- amount: "4 1/2"
+- amount: 4 1/2
   unit: cups
-
 ingredients:
 - garlic:
     amounts:
@@ -36,23 +23,22 @@ ingredients:
     - peeled
 - kosher salt:
     amounts:
-    - amount: "2 1/2"
+    - amount: 2 1/2
       unit: teaspoons
 - lemon juice:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: cups
     notes: fresh; from 3–4 lemons
 - oil:
     amounts:
-    - amount: "3 1/2"
+    - amount: 3 1/2
       unit: cups
     notes: canola or grapeseed
 - ice water:
     amounts:
     - amount: 2
       unit: tablespoons
-
 steps:
 - step: Place peeled garlic and salt in the bowl of a food processor. Pulse the garlic
     for 30 seconds, scrape down the sides of the bowl, then repeat three more times
@@ -60,14 +46,24 @@ steps:
 - step: Add 2 tablespoons lemon juice and continue processing until a smooth paste
     forms, about 3 minutes, scraping down the sides of the bowl every 45 seconds or
     so. You want the wet, finely chopped garlic mixture to end up with a texture similar
-    to mashed potatoes. Pinch it between your fingertips, and it should no longer feel
-    gritty. (If you don't blend the garlic enough at this stage, it won't become fluffy
-    and emulsified later.)
-
+    to mashed potatoes. Pinch it between your fingertips, and it should no longer
+    feel gritty. (If you don't blend the garlic enough at this stage, it won't become
+    fluffy and emulsified later.)
+X-categories:
+  dish_type:
+  - sauce
+  meal_type:
+  - anytime
+X-tags:
+  cuisine:
+  - middle_eastern
 X-source-verification:
   status: needs-manual-review
   reviewed: true
   notes:
-  - Only Steps 1–2 visible; remaining steps (alternating lemon juice and oil additions) cut off by NYT paywall notice
+  - Only Steps 1–2 visible; remaining steps (alternating lemon juice and oil additions)
+    cut off by NYT paywall notice
   - Full steps should be verified against original NYT Cooking source
   - Recipe from Phoenicia restaurant (Birmingham, MI), adapted by Brett Anderson
+X-original-source: ../originals/toum-20260523.jpg
+X-total_time: 15 minutes, plus chilling

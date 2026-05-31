@@ -1,26 +1,15 @@
 recipe_uuid: wc-kitchen.perfect-pot-roast
 recipe_name: Perfect Pot Roast
-author: Ree Drummond
-X-original-source: ../originals/perfect-pot-roast-20260523.jpg
-X-published: Aug 21, 2023
-X-category: Main Dishes
-X-tags:
-- pot roast
-- beef
-- comfort food
-X-prep_time: 20 minutes
-X-cook_time: 4 hours
-X-total_time: 4 hours 20 minutes
 description: Serve it with a big pile of mashed potatoes!
-
+source_authors:
+- Ree Drummond
 yields:
 - amount: 10
   unit: servings
-
 ingredients:
 - chuck roast:
     amounts:
-    - amount: "4–5"
+    - amount: 4–5
       unit: lbs
 - olive oil:
     amounts:
@@ -35,7 +24,7 @@ ingredients:
     - halved
 - carrots:
     amounts:
-    - amount: "6–8"
+    - amount: 6–8
       unit: whole
     processing:
     - cut into 2-inch slices
@@ -46,7 +35,7 @@ ingredients:
     notes: optional; beef broth can be used instead
 - beef stock:
     amounts:
-    - amount: "2–3"
+    - amount: 2–3
       unit: cups
 - fresh thyme:
     amounts:
@@ -56,7 +45,6 @@ ingredients:
     amounts:
     - amount: 3
       unit: sprigs
-
 steps:
 - step: First and foremost, choose a nicely marbled piece of meat. This will enhance
     the flavor of your pot roast like nothing else. Generously salt and pepper your
@@ -68,7 +56,16 @@ steps:
     one side and then the other. Remove the onions to a plate.
 - step: Throw the carrots into the same very hot pan and toss them around a bit until
     slightly browned.
-
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
+X-tags:
+  method:
+  - oven
+  context:
+  - comfort_food
 X-source-verification:
   status: needs-review
   notes:
@@ -82,3 +79,7 @@ X-source-verification:
   - Chuck roast listed as 4 to 5 lb; consolidated to range.
   - Nutrition information referenced but not visible in image.
   - Salt and pepper to taste not included (no measured amounts).
+X-original-source: ../originals/perfect-pot-roast-20260523.jpg
+X-prep_time: 20 minutes
+X-cook_time: 4 hours
+X-total_time: 4 hours 20 minutes

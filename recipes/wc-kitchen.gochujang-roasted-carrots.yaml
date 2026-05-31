@@ -1,14 +1,5 @@
 recipe_uuid: wc-kitchen.gochujang-roasted-carrots
 recipe_name: Gochujang Roasted Carrots
-X-original-source: ../originals/gochujang-roasted-carrots-20260523.jpg
-X-category: Side Dish
-X-tags:
-- Korean
-- carrots
-- roasted
-- vegetarian
-X-total_time: 35 minutes
-X-active_time: 5 minutes
 yields:
 - amount: 4
   unit: servings
@@ -65,6 +56,18 @@ steps:
 - step: Garnish with chopped scallions and sesame seeds.
 notes:
 - Optional garnish: chopped scallions, sesame seeds.
+X-categories:
+  dish_type:
+  - side
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - korean
+  dietary:
+  - vegetarian
+  method:
+  - oven
 X-source-verification:
   status: needs-review
   notes:
@@ -74,4 +77,8 @@ X-source-verification:
     source.
   - Author listed as Jo at https://boatkitchen.com (partially visible).
   - Prep time listed as 10 minutes, Cook time listed as 45 minutes, Total time listed
-    as 55 minutes in source header — conflicts with visible step times; flagged for review.
+    as 55 minutes in source header — conflicts with visible step times; flagged for
+    review.
+X-original-source: ../originals/gochujang-roasted-carrots-20260523.jpg
+X-active_time: 5 minutes
+X-total_time: 35 minutes

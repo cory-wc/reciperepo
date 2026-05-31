@@ -1,9 +1,5 @@
 recipe_uuid: wc-kitchen.corn-chowder
 recipe_name: Corn Chowder
-X-original-source: ../originals/corn-chowder-20260523.jpg
-X-category: soup
-X-active_time: 60 minutes
-X-total_time: 9 hours
 yields:
 - amount: 4
   unit: servings
@@ -67,11 +63,20 @@ steps:
     Reduce heat and simmer 15 minutes.
 - step: Puree the remaining 2 cups of corn with milk. Stir the puree into soup, along
     with black pepper. Simmer until soup begins to thicken (5–10 minutes).
-X-nutrition:
-  calories: 365
-  fiber: 8g
+X-categories:
+  dish_type:
+  - soup
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:
-  - Custom recipe card; "9h total" appears to be a template copy error (steps are all stovetop, ~30–40 min actual)
+  - Custom recipe card; "9h total" appears to be a template copy error (steps are
+    all stovetop, ~30–40 min actual)
   - Transcribed faithfully from source
+X-original-source: ../originals/corn-chowder-20260523.jpg
+X-active_time: 60 minutes
+X-total_time: 9 hours
+X-nutrition:
+  calories: 365
+  fiber: 8g

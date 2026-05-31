@@ -1,24 +1,8 @@
 recipe_uuid: wc-kitchen.honey-apple-galette-with-pistachio-sugar
 recipe_name: Honey Apple Galette With Pistachio Sugar
-X-original-source: ../originals/honey-apple-galette-with-pistachio-sugar-20260523.jpg
-X-hands_on_time: 30 minutes
-X-total_time: 3 hours 49 minutes
-X-category: dessert
-
 yields:
 - amount: 8
   unit: servings
-X-tags:
-- galette
-- apple
-- pastry
-- dessert
-X-source-verification:
-  status: verified
-  notes:
-  - From a magazine feature ("The Big Finish" section); publication name not clearly visible
-  - Several assembly ingredient amounts and some dough quantities partially cut off at page edge — verify
-
 ingredients:
 - name_group: Dough
 - all-purpose flour:
@@ -37,7 +21,7 @@ ingredients:
     notes: 2 sticks; cut into ½-inch pieces, cold
 - ice water:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: cups
     notes: ½ to ¾ cup
 - name_group: Filling
@@ -70,12 +54,12 @@ ingredients:
     notes: fresh; from 1 lemon
 - kosher salt (filling):
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: teaspoons
 - name_group: Assembly
 - raw unsalted pistachios:
     amounts:
-    - amount: "1/4"
+    - amount: 1/4
       unit: cups
 - granulated sugar (topping):
     amounts:
@@ -86,12 +70,11 @@ ingredients:
     - amount: 1
       unit: whole
     notes: beaten, for egg wash
-
 steps:
 - step: Make the dough — combine flour and salt in a food processor. Add butter and
-    pulse until most of the butter is in pea-sized pieces, about 20 pulses. While pulsing,
-    drizzle in ice water until dough just holds together. Turn out, wrap tightly, and
-    refrigerate at least 2 hours or up to 3 days (or freeze up to 1 month).
+    pulse until most of the butter is in pea-sized pieces, about 20 pulses. While
+    pulsing, drizzle in ice water until dough just holds together. Turn out, wrap
+    tightly, and refrigerate at least 2 hours or up to 3 days (or freeze up to 1 month).
 - step: Prepare the filling — place apple slices in a large bowl. Add melted butter,
     sugar, honey, lemon zest, lemon juice, and salt. Toss to coat.
 - step: Assemble — roll chilled dough into a 16-inch round on a lightly floured surface.
@@ -102,3 +85,21 @@ steps:
 - step: Freeze for 1 hour.
 - step: Preheat oven to 375°F. Bake 50 to 55 minutes, until crust is golden and apples
     are tender. Refrigerate for 10 minutes before serving; can hold up to 4 hours.
+X-categories:
+  dish_type:
+  - dessert
+  meal_type:
+  - dessert
+X-tags:
+  method:
+  - oven
+X-source-verification:
+  status: verified
+  notes:
+  - From a magazine feature ("The Big Finish" section); publication name not clearly
+    visible
+  - Several assembly ingredient amounts and some dough quantities partially cut off
+    at page edge — verify
+X-original-source: ../originals/honey-apple-galette-with-pistachio-sugar-20260523.jpg
+X-active_time: 30 minutes
+X-total_time: 3 hours 49 minutes

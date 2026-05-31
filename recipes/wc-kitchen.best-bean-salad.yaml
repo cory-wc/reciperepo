@@ -1,13 +1,10 @@
 recipe_uuid: wc-kitchen.best-bean-salad
 recipe_name: Best Bean Salad
-description: 'This three-bean salad is delicious. I''d turned my nose up at this for
-  years, but suddenly I can''t get enough of it. Thanks, Momma D!'
+description: This three-bean salad is delicious. I'd turned my nose up at this for
+  years, but suddenly I can't get enough of it. Thanks, Momma D!
 source_url: https://www.allrecipes.com
-X-original-source: ../originals/best-bean-salad-20260523.jpg
-X-author: chemjo
-X-active_time: 20 minutes
-X-additional_time: 8 hours
-X-total_time: 8 hours 20 minutes
+source_authors:
+- chemjo
 ingredients:
 - garbanzo beans:
     amounts:
@@ -88,6 +85,24 @@ steps:
 - step: Whisk together sugar, oil, vinegar, salt, and pepper in a separate bowl until
     sugar is dissolved; pour over bean mixture. Mix well.
 - step: Refrigerate salad for 8 hours to overnight before serving.
+X-categories:
+  dish_type:
+  - salad
+  meal_type:
+  - dinner
+X-tags:
+  dietary:
+  - vegetarian
+  context:
+  - make_ahead
+X-source-verification:
+  status: verified
+  notes:
+  - Recipe sourced from allrecipes.com; exact URL not captured from image
+  - Serving count not specified in source image
+X-original-source: ../originals/best-bean-salad-20260523.jpg
+X-active_time: 20 minutes
+X-total_time: 8 hours 20 minutes
 X-nutrition:
   per_serving:
     calories: 167
@@ -102,14 +117,4 @@ X-nutrition:
     calcium_mg: 36
     iron_mg: 1
     potassium_mg: 161
-X-category: salad
-X-tags:
-- bean salad
-- three-bean salad
-- make-ahead
-- vegetarian
-X-source-verification:
-  status: verified
-  notes:
-  - Recipe sourced from allrecipes.com; exact URL not captured from image
-  - Serving count not specified in source image
+X-additional_time: 8 hours

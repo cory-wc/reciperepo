@@ -1,7 +1,5 @@
 recipe_uuid: wc-kitchen.cucumber-salad
 recipe_name: Cucumber Salad
-X-original-source: ../originals/cucumber-salad-20260523.jpg
-X-total_time: 25 minutes
 yields:
 - amount: 4
   unit: servings
@@ -34,7 +32,14 @@ ingredients:
 steps:
 - step: Toss cucumber slices with salt and sugar.
 - step: Stir in vinegar and onion. Refrigerate for 10 minutes, then serve.
+X-categories:
+  dish_type:
+  - salad
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:
   - Custom recipe card; source field blank in original
+X-original-source: ../originals/cucumber-salad-20260523.jpg
+X-total_time: 25 minutes

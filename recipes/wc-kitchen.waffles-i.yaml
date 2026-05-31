@@ -1,19 +1,13 @@
 recipe_uuid: wc-kitchen.waffles-i
 recipe_name: Waffles I
-source_url: https://www.allrecipes.com
-X-original-source: ../originals/waffles-i-20260523.jpg
-X-author: OneShyOfABunch
-X-category: breakfast
-X-tags:
-- waffles
-- breakfast
-X-active_time: 5 minutes
-X-total_time: 20 minutes
 description: 'You can keep the batter covered in the fridge for up to a week. Just
   be sure to whisk well before using again. You may also use whole wheat flour for
   this recipe.
 
   '
+source_url: https://www.allrecipes.com
+source_authors:
+- OneShyOfABunch
 ingredients:
 - eggs:
     amounts:
@@ -53,10 +47,18 @@ steps:
     until smooth.
 - step: Spray preheated waffle iron with non-stick cooking spray. Pour mix onto hot
     waffle iron. Cook until golden brown. Serve hot.
-X-cook_time: 15 minutes
+X-categories:
+  dish_type:
+  - bread
+  meal_type:
+  - breakfast
 X-source-verification:
   status: verified
   notes:
   - Printed from Allrecipes.com on 6/9/2019
   - Exact allrecipes URL not captured; source domain confirmed as allrecipes.com
   - Yield not specified in source
+X-original-source: ../originals/waffles-i-20260523.jpg
+X-cook_time: 15 minutes
+X-active_time: 5 minutes
+X-total_time: 20 minutes

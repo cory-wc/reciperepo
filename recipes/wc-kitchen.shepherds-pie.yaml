@@ -1,21 +1,12 @@
 recipe_uuid: wc-kitchen.shepherds-pie
 recipe_name: Shepherd's Pie
-X-original-source: ../originals/shepherds-pie-20260523.jpg
-X-active_time: 60 minutes
-X-total_time: 75 minutes
-X-nutrition:
-  calories: 606
-  fiber: 8 g
-X-handwritten-notes: "Potato amount changed from 25oz to 60oz; butter changed to 5¼ tbsp; cheese changed from ½C to ¾C; egg annotation shows 2¼ (interpreted as 2 eggs)."
-
 yields:
 - amount: 4
   unit: servings
-
 ingredients:
 - ground meat:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: lbs
 - mushrooms:
     amounts:
@@ -57,7 +48,7 @@ ingredients:
       unit: bottle
 - chicken stock:
     amounts:
-    - amount: "1–2"
+    - amount: 1–2
       unit: cups
 - tomato paste:
     amounts:
@@ -65,15 +56,15 @@ ingredients:
       unit: tablespoons
 - rosemary:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: tablespoons
 - thyme:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: tablespoons
 - Worcestershire sauce:
     amounts:
-    - amount: "1–2"
+    - amount: 1–2
       unit: teaspoons
 - potatoes:
     amounts:
@@ -87,23 +78,53 @@ ingredients:
       unit: whole
 - butter:
     amounts:
-    - amount: "5 1/4"
+    - amount: 5 1/4
       unit: tablespoons
 - shredded cheese:
     amounts:
-    - amount: "3/4"
+    - amount: 3/4
       unit: cups
     notes: parmesan or other
-
 steps:
 - step: Preheat oven to 400°F.
-- step: Boil potatoes. Drain. Mash with butter, egg, grated cheese, salt, and pepper to taste.
+- step: Boil potatoes. Drain. Mash with butter, egg, grated cheese, salt, and pepper
+    to taste.
 - step: While potatoes are boiling, brown meat and mushrooms together.
-- step: Cook carrots, onions, celery, and garlic in fat from meat. When vegetables are soft, add tomato paste, rosemary, thyme, and several dashes of Worcestershire sauce.
-- step: Deglaze pan with beer and reduce. Add the chicken stock. When thick, remove the filling and add to a casserole dish.
-- step: Assemble by spreading potatoes on top of filling, making sure to seal the sides. Texture the top with a fork to help it crisp. Add a sprinkling of cheese over top.
+- step: Cook carrots, onions, celery, and garlic in fat from meat. When vegetables
+    are soft, add tomato paste, rosemary, thyme, and several dashes of Worcestershire
+    sauce.
+- step: Deglaze pan with beer and reduce. Add the chicken stock. When thick, remove
+    the filling and add to a casserole dish.
+- step: Assemble by spreading potatoes on top of filling, making sure to seal the
+    sides. Texture the top with a fork to help it crisp. Add a sprinkling of cheese
+    over top.
 - step: Bake 10-15 minutes until cheese is melted and top is crispy.
 - step: Cool for 5 minutes before serving.
-
+notes:
+- Potato amount changed from 25oz to 60oz; butter changed to 5¼ tbsp; cheese changed
+  from ½C to ¾C; egg annotation shows 2¼ (interpreted as 2 eggs).
+X-categories:
+  dish_type:
+  - one_dish
+  meal_type:
+  - dinner
+  meal_role:
+  - one_dish_meal
+X-tags:
+  method:
+  - oven
+  context:
+  - leftovers_friendly
+  primary_ingredient:
+  - potatoes
+  flavor_profile:
+  - savory
+  - hearty
 X-source-verification:
   status: needs-review
+X-original-source: ../originals/shepherds-pie-20260523.jpg
+X-active_time: 60 minutes
+X-total_time: 75 minutes
+X-nutrition:
+  calories: 606
+  fiber: 8 g

@@ -1,11 +1,7 @@
 recipe_uuid: wc-kitchen.homemade-drop-biscuits-recipe
 recipe_name: Homemade Drop Biscuits Recipe (No Milk)
-author: Brianna May
-X-course: Bread, Breakfast
-X-original-source: ../originals/homemade-drop-biscuits-recipe-20260523.jpg
-X-prep_time: 35 mins
-X-cook_time: 20 mins
-X-total_time: 55 mins
+source_authors:
+- Brianna May
 yields:
 - amount: 15
   unit: biscuits
@@ -60,7 +56,16 @@ steps:
 notes:
 - Honey can be swapped for 1 tablespoon white or brown sugar.
 - Optional add-ins: 1/2 tsp garlic powder, 3/4 cup cheddar cheese, 1/4 cup chives.
-- Honey butter topping: whisk together 1 tablespoon honey + 2 tablespoons melted unsalted butter.
+- Honey butter topping: whisk together 1 tablespoon honey + 2 tablespoons melted unsalted
+    butter.
+X-categories:
+  dish_type:
+  - bread
+  meal_type:
+  - breakfast
+X-tags:
+  method:
+  - oven
 X-source-verification:
   status: needs-review
   notes:
@@ -68,3 +73,7 @@ X-source-verification:
     appears fully legible.
   - Prep time column header partially cut off but inferred as 35 mins from context.
   - Rating shown as 5 stars from 95 votes.
+X-original-source: ../originals/homemade-drop-biscuits-recipe-20260523.jpg
+X-prep_time: 35 mins
+X-cook_time: 20 mins
+X-total_time: 55 mins

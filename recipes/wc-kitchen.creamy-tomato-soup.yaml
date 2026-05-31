@@ -1,10 +1,5 @@
 recipe_uuid: wc-kitchen.creamy-tomato-soup
 recipe_name: Creamy Tomato Soup
-X-original-source: ../originals/creamy-tomato-soup-20260523.jpg
-X-active_time: 60 minutes
-X-nutrition:
-  calories: 385
-  fiber: 3g
 yields:
 - amount: 6
   unit: servings
@@ -68,7 +63,22 @@ steps:
     stirring frequently.
 - step: Puree mixture in blender or food processor.
 - step: Return puree to dutch oven. Add sugar and cream. Heat through, stirring occasionally.
+X-categories:
+  dish_type:
+  - soup
+  meal_type:
+  - dinner
+X-tags:
+  method:
+  - stovetop
+  flavor_profile:
+  - creamy
 X-source-verification:
   status: verified
   notes:
   - Custom recipe card; no source URL visible
+X-original-source: ../originals/creamy-tomato-soup-20260523.jpg
+X-active_time: 60 minutes
+X-nutrition:
+  calories: 385
+  fiber: 3g

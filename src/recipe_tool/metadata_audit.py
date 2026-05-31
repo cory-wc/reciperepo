@@ -75,6 +75,20 @@ def _category_is_list(data: dict) -> bool:
     return isinstance(cat, list)
 
 
+def _dish_type_count(data: dict) -> int | None:
+    categories = data.get("X-categories")
+    if not isinstance(categories, dict):
+        return None
+    dish_type = categories.get("dish_type")
+    if dish_type is None:
+        return None
+    if isinstance(dish_type, str):
+        return 1
+    if isinstance(dish_type, list):
+        return len(dish_type)
+    return None
+
+
 def audit_recipe(recipe_id: str, data: dict) -> list[AuditIssue]:
     issues: list[AuditIssue] = []
 
@@ -179,6 +193,16 @@ def audit_recipe(recipe_id: str, data: dict) -> list[AuditIssue]:
     if not source_url and data.get("X-original-source"):
         pass  # OK for custom cards
 
+    dish_type_count = _dish_type_count(data)
+    if dish_type_count is not None and dish_type_count > 2:
+        issues.append(
+            AuditIssue(
+                recipe_id,
+                "dish-type-count",
+                f"X-categories.dish_type has {dish_type_count} values; prefer 1-2",
+            )
+        )
+
     return issues
 
 
@@ -244,6 +268,7 @@ _CODE_ORDER = [
     "verification-status",
     "bare-source-url",
     "missing-provenance",
+    "dish-type-count",
 ]
 
 

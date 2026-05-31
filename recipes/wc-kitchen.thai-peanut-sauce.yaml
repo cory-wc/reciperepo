@@ -1,54 +1,42 @@
 recipe_uuid: wc-kitchen.thai-peanut-sauce
 recipe_name: Thai Peanut Sauce
 source_url: https://eatwithclarity.com/easy-thai-peanut-sauce/
-X-original-source: ../originals/thai-peanut-sauce-20260523.jpg
-X-prep_time: 5 minutes
-X-total_time: 5 minutes
 source_authors:
 - Claire Cary
-
 yields:
 - amount: 1
   unit: batch
-
 ingredients:
 - peanut butter:
     amounts:
-    - amount: "3/4"
+    - amount: 3/4
       unit: cups
     notes: made with just peanuts and salt
-
 - low sodium soy sauce:
     amounts:
     - amount: 3
       unit: tablespoons
     notes: or tamari
-
 - maple syrup:
     amounts:
-    - amount: "1–2"
+    - amount: 1–2
       unit: tablespoons
-
 - toasted sesame oil:
     amounts:
     - amount: 1
       unit: tablespoons
-
 - rice vinegar:
     amounts:
     - amount: 2
       unit: tablespoons
-
 - warm water:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: cups
-
 - ground ginger:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: teaspoons
-
 - garlic:
     amounts:
     - amount: 2
@@ -56,27 +44,30 @@ ingredients:
     notes: small
     processing:
     - finely minced
-
 - lime juice:
     amounts:
     - amount: 1
       unit: tablespoons
-
 - red pepper flakes:
     amounts:
-    - amount: "1/4–1/2"
+    - amount: 1/4–1/2
       unit: teaspoons
-
 steps:
 - step: Finely mince the garlic and add to a large mixing bowl.
 - step: Add all ingredients except the water and whisk together until smooth.
-- step: Slowly pour in the water until your desired consistency is reached. Start with
-    1/2 cup and add more as needed — more for a dressing, less for a sauce.
+- step: Slowly pour in the water until your desired consistency is reached. Start
+    with 1/2 cup and add more as needed — more for a dressing, less for a sauce.
 - step: Taste and adjust seasonings as desired. Serve with noodle bowls, tofu, tempeh,
     chicken, stir fries, etc.
-
 notes:
 - Sesame oil can be omitted if you don't want any sesame flavor.
-
+X-categories:
+  dish_type:
+  - sauce
+  meal_type:
+  - anytime
 X-source-verification:
   status: needs-review
+X-original-source: ../originals/thai-peanut-sauce-20260523.jpg
+X-prep_time: 5 minutes
+X-total_time: 5 minutes

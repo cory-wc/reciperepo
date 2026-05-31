@@ -1,49 +1,47 @@
 recipe_uuid: wc-kitchen.davids-chicken-and-mushrooms
 recipe_name: David's Chicken & Mushrooms
-
 yields:
-  - amount: 4
-    unit: servings
-
+- amount: 4
+  unit: servings
 ingredients:
-  - chicken thighs:
-      amounts:
-        - amount: 4
-          unit: thighs
-      processing:
-        - cubed
-
-  - mushrooms:
-      amounts:
-        - amount: 2
-          unit: cans
-
-  - chicken broth:
-      amounts:
-        - amount: 1
-          unit: cup
-
-  - flour:
-      amounts:
-        - amount: "~1+"
-          unit: tablespoon
-
-  - frozen peas and carrots:
-      amounts:
-        - amount: 2
-          unit: cups
-
+- chicken thighs:
+    amounts:
+    - amount: 4
+      unit: thighs
+    processing:
+    - cubed
+- mushrooms:
+    amounts:
+    - amount: 2
+      unit: cans
+- chicken broth:
+    amounts:
+    - amount: 1
+      unit: cup
+- flour:
+    amounts:
+    - amount: ~1+
+      unit: tablespoon
+- frozen peas and carrots:
+    amounts:
+    - amount: 2
+      unit: cups
 steps:
-  - step: Coat chicken cubes in flour and fry in oil.
-  - step: Add chicken broth and liquid from mushrooms to chicken.
-  - step: Add flour and/or cornstarch slurry to liquid to thicken.
-  - step: Add peas, carrots, and mushrooms.
-  - step: Bring to a boil, then simmer 10-15 minutes, stirring frequently.
-  - step: Serve over rice, barley, or farro.
-
+- step: Coat chicken cubes in flour and fry in oil.
+- step: Add chicken broth and liquid from mushrooms to chicken.
+- step: Add flour and/or cornstarch slurry to liquid to thicken.
+- step: Add peas, carrots, and mushrooms.
+- step: Bring to a boil, then simmer 10-15 minutes, stirring frequently.
+- step: Serve over rice, barley, or farro.
 notes:
-  - Serve over rice, barley, or farro.
-
-X-total_time: 30 minutes
+- Serve over rice, barley, or farro.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
+X-source-verification:
+  status: needs-review
+  notes: []
 X-original-source: ../originals/davids-chicken-and-mushrooms-20260523.jpg
-X-flags: []
+X-total_time: 30 minutes

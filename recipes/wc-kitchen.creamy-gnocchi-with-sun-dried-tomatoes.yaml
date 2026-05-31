@@ -1,7 +1,5 @@
 recipe_uuid: wc-kitchen.creamy-gnocchi-with-sun-dried-tomatoes
 recipe_name: Creamy Gnocchi with Sun-Dried Tomatoes
-X-original-source: ../originals/creamy-gnocchi-with-sun-dried-tomatoes-20260523.jpg
-X-total_time: 30 minutes
 yields:
 - amount: 6
   unit: servings
@@ -65,7 +63,14 @@ steps:
 - step: Reduce heat to low. Add the gnocchi and cover with broth. Cook covered for
     5 minutes.
 - step: Stir in the heavy cream and parmesan. Allow to thicken as needed.
+X-categories:
+  dish_type:
+  - pasta
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:
   - Custom recipe card; no source URL visible
+X-original-source: ../originals/creamy-gnocchi-with-sun-dried-tomatoes-20260523.jpg
+X-total_time: 30 minutes

@@ -1,21 +1,9 @@
 recipe_uuid: wc-kitchen.healthy-sloppy-joes
 recipe_name: Healthy Sloppy Joes
-description: These Healthy Sloppy Joes are made with lean ground beef and hidden
-  veggies. This is a healthy and flavorful take on the classic sandwich.
-author: Allison - Celebrating Sweets
-X-original-source: ../originals/healthy-sloppy-joes-20260523.jpg
-X-category: dinner
-X-tags:
-- sloppy joes
-- ground beef
-- American
-- healthy
-X-prep_time: 16 minutes
-X-cook_time: 35 minutes
-X-total_time: 55 minutes
-X-nutrition:
-  calories: 183 kcal
-  servings: 6
+description: These Healthy Sloppy Joes are made with lean ground beef and hidden veggies.
+  This is a healthy and flavorful take on the classic sandwich.
+source_authors:
+- Allison - Celebrating Sweets
 yields:
 - amount: 6
   unit: servings
@@ -80,11 +68,11 @@ ingredients:
       unit: cups
 - ketchup:
     amounts:
-    - amount: "1/3"
+    - amount: 1/3
       unit: cup
 - low sodium beef broth or water:
     amounts:
-    - amount: "1/3"
+    - amount: 1/3
       unit: cup
 steps:
 - step: In a large saucepan or skillet, sauté ground beef in 1 tablespoon of olive
@@ -104,8 +92,27 @@ steps:
 notes:
 - Serve on soft buns, open-face on half a bun, in a baked russet or sweet potato,
   or on its own.
+X-categories:
+  dish_type:
+  - burgers+sandwiches
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - american
+  dietary:
+  - low_sugar
 X-source-verification:
   status: verified
   notes:
   - Celebrating Sweets; author Allison
-  - Corrected from initial misread: Worcestershire (3 tbsp not 1), tomato sauce (1½ not 1.25 cups), ketchup (⅓ not ½ cup), beef broth (⅓ not ½ cup), calories (183 not 188)
+  - Corrected from initial misread: Worcestershire (3 tbsp not 1), tomato sauce (1½
+      not 1.25 cups), ketchup (⅓ not ½ cup), beef broth (⅓ not ½ cup), calories (183
+      not 188)
+X-original-source: ../originals/healthy-sloppy-joes-20260523.jpg
+X-prep_time: 16 minutes
+X-cook_time: 35 minutes
+X-total_time: 55 minutes
+X-nutrition:
+  calories: 183 kcal
+  servings: 6

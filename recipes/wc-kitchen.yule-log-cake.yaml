@@ -1,39 +1,15 @@
 recipe_uuid: wc-kitchen.yule-log-cake
 recipe_name: Yule Log Cake (Bûche de Noël)
-author: Lindsay
+description: This classic Yule Log Cake is a tender chocolate sponge cake filled with
+  mascarpone whipped cream and covered with whipped chocolate ganache. It's delicious,
+  festive and made completely from scratch!
+source_authors:
+- Lindsay
 yields:
 - amount: 8
   unit: servings
 - amount: 10
   unit: servings
-X-original-source: ../originals/yule-log-cake-20260523.jpg
-X-category: Dessert
-X-tags:
-- yule log
-- christmas
-- buche de noel
-- chocolate
-- cake
-X-prep_time: 1 hour 30 minutes
-X-cook_time: 12 minutes
-X-total_time: 1 hour 42 minutes
-X-method: Oven
-X-cuisine: American
-description: 'This classic Yule Log Cake is a tender chocolate sponge cake filled
-  with mascarpone whipped cream and covered with whipped chocolate ganache. It''s
-  delicious, festive and made completely from scratch!'
-X-nutrition:
-  serving_size: 1 slice
-  servings: 10
-  calories: 502
-  total_fat_g: 31.9
-  cholesterol_mg: 142.1
-  sodium_mg: 462.6
-  total_carbohydrate_g: 50.5
-  sugars_g: 38.7
-  protein_g: 8.3
-  vitamin_a_pct: 29
-  vitamin_c_pct: 0
 ingredients:
 - _group: Chocolate Cake
 - all-purpose flour:
@@ -43,7 +19,7 @@ ingredients:
     notes: 98g
 - Hershey's Special Dark cocoa powder:
     amounts:
-    - amount: "1/3"
+    - amount: 1/3
       unit: cups
     notes: 38g
 - baking powder:
@@ -146,6 +122,18 @@ steps:
     in the sugar water, then roll in the sugar. Let dry before adding to the cake.
 
     '
+X-categories:
+  dish_type:
+  - dessert
+  meal_type:
+  - dessert
+X-tags:
+  cuisine:
+  - american
+  method:
+  - oven
+  season:
+  - winter
 X-source-verification:
   status: needs-manual-review
   notes:
@@ -157,3 +145,19 @@ X-source-verification:
   - Yield shown as "8-10 servings" on the printed page.
   - Ingredient group separators (_group) are not standard ORF fields and are used
     here as inline labels only.
+X-original-source: ../originals/yule-log-cake-20260523.jpg
+X-prep_time: 1 hour 30 minutes
+X-cook_time: 12 minutes
+X-total_time: 1 hour 42 minutes
+X-nutrition:
+  serving_size: 1 slice
+  servings: 10
+  calories: 502
+  total_fat_g: 31.9
+  cholesterol_mg: 142.1
+  sodium_mg: 462.6
+  total_carbohydrate_g: 50.5
+  sugars_g: 38.7
+  protein_g: 8.3
+  vitamin_a_pct: 29
+  vitamin_c_pct: 0

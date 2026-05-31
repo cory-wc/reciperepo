@@ -1,22 +1,10 @@
 recipe_uuid: wc-kitchen.black-bean-soup
 recipe_name: Black Bean Soup
-description: A delicious vegetarian meal that's filling and layered with savory and spiced flavors.
-X-original-source: ../originals/black-bean-soup-20260523.jpg
-X-category: Soup
-X-tags:
-- black bean
-- vegetarian
-- Mexican
-- easy
-X-dietary:
-- vegetarian
-X-prep_time: 10 mins
-X-cook_time: 20 mins
-X-total_time: 30 mins
+description: A delicious vegetarian meal that's filling and layered with savory and
+  spiced flavors.
 yields:
 - amount: 4
   unit: servings
-X-serving_size: about 2 cups
 ingredients:
 - extra virgin olive oil:
     amounts:
@@ -107,8 +95,25 @@ steps:
 - step: Ladle the soup into individual bowls and garnish with your favorite toppings.
 notes:
 - Optional toppings: fresh cilantro, red onion, avocado, sour cream, lime wedges.
+X-categories:
+  dish_type:
+  - soup
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - mexican
+  dietary:
+  - vegetarian
+  context:
+  - quick
 X-source-verification:
   status: verified
   notes:
   - Author: Lisa Bryan (Downshiftology)
   - Nutrition section visible in image but values not fully legible
+X-original-source: ../originals/black-bean-soup-20260523.jpg
+X-prep_time: 10 mins
+X-cook_time: 20 mins
+X-total_time: 30 mins
+X-serving_size: about 2 cups

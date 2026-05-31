@@ -1,8 +1,5 @@
 recipe_uuid: wc-kitchen.tzatziki
 recipe_name: Tzatziki
-author: Kay Chun
-X-original-source: ../originals/tzatziki-20260523.jpg
-X-publisher: NYT Cooking
 description: 'Tzatziki is a popular Greek sauce traditionally served with souvlaki
   and pita bread, but it''s super versatile in its potential: It''s a great snacking
   dip with crudités and chips, as well as a bright and tangy sauce to drizzle on grain
@@ -12,10 +9,11 @@ description: 'Tzatziki is a popular Greek sauce traditionally served with souvla
   for up to 3 days.
 
   '
+source_authors:
+- Kay Chun
 yields:
 - amount: 2.5
   unit: cups
-X-total_time: 10 minutes
 ingredients:
 - Persian cucumbers:
     amounts:
@@ -51,13 +49,21 @@ steps:
     taste. Mix well.
 
     '
-X-category: sauce, dip
+X-categories:
+  dish_type:
+  - sauce
+  meal_type:
+  - anytime
 X-tags:
-- Greek
-- tzatziki
-- vegetarian
-- quick
+  cuisine:
+  - greek
+  dietary:
+  - vegetarian
+  context:
+  - quick
 X-source-verification:
   status: verified
   notes:
   - NYT Cooking; URL not captured from image
+X-original-source: ../originals/tzatziki-20260523.jpg
+X-total_time: 10 minutes

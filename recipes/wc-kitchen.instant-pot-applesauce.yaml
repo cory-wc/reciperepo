@@ -1,20 +1,13 @@
 recipe_uuid: wc-kitchen.instant-pot-applesauce
 recipe_name: Instant Pot Applesauce
-source_url: https://tastesbetterfromscratch.com/instant-pot-applesauce/
-X-original-source: ../originals/instant-pot-applesauce-20260523.jpg
-X-category: Side Dish, Snack
-X-cuisine: American
-X-author: Lauren Allen
-X-prep_time: 5 mins
-X-cook_time: 15 mins
-X-total_time: 20 mins
-X-nutrition:
-  calories: 58 kcal
 description: Delicious homemade applesauce just got easier, made in the instant pot
   or slow cooker. This Instant Pot applesauce recipe has no added sugar and can be
   made in just 15 minutes.
+source_url: https://tastesbetterfromscratch.com/instant-pot-applesauce/
+source_authors:
+- Lauren Allen
 yields:
-- amount: "5–6"
+- amount: 5–6
   unit: cups
 ingredients:
 - granny smith apples:
@@ -63,7 +56,24 @@ steps:
 notes:
 - Directions for making applesauce in the slow cooker are detailed in the original
   post.
+X-categories:
+  dish_type:
+  - side
+  meal_type:
+  - snack
+X-tags:
+  cuisine:
+  - american
+  method:
+  - slow_cooker
+  - instant_pot
 X-source-verification:
   status: verified
   notes:
   - Tastes Better From Scratch; author Lauren Allen; printed 4/20/2019
+X-original-source: ../originals/instant-pot-applesauce-20260523.jpg
+X-prep_time: 5 mins
+X-cook_time: 15 mins
+X-total_time: 20 mins
+X-nutrition:
+  calories: 58 kcal
