@@ -48,9 +48,12 @@ steps:
     liquid, covered, for up to 1 week.
 X-categories:
   dish_type:
-  - sauce
+  - preserve
   meal_type:
   - anytime
+X-tags:
+  method:
+  - preserve
 X-source-verification:
   status: verified
   notes:

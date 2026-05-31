@@ -37,10 +37,10 @@ X-categories:
   meal_type:
   - dessert
 X-tags:
-  season:
-  - winter
   context:
   - holiday
+  season:
+  - winter
 X-source-verification:
   status: verified
   notes:

@@ -62,12 +62,14 @@ steps:
     6 hours before serving. Store in refrigerator up to 4 months.
 X-categories:
   dish_type:
-  - sauce
+  - preserve
   meal_type:
   - anytime
 X-tags:
   cuisine:
   - american
+  method:
+  - preserve
 X-source-verification:
   status: needs-manual-review
   notes:
