@@ -194,7 +194,11 @@ def build_parser() -> argparse.ArgumentParser:
     p.set_defaults(func=cmd_new)
 
     p = sub.add_parser("extract", help="Extract ORF YAML from URL or file")
-    p.add_argument("recipe_id", nargs="?", help="Target recipe id")
+    p.add_argument(
+        "recipe_id",
+        nargs="?",
+        help="Optional hint id; output filename is derived from extracted recipe_name",
+    )
     p.add_argument("--url", help="Recipe page URL")
     p.add_argument("--source", help="Path under originals/ or absolute")
     p.add_argument("--pending", action="store_true", help="Bulk extract unreferenced originals")
