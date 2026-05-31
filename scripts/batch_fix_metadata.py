@@ -51,7 +51,7 @@ INFERRED_TAGS: dict[str, dict[str, list[str]]] = {
     },
     "wc-kitchen.shepherds-pie": {
         "method": ["oven"],
-        "planning": ["leftovers_friendly"],
+        "context": ["leftovers_friendly"],
         "primary_ingredient": ["potatoes"],
         "flavor_profile": ["savory", "hearty"],
     },
@@ -235,9 +235,6 @@ CONTEXT_TAGS: dict[str, str] = {
     "entertaining": "entertaining",
     "freezer-friendly": "freezer-friendly",
     "freezer friendly": "freezer-friendly",
-}
-
-PLANNING_TAGS: dict[str, str] = {
     "make-ahead": "make_ahead",
     "make ahead": "make_ahead",
     "meal prep": "meal_prep",
@@ -807,30 +804,42 @@ def _migrate_duplicate_fields(data: dict[str, Any]) -> list[str]:
     return changes
 
 
-def _relocate_freezer_friendly(data: dict[str, Any]) -> bool:
-    """Move freezer-friendly from X-tags.planning to X-tags.context."""
+def _canonical_context_from_planning(value: str) -> str | None:
+    """Map a legacy planning tag value to its X-tags.context name."""
+    key = value.strip().lower().replace("_", "-")
+    mapping = {
+        "make-ahead": "make_ahead",
+        "meal-prep": "meal_prep",
+        "leftovers-friendly": "leftovers_friendly",
+        "freezer-friendly": "freezer-friendly",
+    }
+    return mapping.get(key)
+
+
+def _relocate_planning_to_context(data: dict[str, Any]) -> list[str]:
+    """Move legacy X-tags.planning values into X-tags.context."""
     tags = data.get("X-tags")
     if not isinstance(tags, dict):
-        return False
+        return []
 
     planning = tags.get("planning") or []
     if not planning:
-        return False
+        return []
 
-    moved = False
+    moved_values: list[str] = []
     kept: list[str] = []
     for value in planning:
-        normalized = value.replace("_", "-").lower()
-        if normalized in {"freezer-friendly", "freezer friendly"}:
+        context_value = _canonical_context_from_planning(value)
+        if context_value:
             tags.setdefault("context", [])
-            if "freezer-friendly" not in tags["context"]:
-                tags["context"].append("freezer-friendly")
-            moved = True
+            if context_value not in tags["context"]:
+                tags["context"].append(context_value)
+            moved_values.append(context_value)
         else:
             kept.append(value)
 
-    if not moved:
-        return False
+    if not moved_values:
+        return []
 
     if kept:
         tags["planning"] = _unique(kept)
@@ -842,7 +851,8 @@ def _relocate_freezer_friendly(data: dict[str, Any]) -> bool:
         data["X-tags"] = structured
     elif "X-tags" in data:
         del data["X-tags"]
-    return True
+
+    return _unique(moved_values)
 
 
 def _cleanup_dropped_fields(data: dict[str, Any]) -> list[str]:
@@ -968,7 +978,6 @@ def _classify_flat_tag(tag: str) -> tuple[str, str] | None:
         (DIETARY_TAGS, "dietary"),
         (CUISINE_TAGS, "cuisine"),
         (CONTEXT_TAGS, "context"),
-        (PLANNING_TAGS, "planning"),
         (SEASON_TAGS, "season"),
     ):
         if key in table:
@@ -1143,8 +1152,9 @@ def migrate_recipe(data: dict[str, Any]) -> tuple[dict[str, Any], list[str]]:
     changes.extend(_cleanup_dropped_fields(data))
     if _normalize_cuisine_in_tags(data):
         changes.append("normalized cuisine tags (dropped -inspired)")
-    if _relocate_freezer_friendly(data):
-        changes.append("freezer-friendly: planning → context")
+    moved_planning = _relocate_planning_to_context(data)
+    if moved_planning:
+        changes.append(f"planning → context {moved_planning}")
     changes.extend(_migrate_recipe_notes(data))
     changes.extend(_migrate_duplicate_fields(data))
 

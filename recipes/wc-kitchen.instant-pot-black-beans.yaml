@@ -92,7 +92,7 @@ X-tags:
   - vegetarian
   method:
   - instant_pot
-  planning:
+  context:
   - meal_prep
 X-source-verification:
   status: verified

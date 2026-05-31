@@ -57,7 +57,7 @@ X-categories:
   meal_type:
   - dinner
 X-tags:
-  planning:
+  context:
   - make_ahead
 X-source-verification:
   status: verified

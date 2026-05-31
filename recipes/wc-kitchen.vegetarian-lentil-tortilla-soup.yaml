@@ -117,7 +117,7 @@ X-tags:
   - mexican
   dietary:
   - vegetarian
-  planning:
+  context:
   - make_ahead
 X-source-verification:
   status: needs-manual-review

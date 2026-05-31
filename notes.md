@@ -56,7 +56,6 @@ X-tags:
     - stovetop
   context:
     - weeknight
-  planning:
     - leftovers_friendly
   season:
     - fall
@@ -88,6 +87,7 @@ Many files still use the older flat fields. During migration, **`recipe audit-me
 | `X-calories` | `X-nutrition.calories` |
 | `X-hands_on_time` | `X-active_time` (when active time missing) |
 | `X-tips`, `X-notes`, `X-handwritten-*` | `notes` |
+| `X-tags.planning` | `X-tags.context` (`make_ahead`, `meal_prep`, `leftovers_friendly`, `freezer-friendly`) |
 | `X-show`, `X-episode`, `X-publisher`, `X-copyright`, `X-published`, `X-source-publication`, `X-source-updated`, `X-attribution` | *(drop)* |
 
 When editing a recipe, prefer the target shape above. Remove legacy fields once converted.
@@ -236,14 +236,9 @@ Primary cooking technique. Pick 1–2.
 | `holiday` |
 | `entertaining` |
 | `freezer-friendly` |
-
-### `planning`
-
-| Value |
-|-------|
-| `leftovers_friendly` |
 | `make_ahead` |
 | `meal_prep` |
+| `leftovers_friendly` |
 
 ### `season`
 
@@ -300,7 +295,7 @@ X-tags:
   flavor_profile:
     - savory
     - hearty
-  planning:
+  context:
     - leftovers_friendly
 
 X-total_time: 60 minutes
@@ -415,7 +410,7 @@ The batch fix script also:
 
 - Removes `X-rating` and `X-rating_count`
 - Drops `X-freezer_friendly: false`; converts `true` → `X-tags.context: [freezer-friendly]`
-- Moves `freezer-friendly` from `X-tags.planning` → `X-tags.context`
+- Moves `X-tags.planning` values (`make_ahead`, `meal_prep`, `leftovers_friendly`, `freezer-friendly`) → `X-tags.context`
 - Moves `X-tips`, `X-notes`, and `X-handwritten-*` fields into ORF `notes`
 - Infers missing `X-categories` from `X-course`, recipe name, and `SPECIAL_DISH_TYPE`
 - Drops redundant `X-course` when categories are already set

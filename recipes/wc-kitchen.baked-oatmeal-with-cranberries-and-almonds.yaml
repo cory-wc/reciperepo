@@ -72,7 +72,7 @@ X-categories:
   meal_type:
   - breakfast
 X-tags:
-  planning:
+  context:
   - make_ahead
 X-source-verification:
   status: verified
