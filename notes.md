@@ -64,6 +64,59 @@ Optional: `last_checked: 2026-05-23` inside `X-source-verification`.
 
 ---
 
+## Structured categories (`X-categories`)
+
+Target shape for recipe taxonomy (replacing flat `X-category` over time):
+
+```yaml
+X-categories:
+  dish_type:
+    - one_dish
+  meal_type:
+    - dinner
+  meal_role:
+    - one_dish_meal
+  cuisine:
+    - american
+```
+
+Each key holds a **YAML list** of lowercase snake_case values. Lists are allowed on all keys; nothing is limited to a single value unless noted below.
+
+### `dish_type` — allowed values
+
+| Value | Use for |
+|-------|---------|
+| `soup` | soups, stews, chowders, chili |
+| `salad` | green, bean, pasta, grain salads |
+| `pasta` | pasta as the main format |
+| `main` | generic entrées (stir-fry, pan-seared protein, etc.) |
+| `one_dish` | casseroles, skillets, sheet-pan roasts, pot pies, lasagna |
+| `bowl` | burrito bowls, buddha bowls, composed grain bowls |
+| `burger` | burgers and patty mains |
+| `side` | finished sides served alongside a meal |
+| `sauce` | sauces, condiments, dips, dressings |
+| `component` | prep/base recipes used in other dishes (e.g. farro method, IP black beans, pie dough) |
+| `preserve` | jam, relish, pickles, canning |
+| `bread` | loaves, muffins, biscuits, quick breads |
+| `dessert` | cakes, cookies, pastries, crisps |
+| `breakfast_bake` | quiche, baked oatmeal, frittata-style bakes |
+| `beverage` | cocktails, hot chocolate mix, etc. |
+| `reference` | binder index pages only |
+
+**Cardinality:** prefer **1–2** `dish_type` values per recipe. Pick the best-fit primary type; add a second only when two buckets are genuinely equal (e.g. `component` + `side` for black beans you both prep and serve alone). More than two is allowed but should be rare — use `meal_type`, `method`, or `primary_ingredient` tags for extra context instead of stacking `dish_type`.
+
+### Other `X-categories` keys (summary)
+
+| Key | Examples |
+|-----|----------|
+| `meal_type` | `breakfast`, `brunch`, `lunch`, `dinner`, `snack`, `dessert`, `anytime` |
+| `meal_role` | `one_dish_meal`, `side_dish`, `appetizer` (optional; use when helpful) |
+| `cuisine` | `american`, `italian`, `thai`, `indian`, … |
+
+Structured `X-tags` (dietary, method, context, etc.) are documented as the schema rollout continues. Until migration is complete, legacy flat `X-category` / `X-tags` / `X-dietary` remain in many files and are what `recipe audit-metadata` checks today.
+
+---
+
 ## Special entry types
 
 ### Binder index photos (not meals)
@@ -112,6 +165,6 @@ After bulk migration or extract:
 
 `recipe audit-metadata` reports these issue codes:
 
-`bare-source-url`, `missing-category`, `missing-tags`, `missing-verification`, `legacy-author`, `category-format`, `empty-flags-only`, `missing-provenance`, `reference-category`
+`bare-source-url`, `missing-category`, `missing-tags`, `missing-verification`, `legacy-author`, `category-format`, `empty-flags-only`, `missing-provenance`, `reference-category`, `dish-type-count` (guidance only — prefer 1–2 `X-categories.dish_type` values)
 
 Script equivalent: `python scripts/audit_metadata.py`
