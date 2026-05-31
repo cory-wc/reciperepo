@@ -63,6 +63,9 @@ X-categories:
   - bread
   meal_type:
   - breakfast
+X-tags:
+  method:
+  - oven
 X-source-verification:
   status: needs-review
   notes:

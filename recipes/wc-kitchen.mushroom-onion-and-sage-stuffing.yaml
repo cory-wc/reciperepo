@@ -87,6 +87,8 @@ X-categories:
   meal_type:
   - dinner
 X-tags:
+  method:
+  - oven
   season:
   - fall
 X-source-verification:

@@ -117,6 +117,8 @@ X-tags:
   - mexican
   dietary:
   - vegetarian
+  method:
+  - slow_cooker
   context:
   - make_ahead
 X-source-verification:

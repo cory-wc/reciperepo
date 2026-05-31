@@ -33,9 +33,14 @@ steps:
     crème, whipped cream, or chocolate sauce.
 X-categories:
   dish_type:
-  - component
+  - beverage
   meal_type:
-  - anytime
+  - dessert
+X-tags:
+  season:
+  - winter
+  context:
+  - holiday
 X-source-verification:
   status: verified
   notes:

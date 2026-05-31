@@ -63,6 +63,9 @@ X-categories:
   - soup
   meal_type:
   - dinner
+X-tags:
+  method:
+  - slow_cooker
 X-source-verification:
   status: verified
   notes:

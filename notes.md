@@ -410,7 +410,7 @@ The batch fix script also:
 
 - Removes `X-rating` and `X-rating_count`
 - Drops `X-freezer_friendly: false`; converts `true` → `X-tags.context: [freezer-friendly]`
-- Infers `X-tags.method` from recipe text (`slow cooker` / `crockpot` → `slow_cooker`; `instant pot` → `instant_pot`)
+- Infers `X-tags.method` from recipe text (`slow cooker` / `crockpot` → `slow_cooker`; `instant pot` → `instant_pot`; `oven` or an oven temperature → `oven`, excluding Dutch oven)
 - Infers `X-tags.dietary` from recipe text (`vegetarian`, `vegan`; skips adaptation-only phrasing such as “to make vegetarian” or `vegetarian_adaptable` recipes unless name/slug/description says so; `vegan` also adds `vegetarian`)
 - Moves `X-tags.planning` values (`make_ahead`, `meal_prep`, `leftovers_friendly`, `freezer-friendly`) → `X-tags.context`
 - Moves `X-tips`, `X-notes`, and `X-handwritten-*` fields into ORF `notes`
