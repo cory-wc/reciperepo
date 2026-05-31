@@ -6,6 +6,8 @@ description: 'You can keep the batter covered in the fridge for up to a week. Ju
 
   '
 source_url: https://www.allrecipes.com
+source_authors:
+- OneShyOfABunch
 ingredients:
 - eggs:
     amounts:
@@ -60,4 +62,3 @@ X-original-source: ../originals/waffles-i-20260523.jpg
 X-cook_time: 15 minutes
 X-active_time: 5 minutes
 X-total_time: 20 minutes
-X-author: OneShyOfABunch

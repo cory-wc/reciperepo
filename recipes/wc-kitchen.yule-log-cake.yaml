@@ -130,6 +130,8 @@ X-categories:
 X-tags:
   cuisine:
   - american
+  method:
+  - oven
   season:
   - winter
 X-source-verification:
@@ -159,4 +161,3 @@ X-nutrition:
   protein_g: 8.3
   vitamin_a_pct: 29
   vitamin_c_pct: 0
-X-method: Oven

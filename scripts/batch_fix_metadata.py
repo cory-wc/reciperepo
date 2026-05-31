@@ -82,6 +82,35 @@ DROP_FIELDS = frozenset(
         "X-handwritten-optional-fillings",
         "X-notes",
         "X-course",
+        "X-author",
+        "X-source-author",
+        "X-equipment",
+        "X-method",
+        "X-source-description",
+        "X-calories",
+        "X-hands_on_time",
+        "X-show",
+        "X-episode",
+        "X-publisher",
+        "X-copyright",
+        "X-published",
+        "X-source-publication",
+        "X-source-updated",
+        "X-attribution",
+    }
+)
+
+# TV / print provenance fields — drop without migrating.
+PROVENANCE_DROP_FIELDS = frozenset(
+    {
+        "X-show",
+        "X-episode",
+        "X-publisher",
+        "X-copyright",
+        "X-published",
+        "X-source-publication",
+        "X-source-updated",
+        "X-attribution",
     }
 )
 
@@ -111,11 +140,6 @@ X_KEY_ORDER = [
     "X-cooling_time",
     "X-nutrition",
     "X-storage",
-    "X-method",
-    "X-author",
-    "X-publisher",
-    "X-calories",
-    "X-equipment",
     "X-sub-recipes",
     "X-flags",
 ]
@@ -648,6 +672,141 @@ def _migrate_recipe_notes(data: dict[str, Any]) -> list[str]:
     return changes
 
 
+def _author_names(value: Any) -> list[str]:
+    if value is None:
+        return []
+    if isinstance(value, list):
+        return [str(v).strip() for v in value if str(v).strip()]
+    if isinstance(value, str):
+        return [value.strip()] if value.strip() else []
+    return [str(value).strip()]
+
+
+def _append_source_authors(data: dict[str, Any], value: Any) -> int:
+    incoming = _author_names(value)
+    if not incoming:
+        return 0
+    existing = _author_names(data.get("source_authors"))
+    combined = _unique(existing + incoming)
+    if combined == existing:
+        return 0
+    data["source_authors"] = combined
+    return len(combined) - len(existing)
+
+
+def _equipment_items(value: Any) -> list[str]:
+    if value is None:
+        return []
+    if isinstance(value, list):
+        return [str(v).strip() for v in value if str(v).strip()]
+    if isinstance(value, str):
+        return [value.strip()] if value.strip() else []
+    return [str(value).strip()]
+
+
+def _append_equipment(data: dict[str, Any], value: Any) -> int:
+    incoming = _equipment_items(value)
+    if not incoming:
+        return 0
+    existing = _equipment_items(data.get("equipment"))
+    combined = _unique(existing + incoming)
+    if combined == existing:
+        return 0
+    data["equipment"] = combined
+    return len(combined) - len(existing)
+
+
+def _normalize_method_tag(value: Any) -> str | None:
+    classified = _classify_flat_tag(str(value))
+    if classified and classified[0] == "method":
+        return classified[1]
+    key = norm(str(value)).replace(" ", "_")
+    return key or None
+
+
+def _migrate_duplicate_fields(data: dict[str, Any]) -> list[str]:
+    """Consolidate duplicate X-* fields into canonical ORF / structured metadata."""
+    changes: list[str] = []
+
+    for key in ("X-author", "X-source-author"):
+        if key not in data:
+            continue
+        value = data.pop(key)
+        added = _append_source_authors(data, value)
+        if added:
+            changes.append(f"{key} → source_authors ({added} name(s))")
+        else:
+            changes.append(f"removed {key} (already in source_authors)")
+
+    if "X-equipment" in data:
+        value = data.pop("X-equipment")
+        added = _append_equipment(data, value)
+        if added:
+            changes.append(f"X-equipment → equipment ({added} item(s))")
+        else:
+            changes.append("removed X-equipment (already in equipment)")
+
+    if "X-method" in data:
+        method_value = data.pop("X-method")
+        normalized = _normalize_method_tag(method_value)
+        if normalized:
+            tags = _ensure_structured_tags(data)
+            methods = list(tags.get("method") or [])
+            if normalized not in methods:
+                methods.append(normalized)
+                tags["method"] = methods
+                data["X-tags"] = tags
+                changes.append(f"X-method {method_value!r} → X-tags.method [{normalized}]")
+            else:
+                changes.append(f"removed X-method (already in X-tags.method)")
+        else:
+            changes.append(f"removed X-method {method_value!r}")
+
+    if "X-source-description" in data:
+        desc = str(data.pop("X-source-description")).strip()
+        if desc:
+            existing = str(data.get("description") or "").strip()
+            if not existing:
+                data["description"] = desc
+                changes.append("X-source-description → description")
+            elif existing == desc:
+                changes.append("removed X-source-description (already in description)")
+            else:
+                changes.append("removed X-source-description (description already set)")
+        else:
+            changes.append("removed empty X-source-description")
+
+    if "X-calories" in data:
+        calories = str(data.pop("X-calories")).strip()
+        nutrition = data.get("X-nutrition")
+        if not isinstance(nutrition, dict):
+            nutrition = {}
+        if calories and not nutrition.get("calories"):
+            nutrition["calories"] = calories
+            data["X-nutrition"] = nutrition
+            changes.append(f"X-calories → X-nutrition.calories [{calories}]")
+        else:
+            changes.append("removed X-calories")
+
+    if "X-hands_on_time" in data and not data.get("X-active_time"):
+        hands_on = data.pop("X-hands_on_time")
+        if hands_on:
+            data["X-active_time"] = hands_on
+            changes.append(f"X-hands_on_time → X-active_time [{hands_on}]")
+        else:
+            changes.append("removed empty X-hands_on_time")
+    elif "X-hands_on_time" in data:
+        del data["X-hands_on_time"]
+        changes.append("removed X-hands_on_time (X-active_time already set)")
+
+    for key in sorted(PROVENANCE_DROP_FIELDS):
+        if key in data:
+            del data[key]
+            changes.append(f"removed {key}")
+
+    return changes
+
+
 def _relocate_freezer_friendly(data: dict[str, Any]) -> bool:
     """Move freezer-friendly from X-tags.planning to X-tags.context."""
     tags = data.get("X-tags")
@@ -987,6 +1146,7 @@ def migrate_recipe(data: dict[str, Any]) -> tuple[dict[str, Any], list[str]]:
     if _relocate_freezer_friendly(data):
         changes.append("freezer-friendly: planning → context")
     changes.extend(_migrate_recipe_notes(data))
+    changes.extend(_migrate_duplicate_fields(data))
 
     return data, changes
 

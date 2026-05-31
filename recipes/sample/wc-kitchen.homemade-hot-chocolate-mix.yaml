@@ -1,0 +1,68 @@
+recipe_uuid: wc-kitchen.homemade-hot-chocolate-mix
+recipe_name: Homemade Hot Chocolate Mix
+source_url: https://www.berlyskitchen.com/homemade-hot-chocolate-mix/
+yields:
+- amount: 13
+  unit: servings
+ingredients:
+- granulated sugar:
+    amounts:
+    - amount: 1
+      unit: cup
+- unsweetened cocoa powder:
+    amounts:
+    - amount: 0.667
+      unit: cup
+- kosher salt:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+- ground cinnamon:
+    amounts:
+    - amount: 0.125
+      unit: teaspoon
+    notes: optional; handwritten annotation reads '3/8 tsp peppermint' — may indicate
+      an optional substitution or addition
+steps:
+- step: Whisk the sugar, cocoa powder, salt, and cinnamon (if using) together in a
+    small bowl.
+- step: Transfer the mixture to a jar with a lid or another airtight container until
+    ready to use. The mix will last about 3 months when properly stored.
+- step: To make hot chocolate, add 1 tablespoon of mix to every 4 ounces of milk.
+    For an 8 ounce mug, use 2 tablespoons of mix. Top with marshmallows, marshmallow
+    crème, whipped cream, or chocolate sauce.
+X-categories:
+  dish_type:
+  - component
+  meal_type:
+  - anytime
+X-source-verification:
+  status: verified
+  notes:
+  - Printed quantities used (1 cup sugar, 2/3 cup cocoa, 1/2 tsp salt, 1/8 tsp cinnamon);
+    consistent with 13 servings at 2 tbsp each
+  - Handwritten annotations are personal modifications — 3 cups sugar, 2 cups cocoa,
+    1½ tsp salt, 3/8 tsp peppermint replacing cinnamon; sugar corrected from erroneous
+    3 cups back to printed 1 cup
+  - Source URL and date (November 27, 2020) visible on printed page; image captured
+    12/23/22
+X-original-source: ../../originals/homemade-hot-chocolate-mix-20260523.jpg
+X-prep_time: 5 mins
+X-total_time: 5 mins
+X-nutrition:
+  serving_size: 2 tablespoons
+  calories: 69
+  carbohydrates_g: 18
+  protein_g: 1
+  fat_g: 1
+  saturated_fat_g: 0.4
+  polyunsaturated_fat_g: 0.02
+  monounsaturated_fat_g: 0.2
+  sodium_mg: 0.001
+  potassium_mg: 67
+  fiber_g: 2
+  sugar_g: 15
+  vitamin_a_iu: 0.11
+  vitamin_c_mg: null
+  calcium_mg: 6
+  iron_mg: 1

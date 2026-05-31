@@ -105,6 +105,8 @@ steps:
 - step: To the same bowl, add the remaining ingredients. Stir everything together
     until well combined. Adjust lime juice and salt and pepper as necessary.
 - step: Serve garnished with additional cheese and cilantro, if preferred.
+equipment:
+- 12-inch Cast Iron Skillet
 X-categories:
   dish_type:
   - main
@@ -121,5 +123,3 @@ X-total_time: 20 minutes
 X-nutrition:
   calories: 344 kcal
   per: serving
-X-equipment:
-- 12-inch Cast Iron Skillet

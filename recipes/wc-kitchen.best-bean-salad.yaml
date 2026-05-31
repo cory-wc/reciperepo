@@ -3,6 +3,8 @@ recipe_name: Best Bean Salad
 description: This three-bean salad is delicious. I'd turned my nose up at this for
   years, but suddenly I can't get enough of it. Thanks, Momma D!
 source_url: https://www.allrecipes.com
+source_authors:
+- chemjo
 ingredients:
 - garbanzo beans:
     amounts:
@@ -115,5 +117,4 @@ X-nutrition:
     calcium_mg: 36
     iron_mg: 1
     potassium_mg: 161
-X-author: chemjo
 X-additional_time: 8 hours

@@ -80,6 +80,15 @@ Many files still use the older flat fields. During migration, **`recipe audit-me
 | `X-tags` (flat freeform list) | structured `X-tags` (`method`, `context`, …) |
 | `X-dietary` (top-level list) | `X-tags.dietary` |
 | `X-cuisine` (top-level string) | `X-tags.cuisine` |
+| `author` | `source_authors` |
+| `X-author`, `X-source-author` | `source_authors` |
+| `X-equipment` | `equipment` |
+| `X-method` | `X-tags.method` |
+| `X-source-description` | `description` |
+| `X-calories` | `X-nutrition.calories` |
+| `X-hands_on_time` | `X-active_time` (when active time missing) |
+| `X-tips`, `X-notes`, `X-handwritten-*` | `notes` |
+| `X-show`, `X-episode`, `X-publisher`, `X-copyright`, `X-published`, `X-source-publication`, `X-source-updated`, `X-attribution` | *(drop)* |
 
 When editing a recipe, prefer the target shape above. Remove legacy fields once converted.
 
@@ -410,6 +419,8 @@ The batch fix script also:
 - Moves `X-tips`, `X-notes`, and `X-handwritten-*` fields into ORF `notes`
 - Infers missing `X-categories` from `X-course`, recipe name, and `SPECIAL_DISH_TYPE`
 - Drops redundant `X-course` when categories are already set
+- Consolidates duplicate fields: `X-author` / `X-source-author` → `source_authors`; `X-equipment` → `equipment`; `X-method` → `X-tags.method`; `X-source-description` → `description`; `X-calories` → `X-nutrition.calories`; `X-hands_on_time` → `X-active_time` (when missing)
+- Drops TV/provenance duplicates: `X-show`, `X-episode`, `X-publisher`, `X-copyright`, `X-published`, `X-source-publication`, `X-source-updated`, `X-attribution`
 - Normalizes cuisine tags (drops `-inspired` suffixes)
 - Moves all `X-*` fields to the end of each YAML file
 
