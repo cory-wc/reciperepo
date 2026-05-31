@@ -67,7 +67,7 @@ X-tags:
   - vegan
   - gluten_free_adaptable
   - dairy_free
-  planning:
+  context:
   - meal_prep
 X-source-verification:
   status: needs-review
