@@ -1,16 +1,11 @@
 recipe_uuid: wc-kitchen.quick-pickled-red-onion
 recipe_name: Quick Pickled Red Onion
-author: Naz Deravian
-X-original-source: ../originals/quick-pickled-red-onion-20260523.jpg
-X-total_time: 50 minutes
-X-active_time: 5 minutes
-X-cook_time: 45 minutes
-
+source_authors:
+- Naz Deravian
 yields:
 - amount: 2
   unit: cups
   notes: with pickling liquid
-
 ingredients:
 - red onion:
     amounts:
@@ -37,7 +32,6 @@ ingredients:
     amounts:
     - amount: 0.25
       unit: cups
-
 steps:
 - step: Thinly slice the red onion by halving through the root and slicing in the
     same direction. Separate the slices by hand, as best you can, without getting
@@ -52,7 +46,6 @@ steps:
 - step: Cover and give the jar a gentle shake. Set aside to pickle for about 30 minutes.
     Serve right away, or cool to room temperature and place in the fridge in the pickling
     liquid, covered, for up to 1 week.
-
 X-source-verification:
   status: verified
   notes:
@@ -61,3 +54,7 @@ X-source-verification:
   - Rating shown as approximately 4 out of 5 stars with 236 reviews
   - All quantities and steps transcribed from image; some text partially obscured
     by shadow on right side but content appears complete
+X-original-source: ../originals/quick-pickled-red-onion-20260523.jpg
+X-cook_time: 45 minutes
+X-active_time: 5 minutes
+X-total_time: 50 minutes

@@ -1,23 +1,11 @@
 recipe_uuid: wc-kitchen.vegetarian-burrito-bowls
 recipe_name: Vegetarian Burrito Bowls
-source_url: https://www.myrecipes.com/recipe/vegetarian-burrito-bowls
-X-original-source: ../originals/vegetarian-burrito-bowls-20260523.jpg
 description: These easy, delicious veggie bowls can be on your table in less time
   than it takes to drive to the local taco joint.
+source_url: https://www.myrecipes.com/recipe/vegetarian-burrito-bowls
 yields:
 - amount: 4
   unit: servings
-X-prep_time: 15 minutes
-X-cook_time: 20 minutes
-X-total_time: 35 minutes
-X-category: main dish
-X-tags:
-- vegetarian
-- bowls
-- Mexican-inspired
-- quick
-X-dietary:
-- vegetarian
 ingredients:
 - olive oil:
     amounts:
@@ -94,17 +82,31 @@ steps:
 - step: Combine avocados and lime juice in a medium bowl. Divide rice among 4 bowls.
     Top with bean mixture, corn, tomatoes and avocados. Serve with garnishes and chips
     on the side, if desired.
-
 notes:
 - 'Optional garnishes: sour cream, shredded Cheddar, cilantro leaves, sliced radishes,
   chopped pickled jalapeños, and tortilla chips.'
-
+X-categories:
+  dish_type:
+  - bowl
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - mexican
+  dietary:
+  - vegetarian
+  context:
+  - quick
+X-source-verification:
+  status: verified
+  notes:
+  - MyRecipes.com; published May 2015
+X-original-source: ../originals/vegetarian-burrito-bowls-20260523.jpg
+X-prep_time: 15 minutes
+X-cook_time: 20 minutes
+X-total_time: 35 minutes
 X-nutrition:
   calories: 470
   fat_g: 15
   saturated_fat_g: 2
   notes: Partial nutritional information visible; full panel not shown in image.
-X-source-verification:
-  status: verified
-  notes:
-  - MyRecipes.com; published May 2015

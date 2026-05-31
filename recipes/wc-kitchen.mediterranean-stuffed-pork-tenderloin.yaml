@@ -5,15 +5,6 @@ description: Juicy Mediterranean Stuffed Pork Tenderloin is stuffed with spinach
 yields:
 - amount: 4
   unit: servings
-X-prep_time: 25 minutes
-X-cook_time: 45 minutes
-X-total_time: 1 hour 10 minutes
-X-category: Main Dish
-X-tags:
-- baked pork tenderloin
-- pork tenderloin recipe
-- stuffed pork tenderloin
-X-cuisine: Mediterranean
 ingredients:
 - pork tenderloin:
     amounts:
@@ -105,13 +96,35 @@ steps:
 - step: Place the pork loin in a roasting pan then smear all sides with the topping.
 - step: Roast the tenderloin at 425°F for 15 minutes then reduce heat to 375°F and
     roast an additional 20-30 minutes or until a thermometer inserted in the thickest
-    part of the loin reads at least 145°F. Allow the pork to rest for 10 minutes
-    before slicing and serving.
-
+    part of the loin reads at least 145°F. Allow the pork to rest for 10 minutes before
+    slicing and serving.
 notes:
 - 'There are a few ways to stuff a pork tenderloin; the easiest: 1. Slice the tenderloin
   in half lengthwise. 2. Spread the filling down the center. 3. Fold the meat over
   the filling and use butcher string to tie together.'
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - mediterranean
+X-source-verification:
+  status: verified
+  notes:
+  - Recipe extracted from a photographed printed page; some text partially obscured
+    or rotated, minor details may be misread.
+  - Garlic quantity for filling listed as "3 cloves" inferred from instructions text;
+    ingredient list shows "1 teaspoon minced garlic" for coating — filling garlic
+    quantity not explicitly listed separately in ingredients section visible.
+  - Rosemary amount for coating reads "1 teaspoon chopped" based on best reading of
+    image.
+  - Sundried tomatoes amount reads approximately "3 1/2 oz" from image.
+X-original-source: ../originals/mediterranean-stuffed-pork-tenderloin-20260523.jpg
+X-prep_time: 25 minutes
+X-cook_time: 45 minutes
+X-total_time: 1 hour 10 minutes
 X-nutrition:
   calories: 417
   carbohydrates_g: 13
@@ -129,15 +142,3 @@ X-nutrition:
   vitamin_c_mg: 38
   calcium_mg: 186
   iron_mg: 4
-X-original-source: ../originals/mediterranean-stuffed-pork-tenderloin-20260523.jpg
-X-source-verification:
-  status: verified
-  notes:
-  - Recipe extracted from a photographed printed page; some text partially obscured
-    or rotated, minor details may be misread.
-  - Garlic quantity for filling listed as "3 cloves" inferred from instructions text;
-    ingredient list shows "1 teaspoon minced garlic" for coating — filling garlic
-    quantity not explicitly listed separately in ingredients section visible.
-  - Rosemary amount for coating reads "1 teaspoon chopped" based on best reading of
-    image.
-  - Sundried tomatoes amount reads approximately "3 1/2 oz" from image.

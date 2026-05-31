@@ -1,23 +1,9 @@
 recipe_uuid: wc-kitchen.dairy-free-quiche-lorraine
 recipe_name: Dairy Free Quiche Lorraine
-description: 'Made with oat milk, smoky bacon and caramelized shallots, this dairy
-  free quiche is everything you''ve been missing - flaky, tender crust with a delicate
+description: Made with oat milk, smoky bacon and caramelized shallots, this dairy
+  free quiche is everything you've been missing - flaky, tender crust with a delicate
   and creamy egg filling. Serve it for a classic dairy free brunch, or enjoy it as
-  a light dinner alongside a simple green salad.'
-X-original-source: ../originals/dairy-free-quiche-lorraine-20260523.jpg
-X-category: Breakfast
-X-tags:
-- dairy-free
-- quiche
-- French
-- brunch
-X-dietary:
-- dairy-free
-X-prep_time: 15 mins
-X-cook_time: 55 mins
-X-total_time: 1 hr 10 mins
-X-nutrition:
-  calories: 267
+  a light dinner alongside a simple green salad.
 yields:
 - amount: 8
   unit: servings
@@ -78,9 +64,25 @@ steps:
     stirring as needed, until golden brown and completely softened.
 - step: In a large mixing bowl, whisk the eggs, dairy free milk, nutritional yeast,
     salt and nutmeg together until smooth.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - breakfast
+X-tags:
+  cuisine:
+  - french
+  dietary:
+  - dairy_free
 X-source-verification:
   status: needs-manual-review
   notes:
   - Steps 5+ not visible — image shows only steps 1–4; filling/baking steps missing
   - Added black pepper (to taste) from ingredients list; was missing from YAML
   - Egg quantity confirmed as range 6–7
+X-original-source: ../originals/dairy-free-quiche-lorraine-20260523.jpg
+X-prep_time: 15 mins
+X-cook_time: 55 mins
+X-total_time: 1 hr 10 mins
+X-nutrition:
+  calories: 267

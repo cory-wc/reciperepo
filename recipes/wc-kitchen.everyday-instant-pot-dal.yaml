@@ -1,10 +1,6 @@
 recipe_uuid: wc-kitchen.everyday-instant-pot-dal
 recipe_name: Everyday Instant Pot Dal
 source_url: https://www.hookedonheat.com
-X-original-source: ../originals/everyday-instant-pot-dal-20260523.jpg
-X-prep_time: 10 mins
-X-cook_time: 20 mins
-X-total_time: 30 mins
 yields:
 - amount: 4
   unit: servings
@@ -19,14 +15,14 @@ ingredients:
       unit: teaspoon
 - garlic:
     amounts:
-    - amount: "2–3"
+    - amount: 2–3
       unit: cloves
     notes: large
     processing:
     - bruised
 - ginger:
     amounts:
-    - amount: "2–3"
+    - amount: 2–3
       unit: slices
     notes: thin slices
 - onion:
@@ -91,3 +87,7 @@ X-source-verification:
     with the lentil description ("also known as masoor dal, thoroughly washed and
     drained") — lentil qualifier moved to the red lentils entry.
   - Quantity range "2-3" for garlic cloves and ginger slices preserved as written.
+X-original-source: ../originals/everyday-instant-pot-dal-20260523.jpg
+X-prep_time: 10 mins
+X-cook_time: 20 mins
+X-total_time: 30 mins

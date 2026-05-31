@@ -1,73 +1,60 @@
 recipe_uuid: wc-kitchen.thai-peanut-sauce-jessica-hylton
 recipe_name: Thai Peanut Sauce
 source_url: https://jessicainthekitchen.com/thai-peanut-sauce-recipe/
-X-original-source: ../originals/thai-peanut-sauce-jessica-hylton-20260523.jpg
-X-total_time: 5 minutes
 source_authors:
 - Jessica Hylton
-
 yields:
 - amount: 9
   unit: servings
-
 ingredients:
 - natural peanut butter:
     amounts:
     - amount: 1
       unit: cups
     notes: if thick, microwave for about 15 seconds first
-
 - ground ginger:
     amounts:
-    - amount: "1/4"
+    - amount: 1/4
       unit: teaspoons
     notes: or 1/2 teaspoon freshly minced ginger
-
 - maple syrup:
     amounts:
     - amount: 3
       unit: tablespoons
-
 - low sodium soy sauce:
     amounts:
     - amount: 6
       unit: tablespoons
-
 - rice wine vinegar:
     amounts:
     - amount: 3
       unit: teaspoons
-
 - sesame seeds:
     amounts:
-    - amount: "1 1/2"
+    - amount: 1 1/2
       unit: teaspoons
-
 - hot water:
     amounts:
-    - amount: "1/4"
+    - amount: 1/4
       unit: cups
     notes: start with 2 tablespoons less when whisking; add extra to adjust consistency
-
 - crushed red pepper flakes:
     amounts:
-    - amount: "3/4"
+    - amount: 3/4
       unit: teaspoons
     notes: optional
-
 steps:
-- step: Whisk all the ingredients (minus 2 tablespoons of the hot water) together in
-    a bowl, a jar with a lid (shake vigorously), or a small blender or food processor
+- step: Whisk all the ingredients (minus 2 tablespoons of the hot water) together
+    in a bowl, a jar with a lid (shake vigorously), or a small blender or food processor
     until smooth.
-- step: Add the extra water a little at a time depending on whether you need this for
-    a sauce, dip, or a dressing to your desired consistency.
+- step: Add the extra water a little at a time depending on whether you need this
+    for a sauce, dip, or a dressing to your desired consistency.
 - step: This can be made ahead of time and stored in the fridge, or used immediately.
-
 notes:
 - To make this gluten free, use gluten-free low sodium soy sauce, or liquid aminos.
-
-X-nutrition:
-  calories: 195 kcal
-
 X-source-verification:
   status: needs-review
+X-original-source: ../originals/thai-peanut-sauce-jessica-hylton-20260523.jpg
+X-total_time: 5 minutes
+X-nutrition:
+  calories: 195 kcal

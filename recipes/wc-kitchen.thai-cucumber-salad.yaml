@@ -1,32 +1,16 @@
 recipe_uuid: wc-kitchen.thai-cucumber-salad
 recipe_name: Thai Cucumber Salad
 source_url: https://www.budgetbytes.com/thai-cucumber-salad-2/
-X-original-source: ../originals/thai-cucumber-salad-20260523.jpg
-X-active_time: 15 minutes
-X-total_time: 15 minutes
-X-category: Salad
-X-tags:
-- thai
-- cucumber
-- summer
-- side dish
-- asian-inspired
-X-dietary:
-- vegan
-- vegetarian
-- gluten-free
 source_authors:
 - Beth Moncel
-
 yields:
 - amount: 6
   unit: servings
-
 ingredients:
 - name_group: Dressing
 - rice vinegar:
     amounts:
-    - amount: "1/3"
+    - amount: 1/3
       unit: cups
 - granulated sugar:
     amounts:
@@ -34,15 +18,15 @@ ingredients:
       unit: tablespoons
 - toasted sesame oil:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: teaspoons
 - red pepper flakes:
     amounts:
-    - amount: "1/4–1/2"
+    - amount: 1/4–1/2
       unit: teaspoons
 - salt:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: teaspoons
 - name_group: Salad
 - cucumbers:
@@ -56,11 +40,10 @@ ingredients:
       unit: whole
 - peanuts:
     amounts:
-    - amount: "1/4"
+    - amount: 1/4
       unit: cups
     processing:
     - chopped
-
 steps:
 - step: In a small bowl, combine the rice vinegar, sugar, sesame oil, red pepper flakes,
     and salt. Set the dressing aside to give it time to blend.
@@ -70,7 +53,28 @@ steps:
 - step: Add the dressing, peanuts, and green onions to the sliced cucumbers. Stir
     to combine. Serve immediately or refrigerate until ready to eat. Give the salad
     a brief stir before serving to redistribute the dressing and flavors.
-
+X-categories:
+  dish_type:
+  - salad
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - thai
+  - asian
+  dietary:
+  - vegan
+  - vegetarian
+  - gluten_free
+  season:
+  - summer
+X-source-verification:
+  status: verified
+  notes:
+  - Budget Bytes; author Beth Moncel
+X-original-source: ../originals/thai-cucumber-salad-20260523.jpg
+X-active_time: 15 minutes
+X-total_time: 15 minutes
 X-nutrition:
   calories: 62.82 kcal
   per: serving
@@ -79,8 +83,3 @@ X-nutrition:
   fat: 3.1g
   sodium: 199.82mg
   fiber: 1.4g
-
-X-source-verification:
-  status: verified
-  notes:
-  - Budget Bytes; author Beth Moncel

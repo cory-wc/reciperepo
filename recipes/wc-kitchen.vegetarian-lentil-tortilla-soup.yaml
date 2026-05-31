@@ -5,28 +5,13 @@ description: 'This uber easy and crazy flavorful Vegetarian Lentil Tortilla Soup
   favorite make-ahead soup recipes!
 
   '
-author: Jenn Laughlin - Peas and Crayons
+source_authors:
+- Jenn Laughlin - Peas and Crayons
 yields:
 - amount: 6
   unit: cups
 - amount: 6
   unit: servings
-X-original-source: ../originals/vegetarian-lentil-tortilla-soup-20260523.jpg
-X-category: Main Dish
-X-tags:
-- vegetarian
-- soup
-- Mexican
-- lentil
-- make-ahead
-X-dietary:
-- vegetarian
-X-prep_time: 10 minutes
-X-cook_time: 15 minutes
-X-total_time: 50 minutes
-X-nutrition:
-  calories: 284 kcal
-  serving_size: 1 serving
 ingredients:
 - onion:
     amounts:
@@ -119,14 +104,32 @@ steps:
     Refer to the original source for full directions.
 
     '
-
 notes:
 - 'Optional toppings: crushed tortilla chips, shredded cheddar or Mex-blend cheese,
   sliced jalapeños, chopped red onion.'
-
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - mexican
+  dietary:
+  - vegetarian
+  planning:
+  - make_ahead
 X-source-verification:
   status: needs-manual-review
   reviewed: true
   notes:
-  - Only ingredients page photographed; instructions not visible — find at Peas and Crayons (peasandcrayons.com)
+  - Only ingredients page photographed; instructions not visible — find at Peas and
+    Crayons (peasandcrayons.com)
   - Author: Jenn Laughlin
+X-original-source: ../originals/vegetarian-lentil-tortilla-soup-20260523.jpg
+X-prep_time: 10 minutes
+X-cook_time: 15 minutes
+X-total_time: 50 minutes
+X-nutrition:
+  calories: 284 kcal
+  serving_size: 1 serving

@@ -1,11 +1,5 @@
 recipe_uuid: wc-kitchen.couscous-feta-salad
 recipe_name: Couscous Feta Salad
-X-original-source: ../originals/couscous-feta-salad-20260523.jpg
-X-active_time: 20 minutes
-X-total_time: 45 minutes
-X-nutrition:
-  calories: 440
-  fiber: 4g
 yields:
 - amount: 4
   unit: servings
@@ -62,5 +56,13 @@ steps:
 X-source-verification:
   status: verified
   notes:
-  - Custom recipe card; allrecipes.com URL at top of image bleeds through from an adjacent page
-  - Step 1 says "1 tbsp olive oil" but ingredients list shows 1 tsp; source inconsistency preserved faithfully
+  - Custom recipe card; allrecipes.com URL at top of image bleeds through from an
+    adjacent page
+  - Step 1 says "1 tbsp olive oil" but ingredients list shows 1 tsp; source inconsistency
+    preserved faithfully
+X-original-source: ../originals/couscous-feta-salad-20260523.jpg
+X-active_time: 20 minutes
+X-total_time: 45 minutes
+X-nutrition:
+  calories: 440
+  fiber: 4g

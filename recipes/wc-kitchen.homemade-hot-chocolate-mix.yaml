@@ -1,12 +1,9 @@
 recipe_uuid: wc-kitchen.homemade-hot-chocolate-mix
 recipe_name: Homemade Hot Chocolate Mix
 source_url: https://www.berlyskitchen.com/homemade-hot-chocolate-mix/
-X-original-source: ../originals/homemade-hot-chocolate-mix-20260523.jpg
 yields:
 - amount: 13
   unit: servings
-X-prep_time: 5 mins
-X-total_time: 5 mins
 ingredients:
 - granulated sugar:
     amounts:
@@ -34,6 +31,19 @@ steps:
 - step: To make hot chocolate, add 1 tablespoon of mix to every 4 ounces of milk.
     For an 8 ounce mug, use 2 tablespoons of mix. Top with marshmallows, marshmallow
     crème, whipped cream, or chocolate sauce.
+X-source-verification:
+  status: verified
+  notes:
+  - Printed quantities used (1 cup sugar, 2/3 cup cocoa, 1/2 tsp salt, 1/8 tsp cinnamon);
+    consistent with 13 servings at 2 tbsp each
+  - Handwritten annotations are personal modifications — 3 cups sugar, 2 cups cocoa,
+    1½ tsp salt, 3/8 tsp peppermint replacing cinnamon; sugar corrected from erroneous
+    3 cups back to printed 1 cup
+  - Source URL and date (November 27, 2020) visible on printed page; image captured
+    12/23/22
+X-original-source: ../originals/homemade-hot-chocolate-mix-20260523.jpg
+X-prep_time: 5 mins
+X-total_time: 5 mins
 X-nutrition:
   serving_size: 2 tablespoons
   calories: 69
@@ -51,12 +61,3 @@ X-nutrition:
   vitamin_c_mg: null
   calcium_mg: 6
   iron_mg: 1
-X-source-verification:
-  status: verified
-  notes:
-  - Printed quantities used (1 cup sugar, 2/3 cup cocoa, 1/2 tsp salt, 1/8 tsp cinnamon);
-    consistent with 13 servings at 2 tbsp each
-  - Handwritten annotations are personal modifications — 3 cups sugar, 2 cups cocoa,
-    1½ tsp salt, 3/8 tsp peppermint replacing cinnamon; sugar corrected from erroneous
-    3 cups back to printed 1 cup
-  - Source URL and date (November 27, 2020) visible on printed page; image captured 12/23/22

@@ -1,14 +1,5 @@
 recipe_uuid: wc-kitchen.healthy-blueberry-muffins
 recipe_name: Healthy Blueberry Muffins
-X-original-source: ../originals/healthy-blueberry-muffins-20260523.jpg
-X-category: Muffin
-X-tags:
-- blueberry
-- healthy
-- whole wheat
-- baked
-X-total_time: 35 minutes
-X-active_time: 13 minutes
 yields:
 - amount: 12
   unit: muffins
@@ -79,6 +70,16 @@ steps:
     Mix well. (If the coconut oil solidifies in contact with cold ingredients, gently
     warm the bowl.)
 - step: '[Remaining instructions not visible in image]'
+X-categories:
+  dish_type:
+  - bread
+  meal_type:
+  - dinner
+X-tags:
+  dietary:
+  - low_sugar
+  method:
+  - oven
 X-source-verification:
   status: needs-review
   notes:
@@ -90,3 +91,6 @@ X-source-verification:
   - Instructions are partially visible; steps 1-3 captured; remainder of instructions
     cut off in image.
   - Yield is 12 muffins per scale selector shown.
+X-original-source: ../originals/healthy-blueberry-muffins-20260523.jpg
+X-active_time: 13 minutes
+X-total_time: 35 minutes

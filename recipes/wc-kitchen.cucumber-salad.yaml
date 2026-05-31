@@ -1,7 +1,5 @@
 recipe_uuid: wc-kitchen.cucumber-salad
 recipe_name: Cucumber Salad
-X-original-source: ../originals/cucumber-salad-20260523.jpg
-X-total_time: 25 minutes
 yields:
 - amount: 4
   unit: servings
@@ -38,3 +36,5 @@ X-source-verification:
   status: verified
   notes:
   - Custom recipe card; source field blank in original
+X-original-source: ../originals/cucumber-salad-20260523.jpg
+X-total_time: 25 minutes

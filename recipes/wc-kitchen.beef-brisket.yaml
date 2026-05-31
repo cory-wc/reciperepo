@@ -1,15 +1,6 @@
 recipe_uuid: wc-kitchen.beef-brisket
 recipe_name: Beef Brisket
 source_url: https://www.foodnetwork.com
-X-original-source: ../originals/beef-brisket-20260523.jpg
-X-attribution: Tyler Florence
-X-show: Food 911
-X-episode: Two Goys, a Girl and a Brisket!
-X-level: Intermediate
-X-total_time: 4 hr 35 min
-X-active_time: 20 min
-X-inactive_time: 15 min
-X-cook_time: 4 hr
 yields:
 - amount: 10
   unit: servings
@@ -110,6 +101,17 @@ steps:
     Serve with potato pancakes.
 notes:
 - Serve with applesauce alongside the potato pancakes.
+X-source-verification:
+  status: verified
+  notes:
+  - Tyler Florence, Food Network Food 911, episode "Two Goys, a Girl and a Brisket"
+  - Brisket stored as 4 pounds (source listed as "1 (4 pound)")
+  - Latkes: kosher salt, black pepper, and vegetable oil quantities unspecified (to
+      taste / as needed)
+X-original-source: ../originals/beef-brisket-20260523.jpg
+X-cook_time: 4 hr
+X-active_time: 20 min
+X-total_time: 4 hr 35 min
 X-sub-recipes:
 - recipe_name: Crispy Potato Pancakes (Latkes)
   yields:
@@ -159,9 +161,8 @@ X-sub-recipes:
       drain; season with salt while the potato pancakes are still hot. Continue frying,
       adding more oil as needed, until all of the mixture is used up. Serve immediately
       with applesauce, if desired.
-X-source-verification:
-  status: verified
-  notes:
-  - Tyler Florence, Food Network Food 911, episode "Two Goys, a Girl and a Brisket"
-  - Brisket stored as 4 pounds (source listed as "1 (4 pound)")
-  - Latkes: kosher salt, black pepper, and vegetable oil quantities unspecified (to taste / as needed)
+X-attribution: Tyler Florence
+X-episode: Two Goys, a Girl and a Brisket!
+X-inactive_time: 15 min
+X-level: Intermediate
+X-show: Food 911

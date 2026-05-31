@@ -1,22 +1,6 @@
 recipe_uuid: wc-kitchen.actually-delicious-turkey-burgers
 recipe_name: Actually Delicious Turkey Burgers
 source_url: https://www.allrecipes.com
-X-original-source: ../originals/actually-delicious-turkey-burgers-20260523.jpg
-X-source-verification:
-  status: needs-review
-  notes:
-  - Recipe printed from Allrecipes.com on 2/28/2018
-  - Recipe by Trudi Davidoff
-  - Handwritten annotation adds "1 TBSP cumin" to ingredients list
-  - Some text partially obscured by shadow in image; ingredients and directions appear
-    fully legible
-X-category: main dish
-X-tags:
-- turkey
-- burgers
-- ground turkey
-X-active_time: 15 minutes
-X-total_time: 30 minutes
 yields:
 - amount: 12
   unit: patties
@@ -72,3 +56,19 @@ steps:
 - step: Form into 12 patties.
 - step: Cook the patties in a medium skillet over medium heat, turning once, to an
     internal temperature of 180 degrees F (85 degrees C).
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe printed from Allrecipes.com on 2/28/2018
+  - Recipe by Trudi Davidoff
+  - Handwritten annotation adds "1 TBSP cumin" to ingredients list
+  - Some text partially obscured by shadow in image; ingredients and directions appear
+    fully legible
+X-original-source: ../originals/actually-delicious-turkey-burgers-20260523.jpg
+X-active_time: 15 minutes
+X-total_time: 30 minutes

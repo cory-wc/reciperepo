@@ -1,12 +1,10 @@
 recipe_uuid: wc-kitchen.zucchini-bread-muffins
 recipe_name: Zucchini Bread Muffins
-author: Sally
+source_authors:
+- Sally
 yields:
 - amount: 12
   unit: muffins
-X-active_time: 10 minutes
-X-total_time: 35 minutes
-X-cook_time: 20 minutes
 ingredients:
 - all-purpose flour:
     amounts:
@@ -50,7 +48,7 @@ ingredients:
       unit: g
 - brown sugar:
     amounts:
-    - amount: "1/3"
+    - amount: 1/3
       unit: cups
     - amount: 67
       unit: g
@@ -103,12 +101,15 @@ steps:
     muffin cups, filling them all the way to the top. Top each with a sprinkle of
     coarse sugar, if desired.
 - step: Bake for 5 minutes at 425°F (218°C), then — keeping the muffins in the oven
-    — reduce the oven temperature to 350°F (177°C). Bake for an additional 15–16
-    minutes, or until a toothpick inserted in the center comes out clean.
-X-original-source: ../originals/zucchini-bread-muffins-20260523.jpg
+    — reduce the oven temperature to 350°F (177°C). Bake for an additional 15–16 minutes,
+    or until a toothpick inserted in the center comes out clean.
 X-source-verification:
   status: verified
   notes:
   - All steps now captured; prior note about instructions being cut off was incorrect
   - Bake method is 5 min at 425°F then reduce to 350°F for 15–16 min (visible in image)
   - All quantities confirmed from image
+X-original-source: ../originals/zucchini-bread-muffins-20260523.jpg
+X-cook_time: 20 minutes
+X-active_time: 10 minutes
+X-total_time: 35 minutes

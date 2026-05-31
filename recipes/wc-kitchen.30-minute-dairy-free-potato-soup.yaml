@@ -1,17 +1,15 @@
 recipe_uuid: wc-kitchen.30-minute-dairy-free-potato-soup
 recipe_name: 30 Minute Dairy Free Potato Soup
-source_url: https://thewholecook.com/30-minute-dairy-free-potato-soup/
-source_authors:
-  - The Whole Cook
 description: 'This 30 Minute Dairy Free Potato Soup is so creamy and easy to make!
   You''ll be surprised it''s dairy free, gluten free, and Whole30 compliant!
 
   '
+source_url: https://thewholecook.com/30-minute-dairy-free-potato-soup/
+source_authors:
+- The Whole Cook
 yields:
 - amount: 8
   unit: cup servings
-X-active_time: 15 mins
-X-total_time: 30 mins
 ingredients:
 - potatoes:
     amounts:
@@ -91,6 +89,25 @@ notes:
   the soup alone you may want a 2 cup serving.
 
   '
+X-categories:
+  dish_type:
+  - soup
+  meal_type:
+  - dinner
+X-tags:
+  dietary:
+  - dairy_free
+  - gluten_free
+  - whole30
+X-source-verification:
+  status: needs-review
+  notes:
+  - Recipe sourced from printed page attributed to @thewholecook on Instagram.
+  - Prep time 15 mins and cook time 15 mins read from image; total time 30 mins confirmed.
+  - Rating shown as 4.92 from 50 votes on source page.
+X-original-source: ../originals/30-minute-dairy-free-potato-soup-20260523.jpg
+X-active_time: 15 mins
+X-total_time: 30 mins
 X-nutrition:
   serving: 1 cup
   calories: 210 kcal
@@ -106,20 +123,3 @@ X-nutrition:
   vitamin_c: 17.7mg
   calcium: 52mg
   iron: 5.4mg
-X-category: soup
-X-tags:
-- dairy-free
-- gluten-free
-- Whole30
-- potato soup
-X-dietary:
-- dairy-free
-- gluten-free
-- Whole30
-X-original-source: ../originals/30-minute-dairy-free-potato-soup-20260523.jpg
-X-source-verification:
-  status: needs-review
-  notes:
-  - Recipe sourced from printed page attributed to @thewholecook on Instagram.
-  - Prep time 15 mins and cook time 15 mins read from image; total time 30 mins confirmed.
-  - Rating shown as 4.92 from 50 votes on source page.

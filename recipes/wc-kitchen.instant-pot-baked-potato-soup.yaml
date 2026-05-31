@@ -1,23 +1,8 @@
 recipe_uuid: wc-kitchen.instant-pot-baked-potato-soup
 recipe_name: Instant Pot Baked Potato Soup
-X-original-source: ../originals/instant-pot-baked-potato-soup-20260523.jpg
-X-total_time: 25 minutes
-X-category: soup
-X-tags:
-- soup
-- potato
-- instant pot
-- comfort food
-X-source-verification:
-  status: needs-review
-  notes:
-  - Some ingredient amounts not clearly legible in source image; verify cream cheese and cheddar quantities
-  - Sour cream mentioned in instructions but not clearly listed in ingredients — verify
-
 yields:
 - amount: 8
   unit: servings
-
 ingredients:
 - potatoes:
     amounts:
@@ -43,31 +28,49 @@ ingredients:
     notes: amount not clearly visible in source
 - salt:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: teaspoons
 - black pepper:
     amounts:
-    - amount: "1/4"
+    - amount: 1/4
       unit: teaspoons
 - milk or heavy cream:
     amounts: []
     notes: for thinning, to taste
 - real bacon bits:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: cups
     notes: optional; heated
 - green onion:
     amounts: []
     notes: chopped; for garnish, optional
-
 steps:
 - step: Add potatoes and chicken broth to an Instant Pot. Seal the lid and cook on
     manual or soup setting for 10 minutes.
 - step: Release pressure by turning the valve from sealing to venting. Mash potatoes
-    to desired texture with a potato masher or large fork, or blend for a smoother soup.
+    to desired texture with a potato masher or large fork, or blend for a smoother
+    soup.
 - step: Add butter, cream cheese, sour cream, and cheddar cheese. Stir well to combine.
     Add salt and pepper and adjust to taste.
 - step: Add milk or heavy cream as needed to reach desired consistency.
 - step: Heat bacon bits in microwave for 30 to 60 seconds until crispy. Serve soup
     topped with bacon bits, green onion, and additional cheddar as desired.
+X-categories:
+  dish_type:
+  - soup
+  meal_type:
+  - dinner
+X-tags:
+  method:
+  - instant_pot
+  context:
+  - comfort_food
+X-source-verification:
+  status: needs-review
+  notes:
+  - Some ingredient amounts not clearly legible in source image; verify cream cheese
+    and cheddar quantities
+  - Sour cream mentioned in instructions but not clearly listed in ingredients — verify
+X-original-source: ../originals/instant-pot-baked-potato-soup-20260523.jpg
+X-total_time: 25 minutes

@@ -1,18 +1,8 @@
 recipe_uuid: wc-kitchen.tomato-relish
 recipe_name: Tomato Relish
-X-original-source: ../originals/tomato-relish-20260523.jpg
-X-total_time: 1 hour 45 minutes
-X-category: Preserves
-X-tags:
-- relish
-- tomato
-- condiment
-- preserving
-
 yields:
 - amount: 2
   unit: kg
-
 ingredients:
 - tomatoes:
     amounts:
@@ -55,16 +45,22 @@ ingredients:
       unit: tablespoons
 - vinegar (extra):
     amounts:
-    - amount: "1/4"
+    - amount: 1/4
       unit: cups
-
 steps:
-- step: Place the tomatoes, onions, salt, mustard powder, curry powder, sugar and vinegar
-    in a large saucepan. Bring to the boil, stirring until the sugar is dissolved,
+- step: Place the tomatoes, onions, salt, mustard powder, curry powder, sugar and
+    vinegar in a large saucepan. Bring to the boil, stirring until the sugar is dissolved,
     and continue to boil for 1½ hours.
 - step: Mix the cornflour to a paste with the extra vinegar, add some or all to the
     boiling mixture and stir till thickened. Pour into sterilised jars and seal immediately.
-
+X-categories:
+  dish_type:
+  - preserve
+  meal_type:
+  - anytime
+X-tags:
+  method:
+  - preserve
 X-source-verification:
   status: verified
   notes:
@@ -76,3 +72,5 @@ X-source-verification:
     complete.
   - Tomato Chutney recipe begins at bottom of page but is cut off — not extracted
     here.
+X-original-source: ../originals/tomato-relish-20260523.jpg
+X-total_time: 1 hour 45 minutes

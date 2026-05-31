@@ -1,6 +1,7 @@
 recipe_uuid: wc-kitchen.ultra-crispy-smashed-potatoes
 recipe_name: Ultra Crispy Smashed Potatoes
-author: Nagi
+source_authors:
+- Nagi
 yields:
 - amount: 12
   unit: servings
@@ -65,19 +66,19 @@ steps:
 - step: 'Bake: Bake for 45 minutes (small potatoes) to 55 minutes (medium) or until
     deep golden and crispy. Do not flip!'
 - step: Serve hot, sprinkled with parsley if desired.
-X-original-source: ../originals/ultra-crispy-smashed-potatoes-20260523.jpg
-X-category: Sides
-X-tags:
-- smashed potatoes
-- crispy
-- potato
-X-active_time: 10 minutes
-X-total_time: 1 hour 10 minutes
-X-nutrition:
-  calories: 85
-  per: serving
+X-categories:
+  dish_type:
+  - side
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:
   - Author Nagi (RecipeTin Eats); URL not visible in source image
   - Two potato size options; use one or the other
+X-original-source: ../originals/ultra-crispy-smashed-potatoes-20260523.jpg
+X-active_time: 10 minutes
+X-total_time: 1 hour 10 minutes
+X-nutrition:
+  calories: 85
+  per: serving

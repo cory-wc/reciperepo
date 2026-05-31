@@ -1,27 +1,10 @@
 recipe_uuid: wc-kitchen.vegetable-lasagna
 recipe_name: Best Vegetable Lasagna
-X-original-source: ../originals/vegetable-lasagna-20260523.jpg
-X-prep_time: 30 minutes
-X-cook_time: 30 minutes
-X-total_time: 1 hour plus 15 minutes cooling time
-X-category: entree
-X-tags:
-- lasagna
-- vegetarian
-- pasta
-- baked
 source_authors:
 - Cookie and Kate
-X-source-verification:
-  status: verified
-  notes:
-  - Ingredients page (PXL_20260523_105906063) confirms title "Best Vegetable Lasagna" by Cookie and Kate with full ingredient quantities
-  - Instructions captured from companion page PXL_20260523_105910800.RAW-01.COVER.jpg
-
 yields:
 - amount: 8
   unit: servings
-
 ingredients:
 - name_group: Veggies and spinach
 - extra-virgin olive oil:
@@ -57,7 +40,7 @@ ingredients:
     - chopped
 - salt:
     amounts:
-    - amount: "1/4"
+    - amount: 1/4
       unit: teaspoons
 - baby spinach:
     amounts:
@@ -72,7 +55,7 @@ ingredients:
     notes: 1 large can
 - fresh basil:
     amounts:
-    - amount: "1/4"
+    - amount: 1/4
       unit: cups
     notes: roughly chopped; plus additional for garnish
 - olive oil (sauce):
@@ -87,11 +70,11 @@ ingredients:
     - pressed or minced
 - salt (sauce):
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: teaspoons
 - red pepper flakes:
     amounts:
-    - amount: "1/4"
+    - amount: 1/4
       unit: teaspoons
 - name_group: Remaining
 - low-fat cottage cheese:
@@ -112,7 +95,6 @@ ingredients:
     - amount: 2
       unit: cups
     notes: 8 oz; freshly grated, low-moisture part-skim
-
 steps:
 - step: Preheat the oven to 425 degrees Fahrenheit.
 - step: To prepare the veggies, in a large skillet over medium heat, warm the olive
@@ -158,3 +140,23 @@ steps:
 - step: Remove from oven and let the lasagna cool for 15 to 20 minutes, so it has
     time to set and cool down to a reasonable temperature. Sprinkle additional basil
     over the top, then slice and serve.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
+X-tags:
+  dietary:
+  - vegetarian
+  method:
+  - oven
+X-source-verification:
+  status: verified
+  notes:
+  - Ingredients page (PXL_20260523_105906063) confirms title "Best Vegetable Lasagna"
+    by Cookie and Kate with full ingredient quantities
+  - Instructions captured from companion page PXL_20260523_105910800.RAW-01.COVER.jpg
+X-original-source: ../originals/vegetable-lasagna-20260523.jpg
+X-prep_time: 30 minutes
+X-cook_time: 30 minutes
+X-total_time: 1 hour plus 15 minutes cooling time

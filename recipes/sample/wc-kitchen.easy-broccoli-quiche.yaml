@@ -1,0 +1,102 @@
+recipe_uuid: wc-kitchen.easy-broccoli-quiche
+recipe_name: Easy Broccoli Quiche
+source_url: https://www.allrecipes.com/recipe/24148/easy-broccoli-quiche/
+yields:
+- amount: 6
+  unit: servings
+ingredients:
+- pie crust:
+    amounts:
+    - amount: 1
+      unit: whole
+    notes: 9-inch, unbaked
+- salted butter:
+    amounts:
+    - amount: 3
+      unit: tablespoons
+- onion:
+    amounts:
+    - amount: 1
+      unit: whole
+- garlic:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- broccoli:
+    amounts:
+    - amount: 2
+      unit: cups
+- mozzarella:
+    amounts:
+    - amount: 1.5
+      unit: cups
+    notes: part-skim
+- eggs:
+    amounts:
+    - amount: 4
+      unit: whole
+- milk:
+    amounts:
+    - amount: 1.5
+      unit: cups
+    notes: 2%
+- salt:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- black pepper:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+steps:
+- step: Preheat oven to 350°F (175°C). Line a 9-inch deep-dish pie pan with crust.
+- step: Melt 2 tablespoons butter in a large saucepan over medium-low heat. Add onion,
+    garlic, and broccoli. Cook slowly, stirring occasionally, until vegetables are
+    soft. Spoon vegetables into crust and sprinkle with cheese.
+- step: Combine eggs and milk. Season with salt and pepper. Stir in remaining 1 tablespoon
+    melted butter. Pour egg mixture over vegetables and cheese.
+- step: Bake in preheated oven until center has set, 30 to 50 minutes.
+notes:
+- Handwritten alternate quantities found on page labeled "alt."
+- 'Handwritten alternate ingredient: pie crust: 1 piece'
+- 'Handwritten alternate ingredient: onion: 0.5 whole'
+- 'Handwritten alternate ingredient: salted butter: 3 tablespoons'
+- 'Handwritten alternate ingredient: diced fresh garlic: 1 teaspoon'
+- 'Handwritten alternate ingredient: broccoli: 2 cups (chopped and dried)'
+- 'Handwritten alternate ingredient: Colby Jack cheese: 1 cup'
+- 'Handwritten alternate ingredient: parmesan: 0.5 cup'
+- 'Handwritten alternate ingredient: eggs: 8 whole'
+- 'Handwritten alternate ingredient: whole milk: 0.75 cup'
+- 'Handwritten alternate ingredient: Dijon mustard: 1 tablespoon'
+- 'Handwritten alternate ingredient: diced ham: 1 cup'
+- 'Handwritten alternate ingredient: tarragon: 1 teaspoon'
+- 'Handwritten alternate ingredient: pepper: 0.25 teaspoon'
+- Handwritten optional fillings noted on page
+- 'Handwritten optional filling: zucchini (0.5 cup)'
+- 'Handwritten optional filling: handful sun-dried tomatoes'
+- 'Handwritten optional filling: spinach (0.25 portion, unit unclear)'
+X-categories:
+  dish_type:
+  - breakfast_bake
+  meal_type:
+  - breakfast
+X-tags:
+  dietary:
+  - vegetarian
+  context:
+  - quick
+X-source-verification:
+  status: verified
+  notes:
+  - Recipe printed from allrecipes.com on 08/03/2020
+  - Handwritten alternate ingredient quantities noted on right side of page (labeled
+    "alt.")
+  - Handwritten optional fillings noted on right side of page
+  - Some text partially obscured by shadow in image
+  - Original ingredient names were AllRecipes nutritional database format; simplified
+    to plain names
+X-original-source: ../../originals/easy-broccoli-quiche-20260523.jpg
+X-prep_time: 20 mins
+X-cook_time: 30 mins
+X-active_time: 20 mins
+X-total_time: 50 mins

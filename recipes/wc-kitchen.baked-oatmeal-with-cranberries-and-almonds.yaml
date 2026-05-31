@@ -1,25 +1,6 @@
 recipe_uuid: wc-kitchen.baked-oatmeal-with-cranberries-and-almonds
 recipe_name: Baked Oatmeal With Cranberries and Almonds
 source_url: https://www.realsimple.com
-X-original-source: ../originals/baked-oatmeal-with-cranberries-and-almonds-20260523.jpg
-X-source-verification:
-  status: verified
-  notes:
-  - Source confirmed against original image (Real Simple, by Real Simple Editors,
-    updated August 20, 2022).
-  - Salt confirmed as ¼ teaspoon — matches step 3; earlier 1/8 tsp reference was a misread.
-  - Almonds corrected to ¾ cup (was erroneously transcribed as ½ cup).
-  - Maple syrup corrected to ⅔ cup (was partially obscured; previously guessed as ¾ cup).
-  - Nutrition facts visible but cut off; not transcribed.
-X-category: breakfast
-X-tags:
-- baked oatmeal
-- cranberry
-- almond
-- make-ahead
-- whole grain
-X-active_time: 10 minutes
-X-total_time: 50 minutes
 yields:
 - amount: 1
   unit: 2-quart baking dish
@@ -68,7 +49,7 @@ ingredients:
     - beaten
 - pure maple syrup:
     amounts:
-    - amount: "2/3"
+    - amount: 2/3
       unit: cups
 - pure vanilla extract:
     amounts:
@@ -85,3 +66,25 @@ steps:
 notes:
 - 'Tip: Toast raw almonds in a 350°F oven on a rimmed baking sheet until fragrant
   and golden brown, 8 to 10 minutes. Let cool before chopping.'
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - breakfast
+X-tags:
+  planning:
+  - make_ahead
+X-source-verification:
+  status: verified
+  notes:
+  - Source confirmed against original image (Real Simple, by Real Simple Editors,
+    updated August 20, 2022).
+  - Salt confirmed as ¼ teaspoon — matches step 3; earlier 1/8 tsp reference was a
+    misread.
+  - Almonds corrected to ¾ cup (was erroneously transcribed as ½ cup).
+  - Maple syrup corrected to ⅔ cup (was partially obscured; previously guessed as
+    ¾ cup).
+  - Nutrition facts visible but cut off; not transcribed.
+X-original-source: ../originals/baked-oatmeal-with-cranberries-and-almonds-20260523.jpg
+X-active_time: 10 minutes
+X-total_time: 50 minutes

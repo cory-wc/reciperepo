@@ -1,13 +1,9 @@
 recipe_uuid: wc-kitchen.taco-salad
 recipe_name: Taco Salad
 source_url: https://www.eatingwell.com
-X-original-source: ../originals/taco-salad-20260523.jpg
-X-total_time: ~25 minutes
-
 yields:
 - amount: 4
   unit: servings
-
 ingredients:
 - ground beef or turkey:
     amounts:
@@ -72,7 +68,6 @@ ingredients:
     amounts:
     - amount: 0.5
       unit: cups
-
 steps:
 - step: Combine salsa and sour cream in a large salad bowl.
 - step: Heat oil in a skillet over medium heat. Saute onion and garlic until soft.
@@ -82,8 +77,9 @@ steps:
 - step: Remove from heat. Stir in cilantro and 1/4 C of the salsa mixture.
 - step: In the large bowl, toss lettuce with the remaining salsa mixture.
 - step: Serve lettuce topped with the meat and sprinkled with cheese.
-
 X-source-verification:
   status: verified
   notes:
   - Source: EatingWell.com per printed attribution at bottom of page
+X-original-source: ../originals/taco-salad-20260523.jpg
+X-total_time: ~25 minutes

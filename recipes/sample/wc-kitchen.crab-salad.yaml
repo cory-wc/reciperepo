@@ -1,0 +1,90 @@
+recipe_uuid: wc-kitchen.crab-salad
+recipe_name: Crab Salad (Seafood Salad)
+description: Crab Salad with celery and mayonnaise is a delicious and inexpensive
+  way to enjoy the classic Seafood Salad we all grew up with.
+source_url: https://dinnerthendessert.com/crab-salad-seafood-salad/
+source_authors:
+- Sabrina Snyder
+yields:
+- amount: 2
+  unit: servings
+ingredients:
+- imitation crab meat:
+    amounts:
+    - amount: 0.5
+      unit: pound
+- shallot:
+    amounts:
+    - amount: 0.5
+      unit: whole
+    notes: you can use red onion if you need
+    processing:
+    - minced
+- mayonnaise:
+    amounts:
+    - amount: 0.25
+      unit: cup
+- celery:
+    amounts:
+    - amount: 0.25
+      unit: cup
+    processing:
+    - minced
+- paprika:
+    amounts:
+    - amount: 0.25
+      unit: teaspoon
+- dill:
+    amounts:
+    - amount: 0.25
+      unit: teaspoon
+- kosher salt:
+    amounts:
+    - amount: 0.13
+      unit: teaspoon
+- black pepper:
+    amounts:
+    - amount: 0.13
+      unit: teaspoon
+steps:
+- step: In a large bowl add all the ingredients together gently, stirring until well
+    coated.
+- step: Refrigerate for an hour before serving.
+X-categories:
+  dish_type:
+  - salad
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - american
+  - seafood
+  method:
+  - no_cook
+X-source-verification:
+  status: verified
+  notes:
+  - Ingredient quantity for shallot listed as 0.5 shallot (minced); interpreted as
+    0.5 whole shallot.
+  - Values 0.13 teaspoon for salt and pepper appear to be rounded representations
+    of 1/8 teaspoon.
+X-original-source: ../../originals/crab-salad-20260523.jpg
+X-prep_time: 10 minutes
+X-total_time: 10 minutes
+X-nutrition:
+  serving_size: 1 serving
+  calories: 310
+  calories_from_fat: 189
+  fat_g: 21
+  saturated_fat_g: 3
+  cholesterol_mg: 24
+  sodium_mg: 971
+  potassium_mg: 53
+  carbohydrates_g: 21
+  fiber_g: 1
+  sugar_g: 5
+  protein_g: 6
+  vitamin_a_iu: 200
+  vitamin_c_mg: 0.9
+  calcium_mg: 5
+  iron_mg: 0.2

@@ -1,15 +1,8 @@
 recipe_uuid: wc-kitchen.macaroni-and-hamburger
 recipe_name: Macaroni & Hamburger
-X-original-source: ../originals/macaroni-and-hamburger-20260523.jpg
-X-active_time: 45 minutes
-X-nutrition:
-  calories: 430
-  fiber: 6g
-
 yields:
 - amount: 6
   unit: servings
-
 ingredients:
 - whole wheat macaroni:
     amounts:
@@ -39,15 +32,18 @@ ingredients:
       unit: can
     processing:
     - defrosted
-
 steps:
 - step: Boil water and prepare macaroni.
 - step: Heat oil in skillet. Add onion and cook until translucent.
 - step: Add ground beef to skillet. Break up and cook beef.
 - step: Mix tomatoes, corn, beef, and macaroni.
 - step: Cook on low for 5-10 minutes.
-
 X-source-verification:
   status: verified
   notes:
   - Custom recipe card; no source URL visible
+X-original-source: ../originals/macaroni-and-hamburger-20260523.jpg
+X-active_time: 45 minutes
+X-nutrition:
+  calories: 430
+  fiber: 6g

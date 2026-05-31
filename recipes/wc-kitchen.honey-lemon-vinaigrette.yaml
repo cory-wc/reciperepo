@@ -33,30 +33,32 @@ ingredients:
 - salt and pepper:
     amounts: []
     notes: pinch, to taste
-
 steps:
 - step: Add all ingredients to a 16 oz mason jar with lid.
 - step: Screw the lid on tight and shake vigorously for a minute or two until emulsified
     and creamy.
 - step: Taste and add additional salt & pepper if necessary.
 - step: Store in an airtight container in the fridge for one week.
-X-original-source: ../originals/honey-lemon-vinaigrette-20260523.jpg
-X-category: Condiment, Salad
-X-cuisine: American
-X-total_time: 5 minutes
-X-active_time: 5 minutes
+X-categories:
+  dish_type:
+  - sauce
+  - salad
+  meal_type:
+  - anytime
 X-tags:
-- vinaigrette
-- dressing
-- lemon
-- honey
-- quick
-X-equipment:
-- mason jar with lid
-- measuring cups and spoons
+  cuisine:
+  - american
+  context:
+  - quick
 X-source-verification:
   status: verified
   notes:
   - Recipe extracted from printed page photograph; some text may be partially obscured
     by shadow.
   - Rating shown as 4.92 from 105 votes.
+X-original-source: ../originals/honey-lemon-vinaigrette-20260523.jpg
+X-active_time: 5 minutes
+X-total_time: 5 minutes
+X-equipment:
+- mason jar with lid
+- measuring cups and spoons

@@ -1,13 +1,9 @@
 recipe_uuid: wc-kitchen.chicken-katsu-recipe
 recipe_name: Chicken Katsu Recipe
 source_url: https://www.thekitchn.com/_/print
-X-original-source: ../originals/chicken-katsu-recipe-20260523.jpg
 yields:
 - amount: 4
   unit: servings
-X-prep_time: 25 minutes
-X-cook_time: 30 minutes
-X-total_time: 55 minutes
 ingredients:
 - boneless skinless chicken thighs:
     amounts:
@@ -72,3 +68,7 @@ X-source-verification:
   status: verified
   notes:
   - Printed from thekitchn.com; full canonical URL may differ from print URL
+X-original-source: ../originals/chicken-katsu-recipe-20260523.jpg
+X-prep_time: 25 minutes
+X-cook_time: 30 minutes
+X-total_time: 55 minutes
