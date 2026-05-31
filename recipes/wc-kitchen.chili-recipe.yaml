@@ -1,14 +1,5 @@
 recipe_uuid: wc-kitchen.chili-recipe
 recipe_name: Chili Recipe (Vegetarian)
-X-original-source: ../originals/chili-recipe-20260523.jpg
-X-category: main dish
-X-tags:
-- vegetarian
-- chili
-- slow cooker
-X-dietary:
-- vegetarian
-X-total_time: 4–5 hours
 ingredients:
 - onion:
     amounts:
@@ -79,15 +70,27 @@ steps:
     on low.
 - step: Garnish with sour cream and cheese.
 notes:
-- >-
-  Cook's note: I put a tablespoon instead of teaspoon of the spices in, because I
-  doubled the bell peppers and those made most of the mix. I also put in 3 tablespoons
-  of fresh jalapenos including seeds.
+- 'Cook''s note: I put a tablespoon instead of teaspoon of the spices in, because
+  I doubled the bell peppers and those made most of the mix. I also put in 3 tablespoons
+  of fresh jalapenos including seeds.'
 - Handwritten additions to the printed recipe: 1 tsp salt, 1 can black beans.
 - Chili flakes and jalapeno peppers are listed as alternatives (2 tbsp of either).
 - Optional garnishes: sour cream, shredded cheddar.
+X-categories:
+  dish_type:
+  - soup
+  meal_type:
+  - dinner
+X-tags:
+  dietary:
+  - vegetarian
+  method:
+  - slow_cooker
 X-source-verification:
   status: verified
   notes:
-  - Custom printed recipe with handwritten additions (salt, black beans) incorporated into ingredients
+  - Custom printed recipe with handwritten additions (salt, black beans) incorporated
+    into ingredients
   - No external source URL visible
+X-original-source: ../originals/chili-recipe-20260523.jpg
+X-total_time: 4–5 hours

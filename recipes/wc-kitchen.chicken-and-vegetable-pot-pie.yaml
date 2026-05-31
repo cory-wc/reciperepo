@@ -1,81 +1,75 @@
 recipe_uuid: wc-kitchen.chicken-and-vegetable-pot-pie
 recipe_name: Chicken & Vegetable Pot Pie
-
 yields:
-  - amount: 4
-    unit: servings
-
+- amount: 4
+  unit: servings
 ingredients:
-  - cooked chicken:
-      amounts:
-        - amount: 1
-          unit: lb
-      processing:
-        - chopped or shredded
-
-  - butter:
-      amounts:
-        - amount: 4
-          unit: tablespoons
-      processing:
-        - salted
-
-  - flour:
-      amounts:
-        - amount: 4
-          unit: tablespoons
-
-  - milk:
-      amounts:
-        - amount: "1 1/2"
-          unit: cups
-      processing:
-        - at room temperature
-
-  - ground black pepper:
-      amounts:
-        - amount: 1/2
-          unit: teaspoon
-
-  - frozen peas and carrots:
-      amounts:
-        - amount: 2
-          unit: bags (12 oz each)
-      processing:
-        - defrosted and drained
-
-  - parmesan cheese:
-      amounts:
-        - amount: 1/2
-          unit: cup
-
-  - pie crusts:
-      amounts:
-        - amount: 2
-          unit: crusts
-
-  - egg:
-      amounts:
-        - amount: 1
-          unit: egg
-      processing:
-        - for egg wash
-
-  - water:
-      amounts:
-        - amount: 1
-          unit: teaspoon
-      processing:
-        - for egg wash
-
+- cooked chicken:
+    amounts:
+    - amount: 1
+      unit: lb
+    processing:
+    - chopped or shredded
+- butter:
+    amounts:
+    - amount: 4
+      unit: tablespoons
+    processing:
+    - salted
+- flour:
+    amounts:
+    - amount: 4
+      unit: tablespoons
+- milk:
+    amounts:
+    - amount: 1 1/2
+      unit: cups
+    processing:
+    - at room temperature
+- ground black pepper:
+    amounts:
+    - amount: 1/2
+      unit: teaspoon
+- frozen peas and carrots:
+    amounts:
+    - amount: 2
+      unit: bags (12 oz each)
+    processing:
+    - defrosted and drained
+- parmesan cheese:
+    amounts:
+    - amount: 1/2
+      unit: cup
+- pie crusts:
+    amounts:
+    - amount: 2
+      unit: crusts
+- egg:
+    amounts:
+    - amount: 1
+      unit: egg
+    processing:
+    - for egg wash
+- water:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+    processing:
+    - for egg wash
 steps:
-  - step: Preheat oven to 375F. Place rack in the center of oven. Grease the pie dish and line with a pie crust.
-  - step: Blind bake the crust for 20 minutes. Prepare the filling while blind baking.
-  - step: Make the gravy. Melt butter in a dutch oven. Add the flour and whisk until smooth (~1-2 min). Gradually add milk, whisking to prevent lumps. Simmer over medium-low heat, whisking until smooth and thick (~6 min).
-  - step: Remove sauce from heat and stir in pepper, chicken, vegetables, and parmesan cheese.
-  - step: Spoon mixture into pie crust and seal top with second pie crust. Brush the top of pastry with egg wash and cut vents.
-  - step: Bake 15-20 minutes until crust is golden. Cool for 10 minutes and serve.
-
-X-total_time: 90 minutes
+- step: Preheat oven to 375F. Place rack in the center of oven. Grease the pie dish
+    and line with a pie crust.
+- step: Blind bake the crust for 20 minutes. Prepare the filling while blind baking.
+- step: Make the gravy. Melt butter in a dutch oven. Add the flour and whisk until
+    smooth (~1-2 min). Gradually add milk, whisking to prevent lumps. Simmer over
+    medium-low heat, whisking until smooth and thick (~6 min).
+- step: Remove sauce from heat and stir in pepper, chicken, vegetables, and parmesan
+    cheese.
+- step: Spoon mixture into pie crust and seal top with second pie crust. Brush the
+    top of pastry with egg wash and cut vents.
+- step: Bake 15-20 minutes until crust is golden. Cool for 10 minutes and serve.
+X-source-verification:
+  status: needs-review
+  notes: []
 X-original-source: ../originals/chicken-and-vegetable-pot-pie-20260523.jpg
-X-flags: []
+X-total_time: 90 minutes

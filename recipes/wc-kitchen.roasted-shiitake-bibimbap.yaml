@@ -1,18 +1,12 @@
 recipe_uuid: wc-kitchen.roasted-shiitake-bibimbap
 recipe_name: Roasted Shiitake Bibimbap
-X-original-source: ../originals/roasted-shiitake-bibimbap-20260523.jpg
-X-active_time: 50 minutes
-X-nutrition:
-  calories: 800
-
 yields:
 - amount: 2
   unit: servings
-
 ingredients:
 - sushi rice:
     amounts:
-    - amount: "3/4"
+    - amount: 3/4
       unit: cups
 - sweet potato:
     amounts:
@@ -24,7 +18,7 @@ ingredients:
       unit: oz
 - cucumber:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: whole
 - garlic:
     amounts:
@@ -60,28 +54,42 @@ ingredients:
       unit: tablespoons
 - canola oil:
     amounts:
-    - amount: "1/4"
+    - amount: 1/4
       unit: cups
 - water:
     amounts:
-    - amount: "1 1/4"
+    - amount: 1 1/4
       unit: cups
 - eggs:
     amounts:
     - amount: 2
       unit: whole
-
 steps:
 - step: Preheat oven to 425°F.
-- step: "In a small pot, combine rice, 1¼ cups water, and salt. Bring to boil over high heat. Stir, reduce heat to low, cover pot, and cook for 12 minutes. Remove pot from heat and let stand for 10 minutes."
-- step: Rinse sweet potato and cut into ¼ inch half-moons. Clean mushrooms and halve caps, discarding stems. Mince garlic.
-- step: In a small bowl, whisk together brown sugar, soy sauce, gochujang, and 2 tbsp canola oil.
-- step: Place sweet potatoes and mushrooms on baking sheet. Pour over soy sauce mixture and toss to combine. Roast until vegetables are tender and slightly browned, about 20 minutes.
-- step: Rinse cucumber, quarter, and cut into ¼ inch slices. Combine cucumber and rice vinegar in a small bowl. Set aside to pickle.
-- step: Heat sesame oil in a large nonstick pan over medium-high heat. When oil is hot, add rice. Cook without stirring until golden on bottom, about 4 minutes per side. Transfer to serving bowls.
-- step: Add remaining canola oil to pan over medium heat. Add garlic and cook about 1 minute. Add spinach, season with pinch of salt, and saute to wilt. Transfer spinach to bowls.
+- step: In a small pot, combine rice, 1¼ cups water, and salt. Bring to boil over
+    high heat. Stir, reduce heat to low, cover pot, and cook for 12 minutes. Remove
+    pot from heat and let stand for 10 minutes.
+- step: Rinse sweet potato and cut into ¼ inch half-moons. Clean mushrooms and halve
+    caps, discarding stems. Mince garlic.
+- step: In a small bowl, whisk together brown sugar, soy sauce, gochujang, and 2 tbsp
+    canola oil.
+- step: Place sweet potatoes and mushrooms on baking sheet. Pour over soy sauce mixture
+    and toss to combine. Roast until vegetables are tender and slightly browned, about
+    20 minutes.
+- step: Rinse cucumber, quarter, and cut into ¼ inch slices. Combine cucumber and
+    rice vinegar in a small bowl. Set aside to pickle.
+- step: Heat sesame oil in a large nonstick pan over medium-high heat. When oil is
+    hot, add rice. Cook without stirring until golden on bottom, about 4 minutes per
+    side. Transfer to serving bowls.
+- step: Add remaining canola oil to pan over medium heat. Add garlic and cook about
+    1 minute. Add spinach, season with pinch of salt, and saute to wilt. Transfer
+    spinach to bowls.
 - step: Wipe pan clean and fry eggs.
-- step: Transfer eggs and roasted vegetables to bowls. Top with pickled cucumber. Drizzle with sriracha.
-
+- step: Transfer eggs and roasted vegetables to bowls. Top with pickled cucumber.
+    Drizzle with sriracha.
 X-source-verification:
   status: needs-review
+X-original-source: ../originals/roasted-shiitake-bibimbap-20260523.jpg
+X-active_time: 50 minutes
+X-nutrition:
+  calories: 800

@@ -1,8 +1,7 @@
 recipe_uuid: wc-kitchen.dumpling-noodle-soup
 recipe_name: Dumpling Noodle Soup
-author: Hetty Mckinnon
-X-original-source: ../originals/dumpling-noodle-soup-20260523.jpg
-X-total_time: 25 minutes
+source_authors:
+- Hetty Mckinnon
 yields:
 - amount: 4
   unit: servings
@@ -90,3 +89,5 @@ X-source-verification:
     appears; image reads "16 ounces frozen dumplings (not thawed)" with "about 12
     ounces" as a parenthetical — flagged for review.
   - Rating shown as 4 stars (1524 reviews).
+X-original-source: ../originals/dumpling-noodle-soup-20260523.jpg
+X-total_time: 25 minutes

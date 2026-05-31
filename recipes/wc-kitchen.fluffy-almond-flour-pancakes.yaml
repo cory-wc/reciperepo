@@ -1,21 +1,12 @@
 recipe_uuid: wc-kitchen.fluffy-almond-flour-pancakes
 recipe_name: Fluffy Almond Flour Pancakes
-source_url: https://healthyrecipesblogs.com/wprm_print/fluffy-almond-flour-pancakes
-X-original-source: ../originals/fluffy-almond-flour-pancakes-20260523.jpg
 description: 'These almond flour pancakes are big, fluffy, and delicious. Making them
   is effortless – the batter is thick and easy to work with.
 
   '
-X-category: Breakfast
-X-cuisine: American
-X-dietary:
-- Gluten Free
-X-prep_time: 15 minutes
-X-active_time: 15 minutes
-X-total_time: 30 minutes
-X-nutrition:
-  calories: 355kcal
-author: Vered DeLeeuw
+source_url: https://healthyrecipesblogs.com/wprm_print/fluffy-almond-flour-pancakes
+source_authors:
+- Vered DeLeeuw
 yields:
 - amount: 10
   unit: pancakes
@@ -69,6 +60,16 @@ notes:
 - Occasionally, baking soda can cause a reaction in baked goods, resulting in an ammonia
   smell. If you're concerned about it happening, use a tablespoon of fresh, gluten-free
   baking powder instead.
+X-categories:
+  dish_type:
+  - bread
+  meal_type:
+  - breakfast
+X-tags:
+  cuisine:
+  - american
+  dietary:
+  - gluten_free
 X-source-verification:
   status: needs-review
   notes:
@@ -78,3 +79,9 @@ X-source-verification:
   - Milk amount reads "½ cup" — transcribed as 0.5 cup.
   - Almond flour note reads "blanched, finely ground; 8 ounces" — weight of 8 ounces
     noted but not included as a separate amount entry to avoid duplication.
+X-original-source: ../originals/fluffy-almond-flour-pancakes-20260523.jpg
+X-prep_time: 15 minutes
+X-active_time: 15 minutes
+X-total_time: 30 minutes
+X-nutrition:
+  calories: 355kcal

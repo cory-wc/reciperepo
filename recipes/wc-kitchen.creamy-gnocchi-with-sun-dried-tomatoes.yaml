@@ -1,7 +1,5 @@
 recipe_uuid: wc-kitchen.creamy-gnocchi-with-sun-dried-tomatoes
 recipe_name: Creamy Gnocchi with Sun-Dried Tomatoes
-X-original-source: ../originals/creamy-gnocchi-with-sun-dried-tomatoes-20260523.jpg
-X-total_time: 30 minutes
 yields:
 - amount: 6
   unit: servings
@@ -69,3 +67,5 @@ X-source-verification:
   status: verified
   notes:
   - Custom recipe card; no source URL visible
+X-original-source: ../originals/creamy-gnocchi-with-sun-dried-tomatoes-20260523.jpg
+X-total_time: 30 minutes

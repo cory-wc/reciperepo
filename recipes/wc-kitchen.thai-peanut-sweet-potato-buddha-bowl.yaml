@@ -1,21 +1,11 @@
 recipe_uuid: wc-kitchen.thai-peanut-sweet-potato-buddha-bowl
 recipe_name: Thai Peanut Sweet Potato Buddha Bowl
 source_url: https://eatwithclarity.com/easy-thai-peanut-sauce/
-X-original-source: ../originals/thai-peanut-sweet-potato-buddha-bowl-20260523.jpg
-X-prep_time: 10 minutes
-X-cook_time: 30 minutes
-X-total_time: 40 minutes
-X-category: Main Dish
-X-dietary:
-- vegan
-- gluten-free
 source_authors:
 - Claire Cary
-
 yields:
 - amount: 4
   unit: servings
-
 ingredients:
 - sweet potatoes:
     amounts:
@@ -52,7 +42,7 @@ ingredients:
     - minced
 - red pepper flakes:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: teaspoons
 - oil:
     amounts:
@@ -73,7 +63,7 @@ ingredients:
     - chopped
 - edamame:
     amounts:
-    - amount: "1 1/2"
+    - amount: 1 1/2
       unit: cups
     notes: shelled
 - avocado:
@@ -82,25 +72,32 @@ ingredients:
       unit: whole
 - peanut sauce:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: batch
     notes: see Thai Peanut Sauce recipe
 - peanuts:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: cups
     processing:
     - chopped
 - cilantro:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: cups
     processing:
     - chopped
-
 steps:
 - step: Preheat the oven to 400°F.
-
+X-categories:
+  dish_type:
+  - bowl
+  meal_type:
+  - dinner
+X-tags:
+  dietary:
+  - vegan
+  - gluten_free
 X-source-verification:
   status: needs-review
   notes:
@@ -109,3 +106,7 @@ X-source-verification:
   - Peanut sauce listed as a separate linked recipe not shown in this image.
   - Oil type noted as avocado in the original text.
   - Source URL is for the associated peanut sauce recipe; bowl recipe URL not captured.
+X-original-source: ../originals/thai-peanut-sweet-potato-buddha-bowl-20260523.jpg
+X-prep_time: 10 minutes
+X-cook_time: 30 minutes
+X-total_time: 40 minutes

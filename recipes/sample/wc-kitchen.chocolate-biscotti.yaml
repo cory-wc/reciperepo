@@ -1,0 +1,109 @@
+recipe_uuid: wc-kitchen.chocolate-biscotti
+recipe_name: Chocolate Biscotti
+source_url: https://sugarspunrun.com/chocolate-biscotti/
+source_authors:
+- Sam Merritt
+yields:
+- amount: 24
+  unit: cookies
+ingredients:
+- butter:
+    amounts:
+    - amount: 12
+      unit: tablespoons
+    notes: 170g, unsalted, softened
+- granulated sugar:
+    amounts:
+    - amount: 1.5
+      unit: cups
+    notes: 265g
+- all-purpose flour:
+    amounts:
+    - amount: 2.75
+      unit: cups
+    notes: 345g
+- cocoa powder:
+    amounts:
+    - amount: 0.25
+      unit: cup
+    notes: natural unsweetened
+- baking powder:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+- table salt:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+- eggs:
+    amounts:
+    - amount: 3
+      unit: whole
+    notes: large
+- vanilla extract:
+    amounts:
+    - amount: 2
+      unit: teaspoons
+- mini chocolate chips:
+    amounts:
+    - amount: 0.75
+      unit: cup
+    notes: semisweet; about 118g
+steps:
+- step: Preheat oven to 350°F (175°C) and line a baking sheet with parchment paper.
+    Set aside.
+- step: In a large bowl (or bowl of a stand mixer fitted with paddle attachment) combine
+    butter and sugar and use an electric mixer to beat until combined and well-combined.
+- step: Add eggs and vanilla extract and stir well to combine.
+- step: In a separate bowl whisk together flour, cocoa powder, baking powder, and
+    salt (2¾ cups all-purpose flour, ¼ cup natural unsweetened cocoa powder, 1 tablespoon
+    baking powder, ½ teaspoon table salt).
+- step: With mixer on low speed, gradually add dry ingredients to the butter mixture
+    in 3–4 parts, stirring until flour is completely incorporated after each addition.
+- step: Stir in chocolate chips.
+- step: Divide dough into two mounds on prepared baking sheet spacing at least 4–7
+    inches (10cm) apart as the dough will spread and you don't want the biscotti loaves
+    to bake together. If the dough is too sticky to manage easily, lightly dust your
+    hands with flour to help you form it.
+- step: Transfer to 350°F (175°C) oven and bake for 30 minutes. Remove from oven and
+    allow to cool completely before proceeding.
+- step: Once cooled, slice loaves diagonally into slices that are approximately 1
+    inch (2.5cm) thick. Place cut-side down on baking sheet and return to oven to
+    bake for 12 minutes, then carefully flip each slice of biscotti and return to
+    oven to bake for another 10–12 minutes.
+- step: Allow biscotti to cool completely before enjoying.
+notes:
+- 'Cocoa powder: You may substitute Dutch-process cocoa powder, note that the flavor
+  will be slightly deeper and more intense.'
+- 'Chocolate chips: I like to use a mix of mini and regular-sized chocolate chips;
+  however you can substitute the regular for mini or vice versa. You may also substitute
+  your favorite type of chocolate chips (milk, dark, or even white chocolate). If
+  desired, throw in a handful (about ¼ cup) of chopped nuts, such as walnuts, as well.'
+- 'Storing: Store in an airtight container at room temperature. Biscotti will keep
+  for at least two weeks. Biscotti may also be frozen in an airtight container for
+  several months.'
+equipment:
+- Mixing bowls
+- Baking sheet
+X-categories:
+  dish_type:
+  - dessert
+  meal_type:
+  - breakfast
+X-tags:
+  cuisine:
+  - italian
+X-source-verification:
+  status: needs-manual-review
+  reviewed: true
+  notes:
+  - Baking powder discrepancy: ingredients list ½ teaspoon, but step 4 mentions "1
+      tablespoon baking powder" — verify against source URL
+  - source_url corrected (removed erroneous "-walnut-" from URL); calories corrected
+    from 305 to 285
+X-original-source: ../../originals/chocolate-biscotti-20260523.jpg
+X-prep_time: 15 minutes
+X-cook_time: 45 minutes
+X-total_time: 1 hour 35 minutes
+X-cooling_time: 30 minutes
+X-calories: 285 kcal

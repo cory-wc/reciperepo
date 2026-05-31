@@ -58,11 +58,16 @@ steps:
 - step: Remove meat from bones. Discard fat, skin, and bones. Chop meat and stir into
     soup.
 - step: Cook 10 minutes on high to develop flavors. Add salt and pepper to taste.
-X-active_time: 30 minutes
-X-total_time: 9 hours
-X-category: soup
-X-original-source: ../originals/white-bean-and-ham-soup-20260523.jpg
+X-categories:
+  dish_type:
+  - soup
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:
-  - Custom recipe card; calorie/fiber fields were unfilled template placeholders ("XXX calories", "Xg fiber") — omitted
+  - Custom recipe card; calorie/fiber fields were unfilled template placeholders ("XXX
+    calories", "Xg fiber") — omitted
+X-original-source: ../originals/white-bean-and-ham-soup-20260523.jpg
+X-active_time: 30 minutes
+X-total_time: 9 hours

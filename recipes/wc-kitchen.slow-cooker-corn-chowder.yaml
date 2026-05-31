@@ -1,20 +1,9 @@
 recipe_uuid: wc-kitchen.slow-cooker-corn-chowder
 recipe_name: Slow Cooker Corn Chowder
 source_url: https://www.thekitchn.com
-X-original-source: ../originals/slow-cooker-corn-chowder-20260523.jpg
-X-active_time: 10 minutes
-X-total_time: 8 hours 10 minutes
-X-category: Soup
-X-tags:
-- slow cooker
-- corn
-- chowder
-- vegetarian-adaptable
-
 yields:
-- amount: "4–6"
+- amount: 4–6
   unit: servings
-
 ingredients:
 - red bell pepper:
     amounts:
@@ -75,7 +64,6 @@ ingredients:
     amounts:
     - amount: 2
       unit: tablespoons
-
 steps:
 - step: Place red bell pepper, lemon juice, and 1/2 cup of the corn in a small bowl
     and stir to combine. Cover and refrigerate until ready to serve.
@@ -86,12 +74,23 @@ steps:
     and blend until smooth. Return the blended soup to the slow cooker. Add the half-and-half
     or cream and butter and stir until the butter melts. Ladle into bowls and serve
     with the corn and red pepper topping and chives.
-
 notes:
 - Garnish with chopped chives.
-
+X-categories:
+  dish_type:
+  - soup
+  meal_type:
+  - dinner
+X-tags:
+  dietary:
+  - vegetarian_adaptable
+  method:
+  - slow_cooker
 X-source-verification:
   status: verified
   notes:
   - Recipe notes section visible in image but content not shown; may be truncated.
   - Source attributed to Kitchn (thekitchn.com); exact URL not visible in image.
+X-original-source: ../originals/slow-cooker-corn-chowder-20260523.jpg
+X-active_time: 10 minutes
+X-total_time: 8 hours 10 minutes

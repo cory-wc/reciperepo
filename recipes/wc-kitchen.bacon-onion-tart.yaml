@@ -1,55 +1,48 @@
 recipe_uuid: wc-kitchen.bacon-onion-tart
 recipe_name: Bacon Onion Tart
-
 yields:
-  - amount: 12
-    unit: servings
-
+- amount: 12
+  unit: servings
 ingredients:
-  - onions:
-      amounts:
-        - amount: 2
-          unit: lb
-      processing:
-        - sliced thinly
-
-  - bacon strips:
-      amounts:
-        - amount: 5
-          unit: strips
-      processing:
-        - diced
-
-  - butter:
-      amounts:
-        - amount: 2
-          unit: tablespoons
-
-  - eggs:
-      amounts:
-        - amount: 3
-          unit: eggs
-
-  - parmesan:
-      amounts:
-        - amount: 1
-          unit: cup
-      processing:
-        - grated
-
-  - pie crusts:
-      amounts:
-        - amount: 2
-          unit: crusts
-
+- onions:
+    amounts:
+    - amount: 2
+      unit: lb
+    processing:
+    - sliced thinly
+- bacon strips:
+    amounts:
+    - amount: 5
+      unit: strips
+    processing:
+    - diced
+- butter:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+- eggs:
+    amounts:
+    - amount: 3
+      unit: eggs
+- parmesan:
+    amounts:
+    - amount: 1
+      unit: cup
+    processing:
+    - grated
+- pie crusts:
+    amounts:
+    - amount: 2
+      unit: crusts
 steps:
-  - step: Preheat oven to 350°F.
-  - step: Saute onions, bacon, and butter for 30 minutes. Allow to cool.
-  - step: Mix eggs and parmesan in a large bowl. Add in onions and bacon. Stir to combine.
-  - step: Pour mixture into pie crusts.
-  - step: Bake 40 minutes, or until egg is set.
-  - step: Cool and serve.
-
-X-total_time: 105 minutes
+- step: Preheat oven to 350°F.
+- step: Saute onions, bacon, and butter for 30 minutes. Allow to cool.
+- step: Mix eggs and parmesan in a large bowl. Add in onions and bacon. Stir to combine.
+- step: Pour mixture into pie crusts.
+- step: Bake 40 minutes, or until egg is set.
+- step: Cool and serve.
+X-source-verification:
+  status: needs-review
+  notes: []
 X-original-source: ../originals/bacon-onion-tart-20260523.jpg
-X-flags: []
+X-total_time: 105 minutes

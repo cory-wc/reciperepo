@@ -5,22 +5,11 @@ description: 'These soft & chewy kitchen sink cookies can be made in one bowl an
   are the sweet & salty cookie of your dreams!
 
   '
-author: Melissa Rose
-X-original-source: ../originals/kitchen-sink-cookies-20260523.jpg
-X-category: Dessert
-X-tags:
-- kitchen sink cookies
-- panera copycat recipe
-- cookie
-X-active_time: 10 minutes
-X-prep_time: 10 minutes
-X-cook_time: 12 minutes
-X-total_time: 25 minutes
+source_authors:
+- Melissa Rose
 yields:
 - amount: 9
   unit: large cookies
-X-nutrition:
-  calories: 399 kcal
 ingredients:
 - unsalted butter:
     amounts:
@@ -132,6 +121,11 @@ steps:
     at 13 minutes).
 
     '
+X-categories:
+  dish_type:
+  - dessert
+  meal_type:
+  - dessert
 X-source-verification:
   status: verified
   notes:
@@ -141,3 +135,10 @@ X-source-verification:
     instruction text where list was unclear.
   - Chopped chocolate chips and chopped pretzels appear both in the ingredient list
     and as mix-in quantities in the instructions; listed separately to reflect source.
+X-original-source: ../originals/kitchen-sink-cookies-20260523.jpg
+X-prep_time: 10 minutes
+X-cook_time: 12 minutes
+X-active_time: 10 minutes
+X-total_time: 25 minutes
+X-nutrition:
+  calories: 399 kcal

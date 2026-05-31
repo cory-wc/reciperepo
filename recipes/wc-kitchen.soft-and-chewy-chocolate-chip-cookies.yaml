@@ -1,21 +1,11 @@
 recipe_uuid: wc-kitchen.soft-and-chewy-chocolate-chip-cookies
 recipe_name: Soft and Chewy Chocolate Chip Cookies
-source_url: https://bakerbettie.com/wp-json/mv-create/v1/creations/181/print
-X-original-source: ../originals/soft-and-chewy-chocolate-chip-cookies-20260523.jpg
 description: This recipe creates cookies that stay perfectly soft and gooey even after
   cooled!
-X-active_time: 15 minutes
-X-total_time: 27 minutes
-X-category: Dessert
-X-tags:
-- cookies
-- chocolate chip
-- baking
-
+source_url: https://bakerbettie.com/wp-json/mv-create/v1/creations/181/print
 yields:
 - amount: 24
   unit: cookies
-
 ingredients:
 - brown sugar:
     amounts:
@@ -68,11 +58,18 @@ steps:
 - step: Slowly add the flour mixture to the butter mixture, scraping the sides of
     the bowl until thoroughly combined. Mix on medium speed for about 30 seconds more.
 - step: Stir in the chocolate chips.
-- step: Scoop large mounds of dough (about 3 tablespoons each) onto baking sheets lined with
-    parchment paper or a silpat. It is best to only scoop about 9 cookies per sheet
-    to allow enough room for spreading.
+- step: Scoop large mounds of dough (about 3 tablespoons each) onto baking sheets
+    lined with parchment paper or a silpat. It is best to only scoop about 9 cookies
+    per sheet to allow enough room for spreading.
 - step: Bake for 12 minutes.
-
+X-categories:
+  dish_type:
+  - dessert
+  meal_type:
+  - dessert
+X-tags:
+  method:
+  - oven
 X-source-verification:
   status: needs-review
   notes:
@@ -81,3 +78,6 @@ X-source-verification:
     in this image
   - Bake time of 12 minutes and total time of 27 minutes are visible; full baking
     instructions may continue on page 2
+X-original-source: ../originals/soft-and-chewy-chocolate-chip-cookies-20260523.jpg
+X-active_time: 15 minutes
+X-total_time: 27 minutes

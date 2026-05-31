@@ -1,27 +1,13 @@
 recipe_uuid: wc-kitchen.chocolate-olive-oil-cake
 recipe_name: Chocolate Olive Oil Cake
-X-original-source: ../originals/chocolate-olive-oil-cake-20260523.jpg
-X-total_time: 45 minutes
-X-category: dessert
-X-tags:
-- cake
-- chocolate
-- vegan
 source_authors:
 - Smitten Kitchen
-X-source-verification:
-  status: verified
-  notes:
-  - SK (Smitten Kitchen) logo visible on printout; source URL partially obscured at bottom of page
-  - Four steps (make cake, mix batter, bake, make glaze) are logically complete for the recipe
-
 yields:
 - amount: 8
   unit: servings
 - amount: 12
   unit: servings
 - notes: 8 to 12 servings
-
 ingredients:
 - name_group: Cake
 - all-purpose flour:
@@ -31,7 +17,7 @@ ingredients:
     notes: 195 grams
 - unsweetened cocoa:
     amounts:
-    - amount: "3/4"
+    - amount: 3/4
       unit: cups
     notes: 60 grams; any variety, sifted if lumpy
 - baking soda:
@@ -40,21 +26,21 @@ ingredients:
       unit: teaspoons
 - fine sea salt:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: teaspoons
 - granulated sugar:
     amounts:
-    - amount: "3/4"
+    - amount: 3/4
       unit: cups
     notes: 150 grams
 - dark brown sugar:
     amounts:
-    - amount: "3/4"
+    - amount: 3/4
       unit: cups
     notes: 145 grams
 - olive oil:
     amounts:
-    - amount: "1/2"
+    - amount: 1/2
       unit: cups
     notes: 120 ml
 - water or coffee:
@@ -70,7 +56,7 @@ ingredients:
 - name_group: Glaze
 - semisweet chocolate chips:
     amounts:
-    - amount: "3/4"
+    - amount: 3/4
       unit: cups
     notes: 135 grams
 - cocoa powder:
@@ -91,7 +77,6 @@ ingredients:
 - flaky sea salt:
     amounts: []
     notes: pinch or two
-
 steps:
 - step: Heat oven to 350°F. Line the bottom of a 9-inch round cake pan with a fitted
     round of parchment paper and coat the bottoms and sides with oil.
@@ -103,3 +88,20 @@ steps:
 - step: Make glaze — in a microwave-safe bowl, melt chocolate chips, then whisk in
     cocoa powder, olive oil, and corn syrup until smooth. Pour over cooled cake and
     sprinkle with flaky sea salt.
+X-categories:
+  dish_type:
+  - dessert
+  meal_type:
+  - dessert
+X-tags:
+  dietary:
+  - vegan
+X-source-verification:
+  status: verified
+  notes:
+  - SK (Smitten Kitchen) logo visible on printout; source URL partially obscured at
+    bottom of page
+  - Four steps (make cake, mix batter, bake, make glaze) are logically complete for
+    the recipe
+X-original-source: ../originals/chocolate-olive-oil-cake-20260523.jpg
+X-total_time: 45 minutes

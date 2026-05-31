@@ -5,6 +5,8 @@ description: 'This Mexican Street Corn Salad, also known as Esquites, is smoky, 
   will love this version.
 
   '
+source_authors:
+- Joanna Cismaru
 yields:
 - amount: 4
   unit: servings
@@ -103,23 +105,21 @@ steps:
 - step: To the same bowl, add the remaining ingredients. Stir everything together
     until well combined. Adjust lime juice and salt and pepper as necessary.
 - step: Serve garnished with additional cheese and cilantro, if preferred.
-X-equipment:
-- 12-inch Cast Iron Skillet
-X-active_time: 10 minutes
-X-total_time: 20 minutes
-X-category: Main Course, Salad
-X-tags:
-- corn salad
-- mexican recipes
-- mexican street corn salad
-- esquites
-X-nutrition:
-  calories: 344 kcal
-  per: serving
-X-original-source: ../originals/mexican-street-corn-salad-20260523.jpg
-author: Joanna Cismaru
-X-rating: 4.5/5 from 635 votes
+X-categories:
+  dish_type:
+  - main
+  - salad
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:
   - Author: Joanna Cismaru; source URL not captured from image
+X-original-source: ../originals/mexican-street-corn-salad-20260523.jpg
+X-active_time: 10 minutes
+X-total_time: 20 minutes
+X-nutrition:
+  calories: 344 kcal
+  per: serving
+X-equipment:
+- 12-inch Cast Iron Skillet

@@ -1,13 +1,10 @@
 recipe_uuid: wc-kitchen.shakshuka-with-feta
 recipe_name: Shakshuka With Feta
-author: Melissa Clark
-X-original-source: ../originals/shakshuka-with-feta-20260523.jpg
-X-total_time: 50 minutes
-
+source_authors:
+- Melissa Clark
 yields:
-- amount: "4–6"
+- amount: 4–6
   unit: servings
-
 ingredients:
 - extra-virgin olive oil:
     amounts:
@@ -45,7 +42,7 @@ ingredients:
       unit: teaspoons
 - ground cayenne:
     amounts:
-    - amount: "1/8"
+    - amount: 1/8
       unit: teaspoons
 - whole plum tomatoes:
     amounts:
@@ -56,11 +53,11 @@ ingredients:
     - coarsely chopped
 - kosher salt:
     amounts:
-    - amount: "3/4"
+    - amount: 3/4
       unit: teaspoons
 - black pepper:
     amounts:
-    - amount: "1/4"
+    - amount: 1/4
       unit: teaspoons
 - feta:
     amounts:
@@ -78,7 +75,6 @@ ingredients:
 - hot sauce:
     amounts: []
     notes: for serving; mentioned in step 2 only
-
 steps:
 - step: Heat oven to 375°F. Heat oil in a large skillet over medium-low. Add onion
     and bell pepper. Cook gently until very soft, about 20 minutes. Add garlic and
@@ -89,7 +85,6 @@ steps:
 - step: Gently crack eggs into skillet over tomatoes. Season eggs with salt and pepper.
     Transfer skillet to oven and bake until eggs are just set, 7 to 10 minutes. Sprinkle
     with cilantro and serve with hot sauce.
-
 X-source-verification:
   status: needs-manual-review
   notes:
@@ -97,3 +92,5 @@ X-source-verification:
     in the visible ingredient list — quantities unknown
   - Cayenne confirmed as 1/8 teaspoon (reads "1/8 teaspoon ground cayenne, or to taste")
   - Rating 4-5 stars with 15,289 reviews; NYT Cooking, by Melissa Clark
+X-original-source: ../originals/shakshuka-with-feta-20260523.jpg
+X-total_time: 50 minutes

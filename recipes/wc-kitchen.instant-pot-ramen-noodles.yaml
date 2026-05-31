@@ -1,24 +1,11 @@
 recipe_uuid: wc-kitchen.instant-pot-ramen-noodles
 recipe_name: Instant Pot Ramen Noodles
 source_url: https://confessionsofafitfoodie.com/wpem_print/instant-pot-ramen-noodles
-author: Nancylynn
-X-original-source: ../originals/instant-pot-ramen-noodles-20260523.jpg
-X-category: Soup
-X-tags:
-- Asian
-- instant pot
-- 21 Day Fix
-- dorm room dinner
-X-total_time: 35 mins
-X-active_time: 5 mins
-X-nutrition:
-  calories: 392
-  calories_unit: kcal
-
+source_authors:
+- Nancylynn
 yields:
 - amount: 4
   unit: servings
-
 ingredients:
 - sesame oil:
     amounts:
@@ -52,7 +39,7 @@ ingredients:
     notes: skinless, bone-in; can sub boneless
 - coconut aminos:
     amounts:
-    - amount: "1/3"
+    - amount: 1/3
       unit: cups
 - ramen noodle cakes:
     amounts:
@@ -75,7 +62,6 @@ ingredients:
 - kosher or sea salt:
     amounts: []
     notes: to taste
-
 steps:
 - step: Set Instant Pot to sauté and add sesame oil once the pot is hot. Stir in garlic
     and ginger and sauté until fragrant, being careful not to burn the garlic.
@@ -91,17 +77,32 @@ steps:
 - step: Next add the greens and the carrots to the pot. If your broth isn't hot enough
     for them to steam in, turn your pot to sauté and stir your veggies as they soften
     or cook on manual for zero minutes.
-
 notes:
-- >-
-  Optional garnishes: sliced scallions or chives, sriracha or fresh chili paste,
-  soft-boiled eggs.
-
+- 'Optional garnishes: sliced scallions or chives, sriracha or fresh chili paste,
+  soft-boiled eggs.'
+X-categories:
+  dish_type:
+  - soup
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - asian
+  method:
+  - instant_pot
 X-source-verification:
   status: verified
   notes:
-  - All 5 steps visible on single page; prior note about page 2 being cut off was incorrect
+  - All 5 steps visible on single page; prior note about page 2 being cut off was
+    incorrect
   - Ginger corrected from 2 tsp to 2 tablespoons per image
-  - Primary green corrected to baby kale (image text); bok choy moved to alternative note
+  - Primary green corrected to baby kale (image text); bok choy moved to alternative
+    note
   - Added salt (to taste) and corrected ingredient omissions
   - Coconut aminos confirmed as 1/3 cup
+X-original-source: ../originals/instant-pot-ramen-noodles-20260523.jpg
+X-active_time: 5 mins
+X-total_time: 35 mins
+X-nutrition:
+  calories: 392
+  calories_unit: kcal

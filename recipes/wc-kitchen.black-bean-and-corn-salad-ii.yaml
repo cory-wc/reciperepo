@@ -1,17 +1,6 @@
 recipe_uuid: wc-kitchen.black-bean-and-corn-salad-ii
 recipe_name: Black Bean and Corn Salad II
 source_url: https://www.allrecipes.com
-X-original-source: ../originals/black-bean-and-corn-salad-ii-20260523.jpg
-X-source-author: Jen
-X-source-description: This salad is very colorful and includes a very tasty lime dressing.
-X-category: salad
-X-tags:
-- black bean
-- corn
-- vegetarian
-- lime dressing
-X-active_time: 25 minutes
-X-total_time: 25 minutes
 ingredients:
 - fresh lime juice:
     amounts:
@@ -86,8 +75,21 @@ steps:
 - step: In a salad bowl, combine beans, corn, avocado, bell pepper, tomatoes, green
     onions, and cilantro. Shake lime dressing, and pour it over the salad. Stir salad
     to coat vegetables and beans with dressing, and serve.
+X-categories:
+  dish_type:
+  - salad
+  meal_type:
+  - dinner
+X-tags:
+  dietary:
+  - vegetarian
 X-source-verification:
   status: verified
   notes:
   - Recipe printed from Allrecipes.com on 6/5/2018
   - Yield not specified in source
+X-original-source: ../originals/black-bean-and-corn-salad-ii-20260523.jpg
+X-active_time: 25 minutes
+X-total_time: 25 minutes
+X-source-author: Jen
+X-source-description: This salad is very colorful and includes a very tasty lime dressing.

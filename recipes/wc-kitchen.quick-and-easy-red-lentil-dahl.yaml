@@ -2,26 +2,12 @@ recipe_uuid: wc-kitchen.quick-and-easy-red-lentil-dahl
 recipe_name: Quick & Easy Red Lentil Dahl
 description: Ready in 30 minutes or less, this Indian Red Lentil Dahl is easy to make
   and full of flavor. Serve with rice and vegan naan for an incredible feast!
-author: Nora Taylor
 source_url: https://www.noracooks.com/wprm_print/9546
-X-original-source: ../originals/quick-and-easy-red-lentil-dahl-20260523.jpg
-X-active_time: 10 minutes
-X-total_time: 30 minutes
-X-cook_time: 20 minutes
-X-category:
-- Main
-- Side Dish
-X-cuisine: Indian
-X-dietary:
-- vegan
-X-nutrition:
-  calories: 258 kcal
-  per: serving
-
+source_authors:
+- Nora Taylor
 yields:
 - amount: 8
   unit: servings
-
 ingredients:
 - olive oil:
     amounts:
@@ -89,9 +75,8 @@ ingredients:
     - juiced
 - baby spinach:
     amounts:
-    - amount: "3–4"
+    - amount: 3–4
       unit: cups
-
 steps:
 - step: In a large pot or pan over medium heat, sauté the chopped onion in the olive
     oil for 5 minutes, stirring frequently. Then add the garlic and ginger and cook
@@ -102,13 +87,29 @@ steps:
     and vegetable broth to the pan. Stir well and turn the heat to high. Bring to
     a boil, then lower heat and simmer for about 15 minutes, until the lentils are
     cooked and soft. Stir occasionally.
-
 notes:
 - Serve with cooked brown or white rice and vegan naan.
-
+X-categories:
+  dish_type:
+  - main
+  - side
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - indian
+  dietary:
+  - vegan
 X-source-verification:
   status: needs-manual-review
   reviewed: true
   notes:
   - NoraCooks.com; page 1 of 2 — spinach and lemon steps (likely step 4+) not captured
   - Handwritten "Feb 2022 — yes —" confirms recipe was tried and approved
+X-original-source: ../originals/quick-and-easy-red-lentil-dahl-20260523.jpg
+X-cook_time: 20 minutes
+X-active_time: 10 minutes
+X-total_time: 30 minutes
+X-nutrition:
+  calories: 258 kcal
+  per: serving

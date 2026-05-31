@@ -1,12 +1,5 @@
 recipe_uuid: wc-kitchen.instant-pot-red-beans-and-rice
 recipe_name: Instant Pot Red Beans and Rice
-X-original-source: ../originals/instant-pot-red-beans-and-rice-20260523.jpg
-X-category: Main Course
-X-cuisine: American
-X-prep_time: 30 minutes
-X-cook_time: 45 minutes
-X-total_time: 1 hour 15 minutes
-
 ingredients:
 - onion:
     amounts:
@@ -53,7 +46,6 @@ ingredients:
       low sodium
     processing:
     - sliced
-
 steps:
 - step: Add all ingredients besides sausage to instant pot, close lid and manually
     cook for 45 minutes. (Original printed value of 30 minutes crossed out and corrected
@@ -63,10 +55,16 @@ steps:
 - step: Once pin is up remove lid and using a potato masher or whatever you have mash
     about half of your beans.
 - step: Stir and serve over rice.
-
 notes:
 - Serve over rice.
-
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - american
 X-source-verification:
   status: verified
   notes:
@@ -76,3 +74,7 @@ X-source-verification:
   - Sausage type crossed out from andouille and annotated as kielbasa, low sodium.
   - Recipe printed date noted on page as 6/23/2021.
   - Salt and pepper listed without quantities (to taste); omitted from ingredients.
+X-original-source: ../originals/instant-pot-red-beans-and-rice-20260523.jpg
+X-prep_time: 30 minutes
+X-cook_time: 45 minutes
+X-total_time: 1 hour 15 minutes

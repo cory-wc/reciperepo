@@ -1,17 +1,14 @@
 recipe_uuid: wc-kitchen.baked-acorn-squash-with-butter-and-brown-sugar
 recipe_name: Baked Acorn Squash with Butter and Brown Sugar
-source_url: https://www.simplyrecipes.com/recipes/classic_baked_acorn_squash/
-X-original-source: ../originals/baked-acorn-squash-with-butter-and-brown-sugar-20260523.jpg
 description: Easy baked acorn squash recipe, perfect for the fall. Squash is cut in
   half, insides scooped out, then baked with a little butter, brown sugar, and maple
   syrup.
+source_url: https://www.simplyrecipes.com/recipes/classic_baked_acorn_squash/
 yields:
 - amount: 2
   unit: servings
 - amount: 4
   unit: servings
-X-active_time: 10 minutes
-X-total_time: 1 hour 25 minutes
 ingredients:
 - acorn squash:
     amounts:
@@ -60,10 +57,10 @@ steps:
     bit before serving. Spoon any buttery sugar sauce that has not already been absorbed
     by the squash over the exposed areas.
 X-tags:
-- squash
-- fall
-- side dish
-- vegetarian
+  dietary:
+  - vegetarian
+  season:
+  - fall
 X-source-verification:
   status: needs-review
   notes:
@@ -72,3 +69,6 @@ X-source-verification:
   - Prep time 10 minutes and cook time 1 hour 15 minutes read from image; total calculated
     as 1 hour 25 minutes.
   - Source URL transcribed from printed footer; verify accuracy.
+X-original-source: ../originals/baked-acorn-squash-with-butter-and-brown-sugar-20260523.jpg
+X-active_time: 10 minutes
+X-total_time: 1 hour 25 minutes

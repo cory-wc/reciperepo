@@ -1,20 +1,9 @@
 recipe_uuid: wc-kitchen.shrimp-fettuccine-alfredo
 recipe_name: Shrimp Fettuccine Alfredo
 source_url: https://www.foodnetwork.com/recipes/food-network-kitchen/shrimp-fettuccine-alfredo
-X-original-source: ../originals/shrimp-fettuccine-alfredo-20260523.jpg
-X-total_time: 25 minutes
-X-active_time: 25 minutes
-X-category: Main Course
-X-tags:
-- pasta
-- shrimp
-- alfredo
-- Food Network Kitchen
-
 yields:
 - amount: 4
   unit: servings
-
 ingredients:
 - fettuccine:
     amounts:
@@ -45,7 +34,6 @@ ingredients:
       unit: cups
     processing:
     - freshly grated
-
 steps:
 - step: Bring a large pot of water to a boil, and salt generously. Add the pasta,
     and boil according to package directions until al dente, tender but still slightly
@@ -65,14 +53,19 @@ steps:
     then cook for 2 minutes. Lower the heat to keep the sauce warm.
 - step: Whisk the Parmigiano-Reggiano into the sauce. Add the shrimp and cooked pasta,
     and toss well. Season with salt and pepper. Serve hot in heated bowls.
-
 notes:
-- Don't worry if it seems like there is too much sauce. As soon as everything is
-  tossed together, the sauce will start to cling to the pasta and thicken before
-  your eyes.
+- Don't worry if it seems like there is too much sauce. As soon as everything is tossed
+  together, the sauce will start to cling to the pasta and thicken before your eyes.
 - Copyright 2015 Television Food Network, G.P. All rights reserved.
-
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:
   - Food Network Kitchen; Copyright 2015 Television Food Network
+X-original-source: ../originals/shrimp-fettuccine-alfredo-20260523.jpg
+X-active_time: 25 minutes
+X-total_time: 25 minutes

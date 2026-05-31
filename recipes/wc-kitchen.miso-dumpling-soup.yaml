@@ -1,23 +1,11 @@
 recipe_uuid: wc-kitchen.miso-dumpling-soup
 recipe_name: Miso Dumpling Soup (15 Minutes)
 description: Chewy vegetable dumplings in a warm, savory miso broth
-author: Allie Petersen
-X-original-source: ../originals/miso-dumpling-soup-20260523.jpg
-X-category: Soup
-X-tags:
-- Japanese
-- dumplings
-- miso
-- quick
-X-total_time: 15 minutes
-X-active_time: 3 minutes
-X-cook_time: 12 minutes
+source_authors:
+- Allie Petersen
 yields:
 - amount: 4
   unit: servings
-X-nutrition:
-  calories: 518 kcal
-  per: serving
 ingredients:
 - frozen vegetable dumplings (potstickers):
     amounts:
@@ -85,7 +73,18 @@ steps:
 notes:
 - The number of servings depends on appetite; the recipe may serve 2–4.
 - Miso paste is often found in the refrigerated section near tofu.
-- Optional toppings: more green onion, chili oil, sesame seeds, soy sauce (if you want it saltier).
+- Optional toppings: more green onion, chili oil, sesame seeds, soy sauce (if you
+    want it saltier).
+X-categories:
+  dish_type:
+  - soup
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - japanese
+  context:
+  - quick
 X-source-verification:
   status: needs-review
   notes:
@@ -94,3 +93,10 @@ X-source-verification:
   - Duplicate chili oil key in ingredients (used as both a main ingredient and optional
     topping); listed separately for clarity.
   - Rating visible on source: 4.95 from 60 votes.
+X-original-source: ../originals/miso-dumpling-soup-20260523.jpg
+X-cook_time: 12 minutes
+X-active_time: 3 minutes
+X-total_time: 15 minutes
+X-nutrition:
+  calories: 518 kcal
+  per: serving

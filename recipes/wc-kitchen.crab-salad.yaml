@@ -3,17 +3,8 @@ recipe_name: Crab Salad (Seafood Salad)
 description: Crab Salad with celery and mayonnaise is a delicious and inexpensive
   way to enjoy the classic Seafood Salad we all grew up with.
 source_url: https://dinnerthendessert.com/crab-salad-seafood-salad/
-X-original-source: ../originals/crab-salad-20260523.jpg
-author: Sabrina Snyder
-X-category: Salad
-X-tags:
-- crab
-- seafood
-- American
-- no-cook
-X-cuisine: American
-X-prep_time: 10 minutes
-X-total_time: 10 minutes
+source_authors:
+- Sabrina Snyder
 yields:
 - amount: 2
   unit: servings
@@ -59,6 +50,27 @@ steps:
 - step: In a large bowl add all the ingredients together gently, stirring until well
     coated.
 - step: Refrigerate for an hour before serving.
+X-categories:
+  dish_type:
+  - salad
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - american
+  - seafood
+  method:
+  - no_cook
+X-source-verification:
+  status: verified
+  notes:
+  - Ingredient quantity for shallot listed as 0.5 shallot (minced); interpreted as
+    0.5 whole shallot.
+  - Values 0.13 teaspoon for salt and pepper appear to be rounded representations
+    of 1/8 teaspoon.
+X-original-source: ../originals/crab-salad-20260523.jpg
+X-prep_time: 10 minutes
+X-total_time: 10 minutes
 X-nutrition:
   serving_size: 1 serving
   calories: 310
@@ -76,10 +88,3 @@ X-nutrition:
   vitamin_c_mg: 0.9
   calcium_mg: 5
   iron_mg: 0.2
-X-source-verification:
-  status: verified
-  notes:
-  - Ingredient quantity for shallot listed as 0.5 shallot (minced); interpreted as
-    0.5 whole shallot.
-  - Values 0.13 teaspoon for salt and pepper appear to be rounded representations
-    of 1/8 teaspoon.

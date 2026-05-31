@@ -3,11 +3,6 @@ recipe_name: Brussels Sprout Salad with Maple Vinaigrette
 yields:
 - amount: 4
   unit: servings
-X-original-source: ../originals/brussels-sprout-salad-with-maple-vinaigrette-20260523.jpg
-X-active_time: 10 minutes
-X-cook_time: 15 minutes
-X-total_time: 25 minutes
-X-category: salad
 ingredients:
 - brussels sprouts:
     amounts:
@@ -49,8 +44,17 @@ steps:
 - step: Combine the maple syrup, vinegar, mustard, and oil in a small jar. Close the
     lid and shake well to combine. Pour the dressing over the salad. Let sit 5 minutes.
     Season with cracked black pepper.
+X-categories:
+  dish_type:
+  - salad
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:
   - Custom printed recipe card; no source URL visible
   - '"bacon an hazelnuts" in source interpreted as "bacon and hazelnuts" (typo)'
+X-original-source: ../originals/brussels-sprout-salad-with-maple-vinaigrette-20260523.jpg
+X-cook_time: 15 minutes
+X-active_time: 10 minutes
+X-total_time: 25 minutes

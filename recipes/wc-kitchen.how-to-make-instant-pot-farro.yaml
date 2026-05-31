@@ -43,18 +43,22 @@ steps:
     — it must be porous enough to let steam through.
 
     '
-X-original-source: ../originals/how-to-make-instant-pot-farro-20260523.jpg
-X-category: side dish, grain
+X-categories:
+  dish_type:
+  - component
+  - side
+  meal_type:
+  - anytime
 X-tags:
-- instant pot
-- pressure cooker
-- farro
-- whole grain
-- quick
-X-dietary:
-- vegan
-- vegetarian
+  dietary:
+  - vegan
+  - vegetarian
+  method:
+  - instant_pot
+  context:
+  - quick
 X-source-verification:
   status: verified
   notes:
   - Technique guide; no specific farro quantity given; source URL not visible in image
+X-original-source: ../originals/how-to-make-instant-pot-farro-20260523.jpg

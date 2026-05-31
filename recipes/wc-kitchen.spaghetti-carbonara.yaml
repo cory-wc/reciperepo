@@ -3,15 +3,9 @@ recipe_name: Spaghetti Carbonara
 description: The easiest pasta dish you will ever make with just 5 ingredients in
   15 minutes, loaded with Parmesan and bacon!
 source_url: https://damndelicious.net/2014/03/29/spaghetti-carbonara/
-X-original-source: ../originals/spaghetti-carbonara-20260523.jpg
-X-active_time: 5 minutes
-X-cook_time: 15 minutes
-X-total_time: 20 minutes
-
 yields:
 - amount: 4
   unit: servings
-
 ingredients:
 - spaghetti:
     amounts:
@@ -46,7 +40,6 @@ ingredients:
       unit: tablespoons
     processing:
     - chopped
-
 steps:
 - step: In a large pot of boiling salted water, cook pasta according to package instructions;
     reserve 1/2 cup water and drain well.
@@ -58,8 +51,21 @@ steps:
     season with salt and pepper, to taste. Add reserved pasta water, one tablespoon
     at a time, until desired consistency is reached.
 - step: Serve immediately, garnished with parsley, if desired.
-
+X-categories:
+  dish_type:
+  - pasta
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - italian
+  method:
+  - stovetop
 X-source-verification:
   status: verified
   notes:
   - Damn Delicious; adapted from The Chic Site per source
+X-original-source: ../originals/spaghetti-carbonara-20260523.jpg
+X-cook_time: 15 minutes
+X-active_time: 5 minutes
+X-total_time: 20 minutes
