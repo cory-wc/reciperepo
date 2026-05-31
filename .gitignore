@@ -10,5 +10,8 @@ src/recipe_tool/__pycache__/
 # Generated HTML (recipe render, recipe index)
 site/*.html
 
+# Generated PDFs (recipe cards, binder index)
+pdfs/*.pdf
+
 # Sample YAML files
 recipes/sample/
