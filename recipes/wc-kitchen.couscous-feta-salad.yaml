@@ -53,6 +53,11 @@ steps:
     cubes.
 - step: Whisk together olive oil, vinegar, salt, and pepper.
 - step: Toss couscous, feta, vegetables, and dressing. Chill for 20 minutes.
+X-categories:
+  dish_type:
+  - salad
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:

@@ -94,6 +94,11 @@ steps:
 - step: Add the pork and sauce to pan. Stir well to combine and cook on low for 5
     minutes.
 - step: Serve with lettuce leaves.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-source-verification:
   status: needs-review
   notes: []

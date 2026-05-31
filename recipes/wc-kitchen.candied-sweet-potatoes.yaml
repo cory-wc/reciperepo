@@ -37,6 +37,11 @@ steps:
 - step: Preheat the oven to 325°F. Dot the potatoes with the remaining 2 tablespoons
     butter, cover with foil and bake, stirring once or twice, for about 20 minutes,
     until steaming. Remove the foil and bake for 5 minutes longer.
+X-categories:
+  dish_type:
+  - side
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:

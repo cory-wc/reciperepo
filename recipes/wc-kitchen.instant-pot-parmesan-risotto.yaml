@@ -63,6 +63,11 @@ steps:
 - step: Serve topped with parsley or green onions.
 notes:
 - Serve with simple roasted veggies like cauliflower, broccoli, or sweet potatoes.
+X-categories:
+  dish_type:
+  - pasta
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:

@@ -1,0 +1,119 @@
+recipe_uuid: wc-kitchen.black-bean-soup
+recipe_name: Black Bean Soup
+description: A delicious vegetarian meal that's filling and layered with savory and
+  spiced flavors.
+yields:
+- amount: 4
+  unit: servings
+ingredients:
+- extra virgin olive oil:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+- red onion:
+    amounts:
+    - amount: 1
+      unit: whole
+    notes: large
+    processing:
+    - chopped
+- carrot:
+    amounts:
+    - amount: 1
+      unit: whole
+    notes: large
+    processing:
+    - peeled
+    - diced
+- celery:
+    amounts:
+    - amount: 2
+      unit: ribs
+    processing:
+    - diced
+- jalapeno pepper:
+    amounts:
+    - amount: 1
+      unit: whole
+    processing:
+    - deseeded
+    - diced
+- garlic:
+    amounts:
+    - amount: 4
+      unit: cloves
+    processing:
+    - minced
+- ground cumin:
+    amounts:
+    - amount: 2
+      unit: teaspoons
+- dried oregano:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- ground coriander:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- kosher salt:
+    amounts:
+    - amount: 1
+      unit: teaspoon
+- cayenne pepper:
+    amounts:
+    - amount: 0.125
+      unit: teaspoon
+- low-sodium black beans:
+    amounts:
+    - amount: 3
+      unit: cans
+    notes: 15-ounce cans
+    processing:
+    - drained
+    - rinsed
+- low-sodium vegetable or chicken broth:
+    amounts:
+    - amount: 3
+      unit: cups
+- fresh lime juice:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+    notes: 1 to 2 tablespoons
+steps:
+- step: Heat the oil in a large pot over medium-high heat. Add the onion, carrot,
+    celery, and jalapeno pepper, and cook for 4 to 5 minutes, or until softened.
+- step: Add the garlic, cumin, oregano, coriander, cayenne pepper, and salt, and stir
+    together for another minute, until fragrant.
+- step: Add the black beans and chicken broth, stir, and bring to a boil. Reduce the
+    heat to low, cover the pot, and simmer for 15 minutes.
+- step: Using an immersion blender, puree the soup a few times to have a mix of creamy
+    and chunky textures. Alternatively, you can scoop out a cup or two of soup, blend
+    it in a standard blender until smooth, and then stir it back into the pot. Then,
+    stir in the lime juice.
+- step: Ladle the soup into individual bowls and garnish with your favorite toppings.
+notes:
+- Optional toppings: fresh cilantro, red onion, avocado, sour cream, lime wedges.
+X-categories:
+  dish_type:
+  - soup
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - mexican
+  dietary:
+  - vegetarian
+  context:
+  - quick
+X-source-verification:
+  status: verified
+  notes:
+  - Author: Lisa Bryan (Downshiftology)
+  - Nutrition section visible in image but values not fully legible
+X-original-source: ../../originals/black-bean-soup-20260523.jpg
+X-prep_time: 10 mins
+X-cook_time: 20 mins
+X-total_time: 30 mins
+X-serving_size: about 2 cups

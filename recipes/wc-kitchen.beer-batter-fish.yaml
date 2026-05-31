@@ -55,6 +55,11 @@ steps:
 - step: Dip fish in the batter, then place in the hot oil.
 - step: Cook pieces for 3-4 minutes, or until the batter is golden brown.
 - step: Drain on a wire rack.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:

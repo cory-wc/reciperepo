@@ -103,6 +103,11 @@ steps:
 - step: Bake for 5 minutes at 425°F (218°C), then — keeping the muffins in the oven
     — reduce the oven temperature to 350°F (177°C). Bake for an additional 15–16 minutes,
     or until a toothpick inserted in the center comes out clean.
+X-categories:
+  dish_type:
+  - bread
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:

@@ -1,0 +1,75 @@
+recipe_uuid: wc-kitchen.instant-pot-applesauce
+recipe_name: Instant Pot Applesauce
+description: Delicious homemade applesauce just got easier, made in the instant pot
+  or slow cooker. This Instant Pot applesauce recipe has no added sugar and can be
+  made in just 15 minutes.
+source_url: https://tastesbetterfromscratch.com/instant-pot-applesauce/
+yields:
+- amount: 5–6
+  unit: cups
+ingredients:
+- granny smith apples:
+    amounts:
+    - amount: 4
+      unit: whole
+    notes: large; or Golden Delicious apples
+    processing:
+    - peeled
+    - cored
+    - roughly chopped
+- honeycrisp apples:
+    amounts:
+    - amount: 4
+      unit: whole
+    notes: large
+    processing:
+    - peeled
+    - cored
+    - roughly chopped
+- water:
+    amounts:
+    - amount: 1
+      unit: cup
+- fresh lemon juice:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+    notes: from about 1/2 a lemon
+- ground cinnamon:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+steps:
+- step: Peel and core apples. Use a johnny apple peeler to do all three steps at once
+    (peel, slice and core).
+- step: Add water, lemon juice and cinnamon to instant pot and stir to combine. Add
+    apples and toss to mix.
+- step: Secure lid and cook on manual (high pressure) for 8 minutes. Do a controlled
+    quick release or allow the pressure to naturally release.
+- step: Mash the apple mixture a few times with a potato masher, if desired. If you
+    like a smoother texture you could pulse it in the blender.
+- step: Transfer contents to a bowl and allow to cool completely. Stir in more cinnamon,
+    if desired, to taste.
+- step: Enjoy warm or cold. Store in the fridge for up to 7–10 days.
+notes:
+- Directions for making applesauce in the slow cooker are detailed in the original
+  post.
+X-categories:
+  dish_type:
+  - side
+  meal_type:
+  - snack
+X-tags:
+  cuisine:
+  - american
+X-source-verification:
+  status: verified
+  notes:
+  - Tastes Better From Scratch; author Lauren Allen; printed 4/20/2019
+X-original-source: ../../originals/instant-pot-applesauce-20260523.jpg
+X-prep_time: 5 mins
+X-cook_time: 15 mins
+X-total_time: 20 mins
+X-nutrition:
+  calories: 58 kcal
+X-author: Lauren Allen

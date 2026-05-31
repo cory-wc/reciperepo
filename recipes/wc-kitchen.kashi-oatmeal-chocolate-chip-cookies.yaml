@@ -52,6 +52,11 @@ steps:
 - step: Form cookies by rolling dough into balls, approximately 2 tablespoons of dough
     per cookie.
 - step: Bake for 10-15 minutes.
+X-categories:
+  dish_type:
+  - dessert
+  meal_type:
+  - dessert
 X-source-verification:
   status: verified
   notes:

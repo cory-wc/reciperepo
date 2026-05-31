@@ -101,6 +101,11 @@ steps:
     Serve with potato pancakes.
 notes:
 - Serve with applesauce alongside the potato pancakes.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:

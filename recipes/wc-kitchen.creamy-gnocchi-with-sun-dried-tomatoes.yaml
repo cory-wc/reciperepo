@@ -63,6 +63,11 @@ steps:
 - step: Reduce heat to low. Add the gnocchi and cover with broth. Cook covered for
     5 minutes.
 - step: Stir in the heavy cream and parmesan. Allow to thicken as needed.
+X-categories:
+  dish_type:
+  - pasta
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:

@@ -85,6 +85,11 @@ steps:
 - step: Gently crack eggs into skillet over tomatoes. Season eggs with salt and pepper.
     Transfer skillet to oven and bake until eggs are just set, 7 to 10 minutes. Sprinkle
     with cilantro and serve with hot sauce.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-source-verification:
   status: needs-manual-review
   notes:

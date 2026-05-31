@@ -1,0 +1,115 @@
+recipe_uuid: wc-kitchen.quick-and-easy-red-lentil-dahl
+recipe_name: Quick & Easy Red Lentil Dahl
+description: Ready in 30 minutes or less, this Indian Red Lentil Dahl is easy to make
+  and full of flavor. Serve with rice and vegan naan for an incredible feast!
+source_url: https://www.noracooks.com/wprm_print/9546
+source_authors:
+- Nora Taylor
+yields:
+- amount: 8
+  unit: servings
+ingredients:
+- olive oil:
+    amounts:
+    - amount: 1
+      unit: tablespoons
+- yellow onion:
+    amounts:
+    - amount: 1
+      unit: whole
+    notes: large
+    processing:
+    - chopped small
+- garlic:
+    amounts:
+    - amount: 5
+      unit: cloves
+    processing:
+    - minced
+- fresh ginger:
+    amounts:
+    - amount: 1
+      unit: tablespoons
+    processing:
+    - peeled
+    - grated
+- garam masala:
+    amounts:
+    - amount: 1
+      unit: tablespoons
+- ground turmeric:
+    amounts:
+    - amount: 1
+      unit: teaspoons
+- red pepper chili flakes:
+    amounts:
+    - amount: 0.5
+      unit: teaspoons
+- dried red lentils:
+    amounts:
+    - amount: 1.5
+      unit: cups
+- diced tomatoes:
+    amounts:
+    - amount: 14
+      unit: oz
+    notes: canned
+- full fat coconut milk:
+    amounts:
+    - amount: 13.5
+      unit: oz
+    notes: canned
+- vegetable broth:
+    amounts:
+    - amount: 3
+      unit: cups
+- salt:
+    amounts:
+    - amount: 1
+      unit: teaspoons
+- lemon:
+    amounts:
+    - amount: 0.5
+      unit: whole
+    processing:
+    - juiced
+- baby spinach:
+    amounts:
+    - amount: 3–4
+      unit: cups
+steps:
+- step: In a large pot or pan over medium heat, sauté the chopped onion in the olive
+    oil for 5 minutes, stirring frequently. Then add the garlic and ginger and cook
+    1 more minute, until fragrant.
+- step: Add the garam masala, turmeric and red pepper flakes to the pan and stir into
+    the onion mixture. Add a few tablespoons of water if the mixture is too dry.
+- step: Now add the dried lentils, canned tomatoes and their juices, coconut milk
+    and vegetable broth to the pan. Stir well and turn the heat to high. Bring to
+    a boil, then lower heat and simmer for about 15 minutes, until the lentils are
+    cooked and soft. Stir occasionally.
+notes:
+- Serve with cooked brown or white rice and vegan naan.
+X-categories:
+  dish_type:
+  - main
+  - side
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - indian
+  dietary:
+  - vegan
+X-source-verification:
+  status: needs-manual-review
+  reviewed: true
+  notes:
+  - NoraCooks.com; page 1 of 2 — spinach and lemon steps (likely step 4+) not captured
+  - Handwritten "Feb 2022 — yes —" confirms recipe was tried and approved
+X-original-source: ../../originals/quick-and-easy-red-lentil-dahl-20260523.jpg
+X-cook_time: 20 minutes
+X-active_time: 10 minutes
+X-total_time: 30 minutes
+X-nutrition:
+  calories: 258 kcal
+  per: serving

@@ -62,6 +62,11 @@ steps:
     and simmer until the cod is cooked through, 7-9 minutes.
 notes:
 - Serve with crusty french bread.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:

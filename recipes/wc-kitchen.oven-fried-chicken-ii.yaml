@@ -39,6 +39,11 @@ steps:
     Add the chicken to the dish and sprinkle with paprika to taste. Bake in the preheated
     oven for 30 minutes, then turn pieces over and bake for another 30 minutes. Remove
     from oven and drain on paper towels. Enjoy!
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:

@@ -78,6 +78,11 @@ steps:
     over the noodles. To serve, top with cilantro or chopped scallions.
 notes:
 - Garnish with fresh cilantro or chopped scallions.
+X-categories:
+  dish_type:
+  - soup
+  meal_type:
+  - dinner
 X-source-verification:
   status: needs-review
   notes:

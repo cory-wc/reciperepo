@@ -54,6 +54,11 @@ steps:
     except cashews.
 - step: Refrigerate for 1-2 hours to allow the flavors to blend.
 - step: Add the cashews and serve at room temperature.
+X-categories:
+  dish_type:
+  - salad
+  meal_type:
+  - dinner
 X-source-verification:
   status: needs-review
   notes: []

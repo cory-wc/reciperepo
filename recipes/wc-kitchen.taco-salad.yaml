@@ -77,6 +77,11 @@ steps:
 - step: Remove from heat. Stir in cilantro and 1/4 C of the salsa mixture.
 - step: In the large bowl, toss lettuce with the remaining salsa mixture.
 - step: Serve lettuce topped with the meat and sprinkled with cheese.
+X-categories:
+  dish_type:
+  - salad
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:

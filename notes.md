@@ -407,7 +407,9 @@ The batch fix script also:
 - Removes `X-rating` and `X-rating_count`
 - Drops `X-freezer_friendly: false`; converts `true` → `X-tags.context: [freezer-friendly]`
 - Moves `freezer-friendly` from `X-tags.planning` → `X-tags.context`
-- Moves `X-tips` and `X-handwritten-*` fields into ORF `notes`
+- Moves `X-tips`, `X-notes`, and `X-handwritten-*` fields into ORF `notes`
+- Infers missing `X-categories` from `X-course`, recipe name, and `SPECIAL_DISH_TYPE`
+- Drops redundant `X-course` when categories are already set
 - Normalizes cuisine tags (drops `-inspired` suffixes)
 - Moves all `X-*` fields to the end of each YAML file
 

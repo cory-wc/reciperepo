@@ -50,6 +50,11 @@ steps:
     additional cilantro and serve warm with tortilla chips.
 - step: To keep warm while serving, transfer the dip to a small slow cooker set to
     WARM. Stir occasionally to prevent burning.
+X-categories:
+  dish_type:
+  - sauce
+  meal_type:
+  - anytime
 X-source-verification:
   status: needs-review
   notes: []

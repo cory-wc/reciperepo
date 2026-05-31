@@ -87,6 +87,11 @@ steps:
 - step: Wipe pan clean and fry eggs.
 - step: Transfer eggs and roasted vegetables to bowls. Top with pickled cucumber.
     Drizzle with sriracha.
+X-categories:
+  dish_type:
+  - bowl
+  meal_type:
+  - dinner
 X-source-verification:
   status: needs-review
 X-original-source: ../originals/roasted-shiitake-bibimbap-20260523.jpg

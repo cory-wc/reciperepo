@@ -58,6 +58,11 @@ steps:
     a boil. Reduce heat; cover and simmer for 10 minutes or until rice is tender.
 - step: Remove from heat and stir. Sprinkle with cheese. Let stand 2 minutes or until
     cheese melts.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
 X-source-verification:
   status: verified
   notes:
