@@ -1,0 +1,75 @@
+recipe_uuid: wc-kitchen.poached-cod-with-tomatoes
+recipe_name: Poached Cod with Tomatoes
+yields:
+- amount: 4
+  unit: servings
+ingredients:
+- olive oil:
+    amounts:
+    - amount: 3
+      unit: tablespoons
+- red bell pepper:
+    amounts:
+    - amount: 1
+      unit: whole
+    processing:
+    - chopped
+- onion:
+    amounts:
+    - amount: 1
+      unit: whole
+    processing:
+    - chopped
+- yellow squash:
+    amounts:
+    - amount: 1
+      unit: whole
+    processing:
+    - chopped
+- tomatoes:
+    amounts:
+    - amount: 1 1/4
+      unit: lbs
+    processing:
+    - chopped
+- butter or cannellini beans:
+    amounts:
+    - amount: 1
+      unit: cans
+    processing:
+    - rinsed
+- cod:
+    amounts:
+    - amount: 24
+      unit: oz
+    notes: boneless, skinless
+    processing:
+    - cut into 4 fillets
+- salt:
+    amounts:
+    - amount: 3/4
+      unit: teaspoons
+- black pepper:
+    amounts:
+    - amount: 1/4
+      unit: teaspoons
+steps:
+- step: Heat oil in a dutch oven.
+- step: Add the bell pepper and onion. Saute until soft, 8-10 minutes.
+- step: Add the squash, tomatoes, salt, and pepper. Cook, stirring occasionally, until
+    the tomatoes have broken down and the sauce has thickened, 10-12 minutes.
+- step: Add the beans and stir to combine. Place the cod on top of the liquid. Cover
+    and simmer until the cod is cooked through, 7-9 minutes.
+notes:
+- Serve with crusty french bread.
+X-categories:
+  dish_type:
+  - main
+  meal_type:
+  - dinner
+X-source-verification:
+  status: verified
+  notes:
+  - Custom recipe card; no source URL visible
+X-original-source: ../../originals/poached-cod-with-tomatoes-20260523.jpg
+X-total_time: 45 minutes

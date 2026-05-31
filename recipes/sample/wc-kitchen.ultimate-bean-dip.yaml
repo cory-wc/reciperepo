@@ -1,0 +1,65 @@
+recipe_uuid: wc-kitchen.ultimate-bean-dip
+recipe_name: Ultimate Bean Dip
+source_url: https://www.fivehearthome.com/ultimate-bean-dip-cheesy-creamy-football-game-day-appetizer-recipe/
+source_authors:
+- Samantha Skaggs
+yields:
+- amount: 1
+  unit: batch
+ingredients:
+- cream cheese:
+    amounts:
+    - amount: 8
+      unit: oz
+    processing:
+    - at room temperature
+- refried beans:
+    amounts:
+    - amount: 2
+      unit: cans (15 oz)
+- salsa:
+    amounts:
+    - amount: 3/4
+      unit: cup
+    processing:
+    - mild, medium, or hot
+- taco seasoning:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- pepper jack cheese:
+    amounts:
+    - amount: 8
+      unit: oz
+    processing:
+    - grated
+    - or Monterey Jack or sharp cheddar for milder dip
+- fresh cilantro:
+    amounts:
+    - amount: 1/4
+      unit: cup
+    processing:
+    - chopped
+    - plus extra for garnish
+steps:
+- step: In a medium pot set over medium heat, break up the cream cheese into chunks.
+    Add the refried beans, salsa, and taco seasoning and mix together until well incorporated.
+    Stir occasionally until smooth and heated through, adjusting the heat as necessary
+    to prevent the bottom from burning.
+- step: Stir in the grated cheese until melted, then add the cilantro. Garnish with
+    additional cilantro and serve warm with tortilla chips.
+- step: To keep warm while serving, transfer the dip to a small slow cooker set to
+    WARM. Stir occasionally to prevent burning.
+X-categories:
+  dish_type:
+  - sauce
+  meal_type:
+  - anytime
+X-source-verification:
+  status: needs-review
+  notes: []
+X-original-source: ../../originals/ultimate-bean-dip-20260523.jpg
+X-prep_time: 5 minutes
+X-total_time: 15 minutes
+X-flags:
+- source-image-partially-obscured

@@ -1,0 +1,84 @@
+recipe_uuid: wc-kitchen.gochujang-roasted-carrots
+recipe_name: Gochujang Roasted Carrots
+yields:
+- amount: 4
+  unit: servings
+ingredients:
+- carrots:
+    amounts:
+    - amount: 1
+      unit: lb
+    notes: halve lengthwise if very large
+    processing:
+    - peeled
+- vegetable oil:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- sesame oil:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- soy sauce:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- gochujang:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+    notes: Korean chili paste
+- honey:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- rice wine vinegar:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+- water:
+    amounts:
+    - amount: 1
+      unit: tablespoon
+steps:
+- step: Preheat your oven to 400°F.
+- step: Place carrots on a rimmed baking sheet large enough to accommodate them all
+    in one single layer.
+- step: In a small bowl whisk together the oils, soy sauce, gochujang, honey, vinegar,
+    and water.
+- step: Pour this mixture all over the carrots, tossing with your hands to evenly
+    coat.
+- step: Cover the baking sheet tightly with two layers of aluminum foil.
+- step: Roast for 20 minutes.
+- step: Remove foil and roast for an additional 15–30 minutes, turning the carrots
+    halfway through cooking, until they are tender in the middle and brown and caramelized
+    at the edges.
+- step: Garnish with chopped scallions and sesame seeds.
+notes:
+- Optional garnish: chopped scallions, sesame seeds.
+X-categories:
+  dish_type:
+  - side
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - korean
+  dietary:
+  - vegetarian
+  method:
+  - oven
+X-source-verification:
+  status: needs-review
+  notes:
+  - Source is a photograph of a printed recipe page; some text in the right portion
+    of the image is partially obscured by shadow.
+  - Cook time range for uncovered roasting read as 15–30 minutes; verify against original
+    source.
+  - Author listed as Jo at https://boatkitchen.com (partially visible).
+  - Prep time listed as 10 minutes, Cook time listed as 45 minutes, Total time listed
+    as 55 minutes in source header — conflicts with visible step times; flagged for
+    review.
+X-original-source: ../../originals/gochujang-roasted-carrots-20260523.jpg
+X-active_time: 5 minutes
+X-total_time: 35 minutes

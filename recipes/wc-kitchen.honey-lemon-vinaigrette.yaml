@@ -39,6 +39,9 @@ steps:
     and creamy.
 - step: Taste and add additional salt & pepper if necessary.
 - step: Store in an airtight container in the fridge for one week.
+equipment:
+- mason jar with lid
+- measuring cups and spoons
 X-categories:
   dish_type:
   - sauce
@@ -59,6 +62,3 @@ X-source-verification:
 X-original-source: ../originals/honey-lemon-vinaigrette-20260523.jpg
 X-active_time: 5 minutes
 X-total_time: 5 minutes
-X-equipment:
-- mason jar with lid
-- measuring cups and spoons

@@ -1,0 +1,76 @@
+recipe_uuid: wc-kitchen.creamy-gnocchi-with-sun-dried-tomatoes
+recipe_name: Creamy Gnocchi with Sun-Dried Tomatoes
+yields:
+- amount: 6
+  unit: servings
+ingredients:
+- onion:
+    amounts:
+    - amount: 1
+      unit: whole
+    processing:
+    - diced
+- sun-dried tomatoes in oil:
+    amounts:
+    - amount: 1
+      unit: jar
+- italian seasoning:
+    amounts:
+    - amount: 2
+      unit: teaspoons
+- garlic:
+    amounts:
+    - amount: 3
+      unit: cloves
+    processing:
+    - minced
+- red pepper flakes:
+    amounts:
+    - amount: 0.5
+      unit: teaspoon
+- chicken:
+    amounts:
+    - amount: 1
+      unit: lb
+    notes: for vegan, use tofu (pressed and cubed) or mushrooms (sliced)
+    processing:
+    - cubed
+- gnocchi:
+    amounts:
+    - amount: 1
+      unit: lb
+- broth:
+    amounts:
+    - amount: 1.5
+      unit: cups
+- roasted vegetable puree:
+    amounts: []
+    notes: optional; 1–2 cubes, added to broth
+- heavy cream:
+    amounts:
+    - amount: 1
+      unit: cup
+    notes: for dairy-free, use thick cashew cream
+- parmesan:
+    amounts:
+    - amount: 0.5
+      unit: cup
+    notes: for dairy-free, use nutritional yeast or vegan parmesan
+steps:
+- step: Using the oil from the sun-dried tomatoes, sauté the onions.
+- step: Add the chicken, tofu, or mushrooms to the pot. Add the seasoning. Cook on
+    high (4–6 min for chicken or tofu, 10 min for mushrooms).
+- step: Reduce heat to low. Add the gnocchi and cover with broth. Cook covered for
+    5 minutes.
+- step: Stir in the heavy cream and parmesan. Allow to thicken as needed.
+X-categories:
+  dish_type:
+  - pasta
+  meal_type:
+  - dinner
+X-source-verification:
+  status: verified
+  notes:
+  - Custom recipe card; no source URL visible
+X-original-source: ../../originals/creamy-gnocchi-with-sun-dried-tomatoes-20260523.jpg
+X-total_time: 30 minutes

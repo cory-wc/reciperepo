@@ -106,4 +106,5 @@ X-prep_time: 15 minutes
 X-cook_time: 45 minutes
 X-total_time: 1 hour 35 minutes
 X-cooling_time: 30 minutes
-X-calories: 285 kcal
+X-nutrition:
+  calories: 285 kcal
