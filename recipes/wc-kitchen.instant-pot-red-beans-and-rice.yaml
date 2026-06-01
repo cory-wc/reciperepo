@@ -67,6 +67,7 @@ X-tags:
   - american
   method:
   - instant_pot
+  tnt: true
 X-source-verification:
   status: verified
   notes:

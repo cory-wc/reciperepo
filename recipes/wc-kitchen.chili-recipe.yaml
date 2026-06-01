@@ -86,6 +86,7 @@ X-tags:
   - vegetarian
   method:
   - slow_cooker
+  tnt: true
 X-source-verification:
   status: verified
   notes:

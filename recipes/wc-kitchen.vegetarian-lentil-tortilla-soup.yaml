@@ -121,6 +121,7 @@ X-tags:
   - slow_cooker
   context:
   - make_ahead
+  tnt: true
 X-source-verification:
   status: needs-manual-review
   reviewed: true

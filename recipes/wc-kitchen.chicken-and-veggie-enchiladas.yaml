@@ -68,6 +68,7 @@ X-categories:
 X-tags:
   method:
   - oven
+  tnt: true
 X-source-verification:
   status: needs-review
   notes: []

@@ -102,6 +102,7 @@ X-tags:
   - american
   dietary:
   - low_sugar
+  tnt: true
 X-source-verification:
   status: verified
   notes:

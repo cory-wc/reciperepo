@@ -66,6 +66,7 @@ X-tags:
   - oven
   context:
   - comfort_food
+  tnt: true
 X-source-verification:
   status: needs-review
   notes:

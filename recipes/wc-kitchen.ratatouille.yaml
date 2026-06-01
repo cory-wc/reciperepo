@@ -55,6 +55,7 @@ X-tags:
   - vegetarian
   method:
   - stovetop
+  tnt: true
 X-source-verification:
   status: verified
   notes:

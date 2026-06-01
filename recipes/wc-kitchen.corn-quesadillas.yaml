@@ -59,6 +59,9 @@ X-categories:
   - burgers+sandwiches
   meal_type:
   - dinner
+X-tags:
+- tnt
+
 X-source-verification:
   status: needs-review
   notes: []

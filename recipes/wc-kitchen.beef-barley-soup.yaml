@@ -98,6 +98,9 @@ X-categories:
   - soup
   meal_type:
   - dinner
+X-tags:
+- tnt
+
 X-source-verification:
   status: verified
   notes:
