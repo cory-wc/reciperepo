@@ -57,6 +57,9 @@ X-tags:
   - instant_pot
   context:
   - quick
+  - grains
+  primary_ingredient:
+  - farro
 X-source-verification:
   status: verified
   notes:

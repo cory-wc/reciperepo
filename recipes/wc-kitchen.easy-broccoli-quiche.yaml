@@ -77,8 +77,10 @@ notes:
 - 'Handwritten optional filling: spinach (0.25 portion, unit unclear)'
 X-categories:
   dish_type:
-  - breakfast_bake
+  - one_dish
   meal_type:
+  - dinner
+  - lunch
   - breakfast
 X-tags:
   dietary:
@@ -87,7 +89,12 @@ X-tags:
   - oven
   context:
   - quick
-  infrequent: true
+  - easy
+  - meal_prep
+  - weeknight
+  primary_ingredient:
+  - eggs
+  - broccoli
 X-source-verification:
   status: verified
   notes:
