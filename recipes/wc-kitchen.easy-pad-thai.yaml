@@ -93,6 +93,7 @@ X-categories:
 X-tags:
   cuisine:
   - thai
+  infrequent: true
 X-source-verification:
   status: needs-review
   notes:

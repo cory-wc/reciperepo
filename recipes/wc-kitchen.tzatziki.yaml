@@ -61,6 +61,7 @@ X-tags:
   - vegetarian
   context:
   - quick
+  infrequent: true
 X-source-verification:
   status: verified
   notes:

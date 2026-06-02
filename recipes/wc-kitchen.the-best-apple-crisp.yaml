@@ -93,6 +93,7 @@ X-tags:
   - oven
   season:
   - fall
+  infrequent: true
 X-source-verification:
   status: verified
   notes:

@@ -99,6 +99,7 @@ X-tags:
   - italian
   method:
   - stovetop
+  infrequent: true
 X-source-verification:
   status: verified
   notes:

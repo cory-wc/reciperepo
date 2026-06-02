@@ -41,6 +41,7 @@ X-tags:
   - holiday
   season:
   - winter
+  infrequent: true
 X-source-verification:
   status: verified
   notes:

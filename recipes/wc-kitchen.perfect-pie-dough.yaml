@@ -59,6 +59,7 @@ X-categories:
 X-tags:
   context:
   - make_ahead
+  infrequent: true
 X-source-verification:
   status: verified
   notes:

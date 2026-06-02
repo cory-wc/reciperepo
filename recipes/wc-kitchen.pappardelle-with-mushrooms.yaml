@@ -58,6 +58,7 @@ X-categories:
 X-tags:
   dietary:
   - vegetarian
+  infrequent: true
 X-source-verification:
   status: verified
   notes:

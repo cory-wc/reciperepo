@@ -60,6 +60,7 @@ X-tags:
   - vegetarian
   method:
   - grill
+  infrequent: true
 X-source-verification:
   status: verified
   notes:

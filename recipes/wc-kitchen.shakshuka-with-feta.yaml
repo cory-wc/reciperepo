@@ -93,6 +93,7 @@ X-categories:
 X-tags:
   method:
   - oven
+  infrequent: true
 X-source-verification:
   status: needs-manual-review
   notes:

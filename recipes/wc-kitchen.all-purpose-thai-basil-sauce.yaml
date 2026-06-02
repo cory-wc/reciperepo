@@ -106,6 +106,7 @@ X-tags:
   - thai
   dietary:
   - vegetarian_adaptable
+  infrequent: true
 X-source-verification:
   status: verified
   notes:

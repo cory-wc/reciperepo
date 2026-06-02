@@ -87,6 +87,7 @@ X-tags:
   - oven
   context:
   - quick
+  infrequent: true
 X-source-verification:
   status: verified
   notes:

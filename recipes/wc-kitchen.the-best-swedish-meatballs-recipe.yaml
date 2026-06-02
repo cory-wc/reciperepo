@@ -139,6 +139,7 @@ X-tags:
   - scandinavian
   method:
   - stovetop
+  infrequent: true
 X-source-verification:
   status: verified
   notes:

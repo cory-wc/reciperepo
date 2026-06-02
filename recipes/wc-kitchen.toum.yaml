@@ -57,6 +57,7 @@ X-categories:
 X-tags:
   cuisine:
   - middle_eastern
+  infrequent: true
 X-source-verification:
   status: needs-manual-review
   reviewed: true

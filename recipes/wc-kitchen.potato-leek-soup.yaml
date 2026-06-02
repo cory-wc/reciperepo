@@ -89,6 +89,7 @@ X-tags:
   - french
   context:
   - freezer-friendly
+  infrequent: true
 X-source-verification:
   status: verified
   notes:

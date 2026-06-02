@@ -43,6 +43,9 @@ X-categories:
   - side
   meal_type:
   - dinner
+X-tags:
+- infrequent
+
 X-source-verification:
   status: verified
   notes:

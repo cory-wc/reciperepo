@@ -99,6 +99,7 @@ X-tags:
   - vegetarian
   method:
   - oven
+  infrequent: true
 X-source-verification:
   status: verified
   notes:

@@ -91,6 +91,7 @@ X-tags:
   - slow_cooker
   context:
   - comfort_food
+  infrequent: true
 X-source-verification:
   status: verified
   notes:

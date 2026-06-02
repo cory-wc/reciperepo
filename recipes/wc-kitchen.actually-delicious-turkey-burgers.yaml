@@ -63,6 +63,9 @@ X-categories:
   - burgers+sandwiches
   meal_type:
   - dinner
+X-tags:
+- infrequent
+
 X-source-verification:
   status: needs-review
   notes:
