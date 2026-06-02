@@ -45,8 +45,17 @@ X-categories:
   meal_type:
   - dinner
 X-tags:
-- tnt
-
+  method:
+  - stovetop
+  - slow_cooker
+  context:
+  - freezer_friendly
+  - make_ahead
+  season:
+  - fall
+  - winter
+  primary_ingredient:
+  - cabbage
 X-source-verification:
   status: verified
   notes:

@@ -38,8 +38,23 @@ X-categories:
   meal_type:
   - dinner
 X-tags:
-- tnt
-
+  dietary:
+  - vegetarian
+  - vegan
+  - gluten_free_adaptable
+  method:
+  - no_cook
+  context:
+  - light
+  - easy
+  - quick
+  - veggie_side
+  season:
+  - spring
+  - summer
+  - fall
+  primary_ingredient:
+  - cucumber
 X-source-verification:
   status: verified
   notes:

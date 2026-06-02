@@ -9,1864 +9,3446 @@
     font-family: Georgia, 'Times New Roman', serif;
     color: #2e2b28;
     
-    max-width: 720px;
+    max-width: 960px;
     margin: 2rem auto;
     padding: 0 1rem;
     
   }
   h1 { text-align: center; font-size: 2rem; }
   .meta { text-align: center; color: #666; font-size: 0.9rem; margin-bottom: 1.5rem; }
+  
+  .index-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+  }
+  .index-toolbar button {
+    font: inherit;
+    cursor: pointer;
+    border: 1px solid #504a43;
+    background: #faf8f5;
+    color: #2e2b28;
+    padding: 0.35rem 0.75rem;
+    border-radius: 4px;
+  }
+  .index-toolbar button:hover { background: #efe9e0; }
+  #filter-result-count { color: #666; flex: 1; min-width: 12rem; }
+  #filter-clear-all[hidden] { display: none; }
+  .filter-lozenges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 0.75rem;
+    min-height: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+  }
+  .filter-lozenge {
+    border: 1px solid #c4bdb3;
+    background: #f0ebe3;
+    border-radius: 999px;
+    padding: 0.2rem 0.55rem;
+    cursor: pointer;
+  }
+  .filter-lozenge:hover { background: #e5ddd2; }
+  .include-reference { font-size: 0.85rem; color: #444; }
+  #filter-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.25);
+    z-index: 10;
+  }
+  #filter-backdrop[hidden], #filter-panel[hidden] { display: none; }
+  #filter-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(360px, 92vw);
+    height: 100%;
+    overflow: auto;
+    background: #fff;
+    border-left: 1px solid #ccc;
+    z-index: 11;
+    padding: 1rem;
+    box-shadow: -4px 0 16px rgba(0,0,0,0.08);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+  }
+  #filter-panel h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.1rem;
+    font-family: Georgia, serif;
+  }
+  .filter-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  #filter-search {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.4rem 0.5rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font: inherit;
+  }
+  .filter-group { margin-bottom: 0.5rem; border-bottom: 1px solid #eee; padding-bottom: 0.35rem; }
+  .filter-group[hidden] { display: none; }
+  .filter-group-header {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0.35rem 0;
+    font: inherit;
+    font-weight: 700;
+    text-align: left;
+    cursor: default;
+    color: #504a43;
+  }
+  .filter-group-toggle { cursor: pointer; }
+  .filter-group-toggle::before {
+    content: '▾';
+    display: inline-block;
+    width: 1em;
+    color: #888;
+  }
+  .filter-group-toggle[aria-expanded="false"]::before { content: '▸'; }
+  .filter-clear-facet {
+    margin-left: auto;
+    font-size: 0.75rem;
+    font-weight: normal;
+    color: #666;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  .filter-clear-facet:hover { text-decoration: underline; }
+  .filter-values { list-style: none; margin: 0; padding: 0 0 0 1.25rem; }
+  .filter-values[hidden] { display: none; }
+  .filter-value-row { margin: 0.2rem 0; }
+  .filter-value-row[hidden] { display: none; }
+  .filter-value-label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    font-weight: normal;
+  }
+  .filter-value-count { color: #888; font-size: 0.8em; }
+  .cleanup-section {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 2px solid #504a43;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .cleanup-section h2 {
+    font-family: Georgia, serif;
+    font-size: 1.15rem;
+    margin: 0 0 0.35rem;
+  }
+  .cleanup-section .cleanup-meta {
+    color: #666;
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+  }
+  .cleanup-issues { color: #888; font-size: 0.85em; }
+  
   table { width: 100%; border-collapse: collapse; font-size: 1rem; }
   th, td { text-align: left; padding: 0.35rem 0.5rem; border-bottom: 1px solid #ddd; }
   th { font-weight: 700; border-bottom: 2px solid #504a43; }
-  .tags { color: #666; font-size: 0.85em; }
+  .facets { color: #666; font-size: 0.85em; max-width: 14rem; }
+  tr[hidden] { display: none; }
   a { color: #504a43; text-decoration: none; }
   a:hover { text-decoration: underline; }
   .pdf-ref { font-family: Arial, sans-serif; font-size: 0.85em; color: #666; }
 </style>
+
+<script src="index-filter.js" defer></script>
+
 </head>
 <body>
   <h1>Recipe Index</h1>
-  <p class="meta">Generated 2026-05-31</p>
+  <p class="meta">Generated 2026-06-02</p>
+
+  
+  <div class="index-toolbar">
+    <button type="button" id="filter-toggle" aria-expanded="false" aria-controls="filter-panel">Filters</button>
+    <button type="button" id="filter-clear-all" hidden>Clear all</button>
+    <span id="filter-result-count">Showing 127 of 127 recipes</span>
+    <label class="include-reference">
+      <input type="checkbox" id="include-reference"> Include reference pages
+    </label>
+  </div>
+  <div class="filter-lozenges" id="filter-lozenges" aria-live="polite"></div>
+
+  <div id="filter-backdrop" hidden></div>
+  <aside id="filter-panel" hidden aria-hidden="true" aria-labelledby="filter-panel-title">
+    <div class="filter-panel-header">
+      <h2 id="filter-panel-title">Filter recipes</h2>
+      <button type="button" id="filter-close" aria-label="Close filters">×</button>
+    </div>
+    <input type="search" id="filter-search" placeholder="Search filter values…" autocomplete="off">
+    
+    <div class="filter-group" data-facet-group="dish_type" data-group-label="Dish type">
+      <div class="filter-group-header">
+        <button type="button" class="filter-group-toggle" aria-expanded="true">Dish type</button>
+        <button type="button" class="filter-clear-facet" data-facet="dish_type">Clear</button>
+      </div>
+      <ul class="filter-values">
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dish_type"
+              data-value="beverage"
+              data-label="beverage">
+            <span>beverage <span class="filter-value-count">(2)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dish_type"
+              data-value="bowl"
+              data-label="bowl">
+            <span>bowl <span class="filter-value-count">(5)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dish_type"
+              data-value="bread"
+              data-label="bread">
+            <span>bread <span class="filter-value-count">(6)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dish_type"
+              data-value="breakfast_bake"
+              data-label="breakfast bake">
+            <span>breakfast bake <span class="filter-value-count">(1)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dish_type"
+              data-value="burgers+sandwiches"
+              data-label="Burgers & sandwiches">
+            <span>Burgers & sandwiches <span class="filter-value-count">(2)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dish_type"
+              data-value="component"
+              data-label="component">
+            <span>component <span class="filter-value-count">(2)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dish_type"
+              data-value="dessert"
+              data-label="dessert">
+            <span>dessert <span class="filter-value-count">(11)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dish_type"
+              data-value="main"
+              data-label="main">
+            <span>main <span class="filter-value-count">(38)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dish_type"
+              data-value="one_dish"
+              data-label="one dish">
+            <span>one dish <span class="filter-value-count">(2)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dish_type"
+              data-value="pasta"
+              data-label="pasta">
+            <span>pasta <span class="filter-value-count">(8)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dish_type"
+              data-value="preserve"
+              data-label="preserve">
+            <span>preserve <span class="filter-value-count">(5)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dish_type"
+              data-value="salad"
+              data-label="salad">
+            <span>salad <span class="filter-value-count">(10)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dish_type"
+              data-value="sauce"
+              data-label="sauce">
+            <span>sauce <span class="filter-value-count">(9)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dish_type"
+              data-value="side"
+              data-label="side">
+            <span>side <span class="filter-value-count">(14)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dish_type"
+              data-value="soup"
+              data-label="soup">
+            <span>soup <span class="filter-value-count">(18)</span></span>
+          </label>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="filter-group" data-facet-group="meal_type" data-group-label="Meal type">
+      <div class="filter-group-header">
+        <button type="button" class="filter-group-toggle" aria-expanded="true">Meal type</button>
+        <button type="button" class="filter-clear-facet" data-facet="meal_type">Clear</button>
+      </div>
+      <ul class="filter-values">
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="meal_type"
+              data-value="anytime"
+              data-label="anytime">
+            <span>anytime <span class="filter-value-count">(17)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="meal_type"
+              data-value="breakfast"
+              data-label="breakfast">
+            <span>breakfast <span class="filter-value-count">(7)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="meal_type"
+              data-value="dessert"
+              data-label="dessert">
+            <span>dessert <span class="filter-value-count">(11)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="meal_type"
+              data-value="dinner"
+              data-label="dinner">
+            <span>dinner <span class="filter-value-count">(91)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="meal_type"
+              data-value="snack"
+              data-label="snack">
+            <span>snack <span class="filter-value-count">(1)</span></span>
+          </label>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="filter-group" data-facet-group="meal_role" data-group-label="Meal role">
+      <div class="filter-group-header">
+        <button type="button" class="filter-group-toggle" aria-expanded="true">Meal role</button>
+        <button type="button" class="filter-clear-facet" data-facet="meal_role">Clear</button>
+      </div>
+      <ul class="filter-values">
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="meal_role"
+              data-value="one_dish_meal"
+              data-label="one dish meal">
+            <span>one dish meal <span class="filter-value-count">(2)</span></span>
+          </label>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="filter-group" data-facet-group="cuisine" data-group-label="Cuisine">
+      <div class="filter-group-header">
+        <button type="button" class="filter-group-toggle" aria-expanded="true">Cuisine</button>
+        <button type="button" class="filter-clear-facet" data-facet="cuisine">Clear</button>
+      </div>
+      <ul class="filter-values">
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="cuisine"
+              data-value="american"
+              data-label="american">
+            <span>american <span class="filter-value-count">(10)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="cuisine"
+              data-value="asian"
+              data-label="asian">
+            <span>asian <span class="filter-value-count">(2)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="cuisine"
+              data-value="cajun"
+              data-label="cajun">
+            <span>cajun <span class="filter-value-count">(1)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="cuisine"
+              data-value="french"
+              data-label="french">
+            <span>french <span class="filter-value-count">(2)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="cuisine"
+              data-value="german"
+              data-label="german">
+            <span>german <span class="filter-value-count">(1)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="cuisine"
+              data-value="greek"
+              data-label="greek">
+            <span>greek <span class="filter-value-count">(1)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="cuisine"
+              data-value="indian"
+              data-label="indian">
+            <span>indian <span class="filter-value-count">(3)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="cuisine"
+              data-value="italian"
+              data-label="italian">
+            <span>italian <span class="filter-value-count">(4)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="cuisine"
+              data-value="japanese"
+              data-label="japanese">
+            <span>japanese <span class="filter-value-count">(2)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="cuisine"
+              data-value="korean"
+              data-label="korean">
+            <span>korean <span class="filter-value-count">(1)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="cuisine"
+              data-value="mediterranean"
+              data-label="mediterranean">
+            <span>mediterranean <span class="filter-value-count">(1)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="cuisine"
+              data-value="mexican"
+              data-label="mexican">
+            <span>mexican <span class="filter-value-count">(3)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="cuisine"
+              data-value="middle_eastern"
+              data-label="middle eastern">
+            <span>middle eastern <span class="filter-value-count">(2)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="cuisine"
+              data-value="scandinavian"
+              data-label="scandinavian">
+            <span>scandinavian <span class="filter-value-count">(1)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="cuisine"
+              data-value="seafood"
+              data-label="seafood">
+            <span>seafood <span class="filter-value-count">(3)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="cuisine"
+              data-value="thai"
+              data-label="thai">
+            <span>thai <span class="filter-value-count">(3)</span></span>
+          </label>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="filter-group" data-facet-group="dietary" data-group-label="Dietary">
+      <div class="filter-group-header">
+        <button type="button" class="filter-group-toggle" aria-expanded="true">Dietary</button>
+        <button type="button" class="filter-clear-facet" data-facet="dietary">Clear</button>
+      </div>
+      <ul class="filter-values">
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dietary"
+              data-value="dairy_free"
+              data-label="dairy free">
+            <span>dairy free <span class="filter-value-count">(3)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dietary"
+              data-value="gluten_free"
+              data-label="gluten free">
+            <span>gluten free <span class="filter-value-count">(5)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dietary"
+              data-value="gluten_free_adaptable"
+              data-label="gluten free adaptable">
+            <span>gluten free adaptable <span class="filter-value-count">(1)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dietary"
+              data-value="low_fat"
+              data-label="low fat">
+            <span>low fat <span class="filter-value-count">(1)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dietary"
+              data-value="low_sugar"
+              data-label="low sugar">
+            <span>low sugar <span class="filter-value-count">(4)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dietary"
+              data-value="vegan"
+              data-label="vegan">
+            <span>vegan <span class="filter-value-count">(8)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dietary"
+              data-value="vegetarian"
+              data-label="vegetarian">
+            <span>vegetarian <span class="filter-value-count">(25)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dietary"
+              data-value="vegetarian_adaptable"
+              data-label="vegetarian adaptable">
+            <span>vegetarian adaptable <span class="filter-value-count">(2)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="dietary"
+              data-value="whole30"
+              data-label="whole30">
+            <span>whole30 <span class="filter-value-count">(1)</span></span>
+          </label>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="filter-group" data-facet-group="method" data-group-label="Method">
+      <div class="filter-group-header">
+        <button type="button" class="filter-group-toggle" aria-expanded="true">Method</button>
+        <button type="button" class="filter-clear-facet" data-facet="method">Clear</button>
+      </div>
+      <ul class="filter-values">
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="method"
+              data-value="grill"
+              data-label="grill">
+            <span>grill <span class="filter-value-count">(1)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="method"
+              data-value="instant_pot"
+              data-label="instant pot">
+            <span>instant pot <span class="filter-value-count">(14)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="method"
+              data-value="no_cook"
+              data-label="no cook">
+            <span>no cook <span class="filter-value-count">(2)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="method"
+              data-value="oven"
+              data-label="oven">
+            <span>oven <span class="filter-value-count">(40)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="method"
+              data-value="preserve"
+              data-label="preserve">
+            <span>preserve <span class="filter-value-count">(5)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="method"
+              data-value="slow_cooker"
+              data-label="slow cooker">
+            <span>slow cooker <span class="filter-value-count">(10)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="method"
+              data-value="stovetop"
+              data-label="stovetop">
+            <span>stovetop <span class="filter-value-count">(10)</span></span>
+          </label>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="filter-group" data-facet-group="context" data-group-label="Context">
+      <div class="filter-group-header">
+        <button type="button" class="filter-group-toggle" aria-expanded="true">Context</button>
+        <button type="button" class="filter-clear-facet" data-facet="context">Clear</button>
+      </div>
+      <ul class="filter-values">
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="context"
+              data-value="comfort_food"
+              data-label="comfort food">
+            <span>comfort food <span class="filter-value-count">(3)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="context"
+              data-value="freezer_friendly"
+              data-label="freezer friendly">
+            <span>freezer friendly <span class="filter-value-count">(2)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="context"
+              data-value="holiday"
+              data-label="holiday">
+            <span>holiday <span class="filter-value-count">(2)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="context"
+              data-value="leftovers_friendly"
+              data-label="leftovers friendly">
+            <span>leftovers friendly <span class="filter-value-count">(1)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="context"
+              data-value="make_ahead"
+              data-label="make ahead">
+            <span>make ahead <span class="filter-value-count">(5)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="context"
+              data-value="meal_prep"
+              data-label="meal prep">
+            <span>meal prep <span class="filter-value-count">(2)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="context"
+              data-value="quick"
+              data-label="quick">
+            <span>quick <span class="filter-value-count">(11)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="context"
+              data-value="weeknight"
+              data-label="weeknight">
+            <span>weeknight <span class="filter-value-count">(2)</span></span>
+          </label>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="filter-group" data-facet-group="season" data-group-label="Season">
+      <div class="filter-group-header">
+        <button type="button" class="filter-group-toggle" aria-expanded="true">Season</button>
+        <button type="button" class="filter-clear-facet" data-facet="season">Clear</button>
+      </div>
+      <ul class="filter-values">
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="season"
+              data-value="fall"
+              data-label="fall">
+            <span>fall <span class="filter-value-count">(3)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="season"
+              data-value="summer"
+              data-label="summer">
+            <span>summer <span class="filter-value-count">(1)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="season"
+              data-value="winter"
+              data-label="winter">
+            <span>winter <span class="filter-value-count">(2)</span></span>
+          </label>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="filter-group" data-facet-group="primary_ingredient" data-group-label="Primary ingredient">
+      <div class="filter-group-header">
+        <button type="button" class="filter-group-toggle" aria-expanded="true">Primary ingredient</button>
+        <button type="button" class="filter-clear-facet" data-facet="primary_ingredient">Clear</button>
+      </div>
+      <ul class="filter-values">
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="primary_ingredient"
+              data-value="bacon"
+              data-label="bacon">
+            <span>bacon <span class="filter-value-count">(1)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="primary_ingredient"
+              data-value="potatoes"
+              data-label="potatoes">
+            <span>potatoes <span class="filter-value-count">(2)</span></span>
+          </label>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="filter-group" data-facet-group="flavor_profile" data-group-label="Flavor profile">
+      <div class="filter-group-header">
+        <button type="button" class="filter-group-toggle" aria-expanded="true">Flavor profile</button>
+        <button type="button" class="filter-clear-facet" data-facet="flavor_profile">Clear</button>
+      </div>
+      <ul class="filter-values">
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="flavor_profile"
+              data-value="creamy"
+              data-label="creamy">
+            <span>creamy <span class="filter-value-count">(1)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="flavor_profile"
+              data-value="hearty"
+              data-label="hearty">
+            <span>hearty <span class="filter-value-count">(1)</span></span>
+          </label>
+        </li>
+        
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="flavor_profile"
+              data-value="savory"
+              data-label="savory">
+            <span>savory <span class="filter-value-count">(1)</span></span>
+          </label>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </aside>
+  
+
   <table>
     <thead>
       <tr>
         <th>Recipe</th>
-        <th>Tags</th>
+        <th>Facets</th>
         <th>Yield</th>
         
       </tr>
     </thead>
-    <tbody>
+    <tbody id="recipe-tbody">
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:soup meal_type:dinner cuisine:japanese dietary:gluten_free dietary:vegan dietary:vegetarian"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.15-minute-miso-soup-with-greens-and-tofu.html">15-Minute Miso Soup with Greens and Tofu</a>
           
         </td>
         
-        <td class="tags">cuisine, dietary</td>
+        <td class="facets">soup · dinner · japanese · gluten free · vegan · vegetarian</td>
         
         <td>4 bowls</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:soup meal_type:dinner dietary:dairy_free dietary:gluten_free dietary:whole30"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.30-minute-dairy-free-potato-soup.html">30 Minute Dairy Free Potato Soup</a>
           
         </td>
         
-        <td class="tags">dietary</td>
+        <td class="facets">soup · dinner · dairy free · gluten free · whole30</td>
         
         <td>8 cup servings</td>
         
       </tr>
       
-      <tr>
-        <td>
-          
-          <a href="wc-kitchen.actually-delicious-turkey-burgers.html">Actually Delicious Turkey Burgers</a>
-          
-        </td>
+      <tr
         
-        <td class="tags"></td>
+        data-facets="dish_type:sauce meal_type:anytime cuisine:thai dietary:vegetarian_adaptable"
+        data-reference="false"
         
-        <td>12 patties</td>
         
-      </tr>
-      
-      <tr>
+      >
         <td>
           
           <a href="wc-kitchen.all-purpose-thai-basil-sauce.html">All-Purpose Thai Basil Sauce</a>
           
         </td>
         
-        <td class="tags">cuisine, dietary</td>
+        <td class="facets">sauce · anytime · thai · vegetarian adaptable</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.bacon-onion-tart.html">Bacon Onion Tart</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">main · dinner · oven</td>
         
         <td>12 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.bacon-shrimp-sweet-potatoes.html">Bacon-Shrimp Sweet Potatoes</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">main · dinner · oven</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:side meal_type:dinner dietary:vegetarian method:oven season:fall"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.baked-acorn-squash-with-butter-and-brown-sugar.html">Baked Acorn Squash with Butter and Brown Sugar</a>
           
         </td>
         
-        <td class="tags">dietary, method, season</td>
+        <td class="facets">side · dinner · vegetarian · oven · fall</td>
         
         <td>2 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:breakfast method:oven context:make_ahead"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.baked-oatmeal-with-cranberries-and-almonds.html">Baked Oatmeal With Cranberries and Almonds</a>
           
         </td>
         
-        <td class="tags">method, context</td>
+        <td class="facets">main · breakfast · oven · make ahead</td>
         
         <td>1 2-quart baking dish</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:preserve meal_type:anytime dietary:low_sugar method:preserve"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.ball-realfruit-low-or-no-sugar-jam.html">Ball RealFruit Low or No-Sugar Jam (Scaling Reference Table)</a>
           
         </td>
         
-        <td class="tags">dietary, method</td>
+        <td class="facets">preserve · anytime · low sugar · preserve</td>
         
         <td>1 to 9 half-pint jars (see scaling table)</td>
         
       </tr>
       
-      <tr>
-        <td>
-          
-          <a href="wc-kitchen.beef-barley-soup.html">Beef Barley Soup</a>
-          
-        </td>
+      <tr
         
-        <td class="tags"></td>
+        data-facets="dish_type:pasta meal_type:dinner method:oven"
+        data-reference="false"
         
-        <td>8 servings</td>
         
-      </tr>
-      
-      <tr>
+      >
         <td>
           
           <a href="wc-kitchen.beef-bolognese-with-parsnips.html">Beef Bolognese with Parsnips</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">pasta · dinner · oven</td>
         
         <td>2 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.beef-brisket.html">Beef Brisket</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">main · dinner · oven</td>
         
         <td>10 servings</td>
         
       </tr>
       
-      <tr>
-        <td>
-          
-          <a href="wc-kitchen.beer-batter-fish.html">Beer Batter Fish</a>
-          
-        </td>
+      <tr
         
-        <td class="tags"></td>
+        data-facets="dish_type:dessert meal_type:dessert method:oven"
+        data-reference="false"
         
-        <td>6 servings</td>
         
-      </tr>
-      
-      <tr>
+      >
         <td>
           
           <a href="wc-kitchen.beginners-guide-to-french-macarons.html">Beginner's Guide to French Macarons</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">dessert · dessert · oven</td>
         
         <td>None macarons</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:salad meal_type:dinner dietary:vegetarian context:make_ahead"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.best-bean-salad.html">Best Bean Salad</a>
           
         </td>
         
-        <td class="tags">dietary, context</td>
+        <td class="facets">salad · dinner · vegetarian · make ahead</td>
         
         <td></td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner dietary:vegetarian method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.vegetable-lasagna.html">Best Vegetable Lasagna</a>
           
         </td>
         
-        <td class="tags">dietary, method</td>
+        <td class="facets">main · dinner · vegetarian · oven</td>
         
         <td>8 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:reference"
+        data-reference="true"
+        hidden
+        
+      >
         <td>
           
           <a href="wc-kitchen.binder-index-page-1.html">Binder Index (page 1)</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">reference</td>
         
         <td></td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:reference"
+        data-reference="true"
+        hidden
+        
+      >
         <td>
           
           <a href="wc-kitchen.binder-index.html">Binder Index (page 2)</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">reference</td>
         
         <td></td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:salad meal_type:dinner dietary:vegetarian"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.black-bean-and-corn-salad-ii.html">Black Bean and Corn Salad II</a>
           
         </td>
         
-        <td class="tags">dietary</td>
+        <td class="facets">salad · dinner · vegetarian</td>
         
         <td></td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:soup meal_type:dinner cuisine:mexican dietary:vegetarian context:quick"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.black-bean-soup.html">Black Bean Soup</a>
           
         </td>
         
-        <td class="tags">cuisine, dietary, context</td>
+        <td class="facets">soup · dinner · mexican · vegetarian · quick</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner cuisine:cajun cuisine:seafood method:stovetop context:quick"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.blackened-mahi-mahi.html">Blackened Mahi Mahi</a>
           
         </td>
         
-        <td class="tags">cuisine, method, context</td>
+        <td class="facets">main · dinner · cajun · seafood · stovetop · quick</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner cuisine:german method:stovetop primary_ingredient:potatoes primary_ingredient:bacon"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.bratkartoffeln.html">Bratkartoffeln</a>
           
         </td>
         
-        <td class="tags">cuisine, method, primary_ingredient</td>
+        <td class="facets">main · dinner · german · stovetop · potatoes · bacon</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
-        <td>
-          
-          <a href="wc-kitchen.broccoli-cheese-soup.html">Broccoli Cheese Soup</a>
-          
-        </td>
+      <tr
         
-        <td class="tags"></td>
+        data-facets="dish_type:salad meal_type:dinner"
+        data-reference="false"
         
-        <td>12 servings</td>
         
-      </tr>
-      
-      <tr>
+      >
         <td>
           
           <a href="wc-kitchen.brussels-sprout-salad-with-maple-vinaigrette.html">Brussels Sprout Salad with Maple Vinaigrette</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">salad · dinner</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
-        <td>
-          
-          <a href="wc-kitchen.cabbage-soup.html">Cabbage Soup</a>
-          
-        </td>
+      <tr
         
-        <td class="tags"></td>
+        data-facets="dish_type:side meal_type:dinner method:oven"
+        data-reference="false"
         
-        <td>8 servings</td>
         
-      </tr>
-      
-      <tr>
+      >
         <td>
           
           <a href="wc-kitchen.candied-sweet-potatoes.html">Candied Sweet Potatoes</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">side · dinner · oven</td>
         
         <td></td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner cuisine:indian dietary:vegetarian method:stovetop"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.chana-masala.html">Chana Masala</a>
           
         </td>
         
-        <td class="tags">cuisine, dietary, method</td>
+        <td class="facets">main · dinner · indian · vegetarian · stovetop</td>
         
         <td>6 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.chicken-and-vegetable-pot-pie.html">Chicken & Vegetable Pot Pie</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">main · dinner · oven</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:one_dish meal_type:dinner meal_role:one_dish_meal method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.chicken-and-veggie-enchiladas.html">Chicken & Veggie Enchiladas</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">one dish · dinner · one dish meal · oven</td>
         
         <td>8 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.chicken-katsu-recipe.html">Chicken Katsu Recipe</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">main · dinner</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:soup meal_type:dinner"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.chicken-soup.html">Chicken Soup</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">soup · dinner</td>
         
         <td>8 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.chicken-tikka-masala.html">Chicken Tikka Masala</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">main · dinner</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner cuisine:american"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.chicken-with-creamy-mushroom-sauce.html">Chicken with Creamy Mushroom Sauce</a>
           
         </td>
         
-        <td class="tags">cuisine</td>
+        <td class="facets">main · dinner · american</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:soup meal_type:dinner dietary:vegetarian method:slow_cooker"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.chili-recipe.html">Chili Recipe (Vegetarian)</a>
           
         </td>
         
-        <td class="tags">dietary, method</td>
+        <td class="facets">soup · dinner · vegetarian · slow cooker</td>
         
         <td></td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:dessert meal_type:breakfast cuisine:italian method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.chocolate-biscotti.html">Chocolate Biscotti</a>
           
         </td>
         
-        <td class="tags">cuisine, method</td>
+        <td class="facets">dessert · breakfast · italian · oven</td>
         
         <td>24 cookies</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:dessert meal_type:dessert dietary:vegan dietary:vegetarian method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.chocolate-olive-oil-cake.html">Chocolate Olive Oil Cake</a>
           
         </td>
         
-        <td class="tags">dietary, method</td>
+        <td class="facets">dessert · dessert · vegan · vegetarian · oven</td>
         
         <td>8 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:soup meal_type:dinner"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.corn-chowder.html">Corn Chowder</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">soup · dinner</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
-        <td>
-          
-          <a href="wc-kitchen.corn-quesadillas.html">Corn Quesadillas</a>
-          
-        </td>
+      <tr
         
-        <td class="tags"></td>
+        data-facets="dish_type:salad meal_type:dinner cuisine:american cuisine:seafood method:no_cook"
+        data-reference="false"
         
-        <td>4 servings</td>
         
-      </tr>
-      
-      <tr>
-        <td>
-          
-          <a href="wc-kitchen.couscous-feta-salad.html">Couscous Feta Salad</a>
-          
-        </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
-      </tr>
-      
-      <tr>
+      >
         <td>
           
           <a href="wc-kitchen.crab-salad.html">Crab Salad (Seafood Salad)</a>
           
         </td>
         
-        <td class="tags">cuisine, method</td>
+        <td class="facets">salad · dinner · american · seafood · no cook</td>
         
         <td>2 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:pasta meal_type:dinner"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.creamy-broccoli-pasta.html">Creamy Broccoli Pasta</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">pasta · dinner</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:pasta meal_type:dinner"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.creamy-gnocchi-with-sun-dried-tomatoes.html">Creamy Gnocchi with Sun-Dried Tomatoes</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">pasta · dinner</td>
         
         <td>6 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:side dish_type:sauce meal_type:anytime"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.creamy-sriracha-mayo-recipe.html">Creamy Sriracha Mayo Recipe</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">side · sauce · anytime</td>
         
         <td>20 tablespoons</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:soup meal_type:dinner method:stovetop flavor_profile:creamy"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.creamy-tomato-soup.html">Creamy Tomato Soup</a>
           
         </td>
         
-        <td class="tags">method, flavor_profile</td>
+        <td class="facets">soup · dinner · stovetop · creamy</td>
         
         <td>6 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:soup meal_type:dinner context:weeknight"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.creamy-tortellini-soup.html">Creamy Tortellini Soup</a>
           
         </td>
         
-        <td class="tags">context</td>
+        <td class="facets">soup · dinner · weeknight</td>
         
         <td>4–6 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner method:slow_cooker"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.crispy-slow-cooker-carnitas.html">Crispy Slow Cooker Carnitas</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">main · dinner · slow cooker</td>
         
         <td>6-8 servings</td>
         
       </tr>
       
-      <tr>
-        <td>
-          
-          <a href="wc-kitchen.cucumber-salad.html">Cucumber Salad</a>
-          
-        </td>
+      <tr
         
-        <td class="tags"></td>
+        data-facets="dish_type:salad meal_type:dinner method:oven"
+        data-reference="false"
         
-        <td>4 servings</td>
         
-      </tr>
-      
-      <tr>
+      >
         <td>
           
           <a href="wc-kitchen.curried-chicken-salad.html">Curried Chicken Salad</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">salad · dinner · oven</td>
         
         <td>6 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:breakfast cuisine:french dietary:dairy_free method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.dairy-free-quiche-lorraine.html">Dairy Free Quiche Lorraine</a>
           
         </td>
         
-        <td class="tags">cuisine, dietary, method</td>
+        <td class="facets">main · breakfast · french · dairy free · oven</td>
         
         <td>8 servings</td>
         
       </tr>
       
-      <tr>
-        <td>
-          
-          <a href="wc-kitchen.davids-chicken-and-mushrooms.html">David's Chicken & Mushrooms</a>
-          
-        </td>
+      <tr
         
-        <td class="tags"></td>
+        data-facets="dish_type:soup meal_type:dinner"
+        data-reference="false"
         
-        <td>4 servings</td>
         
-      </tr>
-      
-      <tr>
+      >
         <td>
           
           <a href="wc-kitchen.dumpling-noodle-soup.html">Dumpling Noodle Soup</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">soup · dinner</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:breakfast_bake meal_type:breakfast dietary:vegetarian method:oven context:quick"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.easy-broccoli-quiche.html">Easy Broccoli Quiche</a>
           
         </td>
         
-        <td class="tags">dietary, method, context</td>
+        <td class="facets">breakfast bake · breakfast · vegetarian · oven · quick</td>
         
         <td>6 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner cuisine:thai"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.easy-pad-thai.html">Easy Pad Thai</a>
           
         </td>
         
-        <td class="tags">cuisine</td>
+        <td class="facets">main · dinner · thai</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner method:instant_pot"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.everyday-instant-pot-dal.html">Everyday Instant Pot Dal</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">main · dinner · instant pot</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:bread meal_type:breakfast cuisine:american dietary:gluten_free"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.fluffy-almond-flour-pancakes.html">Fluffy Almond Flour Pancakes</a>
           
         </td>
         
-        <td class="tags">cuisine, dietary</td>
+        <td class="facets">bread · breakfast · american · gluten free</td>
         
         <td>10 pancakes</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:dessert meal_type:dessert"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.french-macarons.html">French Macarons</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">dessert · dessert</td>
         
         <td>40 shells</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.ginger-pork-lettuce-wraps.html">Ginger Pork Lettuce Wraps</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">main · dinner</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
-        <td>
-          
-          <a href="wc-kitchen.glazed-carrots.html">Glazed Carrots</a>
-          
-        </td>
+      <tr
         
-        <td class="tags"></td>
+        data-facets="dish_type:side meal_type:dinner cuisine:korean dietary:vegetarian method:oven"
+        data-reference="false"
         
-        <td>8 servings</td>
         
-      </tr>
-      
-      <tr>
+      >
         <td>
           
           <a href="wc-kitchen.gochujang-roasted-carrots.html">Gochujang Roasted Carrots</a>
           
         </td>
         
-        <td class="tags">cuisine, dietary, method</td>
+        <td class="facets">side · dinner · korean · vegetarian · oven</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:side meal_type:dinner dietary:vegetarian method:grill"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.grilled-broccoli.html">Grilled Broccoli</a>
           
         </td>
         
-        <td class="tags">dietary, method</td>
+        <td class="facets">side · dinner · vegetarian · grill</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner method:stovetop context:weeknight"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.ground-turkey-and-potato-skillet.html">Ground Turkey & Potato Skillet</a>
           
         </td>
         
-        <td class="tags">method, context</td>
+        <td class="facets">main · dinner · stovetop · weeknight</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:bread meal_type:dinner dietary:low_sugar method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.healthy-blueberry-muffins.html">Healthy Blueberry Muffins</a>
           
         </td>
         
-        <td class="tags">dietary, method</td>
+        <td class="facets">bread · dinner · low sugar · oven</td>
         
         <td>12 muffins</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:burgers+sandwiches meal_type:dinner cuisine:american dietary:low_sugar"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.healthy-sloppy-joes.html">Healthy Sloppy Joes</a>
           
         </td>
         
-        <td class="tags">cuisine, dietary</td>
+        <td class="facets">Burgers & sandwiches · dinner · american · low sugar</td>
         
         <td>6 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:bread meal_type:breakfast method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.homemade-drop-biscuits-recipe.html">Homemade Drop Biscuits Recipe (No Milk)</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">bread · breakfast · oven</td>
         
         <td>15 biscuits</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:beverage meal_type:dessert context:holiday season:winter"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.homemade-hot-chocolate-mix.html">Homemade Hot Chocolate Mix</a>
           
         </td>
         
-        <td class="tags">context, season</td>
+        <td class="facets">beverage · dessert · holiday · winter</td>
         
         <td>13 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:dessert meal_type:dessert method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.honey-apple-galette-with-pistachio-sugar.html">Honey Apple Galette With Pistachio Sugar</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">dessert · dessert · oven</td>
         
         <td>8 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:sauce dish_type:salad meal_type:anytime cuisine:american context:quick"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.honey-lemon-vinaigrette.html">Honey Lemon Vinaigrette</a>
           
         </td>
         
-        <td class="tags">cuisine, context</td>
+        <td class="facets">sauce · salad · anytime · american · quick</td>
         
         <td>1 cup</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:component dish_type:side meal_type:anytime dietary:vegan dietary:vegetarian method:instant_pot context:quick"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.how-to-make-instant-pot-farro.html">How to Make Instant Pot Farro</a>
           
         </td>
         
-        <td class="tags">dietary, method, context</td>
+        <td class="facets">component · side · anytime · vegan · vegetarian · instant pot · quick</td>
         
         <td></td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:side meal_type:snack cuisine:american method:slow_cooker method:instant_pot"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.instant-pot-applesauce.html">Instant Pot Applesauce</a>
           
         </td>
         
-        <td class="tags">cuisine, method</td>
+        <td class="facets">side · snack · american · slow cooker · instant pot</td>
         
         <td>5–6 cups</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:soup meal_type:dinner method:instant_pot context:comfort_food"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.instant-pot-baked-potato-soup.html">Instant Pot Baked Potato Soup</a>
           
         </td>
         
-        <td class="tags">method, context</td>
+        <td class="facets">soup · dinner · instant pot · comfort food</td>
         
         <td>8 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:component dish_type:side meal_type:anytime dietary:vegan dietary:vegetarian method:instant_pot context:meal_prep"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.instant-pot-black-beans.html">Instant Pot Black Beans</a>
           
         </td>
         
-        <td class="tags">dietary, method, context</td>
+        <td class="facets">component · side · anytime · vegan · vegetarian · instant pot · meal prep</td>
         
         <td>8 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:side meal_type:dinner method:instant_pot"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.instant-pot-cilantro-lime-rice-recipe.html">Instant Pot Cilantro Lime Rice Recipe</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">side · dinner · instant pot</td>
         
         <td>5 1-cup servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:pasta meal_type:dinner method:instant_pot"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.instant-pot-parmesan-risotto.html">Instant Pot Parmesan Risotto</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">pasta · dinner · instant pot</td>
         
         <td>6 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:soup meal_type:dinner cuisine:asian method:instant_pot"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.instant-pot-ramen-noodles.html">Instant Pot Ramen Noodles</a>
           
         </td>
         
-        <td class="tags">cuisine, method</td>
+        <td class="facets">soup · dinner · asian · instant pot</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner cuisine:american method:instant_pot"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.instant-pot-red-beans-and-rice.html">Instant Pot Red Beans and Rice</a>
           
         </td>
         
-        <td class="tags">cuisine, method</td>
+        <td class="facets">main · dinner · american · instant pot</td>
         
         <td></td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner method:instant_pot"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.instant-pot-teriyaki-turkey-meatballs.html">Instant Pot Teriyaki Turkey Meatballs</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">main · dinner · instant pot</td>
         
         <td>6 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:dessert meal_type:dessert method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.kashi-oatmeal-chocolate-chip-cookies.html">Kashi Oatmeal Chocolate Chip Cookies</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">dessert · dessert · oven</td>
         
         <td>8 cookies</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:dessert meal_type:dessert method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.kitchen-sink-cookies.html">Kitchen Sink Cookies (Panera Copycat!)</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">dessert · dessert · oven</td>
         
         <td>9 large cookies</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:bowl meal_type:dinner"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.korean-beef-bowl.html">Korean Beef Bowl</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">bowl · dinner</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:pasta meal_type:dinner"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.macaroni-and-hamburger.html">Macaroni & Hamburger</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">pasta · dinner</td>
         
         <td>6 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner cuisine:mediterranean method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.mediterranean-stuffed-pork-tenderloin.html">Mediterranean Stuffed Pork Tenderloin</a>
           
         </td>
         
-        <td class="tags">cuisine, method</td>
+        <td class="facets">main · dinner · mediterranean · oven</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main dish_type:salad meal_type:dinner"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.mexican-street-corn-salad.html">Mexican Street Corn Salad</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">main · salad · dinner</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:soup meal_type:dinner cuisine:middle_eastern"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.middle-eastern-lentil-soup.html">Middle Eastern Lentil Soup</a>
           
         </td>
         
-        <td class="tags">cuisine</td>
+        <td class="facets">soup · dinner · middle eastern</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:soup meal_type:dinner cuisine:japanese context:quick"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.miso-dumpling-soup.html">Miso Dumpling Soup (15 Minutes)</a>
           
         </td>
         
-        <td class="tags">cuisine, context</td>
+        <td class="facets">soup · dinner · japanese · quick</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:dessert meal_type:dessert method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.moist-chocolate-cake.html">Moist Chocolate Cake</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">dessert · dessert · oven</td>
         
         <td>12 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:side meal_type:dinner method:oven season:fall"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.mushroom-onion-and-sage-stuffing.html">Mushroom, Onion, and Sage Stuffing</a>
           
         </td>
         
-        <td class="tags">method, season</td>
+        <td class="facets">side · dinner · oven · fall</td>
         
         <td>9 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.oven-fried-chicken-ii.html">Oven Fried Chicken II</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">main · dinner · oven</td>
         
         <td>10 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:pasta meal_type:dinner dietary:vegetarian"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.pappardelle-with-mushrooms.html">Pappardelle with Mushrooms</a>
           
         </td>
         
-        <td class="tags">dietary</td>
+        <td class="facets">pasta · dinner · vegetarian</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:pasta meal_type:dinner cuisine:italian method:stovetop"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.pasta-e-piselli.html">Pasta e Piselli (Pasta with Peas)</a>
           
         </td>
         
-        <td class="tags">cuisine, method</td>
+        <td class="facets">pasta · dinner · italian · stovetop</td>
         
         <td>8 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner context:make_ahead"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.perfect-pie-dough.html">Perfect Pie Dough</a>
           
         </td>
         
-        <td class="tags">context</td>
+        <td class="facets">main · dinner · make ahead</td>
         
         <td>1 9- or 10-inch pie crust</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner method:oven context:comfort_food"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.perfect-pot-roast.html">Perfect Pot Roast</a>
           
         </td>
         
-        <td class="tags">method, context</td>
+        <td class="facets">main · dinner · oven · comfort food</td>
         
         <td>10 servings</td>
         
       </tr>
       
-      <tr>
-        <td>
-          
-          <a href="wc-kitchen.poached-cod-with-tomatoes.html">Poached Cod with Tomatoes</a>
-          
-        </td>
+      <tr
         
-        <td class="tags"></td>
+        data-facets="dish_type:main meal_type:dinner method:stovetop context:quick"
+        data-reference="false"
         
-        <td>4 servings</td>
         
-      </tr>
-      
-      <tr>
+      >
         <td>
           
           <a href="wc-kitchen.pork-breakfast-chops.html">Pork Breakfast Chops</a>
           
         </td>
         
-        <td class="tags">method, context</td>
+        <td class="facets">main · dinner · stovetop · quick</td>
         
         <td>8 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:soup meal_type:dinner cuisine:french context:freezer_friendly"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.potato-leek-soup.html">Potato Leek Soup</a>
           
         </td>
         
-        <td class="tags">cuisine, context</td>
+        <td class="facets">soup · dinner · french · freezer friendly</td>
         
         <td>6 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main dish_type:side meal_type:dinner cuisine:indian dietary:vegan dietary:vegetarian"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.quick-and-easy-red-lentil-dahl.html">Quick & Easy Red Lentil Dahl</a>
           
         </td>
         
-        <td class="tags">cuisine, dietary</td>
+        <td class="facets">main · side · dinner · indian · vegan · vegetarian</td>
         
         <td>8 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:preserve meal_type:anytime method:preserve"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.quick-pickled-red-onion.html">Quick Pickled Red Onion</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">preserve · anytime · preserve</td>
         
         <td>2 cups</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:side meal_type:dinner dietary:vegetarian method:stovetop"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.ratatouille.html">Ratatouille</a>
           
         </td>
         
-        <td class="tags">dietary, method</td>
+        <td class="facets">side · dinner · vegetarian · stovetop</td>
         
         <td>6 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:side meal_type:dinner method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.rice-pilaf.html">Rice Pilaf</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">side · dinner · oven</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.roasted-potatoes-and-kielbasa.html">Roasted Potatoes and Kielbasa (One-Pan Recipe)</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">main · dinner · oven</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:bowl meal_type:dinner method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.roasted-shiitake-bibimbap.html">Roasted Shiitake Bibimbap</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">bowl · dinner · oven</td>
         
         <td>2 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:burgers+sandwiches meal_type:dinner cuisine:seafood"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.salmon-burgers-with-slaw.html">Salmon Burgers with Slaw</a>
           
         </td>
         
-        <td class="tags">cuisine</td>
+        <td class="facets">Burgers & sandwiches · dinner · seafood</td>
         
         <td>3–4 burgers</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.shakshuka-with-feta.html">Shakshuka With Feta</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">main · dinner · oven</td>
         
         <td>4–6 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:one_dish meal_type:dinner meal_role:one_dish_meal method:oven context:leftovers_friendly primary_ingredient:potatoes flavor_profile:savory flavor_profile:hearty"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.shepherds-pie.html">Shepherd's Pie</a>
           
         </td>
         
-        <td class="tags">method, context, primary_ingredient, flavor_profile</td>
+        <td class="facets">one dish · dinner · one dish meal · oven · leftovers friendly · potatoes · savory · hearty</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.shrimp-fettuccine-alfredo.html">Shrimp Fettuccine Alfredo</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">main · dinner</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:bread meal_type:dinner dietary:vegetarian method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.simple-zucchini-bread.html">Simple Zucchini Bread</a>
           
         </td>
         
-        <td class="tags">dietary, method</td>
+        <td class="facets">bread · dinner · vegetarian · oven</td>
         
         <td>1 8.5x4.5 inch loaf</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner method:slow_cooker context:comfort_food"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.slow-cooker-beef-stew.html">Slow Cooker Beef Stew</a>
           
         </td>
         
-        <td class="tags">method, context</td>
+        <td class="facets">main · dinner · slow cooker · comfort food</td>
         
         <td>10 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:soup meal_type:dinner dietary:vegetarian_adaptable method:slow_cooker"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.slow-cooker-corn-chowder.html">Slow Cooker Corn Chowder</a>
           
         </td>
         
-        <td class="tags">dietary, method</td>
+        <td class="facets">soup · dinner · vegetarian adaptable · slow cooker</td>
         
         <td>4–6 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner dietary:low_fat method:slow_cooker"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.slow-cooked-southwest-chicken.html">Slow-Cooked Southwest Chicken</a>
           
         </td>
         
-        <td class="tags">dietary, method</td>
+        <td class="facets">main · dinner · low fat · slow cooker</td>
         
         <td>6 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:dessert meal_type:dessert method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.soft-and-chewy-chocolate-chip-cookies.html">Soft and Chewy Chocolate Chip Cookies</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">dessert · dessert · oven</td>
         
         <td>24 cookies</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:sauce meal_type:anytime context:freezer_friendly"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.soy-vay-veri-veri-teriyaki-clone.html">Soy Vay Veri Veri Teriyaki Clone</a>
           
         </td>
         
-        <td class="tags">context</td>
+        <td class="facets">sauce · anytime · freezer friendly</td>
         
         <td>16 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:pasta meal_type:dinner cuisine:italian method:stovetop"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.spaghetti-carbonara.html">Spaghetti Carbonara</a>
           
         </td>
         
-        <td class="tags">cuisine, method</td>
+        <td class="facets">pasta · dinner · italian · stovetop</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:beverage meal_type:anytime context:holiday context:quick"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.sparkling-apple-cider-gin-cocktail.html">Sparkling Apple Cider Gin Cocktail</a>
           
         </td>
         
-        <td class="tags">context</td>
+        <td class="facets">beverage · anytime · holiday · quick</td>
         
         <td>1 serving</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:soup meal_type:dinner method:instant_pot method:slow_cooker"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.split-pea-soup.html">Split Pea Soup (Instant Pot)</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">soup · dinner · instant pot · slow cooker</td>
         
         <td>8 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:preserve meal_type:anytime cuisine:american method:preserve"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.sweet-pickled-radishes.html">Sweet Pickled Radishes</a>
           
         </td>
         
-        <td class="tags">cuisine, method</td>
+        <td class="facets">preserve · anytime · american · preserve</td>
         
         <td>1 pint jar</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner dietary:vegan dietary:gluten_free_adaptable dietary:dairy_free dietary:vegetarian context:meal_prep"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.sweet-potato-chickpea-buddha-bowl-with-peanut-sauce.html">Sweet Potato Chickpea Buddha Bowl with Peanut Sauce</a>
           
         </td>
         
-        <td class="tags">dietary, context</td>
+        <td class="facets">main · dinner · vegan · gluten free adaptable · dairy free · vegetarian · meal prep</td>
         
         <td></td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:salad meal_type:dinner context:make_ahead"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.taco-pasta-salad.html">Taco Pasta Salad</a>
           
         </td>
         
-        <td class="tags">context</td>
+        <td class="facets">salad · dinner · make ahead</td>
         
         <td>6 servings</td>
         
       </tr>
       
-      <tr>
-        <td>
-          
-          <a href="wc-kitchen.taco-salad.html">Taco Salad</a>
-          
-        </td>
+      <tr
         
-        <td class="tags"></td>
+        data-facets="dish_type:bowl meal_type:dinner method:instant_pot"
+        data-reference="false"
         
-        <td>4 servings</td>
         
-      </tr>
-      
-      <tr>
+      >
         <td>
           
           <a href="wc-kitchen.teriyaki-turkey-rice-bowl.html">Teriyaki Turkey Rice Bowl</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">bowl · dinner · instant pot</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:salad meal_type:dinner cuisine:thai cuisine:asian dietary:vegan dietary:vegetarian dietary:gluten_free season:summer"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.thai-cucumber-salad.html">Thai Cucumber Salad</a>
           
         </td>
         
-        <td class="tags">cuisine, dietary, season</td>
+        <td class="facets">salad · dinner · thai · asian · vegan · vegetarian · gluten free · summer</td>
         
         <td>6 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:sauce meal_type:anytime"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.thai-peanut-sauce.html">Thai Peanut Sauce</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">sauce · anytime</td>
         
         <td>1 batch</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:sauce meal_type:anytime"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.thai-peanut-sauce-jessica-hylton.html">Thai Peanut Sauce</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">sauce · anytime</td>
         
         <td>9 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:bowl meal_type:dinner dietary:vegan dietary:gluten_free dietary:vegetarian method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.thai-peanut-sweet-potato-buddha-bowl.html">Thai Peanut Sweet Potato Buddha Bowl</a>
           
         </td>
         
-        <td class="tags">dietary, method</td>
+        <td class="facets">bowl · dinner · vegan · gluten free · vegetarian · oven</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:dessert meal_type:dessert cuisine:american method:oven season:fall"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.the-best-apple-crisp.html">The Best Apple Crisp</a>
           
         </td>
         
-        <td class="tags">cuisine, method, season</td>
+        <td class="facets">dessert · dessert · american · oven · fall</td>
         
         <td>8 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:soup meal_type:dinner cuisine:indian dietary:vegetarian method:instant_pot"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.the-best-instant-pot-lentil-soup.html">The Best Instant Pot Lentil Soup</a>
           
         </td>
         
-        <td class="tags">cuisine, dietary, method</td>
+        <td class="facets">soup · dinner · indian · vegetarian · instant pot</td>
         
         <td>3 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.the-best-meatloaf-recipe-of-your-life.html">The Best Meatloaf Recipe Of Your Life</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">main · dinner · oven</td>
         
         <td>8 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner cuisine:scandinavian method:stovetop"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.the-best-swedish-meatballs-recipe.html">The Best Swedish Meatballs Recipe</a>
           
         </td>
         
-        <td class="tags">cuisine, method</td>
+        <td class="facets">main · dinner · scandinavian · stovetop</td>
         
         <td>8 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:preserve meal_type:anytime method:preserve"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.tomato-relish.html">Tomato Relish</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">preserve · anytime · preserve</td>
         
         <td>2 kg</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:sauce meal_type:anytime cuisine:middle_eastern"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.toum.html">Toum (Garlic Whip)</a>
           
         </td>
         
-        <td class="tags">cuisine</td>
+        <td class="facets">sauce · anytime · middle eastern</td>
         
         <td>4 1/2 cups</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:salad meal_type:dinner cuisine:italian method:no_cook context:quick"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.tuna-and-white-bean-salad.html">Tuna-and-White-Bean Salad</a>
           
         </td>
         
-        <td class="tags">cuisine, method, context</td>
+        <td class="facets">salad · dinner · italian · no cook · quick</td>
         
         <td></td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:sauce meal_type:anytime cuisine:greek dietary:vegetarian context:quick"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.tzatziki.html">Tzatziki</a>
           
         </td>
         
-        <td class="tags">cuisine, dietary, context</td>
+        <td class="facets">sauce · anytime · greek · vegetarian · quick</td>
         
         <td>2.5 cups</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:sauce meal_type:anytime method:slow_cooker"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.ultimate-bean-dip.html">Ultimate Bean Dip</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">sauce · anytime · slow cooker</td>
         
         <td>1 batch</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:side meal_type:dinner method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.ultra-crispy-smashed-potatoes.html">Ultra Crispy Smashed Potatoes</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">side · dinner · oven</td>
         
         <td>12 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.unstuffed-bell-peppers.html">Unstuffed Bell Peppers</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">main · dinner</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:bowl meal_type:dinner cuisine:mexican dietary:vegetarian context:quick"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.vegetarian-burrito-bowls.html">Vegetarian Burrito Bowls</a>
           
         </td>
         
-        <td class="tags">cuisine, dietary, context</td>
+        <td class="facets">bowl · dinner · mexican · vegetarian · quick</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner cuisine:mexican dietary:vegetarian method:slow_cooker context:make_ahead"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.vegetarian-lentil-tortilla-soup.html">Vegetarian Lentil Tortilla Soup</a>
           
         </td>
         
-        <td class="tags">cuisine, dietary, method, context</td>
+        <td class="facets">main · dinner · mexican · vegetarian · slow cooker · make ahead</td>
         
         <td>6 cups</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:bread meal_type:breakfast"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.waffles-i.html">Waffles I</a>
           
         </td>
         
-        <td class="tags"></td>
+        <td class="facets">bread · breakfast</td>
         
         <td></td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:soup meal_type:dinner method:slow_cooker"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.white-bean-and-ham-soup.html">White Bean & Ham Soup</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">soup · dinner · slow cooker</td>
         
         <td>4 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:main meal_type:dinner method:instant_pot"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.yellow-curry-with-chicken.html">Yellow Curry with Chicken (Instant Pot)</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">main · dinner · instant pot</td>
         
         <td>6 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:preserve meal_type:anytime dietary:low_sugar method:preserve"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.your-strawberry-jam-recipe.html">Your Strawberry Jam Recipe (Ball RealFruit Low/No-Sugar Pectin)</a>
           
         </td>
         
-        <td class="tags">dietary, method</td>
+        <td class="facets">preserve · anytime · low sugar · preserve</td>
         
         <td>3 half pints (8 oz)</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:dessert meal_type:dessert cuisine:american method:oven season:winter"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.yule-log-cake.html">Yule Log Cake (Bûche de Noël)</a>
           
         </td>
         
-        <td class="tags">cuisine, method, season</td>
+        <td class="facets">dessert · dessert · american · oven · winter</td>
         
         <td>8 servings</td>
         
       </tr>
       
-      <tr>
+      <tr
+        
+        data-facets="dish_type:bread meal_type:dinner method:oven"
+        data-reference="false"
+        
+        
+      >
         <td>
           
           <a href="wc-kitchen.zucchini-bread-muffins.html">Zucchini Bread Muffins</a>
           
         </td>
         
-        <td class="tags">method</td>
+        <td class="facets">bread · dinner · oven</td>
         
         <td>12 muffins</td>
         
@@ -1874,5 +3456,102 @@
       
     </tbody>
   </table>
+
+  
+  <section class="cleanup-section" aria-labelledby="cleanup-heading">
+    <h2 id="cleanup-heading">Recipes needing metadata cleanup (13)</h2>
+    <p class="cleanup-meta">These recipes use legacy or incomplete metadata and are excluded from filters until migrated. Run <code>recipe audit-metadata</code> or see <code>notes.md</code>.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Recipe</th>
+          <th>Issues</th>
+          <th>Yield</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td><a href="wc-kitchen.actually-delicious-turkey-burgers.html">Actually Delicious Turkey Burgers</a></td>
+          <td class="cleanup-issues">flat X-tags list (use structured X-tags)</td>
+          <td>12 patties</td>
+        </tr>
+        
+        <tr>
+          <td><a href="wc-kitchen.beef-barley-soup.html">Beef Barley Soup</a></td>
+          <td class="cleanup-issues">flat X-tags list (use structured X-tags)</td>
+          <td>8 servings</td>
+        </tr>
+        
+        <tr>
+          <td><a href="wc-kitchen.beer-batter-fish.html">Beer Batter Fish</a></td>
+          <td class="cleanup-issues">flat X-tags list (use structured X-tags)</td>
+          <td>6 servings</td>
+        </tr>
+        
+        <tr>
+          <td><a href="wc-kitchen.broccoli-cheese-soup.html">Broccoli Cheese Soup</a></td>
+          <td class="cleanup-issues">flat X-tags list (use structured X-tags)</td>
+          <td>12 servings</td>
+        </tr>
+        
+        <tr>
+          <td><a href="wc-kitchen.cabbage-soup.html">Cabbage Soup</a></td>
+          <td class="cleanup-issues">flat X-tags list (use structured X-tags)</td>
+          <td>8 servings</td>
+        </tr>
+        
+        <tr>
+          <td><a href="wc-kitchen.corn-quesadillas.html">Corn Quesadillas</a></td>
+          <td class="cleanup-issues">flat X-tags list (use structured X-tags)</td>
+          <td>4 servings</td>
+        </tr>
+        
+        <tr>
+          <td><a href="wc-kitchen.couscous-feta-salad.html">Couscous Feta Salad</a></td>
+          <td class="cleanup-issues">flat X-tags list (use structured X-tags)</td>
+          <td>4 servings</td>
+        </tr>
+        
+        <tr>
+          <td><a href="wc-kitchen.cucumber-salad.html">Cucumber Salad</a></td>
+          <td class="cleanup-issues">flat X-tags list (use structured X-tags)</td>
+          <td>4 servings</td>
+        </tr>
+        
+        <tr>
+          <td><a href="wc-kitchen.davids-chicken-and-mushrooms.html">David's Chicken & Mushrooms</a></td>
+          <td class="cleanup-issues">flat X-tags list (use structured X-tags)</td>
+          <td>4 servings</td>
+        </tr>
+        
+        <tr>
+          <td><a href="wc-kitchen.dense-bean-salad.html">Dense Bean Salad</a></td>
+          <td class="cleanup-issues">legacy X-category; legacy X-dietary; flat X-tags list (use structured X-tags); missing X-categories</td>
+          <td>6 servings</td>
+        </tr>
+        
+        <tr>
+          <td><a href="wc-kitchen.glazed-carrots.html">Glazed Carrots</a></td>
+          <td class="cleanup-issues">flat X-tags list (use structured X-tags)</td>
+          <td>8 servings</td>
+        </tr>
+        
+        <tr>
+          <td><a href="wc-kitchen.poached-cod-with-tomatoes.html">Poached Cod with Tomatoes</a></td>
+          <td class="cleanup-issues">flat X-tags list (use structured X-tags)</td>
+          <td>4 servings</td>
+        </tr>
+        
+        <tr>
+          <td><a href="wc-kitchen.taco-salad.html">Taco Salad</a></td>
+          <td class="cleanup-issues">flat X-tags list (use structured X-tags)</td>
+          <td>4 servings</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </section>
+  
 </body>
 </html>

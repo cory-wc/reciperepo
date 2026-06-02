@@ -60,8 +60,19 @@ X-categories:
   meal_type:
   - dinner
 X-tags:
-- tnt
-
+  dietary:
+  - vegetarian
+  method:
+  - oven
+  - stovetop
+  context:
+  - tried_and_true
+  - kid_favorite
+  season:
+  - spring
+  - summer
+  primary_ingredient:
+  - corn
 X-source-verification:
   status: needs-review
   notes: []

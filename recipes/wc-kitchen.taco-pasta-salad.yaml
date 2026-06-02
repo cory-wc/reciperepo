@@ -62,12 +62,22 @@ steps:
 - step: Serve topped with shredded cheese and sliced avocado.
 X-categories:
   dish_type:
-  - salad
+  - pasta
   meal_type:
   - dinner
 X-tags:
+  method:
+  - stovetop
   context:
   - make_ahead
+  - quick
+  - weeknight
+  - meal_prep
+  season:
+  - fall
+  - winter
+  - spring
+  - summer
 X-source-verification:
   status: verified
   notes:

@@ -79,12 +79,24 @@ steps:
 - step: Serve lettuce topped with the meat and sprinkled with cheese.
 X-categories:
   dish_type:
-  - salad
+  - main
   meal_type:
   - dinner
 X-tags:
-- tnt
-
+  cuisine:
+  - mexican
+  method:
+  - stovetop
+  context:
+  - quick
+  - weeknight
+  season:
+  - fall
+  - spring
+  - summer
+  - winter
+  primary_ingredient:
+  - ground_turkey
 X-source-verification:
   status: verified
   notes:

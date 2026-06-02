@@ -68,8 +68,18 @@ X-categories:
   meal_type:
   - dinner
 X-tags:
-- infrequent
-
+  dietary:
+  - gluten_free_adaptable
+  method:
+  - stovetop
+  context:
+  - light
+  season:
+  - spring
+  - summer
+  - fall
+  primary_ingredient:
+  - fish
 X-source-verification:
   status: verified
   notes:

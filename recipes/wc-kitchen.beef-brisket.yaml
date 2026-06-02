@@ -107,8 +107,17 @@ X-categories:
   meal_type:
   - dinner
 X-tags:
+  dietary:
+  - dairy_free
   method:
   - oven
+  context:
+  - comfort_food
+  season:
+  - fall
+  - winter
+  primary_ingredient:
+  - beef
 X-source-verification:
   status: verified
   notes:

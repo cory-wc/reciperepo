@@ -67,8 +67,16 @@ X-categories:
   meal_type:
   - dinner
 X-tags:
-- infrequent
-
+  dietary:
+  - vegetarian
+  - vegan_adaptable
+  context:
+  - infrequent
+  season:
+  - fall
+  - winter
+  primary_ingredient:
+  - broccoli
 X-source-verification:
   status: verified
   notes:

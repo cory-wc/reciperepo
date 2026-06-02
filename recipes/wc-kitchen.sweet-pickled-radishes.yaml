@@ -68,9 +68,12 @@ X-categories:
 X-tags:
   cuisine:
   - american
+  dietary:
+  - vegetarian
+  - vegan
+  - gluten_free
   method:
-  - preserve
-  infrequent: true
+  - canning
 X-source-verification:
   status: needs-manual-review
   notes:

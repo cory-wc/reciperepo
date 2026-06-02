@@ -75,12 +75,23 @@ steps:
 - step: Serve parsnips with spoonfuls of bolognese. Garnish with parmesan.
 X-categories:
   dish_type:
-  - pasta
+  - main
   meal_type:
   - dinner
 X-tags:
+  dietary:
+  - gluten_free
   method:
   - oven
+  - stovetop
+  context:
+  - comfort_food
+  season:
+  - fall
+  - winter
+  primary_ingredient:
+  - beef
+  - parsnips
 X-source-verification:
   status: verified
   notes:

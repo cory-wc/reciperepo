@@ -91,7 +91,14 @@ X-tags:
   - slow_cooker
   context:
   - comfort_food
-  infrequent: true
+  - make_ahead
+  - leftovers_friendly
+  - freezer_friendly
+  season:
+  - fall
+  - winter
+  primary_ingredient:
+  - beef
 X-source-verification:
   status: verified
   notes:

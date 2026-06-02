@@ -99,8 +99,20 @@ X-categories:
   meal_type:
   - dinner
 X-tags:
-- tnt
-
+  dietary:
+  - dairy_free
+  method:
+  - slow_cooker
+  - instant_pot
+  context:
+  - comfort_food
+  - make_ahead
+  - leftovers_friendly
+  season:
+  - fall
+  - winter
+  primary_ingredient:
+  - beef
 X-source-verification:
   status: verified
   notes:

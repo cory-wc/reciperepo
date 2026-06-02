@@ -41,8 +41,20 @@ X-categories:
   meal_type:
   - dinner
 X-tags:
-- tnt
-
+  cuisine:
+  - swiss
+  - german
+  method:
+  - stovetop
+  context:
+  - tried_and_true
+  - easy
+  season:
+  - fall
+  - winter
+  - spring
+  primary_ingredient:
+  - chicken
 X-source-verification:
   status: needs-review
   notes: []

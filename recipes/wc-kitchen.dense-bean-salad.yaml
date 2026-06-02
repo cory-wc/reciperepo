@@ -1,0 +1,165 @@
+recipe_uuid: wc-kitchen.dense-bean-salad
+recipe_name: Dense Bean Salad
+description: 'A high-protein hearty mix of chickpeas, cannellini beans, crisp vegetables,
+  olives, and feta in a tangy oregano-garlic vinaigrette. Perfect for meal prepped
+  lunches and popular at potlucks!
+
+  '
+author: Brita Britnell
+source_url: https://foodwithfeeling.com/dense-bean-salad/
+X-original-source: ../originals/bean-salad-20260521.pdf
+yields:
+- amount: 6
+  unit: servings
+X-tags:
+  cuisine:
+  - mediterranean
+  dietary:
+  - vegan_adaptable
+  - vegetarian
+  - high_fiber
+  method:
+  - no_cook
+  context:
+  - meal_prep
+  - easy
+  - quick
+  - potluck_friendly
+  season:
+  - spring
+  - summer
+  - fall
+  primary_ingredient:
+  - beans
+X-total_time: 25 minutes
+X-active_time: 25 minutes
+ingredients:
+- chickpeas:
+    amounts:
+    - amount: 1
+      unit: can
+    preparation: drained and rinsed
+- cannellini beans:
+    amounts:
+    - amount: 1
+      unit: can
+    preparation: drained and rinsed
+- red bell pepper:
+    amounts:
+    - amount: 1
+      unit: whole
+    preparation: finely diced
+- orange or yellow bell pepper:
+    amounts:
+    - amount: 1
+      unit: whole
+    preparation: finely diced
+- Persian cucumbers:
+    amounts:
+    - amount: 2
+      unit: whole
+    notes: or half an English cucumber
+- red onion:
+    amounts:
+    - amount: 0.5
+      unit: whole
+    preparation: small; heaping half cup
+- fresh parsley:
+    amounts:
+    - amount: 0.333
+      unit: cup
+    preparation: finely chopped
+- kalamata olives:
+    amounts:
+    - amount: 0.5
+      unit: cup
+    notes: pepperoncini or a mix of both also works well
+- feta cheese:
+    amounts:
+    - amount: 0.5
+      unit: cup
+    preparation: crumbled
+- red wine vinegar:
+    amounts:
+    - amount: 0.25
+      unit: cup
+- honey:
+    amounts:
+    - amount: 1.5
+      unit: tsp
+    notes: or pure maple syrup
+- dried oregano:
+    amounts:
+    - amount: 1.5
+      unit: tsp
+- garlic:
+    amounts:
+    - amount: 3
+      unit: cloves
+    preparation: minced
+- fine salt:
+    amounts:
+    - amount: 0.75
+      unit: tsp
+- freshly ground black pepper:
+    amounts:
+    - amount: 0.25
+      unit: tsp
+- extra virgin olive oil:
+    amounts:
+    - amount: 0.25
+      unit: cup
+steps:
+- step: 'Make the dressing by whisking together red wine vinegar, honey (or maple
+    syrup), oregano, garlic, salt, and pepper. Slowly whisk in the olive oil until
+    combined.
+
+    '
+- step: 'In a large mixing bowl, add beans, bell peppers, cucumbers, red onion, parsley,
+    olives, and feta.
+
+    '
+- step: 'Pour the dressing over the salad and toss gently until everything is evenly
+    coated.
+
+    '
+- step: 'For best flavor, cover and refrigerate for at least 30 minutes before serving.
+    Stir again before enjoying.
+
+    '
+notes:
+- Store in an airtight container in the fridge for up to 4 days.
+X-nutrition:
+  calories: 325kcal
+  carbohydrates: 38g
+  protein: 13g
+  fat: 15g
+  saturated_fat: 3g
+  polyunsaturated_fat: 2g
+  monounsaturated_fat: 9g
+  cholesterol: 11mg
+  sodium: 771mg
+  potassium: 380mg
+  fiber: 10g
+  sugar: 6g
+  vitamin_a: 1086IU
+  vitamin_c: 69mg
+  calcium: 170mg
+  iron: 4mg
+X-source-verification:
+  status: needs-review
+  notes:
+  - Ingredient list and instructions sections were separated in the source PDF with
+    section headers but no content under them; ingredients and steps were reconstructed
+    from the full text of the document.
+  - Prep time and total time both listed as 25 mins in source; no separate cook time
+    was indicated.
+  - Feta cheese is listed as an ingredient, which makes this recipe not strictly vegan
+    despite the vegan diet tag in the source.
+X-categories:
+  dish_type:
+  - salad
+  - side
+  meal_type:
+  - dinner
+  - lunch

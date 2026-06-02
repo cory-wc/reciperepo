@@ -61,7 +61,15 @@ X-tags:
   method:
   - instant_pot
   - slow_cooker
-  tnt: true
+  context:
+  - weeknight
+  - make_ahead
+  season:
+  - fall
+  - winter
+  - spring
+  primary_ingredient:
+  - split_peas
 X-source-verification:
   status: verified
   notes:

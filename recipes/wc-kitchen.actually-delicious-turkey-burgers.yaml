@@ -64,8 +64,14 @@ X-categories:
   meal_type:
   - dinner
 X-tags:
-- infrequent
-
+  cuisine:
+  - american
+  dietary:
+  - dairy_free
+  season:
+  - summer
+  primary_ingredient:
+  - ground_turkey
 X-source-verification:
   status: needs-review
   notes:

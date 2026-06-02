@@ -108,8 +108,6 @@ X-categories:
   - one_dish
   meal_type:
   - dinner
-  meal_role:
-  - one_dish_meal
 X-tags:
   method:
   - oven
@@ -120,7 +118,6 @@ X-tags:
   flavor_profile:
   - savory
   - hearty
-  infrequent: true
 X-source-verification:
   status: needs-review
 X-original-source: ../originals/shepherds-pie-20260523.jpg

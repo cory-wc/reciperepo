@@ -1,17 +1,34 @@
-generated_at: '2026-05-31'
+generated_at: '2026-06-02'
 sort_by: name
 recipes:
 - id: wc-kitchen.15-minute-miso-soup-with-greens-and-tofu
   name: 15-Minute Miso Soup with Greens and Tofu
-  category: []
+  categories:
+    dish_type: &id001
+    - soup
+    meal_type: &id002
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id003
     - japanese
-    dietary:
+    dietary: &id004
     - gluten_free
     - vegan
     - vegetarian
-  dietary: []
+  facets:
+    dish_type: *id001
+    meal_type: *id002
+    cuisine: *id003
+    dietary: *id004
+  facet_tokens:
+  - dish_type:soup
+  - meal_type:dinner
+  - cuisine:japanese
+  - dietary:gluten_free
+  - dietary:vegan
+  - dietary:vegetarian
+  facets_summary: soup · dinner · japanese · gluten free · vegan · vegetarian
+  is_reference: false
   yield: 4 bowls
   source: url
   verification: needs-review
@@ -21,13 +38,28 @@ recipes:
     yaml: recipes/wc-kitchen.15-minute-miso-soup-with-greens-and-tofu.yaml
 - id: wc-kitchen.30-minute-dairy-free-potato-soup
   name: 30 Minute Dairy Free Potato Soup
-  category: []
+  categories:
+    dish_type: &id005
+    - soup
+    meal_type: &id006
+    - dinner
   tags:
-    dietary:
+    dietary: &id007
     - dairy_free
     - gluten_free
     - whole30
-  dietary: []
+  facets:
+    dish_type: *id005
+    meal_type: *id006
+    dietary: *id007
+  facet_tokens:
+  - dish_type:soup
+  - meal_type:dinner
+  - dietary:dairy_free
+  - dietary:gluten_free
+  - dietary:whole30
+  facets_summary: soup · dinner · dairy free · gluten free · whole30
+  is_reference: false
   yield: 8 cup servings
   source: url
   verification: needs-review
@@ -35,27 +67,30 @@ recipes:
     html: site/wc-kitchen.30-minute-dairy-free-potato-soup.html
     pdf: pdfs/wc-kitchen.30-minute-dairy-free-potato-soup.pdf
     yaml: recipes/wc-kitchen.30-minute-dairy-free-potato-soup.yaml
-- id: wc-kitchen.actually-delicious-turkey-burgers
-  name: Actually Delicious Turkey Burgers
-  category: []
-  tags: []
-  dietary: []
-  yield: 12 patties
-  source: url
-  verification: needs-review
-  links:
-    html: site/wc-kitchen.actually-delicious-turkey-burgers.html
-    pdf: pdfs/wc-kitchen.actually-delicious-turkey-burgers.pdf
-    yaml: recipes/wc-kitchen.actually-delicious-turkey-burgers.yaml
 - id: wc-kitchen.all-purpose-thai-basil-sauce
   name: All-Purpose Thai Basil Sauce
-  category: []
+  categories:
+    dish_type: &id008
+    - sauce
+    meal_type: &id009
+    - anytime
   tags:
-    cuisine:
+    cuisine: &id010
     - thai
-    dietary:
+    dietary: &id011
     - vegetarian_adaptable
-  dietary: []
+  facets:
+    dish_type: *id008
+    meal_type: *id009
+    cuisine: *id010
+    dietary: *id011
+  facet_tokens:
+  - dish_type:sauce
+  - meal_type:anytime
+  - cuisine:thai
+  - dietary:vegetarian_adaptable
+  facets_summary: sauce · anytime · thai · vegetarian adaptable
+  is_reference: false
   yield: 4 servings
   source: url
   verification: verified
@@ -65,11 +100,24 @@ recipes:
     yaml: recipes/wc-kitchen.all-purpose-thai-basil-sauce.yaml
 - id: wc-kitchen.bacon-onion-tart
   name: Bacon Onion Tart
-  category: []
+  categories:
+    dish_type: &id012
+    - main
+    meal_type: &id013
+    - dinner
   tags:
-    method:
+    method: &id014
     - oven
-  dietary: []
+  facets:
+    dish_type: *id012
+    meal_type: *id013
+    method: *id014
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - method:oven
+  facets_summary: main · dinner · oven
+  is_reference: false
   yield: 12 servings
   source: file
   verification: needs-review
@@ -79,11 +127,24 @@ recipes:
     yaml: recipes/wc-kitchen.bacon-onion-tart.yaml
 - id: wc-kitchen.bacon-shrimp-sweet-potatoes
   name: Bacon-Shrimp Sweet Potatoes
-  category: []
+  categories:
+    dish_type: &id015
+    - main
+    meal_type: &id016
+    - dinner
   tags:
-    method:
+    method: &id017
     - oven
-  dietary: []
+  facets:
+    dish_type: *id015
+    meal_type: *id016
+    method: *id017
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - method:oven
+  facets_summary: main · dinner · oven
+  is_reference: false
   yield: 4 servings
   source: file
   verification: needs-review
@@ -93,15 +154,32 @@ recipes:
     yaml: recipes/wc-kitchen.bacon-shrimp-sweet-potatoes.yaml
 - id: wc-kitchen.baked-acorn-squash-with-butter-and-brown-sugar
   name: Baked Acorn Squash with Butter and Brown Sugar
-  category: []
+  categories:
+    dish_type: &id018
+    - side
+    meal_type: &id019
+    - dinner
   tags:
-    dietary:
+    dietary: &id020
     - vegetarian
-    method:
+    method: &id021
     - oven
-    season:
+    season: &id022
     - fall
-  dietary: []
+  facets:
+    dish_type: *id018
+    meal_type: *id019
+    dietary: *id020
+    method: *id021
+    season: *id022
+  facet_tokens:
+  - dish_type:side
+  - meal_type:dinner
+  - dietary:vegetarian
+  - method:oven
+  - season:fall
+  facets_summary: side · dinner · vegetarian · oven · fall
+  is_reference: false
   yield: 2 servings
   source: url
   verification: needs-review
@@ -111,13 +189,28 @@ recipes:
     yaml: recipes/wc-kitchen.baked-acorn-squash-with-butter-and-brown-sugar.yaml
 - id: wc-kitchen.baked-oatmeal-with-cranberries-and-almonds
   name: Baked Oatmeal With Cranberries and Almonds
-  category: []
+  categories:
+    dish_type: &id023
+    - main
+    meal_type: &id024
+    - breakfast
   tags:
-    method:
+    method: &id025
     - oven
-    context:
+    context: &id026
     - make_ahead
-  dietary: []
+  facets:
+    dish_type: *id023
+    meal_type: *id024
+    method: *id025
+    context: *id026
+  facet_tokens:
+  - dish_type:main
+  - meal_type:breakfast
+  - method:oven
+  - context:make_ahead
+  facets_summary: main · breakfast · oven · make ahead
+  is_reference: false
   yield: 1 2-quart baking dish
   source: url
   verification: verified
@@ -127,13 +220,28 @@ recipes:
     yaml: recipes/wc-kitchen.baked-oatmeal-with-cranberries-and-almonds.yaml
 - id: wc-kitchen.ball-realfruit-low-or-no-sugar-jam
   name: Ball RealFruit Low or No-Sugar Jam (Scaling Reference Table)
-  category: []
-  tags:
-    dietary:
-    - low_sugar
-    method:
+  categories:
+    dish_type: &id027
     - preserve
-  dietary: []
+    meal_type: &id028
+    - anytime
+  tags:
+    dietary: &id029
+    - low_sugar
+    method: &id030
+    - preserve
+  facets:
+    dish_type: *id027
+    meal_type: *id028
+    dietary: *id029
+    method: *id030
+  facet_tokens:
+  - dish_type:preserve
+  - meal_type:anytime
+  - dietary:low_sugar
+  - method:preserve
+  facets_summary: preserve · anytime · low sugar · preserve
+  is_reference: false
   yield: 1 to 9 half-pint jars (see scaling table)
   source: file
   verification: needs-manual-review
@@ -141,25 +249,26 @@ recipes:
     html: site/wc-kitchen.ball-realfruit-low-or-no-sugar-jam.html
     pdf: pdfs/wc-kitchen.ball-realfruit-low-or-no-sugar-jam.pdf
     yaml: recipes/wc-kitchen.ball-realfruit-low-or-no-sugar-jam.yaml
-- id: wc-kitchen.beef-barley-soup
-  name: Beef Barley Soup
-  category: []
-  tags: []
-  dietary: []
-  yield: 8 servings
-  source: url
-  verification: verified
-  links:
-    html: site/wc-kitchen.beef-barley-soup.html
-    pdf: pdfs/wc-kitchen.beef-barley-soup.pdf
-    yaml: recipes/wc-kitchen.beef-barley-soup.yaml
 - id: wc-kitchen.beef-bolognese-with-parsnips
   name: Beef Bolognese with Parsnips
-  category: []
+  categories:
+    dish_type: &id031
+    - pasta
+    meal_type: &id032
+    - dinner
   tags:
-    method:
+    method: &id033
     - oven
-  dietary: []
+  facets:
+    dish_type: *id031
+    meal_type: *id032
+    method: *id033
+  facet_tokens:
+  - dish_type:pasta
+  - meal_type:dinner
+  - method:oven
+  facets_summary: pasta · dinner · oven
+  is_reference: false
   yield: 2 servings
   source: file
   verification: verified
@@ -169,11 +278,24 @@ recipes:
     yaml: recipes/wc-kitchen.beef-bolognese-with-parsnips.yaml
 - id: wc-kitchen.beef-brisket
   name: Beef Brisket
-  category: []
+  categories:
+    dish_type: &id034
+    - main
+    meal_type: &id035
+    - dinner
   tags:
-    method:
+    method: &id036
     - oven
-  dietary: []
+  facets:
+    dish_type: *id034
+    meal_type: *id035
+    method: *id036
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - method:oven
+  facets_summary: main · dinner · oven
+  is_reference: false
   yield: 10 servings
   source: url
   verification: verified
@@ -181,25 +303,26 @@ recipes:
     html: site/wc-kitchen.beef-brisket.html
     pdf: pdfs/wc-kitchen.beef-brisket.pdf
     yaml: recipes/wc-kitchen.beef-brisket.yaml
-- id: wc-kitchen.beer-batter-fish
-  name: Beer Batter Fish
-  category: []
-  tags: []
-  dietary: []
-  yield: 6 servings
-  source: file
-  verification: verified
-  links:
-    html: site/wc-kitchen.beer-batter-fish.html
-    pdf: pdfs/wc-kitchen.beer-batter-fish.pdf
-    yaml: recipes/wc-kitchen.beer-batter-fish.yaml
 - id: wc-kitchen.beginners-guide-to-french-macarons
   name: Beginner's Guide to French Macarons
-  category: []
+  categories:
+    dish_type: &id037
+    - dessert
+    meal_type: &id038
+    - dessert
   tags:
-    method:
+    method: &id039
     - oven
-  dietary: []
+  facets:
+    dish_type: *id037
+    meal_type: *id038
+    method: *id039
+  facet_tokens:
+  - dish_type:dessert
+  - meal_type:dessert
+  - method:oven
+  facets_summary: dessert · dessert · oven
+  is_reference: false
   yield: None macarons
   source: url
   verification: needs-manual-review
@@ -209,13 +332,28 @@ recipes:
     yaml: recipes/wc-kitchen.beginners-guide-to-french-macarons.yaml
 - id: wc-kitchen.best-bean-salad
   name: Best Bean Salad
-  category: []
+  categories:
+    dish_type: &id040
+    - salad
+    meal_type: &id041
+    - dinner
   tags:
-    dietary:
+    dietary: &id042
     - vegetarian
-    context:
+    context: &id043
     - make_ahead
-  dietary: []
+  facets:
+    dish_type: *id040
+    meal_type: *id041
+    dietary: *id042
+    context: *id043
+  facet_tokens:
+  - dish_type:salad
+  - meal_type:dinner
+  - dietary:vegetarian
+  - context:make_ahead
+  facets_summary: salad · dinner · vegetarian · make ahead
+  is_reference: false
   yield: ''
   source: url
   verification: verified
@@ -225,13 +363,28 @@ recipes:
     yaml: recipes/wc-kitchen.best-bean-salad.yaml
 - id: wc-kitchen.vegetable-lasagna
   name: Best Vegetable Lasagna
-  category: []
+  categories:
+    dish_type: &id044
+    - main
+    meal_type: &id045
+    - dinner
   tags:
-    dietary:
+    dietary: &id046
     - vegetarian
-    method:
+    method: &id047
     - oven
-  dietary: []
+  facets:
+    dish_type: *id044
+    meal_type: *id045
+    dietary: *id046
+    method: *id047
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - dietary:vegetarian
+  - method:oven
+  facets_summary: main · dinner · vegetarian · oven
+  is_reference: false
   yield: 8 servings
   source: file
   verification: verified
@@ -241,9 +394,16 @@ recipes:
     yaml: recipes/wc-kitchen.vegetable-lasagna.yaml
 - id: wc-kitchen.binder-index-page-1
   name: Binder Index (page 1)
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id048
+    - reference
+  tags: {}
+  facets:
+    dish_type: *id048
+  facet_tokens:
+  - dish_type:reference
+  facets_summary: reference
+  is_reference: true
   yield: ''
   source: file
   verification: unknown
@@ -253,9 +413,16 @@ recipes:
     yaml: recipes/wc-kitchen.binder-index-page-1.yaml
 - id: wc-kitchen.binder-index
   name: Binder Index (page 2)
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id049
+    - reference
+  tags: {}
+  facets:
+    dish_type: *id049
+  facet_tokens:
+  - dish_type:reference
+  facets_summary: reference
+  is_reference: true
   yield: ''
   source: file
   verification: unknown
@@ -265,11 +432,24 @@ recipes:
     yaml: recipes/wc-kitchen.binder-index.yaml
 - id: wc-kitchen.black-bean-and-corn-salad-ii
   name: Black Bean and Corn Salad II
-  category: []
+  categories:
+    dish_type: &id050
+    - salad
+    meal_type: &id051
+    - dinner
   tags:
-    dietary:
+    dietary: &id052
     - vegetarian
-  dietary: []
+  facets:
+    dish_type: *id050
+    meal_type: *id051
+    dietary: *id052
+  facet_tokens:
+  - dish_type:salad
+  - meal_type:dinner
+  - dietary:vegetarian
+  facets_summary: salad · dinner · vegetarian
+  is_reference: false
   yield: ''
   source: url
   verification: verified
@@ -279,15 +459,32 @@ recipes:
     yaml: recipes/wc-kitchen.black-bean-and-corn-salad-ii.yaml
 - id: wc-kitchen.black-bean-soup
   name: Black Bean Soup
-  category: []
+  categories:
+    dish_type: &id053
+    - soup
+    meal_type: &id054
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id055
     - mexican
-    dietary:
+    dietary: &id056
     - vegetarian
-    context:
+    context: &id057
     - quick
-  dietary: []
+  facets:
+    dish_type: *id053
+    meal_type: *id054
+    cuisine: *id055
+    dietary: *id056
+    context: *id057
+  facet_tokens:
+  - dish_type:soup
+  - meal_type:dinner
+  - cuisine:mexican
+  - dietary:vegetarian
+  - context:quick
+  facets_summary: soup · dinner · mexican · vegetarian · quick
+  is_reference: false
   yield: 4 servings
   source: file
   verification: verified
@@ -297,16 +494,34 @@ recipes:
     yaml: recipes/wc-kitchen.black-bean-soup.yaml
 - id: wc-kitchen.blackened-mahi-mahi
   name: Blackened Mahi Mahi
-  category: []
+  categories:
+    dish_type: &id058
+    - main
+    meal_type: &id059
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id060
     - cajun
     - seafood
-    method:
+    method: &id061
     - stovetop
-    context:
+    context: &id062
     - quick
-  dietary: []
+  facets:
+    dish_type: *id058
+    meal_type: *id059
+    cuisine: *id060
+    method: *id061
+    context: *id062
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - cuisine:cajun
+  - cuisine:seafood
+  - method:stovetop
+  - context:quick
+  facets_summary: main · dinner · cajun · seafood · stovetop · quick
+  is_reference: false
   yield: 4 servings
   source: file
   verification: verified
@@ -316,16 +531,34 @@ recipes:
     yaml: recipes/wc-kitchen.blackened-mahi-mahi.yaml
 - id: wc-kitchen.bratkartoffeln
   name: Bratkartoffeln
-  category: []
+  categories:
+    dish_type: &id063
+    - main
+    meal_type: &id064
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id065
     - german
-    method:
+    method: &id066
     - stovetop
-    primary_ingredient:
+    primary_ingredient: &id067
     - potatoes
     - bacon
-  dietary: []
+  facets:
+    dish_type: *id063
+    meal_type: *id064
+    cuisine: *id065
+    method: *id066
+    primary_ingredient: *id067
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - cuisine:german
+  - method:stovetop
+  - primary_ingredient:potatoes
+  - primary_ingredient:bacon
+  facets_summary: main · dinner · german · stovetop · potatoes · bacon
+  is_reference: false
   yield: 4 servings
   source: file
   verification: verified
@@ -333,23 +566,22 @@ recipes:
     html: site/wc-kitchen.bratkartoffeln.html
     pdf: pdfs/wc-kitchen.bratkartoffeln.pdf
     yaml: recipes/wc-kitchen.bratkartoffeln.yaml
-- id: wc-kitchen.broccoli-cheese-soup
-  name: Broccoli Cheese Soup
-  category: []
-  tags: []
-  dietary: []
-  yield: 12 servings
-  source: url
-  verification: verified
-  links:
-    html: site/wc-kitchen.broccoli-cheese-soup.html
-    pdf: pdfs/wc-kitchen.broccoli-cheese-soup.pdf
-    yaml: recipes/wc-kitchen.broccoli-cheese-soup.yaml
 - id: wc-kitchen.brussels-sprout-salad-with-maple-vinaigrette
   name: Brussels Sprout Salad with Maple Vinaigrette
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id068
+    - salad
+    meal_type: &id069
+    - dinner
+  tags: {}
+  facets:
+    dish_type: *id068
+    meal_type: *id069
+  facet_tokens:
+  - dish_type:salad
+  - meal_type:dinner
+  facets_summary: salad · dinner
+  is_reference: false
   yield: 4 servings
   source: file
   verification: verified
@@ -357,25 +589,26 @@ recipes:
     html: site/wc-kitchen.brussels-sprout-salad-with-maple-vinaigrette.html
     pdf: pdfs/wc-kitchen.brussels-sprout-salad-with-maple-vinaigrette.pdf
     yaml: recipes/wc-kitchen.brussels-sprout-salad-with-maple-vinaigrette.yaml
-- id: wc-kitchen.cabbage-soup
-  name: Cabbage Soup
-  category: []
-  tags: []
-  dietary: []
-  yield: 8 servings
-  source: file
-  verification: verified
-  links:
-    html: site/wc-kitchen.cabbage-soup.html
-    pdf: pdfs/wc-kitchen.cabbage-soup.pdf
-    yaml: recipes/wc-kitchen.cabbage-soup.yaml
 - id: wc-kitchen.candied-sweet-potatoes
   name: Candied Sweet Potatoes
-  category: []
+  categories:
+    dish_type: &id070
+    - side
+    meal_type: &id071
+    - dinner
   tags:
-    method:
+    method: &id072
     - oven
-  dietary: []
+  facets:
+    dish_type: *id070
+    meal_type: *id071
+    method: *id072
+  facet_tokens:
+  - dish_type:side
+  - meal_type:dinner
+  - method:oven
+  facets_summary: side · dinner · oven
+  is_reference: false
   yield: ''
   source: file
   verification: verified
@@ -385,15 +618,32 @@ recipes:
     yaml: recipes/wc-kitchen.candied-sweet-potatoes.yaml
 - id: wc-kitchen.chana-masala
   name: Chana Masala
-  category: []
+  categories:
+    dish_type: &id073
+    - main
+    meal_type: &id074
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id075
     - indian
-    dietary:
+    dietary: &id076
     - vegetarian
-    method:
+    method: &id077
     - stovetop
-  dietary: []
+  facets:
+    dish_type: *id073
+    meal_type: *id074
+    cuisine: *id075
+    dietary: *id076
+    method: *id077
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - cuisine:indian
+  - dietary:vegetarian
+  - method:stovetop
+  facets_summary: main · dinner · indian · vegetarian · stovetop
+  is_reference: false
   yield: 6 servings
   source: url
   verification: needs-review
@@ -403,11 +653,24 @@ recipes:
     yaml: recipes/wc-kitchen.chana-masala.yaml
 - id: wc-kitchen.chicken-and-vegetable-pot-pie
   name: Chicken & Vegetable Pot Pie
-  category: []
+  categories:
+    dish_type: &id078
+    - main
+    meal_type: &id079
+    - dinner
   tags:
-    method:
+    method: &id080
     - oven
-  dietary: []
+  facets:
+    dish_type: *id078
+    meal_type: *id079
+    method: *id080
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - method:oven
+  facets_summary: main · dinner · oven
+  is_reference: false
   yield: 4 servings
   source: file
   verification: needs-review
@@ -417,11 +680,28 @@ recipes:
     yaml: recipes/wc-kitchen.chicken-and-vegetable-pot-pie.yaml
 - id: wc-kitchen.chicken-and-veggie-enchiladas
   name: Chicken & Veggie Enchiladas
-  category: []
+  categories:
+    dish_type: &id081
+    - one_dish
+    meal_type: &id082
+    - dinner
+    meal_role: &id083
+    - one_dish_meal
   tags:
-    method:
+    method: &id084
     - oven
-  dietary: []
+  facets:
+    dish_type: *id081
+    meal_type: *id082
+    meal_role: *id083
+    method: *id084
+  facet_tokens:
+  - dish_type:one_dish
+  - meal_type:dinner
+  - meal_role:one_dish_meal
+  - method:oven
+  facets_summary: one dish · dinner · one dish meal · oven
+  is_reference: false
   yield: 8 servings
   source: file
   verification: needs-review
@@ -431,9 +711,20 @@ recipes:
     yaml: recipes/wc-kitchen.chicken-and-veggie-enchiladas.yaml
 - id: wc-kitchen.chicken-katsu-recipe
   name: Chicken Katsu Recipe
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id085
+    - main
+    meal_type: &id086
+    - dinner
+  tags: {}
+  facets:
+    dish_type: *id085
+    meal_type: *id086
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  facets_summary: main · dinner
+  is_reference: false
   yield: 4 servings
   source: url
   verification: verified
@@ -443,9 +734,20 @@ recipes:
     yaml: recipes/wc-kitchen.chicken-katsu-recipe.yaml
 - id: wc-kitchen.chicken-soup
   name: Chicken Soup
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id087
+    - soup
+    meal_type: &id088
+    - dinner
+  tags: {}
+  facets:
+    dish_type: *id087
+    meal_type: *id088
+  facet_tokens:
+  - dish_type:soup
+  - meal_type:dinner
+  facets_summary: soup · dinner
+  is_reference: false
   yield: 8 servings
   source: file
   verification: verified
@@ -455,9 +757,20 @@ recipes:
     yaml: recipes/wc-kitchen.chicken-soup.yaml
 - id: wc-kitchen.chicken-tikka-masala
   name: Chicken Tikka Masala
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id089
+    - main
+    meal_type: &id090
+    - dinner
+  tags: {}
+  facets:
+    dish_type: *id089
+    meal_type: *id090
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  facets_summary: main · dinner
+  is_reference: false
   yield: 4 servings
   source: file
   verification: needs-review
@@ -467,11 +780,24 @@ recipes:
     yaml: recipes/wc-kitchen.chicken-tikka-masala.yaml
 - id: wc-kitchen.chicken-with-creamy-mushroom-sauce
   name: Chicken with Creamy Mushroom Sauce
-  category: []
+  categories:
+    dish_type: &id091
+    - main
+    meal_type: &id092
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id093
     - american
-  dietary: []
+  facets:
+    dish_type: *id091
+    meal_type: *id092
+    cuisine: *id093
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - cuisine:american
+  facets_summary: main · dinner · american
+  is_reference: false
   yield: 4 servings
   source: file
   verification: verified
@@ -481,13 +807,28 @@ recipes:
     yaml: recipes/wc-kitchen.chicken-with-creamy-mushroom-sauce.yaml
 - id: wc-kitchen.chili-recipe
   name: Chili Recipe (Vegetarian)
-  category: []
+  categories:
+    dish_type: &id094
+    - soup
+    meal_type: &id095
+    - dinner
   tags:
-    dietary:
+    dietary: &id096
     - vegetarian
-    method:
+    method: &id097
     - slow_cooker
-  dietary: []
+  facets:
+    dish_type: *id094
+    meal_type: *id095
+    dietary: *id096
+    method: *id097
+  facet_tokens:
+  - dish_type:soup
+  - meal_type:dinner
+  - dietary:vegetarian
+  - method:slow_cooker
+  facets_summary: soup · dinner · vegetarian · slow cooker
+  is_reference: false
   yield: ''
   source: file
   verification: verified
@@ -497,13 +838,28 @@ recipes:
     yaml: recipes/wc-kitchen.chili-recipe.yaml
 - id: wc-kitchen.chocolate-biscotti
   name: Chocolate Biscotti
-  category: []
+  categories:
+    dish_type: &id098
+    - dessert
+    meal_type: &id099
+    - breakfast
   tags:
-    cuisine:
+    cuisine: &id100
     - italian
-    method:
+    method: &id101
     - oven
-  dietary: []
+  facets:
+    dish_type: *id098
+    meal_type: *id099
+    cuisine: *id100
+    method: *id101
+  facet_tokens:
+  - dish_type:dessert
+  - meal_type:breakfast
+  - cuisine:italian
+  - method:oven
+  facets_summary: dessert · breakfast · italian · oven
+  is_reference: false
   yield: 24 cookies
   source: url
   verification: needs-manual-review
@@ -513,14 +869,30 @@ recipes:
     yaml: recipes/wc-kitchen.chocolate-biscotti.yaml
 - id: wc-kitchen.chocolate-olive-oil-cake
   name: Chocolate Olive Oil Cake
-  category: []
+  categories:
+    dish_type: &id102
+    - dessert
+    meal_type: &id103
+    - dessert
   tags:
-    dietary:
+    dietary: &id104
     - vegan
     - vegetarian
-    method:
+    method: &id105
     - oven
-  dietary: []
+  facets:
+    dish_type: *id102
+    meal_type: *id103
+    dietary: *id104
+    method: *id105
+  facet_tokens:
+  - dish_type:dessert
+  - meal_type:dessert
+  - dietary:vegan
+  - dietary:vegetarian
+  - method:oven
+  facets_summary: dessert · dessert · vegan · vegetarian · oven
+  is_reference: false
   yield: 8 servings
   source: file
   verification: verified
@@ -530,9 +902,20 @@ recipes:
     yaml: recipes/wc-kitchen.chocolate-olive-oil-cake.yaml
 - id: wc-kitchen.corn-chowder
   name: Corn Chowder
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id106
+    - soup
+    meal_type: &id107
+    - dinner
+  tags: {}
+  facets:
+    dish_type: *id106
+    meal_type: *id107
+  facet_tokens:
+  - dish_type:soup
+  - meal_type:dinner
+  facets_summary: soup · dinner
+  is_reference: false
   yield: 4 servings
   source: file
   verification: verified
@@ -540,40 +923,32 @@ recipes:
     html: site/wc-kitchen.corn-chowder.html
     pdf: pdfs/wc-kitchen.corn-chowder.pdf
     yaml: recipes/wc-kitchen.corn-chowder.yaml
-- id: wc-kitchen.corn-quesadillas
-  name: Corn Quesadillas
-  category: []
-  tags: []
-  dietary: []
-  yield: 4 servings
-  source: url
-  verification: needs-review
-  links:
-    html: site/wc-kitchen.corn-quesadillas.html
-    pdf: pdfs/wc-kitchen.corn-quesadillas.pdf
-    yaml: recipes/wc-kitchen.corn-quesadillas.yaml
-- id: wc-kitchen.couscous-feta-salad
-  name: Couscous Feta Salad
-  category: []
-  tags: []
-  dietary: []
-  yield: 4 servings
-  source: file
-  verification: verified
-  links:
-    html: site/wc-kitchen.couscous-feta-salad.html
-    pdf: pdfs/wc-kitchen.couscous-feta-salad.pdf
-    yaml: recipes/wc-kitchen.couscous-feta-salad.yaml
 - id: wc-kitchen.crab-salad
   name: Crab Salad (Seafood Salad)
-  category: []
+  categories:
+    dish_type: &id108
+    - salad
+    meal_type: &id109
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id110
     - american
     - seafood
-    method:
+    method: &id111
     - no_cook
-  dietary: []
+  facets:
+    dish_type: *id108
+    meal_type: *id109
+    cuisine: *id110
+    method: *id111
+  facet_tokens:
+  - dish_type:salad
+  - meal_type:dinner
+  - cuisine:american
+  - cuisine:seafood
+  - method:no_cook
+  facets_summary: salad · dinner · american · seafood · no cook
+  is_reference: false
   yield: 2 servings
   source: url
   verification: verified
@@ -583,9 +958,20 @@ recipes:
     yaml: recipes/wc-kitchen.crab-salad.yaml
 - id: wc-kitchen.creamy-broccoli-pasta
   name: Creamy Broccoli Pasta
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id112
+    - pasta
+    meal_type: &id113
+    - dinner
+  tags: {}
+  facets:
+    dish_type: *id112
+    meal_type: *id113
+  facet_tokens:
+  - dish_type:pasta
+  - meal_type:dinner
+  facets_summary: pasta · dinner
+  is_reference: false
   yield: 4 servings
   source: url
   verification: verified
@@ -595,9 +981,20 @@ recipes:
     yaml: recipes/wc-kitchen.creamy-broccoli-pasta.yaml
 - id: wc-kitchen.creamy-gnocchi-with-sun-dried-tomatoes
   name: Creamy Gnocchi with Sun-Dried Tomatoes
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id114
+    - pasta
+    meal_type: &id115
+    - dinner
+  tags: {}
+  facets:
+    dish_type: *id114
+    meal_type: *id115
+  facet_tokens:
+  - dish_type:pasta
+  - meal_type:dinner
+  facets_summary: pasta · dinner
+  is_reference: false
   yield: 6 servings
   source: file
   verification: verified
@@ -607,9 +1004,22 @@ recipes:
     yaml: recipes/wc-kitchen.creamy-gnocchi-with-sun-dried-tomatoes.yaml
 - id: wc-kitchen.creamy-sriracha-mayo-recipe
   name: Creamy Sriracha Mayo Recipe
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id116
+    - side
+    - sauce
+    meal_type: &id117
+    - anytime
+  tags: {}
+  facets:
+    dish_type: *id116
+    meal_type: *id117
+  facet_tokens:
+  - dish_type:side
+  - dish_type:sauce
+  - meal_type:anytime
+  facets_summary: side · sauce · anytime
+  is_reference: false
   yield: 20 tablespoons
   source: url
   verification: needs-review
@@ -619,13 +1029,28 @@ recipes:
     yaml: recipes/wc-kitchen.creamy-sriracha-mayo-recipe.yaml
 - id: wc-kitchen.creamy-tomato-soup
   name: Creamy Tomato Soup
-  category: []
+  categories:
+    dish_type: &id118
+    - soup
+    meal_type: &id119
+    - dinner
   tags:
-    method:
+    method: &id120
     - stovetop
-    flavor_profile:
+    flavor_profile: &id121
     - creamy
-  dietary: []
+  facets:
+    dish_type: *id118
+    meal_type: *id119
+    method: *id120
+    flavor_profile: *id121
+  facet_tokens:
+  - dish_type:soup
+  - meal_type:dinner
+  - method:stovetop
+  - flavor_profile:creamy
+  facets_summary: soup · dinner · stovetop · creamy
+  is_reference: false
   yield: 6 servings
   source: file
   verification: verified
@@ -635,11 +1060,24 @@ recipes:
     yaml: recipes/wc-kitchen.creamy-tomato-soup.yaml
 - id: wc-kitchen.creamy-tortellini-soup
   name: Creamy Tortellini Soup
-  category: []
+  categories:
+    dish_type: &id122
+    - soup
+    meal_type: &id123
+    - dinner
   tags:
-    context:
+    context: &id124
     - weeknight
-  dietary: []
+  facets:
+    dish_type: *id122
+    meal_type: *id123
+    context: *id124
+  facet_tokens:
+  - dish_type:soup
+  - meal_type:dinner
+  - context:weeknight
+  facets_summary: soup · dinner · weeknight
+  is_reference: false
   yield: 4–6 servings
   source: url
   verification: verified
@@ -649,11 +1087,24 @@ recipes:
     yaml: recipes/wc-kitchen.creamy-tortellini-soup.yaml
 - id: wc-kitchen.crispy-slow-cooker-carnitas
   name: Crispy Slow Cooker Carnitas
-  category: []
+  categories:
+    dish_type: &id125
+    - main
+    meal_type: &id126
+    - dinner
   tags:
-    method:
+    method: &id127
     - slow_cooker
-  dietary: []
+  facets:
+    dish_type: *id125
+    meal_type: *id126
+    method: *id127
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - method:slow_cooker
+  facets_summary: main · dinner · slow cooker
+  is_reference: false
   yield: 6-8 servings
   source: url
   verification: needs-review
@@ -661,25 +1112,26 @@ recipes:
     html: site/wc-kitchen.crispy-slow-cooker-carnitas.html
     pdf: pdfs/wc-kitchen.crispy-slow-cooker-carnitas.pdf
     yaml: recipes/wc-kitchen.crispy-slow-cooker-carnitas.yaml
-- id: wc-kitchen.cucumber-salad
-  name: Cucumber Salad
-  category: []
-  tags: []
-  dietary: []
-  yield: 4 servings
-  source: file
-  verification: verified
-  links:
-    html: site/wc-kitchen.cucumber-salad.html
-    pdf: pdfs/wc-kitchen.cucumber-salad.pdf
-    yaml: recipes/wc-kitchen.cucumber-salad.yaml
 - id: wc-kitchen.curried-chicken-salad
   name: Curried Chicken Salad
-  category: []
+  categories:
+    dish_type: &id128
+    - salad
+    meal_type: &id129
+    - dinner
   tags:
-    method:
+    method: &id130
     - oven
-  dietary: []
+  facets:
+    dish_type: *id128
+    meal_type: *id129
+    method: *id130
+  facet_tokens:
+  - dish_type:salad
+  - meal_type:dinner
+  - method:oven
+  facets_summary: salad · dinner · oven
+  is_reference: false
   yield: 6 servings
   source: file
   verification: needs-review
@@ -689,15 +1141,32 @@ recipes:
     yaml: recipes/wc-kitchen.curried-chicken-salad.yaml
 - id: wc-kitchen.dairy-free-quiche-lorraine
   name: Dairy Free Quiche Lorraine
-  category: []
+  categories:
+    dish_type: &id131
+    - main
+    meal_type: &id132
+    - breakfast
   tags:
-    cuisine:
+    cuisine: &id133
     - french
-    dietary:
+    dietary: &id134
     - dairy_free
-    method:
+    method: &id135
     - oven
-  dietary: []
+  facets:
+    dish_type: *id131
+    meal_type: *id132
+    cuisine: *id133
+    dietary: *id134
+    method: *id135
+  facet_tokens:
+  - dish_type:main
+  - meal_type:breakfast
+  - cuisine:french
+  - dietary:dairy_free
+  - method:oven
+  facets_summary: main · breakfast · french · dairy free · oven
+  is_reference: false
   yield: 8 servings
   source: file
   verification: needs-manual-review
@@ -705,23 +1174,22 @@ recipes:
     html: site/wc-kitchen.dairy-free-quiche-lorraine.html
     pdf: pdfs/wc-kitchen.dairy-free-quiche-lorraine.pdf
     yaml: recipes/wc-kitchen.dairy-free-quiche-lorraine.yaml
-- id: wc-kitchen.davids-chicken-and-mushrooms
-  name: David's Chicken & Mushrooms
-  category: []
-  tags: []
-  dietary: []
-  yield: 4 servings
-  source: file
-  verification: needs-review
-  links:
-    html: site/wc-kitchen.davids-chicken-and-mushrooms.html
-    pdf: pdfs/wc-kitchen.davids-chicken-and-mushrooms.pdf
-    yaml: recipes/wc-kitchen.davids-chicken-and-mushrooms.yaml
 - id: wc-kitchen.dumpling-noodle-soup
   name: Dumpling Noodle Soup
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id136
+    - soup
+    meal_type: &id137
+    - dinner
+  tags: {}
+  facets:
+    dish_type: *id136
+    meal_type: *id137
+  facet_tokens:
+  - dish_type:soup
+  - meal_type:dinner
+  facets_summary: soup · dinner
+  is_reference: false
   yield: 4 servings
   source: file
   verification: needs-review
@@ -731,15 +1199,32 @@ recipes:
     yaml: recipes/wc-kitchen.dumpling-noodle-soup.yaml
 - id: wc-kitchen.easy-broccoli-quiche
   name: Easy Broccoli Quiche
-  category: []
+  categories:
+    dish_type: &id138
+    - breakfast_bake
+    meal_type: &id139
+    - breakfast
   tags:
-    dietary:
+    dietary: &id140
     - vegetarian
-    method:
+    method: &id141
     - oven
-    context:
+    context: &id142
     - quick
-  dietary: []
+  facets:
+    dish_type: *id138
+    meal_type: *id139
+    dietary: *id140
+    method: *id141
+    context: *id142
+  facet_tokens:
+  - dish_type:breakfast_bake
+  - meal_type:breakfast
+  - dietary:vegetarian
+  - method:oven
+  - context:quick
+  facets_summary: breakfast bake · breakfast · vegetarian · oven · quick
+  is_reference: false
   yield: 6 servings
   source: url
   verification: verified
@@ -749,11 +1234,24 @@ recipes:
     yaml: recipes/wc-kitchen.easy-broccoli-quiche.yaml
 - id: wc-kitchen.easy-pad-thai
   name: Easy Pad Thai
-  category: []
+  categories:
+    dish_type: &id143
+    - main
+    meal_type: &id144
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id145
     - thai
-  dietary: []
+  facets:
+    dish_type: *id143
+    meal_type: *id144
+    cuisine: *id145
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - cuisine:thai
+  facets_summary: main · dinner · thai
+  is_reference: false
   yield: 4 servings
   source: file
   verification: needs-review
@@ -763,11 +1261,24 @@ recipes:
     yaml: recipes/wc-kitchen.easy-pad-thai.yaml
 - id: wc-kitchen.everyday-instant-pot-dal
   name: Everyday Instant Pot Dal
-  category: []
+  categories:
+    dish_type: &id146
+    - main
+    meal_type: &id147
+    - dinner
   tags:
-    method:
+    method: &id148
     - instant_pot
-  dietary: []
+  facets:
+    dish_type: *id146
+    meal_type: *id147
+    method: *id148
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - method:instant_pot
+  facets_summary: main · dinner · instant pot
+  is_reference: false
   yield: 4 servings
   source: url
   verification: needs-review
@@ -777,13 +1288,28 @@ recipes:
     yaml: recipes/wc-kitchen.everyday-instant-pot-dal.yaml
 - id: wc-kitchen.fluffy-almond-flour-pancakes
   name: Fluffy Almond Flour Pancakes
-  category: []
+  categories:
+    dish_type: &id149
+    - bread
+    meal_type: &id150
+    - breakfast
   tags:
-    cuisine:
+    cuisine: &id151
     - american
-    dietary:
+    dietary: &id152
     - gluten_free
-  dietary: []
+  facets:
+    dish_type: *id149
+    meal_type: *id150
+    cuisine: *id151
+    dietary: *id152
+  facet_tokens:
+  - dish_type:bread
+  - meal_type:breakfast
+  - cuisine:american
+  - dietary:gluten_free
+  facets_summary: bread · breakfast · american · gluten free
+  is_reference: false
   yield: 10 pancakes
   source: url
   verification: needs-review
@@ -793,9 +1319,20 @@ recipes:
     yaml: recipes/wc-kitchen.fluffy-almond-flour-pancakes.yaml
 - id: wc-kitchen.french-macarons
   name: French Macarons
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id153
+    - dessert
+    meal_type: &id154
+    - dessert
+  tags: {}
+  facets:
+    dish_type: *id153
+    meal_type: *id154
+  facet_tokens:
+  - dish_type:dessert
+  - meal_type:dessert
+  facets_summary: dessert · dessert
+  is_reference: false
   yield: 40 shells
   source: url
   verification: needs-review
@@ -805,9 +1342,20 @@ recipes:
     yaml: recipes/wc-kitchen.french-macarons.yaml
 - id: wc-kitchen.ginger-pork-lettuce-wraps
   name: Ginger Pork Lettuce Wraps
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id155
+    - main
+    meal_type: &id156
+    - dinner
+  tags: {}
+  facets:
+    dish_type: *id155
+    meal_type: *id156
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  facets_summary: main · dinner
+  is_reference: false
   yield: 4 servings
   source: file
   verification: needs-review
@@ -815,29 +1363,34 @@ recipes:
     html: site/wc-kitchen.ginger-pork-lettuce-wraps.html
     pdf: pdfs/wc-kitchen.ginger-pork-lettuce-wraps.pdf
     yaml: recipes/wc-kitchen.ginger-pork-lettuce-wraps.yaml
-- id: wc-kitchen.glazed-carrots
-  name: Glazed Carrots
-  category: []
-  tags: []
-  dietary: []
-  yield: 8 servings
-  source: file
-  verification: verified
-  links:
-    html: site/wc-kitchen.glazed-carrots.html
-    pdf: pdfs/wc-kitchen.glazed-carrots.pdf
-    yaml: recipes/wc-kitchen.glazed-carrots.yaml
 - id: wc-kitchen.gochujang-roasted-carrots
   name: Gochujang Roasted Carrots
-  category: []
+  categories:
+    dish_type: &id157
+    - side
+    meal_type: &id158
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id159
     - korean
-    dietary:
+    dietary: &id160
     - vegetarian
-    method:
+    method: &id161
     - oven
-  dietary: []
+  facets:
+    dish_type: *id157
+    meal_type: *id158
+    cuisine: *id159
+    dietary: *id160
+    method: *id161
+  facet_tokens:
+  - dish_type:side
+  - meal_type:dinner
+  - cuisine:korean
+  - dietary:vegetarian
+  - method:oven
+  facets_summary: side · dinner · korean · vegetarian · oven
+  is_reference: false
   yield: 4 servings
   source: file
   verification: needs-review
@@ -847,13 +1400,28 @@ recipes:
     yaml: recipes/wc-kitchen.gochujang-roasted-carrots.yaml
 - id: wc-kitchen.grilled-broccoli
   name: Grilled Broccoli
-  category: []
+  categories:
+    dish_type: &id162
+    - side
+    meal_type: &id163
+    - dinner
   tags:
-    dietary:
+    dietary: &id164
     - vegetarian
-    method:
+    method: &id165
     - grill
-  dietary: []
+  facets:
+    dish_type: *id162
+    meal_type: *id163
+    dietary: *id164
+    method: *id165
+  facet_tokens:
+  - dish_type:side
+  - meal_type:dinner
+  - dietary:vegetarian
+  - method:grill
+  facets_summary: side · dinner · vegetarian · grill
+  is_reference: false
   yield: 4 servings
   source: file
   verification: verified
@@ -863,13 +1431,28 @@ recipes:
     yaml: recipes/wc-kitchen.grilled-broccoli.yaml
 - id: wc-kitchen.ground-turkey-and-potato-skillet
   name: Ground Turkey & Potato Skillet
-  category: []
+  categories:
+    dish_type: &id166
+    - main
+    meal_type: &id167
+    - dinner
   tags:
-    method:
+    method: &id168
     - stovetop
-    context:
+    context: &id169
     - weeknight
-  dietary: []
+  facets:
+    dish_type: *id166
+    meal_type: *id167
+    method: *id168
+    context: *id169
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - method:stovetop
+  - context:weeknight
+  facets_summary: main · dinner · stovetop · weeknight
+  is_reference: false
   yield: 4 servings
   source: file
   verification: needs-manual-review
@@ -879,13 +1462,28 @@ recipes:
     yaml: recipes/wc-kitchen.ground-turkey-and-potato-skillet.yaml
 - id: wc-kitchen.healthy-blueberry-muffins
   name: Healthy Blueberry Muffins
-  category: []
+  categories:
+    dish_type: &id170
+    - bread
+    meal_type: &id171
+    - dinner
   tags:
-    dietary:
+    dietary: &id172
     - low_sugar
-    method:
+    method: &id173
     - oven
-  dietary: []
+  facets:
+    dish_type: *id170
+    meal_type: *id171
+    dietary: *id172
+    method: *id173
+  facet_tokens:
+  - dish_type:bread
+  - meal_type:dinner
+  - dietary:low_sugar
+  - method:oven
+  facets_summary: bread · dinner · low sugar · oven
+  is_reference: false
   yield: 12 muffins
   source: file
   verification: needs-review
@@ -895,13 +1493,28 @@ recipes:
     yaml: recipes/wc-kitchen.healthy-blueberry-muffins.yaml
 - id: wc-kitchen.healthy-sloppy-joes
   name: Healthy Sloppy Joes
-  category: []
+  categories:
+    dish_type: &id174
+    - burgers+sandwiches
+    meal_type: &id175
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id176
     - american
-    dietary:
+    dietary: &id177
     - low_sugar
-  dietary: []
+  facets:
+    dish_type: *id174
+    meal_type: *id175
+    cuisine: *id176
+    dietary: *id177
+  facet_tokens:
+  - dish_type:burgers+sandwiches
+  - meal_type:dinner
+  - cuisine:american
+  - dietary:low_sugar
+  facets_summary: Burgers & sandwiches · dinner · american · low sugar
+  is_reference: false
   yield: 6 servings
   source: file
   verification: verified
@@ -911,11 +1524,24 @@ recipes:
     yaml: recipes/wc-kitchen.healthy-sloppy-joes.yaml
 - id: wc-kitchen.homemade-drop-biscuits-recipe
   name: Homemade Drop Biscuits Recipe (No Milk)
-  category: []
+  categories:
+    dish_type: &id178
+    - bread
+    meal_type: &id179
+    - breakfast
   tags:
-    method:
+    method: &id180
     - oven
-  dietary: []
+  facets:
+    dish_type: *id178
+    meal_type: *id179
+    method: *id180
+  facet_tokens:
+  - dish_type:bread
+  - meal_type:breakfast
+  - method:oven
+  facets_summary: bread · breakfast · oven
+  is_reference: false
   yield: 15 biscuits
   source: file
   verification: needs-review
@@ -925,13 +1551,28 @@ recipes:
     yaml: recipes/wc-kitchen.homemade-drop-biscuits-recipe.yaml
 - id: wc-kitchen.homemade-hot-chocolate-mix
   name: Homemade Hot Chocolate Mix
-  category: []
+  categories:
+    dish_type: &id181
+    - beverage
+    meal_type: &id182
+    - dessert
   tags:
-    context:
+    context: &id183
     - holiday
-    season:
+    season: &id184
     - winter
-  dietary: []
+  facets:
+    dish_type: *id181
+    meal_type: *id182
+    context: *id183
+    season: *id184
+  facet_tokens:
+  - dish_type:beverage
+  - meal_type:dessert
+  - context:holiday
+  - season:winter
+  facets_summary: beverage · dessert · holiday · winter
+  is_reference: false
   yield: 13 servings
   source: url
   verification: verified
@@ -941,11 +1582,24 @@ recipes:
     yaml: recipes/wc-kitchen.homemade-hot-chocolate-mix.yaml
 - id: wc-kitchen.honey-apple-galette-with-pistachio-sugar
   name: Honey Apple Galette With Pistachio Sugar
-  category: []
+  categories:
+    dish_type: &id185
+    - dessert
+    meal_type: &id186
+    - dessert
   tags:
-    method:
+    method: &id187
     - oven
-  dietary: []
+  facets:
+    dish_type: *id185
+    meal_type: *id186
+    method: *id187
+  facet_tokens:
+  - dish_type:dessert
+  - meal_type:dessert
+  - method:oven
+  facets_summary: dessert · dessert · oven
+  is_reference: false
   yield: 8 servings
   source: file
   verification: verified
@@ -955,13 +1609,30 @@ recipes:
     yaml: recipes/wc-kitchen.honey-apple-galette-with-pistachio-sugar.yaml
 - id: wc-kitchen.honey-lemon-vinaigrette
   name: Honey Lemon Vinaigrette
-  category: []
+  categories:
+    dish_type: &id188
+    - sauce
+    - salad
+    meal_type: &id189
+    - anytime
   tags:
-    cuisine:
+    cuisine: &id190
     - american
-    context:
+    context: &id191
     - quick
-  dietary: []
+  facets:
+    dish_type: *id188
+    meal_type: *id189
+    cuisine: *id190
+    context: *id191
+  facet_tokens:
+  - dish_type:sauce
+  - dish_type:salad
+  - meal_type:anytime
+  - cuisine:american
+  - context:quick
+  facets_summary: sauce · salad · anytime · american · quick
+  is_reference: false
   yield: 1 cup
   source: file
   verification: verified
@@ -971,16 +1642,37 @@ recipes:
     yaml: recipes/wc-kitchen.honey-lemon-vinaigrette.yaml
 - id: wc-kitchen.how-to-make-instant-pot-farro
   name: How to Make Instant Pot Farro
-  category: []
+  categories:
+    dish_type: &id192
+    - component
+    - side
+    meal_type: &id193
+    - anytime
   tags:
-    dietary:
+    dietary: &id194
     - vegan
     - vegetarian
-    method:
+    method: &id195
     - instant_pot
-    context:
+    context: &id196
     - quick
-  dietary: []
+  facets:
+    dish_type: *id192
+    meal_type: *id193
+    dietary: *id194
+    method: *id195
+    context: *id196
+  facet_tokens:
+  - dish_type:component
+  - dish_type:side
+  - meal_type:anytime
+  - dietary:vegan
+  - dietary:vegetarian
+  - method:instant_pot
+  - context:quick
+  facets_summary: component · side · anytime · vegan · vegetarian · instant pot ·
+    quick
+  is_reference: false
   yield: ''
   source: file
   verification: verified
@@ -990,14 +1682,30 @@ recipes:
     yaml: recipes/wc-kitchen.how-to-make-instant-pot-farro.yaml
 - id: wc-kitchen.instant-pot-applesauce
   name: Instant Pot Applesauce
-  category: []
+  categories:
+    dish_type: &id197
+    - side
+    meal_type: &id198
+    - snack
   tags:
-    cuisine:
+    cuisine: &id199
     - american
-    method:
+    method: &id200
     - slow_cooker
     - instant_pot
-  dietary: []
+  facets:
+    dish_type: *id197
+    meal_type: *id198
+    cuisine: *id199
+    method: *id200
+  facet_tokens:
+  - dish_type:side
+  - meal_type:snack
+  - cuisine:american
+  - method:slow_cooker
+  - method:instant_pot
+  facets_summary: side · snack · american · slow cooker · instant pot
+  is_reference: false
   yield: 5–6 cups
   source: url
   verification: verified
@@ -1007,13 +1715,28 @@ recipes:
     yaml: recipes/wc-kitchen.instant-pot-applesauce.yaml
 - id: wc-kitchen.instant-pot-baked-potato-soup
   name: Instant Pot Baked Potato Soup
-  category: []
+  categories:
+    dish_type: &id201
+    - soup
+    meal_type: &id202
+    - dinner
   tags:
-    method:
+    method: &id203
     - instant_pot
-    context:
+    context: &id204
     - comfort_food
-  dietary: []
+  facets:
+    dish_type: *id201
+    meal_type: *id202
+    method: *id203
+    context: *id204
+  facet_tokens:
+  - dish_type:soup
+  - meal_type:dinner
+  - method:instant_pot
+  - context:comfort_food
+  facets_summary: soup · dinner · instant pot · comfort food
+  is_reference: false
   yield: 8 servings
   source: file
   verification: needs-review
@@ -1023,16 +1746,37 @@ recipes:
     yaml: recipes/wc-kitchen.instant-pot-baked-potato-soup.yaml
 - id: wc-kitchen.instant-pot-black-beans
   name: Instant Pot Black Beans
-  category: []
+  categories:
+    dish_type: &id205
+    - component
+    - side
+    meal_type: &id206
+    - anytime
   tags:
-    dietary:
+    dietary: &id207
     - vegan
     - vegetarian
-    method:
+    method: &id208
     - instant_pot
-    context:
+    context: &id209
     - meal_prep
-  dietary: []
+  facets:
+    dish_type: *id205
+    meal_type: *id206
+    dietary: *id207
+    method: *id208
+    context: *id209
+  facet_tokens:
+  - dish_type:component
+  - dish_type:side
+  - meal_type:anytime
+  - dietary:vegan
+  - dietary:vegetarian
+  - method:instant_pot
+  - context:meal_prep
+  facets_summary: component · side · anytime · vegan · vegetarian · instant pot ·
+    meal prep
+  is_reference: false
   yield: 8 servings
   source: url
   verification: verified
@@ -1042,11 +1786,24 @@ recipes:
     yaml: recipes/wc-kitchen.instant-pot-black-beans.yaml
 - id: wc-kitchen.instant-pot-cilantro-lime-rice-recipe
   name: Instant Pot Cilantro Lime Rice Recipe
-  category: []
+  categories:
+    dish_type: &id210
+    - side
+    meal_type: &id211
+    - dinner
   tags:
-    method:
+    method: &id212
     - instant_pot
-  dietary: []
+  facets:
+    dish_type: *id210
+    meal_type: *id211
+    method: *id212
+  facet_tokens:
+  - dish_type:side
+  - meal_type:dinner
+  - method:instant_pot
+  facets_summary: side · dinner · instant pot
+  is_reference: false
   yield: 5 1-cup servings
   source: url
   verification: verified
@@ -1056,11 +1813,24 @@ recipes:
     yaml: recipes/wc-kitchen.instant-pot-cilantro-lime-rice-recipe.yaml
 - id: wc-kitchen.instant-pot-parmesan-risotto
   name: Instant Pot Parmesan Risotto
-  category: []
+  categories:
+    dish_type: &id213
+    - pasta
+    meal_type: &id214
+    - dinner
   tags:
-    method:
+    method: &id215
     - instant_pot
-  dietary: []
+  facets:
+    dish_type: *id213
+    meal_type: *id214
+    method: *id215
+  facet_tokens:
+  - dish_type:pasta
+  - meal_type:dinner
+  - method:instant_pot
+  facets_summary: pasta · dinner · instant pot
+  is_reference: false
   yield: 6 servings
   source: url
   verification: verified
@@ -1070,13 +1840,28 @@ recipes:
     yaml: recipes/wc-kitchen.instant-pot-parmesan-risotto.yaml
 - id: wc-kitchen.instant-pot-ramen-noodles
   name: Instant Pot Ramen Noodles
-  category: []
+  categories:
+    dish_type: &id216
+    - soup
+    meal_type: &id217
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id218
     - asian
-    method:
+    method: &id219
     - instant_pot
-  dietary: []
+  facets:
+    dish_type: *id216
+    meal_type: *id217
+    cuisine: *id218
+    method: *id219
+  facet_tokens:
+  - dish_type:soup
+  - meal_type:dinner
+  - cuisine:asian
+  - method:instant_pot
+  facets_summary: soup · dinner · asian · instant pot
+  is_reference: false
   yield: 4 servings
   source: url
   verification: verified
@@ -1086,13 +1871,28 @@ recipes:
     yaml: recipes/wc-kitchen.instant-pot-ramen-noodles.yaml
 - id: wc-kitchen.instant-pot-red-beans-and-rice
   name: Instant Pot Red Beans and Rice
-  category: []
+  categories:
+    dish_type: &id220
+    - main
+    meal_type: &id221
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id222
     - american
-    method:
+    method: &id223
     - instant_pot
-  dietary: []
+  facets:
+    dish_type: *id220
+    meal_type: *id221
+    cuisine: *id222
+    method: *id223
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - cuisine:american
+  - method:instant_pot
+  facets_summary: main · dinner · american · instant pot
+  is_reference: false
   yield: ''
   source: file
   verification: verified
@@ -1102,11 +1902,24 @@ recipes:
     yaml: recipes/wc-kitchen.instant-pot-red-beans-and-rice.yaml
 - id: wc-kitchen.instant-pot-teriyaki-turkey-meatballs
   name: Instant Pot Teriyaki Turkey Meatballs
-  category: []
+  categories:
+    dish_type: &id224
+    - main
+    meal_type: &id225
+    - dinner
   tags:
-    method:
+    method: &id226
     - instant_pot
-  dietary: []
+  facets:
+    dish_type: *id224
+    meal_type: *id225
+    method: *id226
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - method:instant_pot
+  facets_summary: main · dinner · instant pot
+  is_reference: false
   yield: 6 servings
   source: url
   verification: verified
@@ -1116,11 +1929,24 @@ recipes:
     yaml: recipes/wc-kitchen.instant-pot-teriyaki-turkey-meatballs.yaml
 - id: wc-kitchen.kashi-oatmeal-chocolate-chip-cookies
   name: Kashi Oatmeal Chocolate Chip Cookies
-  category: []
+  categories:
+    dish_type: &id227
+    - dessert
+    meal_type: &id228
+    - dessert
   tags:
-    method:
+    method: &id229
     - oven
-  dietary: []
+  facets:
+    dish_type: *id227
+    meal_type: *id228
+    method: *id229
+  facet_tokens:
+  - dish_type:dessert
+  - meal_type:dessert
+  - method:oven
+  facets_summary: dessert · dessert · oven
+  is_reference: false
   yield: 8 cookies
   source: file
   verification: verified
@@ -1130,11 +1956,24 @@ recipes:
     yaml: recipes/wc-kitchen.kashi-oatmeal-chocolate-chip-cookies.yaml
 - id: wc-kitchen.kitchen-sink-cookies
   name: Kitchen Sink Cookies (Panera Copycat!)
-  category: []
+  categories:
+    dish_type: &id230
+    - dessert
+    meal_type: &id231
+    - dessert
   tags:
-    method:
+    method: &id232
     - oven
-  dietary: []
+  facets:
+    dish_type: *id230
+    meal_type: *id231
+    method: *id232
+  facet_tokens:
+  - dish_type:dessert
+  - meal_type:dessert
+  - method:oven
+  facets_summary: dessert · dessert · oven
+  is_reference: false
   yield: 9 large cookies
   source: file
   verification: verified
@@ -1144,9 +1983,20 @@ recipes:
     yaml: recipes/wc-kitchen.kitchen-sink-cookies.yaml
 - id: wc-kitchen.korean-beef-bowl
   name: Korean Beef Bowl
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id233
+    - bowl
+    meal_type: &id234
+    - dinner
+  tags: {}
+  facets:
+    dish_type: *id233
+    meal_type: *id234
+  facet_tokens:
+  - dish_type:bowl
+  - meal_type:dinner
+  facets_summary: bowl · dinner
+  is_reference: false
   yield: 4 servings
   source: url
   verification: verified
@@ -1156,9 +2006,20 @@ recipes:
     yaml: recipes/wc-kitchen.korean-beef-bowl.yaml
 - id: wc-kitchen.macaroni-and-hamburger
   name: Macaroni & Hamburger
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id235
+    - pasta
+    meal_type: &id236
+    - dinner
+  tags: {}
+  facets:
+    dish_type: *id235
+    meal_type: *id236
+  facet_tokens:
+  - dish_type:pasta
+  - meal_type:dinner
+  facets_summary: pasta · dinner
+  is_reference: false
   yield: 6 servings
   source: file
   verification: verified
@@ -1168,13 +2029,28 @@ recipes:
     yaml: recipes/wc-kitchen.macaroni-and-hamburger.yaml
 - id: wc-kitchen.mediterranean-stuffed-pork-tenderloin
   name: Mediterranean Stuffed Pork Tenderloin
-  category: []
+  categories:
+    dish_type: &id237
+    - main
+    meal_type: &id238
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id239
     - mediterranean
-    method:
+    method: &id240
     - oven
-  dietary: []
+  facets:
+    dish_type: *id237
+    meal_type: *id238
+    cuisine: *id239
+    method: *id240
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - cuisine:mediterranean
+  - method:oven
+  facets_summary: main · dinner · mediterranean · oven
+  is_reference: false
   yield: 4 servings
   source: file
   verification: verified
@@ -1184,9 +2060,22 @@ recipes:
     yaml: recipes/wc-kitchen.mediterranean-stuffed-pork-tenderloin.yaml
 - id: wc-kitchen.mexican-street-corn-salad
   name: Mexican Street Corn Salad
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id241
+    - main
+    - salad
+    meal_type: &id242
+    - dinner
+  tags: {}
+  facets:
+    dish_type: *id241
+    meal_type: *id242
+  facet_tokens:
+  - dish_type:main
+  - dish_type:salad
+  - meal_type:dinner
+  facets_summary: main · salad · dinner
+  is_reference: false
   yield: 4 servings
   source: file
   verification: verified
@@ -1196,11 +2085,24 @@ recipes:
     yaml: recipes/wc-kitchen.mexican-street-corn-salad.yaml
 - id: wc-kitchen.middle-eastern-lentil-soup
   name: Middle Eastern Lentil Soup
-  category: []
+  categories:
+    dish_type: &id243
+    - soup
+    meal_type: &id244
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id245
     - middle_eastern
-  dietary: []
+  facets:
+    dish_type: *id243
+    meal_type: *id244
+    cuisine: *id245
+  facet_tokens:
+  - dish_type:soup
+  - meal_type:dinner
+  - cuisine:middle_eastern
+  facets_summary: soup · dinner · middle eastern
+  is_reference: false
   yield: 4 servings
   source: file
   verification: verified
@@ -1210,13 +2112,28 @@ recipes:
     yaml: recipes/wc-kitchen.middle-eastern-lentil-soup.yaml
 - id: wc-kitchen.miso-dumpling-soup
   name: Miso Dumpling Soup (15 Minutes)
-  category: []
+  categories:
+    dish_type: &id246
+    - soup
+    meal_type: &id247
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id248
     - japanese
-    context:
+    context: &id249
     - quick
-  dietary: []
+  facets:
+    dish_type: *id246
+    meal_type: *id247
+    cuisine: *id248
+    context: *id249
+  facet_tokens:
+  - dish_type:soup
+  - meal_type:dinner
+  - cuisine:japanese
+  - context:quick
+  facets_summary: soup · dinner · japanese · quick
+  is_reference: false
   yield: 4 servings
   source: file
   verification: needs-review
@@ -1226,11 +2143,24 @@ recipes:
     yaml: recipes/wc-kitchen.miso-dumpling-soup.yaml
 - id: wc-kitchen.moist-chocolate-cake
   name: Moist Chocolate Cake
-  category: []
+  categories:
+    dish_type: &id250
+    - dessert
+    meal_type: &id251
+    - dessert
   tags:
-    method:
+    method: &id252
     - oven
-  dietary: []
+  facets:
+    dish_type: *id250
+    meal_type: *id251
+    method: *id252
+  facet_tokens:
+  - dish_type:dessert
+  - meal_type:dessert
+  - method:oven
+  facets_summary: dessert · dessert · oven
+  is_reference: false
   yield: 12 servings
   source: file
   verification: verified
@@ -1240,13 +2170,28 @@ recipes:
     yaml: recipes/wc-kitchen.moist-chocolate-cake.yaml
 - id: wc-kitchen.mushroom-onion-and-sage-stuffing
   name: Mushroom, Onion, and Sage Stuffing
-  category: []
+  categories:
+    dish_type: &id253
+    - side
+    meal_type: &id254
+    - dinner
   tags:
-    method:
+    method: &id255
     - oven
-    season:
+    season: &id256
     - fall
-  dietary: []
+  facets:
+    dish_type: *id253
+    meal_type: *id254
+    method: *id255
+    season: *id256
+  facet_tokens:
+  - dish_type:side
+  - meal_type:dinner
+  - method:oven
+  - season:fall
+  facets_summary: side · dinner · oven · fall
+  is_reference: false
   yield: 9 servings
   source: url
   verification: verified
@@ -1256,11 +2201,24 @@ recipes:
     yaml: recipes/wc-kitchen.mushroom-onion-and-sage-stuffing.yaml
 - id: wc-kitchen.oven-fried-chicken-ii
   name: Oven Fried Chicken II
-  category: []
+  categories:
+    dish_type: &id257
+    - main
+    meal_type: &id258
+    - dinner
   tags:
-    method:
+    method: &id259
     - oven
-  dietary: []
+  facets:
+    dish_type: *id257
+    meal_type: *id258
+    method: *id259
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - method:oven
+  facets_summary: main · dinner · oven
+  is_reference: false
   yield: 10 servings
   source: url
   verification: verified
@@ -1270,11 +2228,24 @@ recipes:
     yaml: recipes/wc-kitchen.oven-fried-chicken-ii.yaml
 - id: wc-kitchen.pappardelle-with-mushrooms
   name: Pappardelle with Mushrooms
-  category: []
+  categories:
+    dish_type: &id260
+    - pasta
+    meal_type: &id261
+    - dinner
   tags:
-    dietary:
+    dietary: &id262
     - vegetarian
-  dietary: []
+  facets:
+    dish_type: *id260
+    meal_type: *id261
+    dietary: *id262
+  facet_tokens:
+  - dish_type:pasta
+  - meal_type:dinner
+  - dietary:vegetarian
+  facets_summary: pasta · dinner · vegetarian
+  is_reference: false
   yield: 4 servings
   source: file
   verification: verified
@@ -1284,13 +2255,28 @@ recipes:
     yaml: recipes/wc-kitchen.pappardelle-with-mushrooms.yaml
 - id: wc-kitchen.pasta-e-piselli
   name: Pasta e Piselli (Pasta with Peas)
-  category: []
+  categories:
+    dish_type: &id263
+    - pasta
+    meal_type: &id264
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id265
     - italian
-    method:
+    method: &id266
     - stovetop
-  dietary: []
+  facets:
+    dish_type: *id263
+    meal_type: *id264
+    cuisine: *id265
+    method: *id266
+  facet_tokens:
+  - dish_type:pasta
+  - meal_type:dinner
+  - cuisine:italian
+  - method:stovetop
+  facets_summary: pasta · dinner · italian · stovetop
+  is_reference: false
   yield: 8 servings
   source: file
   verification: verified
@@ -1300,11 +2286,24 @@ recipes:
     yaml: recipes/wc-kitchen.pasta-e-piselli.yaml
 - id: wc-kitchen.perfect-pie-dough
   name: Perfect Pie Dough
-  category: []
+  categories:
+    dish_type: &id267
+    - main
+    meal_type: &id268
+    - dinner
   tags:
-    context:
+    context: &id269
     - make_ahead
-  dietary: []
+  facets:
+    dish_type: *id267
+    meal_type: *id268
+    context: *id269
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - context:make_ahead
+  facets_summary: main · dinner · make ahead
+  is_reference: false
   yield: 1 9- or 10-inch pie crust
   source: url
   verification: verified
@@ -1314,13 +2313,28 @@ recipes:
     yaml: recipes/wc-kitchen.perfect-pie-dough.yaml
 - id: wc-kitchen.perfect-pot-roast
   name: Perfect Pot Roast
-  category: []
+  categories:
+    dish_type: &id270
+    - main
+    meal_type: &id271
+    - dinner
   tags:
-    method:
+    method: &id272
     - oven
-    context:
+    context: &id273
     - comfort_food
-  dietary: []
+  facets:
+    dish_type: *id270
+    meal_type: *id271
+    method: *id272
+    context: *id273
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - method:oven
+  - context:comfort_food
+  facets_summary: main · dinner · oven · comfort food
+  is_reference: false
   yield: 10 servings
   source: file
   verification: needs-review
@@ -1328,27 +2342,30 @@ recipes:
     html: site/wc-kitchen.perfect-pot-roast.html
     pdf: pdfs/wc-kitchen.perfect-pot-roast.pdf
     yaml: recipes/wc-kitchen.perfect-pot-roast.yaml
-- id: wc-kitchen.poached-cod-with-tomatoes
-  name: Poached Cod with Tomatoes
-  category: []
-  tags: []
-  dietary: []
-  yield: 4 servings
-  source: file
-  verification: verified
-  links:
-    html: site/wc-kitchen.poached-cod-with-tomatoes.html
-    pdf: pdfs/wc-kitchen.poached-cod-with-tomatoes.pdf
-    yaml: recipes/wc-kitchen.poached-cod-with-tomatoes.yaml
 - id: wc-kitchen.pork-breakfast-chops
   name: Pork Breakfast Chops
-  category: []
+  categories:
+    dish_type: &id274
+    - main
+    meal_type: &id275
+    - dinner
   tags:
-    method:
+    method: &id276
     - stovetop
-    context:
+    context: &id277
     - quick
-  dietary: []
+  facets:
+    dish_type: *id274
+    meal_type: *id275
+    method: *id276
+    context: *id277
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - method:stovetop
+  - context:quick
+  facets_summary: main · dinner · stovetop · quick
+  is_reference: false
   yield: 8 servings
   source: url
   verification: verified
@@ -1358,13 +2375,28 @@ recipes:
     yaml: recipes/wc-kitchen.pork-breakfast-chops.yaml
 - id: wc-kitchen.potato-leek-soup
   name: Potato Leek Soup
-  category: []
+  categories:
+    dish_type: &id278
+    - soup
+    meal_type: &id279
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id280
     - french
-    context:
-    - freezer-friendly
-  dietary: []
+    context: &id281
+    - freezer_friendly
+  facets:
+    dish_type: *id278
+    meal_type: *id279
+    cuisine: *id280
+    context: *id281
+  facet_tokens:
+  - dish_type:soup
+  - meal_type:dinner
+  - cuisine:french
+  - context:freezer_friendly
+  facets_summary: soup · dinner · french · freezer friendly
+  is_reference: false
   yield: 6 servings
   source: url
   verification: verified
@@ -1374,14 +2406,32 @@ recipes:
     yaml: recipes/wc-kitchen.potato-leek-soup.yaml
 - id: wc-kitchen.quick-and-easy-red-lentil-dahl
   name: Quick & Easy Red Lentil Dahl
-  category: []
+  categories:
+    dish_type: &id282
+    - main
+    - side
+    meal_type: &id283
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id284
     - indian
-    dietary:
+    dietary: &id285
     - vegan
     - vegetarian
-  dietary: []
+  facets:
+    dish_type: *id282
+    meal_type: *id283
+    cuisine: *id284
+    dietary: *id285
+  facet_tokens:
+  - dish_type:main
+  - dish_type:side
+  - meal_type:dinner
+  - cuisine:indian
+  - dietary:vegan
+  - dietary:vegetarian
+  facets_summary: main · side · dinner · indian · vegan · vegetarian
+  is_reference: false
   yield: 8 servings
   source: url
   verification: needs-manual-review
@@ -1391,11 +2441,24 @@ recipes:
     yaml: recipes/wc-kitchen.quick-and-easy-red-lentil-dahl.yaml
 - id: wc-kitchen.quick-pickled-red-onion
   name: Quick Pickled Red Onion
-  category: []
-  tags:
-    method:
+  categories:
+    dish_type: &id286
     - preserve
-  dietary: []
+    meal_type: &id287
+    - anytime
+  tags:
+    method: &id288
+    - preserve
+  facets:
+    dish_type: *id286
+    meal_type: *id287
+    method: *id288
+  facet_tokens:
+  - dish_type:preserve
+  - meal_type:anytime
+  - method:preserve
+  facets_summary: preserve · anytime · preserve
+  is_reference: false
   yield: 2 cups
   source: file
   verification: verified
@@ -1405,13 +2468,28 @@ recipes:
     yaml: recipes/wc-kitchen.quick-pickled-red-onion.yaml
 - id: wc-kitchen.ratatouille
   name: Ratatouille
-  category: []
+  categories:
+    dish_type: &id289
+    - side
+    meal_type: &id290
+    - dinner
   tags:
-    dietary:
+    dietary: &id291
     - vegetarian
-    method:
+    method: &id292
     - stovetop
-  dietary: []
+  facets:
+    dish_type: *id289
+    meal_type: *id290
+    dietary: *id291
+    method: *id292
+  facet_tokens:
+  - dish_type:side
+  - meal_type:dinner
+  - dietary:vegetarian
+  - method:stovetop
+  facets_summary: side · dinner · vegetarian · stovetop
+  is_reference: false
   yield: 6 servings
   source: file
   verification: verified
@@ -1421,11 +2499,24 @@ recipes:
     yaml: recipes/wc-kitchen.ratatouille.yaml
 - id: wc-kitchen.rice-pilaf
   name: Rice Pilaf
-  category: []
+  categories:
+    dish_type: &id293
+    - side
+    meal_type: &id294
+    - dinner
   tags:
-    method:
+    method: &id295
     - oven
-  dietary: []
+  facets:
+    dish_type: *id293
+    meal_type: *id294
+    method: *id295
+  facet_tokens:
+  - dish_type:side
+  - meal_type:dinner
+  - method:oven
+  facets_summary: side · dinner · oven
+  is_reference: false
   yield: 4 servings
   source: file
   verification: verified
@@ -1435,11 +2526,24 @@ recipes:
     yaml: recipes/wc-kitchen.rice-pilaf.yaml
 - id: wc-kitchen.roasted-potatoes-and-kielbasa
   name: Roasted Potatoes and Kielbasa (One-Pan Recipe)
-  category: []
+  categories:
+    dish_type: &id296
+    - main
+    meal_type: &id297
+    - dinner
   tags:
-    method:
+    method: &id298
     - oven
-  dietary: []
+  facets:
+    dish_type: *id296
+    meal_type: *id297
+    method: *id298
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - method:oven
+  facets_summary: main · dinner · oven
+  is_reference: false
   yield: 4 servings
   source: url
   verification: verified
@@ -1449,11 +2553,24 @@ recipes:
     yaml: recipes/wc-kitchen.roasted-potatoes-and-kielbasa.yaml
 - id: wc-kitchen.roasted-shiitake-bibimbap
   name: Roasted Shiitake Bibimbap
-  category: []
+  categories:
+    dish_type: &id299
+    - bowl
+    meal_type: &id300
+    - dinner
   tags:
-    method:
+    method: &id301
     - oven
-  dietary: []
+  facets:
+    dish_type: *id299
+    meal_type: *id300
+    method: *id301
+  facet_tokens:
+  - dish_type:bowl
+  - meal_type:dinner
+  - method:oven
+  facets_summary: bowl · dinner · oven
+  is_reference: false
   yield: 2 servings
   source: file
   verification: needs-review
@@ -1463,11 +2580,24 @@ recipes:
     yaml: recipes/wc-kitchen.roasted-shiitake-bibimbap.yaml
 - id: wc-kitchen.salmon-burgers-with-slaw
   name: Salmon Burgers with Slaw
-  category: []
+  categories:
+    dish_type: &id302
+    - burgers+sandwiches
+    meal_type: &id303
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id304
     - seafood
-  dietary: []
+  facets:
+    dish_type: *id302
+    meal_type: *id303
+    cuisine: *id304
+  facet_tokens:
+  - dish_type:burgers+sandwiches
+  - meal_type:dinner
+  - cuisine:seafood
+  facets_summary: Burgers & sandwiches · dinner · seafood
+  is_reference: false
   yield: 3–4 burgers
   source: url
   verification: needs-review
@@ -1477,11 +2607,24 @@ recipes:
     yaml: recipes/wc-kitchen.salmon-burgers-with-slaw.yaml
 - id: wc-kitchen.shakshuka-with-feta
   name: Shakshuka With Feta
-  category: []
+  categories:
+    dish_type: &id305
+    - main
+    meal_type: &id306
+    - dinner
   tags:
-    method:
+    method: &id307
     - oven
-  dietary: []
+  facets:
+    dish_type: *id305
+    meal_type: *id306
+    method: *id307
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - method:oven
+  facets_summary: main · dinner · oven
+  is_reference: false
   yield: 4–6 servings
   source: file
   verification: needs-manual-review
@@ -1491,18 +2634,43 @@ recipes:
     yaml: recipes/wc-kitchen.shakshuka-with-feta.yaml
 - id: wc-kitchen.shepherds-pie
   name: Shepherd's Pie
-  category: []
+  categories:
+    dish_type: &id308
+    - one_dish
+    meal_type: &id309
+    - dinner
+    meal_role: &id310
+    - one_dish_meal
   tags:
-    method:
+    method: &id311
     - oven
-    context:
+    context: &id312
     - leftovers_friendly
-    primary_ingredient:
+    primary_ingredient: &id313
     - potatoes
-    flavor_profile:
+    flavor_profile: &id314
     - savory
     - hearty
-  dietary: []
+  facets:
+    dish_type: *id308
+    meal_type: *id309
+    meal_role: *id310
+    method: *id311
+    context: *id312
+    primary_ingredient: *id313
+    flavor_profile: *id314
+  facet_tokens:
+  - dish_type:one_dish
+  - meal_type:dinner
+  - meal_role:one_dish_meal
+  - method:oven
+  - context:leftovers_friendly
+  - primary_ingredient:potatoes
+  - flavor_profile:savory
+  - flavor_profile:hearty
+  facets_summary: one dish · dinner · one dish meal · oven · leftovers friendly ·
+    potatoes · savory · hearty
+  is_reference: false
   yield: 4 servings
   source: file
   verification: needs-review
@@ -1512,9 +2680,20 @@ recipes:
     yaml: recipes/wc-kitchen.shepherds-pie.yaml
 - id: wc-kitchen.shrimp-fettuccine-alfredo
   name: Shrimp Fettuccine Alfredo
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id315
+    - main
+    meal_type: &id316
+    - dinner
+  tags: {}
+  facets:
+    dish_type: *id315
+    meal_type: *id316
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  facets_summary: main · dinner
+  is_reference: false
   yield: 4 servings
   source: url
   verification: verified
@@ -1524,13 +2703,28 @@ recipes:
     yaml: recipes/wc-kitchen.shrimp-fettuccine-alfredo.yaml
 - id: wc-kitchen.simple-zucchini-bread
   name: Simple Zucchini Bread
-  category: []
+  categories:
+    dish_type: &id317
+    - bread
+    meal_type: &id318
+    - dinner
   tags:
-    dietary:
+    dietary: &id319
     - vegetarian
-    method:
+    method: &id320
     - oven
-  dietary: []
+  facets:
+    dish_type: *id317
+    meal_type: *id318
+    dietary: *id319
+    method: *id320
+  facet_tokens:
+  - dish_type:bread
+  - meal_type:dinner
+  - dietary:vegetarian
+  - method:oven
+  facets_summary: bread · dinner · vegetarian · oven
+  is_reference: false
   yield: 1 8.5x4.5 inch loaf
   source: file
   verification: needs-review
@@ -1540,13 +2734,28 @@ recipes:
     yaml: recipes/wc-kitchen.simple-zucchini-bread.yaml
 - id: wc-kitchen.slow-cooker-beef-stew
   name: Slow Cooker Beef Stew
-  category: []
+  categories:
+    dish_type: &id321
+    - main
+    meal_type: &id322
+    - dinner
   tags:
-    method:
+    method: &id323
     - slow_cooker
-    context:
+    context: &id324
     - comfort_food
-  dietary: []
+  facets:
+    dish_type: *id321
+    meal_type: *id322
+    method: *id323
+    context: *id324
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - method:slow_cooker
+  - context:comfort_food
+  facets_summary: main · dinner · slow cooker · comfort food
+  is_reference: false
   yield: 10 servings
   source: file
   verification: verified
@@ -1556,13 +2765,28 @@ recipes:
     yaml: recipes/wc-kitchen.slow-cooker-beef-stew.yaml
 - id: wc-kitchen.slow-cooker-corn-chowder
   name: Slow Cooker Corn Chowder
-  category: []
+  categories:
+    dish_type: &id325
+    - soup
+    meal_type: &id326
+    - dinner
   tags:
-    dietary:
+    dietary: &id327
     - vegetarian_adaptable
-    method:
+    method: &id328
     - slow_cooker
-  dietary: []
+  facets:
+    dish_type: *id325
+    meal_type: *id326
+    dietary: *id327
+    method: *id328
+  facet_tokens:
+  - dish_type:soup
+  - meal_type:dinner
+  - dietary:vegetarian_adaptable
+  - method:slow_cooker
+  facets_summary: soup · dinner · vegetarian adaptable · slow cooker
+  is_reference: false
   yield: 4–6 servings
   source: url
   verification: verified
@@ -1572,13 +2796,28 @@ recipes:
     yaml: recipes/wc-kitchen.slow-cooker-corn-chowder.yaml
 - id: wc-kitchen.slow-cooked-southwest-chicken
   name: Slow-Cooked Southwest Chicken
-  category: []
+  categories:
+    dish_type: &id329
+    - main
+    meal_type: &id330
+    - dinner
   tags:
-    dietary:
+    dietary: &id331
     - low_fat
-    method:
+    method: &id332
     - slow_cooker
-  dietary: []
+  facets:
+    dish_type: *id329
+    meal_type: *id330
+    dietary: *id331
+    method: *id332
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - dietary:low_fat
+  - method:slow_cooker
+  facets_summary: main · dinner · low fat · slow cooker
+  is_reference: false
   yield: 6 servings
   source: url
   verification: verified
@@ -1588,11 +2827,24 @@ recipes:
     yaml: recipes/wc-kitchen.slow-cooked-southwest-chicken.yaml
 - id: wc-kitchen.soft-and-chewy-chocolate-chip-cookies
   name: Soft and Chewy Chocolate Chip Cookies
-  category: []
+  categories:
+    dish_type: &id333
+    - dessert
+    meal_type: &id334
+    - dessert
   tags:
-    method:
+    method: &id335
     - oven
-  dietary: []
+  facets:
+    dish_type: *id333
+    meal_type: *id334
+    method: *id335
+  facet_tokens:
+  - dish_type:dessert
+  - meal_type:dessert
+  - method:oven
+  facets_summary: dessert · dessert · oven
+  is_reference: false
   yield: 24 cookies
   source: url
   verification: needs-review
@@ -1602,11 +2854,24 @@ recipes:
     yaml: recipes/wc-kitchen.soft-and-chewy-chocolate-chip-cookies.yaml
 - id: wc-kitchen.soy-vay-veri-veri-teriyaki-clone
   name: Soy Vay Veri Veri Teriyaki Clone
-  category: []
+  categories:
+    dish_type: &id336
+    - sauce
+    meal_type: &id337
+    - anytime
   tags:
-    context:
-    - freezer-friendly
-  dietary: []
+    context: &id338
+    - freezer_friendly
+  facets:
+    dish_type: *id336
+    meal_type: *id337
+    context: *id338
+  facet_tokens:
+  - dish_type:sauce
+  - meal_type:anytime
+  - context:freezer_friendly
+  facets_summary: sauce · anytime · freezer friendly
+  is_reference: false
   yield: 16 servings
   source: url
   verification: verified
@@ -1616,13 +2881,28 @@ recipes:
     yaml: recipes/wc-kitchen.soy-vay-veri-veri-teriyaki-clone.yaml
 - id: wc-kitchen.spaghetti-carbonara
   name: Spaghetti Carbonara
-  category: []
+  categories:
+    dish_type: &id339
+    - pasta
+    meal_type: &id340
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id341
     - italian
-    method:
+    method: &id342
     - stovetop
-  dietary: []
+  facets:
+    dish_type: *id339
+    meal_type: *id340
+    cuisine: *id341
+    method: *id342
+  facet_tokens:
+  - dish_type:pasta
+  - meal_type:dinner
+  - cuisine:italian
+  - method:stovetop
+  facets_summary: pasta · dinner · italian · stovetop
+  is_reference: false
   yield: 4 servings
   source: url
   verification: verified
@@ -1632,12 +2912,26 @@ recipes:
     yaml: recipes/wc-kitchen.spaghetti-carbonara.yaml
 - id: wc-kitchen.sparkling-apple-cider-gin-cocktail
   name: Sparkling Apple Cider Gin Cocktail
-  category: []
+  categories:
+    dish_type: &id343
+    - beverage
+    meal_type: &id344
+    - anytime
   tags:
-    context:
+    context: &id345
     - holiday
     - quick
-  dietary: []
+  facets:
+    dish_type: *id343
+    meal_type: *id344
+    context: *id345
+  facet_tokens:
+  - dish_type:beverage
+  - meal_type:anytime
+  - context:holiday
+  - context:quick
+  facets_summary: beverage · anytime · holiday · quick
+  is_reference: false
   yield: 1 serving
   source: url
   verification: verified
@@ -1647,12 +2941,26 @@ recipes:
     yaml: recipes/wc-kitchen.sparkling-apple-cider-gin-cocktail.yaml
 - id: wc-kitchen.split-pea-soup
   name: Split Pea Soup (Instant Pot)
-  category: []
+  categories:
+    dish_type: &id346
+    - soup
+    meal_type: &id347
+    - dinner
   tags:
-    method:
+    method: &id348
     - instant_pot
     - slow_cooker
-  dietary: []
+  facets:
+    dish_type: *id346
+    meal_type: *id347
+    method: *id348
+  facet_tokens:
+  - dish_type:soup
+  - meal_type:dinner
+  - method:instant_pot
+  - method:slow_cooker
+  facets_summary: soup · dinner · instant pot · slow cooker
+  is_reference: false
   yield: 8 servings
   source: file
   verification: verified
@@ -1662,13 +2970,28 @@ recipes:
     yaml: recipes/wc-kitchen.split-pea-soup.yaml
 - id: wc-kitchen.sweet-pickled-radishes
   name: Sweet Pickled Radishes
-  category: []
-  tags:
-    cuisine:
-    - american
-    method:
+  categories:
+    dish_type: &id349
     - preserve
-  dietary: []
+    meal_type: &id350
+    - anytime
+  tags:
+    cuisine: &id351
+    - american
+    method: &id352
+    - preserve
+  facets:
+    dish_type: *id349
+    meal_type: *id350
+    cuisine: *id351
+    method: *id352
+  facet_tokens:
+  - dish_type:preserve
+  - meal_type:anytime
+  - cuisine:american
+  - method:preserve
+  facets_summary: preserve · anytime · american · preserve
+  is_reference: false
   yield: 1 pint jar
   source: url
   verification: needs-manual-review
@@ -1678,16 +3001,35 @@ recipes:
     yaml: recipes/wc-kitchen.sweet-pickled-radishes.yaml
 - id: wc-kitchen.sweet-potato-chickpea-buddha-bowl-with-peanut-sauce
   name: Sweet Potato Chickpea Buddha Bowl with Peanut Sauce
-  category: []
+  categories:
+    dish_type: &id353
+    - main
+    meal_type: &id354
+    - dinner
   tags:
-    dietary:
+    dietary: &id355
     - vegan
     - gluten_free_adaptable
     - dairy_free
     - vegetarian
-    context:
+    context: &id356
     - meal_prep
-  dietary: []
+  facets:
+    dish_type: *id353
+    meal_type: *id354
+    dietary: *id355
+    context: *id356
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - dietary:vegan
+  - dietary:gluten_free_adaptable
+  - dietary:dairy_free
+  - dietary:vegetarian
+  - context:meal_prep
+  facets_summary: main · dinner · vegan · gluten free adaptable · dairy free · vegetarian
+    · meal prep
+  is_reference: false
   yield: ''
   source: file
   verification: needs-review
@@ -1697,11 +3039,24 @@ recipes:
     yaml: recipes/wc-kitchen.sweet-potato-chickpea-buddha-bowl-with-peanut-sauce.yaml
 - id: wc-kitchen.taco-pasta-salad
   name: Taco Pasta Salad
-  category: []
+  categories:
+    dish_type: &id357
+    - salad
+    meal_type: &id358
+    - dinner
   tags:
-    context:
+    context: &id359
     - make_ahead
-  dietary: []
+  facets:
+    dish_type: *id357
+    meal_type: *id358
+    context: *id359
+  facet_tokens:
+  - dish_type:salad
+  - meal_type:dinner
+  - context:make_ahead
+  facets_summary: salad · dinner · make ahead
+  is_reference: false
   yield: 6 servings
   source: file
   verification: verified
@@ -1709,25 +3064,26 @@ recipes:
     html: site/wc-kitchen.taco-pasta-salad.html
     pdf: pdfs/wc-kitchen.taco-pasta-salad.pdf
     yaml: recipes/wc-kitchen.taco-pasta-salad.yaml
-- id: wc-kitchen.taco-salad
-  name: Taco Salad
-  category: []
-  tags: []
-  dietary: []
-  yield: 4 servings
-  source: url
-  verification: verified
-  links:
-    html: site/wc-kitchen.taco-salad.html
-    pdf: pdfs/wc-kitchen.taco-salad.pdf
-    yaml: recipes/wc-kitchen.taco-salad.yaml
 - id: wc-kitchen.teriyaki-turkey-rice-bowl
   name: Teriyaki Turkey Rice Bowl
-  category: []
+  categories:
+    dish_type: &id360
+    - bowl
+    meal_type: &id361
+    - dinner
   tags:
-    method:
+    method: &id362
     - instant_pot
-  dietary: []
+  facets:
+    dish_type: *id360
+    meal_type: *id361
+    method: *id362
+  facet_tokens:
+  - dish_type:bowl
+  - meal_type:dinner
+  - method:instant_pot
+  facets_summary: bowl · dinner · instant pot
+  is_reference: false
   yield: 4 servings
   source: url
   verification: verified
@@ -1737,18 +3093,39 @@ recipes:
     yaml: recipes/wc-kitchen.teriyaki-turkey-rice-bowl.yaml
 - id: wc-kitchen.thai-cucumber-salad
   name: Thai Cucumber Salad
-  category: []
+  categories:
+    dish_type: &id363
+    - salad
+    meal_type: &id364
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id365
     - thai
     - asian
-    dietary:
+    dietary: &id366
     - vegan
     - vegetarian
     - gluten_free
-    season:
+    season: &id367
     - summer
-  dietary: []
+  facets:
+    dish_type: *id363
+    meal_type: *id364
+    cuisine: *id365
+    dietary: *id366
+    season: *id367
+  facet_tokens:
+  - dish_type:salad
+  - meal_type:dinner
+  - cuisine:thai
+  - cuisine:asian
+  - dietary:vegan
+  - dietary:vegetarian
+  - dietary:gluten_free
+  - season:summer
+  facets_summary: salad · dinner · thai · asian · vegan · vegetarian · gluten free
+    · summer
+  is_reference: false
   yield: 6 servings
   source: url
   verification: verified
@@ -1758,9 +3135,20 @@ recipes:
     yaml: recipes/wc-kitchen.thai-cucumber-salad.yaml
 - id: wc-kitchen.thai-peanut-sauce
   name: Thai Peanut Sauce
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id368
+    - sauce
+    meal_type: &id369
+    - anytime
+  tags: {}
+  facets:
+    dish_type: *id368
+    meal_type: *id369
+  facet_tokens:
+  - dish_type:sauce
+  - meal_type:anytime
+  facets_summary: sauce · anytime
+  is_reference: false
   yield: 1 batch
   source: url
   verification: needs-review
@@ -1770,9 +3158,20 @@ recipes:
     yaml: recipes/wc-kitchen.thai-peanut-sauce.yaml
 - id: wc-kitchen.thai-peanut-sauce-jessica-hylton
   name: Thai Peanut Sauce
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id370
+    - sauce
+    meal_type: &id371
+    - anytime
+  tags: {}
+  facets:
+    dish_type: *id370
+    meal_type: *id371
+  facet_tokens:
+  - dish_type:sauce
+  - meal_type:anytime
+  facets_summary: sauce · anytime
+  is_reference: false
   yield: 9 servings
   source: url
   verification: needs-review
@@ -1782,15 +3181,32 @@ recipes:
     yaml: recipes/wc-kitchen.thai-peanut-sauce-jessica-hylton.yaml
 - id: wc-kitchen.thai-peanut-sweet-potato-buddha-bowl
   name: Thai Peanut Sweet Potato Buddha Bowl
-  category: []
+  categories:
+    dish_type: &id372
+    - bowl
+    meal_type: &id373
+    - dinner
   tags:
-    dietary:
+    dietary: &id374
     - vegan
     - gluten_free
     - vegetarian
-    method:
+    method: &id375
     - oven
-  dietary: []
+  facets:
+    dish_type: *id372
+    meal_type: *id373
+    dietary: *id374
+    method: *id375
+  facet_tokens:
+  - dish_type:bowl
+  - meal_type:dinner
+  - dietary:vegan
+  - dietary:gluten_free
+  - dietary:vegetarian
+  - method:oven
+  facets_summary: bowl · dinner · vegan · gluten free · vegetarian · oven
+  is_reference: false
   yield: 4 servings
   source: url
   verification: needs-review
@@ -1800,15 +3216,32 @@ recipes:
     yaml: recipes/wc-kitchen.thai-peanut-sweet-potato-buddha-bowl.yaml
 - id: wc-kitchen.the-best-apple-crisp
   name: The Best Apple Crisp
-  category: []
+  categories:
+    dish_type: &id376
+    - dessert
+    meal_type: &id377
+    - dessert
   tags:
-    cuisine:
+    cuisine: &id378
     - american
-    method:
+    method: &id379
     - oven
-    season:
+    season: &id380
     - fall
-  dietary: []
+  facets:
+    dish_type: *id376
+    meal_type: *id377
+    cuisine: *id378
+    method: *id379
+    season: *id380
+  facet_tokens:
+  - dish_type:dessert
+  - meal_type:dessert
+  - cuisine:american
+  - method:oven
+  - season:fall
+  facets_summary: dessert · dessert · american · oven · fall
+  is_reference: false
   yield: 8 servings
   source: url
   verification: verified
@@ -1818,15 +3251,32 @@ recipes:
     yaml: recipes/wc-kitchen.the-best-apple-crisp.yaml
 - id: wc-kitchen.the-best-instant-pot-lentil-soup
   name: The Best Instant Pot Lentil Soup
-  category: []
+  categories:
+    dish_type: &id381
+    - soup
+    meal_type: &id382
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id383
     - indian
-    dietary:
+    dietary: &id384
     - vegetarian
-    method:
+    method: &id385
     - instant_pot
-  dietary: []
+  facets:
+    dish_type: *id381
+    meal_type: *id382
+    cuisine: *id383
+    dietary: *id384
+    method: *id385
+  facet_tokens:
+  - dish_type:soup
+  - meal_type:dinner
+  - cuisine:indian
+  - dietary:vegetarian
+  - method:instant_pot
+  facets_summary: soup · dinner · indian · vegetarian · instant pot
+  is_reference: false
   yield: 3 servings
   source: url
   verification: verified
@@ -1836,11 +3286,24 @@ recipes:
     yaml: recipes/wc-kitchen.the-best-instant-pot-lentil-soup.yaml
 - id: wc-kitchen.the-best-meatloaf-recipe-of-your-life
   name: The Best Meatloaf Recipe Of Your Life
-  category: []
+  categories:
+    dish_type: &id386
+    - main
+    meal_type: &id387
+    - dinner
   tags:
-    method:
+    method: &id388
     - oven
-  dietary: []
+  facets:
+    dish_type: *id386
+    meal_type: *id387
+    method: *id388
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - method:oven
+  facets_summary: main · dinner · oven
+  is_reference: false
   yield: 8 servings
   source: file
   verification: needs-review
@@ -1850,13 +3313,28 @@ recipes:
     yaml: recipes/wc-kitchen.the-best-meatloaf-recipe-of-your-life.yaml
 - id: wc-kitchen.the-best-swedish-meatballs-recipe
   name: The Best Swedish Meatballs Recipe
-  category: []
+  categories:
+    dish_type: &id389
+    - main
+    meal_type: &id390
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id391
     - scandinavian
-    method:
+    method: &id392
     - stovetop
-  dietary: []
+  facets:
+    dish_type: *id389
+    meal_type: *id390
+    cuisine: *id391
+    method: *id392
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - cuisine:scandinavian
+  - method:stovetop
+  facets_summary: main · dinner · scandinavian · stovetop
+  is_reference: false
   yield: 8 servings
   source: file
   verification: verified
@@ -1866,11 +3344,24 @@ recipes:
     yaml: recipes/wc-kitchen.the-best-swedish-meatballs-recipe.yaml
 - id: wc-kitchen.tomato-relish
   name: Tomato Relish
-  category: []
-  tags:
-    method:
+  categories:
+    dish_type: &id393
     - preserve
-  dietary: []
+    meal_type: &id394
+    - anytime
+  tags:
+    method: &id395
+    - preserve
+  facets:
+    dish_type: *id393
+    meal_type: *id394
+    method: *id395
+  facet_tokens:
+  - dish_type:preserve
+  - meal_type:anytime
+  - method:preserve
+  facets_summary: preserve · anytime · preserve
+  is_reference: false
   yield: 2 kg
   source: file
   verification: verified
@@ -1880,11 +3371,24 @@ recipes:
     yaml: recipes/wc-kitchen.tomato-relish.yaml
 - id: wc-kitchen.toum
   name: Toum (Garlic Whip)
-  category: []
+  categories:
+    dish_type: &id396
+    - sauce
+    meal_type: &id397
+    - anytime
   tags:
-    cuisine:
+    cuisine: &id398
     - middle_eastern
-  dietary: []
+  facets:
+    dish_type: *id396
+    meal_type: *id397
+    cuisine: *id398
+  facet_tokens:
+  - dish_type:sauce
+  - meal_type:anytime
+  - cuisine:middle_eastern
+  facets_summary: sauce · anytime · middle eastern
+  is_reference: false
   yield: 4 1/2 cups
   source: file
   verification: needs-manual-review
@@ -1894,15 +3398,32 @@ recipes:
     yaml: recipes/wc-kitchen.toum.yaml
 - id: wc-kitchen.tuna-and-white-bean-salad
   name: Tuna-and-White-Bean Salad
-  category: []
+  categories:
+    dish_type: &id399
+    - salad
+    meal_type: &id400
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id401
     - italian
-    method:
+    method: &id402
     - no_cook
-    context:
+    context: &id403
     - quick
-  dietary: []
+  facets:
+    dish_type: *id399
+    meal_type: *id400
+    cuisine: *id401
+    method: *id402
+    context: *id403
+  facet_tokens:
+  - dish_type:salad
+  - meal_type:dinner
+  - cuisine:italian
+  - method:no_cook
+  - context:quick
+  facets_summary: salad · dinner · italian · no cook · quick
+  is_reference: false
   yield: ''
   source: file
   verification: verified
@@ -1912,15 +3433,32 @@ recipes:
     yaml: recipes/wc-kitchen.tuna-and-white-bean-salad.yaml
 - id: wc-kitchen.tzatziki
   name: Tzatziki
-  category: []
+  categories:
+    dish_type: &id404
+    - sauce
+    meal_type: &id405
+    - anytime
   tags:
-    cuisine:
+    cuisine: &id406
     - greek
-    dietary:
+    dietary: &id407
     - vegetarian
-    context:
+    context: &id408
     - quick
-  dietary: []
+  facets:
+    dish_type: *id404
+    meal_type: *id405
+    cuisine: *id406
+    dietary: *id407
+    context: *id408
+  facet_tokens:
+  - dish_type:sauce
+  - meal_type:anytime
+  - cuisine:greek
+  - dietary:vegetarian
+  - context:quick
+  facets_summary: sauce · anytime · greek · vegetarian · quick
+  is_reference: false
   yield: 2.5 cups
   source: file
   verification: verified
@@ -1930,11 +3468,24 @@ recipes:
     yaml: recipes/wc-kitchen.tzatziki.yaml
 - id: wc-kitchen.ultimate-bean-dip
   name: Ultimate Bean Dip
-  category: []
+  categories:
+    dish_type: &id409
+    - sauce
+    meal_type: &id410
+    - anytime
   tags:
-    method:
+    method: &id411
     - slow_cooker
-  dietary: []
+  facets:
+    dish_type: *id409
+    meal_type: *id410
+    method: *id411
+  facet_tokens:
+  - dish_type:sauce
+  - meal_type:anytime
+  - method:slow_cooker
+  facets_summary: sauce · anytime · slow cooker
+  is_reference: false
   yield: 1 batch
   source: url
   verification: needs-review
@@ -1944,11 +3495,24 @@ recipes:
     yaml: recipes/wc-kitchen.ultimate-bean-dip.yaml
 - id: wc-kitchen.ultra-crispy-smashed-potatoes
   name: Ultra Crispy Smashed Potatoes
-  category: []
+  categories:
+    dish_type: &id412
+    - side
+    meal_type: &id413
+    - dinner
   tags:
-    method:
+    method: &id414
     - oven
-  dietary: []
+  facets:
+    dish_type: *id412
+    meal_type: *id413
+    method: *id414
+  facet_tokens:
+  - dish_type:side
+  - meal_type:dinner
+  - method:oven
+  facets_summary: side · dinner · oven
+  is_reference: false
   yield: 12 servings
   source: file
   verification: verified
@@ -1958,9 +3522,20 @@ recipes:
     yaml: recipes/wc-kitchen.ultra-crispy-smashed-potatoes.yaml
 - id: wc-kitchen.unstuffed-bell-peppers
   name: Unstuffed Bell Peppers
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id415
+    - main
+    meal_type: &id416
+    - dinner
+  tags: {}
+  facets:
+    dish_type: *id415
+    meal_type: *id416
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  facets_summary: main · dinner
+  is_reference: false
   yield: 4 servings
   source: file
   verification: verified
@@ -1970,15 +3545,32 @@ recipes:
     yaml: recipes/wc-kitchen.unstuffed-bell-peppers.yaml
 - id: wc-kitchen.vegetarian-burrito-bowls
   name: Vegetarian Burrito Bowls
-  category: []
+  categories:
+    dish_type: &id417
+    - bowl
+    meal_type: &id418
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id419
     - mexican
-    dietary:
+    dietary: &id420
     - vegetarian
-    context:
+    context: &id421
     - quick
-  dietary: []
+  facets:
+    dish_type: *id417
+    meal_type: *id418
+    cuisine: *id419
+    dietary: *id420
+    context: *id421
+  facet_tokens:
+  - dish_type:bowl
+  - meal_type:dinner
+  - cuisine:mexican
+  - dietary:vegetarian
+  - context:quick
+  facets_summary: bowl · dinner · mexican · vegetarian · quick
+  is_reference: false
   yield: 4 servings
   source: url
   verification: verified
@@ -1988,17 +3580,36 @@ recipes:
     yaml: recipes/wc-kitchen.vegetarian-burrito-bowls.yaml
 - id: wc-kitchen.vegetarian-lentil-tortilla-soup
   name: Vegetarian Lentil Tortilla Soup
-  category: []
+  categories:
+    dish_type: &id422
+    - main
+    meal_type: &id423
+    - dinner
   tags:
-    cuisine:
+    cuisine: &id424
     - mexican
-    dietary:
+    dietary: &id425
     - vegetarian
-    method:
+    method: &id426
     - slow_cooker
-    context:
+    context: &id427
     - make_ahead
-  dietary: []
+  facets:
+    dish_type: *id422
+    meal_type: *id423
+    cuisine: *id424
+    dietary: *id425
+    method: *id426
+    context: *id427
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - cuisine:mexican
+  - dietary:vegetarian
+  - method:slow_cooker
+  - context:make_ahead
+  facets_summary: main · dinner · mexican · vegetarian · slow cooker · make ahead
+  is_reference: false
   yield: 6 cups
   source: file
   verification: needs-manual-review
@@ -2008,9 +3619,20 @@ recipes:
     yaml: recipes/wc-kitchen.vegetarian-lentil-tortilla-soup.yaml
 - id: wc-kitchen.waffles-i
   name: Waffles I
-  category: []
-  tags: []
-  dietary: []
+  categories:
+    dish_type: &id428
+    - bread
+    meal_type: &id429
+    - breakfast
+  tags: {}
+  facets:
+    dish_type: *id428
+    meal_type: *id429
+  facet_tokens:
+  - dish_type:bread
+  - meal_type:breakfast
+  facets_summary: bread · breakfast
+  is_reference: false
   yield: ''
   source: url
   verification: verified
@@ -2020,11 +3642,24 @@ recipes:
     yaml: recipes/wc-kitchen.waffles-i.yaml
 - id: wc-kitchen.white-bean-and-ham-soup
   name: White Bean & Ham Soup
-  category: []
+  categories:
+    dish_type: &id430
+    - soup
+    meal_type: &id431
+    - dinner
   tags:
-    method:
+    method: &id432
     - slow_cooker
-  dietary: []
+  facets:
+    dish_type: *id430
+    meal_type: *id431
+    method: *id432
+  facet_tokens:
+  - dish_type:soup
+  - meal_type:dinner
+  - method:slow_cooker
+  facets_summary: soup · dinner · slow cooker
+  is_reference: false
   yield: 4 servings
   source: file
   verification: verified
@@ -2034,11 +3669,24 @@ recipes:
     yaml: recipes/wc-kitchen.white-bean-and-ham-soup.yaml
 - id: wc-kitchen.yellow-curry-with-chicken
   name: Yellow Curry with Chicken (Instant Pot)
-  category: []
+  categories:
+    dish_type: &id433
+    - main
+    meal_type: &id434
+    - dinner
   tags:
-    method:
+    method: &id435
     - instant_pot
-  dietary: []
+  facets:
+    dish_type: *id433
+    meal_type: *id434
+    method: *id435
+  facet_tokens:
+  - dish_type:main
+  - meal_type:dinner
+  - method:instant_pot
+  facets_summary: main · dinner · instant pot
+  is_reference: false
   yield: 6 servings
   source: file
   verification: verified
@@ -2048,13 +3696,28 @@ recipes:
     yaml: recipes/wc-kitchen.yellow-curry-with-chicken.yaml
 - id: wc-kitchen.your-strawberry-jam-recipe
   name: Your Strawberry Jam Recipe (Ball RealFruit Low/No-Sugar Pectin)
-  category: []
-  tags:
-    dietary:
-    - low_sugar
-    method:
+  categories:
+    dish_type: &id436
     - preserve
-  dietary: []
+    meal_type: &id437
+    - anytime
+  tags:
+    dietary: &id438
+    - low_sugar
+    method: &id439
+    - preserve
+  facets:
+    dish_type: *id436
+    meal_type: *id437
+    dietary: *id438
+    method: *id439
+  facet_tokens:
+  - dish_type:preserve
+  - meal_type:anytime
+  - dietary:low_sugar
+  - method:preserve
+  facets_summary: preserve · anytime · low sugar · preserve
+  is_reference: false
   yield: 3 half pints (8 oz)
   source: file
   verification: needs-review
@@ -2064,15 +3727,32 @@ recipes:
     yaml: recipes/wc-kitchen.your-strawberry-jam-recipe.yaml
 - id: wc-kitchen.yule-log-cake
   name: Yule Log Cake (Bûche de Noël)
-  category: []
+  categories:
+    dish_type: &id440
+    - dessert
+    meal_type: &id441
+    - dessert
   tags:
-    cuisine:
+    cuisine: &id442
     - american
-    method:
+    method: &id443
     - oven
-    season:
+    season: &id444
     - winter
-  dietary: []
+  facets:
+    dish_type: *id440
+    meal_type: *id441
+    cuisine: *id442
+    method: *id443
+    season: *id444
+  facet_tokens:
+  - dish_type:dessert
+  - meal_type:dessert
+  - cuisine:american
+  - method:oven
+  - season:winter
+  facets_summary: dessert · dessert · american · oven · winter
+  is_reference: false
   yield: 8 servings
   source: file
   verification: needs-manual-review
@@ -2082,11 +3762,24 @@ recipes:
     yaml: recipes/wc-kitchen.yule-log-cake.yaml
 - id: wc-kitchen.zucchini-bread-muffins
   name: Zucchini Bread Muffins
-  category: []
+  categories:
+    dish_type: &id445
+    - bread
+    meal_type: &id446
+    - dinner
   tags:
-    method:
+    method: &id447
     - oven
-  dietary: []
+  facets:
+    dish_type: *id445
+    meal_type: *id446
+    method: *id447
+  facet_tokens:
+  - dish_type:bread
+  - meal_type:dinner
+  - method:oven
+  facets_summary: bread · dinner · oven
+  is_reference: false
   yield: 12 muffins
   source: file
   verification: verified
@@ -2094,74 +3787,508 @@ recipes:
     html: site/wc-kitchen.zucchini-bread-muffins.html
     pdf: pdfs/wc-kitchen.zucchini-bread-muffins.pdf
     yaml: recipes/wc-kitchen.zucchini-bread-muffins.yaml
+needs_cleanup:
+- id: wc-kitchen.actually-delicious-turkey-burgers
+  name: Actually Delicious Turkey Burgers
+  issues:
+  - flat X-tags list (use structured X-tags)
+  yield: 12 patties
+  links:
+    html: site/wc-kitchen.actually-delicious-turkey-burgers.html
+    pdf: pdfs/wc-kitchen.actually-delicious-turkey-burgers.pdf
+    yaml: recipes/wc-kitchen.actually-delicious-turkey-burgers.yaml
+- id: wc-kitchen.beef-barley-soup
+  name: Beef Barley Soup
+  issues:
+  - flat X-tags list (use structured X-tags)
+  yield: 8 servings
+  links:
+    html: site/wc-kitchen.beef-barley-soup.html
+    pdf: pdfs/wc-kitchen.beef-barley-soup.pdf
+    yaml: recipes/wc-kitchen.beef-barley-soup.yaml
+- id: wc-kitchen.beer-batter-fish
+  name: Beer Batter Fish
+  issues:
+  - flat X-tags list (use structured X-tags)
+  yield: 6 servings
+  links:
+    html: site/wc-kitchen.beer-batter-fish.html
+    pdf: pdfs/wc-kitchen.beer-batter-fish.pdf
+    yaml: recipes/wc-kitchen.beer-batter-fish.yaml
+- id: wc-kitchen.broccoli-cheese-soup
+  name: Broccoli Cheese Soup
+  issues:
+  - flat X-tags list (use structured X-tags)
+  yield: 12 servings
+  links:
+    html: site/wc-kitchen.broccoli-cheese-soup.html
+    pdf: pdfs/wc-kitchen.broccoli-cheese-soup.pdf
+    yaml: recipes/wc-kitchen.broccoli-cheese-soup.yaml
+- id: wc-kitchen.cabbage-soup
+  name: Cabbage Soup
+  issues:
+  - flat X-tags list (use structured X-tags)
+  yield: 8 servings
+  links:
+    html: site/wc-kitchen.cabbage-soup.html
+    pdf: pdfs/wc-kitchen.cabbage-soup.pdf
+    yaml: recipes/wc-kitchen.cabbage-soup.yaml
+- id: wc-kitchen.corn-quesadillas
+  name: Corn Quesadillas
+  issues:
+  - flat X-tags list (use structured X-tags)
+  yield: 4 servings
+  links:
+    html: site/wc-kitchen.corn-quesadillas.html
+    pdf: pdfs/wc-kitchen.corn-quesadillas.pdf
+    yaml: recipes/wc-kitchen.corn-quesadillas.yaml
+- id: wc-kitchen.couscous-feta-salad
+  name: Couscous Feta Salad
+  issues:
+  - flat X-tags list (use structured X-tags)
+  yield: 4 servings
+  links:
+    html: site/wc-kitchen.couscous-feta-salad.html
+    pdf: pdfs/wc-kitchen.couscous-feta-salad.pdf
+    yaml: recipes/wc-kitchen.couscous-feta-salad.yaml
+- id: wc-kitchen.cucumber-salad
+  name: Cucumber Salad
+  issues:
+  - flat X-tags list (use structured X-tags)
+  yield: 4 servings
+  links:
+    html: site/wc-kitchen.cucumber-salad.html
+    pdf: pdfs/wc-kitchen.cucumber-salad.pdf
+    yaml: recipes/wc-kitchen.cucumber-salad.yaml
+- id: wc-kitchen.davids-chicken-and-mushrooms
+  name: David's Chicken & Mushrooms
+  issues:
+  - flat X-tags list (use structured X-tags)
+  yield: 4 servings
+  links:
+    html: site/wc-kitchen.davids-chicken-and-mushrooms.html
+    pdf: pdfs/wc-kitchen.davids-chicken-and-mushrooms.pdf
+    yaml: recipes/wc-kitchen.davids-chicken-and-mushrooms.yaml
+- id: wc-kitchen.dense-bean-salad
+  name: Dense Bean Salad
+  issues:
+  - legacy X-category
+  - legacy X-dietary
+  - flat X-tags list (use structured X-tags)
+  - missing X-categories
+  yield: 6 servings
+  links:
+    html: site/wc-kitchen.dense-bean-salad.html
+    pdf: pdfs/wc-kitchen.dense-bean-salad.pdf
+    yaml: recipes/wc-kitchen.dense-bean-salad.yaml
+- id: wc-kitchen.glazed-carrots
+  name: Glazed Carrots
+  issues:
+  - flat X-tags list (use structured X-tags)
+  yield: 8 servings
+  links:
+    html: site/wc-kitchen.glazed-carrots.html
+    pdf: pdfs/wc-kitchen.glazed-carrots.pdf
+    yaml: recipes/wc-kitchen.glazed-carrots.yaml
+- id: wc-kitchen.poached-cod-with-tomatoes
+  name: Poached Cod with Tomatoes
+  issues:
+  - flat X-tags list (use structured X-tags)
+  yield: 4 servings
+  links:
+    html: site/wc-kitchen.poached-cod-with-tomatoes.html
+    pdf: pdfs/wc-kitchen.poached-cod-with-tomatoes.pdf
+    yaml: recipes/wc-kitchen.poached-cod-with-tomatoes.yaml
+- id: wc-kitchen.taco-salad
+  name: Taco Salad
+  issues:
+  - flat X-tags list (use structured X-tags)
+  yield: 4 servings
+  links:
+    html: site/wc-kitchen.taco-salad.html
+    pdf: pdfs/wc-kitchen.taco-salad.pdf
+    yaml: recipes/wc-kitchen.taco-salad.yaml
+filter_tree:
+- key: dish_type
+  label: Dish type
+  options:
+  - value: beverage
+    label: beverage
+    count: 2
+    token: dish_type:beverage
+  - value: bowl
+    label: bowl
+    count: 5
+    token: dish_type:bowl
+  - value: bread
+    label: bread
+    count: 6
+    token: dish_type:bread
+  - value: breakfast_bake
+    label: breakfast bake
+    count: 1
+    token: dish_type:breakfast_bake
+  - value: burgers+sandwiches
+    label: Burgers & sandwiches
+    count: 2
+    token: dish_type:burgers+sandwiches
+  - value: component
+    label: component
+    count: 2
+    token: dish_type:component
+  - value: dessert
+    label: dessert
+    count: 11
+    token: dish_type:dessert
+  - value: main
+    label: main
+    count: 38
+    token: dish_type:main
+  - value: one_dish
+    label: one dish
+    count: 2
+    token: dish_type:one_dish
+  - value: pasta
+    label: pasta
+    count: 8
+    token: dish_type:pasta
+  - value: preserve
+    label: preserve
+    count: 5
+    token: dish_type:preserve
+  - value: salad
+    label: salad
+    count: 10
+    token: dish_type:salad
+  - value: sauce
+    label: sauce
+    count: 9
+    token: dish_type:sauce
+  - value: side
+    label: side
+    count: 14
+    token: dish_type:side
+  - value: soup
+    label: soup
+    count: 18
+    token: dish_type:soup
+- key: meal_type
+  label: Meal type
+  options:
+  - value: anytime
+    label: anytime
+    count: 17
+    token: meal_type:anytime
+  - value: breakfast
+    label: breakfast
+    count: 7
+    token: meal_type:breakfast
+  - value: dessert
+    label: dessert
+    count: 11
+    token: meal_type:dessert
+  - value: dinner
+    label: dinner
+    count: 91
+    token: meal_type:dinner
+  - value: snack
+    label: snack
+    count: 1
+    token: meal_type:snack
+- key: meal_role
+  label: Meal role
+  options:
+  - value: one_dish_meal
+    label: one dish meal
+    count: 2
+    token: meal_role:one_dish_meal
+- key: cuisine
+  label: Cuisine
+  options:
+  - value: american
+    label: american
+    count: 10
+    token: cuisine:american
+  - value: asian
+    label: asian
+    count: 2
+    token: cuisine:asian
+  - value: cajun
+    label: cajun
+    count: 1
+    token: cuisine:cajun
+  - value: french
+    label: french
+    count: 2
+    token: cuisine:french
+  - value: german
+    label: german
+    count: 1
+    token: cuisine:german
+  - value: greek
+    label: greek
+    count: 1
+    token: cuisine:greek
+  - value: indian
+    label: indian
+    count: 3
+    token: cuisine:indian
+  - value: italian
+    label: italian
+    count: 4
+    token: cuisine:italian
+  - value: japanese
+    label: japanese
+    count: 2
+    token: cuisine:japanese
+  - value: korean
+    label: korean
+    count: 1
+    token: cuisine:korean
+  - value: mediterranean
+    label: mediterranean
+    count: 1
+    token: cuisine:mediterranean
+  - value: mexican
+    label: mexican
+    count: 3
+    token: cuisine:mexican
+  - value: middle_eastern
+    label: middle eastern
+    count: 2
+    token: cuisine:middle_eastern
+  - value: scandinavian
+    label: scandinavian
+    count: 1
+    token: cuisine:scandinavian
+  - value: seafood
+    label: seafood
+    count: 3
+    token: cuisine:seafood
+  - value: thai
+    label: thai
+    count: 3
+    token: cuisine:thai
+- key: dietary
+  label: Dietary
+  options:
+  - value: dairy_free
+    label: dairy free
+    count: 3
+    token: dietary:dairy_free
+  - value: gluten_free
+    label: gluten free
+    count: 5
+    token: dietary:gluten_free
+  - value: gluten_free_adaptable
+    label: gluten free adaptable
+    count: 1
+    token: dietary:gluten_free_adaptable
+  - value: low_fat
+    label: low fat
+    count: 1
+    token: dietary:low_fat
+  - value: low_sugar
+    label: low sugar
+    count: 4
+    token: dietary:low_sugar
+  - value: vegan
+    label: vegan
+    count: 8
+    token: dietary:vegan
+  - value: vegetarian
+    label: vegetarian
+    count: 25
+    token: dietary:vegetarian
+  - value: vegetarian_adaptable
+    label: vegetarian adaptable
+    count: 2
+    token: dietary:vegetarian_adaptable
+  - value: whole30
+    label: whole30
+    count: 1
+    token: dietary:whole30
+- key: method
+  label: Method
+  options:
+  - value: grill
+    label: grill
+    count: 1
+    token: method:grill
+  - value: instant_pot
+    label: instant pot
+    count: 14
+    token: method:instant_pot
+  - value: no_cook
+    label: no cook
+    count: 2
+    token: method:no_cook
+  - value: oven
+    label: oven
+    count: 40
+    token: method:oven
+  - value: preserve
+    label: preserve
+    count: 5
+    token: method:preserve
+  - value: slow_cooker
+    label: slow cooker
+    count: 10
+    token: method:slow_cooker
+  - value: stovetop
+    label: stovetop
+    count: 10
+    token: method:stovetop
+- key: context
+  label: Context
+  options:
+  - value: comfort_food
+    label: comfort food
+    count: 3
+    token: context:comfort_food
+  - value: freezer_friendly
+    label: freezer friendly
+    count: 2
+    token: context:freezer_friendly
+  - value: holiday
+    label: holiday
+    count: 2
+    token: context:holiday
+  - value: leftovers_friendly
+    label: leftovers friendly
+    count: 1
+    token: context:leftovers_friendly
+  - value: make_ahead
+    label: make ahead
+    count: 5
+    token: context:make_ahead
+  - value: meal_prep
+    label: meal prep
+    count: 2
+    token: context:meal_prep
+  - value: quick
+    label: quick
+    count: 11
+    token: context:quick
+  - value: weeknight
+    label: weeknight
+    count: 2
+    token: context:weeknight
+- key: season
+  label: Season
+  options:
+  - value: fall
+    label: fall
+    count: 3
+    token: season:fall
+  - value: summer
+    label: summer
+    count: 1
+    token: season:summer
+  - value: winter
+    label: winter
+    count: 2
+    token: season:winter
+- key: primary_ingredient
+  label: Primary ingredient
+  options:
+  - value: bacon
+    label: bacon
+    count: 1
+    token: primary_ingredient:bacon
+  - value: potatoes
+    label: potatoes
+    count: 2
+    token: primary_ingredient:potatoes
+- key: flavor_profile
+  label: Flavor profile
+  options:
+  - value: creamy
+    label: creamy
+    count: 1
+    token: flavor_profile:creamy
+  - value: hearty
+    label: hearty
+    count: 1
+    token: flavor_profile:hearty
+  - value: savory
+    label: savory
+    count: 1
+    token: flavor_profile:savory
 warnings:
 - 'wc-kitchen.15-minute-miso-soup-with-greens-and-tofu: stale html (older than YAML)'
 - 'wc-kitchen.30-minute-dairy-free-potato-soup: stale html (older than YAML)'
-- 'wc-kitchen.actually-delicious-turkey-burgers: stale html (older than YAML)'
 - 'wc-kitchen.all-purpose-thai-basil-sauce: stale html (older than YAML)'
+- 'wc-kitchen.all-purpose-thai-basil-sauce: stale pdf (older than YAML)'
 - 'wc-kitchen.bacon-onion-tart: stale html (older than YAML)'
 - 'wc-kitchen.bacon-shrimp-sweet-potatoes: stale html (older than YAML)'
 - 'wc-kitchen.baked-acorn-squash-with-butter-and-brown-sugar: stale html (older than
   YAML)'
 - 'wc-kitchen.baked-oatmeal-with-cranberries-and-almonds: stale html (older than YAML)'
+- 'wc-kitchen.baked-oatmeal-with-cranberries-and-almonds: stale pdf (older than YAML)'
 - 'wc-kitchen.ball-realfruit-low-or-no-sugar-jam: stale html (older than YAML)'
-- 'wc-kitchen.beef-barley-soup: stale html (older than YAML)'
 - 'wc-kitchen.beef-bolognese-with-parsnips: stale html (older than YAML)'
 - 'wc-kitchen.beef-brisket: stale html (older than YAML)'
-- 'wc-kitchen.beer-batter-fish: stale html (older than YAML)'
 - 'wc-kitchen.beginners-guide-to-french-macarons: stale html (older than YAML)'
 - 'wc-kitchen.best-bean-salad: stale html (older than YAML)'
 - 'wc-kitchen.vegetable-lasagna: stale html (older than YAML)'
+- 'wc-kitchen.vegetable-lasagna: stale pdf (older than YAML)'
 - 'wc-kitchen.binder-index-page-1: stale html (older than YAML)'
 - 'wc-kitchen.binder-index: stale html (older than YAML)'
 - 'wc-kitchen.black-bean-and-corn-salad-ii: stale html (older than YAML)'
 - 'wc-kitchen.black-bean-soup: stale html (older than YAML)'
 - 'wc-kitchen.blackened-mahi-mahi: stale html (older than YAML)'
 - 'wc-kitchen.bratkartoffeln: stale html (older than YAML)'
-- 'wc-kitchen.broccoli-cheese-soup: stale html (older than YAML)'
 - 'wc-kitchen.brussels-sprout-salad-with-maple-vinaigrette: stale html (older than
   YAML)'
-- 'wc-kitchen.cabbage-soup: stale html (older than YAML)'
 - 'wc-kitchen.candied-sweet-potatoes: stale html (older than YAML)'
 - 'wc-kitchen.chana-masala: stale html (older than YAML)'
 - 'wc-kitchen.chicken-and-vegetable-pot-pie: stale html (older than YAML)'
+- 'wc-kitchen.chicken-and-vegetable-pot-pie: stale pdf (older than YAML)'
 - 'wc-kitchen.chicken-and-veggie-enchiladas: stale html (older than YAML)'
+- 'wc-kitchen.chicken-and-veggie-enchiladas: stale pdf (older than YAML)'
 - 'wc-kitchen.chicken-katsu-recipe: stale html (older than YAML)'
 - 'wc-kitchen.chicken-soup: stale html (older than YAML)'
 - 'wc-kitchen.chicken-tikka-masala: stale html (older than YAML)'
 - 'wc-kitchen.chicken-with-creamy-mushroom-sauce: stale html (older than YAML)'
+- 'wc-kitchen.chicken-with-creamy-mushroom-sauce: stale pdf (older than YAML)'
 - 'wc-kitchen.chili-recipe: stale html (older than YAML)'
+- 'wc-kitchen.chili-recipe: stale pdf (older than YAML)'
 - 'wc-kitchen.chocolate-biscotti: stale html (older than YAML)'
+- 'wc-kitchen.chocolate-biscotti: stale pdf (older than YAML)'
 - 'wc-kitchen.chocolate-olive-oil-cake: stale html (older than YAML)'
+- 'wc-kitchen.chocolate-olive-oil-cake: stale pdf (older than YAML)'
 - 'wc-kitchen.corn-chowder: stale html (older than YAML)'
-- 'wc-kitchen.corn-quesadillas: stale html (older than YAML)'
-- 'wc-kitchen.couscous-feta-salad: stale html (older than YAML)'
 - 'wc-kitchen.crab-salad: stale html (older than YAML)'
+- 'wc-kitchen.crab-salad: stale pdf (older than YAML)'
 - 'wc-kitchen.creamy-broccoli-pasta: stale html (older than YAML)'
 - 'wc-kitchen.creamy-gnocchi-with-sun-dried-tomatoes: stale html (older than YAML)'
 - 'wc-kitchen.creamy-sriracha-mayo-recipe: stale html (older than YAML)'
 - 'wc-kitchen.creamy-tomato-soup: stale html (older than YAML)'
 - 'wc-kitchen.creamy-tortellini-soup: stale html (older than YAML)'
 - 'wc-kitchen.crispy-slow-cooker-carnitas: stale html (older than YAML)'
-- 'wc-kitchen.cucumber-salad: stale html (older than YAML)'
+- 'wc-kitchen.crispy-slow-cooker-carnitas: stale pdf (older than YAML)'
 - 'wc-kitchen.curried-chicken-salad: stale html (older than YAML)'
 - 'wc-kitchen.dairy-free-quiche-lorraine: stale html (older than YAML)'
-- 'wc-kitchen.davids-chicken-and-mushrooms: stale html (older than YAML)'
 - 'wc-kitchen.dumpling-noodle-soup: stale html (older than YAML)'
 - 'wc-kitchen.easy-broccoli-quiche: stale html (older than YAML)'
+- 'wc-kitchen.easy-broccoli-quiche: stale pdf (older than YAML)'
 - 'wc-kitchen.easy-pad-thai: stale html (older than YAML)'
+- 'wc-kitchen.easy-pad-thai: stale pdf (older than YAML)'
 - 'wc-kitchen.everyday-instant-pot-dal: stale html (older than YAML)'
 - 'wc-kitchen.fluffy-almond-flour-pancakes: stale html (older than YAML)'
 - 'wc-kitchen.french-macarons: stale html (older than YAML)'
 - 'wc-kitchen.ginger-pork-lettuce-wraps: stale html (older than YAML)'
-- 'wc-kitchen.glazed-carrots: stale html (older than YAML)'
 - 'wc-kitchen.gochujang-roasted-carrots: stale html (older than YAML)'
 - 'wc-kitchen.grilled-broccoli: stale html (older than YAML)'
+- 'wc-kitchen.grilled-broccoli: stale pdf (older than YAML)'
 - 'wc-kitchen.ground-turkey-and-potato-skillet: stale html (older than YAML)'
 - 'wc-kitchen.healthy-blueberry-muffins: stale html (older than YAML)'
 - 'wc-kitchen.healthy-sloppy-joes: stale html (older than YAML)'
+- 'wc-kitchen.healthy-sloppy-joes: stale pdf (older than YAML)'
 - 'wc-kitchen.homemade-drop-biscuits-recipe: stale html (older than YAML)'
 - 'wc-kitchen.homemade-hot-chocolate-mix: stale html (older than YAML)'
+- 'wc-kitchen.homemade-hot-chocolate-mix: stale pdf (older than YAML)'
 - 'wc-kitchen.honey-apple-galette-with-pistachio-sugar: stale html (older than YAML)'
 - 'wc-kitchen.honey-lemon-vinaigrette: stale html (older than YAML)'
 - 'wc-kitchen.how-to-make-instant-pot-farro: stale html (older than YAML)'
@@ -2172,8 +4299,10 @@ warnings:
 - 'wc-kitchen.instant-pot-parmesan-risotto: stale html (older than YAML)'
 - 'wc-kitchen.instant-pot-ramen-noodles: stale html (older than YAML)'
 - 'wc-kitchen.instant-pot-red-beans-and-rice: stale html (older than YAML)'
+- 'wc-kitchen.instant-pot-red-beans-and-rice: stale pdf (older than YAML)'
 - 'wc-kitchen.instant-pot-teriyaki-turkey-meatballs: stale html (older than YAML)'
 - 'wc-kitchen.kashi-oatmeal-chocolate-chip-cookies: stale html (older than YAML)'
+- 'wc-kitchen.kashi-oatmeal-chocolate-chip-cookies: stale pdf (older than YAML)'
 - 'wc-kitchen.kitchen-sink-cookies: stale html (older than YAML)'
 - 'wc-kitchen.korean-beef-bowl: stale html (older than YAML)'
 - 'wc-kitchen.macaroni-and-hamburger: stale html (older than YAML)'
@@ -2182,27 +4311,36 @@ warnings:
 - 'wc-kitchen.middle-eastern-lentil-soup: stale html (older than YAML)'
 - 'wc-kitchen.miso-dumpling-soup: stale html (older than YAML)'
 - 'wc-kitchen.moist-chocolate-cake: stale html (older than YAML)'
+- 'wc-kitchen.moist-chocolate-cake: stale pdf (older than YAML)'
 - 'wc-kitchen.mushroom-onion-and-sage-stuffing: stale html (older than YAML)'
 - 'wc-kitchen.oven-fried-chicken-ii: stale html (older than YAML)'
 - 'wc-kitchen.pappardelle-with-mushrooms: stale html (older than YAML)'
+- 'wc-kitchen.pappardelle-with-mushrooms: stale pdf (older than YAML)'
 - 'wc-kitchen.pasta-e-piselli: stale html (older than YAML)'
+- 'wc-kitchen.pasta-e-piselli: stale pdf (older than YAML)'
 - 'wc-kitchen.perfect-pie-dough: stale html (older than YAML)'
+- 'wc-kitchen.perfect-pie-dough: stale pdf (older than YAML)'
 - 'wc-kitchen.perfect-pot-roast: stale html (older than YAML)'
-- 'wc-kitchen.poached-cod-with-tomatoes: stale html (older than YAML)'
+- 'wc-kitchen.perfect-pot-roast: stale pdf (older than YAML)'
 - 'wc-kitchen.pork-breakfast-chops: stale html (older than YAML)'
 - 'wc-kitchen.potato-leek-soup: stale html (older than YAML)'
+- 'wc-kitchen.potato-leek-soup: stale pdf (older than YAML)'
 - 'wc-kitchen.quick-and-easy-red-lentil-dahl: stale html (older than YAML)'
 - 'wc-kitchen.quick-pickled-red-onion: stale html (older than YAML)'
 - 'wc-kitchen.ratatouille: stale html (older than YAML)'
+- 'wc-kitchen.ratatouille: stale pdf (older than YAML)'
 - 'wc-kitchen.rice-pilaf: stale html (older than YAML)'
 - 'wc-kitchen.roasted-potatoes-and-kielbasa: stale html (older than YAML)'
 - 'wc-kitchen.roasted-shiitake-bibimbap: stale html (older than YAML)'
 - 'wc-kitchen.salmon-burgers-with-slaw: stale html (older than YAML)'
 - 'wc-kitchen.shakshuka-with-feta: stale html (older than YAML)'
+- 'wc-kitchen.shakshuka-with-feta: stale pdf (older than YAML)'
 - 'wc-kitchen.shepherds-pie: stale html (older than YAML)'
+- 'wc-kitchen.shepherds-pie: stale pdf (older than YAML)'
 - 'wc-kitchen.shrimp-fettuccine-alfredo: stale html (older than YAML)'
 - 'wc-kitchen.simple-zucchini-bread: stale html (older than YAML)'
 - 'wc-kitchen.slow-cooker-beef-stew: stale html (older than YAML)'
+- 'wc-kitchen.slow-cooker-beef-stew: stale pdf (older than YAML)'
 - 'wc-kitchen.slow-cooker-corn-chowder: stale html (older than YAML)'
 - 'wc-kitchen.slow-cooked-southwest-chicken: stale html (older than YAML)'
 - 'wc-kitchen.soft-and-chewy-chocolate-chip-cookies: stale html (older than YAML)'
@@ -2210,32 +4348,67 @@ warnings:
 - 'wc-kitchen.spaghetti-carbonara: stale html (older than YAML)'
 - 'wc-kitchen.sparkling-apple-cider-gin-cocktail: stale html (older than YAML)'
 - 'wc-kitchen.split-pea-soup: stale html (older than YAML)'
+- 'wc-kitchen.split-pea-soup: stale pdf (older than YAML)'
 - 'wc-kitchen.sweet-pickled-radishes: stale html (older than YAML)'
+- 'wc-kitchen.sweet-pickled-radishes: stale pdf (older than YAML)'
 - 'wc-kitchen.sweet-potato-chickpea-buddha-bowl-with-peanut-sauce: stale html (older
   than YAML)'
 - 'wc-kitchen.taco-pasta-salad: stale html (older than YAML)'
-- 'wc-kitchen.taco-salad: stale html (older than YAML)'
 - 'wc-kitchen.teriyaki-turkey-rice-bowl: stale html (older than YAML)'
+- 'wc-kitchen.teriyaki-turkey-rice-bowl: stale pdf (older than YAML)'
 - 'wc-kitchen.thai-cucumber-salad: stale html (older than YAML)'
 - 'wc-kitchen.thai-peanut-sauce: stale html (older than YAML)'
 - 'wc-kitchen.thai-peanut-sauce-jessica-hylton: stale html (older than YAML)'
 - 'wc-kitchen.thai-peanut-sweet-potato-buddha-bowl: stale html (older than YAML)'
 - 'wc-kitchen.the-best-apple-crisp: stale html (older than YAML)'
+- 'wc-kitchen.the-best-apple-crisp: stale pdf (older than YAML)'
 - 'wc-kitchen.the-best-instant-pot-lentil-soup: stale html (older than YAML)'
 - 'wc-kitchen.the-best-meatloaf-recipe-of-your-life: stale html (older than YAML)'
 - 'wc-kitchen.the-best-swedish-meatballs-recipe: stale html (older than YAML)'
+- 'wc-kitchen.the-best-swedish-meatballs-recipe: stale pdf (older than YAML)'
 - 'wc-kitchen.tomato-relish: stale html (older than YAML)'
 - 'wc-kitchen.toum: stale html (older than YAML)'
+- 'wc-kitchen.toum: stale pdf (older than YAML)'
 - 'wc-kitchen.tuna-and-white-bean-salad: stale html (older than YAML)'
 - 'wc-kitchen.tzatziki: stale html (older than YAML)'
+- 'wc-kitchen.tzatziki: stale pdf (older than YAML)'
 - 'wc-kitchen.ultimate-bean-dip: stale html (older than YAML)'
 - 'wc-kitchen.ultra-crispy-smashed-potatoes: stale html (older than YAML)'
+- 'wc-kitchen.ultra-crispy-smashed-potatoes: stale pdf (older than YAML)'
 - 'wc-kitchen.unstuffed-bell-peppers: stale html (older than YAML)'
 - 'wc-kitchen.vegetarian-burrito-bowls: stale html (older than YAML)'
 - 'wc-kitchen.vegetarian-lentil-tortilla-soup: stale html (older than YAML)'
+- 'wc-kitchen.vegetarian-lentil-tortilla-soup: stale pdf (older than YAML)'
 - 'wc-kitchen.waffles-i: stale html (older than YAML)'
 - 'wc-kitchen.white-bean-and-ham-soup: stale html (older than YAML)'
 - 'wc-kitchen.yellow-curry-with-chicken: stale html (older than YAML)'
+- 'wc-kitchen.yellow-curry-with-chicken: stale pdf (older than YAML)'
 - 'wc-kitchen.your-strawberry-jam-recipe: stale html (older than YAML)'
 - 'wc-kitchen.yule-log-cake: stale html (older than YAML)'
 - 'wc-kitchen.zucchini-bread-muffins: stale html (older than YAML)'
+- 'wc-kitchen.actually-delicious-turkey-burgers: stale html (older than YAML)'
+- 'wc-kitchen.actually-delicious-turkey-burgers: stale pdf (older than YAML)'
+- 'wc-kitchen.beef-barley-soup: stale html (older than YAML)'
+- 'wc-kitchen.beef-barley-soup: stale pdf (older than YAML)'
+- 'wc-kitchen.beer-batter-fish: stale html (older than YAML)'
+- 'wc-kitchen.beer-batter-fish: stale pdf (older than YAML)'
+- 'wc-kitchen.broccoli-cheese-soup: stale html (older than YAML)'
+- 'wc-kitchen.broccoli-cheese-soup: stale pdf (older than YAML)'
+- 'wc-kitchen.cabbage-soup: stale html (older than YAML)'
+- 'wc-kitchen.cabbage-soup: stale pdf (older than YAML)'
+- 'wc-kitchen.corn-quesadillas: stale html (older than YAML)'
+- 'wc-kitchen.corn-quesadillas: stale pdf (older than YAML)'
+- 'wc-kitchen.couscous-feta-salad: stale html (older than YAML)'
+- 'wc-kitchen.couscous-feta-salad: stale pdf (older than YAML)'
+- 'wc-kitchen.cucumber-salad: stale html (older than YAML)'
+- 'wc-kitchen.cucumber-salad: stale pdf (older than YAML)'
+- 'wc-kitchen.davids-chicken-and-mushrooms: stale html (older than YAML)'
+- 'wc-kitchen.davids-chicken-and-mushrooms: stale pdf (older than YAML)'
+- 'wc-kitchen.dense-bean-salad: missing html at site/wc-kitchen.dense-bean-salad.html'
+- 'wc-kitchen.dense-bean-salad: missing pdf at pdfs/wc-kitchen.dense-bean-salad.pdf'
+- 'wc-kitchen.glazed-carrots: stale html (older than YAML)'
+- 'wc-kitchen.glazed-carrots: stale pdf (older than YAML)'
+- 'wc-kitchen.poached-cod-with-tomatoes: stale html (older than YAML)'
+- 'wc-kitchen.poached-cod-with-tomatoes: stale pdf (older than YAML)'
+- 'wc-kitchen.taco-salad: stale html (older than YAML)'
+- 'wc-kitchen.taco-salad: stale pdf (older than YAML)'

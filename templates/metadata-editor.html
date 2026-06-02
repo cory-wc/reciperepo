@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Recipe metadata editor</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 0;
+    color: #222;
+    background: #f6f4f1;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0.75rem 1rem;
+  }
+  h1 { font-size: 1.1rem; margin: 0 0 0.35rem; }
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  .toolbar label { display: flex; align-items: center; gap: 0.35rem; }
+  #search {
+    min-width: 14rem;
+    padding: 0.35rem 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  #status { color: #666; margin-left: auto; }
+  .table-wrap {
+    overflow: auto;
+    max-height: calc(100vh - 5rem);
+    margin: 0.5rem;
+    border: 1px solid #ddd;
+    background: #fff;
+  }
+  table {
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    width: max-content;
+    min-width: 100%;
+  }
+  th, td {
+    border-bottom: 1px solid #eee;
+    padding: 0.35rem 0.45rem;
+    vertical-align: top;
+  }
+  th {
+    position: sticky;
+    top: 0;
+    background: #faf8f5;
+    z-index: 1;
+    text-align: left;
+    white-space: nowrap;
+  }
+  th.group-categories { background: #eef4ee; }
+  th.group-tags { background: #eef0f8; }
+  .col-name { min-width: 12rem; max-width: 16rem; }
+  .col-id { font-family: ui-monospace, monospace; font-size: 0.75rem; color: #666; }
+  .col-issues { min-width: 10rem; max-width: 14rem; font-size: 0.78rem; color: #884; }
+  .col-legacy { min-width: 10rem; max-width: 14rem; font-size: 0.78rem; color: #666; }
+  .ok { color: #383; }
+  input.field {
+    width: 9rem;
+    font: inherit;
+    padding: 0.2rem 0.35rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  input.field.dirty { border-color: #b80; background: #fffbf0; }
+  tr.needs-cleanup { background: #fff9f0; }
+  tr.hidden { display: none; }
+  button.save {
+    font: inherit;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    border: 1px solid #504a43;
+    background: #faf8f5;
+    border-radius: 4px;
+  }
+  button.save:disabled { opacity: 0.5; cursor: default; }
+  .hint {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.25rem;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Recipe metadata editor</h1>
+  <div class="toolbar">
+    <input type="search" id="search" placeholder="Search by name or id…">
+    <label><input type="checkbox" id="cleanup-only"> Needs cleanup only</label>
+    <span id="status">Loading…</span>
+  </div>
+  <p class="hint">Comma-separated values per cell (snake_case). Save updates <code>X-categories</code> / <code>X-tags</code> and removes legacy <code>X-category</code>, <code>X-dietary</code>, <code>X-cuisine</code>.</p>
+</header>
+<div class="table-wrap">
+  <table>
+    <thead id="thead"></thead>
+    <tbody id="tbody"></tbody>
+  </table>
+</div>
+<script>
+const CONFIG = __CONFIG__;
+const tbody = document.getElementById("tbody");
+const thead = document.getElementById("thead");
+const statusEl = document.getElementById("status");
+const searchEl = document.getElementById("search");
+const cleanupOnlyEl = document.getElementById("cleanup-only");
+
+let recipes = [];
+
+function esc(s) {
+  return String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/"/g, "&quot;");
+}
+
+function buildHeader() {
+  let html = "<tr>";
+  html += "<th>Status</th><th class=\"col-name\">Recipe</th><th class=\"col-id\">ID</th>";
+  html += "<th class=\"col-issues\">Issues</th><th class=\"col-legacy\">Legacy</th>";
+  for (const col of CONFIG.columns) {
+    html += `<th class="group-${col.group}">${esc(col.label)}</th>`;
+  }
+  html += "<th>Save</th></tr>";
+  thead.innerHTML = html;
+}
+
+function rowMatchesFilter(row) {
+  const q = searchEl.value.trim().toLowerCase();
+  if (cleanupOnlyEl.checked && row.filterable) return false;
+  if (!q) return true;
+  return row.name.toLowerCase().includes(q) || row.id.toLowerCase().includes(q);
+}
+
+function renderTable() {
+  tbody.innerHTML = "";
+  let visible = 0;
+  for (const row of recipes) {
+    const tr = document.createElement("tr");
+    if (!row.filterable) tr.classList.add("needs-cleanup");
+    if (!rowMatchesFilter(row)) {
+      tr.classList.add("hidden");
+    } else {
+      visible += 1;
+    }
+    tr.dataset.id = row.id;
+
+    const status = row.filterable
+      ? '<span class="ok">OK</span>'
+      : "Needs cleanup";
+    let cells = `<td>${status}</td>`;
+    cells += `<td class="col-name">${esc(row.name)}</td>`;
+    cells += `<td class="col-id">${esc(row.id)}</td>`;
+    cells += `<td class="col-issues">${esc((row.issues || []).join("; ") || "—")}</td>`;
+    cells += `<td class="col-legacy">${esc(row.legacy || "—")}</td>`;
+
+    for (const col of CONFIG.columns) {
+      const val = (row.fields && row.fields[col.key]) || "";
+      cells += `<td><input class="field" data-key="${col.key}" value="${esc(val)}" spellcheck="false"></td>`;
+    }
+
+    cells += `<td><button type="button" class="save" disabled>Save</button></td>`;
+    tr.innerHTML = cells;
+    tbody.appendChild(tr);
+
+    const saveBtn = tr.querySelector(".save");
+    tr.querySelectorAll("input.field").forEach((input) => {
+      input.addEventListener("input", () => {
+        input.classList.add("dirty");
+        saveBtn.disabled = false;
+      });
+    });
+    saveBtn.addEventListener("click", () => saveRow(tr));
+  }
+  statusEl.textContent = `${visible} of ${recipes.length} recipes shown`;
+}
+
+async function saveRow(tr) {
+  const id = tr.dataset.id;
+  const fields = {};
+  tr.querySelectorAll("input.field").forEach((input) => {
+    fields[input.dataset.key] = input.value;
+  });
+  const btn = tr.querySelector(".save");
+  btn.disabled = true;
+  btn.textContent = "…";
+  statusEl.textContent = `Saving ${id}…`;
+  try {
+    const res = await fetch(`/api/recipes/${encodeURIComponent(id)}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ fields }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || res.statusText);
+    const idx = recipes.findIndex((r) => r.id === id);
+    if (idx >= 0) recipes[idx] = data.recipe;
+    tr.remove();
+    renderTable();
+    statusEl.textContent = `Saved ${id}`;
+  } catch (err) {
+    btn.disabled = false;
+    btn.textContent = "Save";
+    statusEl.textContent = `Error: ${err.message}`;
+    alert(err.message);
+  }
+}
+
+async function loadRecipes() {
+  const res = await fetch("/api/recipes");
+  const data = await res.json();
+  recipes = data.recipes || [];
+  renderTable();
+}
+
+searchEl.addEventListener("input", renderTable);
+cleanupOnlyEl.addEventListener("change", renderTable);
+buildHeader();
+loadRecipes();
+</script>
+</body>
+</html>

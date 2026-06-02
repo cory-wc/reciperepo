@@ -13,6 +13,8 @@ src/recipe_tool/cli.py
 src/recipe_tool/index.py
 src/recipe_tool/load.py
 src/recipe_tool/metadata_audit.py
+src/recipe_tool/metadata_facets.py
+src/recipe_tool/naming.py
 src/recipe_tool/paths.py
 src/recipe_tool/pdf.py
 src/recipe_tool/render.py
@@ -26,3 +28,4 @@ src/recipe_tool/extract/runner.py
 src/recipe_tool/extract/text.py
 src/recipe_tool/extract/url.py
 src/recipe_tool/extract/vision.py
+tests/test_metadata_facets.py

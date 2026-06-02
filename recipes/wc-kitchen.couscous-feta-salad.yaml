@@ -59,8 +59,20 @@ X-categories:
   meal_type:
   - dinner
 X-tags:
-- infrequent
-
+  cuisine:
+  - mediterranean
+  - middle_eastern
+  dietary:
+  - vegan_adaptable
+  - vegetarian
+  method:
+  - stovetop
+  season:
+  - spring
+  - summer
+  - fall
+  primary_ingredient:
+  - couscous
 X-source-verification:
   status: verified
   notes:

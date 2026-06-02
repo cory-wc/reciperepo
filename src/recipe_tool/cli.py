@@ -12,6 +12,7 @@ from .pdf import generate_all_pdfs, generate_index_pdf, generate_recipe_pdf
 from .render import render_all_recipes, render_recipe_html
 from .shop import format_shopping_list
 from .metadata_audit import audit_all, format_report, write_audit_log
+from .metadata_editor import run_metadata_editor
 from .status import full_status, pending_extractions
 from .validate import validate_all, validate_recipe_id
 
@@ -109,6 +110,15 @@ def cmd_audit_metadata(args: argparse.Namespace) -> int:
     return 1 if args.fail and report.issues else 0
 
 
+def cmd_metadata_ui(args: argparse.Namespace) -> int:
+    run_metadata_editor(
+        host=args.host,
+        port=args.port,
+        open_browser=not args.no_open,
+    )
+    return 0
+
+
 def cmd_new(args: argparse.Namespace) -> int:
     paths = RepoPaths()
     out = paths.recipe_yaml(args.recipe_id)
@@ -187,6 +197,15 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--verbose", action="store_true")
     p.add_argument("--fail", action="store_true", help="Exit 1 if issues found")
     p.set_defaults(func=cmd_audit_metadata)
+
+    p = sub.add_parser(
+        "metadata-ui",
+        help="Local table UI to review and edit X-categories / X-tags",
+    )
+    p.add_argument("--host", default="127.0.0.1")
+    p.add_argument("--port", type=int, default=8765)
+    p.add_argument("--no-open", action="store_true", help="Do not open a browser tab")
+    p.set_defaults(func=cmd_metadata_ui)
 
     p = sub.add_parser("new", help="Scaffold a new recipe YAML")
     p.add_argument("recipe_id")

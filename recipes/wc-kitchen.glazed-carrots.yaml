@@ -44,8 +44,17 @@ X-categories:
   meal_type:
   - dinner
 X-tags:
-- infrequent
-
+  dietary:
+  - vegetarian
+  - vegan_adaptable
+  method:
+  - oven
+  season:
+  - fall
+  - winter
+  - spring
+  primary_ingredient:
+  - carrots
 X-source-verification:
   status: verified
   notes:

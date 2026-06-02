@@ -11,37 +11,237 @@
     font-family: Georgia, 'Times New Roman', serif;
     color: #2e2b28;
     {% if mode == 'screen' %}
-    max-width: 720px;
+    max-width: 960px;
     margin: 2rem auto;
     padding: 0 1rem;
     {% endif %}
   }
   h1 { text-align: center; font-size: {% if mode == 'print' %}24pt{% else %}2rem{% endif %}; }
   .meta { text-align: center; color: #666; font-size: 0.9rem; margin-bottom: 1.5rem; }
+  {% if mode == 'screen' %}
+  .index-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+  }
+  .index-toolbar button {
+    font: inherit;
+    cursor: pointer;
+    border: 1px solid #504a43;
+    background: #faf8f5;
+    color: #2e2b28;
+    padding: 0.35rem 0.75rem;
+    border-radius: 4px;
+  }
+  .index-toolbar button:hover { background: #efe9e0; }
+  #filter-result-count { color: #666; flex: 1; min-width: 12rem; }
+  #filter-clear-all[hidden] { display: none; }
+  .filter-lozenges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 0.75rem;
+    min-height: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+  }
+  .filter-lozenge {
+    border: 1px solid #c4bdb3;
+    background: #f0ebe3;
+    border-radius: 999px;
+    padding: 0.2rem 0.55rem;
+    cursor: pointer;
+  }
+  .filter-lozenge:hover { background: #e5ddd2; }
+  .include-reference { font-size: 0.85rem; color: #444; }
+  #filter-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.25);
+    z-index: 10;
+  }
+  #filter-backdrop[hidden], #filter-panel[hidden] { display: none; }
+  #filter-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(360px, 92vw);
+    height: 100%;
+    overflow: auto;
+    background: #fff;
+    border-left: 1px solid #ccc;
+    z-index: 11;
+    padding: 1rem;
+    box-shadow: -4px 0 16px rgba(0,0,0,0.08);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+  }
+  #filter-panel h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.1rem;
+    font-family: Georgia, serif;
+  }
+  .filter-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  #filter-search {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.4rem 0.5rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font: inherit;
+  }
+  .filter-group { margin-bottom: 0.5rem; border-bottom: 1px solid #eee; padding-bottom: 0.35rem; }
+  .filter-group[hidden] { display: none; }
+  .filter-group-header {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0.35rem 0;
+    font: inherit;
+    font-weight: 700;
+    text-align: left;
+    cursor: default;
+    color: #504a43;
+  }
+  .filter-group-toggle { cursor: pointer; }
+  .filter-group-toggle::before {
+    content: '▾';
+    display: inline-block;
+    width: 1em;
+    color: #888;
+  }
+  .filter-group-toggle[aria-expanded="false"]::before { content: '▸'; }
+  .filter-clear-facet {
+    margin-left: auto;
+    font-size: 0.75rem;
+    font-weight: normal;
+    color: #666;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  .filter-clear-facet:hover { text-decoration: underline; }
+  .filter-values { list-style: none; margin: 0; padding: 0 0 0 1.25rem; }
+  .filter-values[hidden] { display: none; }
+  .filter-value-row { margin: 0.2rem 0; }
+  .filter-value-row[hidden] { display: none; }
+  .filter-value-label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    font-weight: normal;
+  }
+  .filter-value-count { color: #888; font-size: 0.8em; }
+  .cleanup-section {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 2px solid #504a43;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .cleanup-section h2 {
+    font-family: Georgia, serif;
+    font-size: 1.15rem;
+    margin: 0 0 0.35rem;
+  }
+  .cleanup-section .cleanup-meta {
+    color: #666;
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+  }
+  .cleanup-issues { color: #888; font-size: 0.85em; }
+  {% endif %}
   table { width: 100%; border-collapse: collapse; font-size: {% if mode == 'print' %}11pt{% else %}1rem{% endif %}; }
   th, td { text-align: left; padding: 0.35rem 0.5rem; border-bottom: 1px solid #ddd; }
   th { font-weight: 700; border-bottom: 2px solid #504a43; }
-  .tags { color: #666; font-size: 0.85em; }
+  .facets { color: #666; font-size: 0.85em; max-width: 14rem; }
+  tr[hidden] { display: none; }
   a { color: #504a43; text-decoration: none; }
   a:hover { text-decoration: underline; }
   .pdf-ref { font-family: Arial, sans-serif; font-size: 0.85em; color: #666; }
 </style>
+{% if mode == 'screen' %}
+<script src="index-filter.js" defer></script>
+{% endif %}
 </head>
 <body>
   <h1>{{ title }}</h1>
   <p class="meta">Generated {{ generated_at }}{% if sort_by != 'name' %} · sorted by {{ sort_by }}{% endif %}</p>
+
+  {% if mode == 'screen' %}
+  <div class="index-toolbar">
+    <button type="button" id="filter-toggle" aria-expanded="false" aria-controls="filter-panel">Filters</button>
+    <button type="button" id="filter-clear-all" hidden>Clear all</button>
+    <span id="filter-result-count">Showing {{ browsable_count }} of {{ browsable_count }} recipes</span>
+    <label class="include-reference">
+      <input type="checkbox" id="include-reference"> Include reference pages
+    </label>
+  </div>
+  <div class="filter-lozenges" id="filter-lozenges" aria-live="polite"></div>
+
+  <div id="filter-backdrop" hidden></div>
+  <aside id="filter-panel" hidden aria-hidden="true" aria-labelledby="filter-panel-title">
+    <div class="filter-panel-header">
+      <h2 id="filter-panel-title">Filter recipes</h2>
+      <button type="button" id="filter-close" aria-label="Close filters">×</button>
+    </div>
+    <input type="search" id="filter-search" placeholder="Search filter values…" autocomplete="off">
+    {% for group in filter_tree %}
+    <div class="filter-group" data-facet-group="{{ group.key }}" data-group-label="{{ group.label }}">
+      <div class="filter-group-header">
+        <button type="button" class="filter-group-toggle" aria-expanded="true">{{ group.label }}</button>
+        <button type="button" class="filter-clear-facet" data-facet="{{ group.key }}">Clear</button>
+      </div>
+      <ul class="filter-values">
+        {% for item in group.options %}
+        <li class="filter-value-row">
+          <label class="filter-value-label">
+            <input type="checkbox" class="filter-value"
+              data-facet="{{ group.key }}"
+              data-value="{{ item.value }}"
+              data-label="{{ item.label }}">
+            <span>{{ item.label }} <span class="filter-value-count">({{ item.count }})</span></span>
+          </label>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </aside>
+  {% endif %}
+
   <table>
     <thead>
       <tr>
         <th>Recipe</th>
-        {% if mode == 'screen' %}<th>Tags</th>{% endif %}
+        {% if mode == 'screen' %}<th>Facets</th>{% endif %}
         <th>Yield</th>
         {% if mode == 'print' %}<th>PDF file</th>{% endif %}
       </tr>
     </thead>
-    <tbody>
+    <tbody id="recipe-tbody">
       {% for recipe in recipes %}
-      <tr>
+      <tr
+        {% if mode == 'screen' %}
+        data-facets="{{ (recipe.facet_tokens or []) | join(' ') }}"
+        data-reference="{{ 'true' if recipe.is_reference else 'false' }}"
+        {% if recipe.is_reference %}hidden{% endif %}
+        {% endif %}
+      >
         <td>
           {% if mode == 'screen' %}
           <a href="{{ recipe.links.html.split('/')[-1] }}">{{ recipe.name }}</a>
@@ -50,7 +250,7 @@
           {% endif %}
         </td>
         {% if mode == 'screen' %}
-        <td class="tags">{{ (recipe.tags or []) | join(', ') }}</td>
+        <td class="facets">{{ recipe.facets_summary or '—' }}</td>
         {% endif %}
         <td>{{ recipe.yield }}</td>
         {% if mode == 'print' %}
@@ -60,5 +260,30 @@
       {% endfor %}
     </tbody>
   </table>
+
+  {% if mode == 'screen' and needs_cleanup %}
+  <section class="cleanup-section" aria-labelledby="cleanup-heading">
+    <h2 id="cleanup-heading">Recipes needing metadata cleanup ({{ needs_cleanup | length }})</h2>
+    <p class="cleanup-meta">These recipes use legacy or incomplete metadata and are excluded from filters until migrated. Run <code>recipe audit-metadata</code> or see <code>notes.md</code>.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Recipe</th>
+          <th>Issues</th>
+          <th>Yield</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for recipe in needs_cleanup %}
+        <tr>
+          <td><a href="{{ recipe.links.html.split('/')[-1] }}">{{ recipe.name }}</a></td>
+          <td class="cleanup-issues">{{ (recipe.issues or []) | join('; ') }}</td>
+          <td>{{ recipe.yield }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+  {% endif %}
 </body>
 </html>

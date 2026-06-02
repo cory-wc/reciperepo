@@ -77,6 +77,7 @@ X-categories:
   - bowl
   meal_type:
   - dinner
+  - lunch
 X-source-verification:
   status: verified
   notes:
@@ -87,3 +88,19 @@ X-original-source: ../originals/korean-beef-bowl-20260523.jpg
 X-cook_time: 10 minutes
 X-active_time: 5 minutes
 X-total_time: 15 minutes
+X-tags:
+  cuisine:
+  - korean
+  dietary:
+  - dairy_free
+  method:
+  - rice_cooker
+  - stovetop
+  season:
+  - fall
+  - winter
+  - spring
+  - summer
+  primary_ingredient:
+  - beef
+  - rice
