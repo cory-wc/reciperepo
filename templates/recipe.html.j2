@@ -89,6 +89,7 @@
     margin: 0 0 1rem;
   }
   .ingredients { line-height: 1.25; }
+  .ingredient-list { margin: 0; }
   .ingredient-row {
     display: grid;
     grid-template-columns: {% if mode == 'print' %}0.82in 1fr{% else %}5rem 1fr{% endif %};
@@ -96,16 +97,18 @@
     margin: 0 0 .13in;
     align-items: start;
   }
-  .ingredient-amount { text-align: right; white-space: nowrap; }
-  .ingredient-name { text-align: left; }
+  .ingredient-amount { font-weight: inherit; text-align: right; white-space: nowrap; }
+  .ingredient-name { margin: 0; text-align: left; }
   .steps { line-height: {% if mode == 'print' %}1.26{% else %}1.5{% endif %}; }
+  .step-list {
+    margin: 0;
+    padding-left: {% if mode == 'print' %}0.5in{% else %}2rem{% endif %};
+  }
   .step-row {
-    display: grid;
-    grid-template-columns: {% if mode == 'print' %}.3in{% else %}2rem{% endif %} 1fr;
-    column-gap: {% if mode == 'print' %}.2in{% else %}0.5rem{% endif %};
+    padding-left: {% if mode == 'print' %}0.08in{% else %}0.25rem{% endif %};
     margin: 0 0 .16in;
   }
-  .num { font-weight: 700; line-height: 1.15; }
+  .step-row::marker { font-weight: 700; }
 {% if mode == 'print' %}
   h1 { font-size: 31pt; font-weight: 400; line-height: 1; }
   .meta { font-size: 9.5pt; }
@@ -294,21 +297,22 @@
     <section class="content">
       <div class="ingredients">
 {% if mode == 'screen' %}        <h3>Ingredients</h3>{% endif %}
+        <dl class="ingredient-list">
         {% for ing in ingredients %}
-        <div class="ingredient-row">
-          <div class="ingredient-amount">{{ ing.amount }}</div>
-          <div class="ingredient-name">{{ ing.name | safe }}</div>
-        </div>
+          <div class="ingredient-row">
+            <dt class="ingredient-amount">{{ ing.amount }}</dt>
+            <dd class="ingredient-name">{{ ing.name | safe }}</dd>
+          </div>
         {% endfor %}
+        </dl>
       </div>
       <div class="steps">
 {% if mode == 'screen' %}        <h3>Steps</h3>{% endif %}
+        <ol class="step-list">
         {% for step in steps %}
-        <div class="step-row">
-          <div class="num">{{ step.num }}.</div>
-          <div>{{ step.text }}</div>
-        </div>
+          <li class="step-row">{{ step.text }}</li>
         {% endfor %}
+        </ol>
       </div>
     </section>
   </main>

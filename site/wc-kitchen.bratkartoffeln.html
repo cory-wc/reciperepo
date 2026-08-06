@@ -143,6 +143,7 @@ small,
     margin: 0 0 1rem;
   }
   .ingredients { line-height: 1.25; }
+  .ingredient-list { margin: 0; }
   .ingredient-row {
     display: grid;
     grid-template-columns: 5rem 1fr;
@@ -150,16 +151,18 @@ small,
     margin: 0 0 .13in;
     align-items: start;
   }
-  .ingredient-amount { text-align: right; white-space: nowrap; }
-  .ingredient-name { text-align: left; }
+  .ingredient-amount { font-weight: inherit; text-align: right; white-space: nowrap; }
+  .ingredient-name { margin: 0; text-align: left; }
   .steps { line-height: 1.5; }
+  .step-list {
+    margin: 0;
+    padding-left: 2rem;
+  }
   .step-row {
-    display: grid;
-    grid-template-columns: 2rem 1fr;
-    column-gap: 0.5rem;
+    padding-left: 0.25rem;
     margin: 0 0 .16in;
   }
-  .num { font-weight: 700; line-height: 1.15; }
+  .step-row::marker { font-weight: 700; }
 
 
   .recipe-toolbar {
@@ -680,56 +683,48 @@ td {
     <section class="content">
       <div class="ingredients">
         <h3>Ingredients</h3>
+        <dl class="ingredient-list">
         
-        <div class="ingredient-row">
-          <div class="ingredient-amount">3 lb</div>
-          <div class="ingredient-name">yukon gold potatoes,<br>1-2 inch cubes</div>
-        </div>
+          <div class="ingredient-row">
+            <dt class="ingredient-amount">3 lb</dt>
+            <dd class="ingredient-name">yukon gold potatoes,<br>1-2 inch cubes</dd>
+          </div>
         
-        <div class="ingredient-row">
-          <div class="ingredient-amount">¼ C</div>
-          <div class="ingredient-name">salt</div>
-        </div>
+          <div class="ingredient-row">
+            <dt class="ingredient-amount">¼ C</dt>
+            <dd class="ingredient-name">salt</dd>
+          </div>
         
-        <div class="ingredient-row">
-          <div class="ingredient-amount">1/5 lb</div>
-          <div class="ingredient-name">bacon, thick-cut and<br>diced</div>
-        </div>
+          <div class="ingredient-row">
+            <dt class="ingredient-amount">1/5 lb</dt>
+            <dd class="ingredient-name">bacon, thick-cut and<br>diced</dd>
+          </div>
         
-        <div class="ingredient-row">
-          <div class="ingredient-amount">2 whole</div>
-          <div class="ingredient-name">onions, chopped</div>
-        </div>
+          <div class="ingredient-row">
+            <dt class="ingredient-amount">2 whole</dt>
+            <dd class="ingredient-name">onions, chopped</dd>
+          </div>
         
-        <div class="ingredient-row">
-          <div class="ingredient-amount">2 tbsp</div>
-          <div class="ingredient-name">oil</div>
-        </div>
+          <div class="ingredient-row">
+            <dt class="ingredient-amount">2 tbsp</dt>
+            <dd class="ingredient-name">oil</dd>
+          </div>
         
+        </dl>
       </div>
       <div class="steps">
         <h3>Steps</h3>
+        <ol class="step-list">
         
-        <div class="step-row">
-          <div class="num">1.</div>
-          <div>Place water, salt, and potatoes in stock pot. Bring to boil, reduce heat, and boil for ~10 minutes. Drain potatoes.</div>
-        </div>
+          <li class="step-row">Place water, salt, and potatoes in stock pot. Bring to boil, reduce heat, and boil for ~10 minutes. Drain potatoes.</li>
         
-        <div class="step-row">
-          <div class="num">2.</div>
-          <div>Fry bacon until color begins to change. Add onions and fry until translucent. Remove bacon and onions from pan.</div>
-        </div>
+          <li class="step-row">Fry bacon until color begins to change. Add onions and fry until translucent. Remove bacon and onions from pan.</li>
         
-        <div class="step-row">
-          <div class="num">3.</div>
-          <div>Add potatoes and oil to frying pan. Cook until browned.</div>
-        </div>
+          <li class="step-row">Add potatoes and oil to frying pan. Cook until browned.</li>
         
-        <div class="step-row">
-          <div class="num">4.</div>
-          <div>Add bacon and onions. Cook together for 3 minutes.</div>
-        </div>
+          <li class="step-row">Add bacon and onions. Cook together for 3 minutes.</li>
         
+        </ol>
       </div>
     </section>
   </main>
