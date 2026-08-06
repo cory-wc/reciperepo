@@ -66,6 +66,7 @@ X-categories:
   - bowl
   meal_type:
   - dinner
+  - lunch
 X-tags:
   method:
   - instant_pot
