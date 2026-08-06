@@ -36,6 +36,20 @@ def _verification_status(data: dict[str, Any]) -> str:
     return "unknown"
 
 
+def _ingredient_names(data: dict[str, Any]) -> list[str]:
+    names: list[str] = []
+    for item in data.get("ingredients") or []:
+        if not isinstance(item, dict) or not item:
+            continue
+        name, detail = next(iter(item.items()))
+        if not isinstance(detail, dict):
+            continue
+        normalized = str(name).replace("_", " ").strip()
+        if normalized:
+            names.append(normalized)
+    return names
+
+
 def build_index_entry(recipe_id: str, paths: RepoPaths) -> dict[str, Any]:
     _, data, _ = load_recipe(recipe_id, paths)
     return {
@@ -44,6 +58,7 @@ def build_index_entry(recipe_id: str, paths: RepoPaths) -> dict[str, Any]:
         "category": data.get("X-category") or [],
         "tags": data.get("X-tags") or [],
         "dietary": data.get("X-dietary") or [],
+        "ingredients": _ingredient_names(data),
         "yield": _yield_summary(data),
         "source": _source_type(data),
         "verification": _verification_status(data),
@@ -121,7 +136,7 @@ def render_index_html(
     env = get_jinja_env(paths)
     template = env.get_template("index.html.j2")
     html = template.render(
-        title="Recipe Index",
+        title="Willineau Recipes",
         mode=mode,
         generated_at=index_data["generated_at"],
         recipes=index_data["recipes"],

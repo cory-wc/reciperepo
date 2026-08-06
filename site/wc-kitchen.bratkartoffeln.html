@@ -2,19 +2,83 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bratkartoffeln</title>
+
+<script>
+  (() => {
+    let theme = 'light';
+    try {
+      theme = localStorage.getItem('recipe-theme')
+        || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    } catch (error) {
+      theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.dataset.theme = theme;
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <style>
+  html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+h1,
+.text-size-h1 {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 400;
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2,
+.text-size-h2 { font-size: 2.441rem; }
+
+h3,
+.text-size-h3 {
+  font-size: 1.953rem;
+  font-weight: 400;
+}
+
+h4,
+.text-size-h4 { font-size: 1.563rem; }
+
+h5,
+.text-size-h5 { font-size: 1.25rem; }
+
+.text-caption { font-size: 0.875rem; }
+
+small,
+.text-small {
+  font-size: 0.8rem;
+}
   
-  * { box-sizing: border-box; }
   body {
-    margin: 0;
     background: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
     color: #2e2b28;
-    
-    padding: 1.5rem;
-    max-width: 900px;
-    margin: 0 auto;
     
   }
   .page {
@@ -26,20 +90,48 @@
   h1 {
     margin: 0 0 1rem;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 2.2rem;
-    line-height: 1;
-    font-weight: 700;
     letter-spacing: .01em;
   }
   .rule { border-top: 1.2pt solid #504a43; height: 0; }
   .meta {
     text-align: center;
-    font-size: 0.95rem;
     padding: 0.06in 0 0.055in;
     letter-spacing: .01em;
     color: #504a43;
   }
+
+  .meta-row {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    min-width: 0;
+  }
+  .meta-row .meta {
+    grid-column: 2;
+  }
+  .source-header {
+    grid-column: 3;
+    justify-self: end;
+    min-width: 0;
+    max-width: 100%;
+    white-space: nowrap;
+  }
+  .source-header a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #504a43;
+  }
+  .source-link-icon {
+    width: 0.85rem;
+    height: 0.85rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
   .content {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -47,10 +139,10 @@
     margin-top: 1.5rem;
     align-items: start;
   }
-  @media (max-width: 640px) {
-    .content { grid-template-columns: 1fr; }
+  .content h3 {
+    margin: 0 0 1rem;
   }
-  .ingredients { font-size: 1.05rem; line-height: 1.25; }
+  .ingredients { line-height: 1.25; }
   .ingredient-row {
     display: grid;
     grid-template-columns: 5rem 1fr;
@@ -60,38 +152,476 @@
   }
   .ingredient-amount { text-align: right; white-space: nowrap; }
   .ingredient-name { text-align: left; }
-  .steps { font-size: 1rem; line-height: 1.26; }
+  .steps { line-height: 1.26; }
   .step-row {
     display: grid;
     grid-template-columns: .3in 1fr;
     column-gap: .2in;
     margin: 0 0 .16in;
   }
-  .num { font-family: Georgia, 'Times New Roman', serif; font-weight: 700; }
-  .source-footer {
-    margin-top: 1.5rem;
-    font-size: 0.85rem;
+  .num { font-weight: 700; line-height: 1.15; }
+
+
+  .recipe-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .back-link { margin: 0; }
+  .back-link a {
+    color: #504a43;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .back-link-icon {
+    display: inline-flex;
+    width: 0.85rem;
+    height: 0.85rem;
+  }
+  .back-link-icon svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .settings {
+    position: relative;
+  }
+  .settings-button {
+    display: inline-grid;
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: #504a43;
+    cursor: pointer;
+  }
+  .settings-button svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .settings-menu {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    z-index: 30;
+    width: min(18rem, calc(100vw - 2rem));
+    margin: 0;
+    padding: 1rem;
+    list-style: none;
+    border: 1px solid #aaa;
+    border-radius: 0.25rem;
+    background: #fff;
+    box-shadow: 0 0.5rem 1.5rem var(--color-shadow);
+  }
+  .settings-menu > li + li {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border);
+  }
+  .settings-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  .setting-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .toggle-switch {
+    position: relative;
+    flex: 0 0 auto;
+    width: 2.75rem;
+    height: 1.5rem;
+    padding: 0;
+    border: 1px solid var(--color-input-border);
+    border-radius: 999px;
+    background: var(--color-hover);
+    cursor: pointer;
+  }
+  .toggle-switch::after {
+    content: '';
+    position: absolute;
+    top: 0.1875rem;
+    left: 0.1875rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: var(--color-muted);
+    transition: transform 160ms ease, background 160ms ease;
+  }
+  .toggle-switch[aria-checked="true"] {
+    border-color: var(--color-accent);
+    background: var(--color-accent);
+  }
+  .toggle-switch[aria-checked="true"]::after {
+    background: var(--color-accent-contrast);
+    transform: translateX(1.25rem);
+  }
+  .toggle-switch:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  .setting-status {
+    display: block;
+    margin-top: 0.35rem;
+    color: var(--color-muted);
+  }
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+body.index-page {
+  max-width: 960px;
+  padding: 2rem;
+}
+
+body.recipe-page {
+  max-width: 900px;
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 5vw, 3.052rem);
+}
+
+@media (min-width: 640px) {
+  body.index-page #recipe-table thead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--color-background, #ffffff);
+    box-shadow: 0 1px 0 var(--color-border-strong, #504a43);
+  }
+
+  body.recipe-page .ingredients {
+    position: sticky;
+    top: 1.5rem;
+    align-self: start;
+    max-height: calc(100vh - 3rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-right: 0.5rem;
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  body.index-page,
+  body.recipe-page {
+    max-width: 768px;
+    padding: 1.5rem;
+  }
+
+  body.recipe-page .content {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 1.5rem;
+  }
+
+  body.recipe-page .ingredient-row {
+    grid-template-columns: 4.5rem 1fr;
+  }
+}
+
+@media (max-width: 639px) {
+  body.index-page,
+  body.recipe-page {
+    max-width: none;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 11vw, 2.75rem);
+  }
+
+  body.index-page .index-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body.index-page .index-header .meta {
+    position: static;
+    order: -1;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+  }
+
+  body.index-page .recipe-search {
+    margin-bottom: 1rem;
+  }
+
+  body.index-page .recipe-search-suggestions {
+    max-height: 10rem;
+  }
+
+  body.index-page .recipe-alpha-index {
+    justify-content: flex-start;
+    gap: 0.125rem;
+    overflow-x: auto;
+    padding-bottom: 0.35rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  body.index-page .recipe-alpha-letter {
+    flex: 0 0 2rem;
+    min-width: 2rem;
+  }
+
+  body.index-page #recipe-table thead {
+    display: none;
+  }
+
+  body.index-page #recipe-table,
+  body.index-page #recipe-table tbody,
+  body.index-page #recipe-table tr,
+  body.index-page #recipe-table td {
+    display: block;
+    width: 100%;
+  }
+
+  body.index-page #recipe-table tr {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+  }
+
+  body.index-page #recipe-table td {
+    display: grid;
+    grid-template-columns: 4.5rem minmax(0, 1fr);
+    gap: 0.75rem;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #eee;
+    overflow-wrap: anywhere;
+  }
+
+  body.index-page #recipe-table td:last-child {
+    border-bottom: 0;
+  }
+
+  body.index-page #recipe-table td::before {
+    content: attr(data-label);
     color: #666;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.65;
+  }
+
+  body.recipe-page .content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  body.recipe-page .ingredient-row {
+    grid-template-columns: minmax(4rem, auto) minmax(0, 1fr);
+  }
+
+  body.recipe-page .meta-row {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+    padding: 0.35rem 0;
+  }
+
+  body.recipe-page .meta-row .meta,
+  body.recipe-page .source-header {
+    grid-column: 1;
+    justify-self: center;
+    width: 100%;
+    padding: 0;
     text-align: center;
   }
-  .source-footer a { color: #504a43; }
-  .back-link { margin-bottom: 1rem; font-size: 0.9rem; }
-  .back-link a { color: #504a43; }
+}
+:root,
+:root[data-theme="light"] {
+  color-scheme: light;
+  --color-background: #ffffff;
+  --color-surface: #ffffff;
+  --color-text: #2e2b28;
+  --color-muted: #666666;
+  --color-border: #dddddd;
+  --color-border-strong: #504a43;
+  --color-input-border: #aaaaaa;
+  --color-hover: #f5f3f0;
+  --color-accent: #504a43;
+  --color-accent-contrast: #ffffff;
+  --color-shadow: rgba(46, 43, 40, 0.18);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-background: #191816;
+  --color-surface: #24221f;
+  --color-text: #f1eee8;
+  --color-muted: #b8b2aa;
+  --color-border: #48433d;
+  --color-border-strong: #c6beb4;
+  --color-input-border: #6a635b;
+  --color-hover: #302d29;
+  --color-accent: #e0d8ce;
+  --color-accent-contrast: #191816;
+  --color-shadow: rgba(0, 0, 0, 0.45);
+}
+
+body,
+.page {
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+a,
+.back-link a,
+.source-header a {
+  color: var(--color-accent);
+}
+
+a {
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.16em;
+  transition: text-decoration-thickness 180ms ease;
+}
+
+a:hover {
+  text-decoration-thickness: 0.14em;
+}
+
+.meta,
+.tags,
+.pdf-ref,
+.source-header,
+.recipe-search-icon {
+  color: var(--color-muted);
+}
+
+.rule,
+th {
+  border-color: var(--color-border-strong);
+}
+
+th,
+td {
+  border-color: var(--color-border);
+}
+
+.recipe-search input,
+.recipe-search-suggestions,
+.settings-menu {
+  border-color: var(--color-input-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.recipe-search-suggestions li {
+  border-color: var(--color-border-strong);
+  color: var(--color-text);
+}
+
+.recipe-search-suggestions li:hover,
+.recipe-search-suggestions li[aria-selected="true"],
+.settings-button:hover {
+  background: var(--color-hover);
+}
+
+.recipe-alpha-letter,
+.settings-button {
+  color: var(--color-accent);
+}
+
+.recipe-alpha-letter:hover:not(:disabled),
+.recipe-alpha-letter.active {
+  color: var(--color-text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a {
+    transition: none;
+  }
+}
+
+@media (max-width: 639px) {
+  body.index-page #recipe-table tr,
+  body.index-page #recipe-table td {
+    border-color: var(--color-border);
+  }
+
+  body.index-page #recipe-table td::before {
+    color: var(--color-muted);
+  }
+}
+
 </style>
 </head>
-<body>
-  
-  <p class="back-link"><a href="index.html">All recipes</a></p>
-  
+<body class="recipe-page">
+
+  <div class="recipe-toolbar text-small">
+    <p class="back-link"><a href="index.html"><span class="back-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></span>All recipes</a></p>
+    <div class="settings">
+      <button id="settings-button" class="settings-button" type="button" aria-label="Recipe settings" aria-expanded="false" aria-controls="settings-menu" title="Settings">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.2h-4V21a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9A1.7 1.7 0 0 0 3 14H2.8v-4H3a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L4.2 7 7 4.2l.1.1A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-1.6v-.2h4V3a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.2v4H21a1.7 1.7 0 0 0-1.6 1Z"></path>
+        </svg>
+      </button>
+      <menu id="settings-menu" class="settings-menu" hidden>
+        <li>
+          <div class="setting-row">
+            <span>Dark mode</span>
+            <button id="theme-toggle" class="toggle-switch" type="button" role="switch" aria-checked="false" aria-label="Dark mode"></button>
+          </div>
+          <small id="theme-status" class="setting-status">Light</small>
+        </li>
+        <li>
+          <div class="setting-row">
+            <span>Keep screen awake</span>
+            <button id="screen-wake-toggle" class="toggle-switch" type="button" role="switch" aria-checked="false" aria-label="Keep screen awake"></button>
+          </div>
+          <small id="screen-wake-status" class="setting-status">Off</small>
+        </li>
+      </menu>
+    </div>
+  </div>
+
   <main class="page">
     <h1>Bratkartoffeln</h1>
     <div class="rule"></div>
-    
-    <div class="meta">60m active • serves 4 • 615 calories • 9g fiber</div>
+
+    <div class="meta-row">
+      <div class="meta text-caption">60m active • serves 4 • 615 calories • 9g fiber</div>
+
+    </div>
     <div class="rule"></div>
-    
+
     <section class="content">
       <div class="ingredients">
+        <h3>Ingredients</h3>
         
         <div class="ingredient-row">
           <div class="ingredient-amount">3 lb</div>
@@ -120,6 +650,7 @@
         
       </div>
       <div class="steps">
+        <h3>Steps</h3>
         
         <div class="step-row">
           <div class="num">1.</div>
@@ -143,7 +674,107 @@
         
       </div>
     </section>
-    
   </main>
+
+  <script>
+    const settings = document.querySelector('.settings');
+    const settingsButton = document.querySelector('#settings-button');
+    const settingsMenu = document.querySelector('#settings-menu');
+    const themeToggle = document.querySelector('#theme-toggle');
+    const themeStatus = document.querySelector('#theme-status');
+    const wakeToggle = document.querySelector('#screen-wake-toggle');
+    const wakeStatus = document.querySelector('#screen-wake-status');
+    let wakeLock = null;
+    let keepAwakeRequested = false;
+
+    function setMenuOpen(open) {
+      settingsMenu.hidden = !open;
+      settingsButton.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (open) {
+        settingsMenu.querySelector('button, input')?.focus();
+      }
+    }
+
+    function setTheme(theme) {
+      document.documentElement.dataset.theme = theme;
+      const dark = theme === 'dark';
+      themeToggle.setAttribute('aria-checked', dark ? 'true' : 'false');
+      themeStatus.textContent = dark ? 'Dark' : 'Light';
+      try {
+        localStorage.setItem('recipe-theme', theme);
+      } catch (error) {
+        // The selected theme still applies when storage is unavailable.
+      }
+    }
+
+    settingsButton.addEventListener('click', () => {
+      setMenuOpen(settingsMenu.hidden);
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!settings.contains(event.target)) setMenuOpen(false);
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !settingsMenu.hidden) {
+        setMenuOpen(false);
+        settingsButton.focus();
+      }
+    });
+
+    themeToggle.addEventListener('click', () => {
+      setTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark');
+    });
+    setTheme(document.documentElement.dataset.theme || 'light');
+
+    function updateWakeStatus() {
+      wakeToggle.setAttribute('aria-checked', keepAwakeRequested ? 'true' : 'false');
+      wakeStatus.textContent = wakeLock ? 'On' : (keepAwakeRequested ? 'Paused' : 'Off');
+    }
+
+    async function requestWakeLock() {
+      if (!keepAwakeRequested || document.visibilityState !== 'visible') return;
+      try {
+        wakeLock = await navigator.wakeLock.request('screen');
+        updateWakeStatus();
+        wakeLock.addEventListener('release', () => {
+          wakeLock = null;
+          updateWakeStatus();
+        });
+      } catch (error) {
+        keepAwakeRequested = false;
+        updateWakeStatus();
+        wakeStatus.textContent = `Unavailable: ${error.message}`;
+      }
+    }
+
+    async function releaseWakeLock() {
+      keepAwakeRequested = false;
+      if (wakeLock) await wakeLock.release();
+      wakeLock = null;
+      updateWakeStatus();
+    }
+
+    if ('wakeLock' in navigator) {
+      wakeToggle.addEventListener('click', async () => {
+        if (!keepAwakeRequested) {
+          keepAwakeRequested = true;
+          await requestWakeLock();
+        } else {
+          await releaseWakeLock();
+        }
+      });
+
+      document.addEventListener('visibilitychange', () => {
+        if (keepAwakeRequested && document.visibilityState === 'visible' && !wakeLock) {
+          requestWakeLock();
+        }
+      });
+    } else {
+      wakeToggle.disabled = true;
+      wakeStatus.textContent = 'Unavailable in this browser';
+    }
+  </script>
+
 </body>
 </html>

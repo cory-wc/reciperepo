@@ -1,19 +1,24 @@
-generated_at: '2026-05-30'
+generated_at: '2026-08-05'
 sort_by: name
 recipes:
 - id: wc-kitchen.15-minute-miso-soup-with-greens-and-tofu
   name: 15-Minute Miso Soup with Greens and Tofu
-  category:
-  - Appetizer
-  - Entrée
-  - Side
+  category: []
   tags:
-  - Gluten-Free
-  - Japanese-Inspired
-  - Vegan
-  dietary:
-  - gluten-free
-  - vegan
+    cuisine:
+    - japanese
+    dietary:
+    - gluten_free
+    - vegan
+    - vegetarian
+  dietary: []
+  ingredients:
+  - vegetable broth
+  - dried seaweed (nori)
+  - miso paste
+  - chopped green chard
+  - chopped green onion
+  - firm tofu
   yield: 4 bowls
   source: url
   verification: needs-review
@@ -23,16 +28,22 @@ recipes:
     yaml: recipes/wc-kitchen.15-minute-miso-soup-with-greens-and-tofu.yaml
 - id: wc-kitchen.30-minute-dairy-free-potato-soup
   name: 30 Minute Dairy Free Potato Soup
-  category: soup
+  category: []
   tags:
-  - dairy-free
-  - gluten-free
-  - Whole30
-  - potato soup
-  dietary:
-  - dairy-free
-  - gluten-free
-  - Whole30
+    dietary:
+    - dairy_free
+    - gluten_free
+    - whole30
+  dietary: []
+  ingredients:
+  - potatoes
+  - chicken stock or broth
+  - white or yellow onion
+  - canned coconut milk
+  - garlic powder
+  - salt
+  - pepper
+  - dried thyme or dried chives
   yield: 8 cup servings
   source: url
   verification: needs-review
@@ -42,12 +53,19 @@ recipes:
     yaml: recipes/wc-kitchen.30-minute-dairy-free-potato-soup.yaml
 - id: wc-kitchen.actually-delicious-turkey-burgers
   name: Actually Delicious Turkey Burgers
-  category: main dish
-  tags:
-  - turkey
-  - burgers
-  - ground turkey
+  category: []
+  tags: []
   dietary: []
+  ingredients:
+  - ground turkey
+  - seasoned bread crumbs
+  - onion
+  - egg whites
+  - fresh parsley
+  - garlic
+  - salt
+  - ground black pepper
+  - cumin
   yield: 12 patties
   source: url
   verification: needs-review
@@ -57,14 +75,26 @@ recipes:
     yaml: recipes/wc-kitchen.actually-delicious-turkey-burgers.yaml
 - id: wc-kitchen.all-purpose-thai-basil-sauce
   name: All-Purpose Thai Basil Sauce
-  category: Sauces
+  category: []
   tags:
-  - Thai
-  - basil
-  - stir fry
-  - pantry staples
-  dietary:
-  - vegetarian-adaptable
+    cuisine:
+    - thai
+    dietary:
+    - vegetarian_adaptable
+  dietary: []
+  ingredients:
+  - oyster sauce
+  - soy sauce
+  - fish sauce
+  - granulated sugar
+  - neutral oil
+  - onion
+  - garlic
+  - Thai chilies
+  - chicken, pork, or vegetable stock
+  - black or dark soy sauce
+  - red bell pepper
+  - basil leaves
   yield: 4 servings
   source: url
   verification: verified
@@ -75,11 +105,20 @@ recipes:
 - id: wc-kitchen.bacon-onion-tart
   name: Bacon Onion Tart
   category: []
-  tags: []
+  tags:
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - onions
+  - bacon strips
+  - butter
+  - eggs
+  - parmesan
+  - pie crusts
   yield: 12 servings
   source: file
-  verification: unknown
+  verification: needs-review
   links:
     html: site/wc-kitchen.bacon-onion-tart.html
     pdf: pdfs/wc-kitchen.bacon-onion-tart.pdf
@@ -87,11 +126,25 @@ recipes:
 - id: wc-kitchen.bacon-shrimp-sweet-potatoes
   name: Bacon-Shrimp Sweet Potatoes
   category: []
-  tags: []
+  tags:
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - sweet potatoes
+  - shrimp
+  - bacon
+  - garlic
+  - green onions
+  - paprika
+  - chili powder
+  - dried oregano
+  - cayenne
+  - butter
+  - olive oil
   yield: 4 servings
   source: file
-  verification: unknown
+  verification: needs-review
   links:
     html: site/wc-kitchen.bacon-shrimp-sweet-potatoes.html
     pdf: pdfs/wc-kitchen.bacon-shrimp-sweet-potatoes.pdf
@@ -100,11 +153,19 @@ recipes:
   name: Baked Acorn Squash with Butter and Brown Sugar
   category: []
   tags:
-  - squash
-  - fall
-  - side dish
-  - vegetarian
+    dietary:
+    - vegetarian
+    method:
+    - oven
+    season:
+    - fall
   dietary: []
+  ingredients:
+  - acorn squash
+  - butter
+  - brown sugar
+  - maple syrup
+  - salt
   yield: 2 servings
   source: url
   verification: needs-review
@@ -114,14 +175,24 @@ recipes:
     yaml: recipes/wc-kitchen.baked-acorn-squash-with-butter-and-brown-sugar.yaml
 - id: wc-kitchen.baked-oatmeal-with-cranberries-and-almonds
   name: Baked Oatmeal With Cranberries and Almonds
-  category: breakfast
+  category: []
   tags:
-  - baked oatmeal
-  - cranberry
-  - almond
-  - make-ahead
-  - whole grain
+    method:
+    - oven
+    context:
+    - make_ahead
   dietary: []
+  ingredients:
+  - old-fashioned rolled oats
+  - unsalted butter
+  - almonds
+  - dried cranberries
+  - ground cinnamon
+  - fine salt
+  - whole milk
+  - eggs
+  - pure maple syrup
+  - pure vanilla extract
   yield: 1 2-quart baking dish
   source: url
   verification: verified
@@ -131,15 +202,18 @@ recipes:
     yaml: recipes/wc-kitchen.baked-oatmeal-with-cranberries-and-almonds.yaml
 - id: wc-kitchen.ball-realfruit-low-or-no-sugar-jam
   name: Ball RealFruit Low or No-Sugar Jam (Scaling Reference Table)
-  category: preserve
+  category: []
   tags:
-  - jam
-  - canning
-  - low-sugar
-  - no-sugar
-  - Ball RealFruit pectin
-  - scaling table
+    dietary:
+    - low_sugar
+    method:
+    - preserve
   dietary: []
+  ingredients:
+  - prepared fruit
+  - unsweetened fruit juice or thawed concentrate or water
+  - ball realfruit low or no sugar needed pectin
+  - granulated sugar sugar substitute or honey
   yield: 1 to 9 half-pint jars (see scaling table)
   source: file
   verification: needs-manual-review
@@ -152,6 +226,23 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - olive oil
+  - onion
+  - garlic
+  - carrots
+  - celery
+  - cooked beef
+  - reduced sodium beef broth
+  - canned petite diced tomatoes
+  - green bell pepper
+  - pearl barley
+  - Worcestershire sauce
+  - dried thyme leaves
+  - beef gravy mix
+  - bay leaf
+  - red wine
+  - fresh parsley
   yield: 8 servings
   source: url
   verification: verified
@@ -162,8 +253,23 @@ recipes:
 - id: wc-kitchen.beef-bolognese-with-parsnips
   name: Beef Bolognese with Parsnips
   category: []
-  tags: []
+  tags:
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - parsnips
+  - carrot
+  - yellow onion
+  - garlic
+  - ground beef
+  - dried oregano
+  - tomato paste
+  - chicken stock
+  - red wine
+  - heavy cream
+  - grated parmesan
+  - olive oil
   yield: 2 servings
   source: file
   verification: verified
@@ -174,8 +280,24 @@ recipes:
 - id: wc-kitchen.beef-brisket
   name: Beef Brisket
   category: []
-  tags: []
+  tags:
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - garlic
+  - kosher salt
+  - fresh rosemary
+  - extra-virgin olive oil
+  - beef brisket
+  - carrots
+  - celery
+  - red onions
+  - dry red wine
+  - whole tomatoes
+  - fresh flat-leaf parsley
+  - bay leaves
+  - all-purpose flour
   yield: 10 servings
   source: url
   verification: verified
@@ -188,6 +310,17 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - white fish
+  - salt
+  - black pepper
+  - all-purpose flour
+  - garlic powder
+  - paprika
+  - seasoning salt
+  - egg
+  - light beer
+  - canola oil
   yield: 6 servings
   source: file
   verification: verified
@@ -197,13 +330,18 @@ recipes:
     yaml: recipes/wc-kitchen.beer-batter-fish.yaml
 - id: wc-kitchen.beginners-guide-to-french-macarons
   name: Beginner's Guide to French Macarons
-  category: dessert, cookie
+  category: []
   tags:
-  - french macarons
-  - macarons
-  - almond flour
-  - meringue
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - almond flour
+  - confectioners sugar
+  - egg whites
+  - superfine sugar
+  - gel food coloring
+  - extract or flavoring
   yield: None macarons
   source: url
   verification: needs-manual-review
@@ -213,13 +351,27 @@ recipes:
     yaml: recipes/wc-kitchen.beginners-guide-to-french-macarons.yaml
 - id: wc-kitchen.best-bean-salad
   name: Best Bean Salad
-  category: salad
+  category: []
   tags:
-  - bean salad
-  - three-bean salad
-  - make-ahead
-  - vegetarian
+    dietary:
+    - vegetarian
+    context:
+    - make_ahead
   dietary: []
+  ingredients:
+  - garbanzo beans
+  - kidney beans
+  - black beans
+  - green beans
+  - wax beans
+  - green pepper
+  - onion
+  - celery
+  - white sugar
+  - salad oil
+  - vinegar
+  - salt
+  - ground black pepper
   yield: ''
   source: url
   verification: verified
@@ -229,13 +381,31 @@ recipes:
     yaml: recipes/wc-kitchen.best-bean-salad.yaml
 - id: wc-kitchen.vegetable-lasagna
   name: Best Vegetable Lasagna
-  category: entree
+  category: []
   tags:
-  - lasagna
-  - vegetarian
-  - pasta
-  - baked
+    dietary:
+    - vegetarian
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - extra-virgin olive oil
+  - carrots
+  - red bell pepper
+  - zucchini
+  - yellow onion
+  - salt
+  - baby spinach
+  - diced tomatoes
+  - fresh basil
+  - olive oil (sauce)
+  - garlic
+  - salt (sauce)
+  - red pepper flakes
+  - low-fat cottage cheese
+  - black pepper
+  - no-boil lasagna noodles
+  - mozzarella cheese
   yield: 8 servings
   source: file
   verification: verified
@@ -248,6 +418,7 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients: []
   yield: ''
   source: file
   verification: unknown
@@ -260,6 +431,7 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients: []
   yield: ''
   source: file
   verification: unknown
@@ -269,13 +441,24 @@ recipes:
     yaml: recipes/wc-kitchen.binder-index.yaml
 - id: wc-kitchen.black-bean-and-corn-salad-ii
   name: Black Bean and Corn Salad II
-  category: salad
+  category: []
   tags:
-  - black bean
-  - corn
-  - vegetarian
-  - lime dressing
+    dietary:
+    - vegetarian
   dietary: []
+  ingredients:
+  - fresh lime juice
+  - olive oil
+  - garlic
+  - salt
+  - ground cayenne pepper
+  - black beans
+  - frozen corn kernels
+  - avocado
+  - red bell pepper
+  - tomatoes
+  - green onions
+  - fresh cilantro
   yield: ''
   source: url
   verification: verified
@@ -285,14 +468,30 @@ recipes:
     yaml: recipes/wc-kitchen.black-bean-and-corn-salad-ii.yaml
 - id: wc-kitchen.black-bean-soup
   name: Black Bean Soup
-  category: Soup
+  category: []
   tags:
-  - black bean
-  - vegetarian
-  - Mexican
-  - easy
-  dietary:
-  - vegetarian
+    cuisine:
+    - mexican
+    dietary:
+    - vegetarian
+    context:
+    - quick
+  dietary: []
+  ingredients:
+  - extra virgin olive oil
+  - red onion
+  - carrot
+  - celery
+  - jalapeno pepper
+  - garlic
+  - ground cumin
+  - dried oregano
+  - ground coriander
+  - kosher salt
+  - cayenne pepper
+  - low-sodium black beans
+  - low-sodium vegetable or chicken broth
+  - fresh lime juice
   yield: 4 servings
   source: file
   verification: verified
@@ -302,14 +501,29 @@ recipes:
     yaml: recipes/wc-kitchen.black-bean-soup.yaml
 - id: wc-kitchen.blackened-mahi-mahi
   name: Blackened Mahi Mahi
-  category: seafood
+  category: []
   tags:
-  - blackened
-  - mahi mahi
-  - cajun
-  - fish
-  - quick
+    cuisine:
+    - cajun
+    - seafood
+    method:
+    - stovetop
+    context:
+    - quick
   dietary: []
+  ingredients:
+  - mahi mahi
+  - butter
+  - olive oil
+  - lemon
+  - onion powder
+  - garlic powder
+  - smoked paprika
+  - dried thyme
+  - dried oregano
+  - fine grain sea salt
+  - freshly ground black pepper
+  - cayenne pepper
   yield: 4 servings
   source: file
   verification: verified
@@ -319,9 +533,22 @@ recipes:
     yaml: recipes/wc-kitchen.blackened-mahi-mahi.yaml
 - id: wc-kitchen.bratkartoffeln
   name: Bratkartoffeln
-  category: side dish
-  tags: []
+  category: []
+  tags:
+    cuisine:
+    - german
+    method:
+    - stovetop
+    primary_ingredient:
+    - potatoes
+    - bacon
   dietary: []
+  ingredients:
+  - Yukon gold potatoes
+  - salt
+  - bacon
+  - onions
+  - oil
   yield: 4 servings
   source: file
   verification: verified
@@ -334,6 +561,16 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - butter
+  - onion
+  - frozen chopped broccoli
+  - chicken broth
+  - processed cheese food
+  - milk
+  - garlic powder
+  - cornstarch
+  - water
   yield: 12 servings
   source: url
   verification: verified
@@ -343,9 +580,17 @@ recipes:
     yaml: recipes/wc-kitchen.broccoli-cheese-soup.yaml
 - id: wc-kitchen.brussels-sprout-salad-with-maple-vinaigrette
   name: Brussels Sprout Salad with Maple Vinaigrette
-  category: salad
+  category: []
   tags: []
   dietary: []
+  ingredients:
+  - brussels sprouts
+  - bacon
+  - hazelnuts
+  - maple syrup
+  - apple cider vinegar
+  - grainy dijon mustard
+  - extra virgin olive oil
   yield: 4 servings
   source: file
   verification: verified
@@ -358,6 +603,13 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - bacon
+  - onions
+  - chicken broth
+  - diced tomatoes
+  - italian seasoning
+  - cabbage
   yield: 8 servings
   source: file
   verification: verified
@@ -368,8 +620,16 @@ recipes:
 - id: wc-kitchen.candied-sweet-potatoes
   name: Candied Sweet Potatoes
   category: []
-  tags: []
+  tags:
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - sweet potatoes
+  - unsweetened apple cider
+  - dark brown sugar
+  - unsalted butter
+  - cinnamon stick
   yield: ''
   source: file
   verification: verified
@@ -380,11 +640,33 @@ recipes:
 - id: wc-kitchen.chana-masala
   name: Chana Masala
   category: []
-  tags: []
+  tags:
+    cuisine:
+    - indian
+    dietary:
+    - vegetarian
+    method:
+    - stovetop
   dietary: []
+  ingredients:
+  - oil
+  - onion
+  - cumin
+  - salt
+  - garlic
+  - fresh ginger
+  - fresh cilantro
+  - fresh green chiles
+  - coriander
+  - chili powder
+  - turmeric
+  - finely diced or pureed tomatoes
+  - chickpeas
+  - garam masala
+  - lemon juice
   yield: 6 servings
   source: url
-  verification: unknown
+  verification: needs-review
   links:
     html: site/wc-kitchen.chana-masala.html
     pdf: pdfs/wc-kitchen.chana-masala.pdf
@@ -392,11 +674,24 @@ recipes:
 - id: wc-kitchen.chicken-and-vegetable-pot-pie
   name: Chicken & Vegetable Pot Pie
   category: []
-  tags: []
+  tags:
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - cooked chicken
+  - butter
+  - flour
+  - milk
+  - ground black pepper
+  - frozen peas and carrots
+  - parmesan cheese
+  - pie crusts
+  - egg
+  - water
   yield: 4 servings
   source: file
-  verification: unknown
+  verification: needs-review
   links:
     html: site/wc-kitchen.chicken-and-vegetable-pot-pie.html
     pdf: pdfs/wc-kitchen.chicken-and-vegetable-pot-pie.pdf
@@ -404,11 +699,22 @@ recipes:
 - id: wc-kitchen.chicken-and-veggie-enchiladas
   name: Chicken & Veggie Enchiladas
   category: []
-  tags: []
+  tags:
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - chicken or turkey
+  - bell peppers
+  - onions
+  - cumin
+  - enchilada sauce
+  - flour tortillas
+  - black olives
+  - mexican cheese
   yield: 8 servings
   source: file
-  verification: unknown
+  verification: needs-review
   links:
     html: site/wc-kitchen.chicken-and-veggie-enchiladas.html
     pdf: pdfs/wc-kitchen.chicken-and-veggie-enchiladas.pdf
@@ -418,6 +724,15 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - boneless skinless chicken thighs
+  - kosher salt
+  - black pepper
+  - all-purpose flour
+  - eggs
+  - sour cream
+  - panko breadcrumbs
+  - neutral oil
   yield: 4 servings
   source: url
   verification: verified
@@ -427,11 +742,22 @@ recipes:
     yaml: recipes/wc-kitchen.chicken-katsu-recipe.yaml
 - id: wc-kitchen.chicken-soup
   name: Chicken Soup
-  category: soup
-  tags:
-  - soup
-  - chicken
+  category: []
+  tags: []
   dietary: []
+  ingredients:
+  - olive oil
+  - chicken thighs
+  - celery
+  - carrots
+  - onions
+  - zucchini
+  - mushrooms
+  - garlic
+  - chicken broth
+  - cumin
+  - turmeric
+  - pasta
   yield: 8 servings
   source: file
   verification: verified
@@ -444,22 +770,39 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - tikka masala sauce
+  - chicken thighs
+  - olive oil
+  - onion
+  - bell pepper
+  - diced tomatoes
   yield: 4 servings
   source: file
-  verification: unknown
+  verification: needs-review
   links:
     html: site/wc-kitchen.chicken-tikka-masala.html
     pdf: pdfs/wc-kitchen.chicken-tikka-masala.pdf
     yaml: recipes/wc-kitchen.chicken-tikka-masala.yaml
 - id: wc-kitchen.chicken-with-creamy-mushroom-sauce
   name: Chicken with Creamy Mushroom Sauce
-  category: Mains
+  category: []
   tags:
-  - chicken
-  - mushroom sauce
-  - creamy sauce
-  - western
+    cuisine:
+    - american
   dietary: []
+  ingredients:
+  - chicken breasts
+  - salt
+  - flour
+  - unsalted butter
+  - unsalted butter
+  - mushrooms
+  - garlic
+  - dry white wine
+  - chicken or vegetable stock
+  - heavy cream
+  - parmesan
   yield: 4 servings
   source: file
   verification: verified
@@ -469,13 +812,27 @@ recipes:
     yaml: recipes/wc-kitchen.chicken-with-creamy-mushroom-sauce.yaml
 - id: wc-kitchen.chili-recipe
   name: Chili Recipe (Vegetarian)
-  category: main dish
+  category: []
   tags:
-  - vegetarian
-  - chili
-  - slow cooker
-  dietary:
-  - vegetarian
+    dietary:
+    - vegetarian
+    method:
+    - slow_cooker
+  dietary: []
+  ingredients:
+  - onion
+  - red bell peppers
+  - garlic
+  - chili flakes
+  - carrots
+  - frozen corn
+  - crushed tomatoes
+  - kidney beans
+  - black beans
+  - sugar
+  - ground cumin
+  - chili powder
+  - salt
   yield: ''
   source: file
   verification: verified
@@ -485,12 +842,23 @@ recipes:
     yaml: recipes/wc-kitchen.chili-recipe.yaml
 - id: wc-kitchen.chocolate-biscotti
   name: Chocolate Biscotti
-  category: Breakfast, cookie, Dessert
+  category: []
   tags:
-  - Italian
-  - chocolate
-  - biscotti
+    cuisine:
+    - italian
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - butter
+  - granulated sugar
+  - all-purpose flour
+  - cocoa powder
+  - baking powder
+  - table salt
+  - eggs
+  - vanilla extract
+  - mini chocolate chips
   yield: 24 cookies
   source: url
   verification: needs-manual-review
@@ -500,12 +868,29 @@ recipes:
     yaml: recipes/wc-kitchen.chocolate-biscotti.yaml
 - id: wc-kitchen.chocolate-olive-oil-cake
   name: Chocolate Olive Oil Cake
-  category: dessert
+  category: []
   tags:
-  - cake
-  - chocolate
-  - vegan
+    dietary:
+    - vegan
+    - vegetarian
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - all-purpose flour
+  - unsweetened cocoa
+  - baking soda
+  - fine sea salt
+  - granulated sugar
+  - dark brown sugar
+  - olive oil
+  - water or coffee
+  - cider vinegar
+  - semisweet chocolate chips
+  - cocoa powder
+  - olive oil (glaze)
+  - light corn syrup
+  - flaky sea salt
   yield: 8 servings
   source: file
   verification: verified
@@ -515,9 +900,21 @@ recipes:
     yaml: recipes/wc-kitchen.chocolate-olive-oil-cake.yaml
 - id: wc-kitchen.corn-chowder
   name: Corn Chowder
-  category: soup
+  category: []
   tags: []
   dietary: []
+  ingredients:
+  - butter
+  - green onions
+  - red bell pepper
+  - celery
+  - potatoes
+  - corn kernels
+  - bay leaf
+  - chicken stock
+  - salt
+  - milk
+  - ground black pepper
   yield: 4 servings
   source: file
   verification: verified
@@ -530,9 +927,18 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - shredded cheese
+  - frozen corn
+  - green onions
+  - fresh cilantro
+  - sour cream
+  - chipotle in adobo sauce
+  - flour tortillas
+  - oil
   yield: 4 servings
   source: url
-  verification: unknown
+  verification: needs-review
   links:
     html: site/wc-kitchen.corn-quesadillas.html
     pdf: pdfs/wc-kitchen.corn-quesadillas.pdf
@@ -542,6 +948,16 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - dry couscous
+  - water
+  - olive oil
+  - cucumber
+  - tomatoes
+  - red onion
+  - feta
+  - balsamic vinegar
+  - olive oil
   yield: 4 servings
   source: file
   verification: verified
@@ -551,13 +967,23 @@ recipes:
     yaml: recipes/wc-kitchen.couscous-feta-salad.yaml
 - id: wc-kitchen.crab-salad
   name: Crab Salad (Seafood Salad)
-  category: Salad
+  category: []
   tags:
-  - crab
-  - seafood
-  - American
-  - no-cook
+    cuisine:
+    - american
+    - seafood
+    method:
+    - no_cook
   dietary: []
+  ingredients:
+  - imitation crab meat
+  - shallot
+  - mayonnaise
+  - celery
+  - paprika
+  - dill
+  - kosher salt
+  - black pepper
   yield: 2 servings
   source: url
   verification: verified
@@ -570,6 +996,17 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - fresh broccoli
+  - small pasta
+  - water
+  - whole milk plain Greek yogurt
+  - olive oil
+  - garlic
+  - salt
+  - black pepper
+  - red pepper flakes
+  - grated parmesan or romano
   yield: 4 servings
   source: url
   verification: verified
@@ -582,6 +1019,18 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - onion
+  - sun-dried tomatoes in oil
+  - italian seasoning
+  - garlic
+  - red pepper flakes
+  - chicken
+  - gnocchi
+  - broth
+  - roasted vegetable puree
+  - heavy cream
+  - parmesan
   yield: 6 servings
   source: file
   verification: verified
@@ -591,13 +1040,14 @@ recipes:
     yaml: recipes/wc-kitchen.creamy-gnocchi-with-sun-dried-tomatoes.yaml
 - id: wc-kitchen.creamy-sriracha-mayo-recipe
   name: Creamy Sriracha Mayo Recipe
-  category: Appetizer, sauce
-  tags:
-  - recipe
-  - sauce
-  - spicy
-  - sriracha
+  category: []
+  tags: []
   dietary: []
+  ingredients:
+  - mayo
+  - sriracha chili sauce
+  - lemon juice
+  - garlic
   yield: 20 tablespoons
   source: url
   verification: needs-review
@@ -608,8 +1058,25 @@ recipes:
 - id: wc-kitchen.creamy-tomato-soup
   name: Creamy Tomato Soup
   category: []
-  tags: []
+  tags:
+    method:
+    - stovetop
+    flavor_profile:
+    - creamy
   dietary: []
+  ingredients:
+  - butter
+  - olive oil
+  - onion
+  - thyme
+  - basil
+  - salt
+  - diced tomatoes
+  - tomato paste
+  - flour
+  - chicken broth
+  - sugar
+  - heavy cream
   yield: 6 servings
   source: file
   verification: verified
@@ -619,14 +1086,24 @@ recipes:
     yaml: recipes/wc-kitchen.creamy-tomato-soup.yaml
 - id: wc-kitchen.creamy-tortellini-soup
   name: Creamy Tortellini Soup
-  category: soup
+  category: []
   tags:
-  - weeknight
-  - tortellini
-  - sausage
-  - kale
-  - creamy
+    context:
+    - weeknight
   dietary: []
+  ingredients:
+  - olive oil
+  - Italian sausage
+  - garlic
+  - sweet onion
+  - Italian seasoning
+  - all-purpose flour
+  - chicken stock
+  - tomato sauce
+  - refrigerated three cheese tortellini
+  - kale
+  - heavy cream
+  - fresh basil
   yield: 4–6 servings
   source: url
   verification: verified
@@ -637,11 +1114,23 @@ recipes:
 - id: wc-kitchen.crispy-slow-cooker-carnitas
   name: Crispy Slow Cooker Carnitas
   category: []
-  tags: []
+  tags:
+    method:
+    - slow_cooker
   dietary: []
+  ingredients:
+  - lean boneless pork roast
+  - beer
+  - white onion
+  - garlic
+  - chipotle powder
+  - ground cumin
+  - black pepper
+  - chili powder
+  - fine sea salt
   yield: 6-8 servings
   source: url
-  verification: unknown
+  verification: needs-review
   links:
     html: site/wc-kitchen.crispy-slow-cooker-carnitas.html
     pdf: pdfs/wc-kitchen.crispy-slow-cooker-carnitas.pdf
@@ -651,6 +1140,12 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - cucumbers
+  - sugar
+  - salt
+  - red wine vinegar
+  - red onion
   yield: 4 servings
   source: file
   verification: verified
@@ -661,25 +1156,48 @@ recipes:
 - id: wc-kitchen.curried-chicken-salad
   name: Curried Chicken Salad
   category: []
-  tags: []
+  tags:
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - chicken thighs or breasts
+  - mayonnaise
+  - dry white wine
+  - chutney
+  - curry powder
+  - celery stalks
+  - scallions
+  - whole roasted cashews or almonds
   yield: 6 servings
   source: file
-  verification: unknown
+  verification: needs-review
   links:
     html: site/wc-kitchen.curried-chicken-salad.html
     pdf: pdfs/wc-kitchen.curried-chicken-salad.pdf
     yaml: recipes/wc-kitchen.curried-chicken-salad.yaml
 - id: wc-kitchen.dairy-free-quiche-lorraine
   name: Dairy Free Quiche Lorraine
-  category: Breakfast
+  category: []
   tags:
-  - dairy-free
-  - quiche
-  - French
-  - brunch
-  dietary:
-  - dairy-free
+    cuisine:
+    - french
+    dietary:
+    - dairy_free
+    method:
+    - oven
+  dietary: []
+  ingredients:
+  - olive oil
+  - shallots
+  - bacon
+  - eggs
+  - dairy free milk
+  - nutritional yeast
+  - coarse salt
+  - ground nutmeg
+  - black pepper
+  - pie crust
   yield: 8 servings
   source: file
   verification: needs-manual-review
@@ -692,9 +1210,15 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - chicken thighs
+  - mushrooms
+  - chicken broth
+  - flour
+  - frozen peas and carrots
   yield: 4 servings
   source: file
-  verification: unknown
+  verification: needs-review
   links:
     html: site/wc-kitchen.davids-chicken-and-mushrooms.html
     pdf: pdfs/wc-kitchen.davids-chicken-and-mushrooms.pdf
@@ -704,6 +1228,17 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - thin dried wheat, egg, or rice noodles
+  - sesame oil
+  - fresh ginger
+  - garlic
+  - ground turmeric
+  - vegetable stock
+  - white miso paste
+  - frozen dumplings
+  - baby bok choy
+  - broccoli
   yield: 4 servings
   source: file
   verification: needs-review
@@ -713,13 +1248,26 @@ recipes:
     yaml: recipes/wc-kitchen.dumpling-noodle-soup.yaml
 - id: wc-kitchen.easy-broccoli-quiche
   name: Easy Broccoli Quiche
-  category: quiche
+  category: []
   tags:
-  - vegetarian
-  - broccoli
-  - quiche
-  - easy
+    dietary:
+    - vegetarian
+    method:
+    - oven
+    context:
+    - quick
   dietary: []
+  ingredients:
+  - pie crust
+  - salted butter
+  - onion
+  - garlic
+  - broccoli
+  - mozzarella
+  - eggs
+  - milk
+  - salt
+  - black pepper
   yield: 6 servings
   source: url
   verification: verified
@@ -729,12 +1277,26 @@ recipes:
     yaml: recipes/wc-kitchen.easy-broccoli-quiche.yaml
 - id: wc-kitchen.easy-pad-thai
   name: Easy Pad Thai
-  category: Main
+  category: []
   tags:
-  - pad thai
-  - Thai
-  - noodles
+    cuisine:
+    - thai
   dietary: []
+  ingredients:
+  - fish sauce
+  - tamarind paste
+  - tomato paste
+  - sambal oelek
+  - brown sugar
+  - rice noodles
+  - vegetable oil
+  - chicken thighs
+  - shrimp
+  - garlic
+  - garlic chives
+  - bean sprouts
+  - peanuts
+  - cilantro
   yield: 4 servings
   source: file
   verification: needs-review
@@ -745,8 +1307,22 @@ recipes:
 - id: wc-kitchen.everyday-instant-pot-dal
   name: Everyday Instant Pot Dal
   category: []
-  tags: []
+  tags:
+    method:
+    - instant_pot
   dietary: []
+  ingredients:
+  - light cooking oil
+  - cumin seeds
+  - garlic
+  - ginger
+  - onion
+  - turmeric powder
+  - red chilli powder
+  - coriander powder
+  - tomato
+  - red lentils
+  - water
   yield: 4 servings
   source: url
   verification: needs-review
@@ -756,10 +1332,22 @@ recipes:
     yaml: recipes/wc-kitchen.everyday-instant-pot-dal.yaml
 - id: wc-kitchen.fluffy-almond-flour-pancakes
   name: Fluffy Almond Flour Pancakes
-  category: Breakfast
-  tags: []
-  dietary:
-  - Gluten Free
+  category: []
+  tags:
+    cuisine:
+    - american
+    dietary:
+    - gluten_free
+  dietary: []
+  ingredients:
+  - eggs
+  - vanilla extract
+  - whole milk
+  - stevia glycerite
+  - kosher salt
+  - almond flour
+  - baking soda
+  - avocado oil spray
   yield: 10 pancakes
   source: url
   verification: needs-review
@@ -772,6 +1360,15 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - egg whites
+  - cream of tartar
+  - extract
+  - superfine sugar
+  - gel food coloring
+  - almond flour
+  - confectioners sugar
+  - macaron filling
   yield: 40 shells
   source: url
   verification: needs-review
@@ -784,22 +1381,41 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - sesame oil
+  - onion
+  - ground pork
+  - mushrooms
+  - red bell pepper
+  - oil
+  - garlic
+  - water chestnuts
+  - shredded cabbage
+  - hoisin sauce
+  - water
+  - ginger
+  - rice vinegar
+  - soy sauce
+  - red pepper flakes
+  - romaine or bibb lettuce
   yield: 4 servings
   source: file
-  verification: unknown
+  verification: needs-review
   links:
     html: site/wc-kitchen.ginger-pork-lettuce-wraps.html
     pdf: pdfs/wc-kitchen.ginger-pork-lettuce-wraps.pdf
     yaml: recipes/wc-kitchen.ginger-pork-lettuce-wraps.yaml
 - id: wc-kitchen.glazed-carrots
   name: Glazed Carrots
-  category: side dish
-  tags:
-  - carrots
-  - glazed
-  - side dish
-  - vegetable
+  category: []
+  tags: []
   dietary: []
+  ingredients:
+  - carrots
+  - butter
+  - brown sugar
+  - salt
+  - ground white pepper
   yield: 8 servings
   source: file
   verification: verified
@@ -809,13 +1425,24 @@ recipes:
     yaml: recipes/wc-kitchen.glazed-carrots.yaml
 - id: wc-kitchen.gochujang-roasted-carrots
   name: Gochujang Roasted Carrots
-  category: Side Dish
+  category: []
   tags:
-  - Korean
-  - carrots
-  - roasted
-  - vegetarian
+    cuisine:
+    - korean
+    dietary:
+    - vegetarian
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - carrots
+  - vegetable oil
+  - sesame oil
+  - soy sauce
+  - gochujang
+  - honey
+  - rice wine vinegar
+  - water
   yield: 4 servings
   source: file
   verification: needs-review
@@ -825,13 +1452,21 @@ recipes:
     yaml: recipes/wc-kitchen.gochujang-roasted-carrots.yaml
 - id: wc-kitchen.grilled-broccoli
   name: Grilled Broccoli
-  category: side dish
+  category: []
   tags:
-  - grilled
-  - broccoli
-  - vegetarian
-  - side dish
+    dietary:
+    - vegetarian
+    method:
+    - grill
   dietary: []
+  ingredients:
+  - tamari
+  - balsamic vinegar
+  - extra-virgin olive oil
+  - broccoli
+  - kosher salt
+  - fresh parsley
+  - flaky sea salt
   yield: 4 servings
   source: file
   verification: verified
@@ -841,14 +1476,31 @@ recipes:
     yaml: recipes/wc-kitchen.grilled-broccoli.yaml
 - id: wc-kitchen.ground-turkey-and-potato-skillet
   name: Ground Turkey & Potato Skillet
-  category: main dish
+  category: []
   tags:
-  - one pot
-  - skillet
-  - ground turkey
-  - potatoes
-  - weeknight dinner
+    method:
+    - stovetop
+    context:
+    - weeknight
   dietary: []
+  ingredients:
+  - lean ground turkey
+  - salt
+  - black pepper
+  - garlic powder
+  - chili powder
+  - dried oregano
+  - olive or avocado oil
+  - potatoes
+  - canned tomato sauce
+  - water
+  - garlic
+  - dried oregano
+  - dried basil
+  - dried parsley
+  - salt
+  - black pepper
+  - onion powder
   yield: 4 servings
   source: file
   verification: needs-manual-review
@@ -858,13 +1510,26 @@ recipes:
     yaml: recipes/wc-kitchen.ground-turkey-and-potato-skillet.yaml
 - id: wc-kitchen.healthy-blueberry-muffins
   name: Healthy Blueberry Muffins
-  category: Muffin
+  category: []
   tags:
-  - blueberry
-  - healthy
-  - whole wheat
-  - baked
+    dietary:
+    - low_sugar
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - flour
+  - baking powder
+  - baking soda
+  - fine sea salt
+  - ground cinnamon
+  - melted coconut oil or extra-virgin olive oil
+  - honey or maple syrup
+  - eggs
+  - plain Greek yogurt
+  - vanilla extract
+  - blueberries
+  - turbinado sugar
   yield: 12 muffins
   source: file
   verification: needs-review
@@ -874,13 +1539,28 @@ recipes:
     yaml: recipes/wc-kitchen.healthy-blueberry-muffins.yaml
 - id: wc-kitchen.healthy-sloppy-joes
   name: Healthy Sloppy Joes
-  category: dinner
+  category: []
   tags:
-  - sloppy joes
-  - ground beef
-  - American
-  - healthy
+    cuisine:
+    - american
+    dietary:
+    - low_sugar
   dietary: []
+  ingredients:
+  - extra virgin olive oil
+  - lean ground beef
+  - celery
+  - carrots
+  - green bell pepper
+  - yellow or red onion
+  - garlic
+  - salt
+  - brown sugar
+  - red wine vinegar or apple cider vinegar
+  - Worcestershire sauce
+  - tomato sauce
+  - ketchup
+  - low sodium beef broth or water
   yield: 6 servings
   source: file
   verification: verified
@@ -891,8 +1571,18 @@ recipes:
 - id: wc-kitchen.homemade-drop-biscuits-recipe
   name: Homemade Drop Biscuits Recipe (No Milk)
   category: []
-  tags: []
+  tags:
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - all-purpose flour
+  - baking powder
+  - salt
+  - cold water
+  - honey
+  - white vinegar
+  - unsalted butter
   yield: 15 biscuits
   source: file
   verification: needs-review
@@ -903,8 +1593,17 @@ recipes:
 - id: wc-kitchen.homemade-hot-chocolate-mix
   name: Homemade Hot Chocolate Mix
   category: []
-  tags: []
+  tags:
+    context:
+    - holiday
+    season:
+    - winter
   dietary: []
+  ingredients:
+  - granulated sugar
+  - unsweetened cocoa powder
+  - kosher salt
+  - ground cinnamon
   yield: 13 servings
   source: url
   verification: verified
@@ -914,13 +1613,26 @@ recipes:
     yaml: recipes/wc-kitchen.homemade-hot-chocolate-mix.yaml
 - id: wc-kitchen.honey-apple-galette-with-pistachio-sugar
   name: Honey Apple Galette With Pistachio Sugar
-  category: dessert
+  category: []
   tags:
-  - galette
-  - apple
-  - pastry
-  - dessert
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - all-purpose flour
+  - kosher salt
+  - unsalted butter
+  - ice water
+  - Granny Smith apples
+  - unsalted butter (filling)
+  - granulated sugar (filling)
+  - honey
+  - lemon zest
+  - lemon juice
+  - kosher salt (filling)
+  - raw unsalted pistachios
+  - granulated sugar (topping)
+  - egg
   yield: 8 servings
   source: file
   verification: verified
@@ -930,14 +1642,21 @@ recipes:
     yaml: recipes/wc-kitchen.honey-apple-galette-with-pistachio-sugar.yaml
 - id: wc-kitchen.honey-lemon-vinaigrette
   name: Honey Lemon Vinaigrette
-  category: Condiment, Salad
+  category: []
   tags:
-  - vinaigrette
-  - dressing
-  - lemon
-  - honey
-  - quick
+    cuisine:
+    - american
+    context:
+    - quick
   dietary: []
+  ingredients:
+  - fresh lemon juice
+  - fresh lemon zest
+  - honey
+  - white vinegar
+  - dijon mustard
+  - extra virgin olive oil
+  - salt and pepper
   yield: 1 cup
   source: file
   verification: verified
@@ -947,16 +1666,19 @@ recipes:
     yaml: recipes/wc-kitchen.honey-lemon-vinaigrette.yaml
 - id: wc-kitchen.how-to-make-instant-pot-farro
   name: How to Make Instant Pot Farro
-  category: side dish, grain
+  category: []
   tags:
-  - instant pot
-  - pressure cooker
+    dietary:
+    - vegan
+    - vegetarian
+    method:
+    - instant_pot
+    context:
+    - quick
+  dietary: []
+  ingredients:
   - farro
-  - whole grain
-  - quick
-  dietary:
-  - vegan
-  - vegetarian
+  - water
   yield: ''
   source: file
   verification: verified
@@ -966,9 +1688,20 @@ recipes:
     yaml: recipes/wc-kitchen.how-to-make-instant-pot-farro.yaml
 - id: wc-kitchen.instant-pot-applesauce
   name: Instant Pot Applesauce
-  category: Side Dish, Snack
-  tags: []
+  category: []
+  tags:
+    cuisine:
+    - american
+    method:
+    - slow_cooker
+    - instant_pot
   dietary: []
+  ingredients:
+  - granny smith apples
+  - honeycrisp apples
+  - water
+  - fresh lemon juice
+  - ground cinnamon
   yield: 5–6 cups
   source: url
   verification: verified
@@ -978,13 +1711,25 @@ recipes:
     yaml: recipes/wc-kitchen.instant-pot-applesauce.yaml
 - id: wc-kitchen.instant-pot-baked-potato-soup
   name: Instant Pot Baked Potato Soup
-  category: soup
+  category: []
   tags:
-  - soup
-  - potato
-  - instant pot
-  - comfort food
+    method:
+    - instant_pot
+    context:
+    - comfort_food
   dietary: []
+  ingredients:
+  - potatoes
+  - chicken broth
+  - butter
+  - cream cheese
+  - shredded cheddar cheese
+  - sour cream
+  - salt
+  - black pepper
+  - milk or heavy cream
+  - real bacon bits
+  - green onion
   yield: 8 servings
   source: file
   verification: needs-review
@@ -994,17 +1739,28 @@ recipes:
     yaml: recipes/wc-kitchen.instant-pot-baked-potato-soup.yaml
 - id: wc-kitchen.instant-pot-black-beans
   name: Instant Pot Black Beans
-  category: side dish
+  category: []
   tags:
-  - instant pot
-  - pressure cooker
-  - black beans
-  - vegan
-  - budget-friendly
-  - meal prep
-  dietary:
-  - vegan
-  - vegetarian
+    dietary:
+    - vegan
+    - vegetarian
+    method:
+    - instant_pot
+    context:
+    - meal_prep
+  dietary: []
+  ingredients:
+  - dried black beans
+  - onion
+  - garlic
+  - chili flakes
+  - ground cumin
+  - ground coriander
+  - bay leaf
+  - dried mint
+  - flavourful broth or stock
+  - lime
+  - salt
   yield: 8 servings
   source: url
   verification: verified
@@ -1014,12 +1770,18 @@ recipes:
     yaml: recipes/wc-kitchen.instant-pot-black-beans.yaml
 - id: wc-kitchen.instant-pot-cilantro-lime-rice-recipe
   name: Instant Pot Cilantro Lime Rice Recipe
-  category: Side Dish
+  category: []
   tags:
-  - cilantro lime rice
-  - instant pot rice recipe
-  - pressure cooker
+    method:
+    - instant_pot
   dietary: []
+  ingredients:
+  - long grain white rice
+  - water
+  - lime zest
+  - fresh cilantro
+  - freshly squeezed lime juice
+  - vegetable oil
   yield: 5 1-cup servings
   source: url
   verification: verified
@@ -1030,8 +1792,20 @@ recipes:
 - id: wc-kitchen.instant-pot-parmesan-risotto
   name: Instant Pot Parmesan Risotto
   category: []
-  tags: []
+  tags:
+    method:
+    - instant_pot
   dietary: []
+  ingredients:
+  - butter
+  - onion
+  - garlic
+  - arborio rice
+  - chicken broth
+  - grated parmesan
+  - salt
+  - black pepper
+  - parsley or green onions
   yield: 6 servings
   source: url
   verification: verified
@@ -1041,13 +1815,25 @@ recipes:
     yaml: recipes/wc-kitchen.instant-pot-parmesan-risotto.yaml
 - id: wc-kitchen.instant-pot-ramen-noodles
   name: Instant Pot Ramen Noodles
-  category: Soup
+  category: []
   tags:
-  - Asian
-  - instant pot
-  - 21 Day Fix
-  - dorm room dinner
+    cuisine:
+    - asian
+    method:
+    - instant_pot
   dietary: []
+  ingredients:
+  - sesame oil
+  - ginger
+  - garlic
+  - chicken stock
+  - water
+  - chicken thighs
+  - coconut aminos
+  - ramen noodle cakes
+  - baby kale
+  - carrots
+  - kosher or sea salt
   yield: 4 servings
   source: url
   verification: verified
@@ -1057,9 +1843,22 @@ recipes:
     yaml: recipes/wc-kitchen.instant-pot-ramen-noodles.yaml
 - id: wc-kitchen.instant-pot-red-beans-and-rice
   name: Instant Pot Red Beans and Rice
-  category: Main Course
-  tags: []
+  category: []
+  tags:
+    cuisine:
+    - american
+    method:
+    - instant_pot
   dietary: []
+  ingredients:
+  - onion
+  - green bell pepper
+  - dried red kidney beans
+  - garlic
+  - creole seasoning
+  - bay leaves
+  - water
+  - sausage
   yield: ''
   source: file
   verification: verified
@@ -1069,9 +1868,27 @@ recipes:
     yaml: recipes/wc-kitchen.instant-pot-red-beans-and-rice.yaml
 - id: wc-kitchen.instant-pot-teriyaki-turkey-meatballs
   name: Instant Pot Teriyaki Turkey Meatballs
-  category: Main Course
-  tags: []
+  category: []
+  tags:
+    method:
+    - instant_pot
   dietary: []
+  ingredients:
+  - ground turkey
+  - bread crumbs
+  - egg
+  - green onion
+  - garlic powder
+  - canola oil
+  - sesame seeds
+  - low sodium soy sauce
+  - rice vinegar
+  - garlic
+  - ginger
+  - canola oil
+  - brown sugar
+  - black pepper
+  - cornstarch
   yield: 6 servings
   source: url
   verification: verified
@@ -1082,8 +1899,21 @@ recipes:
 - id: wc-kitchen.kashi-oatmeal-chocolate-chip-cookies
   name: Kashi Oatmeal Chocolate Chip Cookies
   category: []
-  tags: []
+  tags:
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - all-purpose or whole wheat flour
+  - old fashioned oats
+  - brown sugar
+  - baking soda
+  - honey, agave, or maple syrup
+  - coconut oil
+  - flax egg
+  - vanilla
+  - milk
+  - dark chocolate chips
   yield: 8 cookies
   source: file
   verification: verified
@@ -1093,12 +1923,25 @@ recipes:
     yaml: recipes/wc-kitchen.kashi-oatmeal-chocolate-chip-cookies.yaml
 - id: wc-kitchen.kitchen-sink-cookies
   name: Kitchen Sink Cookies (Panera Copycat!)
-  category: Dessert
+  category: []
   tags:
-  - kitchen sink cookies
-  - panera copycat recipe
-  - cookie
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - unsalted butter
+  - light brown sugar
+  - granulated sugar
+  - egg
+  - vanilla extract
+  - baking soda
+  - salt
+  - all-purpose flour
+  - chocolate chips
+  - pretzels
+  - caramels
+  - chocolate chips (topping)
+  - pretzels (topping)
   yield: 9 large cookies
   source: file
   verification: verified
@@ -1111,6 +1954,18 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - brown sugar
+  - reduced sodium soy sauce
+  - sesame oil
+  - crushed red pepper flakes
+  - ground ginger
+  - vegetable oil
+  - garlic
+  - ground beef
+  - onion
+  - green onions
+  - sesame seeds
   yield: 4 servings
   source: url
   verification: verified
@@ -1123,6 +1978,13 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - whole wheat macaroni
+  - olive oil
+  - ground beef
+  - onions
+  - diced tomatoes
+  - frozen corn
   yield: 6 servings
   source: file
   verification: verified
@@ -1132,12 +1994,29 @@ recipes:
     yaml: recipes/wc-kitchen.macaroni-and-hamburger.yaml
 - id: wc-kitchen.mediterranean-stuffed-pork-tenderloin
   name: Mediterranean Stuffed Pork Tenderloin
-  category: Main Dish
+  category: []
   tags:
-  - baked pork tenderloin
-  - pork tenderloin recipe
-  - stuffed pork tenderloin
+    cuisine:
+    - mediterranean
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - pork tenderloin
+  - olive oil
+  - red pepper flakes
+  - baby spinach
+  - salt
+  - sundried tomatoes
+  - feta cheese
+  - balsamic vinegar
+  - olive oil
+  - dijon mustard
+  - rosemary
+  - garlic
+  - lemon zest
+  - kosher salt
+  - black pepper
   yield: 4 servings
   source: file
   verification: verified
@@ -1147,13 +2026,26 @@ recipes:
     yaml: recipes/wc-kitchen.mediterranean-stuffed-pork-tenderloin.yaml
 - id: wc-kitchen.mexican-street-corn-salad
   name: Mexican Street Corn Salad
-  category: Main Course, Salad
-  tags:
-  - corn salad
-  - mexican recipes
-  - mexican street corn salad
-  - esquites
+  category: []
+  tags: []
   dietary: []
+  ingredients:
+  - corn
+  - olive oil
+  - red bell pepper
+  - red onion
+  - fresh cilantro
+  - green onions
+  - jalapeno pepper
+  - avocado
+  - lime juice
+  - ground cumin
+  - smoked paprika
+  - black pepper
+  - salt
+  - sour cream
+  - mayonnaise
+  - cotija cheese
   yield: 4 servings
   source: file
   verification: verified
@@ -1163,9 +2055,28 @@ recipes:
     yaml: recipes/wc-kitchen.mexican-street-corn-salad.yaml
 - id: wc-kitchen.middle-eastern-lentil-soup
   name: Middle Eastern Lentil Soup
-  category: Soup
-  tags: []
+  category: []
+  tags:
+    cuisine:
+    - middle_eastern
   dietary: []
+  ingredients:
+  - olive oil
+  - yellow onion
+  - carrots
+  - potato
+  - red lentils
+  - water
+  - chicken or vegetable stock cubes
+  - dried mint
+  - cumin
+  - paprika
+  - turmeric
+  - cayenne pepper
+  - salt
+  - black pepper
+  - flour
+  - butter
   yield: 4 servings
   source: file
   verification: verified
@@ -1175,13 +2086,24 @@ recipes:
     yaml: recipes/wc-kitchen.middle-eastern-lentil-soup.yaml
 - id: wc-kitchen.miso-dumpling-soup
   name: Miso Dumpling Soup (15 Minutes)
-  category: Soup
+  category: []
   tags:
-  - Japanese
-  - dumplings
-  - miso
-  - quick
+    cuisine:
+    - japanese
+    context:
+    - quick
   dietary: []
+  ingredients:
+  - frozen vegetable dumplings (potstickers)
+  - sesame oil
+  - garlic
+  - ginger
+  - white miso paste
+  - chili oil
+  - green onion
+  - vegetable broth
+  - carrots
+  - spinach
   yield: 4 servings
   source: file
   verification: needs-review
@@ -1191,9 +2113,32 @@ recipes:
     yaml: recipes/wc-kitchen.miso-dumpling-soup.yaml
 - id: wc-kitchen.moist-chocolate-cake
   name: Moist Chocolate Cake
-  category: Dessert
-  tags: []
+  category: []
+  tags:
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - all-purpose flour
+  - granulated sugar
+  - brown sugar
+  - cocoa powder
+  - baking soda
+  - baking powder
+  - salt
+  - buttermilk
+  - coffee
+  - vegetable oil
+  - eggs
+  - vanilla extract
+  - unsalted butter
+  - powdered sugar
+  - cocoa powder
+  - salt
+  - chocolate chips
+  - honey
+  - heavy cream
+  - vanilla extract
   yield: 12 servings
   source: file
   verification: verified
@@ -1203,14 +2148,27 @@ recipes:
     yaml: recipes/wc-kitchen.moist-chocolate-cake.yaml
 - id: wc-kitchen.mushroom-onion-and-sage-stuffing
   name: Mushroom, Onion, and Sage Stuffing
-  category: Side Dish
+  category: []
   tags:
-  - stuffing
-  - dressing
-  - side dish
-  - mushroom
-  - Thanksgiving
+    method:
+    - oven
+    season:
+    - fall
   dietary: []
+  ingredients:
+  - french bread
+  - white onion
+  - celery
+  - mushrooms
+  - garlic
+  - sage
+  - thyme
+  - butter
+  - eggs
+  - chicken stock
+  - milk
+  - salt
+  - pepper
   yield: 9 servings
   source: url
   verification: verified
@@ -1221,8 +2179,17 @@ recipes:
 - id: wc-kitchen.oven-fried-chicken-ii
   name: Oven Fried Chicken II
   category: []
-  tags: []
+  tags:
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - chicken thighs
+  - eggs
+  - all-purpose flour
+  - Italian seasoned bread crumbs
+  - paprika
+  - vegetable oil
   yield: 10 servings
   source: url
   verification: verified
@@ -1232,12 +2199,20 @@ recipes:
     yaml: recipes/wc-kitchen.oven-fried-chicken-ii.yaml
 - id: wc-kitchen.pappardelle-with-mushrooms
   name: Pappardelle with Mushrooms
-  category: Pasta
+  category: []
   tags:
-  - mushrooms
-  - pasta
-  - vegetarian
+    dietary:
+    - vegetarian
   dietary: []
+  ingredients:
+  - mushrooms
+  - olive oil
+  - garlic
+  - red pepper flakes
+  - lemon
+  - pappardelle
+  - grated parmesan
+  - butter
   yield: 4 servings
   source: file
   verification: verified
@@ -1247,14 +2222,24 @@ recipes:
     yaml: recipes/wc-kitchen.pappardelle-with-mushrooms.yaml
 - id: wc-kitchen.pasta-e-piselli
   name: Pasta e Piselli (Pasta with Peas)
-  category:
-  - Pasta
-  - Side Dish
+  category: []
   tags:
-  - Italian
-  - Italian-American
-  - one-pot
+    cuisine:
+    - italian
+    method:
+    - stovetop
   dietary: []
+  ingredients:
+  - ditalini pasta
+  - extra virgin olive oil
+  - sweet onion
+  - garlic
+  - red pepper flakes
+  - water
+  - salt
+  - black pepper
+  - baby peas
+  - Pecorino Romano cheese
   yield: 8 servings
   source: file
   verification: verified
@@ -1264,13 +2249,17 @@ recipes:
     yaml: recipes/wc-kitchen.pasta-e-piselli.yaml
 - id: wc-kitchen.perfect-pie-dough
   name: Perfect Pie Dough
-  category: Pastry
+  category: []
   tags:
-  - pie dough
-  - pie crust
-  - pastry
-  - make-ahead
+    context:
+    - make_ahead
   dietary: []
+  ingredients:
+  - unbleached all-purpose flour
+  - granulated sugar
+  - fine sea salt
+  - unsalted butter
+  - ice water
   yield: 1 9- or 10-inch pie crust
   source: url
   verification: verified
@@ -1280,12 +2269,22 @@ recipes:
     yaml: recipes/wc-kitchen.perfect-pie-dough.yaml
 - id: wc-kitchen.perfect-pot-roast
   name: Perfect Pot Roast
-  category: Main Dishes
+  category: []
   tags:
-  - pot roast
-  - beef
-  - comfort food
+    method:
+    - oven
+    context:
+    - comfort_food
   dietary: []
+  ingredients:
+  - chuck roast
+  - olive oil
+  - onions
+  - carrots
+  - red wine
+  - beef stock
+  - fresh thyme
+  - fresh rosemary
   yield: 10 servings
   source: file
   verification: needs-review
@@ -1298,6 +2297,16 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - olive oil
+  - red bell pepper
+  - onion
+  - yellow squash
+  - tomatoes
+  - butter or cannellini beans
+  - cod
+  - salt
+  - black pepper
   yield: 4 servings
   source: file
   verification: verified
@@ -1307,12 +2316,21 @@ recipes:
     yaml: recipes/wc-kitchen.poached-cod-with-tomatoes.yaml
 - id: wc-kitchen.pork-breakfast-chops
   name: Pork Breakfast Chops
-  category: Main
+  category: []
   tags:
-  - pork
-  - pan-fried
-  - easy
+    method:
+    - stovetop
+    context:
+    - quick
   dietary: []
+  ingredients:
+  - seasoned salt
+  - ground black pepper
+  - cayenne pepper
+  - pork breakfast chops
+  - all-purpose flour
+  - canola oil
+  - butter
   yield: 8 servings
   source: url
   verification: verified
@@ -1322,14 +2340,24 @@ recipes:
     yaml: recipes/wc-kitchen.pork-breakfast-chops.yaml
 - id: wc-kitchen.potato-leek-soup
   name: Potato Leek Soup
-  category: Soup
+  category: []
   tags:
-  - French
-  - creamy
-  - potato
-  - leek
-  - freezer-friendly
+    cuisine:
+    - french
+    context:
+    - freezer-friendly
   dietary: []
+  ingredients:
+  - unsalted butter
+  - leeks
+  - garlic
+  - Yukon Gold potatoes
+  - low sodium chicken or vegetable broth
+  - bay leaves
+  - fresh thyme
+  - salt
+  - ground black pepper
+  - heavy cream
   yield: 6 servings
   source: url
   verification: verified
@@ -1339,12 +2367,29 @@ recipes:
     yaml: recipes/wc-kitchen.potato-leek-soup.yaml
 - id: wc-kitchen.quick-and-easy-red-lentil-dahl
   name: Quick & Easy Red Lentil Dahl
-  category:
-  - Main
-  - Side Dish
-  tags: []
-  dietary:
-  - vegan
+  category: []
+  tags:
+    cuisine:
+    - indian
+    dietary:
+    - vegan
+    - vegetarian
+  dietary: []
+  ingredients:
+  - olive oil
+  - yellow onion
+  - garlic
+  - fresh ginger
+  - garam masala
+  - ground turmeric
+  - red pepper chili flakes
+  - dried red lentils
+  - diced tomatoes
+  - full fat coconut milk
+  - vegetable broth
+  - salt
+  - lemon
+  - baby spinach
   yield: 8 servings
   source: url
   verification: needs-manual-review
@@ -1355,8 +2400,16 @@ recipes:
 - id: wc-kitchen.quick-pickled-red-onion
   name: Quick Pickled Red Onion
   category: []
-  tags: []
+  tags:
+    method:
+    - preserve
   dietary: []
+  ingredients:
+  - red onion
+  - kosher salt
+  - granulated sugar
+  - vinegar
+  - water
   yield: 2 cups
   source: file
   verification: verified
@@ -1366,11 +2419,20 @@ recipes:
     yaml: recipes/wc-kitchen.quick-pickled-red-onion.yaml
 - id: wc-kitchen.ratatouille
   name: Ratatouille
-  category: Side Dish
+  category: []
   tags:
-  - vegetarian
-  - stovetop
+    dietary:
+    - vegetarian
+    method:
+    - stovetop
   dietary: []
+  ingredients:
+  - olive oil
+  - onion
+  - red bell peppers
+  - zucchini
+  - garlic
+  - stewed tomatoes
   yield: 6 servings
   source: file
   verification: verified
@@ -1380,9 +2442,18 @@ recipes:
     yaml: recipes/wc-kitchen.ratatouille.yaml
 - id: wc-kitchen.rice-pilaf
   name: Rice Pilaf
-  category: Side Dish
-  tags: []
+  category: []
+  tags:
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - rice
+  - chicken broth
+  - butter
+  - onion
+  - mushrooms
+  - celery
   yield: 4 servings
   source: file
   verification: verified
@@ -1392,13 +2463,18 @@ recipes:
     yaml: recipes/wc-kitchen.rice-pilaf.yaml
 - id: wc-kitchen.roasted-potatoes-and-kielbasa
   name: Roasted Potatoes and Kielbasa (One-Pan Recipe)
-  category: Dinner
+  category: []
   tags:
-  - one-pan
-  - potatoes
-  - kielbasa
-  - roasted
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - small red potatoes
+  - extra light olive oil
+  - fresh parsley
+  - sea salt
+  - garlic
+  - kielbasa
   yield: 4 servings
   source: url
   verification: verified
@@ -1409,8 +2485,26 @@ recipes:
 - id: wc-kitchen.roasted-shiitake-bibimbap
   name: Roasted Shiitake Bibimbap
   category: []
-  tags: []
+  tags:
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - sushi rice
+  - sweet potato
+  - shiitake mushrooms
+  - cucumber
+  - garlic
+  - dark brown sugar
+  - soy sauce
+  - gochujang
+  - rice vinegar
+  - sesame oil
+  - baby spinach
+  - sriracha sauce
+  - canola oil
+  - water
+  - eggs
   yield: 2 servings
   source: file
   verification: needs-review
@@ -1420,13 +2514,25 @@ recipes:
     yaml: recipes/wc-kitchen.roasted-shiitake-bibimbap.yaml
 - id: wc-kitchen.salmon-burgers-with-slaw
   name: Salmon Burgers with Slaw
-  category: Main Course
+  category: []
   tags:
-  - salmon
-  - burgers
-  - slaw
-  - seafood
+    cuisine:
+    - seafood
   dietary: []
+  ingredients:
+  - salmon
+  - eggs
+  - breadcrumbs
+  - salt
+  - garlic powder
+  - fresh herbs
+  - lemon juice
+  - green cabbage
+  - plain greek yogurt
+  - white distilled vinegar
+  - salt
+  - garlic powder
+  - fresh herbs
   yield: 3–4 burgers
   source: url
   verification: needs-review
@@ -1437,8 +2543,25 @@ recipes:
 - id: wc-kitchen.shakshuka-with-feta
   name: Shakshuka With Feta
   category: []
-  tags: []
+  tags:
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - extra-virgin olive oil
+  - onion
+  - red bell pepper
+  - garlic
+  - ground cumin
+  - sweet paprika
+  - ground cayenne
+  - whole plum tomatoes
+  - kosher salt
+  - black pepper
+  - feta
+  - eggs
+  - fresh cilantro
+  - hot sauce
   yield: 4–6 servings
   source: file
   verification: needs-manual-review
@@ -1449,8 +2572,35 @@ recipes:
 - id: wc-kitchen.shepherds-pie
   name: Shepherd's Pie
   category: []
-  tags: []
+  tags:
+    method:
+    - oven
+    context:
+    - leftovers_friendly
+    primary_ingredient:
+    - potatoes
+    flavor_profile:
+    - savory
+    - hearty
   dietary: []
+  ingredients:
+  - ground meat
+  - mushrooms
+  - carrots
+  - onions
+  - celery
+  - peas
+  - garlic
+  - dark beer
+  - chicken stock
+  - tomato paste
+  - rosemary
+  - thyme
+  - Worcestershire sauce
+  - potatoes
+  - eggs
+  - butter
+  - shredded cheese
   yield: 4 servings
   source: file
   verification: needs-review
@@ -1460,13 +2610,16 @@ recipes:
     yaml: recipes/wc-kitchen.shepherds-pie.yaml
 - id: wc-kitchen.shrimp-fettuccine-alfredo
   name: Shrimp Fettuccine Alfredo
-  category: Main Course
-  tags:
-  - pasta
-  - shrimp
-  - alfredo
-  - Food Network Kitchen
+  category: []
+  tags: []
   dietary: []
+  ingredients:
+  - fettuccine
+  - shrimp
+  - unsalted butter
+  - heavy cream
+  - nutmeg
+  - Parmigiano-Reggiano cheese
   yield: 4 servings
   source: url
   verification: verified
@@ -1476,12 +2629,28 @@ recipes:
     yaml: recipes/wc-kitchen.shrimp-fettuccine-alfredo.yaml
 - id: wc-kitchen.simple-zucchini-bread
   name: Simple Zucchini Bread
-  category: Quick Bread
+  category: []
   tags:
-  - zucchini
-  - loaf
-  - vegetarian
+    dietary:
+    - vegetarian
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - light brown sugar
+  - apple juice
+  - vegetable oil
+  - eggs
+  - vanilla extract
+  - baking powder
+  - baking soda
+  - table salt
+  - cinnamon
+  - all-purpose flour
+  - zucchini
+  - walnuts
+  - raisins or currants
+  - light brown sugar
   yield: 1 8.5x4.5 inch loaf
   source: file
   verification: needs-review
@@ -1491,13 +2660,28 @@ recipes:
     yaml: recipes/wc-kitchen.simple-zucchini-bread.yaml
 - id: wc-kitchen.slow-cooker-beef-stew
   name: Slow Cooker Beef Stew
-  category: Main Dish
+  category: []
   tags:
-  - slow cooker
-  - beef
-  - stew
-  - comfort food
+    method:
+    - slow_cooker
+    context:
+    - comfort_food
   dietary: []
+  ingredients:
+  - olive oil
+  - boneless beef chuck roast
+  - mushrooms
+  - carrots
+  - garlic
+  - yellow potatoes
+  - onion
+  - beef broth
+  - dry red wine
+  - tomato paste
+  - Dijon mustard
+  - dried thyme
+  - pearl barley or farro
+  - bay leaves
   yield: 10 servings
   source: file
   verification: verified
@@ -1507,13 +2691,26 @@ recipes:
     yaml: recipes/wc-kitchen.slow-cooker-beef-stew.yaml
 - id: wc-kitchen.slow-cooker-corn-chowder
   name: Slow Cooker Corn Chowder
-  category: Soup
+  category: []
   tags:
-  - slow cooker
-  - corn
-  - chowder
-  - vegetarian-adaptable
+    dietary:
+    - vegetarian_adaptable
+    method:
+    - slow_cooker
   dietary: []
+  ingredients:
+  - red bell pepper
+  - lemon juice
+  - frozen corn
+  - Yukon gold potatoes
+  - low-sodium chicken or vegetable broth
+  - yellow onion
+  - garlic
+  - fresh thyme
+  - kosher salt
+  - freshly ground black pepper
+  - half-and-half or heavy cream
+  - unsalted butter
   yield: 4–6 servings
   source: url
   verification: verified
@@ -1523,13 +2720,23 @@ recipes:
     yaml: recipes/wc-kitchen.slow-cooker-corn-chowder.yaml
 - id: wc-kitchen.slow-cooked-southwest-chicken
   name: Slow-Cooked Southwest Chicken
-  category: Main Dish
+  category: []
   tags:
-  - slow cooker
-  - chicken
-  - southwest
-  - low-fat
+    dietary:
+    - low_fat
+    method:
+    - slow_cooker
   dietary: []
+  ingredients:
+  - black beans
+  - reduced-sodium chicken broth
+  - diced tomatoes with mild green chiles
+  - chicken breast
+  - chunky salsa
+  - frozen corn
+  - dried parsley flakes
+  - ground cumin
+  - pepper
   yield: 6 servings
   source: url
   verification: verified
@@ -1539,12 +2746,20 @@ recipes:
     yaml: recipes/wc-kitchen.slow-cooked-southwest-chicken.yaml
 - id: wc-kitchen.soft-and-chewy-chocolate-chip-cookies
   name: Soft and Chewy Chocolate Chip Cookies
-  category: Dessert
+  category: []
   tags:
-  - cookies
-  - chocolate chip
-  - baking
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - brown sugar
+  - unsalted butter
+  - eggs
+  - vanilla
+  - baking soda
+  - kosher salt
+  - all-purpose flour
+  - chocolate chips
   yield: 24 cookies
   source: url
   verification: needs-review
@@ -1554,13 +2769,24 @@ recipes:
     yaml: recipes/wc-kitchen.soft-and-chewy-chocolate-chip-cookies.yaml
 - id: wc-kitchen.soy-vay-veri-veri-teriyaki-clone
   name: Soy Vay Veri Veri Teriyaki Clone
-  category: Condiment
+  category: []
   tags:
-  - teriyaki
-  - sauce
-  - marinade
-  - freezer friendly
+    context:
+    - freezer-friendly
   dietary: []
+  ingredients:
+  - soy sauce
+  - sugar
+  - brown sugar
+  - garlic
+  - ginger
+  - sesame seeds
+  - sesame oil
+  - onion
+  - onion powder
+  - garlic powder
+  - ginger powder
+  - cornstarch
   yield: 16 servings
   source: url
   verification: verified
@@ -1571,8 +2797,19 @@ recipes:
 - id: wc-kitchen.spaghetti-carbonara
   name: Spaghetti Carbonara
   category: []
-  tags: []
+  tags:
+    cuisine:
+    - italian
+    method:
+    - stovetop
   dietary: []
+  ingredients:
+  - spaghetti
+  - eggs
+  - Parmesan
+  - bacon
+  - garlic
+  - fresh parsley
   yield: 4 servings
   source: url
   verification: verified
@@ -1582,14 +2819,17 @@ recipes:
     yaml: recipes/wc-kitchen.spaghetti-carbonara.yaml
 - id: wc-kitchen.sparkling-apple-cider-gin-cocktail
   name: Sparkling Apple Cider Gin Cocktail
-  category: Cocktail
+  category: []
   tags:
-  - holiday
-  - gin
-  - apple cider
-  - sparkling
-  - easy
+    context:
+    - holiday
+    - quick
   dietary: []
+  ingredients:
+  - gin
+  - lemon juice
+  - orange bitters
+  - sparkling apple cider
   yield: 1 serving
   source: url
   verification: verified
@@ -1599,13 +2839,21 @@ recipes:
     yaml: recipes/wc-kitchen.sparkling-apple-cider-gin-cocktail.yaml
 - id: wc-kitchen.split-pea-soup
   name: Split Pea Soup (Instant Pot)
-  category: Soup
+  category: []
   tags:
-  - instant pot
-  - split pea
-  - ham
-  - slow cooker option
+    method:
+    - instant_pot
+    - slow_cooker
   dietary: []
+  ingredients:
+  - butter
+  - onion
+  - celery
+  - carrots
+  - ham bone or diced ham
+  - dry split peas
+  - chicken or veggie stock
+  - bay leaves
   yield: 8 servings
   source: file
   verification: verified
@@ -1615,12 +2863,23 @@ recipes:
     yaml: recipes/wc-kitchen.split-pea-soup.yaml
 - id: wc-kitchen.sweet-pickled-radishes
   name: Sweet Pickled Radishes
-  category: condiment
+  category: []
   tags:
-  - pickles
-  - radishes
-  - refrigerator pickles
+    cuisine:
+    - american
+    method:
+    - preserve
   dietary: []
+  ingredients:
+  - radishes
+  - white vinegar
+  - sugar
+  - water
+  - pickling salt
+  - mustard seeds
+  - ground spice
+  - bay leaf
+  - dried red pepper flakes
   yield: 1 pint jar
   source: url
   verification: needs-manual-review
@@ -1630,16 +2889,28 @@ recipes:
     yaml: recipes/wc-kitchen.sweet-pickled-radishes.yaml
 - id: wc-kitchen.sweet-potato-chickpea-buddha-bowl-with-peanut-sauce
   name: Sweet Potato Chickpea Buddha Bowl with Peanut Sauce
-  category: Main Dish
+  category: []
   tags:
-  - buddha bowl
-  - vegan
-  - meal prep
-  - grain bowl
-  dietary:
-  - vegan
-  - gluten-free adaptable
-  - dairy-free
+    dietary:
+    - vegan
+    - gluten_free_adaptable
+    - dairy_free
+    - vegetarian
+    context:
+    - meal_prep
+  dietary: []
+  ingredients:
+  - sweet potato
+  - chickpeas
+  - spices/seasonings
+  - grain
+  - edamame
+  - broccoli
+  - peanut sauce
+  - avocado
+  - cilantro
+  - peanuts
+  - red pepper flakes
   yield: ''
   source: file
   verification: needs-review
@@ -1649,13 +2920,23 @@ recipes:
     yaml: recipes/wc-kitchen.sweet-potato-chickpea-buddha-bowl-with-peanut-sauce.yaml
 - id: wc-kitchen.taco-pasta-salad
   name: Taco Pasta Salad
-  category: Salad
+  category: []
   tags:
-  - pasta
-  - taco
-  - cold
-  - make-ahead
+    context:
+    - make_ahead
   dietary: []
+  ingredients:
+  - pasta shells
+  - black beans
+  - corn kernels
+  - tomato
+  - salsa
+  - olive oil
+  - lime juice
+  - taco seasoning
+  - garlic
+  - shredded cheese
+  - avocado
   yield: 6 servings
   source: file
   verification: verified
@@ -1668,6 +2949,20 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - ground beef or turkey
+  - salsa
+  - sour cream
+  - oil
+  - onion
+  - garlic
+  - plum tomatoes
+  - kidney or black beans
+  - cumin
+  - chili powder
+  - fresh cilantro
+  - romaine lettuce
+  - shredded cheese
   yield: 4 servings
   source: url
   verification: verified
@@ -1678,8 +2973,19 @@ recipes:
 - id: wc-kitchen.teriyaki-turkey-rice-bowl
   name: Teriyaki Turkey Rice Bowl
   category: []
-  tags: []
+  tags:
+    method:
+    - instant_pot
   dietary: []
+  ingredients:
+  - teriyaki sauce
+  - oil
+  - onion
+  - garlic
+  - ground turkey
+  - broccoli
+  - carrots
+  - cooked rice
   yield: 4 servings
   source: url
   verification: verified
@@ -1689,17 +2995,27 @@ recipes:
     yaml: recipes/wc-kitchen.teriyaki-turkey-rice-bowl.yaml
 - id: wc-kitchen.thai-cucumber-salad
   name: Thai Cucumber Salad
-  category: Salad
+  category: []
   tags:
-  - thai
-  - cucumber
-  - summer
-  - side dish
-  - asian-inspired
-  dietary:
-  - vegan
-  - vegetarian
-  - gluten-free
+    cuisine:
+    - thai
+    - asian
+    dietary:
+    - vegan
+    - vegetarian
+    - gluten_free
+    season:
+    - summer
+  dietary: []
+  ingredients:
+  - rice vinegar
+  - granulated sugar
+  - toasted sesame oil
+  - red pepper flakes
+  - salt
+  - cucumbers
+  - green onions
+  - peanuts
   yield: 6 servings
   source: url
   verification: verified
@@ -1712,6 +3028,17 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - peanut butter
+  - low sodium soy sauce
+  - maple syrup
+  - toasted sesame oil
+  - rice vinegar
+  - warm water
+  - ground ginger
+  - garlic
+  - lime juice
+  - red pepper flakes
   yield: 1 batch
   source: url
   verification: needs-review
@@ -1724,6 +3051,15 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - natural peanut butter
+  - ground ginger
+  - maple syrup
+  - low sodium soy sauce
+  - rice wine vinegar
+  - sesame seeds
+  - hot water
+  - crushed red pepper flakes
   yield: 9 servings
   source: url
   verification: needs-review
@@ -1733,11 +3069,31 @@ recipes:
     yaml: recipes/wc-kitchen.thai-peanut-sauce-jessica-hylton.yaml
 - id: wc-kitchen.thai-peanut-sweet-potato-buddha-bowl
   name: Thai Peanut Sweet Potato Buddha Bowl
-  category: Main Dish
-  tags: []
-  dietary:
-  - vegan
-  - gluten-free
+  category: []
+  tags:
+    dietary:
+    - vegan
+    - gluten_free
+    - vegetarian
+    method:
+    - oven
+  dietary: []
+  ingredients:
+  - sweet potatoes
+  - chickpeas
+  - soy sauce
+  - maple syrup
+  - sriracha
+  - garlic
+  - red pepper flakes
+  - oil
+  - grain
+  - broccoli
+  - edamame
+  - avocado
+  - peanut sauce
+  - peanuts
+  - cilantro
   yield: 4 servings
   source: url
   verification: needs-review
@@ -1747,12 +3103,26 @@ recipes:
     yaml: recipes/wc-kitchen.thai-peanut-sweet-potato-buddha-bowl.yaml
 - id: wc-kitchen.the-best-apple-crisp
   name: The Best Apple Crisp
-  category: Dessert
+  category: []
   tags:
-  - apple
-  - crisp
-  - fall
+    cuisine:
+    - american
+    method:
+    - oven
+    season:
+    - fall
   dietary: []
+  ingredients:
+  - apples
+  - granulated sugar
+  - cinnamon (filling)
+  - vanilla extract
+  - all-purpose flour
+  - old-fashioned oats
+  - brown sugar
+  - salt
+  - cinnamon (topping)
+  - butter
   yield: 8 servings
   source: url
   verification: verified
@@ -1762,15 +3132,33 @@ recipes:
     yaml: recipes/wc-kitchen.the-best-apple-crisp.yaml
 - id: wc-kitchen.the-best-instant-pot-lentil-soup
   name: The Best Instant Pot Lentil Soup
-  category: Soup
+  category: []
   tags:
-  - coconut milk
-  - curry
-  - instant pot
-  - lentil soup
+    cuisine:
+    - indian
+    dietary:
+    - vegetarian
+    method:
+    - instant_pot
+  dietary: []
+  ingredients:
+  - coconut oil
+  - onion
+  - garlic
+  - ginger
+  - celery
+  - carrots
+  - curry powder
   - turmeric
-  dietary:
-  - vegetarian
+  - cumin
+  - salt
+  - black pepper
+  - red lentils
+  - green lentils
+  - coconut milk
+  - tomatoes
+  - vegetable broth
+  - spinach
   yield: 3 servings
   source: url
   verification: verified
@@ -1781,8 +3169,30 @@ recipes:
 - id: wc-kitchen.the-best-meatloaf-recipe-of-your-life
   name: The Best Meatloaf Recipe Of Your Life
   category: []
-  tags: []
+  tags:
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - fresh breadcrumbs
+  - whole milk
+  - olive oil
+  - onion
+  - salt
+  - garlic
+  - ketchup
+  - Worcestershire sauce
+  - parsley
+  - black pepper
+  - eggs
+  - ground beef
+  - ground pork
+  - garlic powder
+  - onion powder
+  - mustard powder
+  - celery seeds
+  - molasses
+  - prepared horseradish
   yield: 8 servings
   source: file
   verification: needs-review
@@ -1792,11 +3202,36 @@ recipes:
     yaml: recipes/wc-kitchen.the-best-meatloaf-recipe-of-your-life.yaml
 - id: wc-kitchen.the-best-swedish-meatballs-recipe
   name: The Best Swedish Meatballs Recipe
-  category: Dinner
+  category: []
   tags:
-  - swedish meatballs
-  - gravy
+    cuisine:
+    - scandinavian
+    method:
+    - stovetop
   dietary: []
+  ingredients:
+  - breadcrumbs
+  - milk
+  - cream
+  - egg
+  - garlic
+  - salt
+  - black pepper
+  - white pepper
+  - Grillkrydda
+  - onion
+  - ground beef
+  - ground pork
+  - parsley
+  - butter (meatballs)
+  - olive oil
+  - butter (gravy)
+  - all-purpose flour
+  - vegetable broth
+  - beef broth
+  - heavy cream
+  - soy sauce
+  - dijon mustard
   yield: 8 servings
   source: file
   verification: verified
@@ -1806,13 +3241,21 @@ recipes:
     yaml: recipes/wc-kitchen.the-best-swedish-meatballs-recipe.yaml
 - id: wc-kitchen.tomato-relish
   name: Tomato Relish
-  category: Preserves
+  category: []
   tags:
-  - relish
-  - tomato
-  - condiment
-  - preserving
+    method:
+    - preserve
   dietary: []
+  ingredients:
+  - tomatoes
+  - onion
+  - salt
+  - mustard powder
+  - curry powder
+  - sugar
+  - vinegar
+  - cornflour
+  - vinegar (extra)
   yield: 2 kg
   source: file
   verification: verified
@@ -1822,14 +3265,17 @@ recipes:
     yaml: recipes/wc-kitchen.tomato-relish.yaml
 - id: wc-kitchen.toum
   name: Toum (Garlic Whip)
-  category: Condiment
+  category: []
   tags:
-  - garlic
-  - Lebanese
-  - emulsion
-  - sauce
-  - Middle Eastern
+    cuisine:
+    - middle_eastern
   dietary: []
+  ingredients:
+  - garlic
+  - kosher salt
+  - lemon juice
+  - oil
+  - ice water
   yield: 4 1/2 cups
   source: file
   verification: needs-manual-review
@@ -1839,14 +3285,25 @@ recipes:
     yaml: recipes/wc-kitchen.toum.yaml
 - id: wc-kitchen.tuna-and-white-bean-salad
   name: Tuna-and-White-Bean Salad
-  category: salad
+  category: []
   tags:
-  - tuna
-  - white bean
-  - Tuscan
-  - no-cook
-  - quick
+    cuisine:
+    - italian
+    method:
+    - no_cook
+    context:
+    - quick
   dietary: []
+  ingredients:
+  - tuna packed in oil
+  - canned white beans
+  - red onion
+  - capers
+  - watercress
+  - olive oil
+  - red- or white-wine vinegar
+  - salt
+  - black pepper
   yield: ''
   source: file
   verification: verified
@@ -1856,13 +3313,21 @@ recipes:
     yaml: recipes/wc-kitchen.tuna-and-white-bean-salad.yaml
 - id: wc-kitchen.tzatziki
   name: Tzatziki
-  category: sauce, dip
+  category: []
   tags:
-  - Greek
-  - tzatziki
-  - vegetarian
-  - quick
+    cuisine:
+    - greek
+    dietary:
+    - vegetarian
+    context:
+    - quick
   dietary: []
+  ingredients:
+  - Persian cucumbers
+  - plain whole-milk Greek yogurt
+  - dill
+  - lemon juice
+  - garlic
   yield: 2.5 cups
   source: file
   verification: verified
@@ -1873,23 +3338,40 @@ recipes:
 - id: wc-kitchen.ultimate-bean-dip
   name: Ultimate Bean Dip
   category: []
-  tags: []
+  tags:
+    method:
+    - slow_cooker
   dietary: []
+  ingredients:
+  - cream cheese
+  - refried beans
+  - salsa
+  - taco seasoning
+  - pepper jack cheese
+  - fresh cilantro
   yield: 1 batch
   source: url
-  verification: unknown
+  verification: needs-review
   links:
     html: site/wc-kitchen.ultimate-bean-dip.html
     pdf: pdfs/wc-kitchen.ultimate-bean-dip.pdf
     yaml: recipes/wc-kitchen.ultimate-bean-dip.yaml
 - id: wc-kitchen.ultra-crispy-smashed-potatoes
   name: Ultra Crispy Smashed Potatoes
-  category: Sides
+  category: []
   tags:
-  - smashed potatoes
-  - crispy
-  - potato
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - potatoes (small)
+  - potatoes (medium)
+  - salt (for boiling)
+  - unsalted butter
+  - olive oil
+  - salt (for sprinkling)
+  - black pepper
+  - parsley
   yield: 12 servings
   source: file
   verification: verified
@@ -1902,6 +3384,17 @@ recipes:
   category: []
   tags: []
   dietary: []
+  ingredients:
+  - ground beef or turkey
+  - yellow onion
+  - green bell pepper
+  - garlic
+  - salt
+  - tomato sauce
+  - tomato paste
+  - instant white rice
+  - water
+  - shredded cheese
   yield: 4 servings
   source: file
   verification: verified
@@ -1911,14 +3404,28 @@ recipes:
     yaml: recipes/wc-kitchen.unstuffed-bell-peppers.yaml
 - id: wc-kitchen.vegetarian-burrito-bowls
   name: Vegetarian Burrito Bowls
-  category: main dish
+  category: []
   tags:
-  - vegetarian
-  - bowls
-  - Mexican-inspired
-  - quick
-  dietary:
-  - vegetarian
+    cuisine:
+    - mexican
+    dietary:
+    - vegetarian
+    context:
+    - quick
+  dietary: []
+  ingredients:
+  - olive oil
+  - basmati rice
+  - salt
+  - water
+  - garlic
+  - black beans
+  - chili powder
+  - cumin
+  - avocado
+  - lime juice
+  - corn kernels
+  - cherry tomatoes
   yield: 4 servings
   source: url
   verification: verified
@@ -1928,15 +3435,35 @@ recipes:
     yaml: recipes/wc-kitchen.vegetarian-burrito-bowls.yaml
 - id: wc-kitchen.vegetarian-lentil-tortilla-soup
   name: Vegetarian Lentil Tortilla Soup
-  category: Main Dish
+  category: []
   tags:
-  - vegetarian
-  - soup
-  - Mexican
-  - lentil
-  - make-ahead
-  dietary:
-  - vegetarian
+    cuisine:
+    - mexican
+    dietary:
+    - vegetarian
+    method:
+    - slow_cooker
+    context:
+    - make_ahead
+  dietary: []
+  ingredients:
+  - onion
+  - avocado oil
+  - bell pepper
+  - jalapeno pepper
+  - vegetable broth
+  - canned tomato sauce
+  - salsa verde
+  - tomato paste
+  - black beans
+  - pinto beans
+  - corn
+  - dried red lentils
+  - chili powder
+  - garlic powder
+  - cumin
+  - cayenne pepper
+  - heavy cream
   yield: 6 cups
   source: file
   verification: needs-manual-review
@@ -1946,11 +3473,18 @@ recipes:
     yaml: recipes/wc-kitchen.vegetarian-lentil-tortilla-soup.yaml
 - id: wc-kitchen.waffles-i
   name: Waffles I
-  category: breakfast
-  tags:
-  - waffles
-  - breakfast
+  category: []
+  tags: []
   dietary: []
+  ingredients:
+  - eggs
+  - all-purpose flour
+  - milk
+  - vegetable oil
+  - white sugar
+  - baking powder
+  - salt
+  - vanilla extract
   yield: ''
   source: url
   verification: verified
@@ -1960,9 +3494,21 @@ recipes:
     yaml: recipes/wc-kitchen.waffles-i.yaml
 - id: wc-kitchen.white-bean-and-ham-soup
   name: White Bean & Ham Soup
-  category: soup
-  tags: []
+  category: []
+  tags:
+    method:
+    - slow_cooker
   dietary: []
+  ingredients:
+  - olive oil
+  - onions
+  - celery stalks
+  - carrots
+  - dried thyme
+  - garlic
+  - smoked ham hocks
+  - dried Great Northern beans
+  - chicken stock
   yield: 4 servings
   source: file
   verification: verified
@@ -1973,8 +3519,29 @@ recipes:
 - id: wc-kitchen.yellow-curry-with-chicken
   name: Yellow Curry with Chicken (Instant Pot)
   category: []
-  tags: []
+  tags:
+    method:
+    - instant_pot
   dietary: []
+  ingredients:
+  - olive oil
+  - onion
+  - garlic
+  - potatoes
+  - boneless skinless chicken
+  - chickpeas
+  - brown sugar
+  - ginger
+  - ground turmeric
+  - curry powder
+  - ground coriander
+  - salt
+  - crushed red pepper
+  - chicken broth
+  - coconut milk
+  - cornstarch
+  - water
+  - lime juice
   yield: 6 servings
   source: file
   verification: verified
@@ -1984,15 +3551,19 @@ recipes:
     yaml: recipes/wc-kitchen.yellow-curry-with-chicken.yaml
 - id: wc-kitchen.your-strawberry-jam-recipe
   name: Your Strawberry Jam Recipe (Ball RealFruit Low/No-Sugar Pectin)
-  category: jam / preserve
+  category: []
   tags:
-  - strawberry
-  - jam
-  - canning
-  - low sugar
-  - no sugar
-  - Ball RealFruit
+    dietary:
+    - low_sugar
+    method:
+    - preserve
   dietary: []
+  ingredients:
+  - strawberries
+  - unsweetened fruit juice or thawed concentrate or water
+  - Ball RealFruit Low or No-Sugar Needed Pectin
+  - granulated sugar or sugar substitute or honey
+  - butter or margarine
   yield: 3 half pints (8 oz)
   source: file
   verification: needs-review
@@ -2002,14 +3573,31 @@ recipes:
     yaml: recipes/wc-kitchen.your-strawberry-jam-recipe.yaml
 - id: wc-kitchen.yule-log-cake
   name: Yule Log Cake (Bûche de Noël)
-  category: Dessert
+  category: []
   tags:
-  - yule log
-  - christmas
-  - buche de noel
-  - chocolate
-  - cake
+    cuisine:
+    - american
+    method:
+    - oven
+    season:
+    - winter
   dietary: []
+  ingredients:
+  - all-purpose flour
+  - Hershey's Special Dark cocoa powder
+  - baking powder
+  - salt
+  - eggs
+  - granulated sugar
+  - sour cream
+  - butter
+  - vanilla extract
+  - heavy whipping cream
+  - powdered sugar
+  - vanilla extract
+  - salt
+  - mascarpone cheese
+  - semi-sweet chocolate
   yield: 8 servings
   source: file
   verification: needs-manual-review
@@ -2020,8 +3608,26 @@ recipes:
 - id: wc-kitchen.zucchini-bread-muffins
   name: Zucchini Bread Muffins
   category: []
-  tags: []
+  tags:
+    method:
+    - oven
   dietary: []
+  ingredients:
+  - all-purpose flour
+  - baking powder
+  - baking soda
+  - salt
+  - ground cinnamon
+  - ground nutmeg
+  - vegetable oil
+  - granulated sugar
+  - brown sugar
+  - eggs
+  - pure vanilla extract
+  - milk
+  - zucchini
+  - semi-sweet chocolate chips
+  - coarse sugar
   yield: 12 muffins
   source: file
   verification: verified
