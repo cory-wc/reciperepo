@@ -7,6 +7,7 @@ from urllib.parse import urlparse
 
 import yaml
 
+from .index import category_filter_tabs
 from .paths import RepoPaths
 
 # Homepage-only URLs (no recipe path)
@@ -68,11 +69,18 @@ def _is_bare_source_url(url: str) -> bool:
     return False
 
 
-def _category_is_list(data: dict) -> bool:
-    cat = data.get("X-category")
-    if cat is None:
-        return False
-    return isinstance(cat, list)
+def _structured_categories(data: dict) -> dict | None:
+    categories = data.get("X-categories")
+    return categories if isinstance(categories, dict) else None
+
+
+def _category_values(categories: dict, key: str) -> list[str]:
+    value = categories.get(key)
+    if isinstance(value, str):
+        return [value]
+    if isinstance(value, list):
+        return [str(item) for item in value if str(item).strip()]
+    return []
 
 
 def _dish_type_count(data: dict) -> int | None:
@@ -98,12 +106,13 @@ def audit_recipe(recipe_id: str, data: dict) -> list[AuditIssue]:
     is_reference = "index-page-not-a-recipe" in flags
 
     if is_reference:
-        if not _category_is_list(data) and data.get("X-category") != "reference":
+        categories = _structured_categories(data) or {}
+        if "reference" not in _category_values(categories, "dish_type"):
             issues.append(
                 AuditIssue(
                     recipe_id,
                     "reference-category",
-                    "index/reference entry should have X-category: [reference]",
+                    "index/reference entry should have X-categories.dish_type: [reference]",
                 )
             )
         return issues
@@ -120,15 +129,34 @@ def audit_recipe(recipe_id: str, data: dict) -> list[AuditIssue]:
             )
         )
 
-    if not _category_is_list(data):
-        if data.get("X-category") is None:
-            issues.append(AuditIssue(recipe_id, "missing-category", "missing X-category"))
-        else:
+    categories = _structured_categories(data)
+    if categories is None:
+        issues.append(
+            AuditIssue(recipe_id, "missing-category", "missing structured X-categories")
+        )
+    else:
+        dish_types = _category_values(categories, "dish_type")
+        meal_types = _category_values(categories, "meal_type")
+        if not dish_types or not meal_types:
             issues.append(
                 AuditIssue(
                     recipe_id,
                     "category-format",
-                    "X-category should be a list (e.g. [dinner])",
+                    "X-categories requires non-empty dish_type and meal_type lists",
+                )
+            )
+        elif not category_filter_tabs(
+            {
+                "dish_type": dish_types,
+                "meal_type": meal_types,
+                "meal_role": _category_values(categories, "meal_role"),
+            }
+        ):
+            issues.append(
+                AuditIssue(
+                    recipe_id,
+                    "missing-filter-category",
+                    "recipe must map to Main dish, Sides, Dessert, Breakfast, Lunch, or Dinner",
                 )
             )
 
@@ -262,6 +290,7 @@ _CODE_ORDER = [
     "legacy-author",
     "missing-category",
     "category-format",
+    "missing-filter-category",
     "missing-tags",
     "missing-verification",
     "empty-flags-only",

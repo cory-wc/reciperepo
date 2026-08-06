@@ -37,6 +37,7 @@ X-categories:
   - beverage
   meal_type:
   - anytime
+  - dinner
 X-tags:
   context:
   - holiday

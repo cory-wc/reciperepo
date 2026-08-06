@@ -98,11 +98,11 @@
   }
   .ingredient-amount { text-align: right; white-space: nowrap; }
   .ingredient-name { text-align: left; }
-  .steps { line-height: 1.26; }
+  .steps { line-height: {% if mode == 'print' %}1.26{% else %}1.5{% endif %}; }
   .step-row {
     display: grid;
-    grid-template-columns: .3in 1fr;
-    column-gap: .2in;
+    grid-template-columns: {% if mode == 'print' %}.3in{% else %}2rem{% endif %} 1fr;
+    column-gap: {% if mode == 'print' %}.2in{% else %}0.5rem{% endif %};
     margin: 0 0 .16in;
   }
   .num { font-weight: 700; line-height: 1.15; }

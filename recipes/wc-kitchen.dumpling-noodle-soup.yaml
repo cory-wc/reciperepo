@@ -83,6 +83,7 @@ X-categories:
   - soup
   meal_type:
   - dinner
+  - lunch
 X-source-verification:
   status: needs-review
   notes:

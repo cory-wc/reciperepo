@@ -122,6 +122,7 @@ What format the recipe is. **Prefer 1–2 values** per recipe (guidance only —
 | `bowl` | Burrito bowls, buddha bowls, composed grain bowls |
 | `burgers+sandwiches` | Burgers, sandwiches, wraps, quesadillas, and other handheld mains — only when the recipe mentions bread, buns, or tortilla (not breadcrumbs alone) |
 | `side` | Finished sides served alongside a meal |
+| `appetizer` | Dips, starters, and first-course dishes explicitly presented as appetizers by the source |
 | `sauce` | Sauces, condiments, dips, dressings |
 | `component` | Prep/base for other dishes (farro method, IP black beans, pie dough) |
 | `preserve` | Jam, relish, pickles, canning |
@@ -164,7 +165,31 @@ Optional. Use when it clarifies how the dish fits a meal.
 | `one_dish_meal` |
 | `side_dish` |
 
-Do not use `appetizer` — legacy appetizer categories map to `dish_type: [side]`.
+Use `appetizer` only when the source explicitly presents the recipe as a starter or
+appetizer. Generic accompaniments remain `side`; sauces and dressings remain `sauce`.
+The website groups `appetizer` under the **Sides** prefilter because the index uses a
+small browsing taxonomy over the more precise recipe taxonomy.
+
+### Website category filters
+
+Every published recipe (excluding entries flagged `index-page-not-a-recipe`) must map
+to at least one website category. A recipe may map to more than one:
+
+| Website filter | `X-categories` mapping                                                                |
+| -------------- | ------------------------------------------------------------------------------------- |
+| Main dish      | `dish_type`: `main`, `one_dish`, `pasta`, `bowl`, `burgers+sandwiches`, or `soup` |
+| Sides          | `dish_type`: `side`, `salad`, or `appetizer`                                        |
+| Dessert        | `dish_type: dessert` or `meal_type: dessert`                                         |
+| Breakfast      | `dish_type: breakfast_bake` or `meal_type: breakfast`                                |
+| Lunch          | `meal_type: lunch`                                                                     |
+| Dinner         | `meal_type: dinner`                                                                    |
+
+Use source-page JSON-LD (`recipeCategory`, `keywords`) and headings to improve
+`dish_type` and `meal_type` when available. Keep existing metadata unless the source
+or recipe name supplies clear evidence. Lunch-friendly soups, salads, bowls, and
+sandwiches may use both `lunch` and `dinner`. Run
+`python scripts/enrich_category_tabs.py` for a dry-run report and add `--apply` to
+write conservative source-derived and coverage changes.
 
 ---
 
@@ -428,6 +453,6 @@ The batch fix script also:
 
 `recipe audit-metadata` reports these issue codes:
 
-`bare-source-url`, `missing-category`, `missing-tags`, `missing-verification`, `legacy-author`, `category-format`, `empty-flags-only`, `missing-provenance`, `reference-category`, `dish-type-count` (guidance only — prefer 1–2 `X-categories.dish_type` values)
+`bare-source-url`, `missing-category`, `missing-filter-category`, `missing-tags`, `missing-verification`, `legacy-author`, `category-format`, `empty-flags-only`, `missing-provenance`, `reference-category`, `dish-type-count` (guidance only — prefer 1–2 `X-categories.dish_type` values)
 
 Script equivalent: `python scripts/audit_metadata.py`

@@ -97,6 +97,7 @@ X-categories:
   - burgers+sandwiches
   meal_type:
   - dinner
+  - lunch
 X-tags:
   cuisine:
   - american
