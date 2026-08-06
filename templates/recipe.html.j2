@@ -2,21 +2,24 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ title }}</title>
+{% if mode == 'screen' %}
+{% include 'theme-init.html.j2' %}
+{% endif %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <style>
+  {% include 'typography.css.j2' %}
   {% if mode == 'print' %}
   @page { size: Letter; margin: 0; }
   {% endif %}
-  * { box-sizing: border-box; }
   body {
-    margin: 0;
     background: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
     color: #2e2b28;
-    {% if mode == 'screen' %}
-    padding: 1.5rem;
-    max-width: 900px;
-    margin: 0 auto;
+    {% if mode == 'print' %}
+    margin: 0;
     {% endif %}
   }
   .page {
@@ -33,20 +36,48 @@
   h1 {
     margin: 0 0 {% if mode == 'print' %}0.24in{% else %}1rem{% endif %};
     text-align: center;
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: {% if mode == 'print' %}31pt{% else %}2.2rem{% endif %};
-    line-height: 1;
-    font-weight: 700;
     letter-spacing: .01em;
   }
   .rule { border-top: 1.2pt solid #504a43; height: 0; }
   .meta {
     text-align: center;
-    font-size: {% if mode == 'print' %}9.5pt{% else %}0.95rem{% endif %};
     padding: 0.06in 0 0.055in;
     letter-spacing: .01em;
     color: #504a43;
   }
+{% if mode == 'screen' %}
+  .meta-row {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    min-width: 0;
+  }
+  .meta-row .meta {
+    grid-column: 2;
+  }
+  .source-header {
+    grid-column: 3;
+    justify-self: end;
+    min-width: 0;
+    max-width: 100%;
+    white-space: nowrap;
+  }
+  .source-header a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #504a43;
+  }
+  .source-link-icon {
+    width: 0.85rem;
+    height: 0.85rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+{% endif %}
   .content {
     display: grid;
     grid-template-columns: {% if mode == 'print' %}2.4in 3.05in{% else %}1fr 1.2fr{% endif %};
@@ -54,10 +85,10 @@
     margin-top: {% if mode == 'print' %}0.22in{% else %}1.5rem{% endif %};
     align-items: start;
   }
-  @media (max-width: 640px) {
-    .content { grid-template-columns: 1fr; }
+  .content h3 {
+    margin: 0 0 1rem;
   }
-  .ingredients { font-size: {% if mode == 'print' %}14.5pt{% else %}1.05rem{% endif %}; line-height: 1.25; }
+  .ingredients { line-height: 1.25; }
   .ingredient-row {
     display: grid;
     grid-template-columns: {% if mode == 'print' %}0.82in 1fr{% else %}5rem 1fr{% endif %};
@@ -67,38 +98,202 @@
   }
   .ingredient-amount { text-align: right; white-space: nowrap; }
   .ingredient-name { text-align: left; }
-  .steps { font-size: {% if mode == 'print' %}13.5pt{% else %}1rem{% endif %}; line-height: 1.26; }
+  .steps { line-height: 1.26; }
   .step-row {
     display: grid;
     grid-template-columns: .3in 1fr;
     column-gap: .2in;
     margin: 0 0 .16in;
   }
-  .num { font-family: Georgia, 'Times New Roman', serif; font-weight: 700; }
-  .source-footer {
-    margin-top: 1.5rem;
-    font-size: 0.85rem;
-    color: #666;
-    text-align: center;
+  .num { font-weight: 700; line-height: 1.15; }
+{% if mode == 'print' %}
+  h1 { font-size: 31pt; font-weight: 400; line-height: 1; }
+  .meta { font-size: 9.5pt; }
+  .ingredients { font-size: 14.5pt; }
+  .steps { font-size: 13.5pt; }
+{% endif %}
+{% if mode == 'screen' %}
+  .recipe-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
   }
-  .source-footer a { color: #504a43; }
-  .back-link { margin-bottom: 1rem; font-size: 0.9rem; }
-  .back-link a { color: #504a43; }
+  .back-link { margin: 0; }
+  .back-link a {
+    color: #504a43;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .back-link-icon {
+    display: inline-flex;
+    width: 0.85rem;
+    height: 0.85rem;
+  }
+  .back-link-icon svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .settings {
+    position: relative;
+  }
+  .settings-button {
+    display: inline-grid;
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: #504a43;
+    cursor: pointer;
+  }
+  .settings-button svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .settings-menu {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    z-index: 30;
+    width: min(18rem, calc(100vw - 2rem));
+    margin: 0;
+    padding: 1rem;
+    list-style: none;
+    border: 1px solid #aaa;
+    border-radius: 0.25rem;
+    background: #fff;
+    box-shadow: 0 0.5rem 1.5rem var(--color-shadow);
+  }
+  .settings-menu > li + li {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border);
+  }
+  .settings-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  .setting-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .toggle-switch {
+    position: relative;
+    flex: 0 0 auto;
+    width: 2.75rem;
+    height: 1.5rem;
+    padding: 0;
+    border: 1px solid var(--color-input-border);
+    border-radius: 999px;
+    background: var(--color-hover);
+    cursor: pointer;
+  }
+  .toggle-switch::after {
+    content: '';
+    position: absolute;
+    top: 0.1875rem;
+    left: 0.1875rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: var(--color-muted);
+    transition: transform 160ms ease, background 160ms ease;
+  }
+  .toggle-switch[aria-checked="true"] {
+    border-color: var(--color-accent);
+    background: var(--color-accent);
+  }
+  .toggle-switch[aria-checked="true"]::after {
+    background: var(--color-accent-contrast);
+    transform: translateX(1.25rem);
+  }
+  .toggle-switch:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  .setting-status {
+    display: block;
+    margin-top: 0.35rem;
+    color: var(--color-muted);
+  }
+{% include 'responsive.css.j2' %}
+{% include 'theme.css.j2' %}
+{% endif %}
 </style>
 </head>
-<body>
-  {% if mode == 'screen' %}
-  <p class="back-link"><a href="index.html">All recipes</a></p>
-  {% endif %}
+<body class="recipe-page">
+{% if mode == 'screen' %}
+  <div class="recipe-toolbar text-small">
+    <p class="back-link"><a href="index.html"><span class="back-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></span>All recipes</a></p>
+    <div class="settings">
+      <button id="settings-button" class="settings-button" type="button" aria-label="Recipe settings" aria-expanded="false" aria-controls="settings-menu" title="Settings">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.2h-4V21a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9A1.7 1.7 0 0 0 3 14H2.8v-4H3a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L4.2 7 7 4.2l.1.1A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-1.6v-.2h4V3a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.2v4H21a1.7 1.7 0 0 0-1.6 1Z"></path>
+        </svg>
+      </button>
+      <menu id="settings-menu" class="settings-menu" hidden>
+        <li>
+          <div class="setting-row">
+            <span>Dark mode</span>
+            <button id="theme-toggle" class="toggle-switch" type="button" role="switch" aria-checked="false" aria-label="Dark mode"></button>
+          </div>
+          <small id="theme-status" class="setting-status">Light</small>
+        </li>
+        <li>
+          <div class="setting-row">
+            <span>Keep screen awake</span>
+            <button id="screen-wake-toggle" class="toggle-switch" type="button" role="switch" aria-checked="false" aria-label="Keep screen awake"></button>
+          </div>
+          <small id="screen-wake-status" class="setting-status">Off</small>
+        </li>
+      </menu>
+    </div>
+  </div>
+{% endif %}
   <main class="page">
     <h1>{{ title }}</h1>
     <div class="rule"></div>
-    {% if meta %}
-    <div class="meta">{{ meta }}</div>
+{% if meta or (source_url and mode == 'screen') %}
+    <div class="meta-row">
+{% if meta %}      <div class="meta text-caption">{{ meta }}</div>{% endif %}
+{% if source_url and mode == 'screen' %}
+      <div class="source-header text-caption">
+        <a href="{{ source_url }}" target="_blank" rel="noopener noreferrer" title="{{ source_url }}">
+          Source
+          <svg class="source-link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M14 5h5v5"></path>
+            <path d="M10 14 19 5"></path>
+            <path d="M19 13v6H5V5h6"></path>
+          </svg>
+        </a>
+      </div>
+{% endif %}
+    </div>
     <div class="rule"></div>
-    {% endif %}
+{% endif %}
     <section class="content">
       <div class="ingredients">
+{% if mode == 'screen' %}        <h3>Ingredients</h3>{% endif %}
         {% for ing in ingredients %}
         <div class="ingredient-row">
           <div class="ingredient-amount">{{ ing.amount }}</div>
@@ -107,6 +302,7 @@
         {% endfor %}
       </div>
       <div class="steps">
+{% if mode == 'screen' %}        <h3>Steps</h3>{% endif %}
         {% for step in steps %}
         <div class="step-row">
           <div class="num">{{ step.num }}.</div>
@@ -115,9 +311,107 @@
         {% endfor %}
       </div>
     </section>
-    {% if source_url and mode == 'screen' %}
-    <p class="source-footer">Source: <a href="{{ source_url }}">{{ source_url }}</a></p>
-    {% endif %}
   </main>
+{% if mode == 'screen' %}
+  <script>
+    const settings = document.querySelector('.settings');
+    const settingsButton = document.querySelector('#settings-button');
+    const settingsMenu = document.querySelector('#settings-menu');
+    const themeToggle = document.querySelector('#theme-toggle');
+    const themeStatus = document.querySelector('#theme-status');
+    const wakeToggle = document.querySelector('#screen-wake-toggle');
+    const wakeStatus = document.querySelector('#screen-wake-status');
+    let wakeLock = null;
+    let keepAwakeRequested = false;
+
+    function setMenuOpen(open) {
+      settingsMenu.hidden = !open;
+      settingsButton.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (open) {
+        settingsMenu.querySelector('button, input')?.focus();
+      }
+    }
+
+    function setTheme(theme) {
+      document.documentElement.dataset.theme = theme;
+      const dark = theme === 'dark';
+      themeToggle.setAttribute('aria-checked', dark ? 'true' : 'false');
+      themeStatus.textContent = dark ? 'Dark' : 'Light';
+      try {
+        localStorage.setItem('recipe-theme', theme);
+      } catch (error) {
+        // The selected theme still applies when storage is unavailable.
+      }
+    }
+
+    settingsButton.addEventListener('click', () => {
+      setMenuOpen(settingsMenu.hidden);
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!settings.contains(event.target)) setMenuOpen(false);
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !settingsMenu.hidden) {
+        setMenuOpen(false);
+        settingsButton.focus();
+      }
+    });
+
+    themeToggle.addEventListener('click', () => {
+      setTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark');
+    });
+    setTheme(document.documentElement.dataset.theme || 'light');
+
+    function updateWakeStatus() {
+      wakeToggle.setAttribute('aria-checked', keepAwakeRequested ? 'true' : 'false');
+      wakeStatus.textContent = wakeLock ? 'On' : (keepAwakeRequested ? 'Paused' : 'Off');
+    }
+
+    async function requestWakeLock() {
+      if (!keepAwakeRequested || document.visibilityState !== 'visible') return;
+      try {
+        wakeLock = await navigator.wakeLock.request('screen');
+        updateWakeStatus();
+        wakeLock.addEventListener('release', () => {
+          wakeLock = null;
+          updateWakeStatus();
+        });
+      } catch (error) {
+        keepAwakeRequested = false;
+        updateWakeStatus();
+        wakeStatus.textContent = `Unavailable: ${error.message}`;
+      }
+    }
+
+    async function releaseWakeLock() {
+      keepAwakeRequested = false;
+      if (wakeLock) await wakeLock.release();
+      wakeLock = null;
+      updateWakeStatus();
+    }
+
+    if ('wakeLock' in navigator) {
+      wakeToggle.addEventListener('click', async () => {
+        if (!keepAwakeRequested) {
+          keepAwakeRequested = true;
+          await requestWakeLock();
+        } else {
+          await releaseWakeLock();
+        }
+      });
+
+      document.addEventListener('visibilitychange', () => {
+        if (keepAwakeRequested && document.visibilityState === 'visible' && !wakeLock) {
+          requestWakeLock();
+        }
+      });
+    } else {
+      wakeToggle.disabled = true;
+      wakeStatus.textContent = 'Unavailable in this browser';
+    }
+  </script>
+{% endif %}
 </body>
 </html>

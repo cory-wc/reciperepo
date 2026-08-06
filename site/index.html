@@ -2,1877 +2,3747 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Recipe Index</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Willineau Recipes</title>
+
+<script>
+  (() => {
+    let theme = 'light';
+    try {
+      theme = localStorage.getItem('recipe-theme')
+        || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    } catch (error) {
+      theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.dataset.theme = theme;
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <style>
+  html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+h1,
+.text-size-h1 {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-weight: 400;
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2,
+.text-size-h2 { font-size: 2.441rem; }
+
+h3,
+.text-size-h3 {
+  font-size: 1.953rem;
+  font-weight: 400;
+}
+
+h4,
+.text-size-h4 { font-size: 1.563rem; }
+
+h5,
+.text-size-h5 { font-size: 1.25rem; }
+
+.text-caption { font-size: 0.875rem; }
+
+small,
+.text-small {
+  font-size: 0.8rem;
+}
   
   body {
-    font-family: Georgia, 'Times New Roman', serif;
     color: #2e2b28;
-    
-    max-width: 720px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    
   }
-  h1 { text-align: center; font-size: 2rem; }
-  .meta { text-align: center; color: #666; font-size: 0.9rem; margin-bottom: 1.5rem; }
-  table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+  h1 { text-align: center; }
+  .meta { text-align: center; color: #666; margin-bottom: 1.5rem; }
+
+  .index-header { position: relative; }
+  .index-header .meta {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+  }
+  .recipe-search { margin-bottom: 1.25rem; }
+  .recipe-search label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.35rem;
+    font-size: 1.25rem;
+    line-height: 1.15;
+  }
+  .recipe-search-field { position: relative; }
+  .recipe-search-input-wrap { position: relative; }
+  .recipe-search-icon {
+    position: absolute;
+    left: 0.65rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    color: #666;
+    pointer-events: none;
+  }
+  .recipe-search-icon svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .recipe-search input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.55rem 0.65rem 0.55rem 2.25rem;
+    border: 1px solid #aaa;
+    border-radius: 0.25rem;
+    color: inherit;
+    font: inherit;
+    background: #fff;
+  }
+  .recipe-search-field.open .recipe-search-input-wrap input {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .recipe-search-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-top: none;
+    border-radius: 0 0 0.25rem 0.25rem;
+    max-height: 12rem;
+    overflow-y: auto;
+    z-index: 10;
+  }
+  .recipe-search-suggestions li {
+    padding: 0.55rem 0.65rem;
+    color: #504a43;
+    border-top: 1px solid #504a43;
+    cursor: pointer;
+  }
+  .recipe-search-suggestions li:hover,
+  .recipe-search-suggestions li[aria-selected="true"] {
+    background: #f5f3f0;
+  }
+  .recipe-alpha-index {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 1.25rem;
+  }
+  .recipe-alpha-letter {
+    border: none;
+    background: transparent;
+    color: #504a43;
+    padding: 0.15rem 0;
+    font: inherit;
+    line-height: 1.2;
+    cursor: pointer;
+    flex: 1 1 0;
+    min-width: 0;
+    text-align: center;
+  }
+  .recipe-alpha-letter:hover:not(:disabled) {
+    color: #2e2b28;
+    text-decoration: underline;
+  }
+  .recipe-alpha-letter.active {
+    color: #2e2b28;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  .recipe-alpha-letter:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+  th.sortable { cursor: pointer; user-select: none; }
+  th.sortable:hover { color: #504a43; }
+  th.sortable::after {
+    content: '↕';
+    margin-left: 0.35rem;
+    font-size: 0.75em;
+    opacity: 0.35;
+  }
+  th.sortable[aria-sort="ascending"]::after {
+    content: '↑';
+    opacity: 1;
+  }
+  th.sortable[aria-sort="descending"]::after {
+    content: '↓';
+    opacity: 1;
+  }
+  #recipe-table tbody td:not(:first-child) {
+    font-size: 0.875rem;
+  }
+  .ingredient-cell summary {
+    display: inline;
+    cursor: pointer;
+    list-style: none;
+  }
+  .ingredient-cell summary::-webkit-details-marker {
+    display: none;
+  }
+  .ingredient-cell summary::marker {
+    content: '';
+  }
+  .ingredient-list {
+    display: inline;
+  }
+  .ingredient-list .ingredient-name::before {
+    content: ', ';
+  }
+  .ingredient-more {
+    white-space: nowrap;
+  }
+  .ingredient-cell details[open] .ingredient-more {
+    display: none;
+  }
+
+  table { width: 100%; border-collapse: collapse; }
   th, td { text-align: left; padding: 0.35rem 0.5rem; border-bottom: 1px solid #ddd; }
-  th { font-weight: 700; border-bottom: 2px solid #504a43; }
-  .tags { color: #666; font-size: 0.85em; }
+  th {
+    font-weight: 700;
+    line-height: 1.15;
+    font-size: 1.25rem;
+    border-bottom: 2px solid #504a43;
+  }
+  .tags { color: #666; }
   a { color: #504a43; text-decoration: none; }
   a:hover { text-decoration: underline; }
-  .pdf-ref { font-family: Arial, sans-serif; font-size: 0.85em; color: #666; }
+  .pdf-ref { color: #666; }
+
+
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+body.index-page {
+  max-width: 960px;
+  padding: 2rem;
+}
+
+body.recipe-page {
+  max-width: 900px;
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 5vw, 3.052rem);
+}
+
+@media (min-width: 640px) {
+  body.index-page #recipe-table {
+    table-layout: fixed;
+  }
+
+  body.index-page #recipe-table th:nth-child(1) {
+    width: 44%;
+  }
+
+  body.index-page #recipe-table th:nth-child(2) {
+    width: 16%;
+  }
+
+  body.index-page #recipe-table th:nth-child(3) {
+    width: 28%;
+  }
+
+  body.index-page #recipe-table th:nth-child(4) {
+    width: 12%;
+  }
+
+  body.index-page #recipe-table td {
+    overflow-wrap: anywhere;
+  }
+
+  body.index-page #recipe-table thead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--color-background, #ffffff);
+    box-shadow: 0 1px 0 var(--color-border-strong, #504a43);
+  }
+
+  body.recipe-page .ingredients {
+    position: sticky;
+    top: 1.5rem;
+    align-self: start;
+    max-height: calc(100vh - 3rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-right: 0.5rem;
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  body.index-page,
+  body.recipe-page {
+    max-width: 768px;
+    padding: 1.5rem;
+  }
+
+  body.recipe-page .content {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 1.5rem;
+  }
+
+  body.recipe-page .ingredient-row {
+    grid-template-columns: 4.5rem 1fr;
+  }
+}
+
+@media (max-width: 639px) {
+  body.index-page,
+  body.recipe-page {
+    max-width: none;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 11vw, 2.75rem);
+  }
+
+  body.index-page .index-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body.index-page .index-header .meta {
+    position: static;
+    order: -1;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+  }
+
+  body.index-page .recipe-search {
+    margin-bottom: 1rem;
+  }
+
+  body.index-page .recipe-search-suggestions {
+    max-height: 10rem;
+  }
+
+  body.index-page .recipe-alpha-index {
+    justify-content: flex-start;
+    gap: 0.125rem;
+    overflow-x: auto;
+    padding-bottom: 0.35rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  body.index-page .recipe-alpha-letter {
+    flex: 0 0 2rem;
+    min-width: 2rem;
+  }
+
+  body.index-page #recipe-table thead {
+    display: none;
+  }
+
+  body.index-page #recipe-table,
+  body.index-page #recipe-table tbody,
+  body.index-page #recipe-table tr,
+  body.index-page #recipe-table td {
+    display: block;
+    width: 100%;
+  }
+
+  body.index-page #recipe-table tr {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+  }
+
+  body.index-page #recipe-table td {
+    display: grid;
+    grid-template-columns: 4.5rem minmax(0, 1fr);
+    gap: 0.75rem;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #eee;
+    overflow-wrap: anywhere;
+  }
+
+  body.index-page #recipe-table td:last-child {
+    border-bottom: 0;
+  }
+
+  body.index-page #recipe-table td::before {
+    content: attr(data-label);
+    color: #666;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.65;
+  }
+
+  body.recipe-page .content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  body.recipe-page .ingredient-row {
+    grid-template-columns: minmax(4rem, auto) minmax(0, 1fr);
+  }
+
+  body.recipe-page .meta-row {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+    padding: 0.35rem 0;
+  }
+
+  body.recipe-page .meta-row .meta,
+  body.recipe-page .source-header {
+    grid-column: 1;
+    justify-self: center;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+}
+:root,
+:root[data-theme="light"] {
+  color-scheme: light;
+  --color-background: #ffffff;
+  --color-surface: #ffffff;
+  --color-text: #2e2b28;
+  --color-muted: #666666;
+  --color-border: #dddddd;
+  --color-border-strong: #504a43;
+  --color-input-border: #aaaaaa;
+  --color-hover: #f5f3f0;
+  --color-accent: #504a43;
+  --color-accent-contrast: #ffffff;
+  --color-shadow: rgba(46, 43, 40, 0.18);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-background: #191816;
+  --color-surface: #24221f;
+  --color-text: #f1eee8;
+  --color-muted: #b8b2aa;
+  --color-border: #48433d;
+  --color-border-strong: #c6beb4;
+  --color-input-border: #6a635b;
+  --color-hover: #302d29;
+  --color-accent: #e0d8ce;
+  --color-accent-contrast: #191816;
+  --color-shadow: rgba(0, 0, 0, 0.45);
+}
+
+body,
+.page {
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+a,
+.back-link a,
+.source-header a {
+  color: var(--color-accent);
+}
+
+a {
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.16em;
+  transition: text-decoration-thickness 180ms ease;
+}
+
+a:hover {
+  text-decoration-thickness: 0.14em;
+}
+
+.meta,
+.tags,
+.pdf-ref,
+.source-header,
+.recipe-search-icon,
+.ingredient-more {
+  color: var(--color-muted);
+}
+
+.rule,
+th {
+  border-color: var(--color-border-strong);
+}
+
+th,
+td {
+  border-color: var(--color-border);
+}
+
+.recipe-search input,
+.recipe-search-suggestions,
+.settings-menu {
+  border-color: var(--color-input-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.recipe-search-suggestions li {
+  border-color: var(--color-border-strong);
+  color: var(--color-text);
+}
+
+.recipe-search-suggestions li:hover,
+.recipe-search-suggestions li[aria-selected="true"],
+.settings-button:hover {
+  background: var(--color-hover);
+}
+
+.recipe-alpha-letter,
+.settings-button {
+  color: var(--color-accent);
+}
+
+.recipe-alpha-letter:hover:not(:disabled),
+.recipe-alpha-letter.active {
+  color: var(--color-text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a {
+    transition: none;
+  }
+}
+
+@media (max-width: 639px) {
+  body.index-page #recipe-table tr,
+  body.index-page #recipe-table td {
+    border-color: var(--color-border);
+  }
+
+  body.index-page #recipe-table td::before {
+    color: var(--color-muted);
+  }
+}
+
 </style>
 </head>
-<body>
-  <h1>Recipe Index</h1>
-  <p class="meta">Generated 2026-05-30</p>
-  <table>
+<body class="index-page">
+  <header class="index-header">
+    <h1>Willineau Recipes</h1>
+    <p class="meta text-caption">Generated 2026-08-05</p>
+  </header>
+
+  <div class="recipe-search">
+    <label for="recipe-search">Search recipes</label>
+    <div class="recipe-search-field">
+      <div class="recipe-search-input-wrap">
+        <span class="recipe-search-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+          </svg>
+        </span>
+        <input id="recipe-search" type="search" placeholder="Search by recipe, tag, ingredient, or yield" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="recipe-search-suggestions" aria-autocomplete="list">
+      </div>
+      <ul id="recipe-search-suggestions" class="recipe-search-suggestions" role="listbox" hidden></ul>
+    </div>
+    <nav id="recipe-alpha-index" class="recipe-alpha-index text-small" aria-label="Filter recipes by letter"></nav>
+  </div>
+
+  <table id="recipe-table">
     <thead>
       <tr>
-        <th>Recipe</th>
-        <th>Tags</th>
-        <th>Yield</th>
-        
+
+        <th class="sortable" data-column="0" aria-sort="ascending">Recipe</th>
+        <th class="sortable" data-column="1">Tags</th>
+        <th class="sortable" data-column="2">Ingredients</th>
+        <th class="sortable" data-column="3">Yield</th>
+
+
       </tr>
     </thead>
     <tbody>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.15-minute-miso-soup-with-greens-and-tofu.html">15-Minute Miso Soup with Greens and Tofu</a>
-          
+
         </td>
-        
-        <td class="tags">Gluten-Free, Japanese-Inspired, Vegan</td>
-        
-        <td>4 bowls</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, dietary</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="vegetable broth">
+
+          <details>
+            <summary><span class="ingredient-name">vegetable broth</span>, <span class="ingredient-name">dried seaweed (nori)</span>, <span class="ingredient-name">miso paste</span><span class="ingredient-more"> +3 more</span></summary><span class="ingredient-list"><span class="ingredient-name">chopped green chard</span><span class="ingredient-name">chopped green onion</span><span class="ingredient-name">firm tofu</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 bowls</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.30-minute-dairy-free-potato-soup.html">30 Minute Dairy Free Potato Soup</a>
-          
+
         </td>
-        
-        <td class="tags">dairy-free, gluten-free, Whole30, potato soup</td>
-        
-        <td>8 cup servings</td>
-        
+
+        <td class="tags" data-label="Tags">dietary</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="potatoes">
+
+          <details>
+            <summary><span class="ingredient-name">potatoes</span>, <span class="ingredient-name">chicken stock or broth</span>, <span class="ingredient-name">white or yellow onion</span><span class="ingredient-more"> +5 more</span></summary><span class="ingredient-list"><span class="ingredient-name">canned coconut milk</span><span class="ingredient-name">garlic powder</span><span class="ingredient-name">salt</span><span class="ingredient-name">pepper</span><span class="ingredient-name">dried thyme or dried chives</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 cup servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.actually-delicious-turkey-burgers.html">Actually Delicious Turkey Burgers</a>
-          
+
         </td>
-        
-        <td class="tags">turkey, burgers, ground turkey</td>
-        
-        <td>12 patties</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="ground turkey">
+
+          <details>
+            <summary><span class="ingredient-name">ground turkey</span>, <span class="ingredient-name">seasoned bread crumbs</span>, <span class="ingredient-name">onion</span><span class="ingredient-more"> +6 more</span></summary><span class="ingredient-list"><span class="ingredient-name">egg whites</span><span class="ingredient-name">fresh parsley</span><span class="ingredient-name">garlic</span><span class="ingredient-name">salt</span><span class="ingredient-name">ground black pepper</span><span class="ingredient-name">cumin</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">12 patties</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.all-purpose-thai-basil-sauce.html">All-Purpose Thai Basil Sauce</a>
-          
+
         </td>
-        
-        <td class="tags">Thai, basil, stir fry, pantry staples</td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, dietary</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="oyster sauce">
+
+          <details>
+            <summary><span class="ingredient-name">oyster sauce</span>, <span class="ingredient-name">soy sauce</span>, <span class="ingredient-name">fish sauce</span><span class="ingredient-more"> +9 more</span></summary><span class="ingredient-list"><span class="ingredient-name">granulated sugar</span><span class="ingredient-name">neutral oil</span><span class="ingredient-name">onion</span><span class="ingredient-name">garlic</span><span class="ingredient-name">Thai chilies</span><span class="ingredient-name">chicken, pork, or vegetable stock</span><span class="ingredient-name">black or dark soy sauce</span><span class="ingredient-name">red bell pepper</span><span class="ingredient-name">basil leaves</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.bacon-onion-tart.html">Bacon Onion Tart</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>12 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="onions">
+
+          <details>
+            <summary><span class="ingredient-name">onions</span>, <span class="ingredient-name">bacon strips</span>, <span class="ingredient-name">butter</span><span class="ingredient-more"> +3 more</span></summary><span class="ingredient-list"><span class="ingredient-name">eggs</span><span class="ingredient-name">parmesan</span><span class="ingredient-name">pie crusts</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">12 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.bacon-shrimp-sweet-potatoes.html">Bacon-Shrimp Sweet Potatoes</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="sweet potatoes">
+
+          <details>
+            <summary><span class="ingredient-name">sweet potatoes</span>, <span class="ingredient-name">shrimp</span>, <span class="ingredient-name">bacon</span><span class="ingredient-more"> +8 more</span></summary><span class="ingredient-list"><span class="ingredient-name">garlic</span><span class="ingredient-name">green onions</span><span class="ingredient-name">paprika</span><span class="ingredient-name">chili powder</span><span class="ingredient-name">dried oregano</span><span class="ingredient-name">cayenne</span><span class="ingredient-name">butter</span><span class="ingredient-name">olive oil</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.baked-acorn-squash-with-butter-and-brown-sugar.html">Baked Acorn Squash with Butter and Brown Sugar</a>
-          
+
         </td>
-        
-        <td class="tags">squash, fall, side dish, vegetarian</td>
-        
-        <td>2 servings</td>
-        
+
+        <td class="tags" data-label="Tags">dietary, method, season</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="acorn squash">
+
+          <details>
+            <summary><span class="ingredient-name">acorn squash</span>, <span class="ingredient-name">butter</span>, <span class="ingredient-name">brown sugar</span><span class="ingredient-more"> +2 more</span></summary><span class="ingredient-list"><span class="ingredient-name">maple syrup</span><span class="ingredient-name">salt</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">2 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.baked-oatmeal-with-cranberries-and-almonds.html">Baked Oatmeal With Cranberries and Almonds</a>
-          
+
         </td>
-        
-        <td class="tags">baked oatmeal, cranberry, almond, make-ahead, whole grain</td>
-        
-        <td>1 2-quart baking dish</td>
-        
+
+        <td class="tags" data-label="Tags">method, context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="old-fashioned rolled oats">
+
+          <details>
+            <summary><span class="ingredient-name">old-fashioned rolled oats</span>, <span class="ingredient-name">unsalted butter</span>, <span class="ingredient-name">almonds</span><span class="ingredient-more"> +7 more</span></summary><span class="ingredient-list"><span class="ingredient-name">dried cranberries</span><span class="ingredient-name">ground cinnamon</span><span class="ingredient-name">fine salt</span><span class="ingredient-name">whole milk</span><span class="ingredient-name">eggs</span><span class="ingredient-name">pure maple syrup</span><span class="ingredient-name">pure vanilla extract</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">1 2-quart baking dish</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.ball-realfruit-low-or-no-sugar-jam.html">Ball RealFruit Low or No-Sugar Jam (Scaling Reference Table)</a>
-          
+
         </td>
-        
-        <td class="tags">jam, canning, low-sugar, no-sugar, Ball RealFruit pectin, scaling table</td>
-        
-        <td>1 to 9 half-pint jars (see scaling table)</td>
-        
+
+        <td class="tags" data-label="Tags">dietary, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="prepared fruit">
+
+          <details>
+            <summary><span class="ingredient-name">prepared fruit</span>, <span class="ingredient-name">unsweetened fruit juice or thawed concentrate or water</span>, <span class="ingredient-name">ball realfruit low or no sugar needed pectin</span><span class="ingredient-more"> +1 more</span></summary><span class="ingredient-list"><span class="ingredient-name">granulated sugar sugar substitute or honey</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">1 to 9 half-pint jars (see scaling table)</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.beef-barley-soup.html">Beef Barley Soup</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>8 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="olive oil">
+
+          <details>
+            <summary><span class="ingredient-name">olive oil</span>, <span class="ingredient-name">onion</span>, <span class="ingredient-name">garlic</span><span class="ingredient-more"> +13 more</span></summary><span class="ingredient-list"><span class="ingredient-name">carrots</span><span class="ingredient-name">celery</span><span class="ingredient-name">cooked beef</span><span class="ingredient-name">reduced sodium beef broth</span><span class="ingredient-name">canned petite diced tomatoes</span><span class="ingredient-name">green bell pepper</span><span class="ingredient-name">pearl barley</span><span class="ingredient-name">Worcestershire sauce</span><span class="ingredient-name">dried thyme leaves</span><span class="ingredient-name">beef gravy mix</span><span class="ingredient-name">bay leaf</span><span class="ingredient-name">red wine</span><span class="ingredient-name">fresh parsley</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.beef-bolognese-with-parsnips.html">Beef Bolognese with Parsnips</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>2 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="parsnips">
+
+          <details>
+            <summary><span class="ingredient-name">parsnips</span>, <span class="ingredient-name">carrot</span>, <span class="ingredient-name">yellow onion</span><span class="ingredient-more"> +9 more</span></summary><span class="ingredient-list"><span class="ingredient-name">garlic</span><span class="ingredient-name">ground beef</span><span class="ingredient-name">dried oregano</span><span class="ingredient-name">tomato paste</span><span class="ingredient-name">chicken stock</span><span class="ingredient-name">red wine</span><span class="ingredient-name">heavy cream</span><span class="ingredient-name">grated parmesan</span><span class="ingredient-name">olive oil</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">2 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.beef-brisket.html">Beef Brisket</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>10 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="garlic">
+
+          <details>
+            <summary><span class="ingredient-name">garlic</span>, <span class="ingredient-name">kosher salt</span>, <span class="ingredient-name">fresh rosemary</span><span class="ingredient-more"> +10 more</span></summary><span class="ingredient-list"><span class="ingredient-name">extra-virgin olive oil</span><span class="ingredient-name">beef brisket</span><span class="ingredient-name">carrots</span><span class="ingredient-name">celery</span><span class="ingredient-name">red onions</span><span class="ingredient-name">dry red wine</span><span class="ingredient-name">whole tomatoes</span><span class="ingredient-name">fresh flat-leaf parsley</span><span class="ingredient-name">bay leaves</span><span class="ingredient-name">all-purpose flour</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">10 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.beer-batter-fish.html">Beer Batter Fish</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>6 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="white fish">
+
+          <details>
+            <summary><span class="ingredient-name">white fish</span>, <span class="ingredient-name">salt</span>, <span class="ingredient-name">black pepper</span><span class="ingredient-more"> +7 more</span></summary><span class="ingredient-list"><span class="ingredient-name">all-purpose flour</span><span class="ingredient-name">garlic powder</span><span class="ingredient-name">paprika</span><span class="ingredient-name">seasoning salt</span><span class="ingredient-name">egg</span><span class="ingredient-name">light beer</span><span class="ingredient-name">canola oil</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">6 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.beginners-guide-to-french-macarons.html">Beginner's Guide to French Macarons</a>
-          
+
         </td>
-        
-        <td class="tags">french macarons, macarons, almond flour, meringue</td>
-        
-        <td>None macarons</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="almond flour">
+
+          <details>
+            <summary><span class="ingredient-name">almond flour</span>, <span class="ingredient-name">confectioners sugar</span>, <span class="ingredient-name">egg whites</span><span class="ingredient-more"> +3 more</span></summary><span class="ingredient-list"><span class="ingredient-name">superfine sugar</span><span class="ingredient-name">gel food coloring</span><span class="ingredient-name">extract or flavoring</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">None macarons</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.best-bean-salad.html">Best Bean Salad</a>
-          
+
         </td>
-        
-        <td class="tags">bean salad, three-bean salad, make-ahead, vegetarian</td>
-        
-        <td></td>
-        
+
+        <td class="tags" data-label="Tags">dietary, context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="garbanzo beans">
+
+          <details>
+            <summary><span class="ingredient-name">garbanzo beans</span>, <span class="ingredient-name">kidney beans</span>, <span class="ingredient-name">black beans</span><span class="ingredient-more"> +10 more</span></summary><span class="ingredient-list"><span class="ingredient-name">green beans</span><span class="ingredient-name">wax beans</span><span class="ingredient-name">green pepper</span><span class="ingredient-name">onion</span><span class="ingredient-name">celery</span><span class="ingredient-name">white sugar</span><span class="ingredient-name">salad oil</span><span class="ingredient-name">vinegar</span><span class="ingredient-name">salt</span><span class="ingredient-name">ground black pepper</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield"></td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.vegetable-lasagna.html">Best Vegetable Lasagna</a>
-          
+
         </td>
-        
-        <td class="tags">lasagna, vegetarian, pasta, baked</td>
-        
-        <td>8 servings</td>
-        
+
+        <td class="tags" data-label="Tags">dietary, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="extra-virgin olive oil">
+
+          <details>
+            <summary><span class="ingredient-name">extra-virgin olive oil</span>, <span class="ingredient-name">carrots</span>, <span class="ingredient-name">red bell pepper</span><span class="ingredient-more"> +14 more</span></summary><span class="ingredient-list"><span class="ingredient-name">zucchini</span><span class="ingredient-name">yellow onion</span><span class="ingredient-name">salt</span><span class="ingredient-name">baby spinach</span><span class="ingredient-name">diced tomatoes</span><span class="ingredient-name">fresh basil</span><span class="ingredient-name">olive oil (sauce)</span><span class="ingredient-name">garlic</span><span class="ingredient-name">salt (sauce)</span><span class="ingredient-name">red pepper flakes</span><span class="ingredient-name">low-fat cottage cheese</span><span class="ingredient-name">black pepper</span><span class="ingredient-name">no-boil lasagna noodles</span><span class="ingredient-name">mozzarella cheese</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.binder-index-page-1.html">Binder Index (page 1)</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td></td>
-        
-      </tr>
-      
-      <tr>
-        <td>
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="">
+
           
+
+        </td>
+
+        <td data-label="Yield"></td>
+
+      </tr>
+
+      <tr>
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.binder-index.html">Binder Index (page 2)</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td></td>
-        
-      </tr>
-      
-      <tr>
-        <td>
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="">
+
           
+
+        </td>
+
+        <td data-label="Yield"></td>
+
+      </tr>
+
+      <tr>
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.black-bean-and-corn-salad-ii.html">Black Bean and Corn Salad II</a>
-          
+
         </td>
-        
-        <td class="tags">black bean, corn, vegetarian, lime dressing</td>
-        
-        <td></td>
-        
+
+        <td class="tags" data-label="Tags">dietary</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="fresh lime juice">
+
+          <details>
+            <summary><span class="ingredient-name">fresh lime juice</span>, <span class="ingredient-name">olive oil</span>, <span class="ingredient-name">garlic</span><span class="ingredient-more"> +9 more</span></summary><span class="ingredient-list"><span class="ingredient-name">salt</span><span class="ingredient-name">ground cayenne pepper</span><span class="ingredient-name">black beans</span><span class="ingredient-name">frozen corn kernels</span><span class="ingredient-name">avocado</span><span class="ingredient-name">red bell pepper</span><span class="ingredient-name">tomatoes</span><span class="ingredient-name">green onions</span><span class="ingredient-name">fresh cilantro</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield"></td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.black-bean-soup.html">Black Bean Soup</a>
-          
+
         </td>
-        
-        <td class="tags">black bean, vegetarian, Mexican, easy</td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, dietary, context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="extra virgin olive oil">
+
+          <details>
+            <summary><span class="ingredient-name">extra virgin olive oil</span>, <span class="ingredient-name">red onion</span>, <span class="ingredient-name">carrot</span><span class="ingredient-more"> +11 more</span></summary><span class="ingredient-list"><span class="ingredient-name">celery</span><span class="ingredient-name">jalapeno pepper</span><span class="ingredient-name">garlic</span><span class="ingredient-name">ground cumin</span><span class="ingredient-name">dried oregano</span><span class="ingredient-name">ground coriander</span><span class="ingredient-name">kosher salt</span><span class="ingredient-name">cayenne pepper</span><span class="ingredient-name">low-sodium black beans</span><span class="ingredient-name">low-sodium vegetable or chicken broth</span><span class="ingredient-name">fresh lime juice</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.blackened-mahi-mahi.html">Blackened Mahi Mahi</a>
-          
+
         </td>
-        
-        <td class="tags">blackened, mahi mahi, cajun, fish, quick</td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, method, context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="mahi mahi">
+
+          <details>
+            <summary><span class="ingredient-name">mahi mahi</span>, <span class="ingredient-name">butter</span>, <span class="ingredient-name">olive oil</span><span class="ingredient-more"> +9 more</span></summary><span class="ingredient-list"><span class="ingredient-name">lemon</span><span class="ingredient-name">onion powder</span><span class="ingredient-name">garlic powder</span><span class="ingredient-name">smoked paprika</span><span class="ingredient-name">dried thyme</span><span class="ingredient-name">dried oregano</span><span class="ingredient-name">fine grain sea salt</span><span class="ingredient-name">freshly ground black pepper</span><span class="ingredient-name">cayenne pepper</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.bratkartoffeln.html">Bratkartoffeln</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, method, primary_ingredient</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="Yukon gold potatoes">
+
+          <details>
+            <summary><span class="ingredient-name">Yukon gold potatoes</span>, <span class="ingredient-name">salt</span>, <span class="ingredient-name">bacon</span><span class="ingredient-more"> +2 more</span></summary><span class="ingredient-list"><span class="ingredient-name">onions</span><span class="ingredient-name">oil</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.broccoli-cheese-soup.html">Broccoli Cheese Soup</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>12 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="butter">
+
+          <details>
+            <summary><span class="ingredient-name">butter</span>, <span class="ingredient-name">onion</span>, <span class="ingredient-name">frozen chopped broccoli</span><span class="ingredient-more"> +6 more</span></summary><span class="ingredient-list"><span class="ingredient-name">chicken broth</span><span class="ingredient-name">processed cheese food</span><span class="ingredient-name">milk</span><span class="ingredient-name">garlic powder</span><span class="ingredient-name">cornstarch</span><span class="ingredient-name">water</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">12 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.brussels-sprout-salad-with-maple-vinaigrette.html">Brussels Sprout Salad with Maple Vinaigrette</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="brussels sprouts">
+
+          <details>
+            <summary><span class="ingredient-name">brussels sprouts</span>, <span class="ingredient-name">bacon</span>, <span class="ingredient-name">hazelnuts</span><span class="ingredient-more"> +4 more</span></summary><span class="ingredient-list"><span class="ingredient-name">maple syrup</span><span class="ingredient-name">apple cider vinegar</span><span class="ingredient-name">grainy dijon mustard</span><span class="ingredient-name">extra virgin olive oil</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.cabbage-soup.html">Cabbage Soup</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>8 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="bacon">
+
+          <details>
+            <summary><span class="ingredient-name">bacon</span>, <span class="ingredient-name">onions</span>, <span class="ingredient-name">chicken broth</span><span class="ingredient-more"> +3 more</span></summary><span class="ingredient-list"><span class="ingredient-name">diced tomatoes</span><span class="ingredient-name">italian seasoning</span><span class="ingredient-name">cabbage</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.candied-sweet-potatoes.html">Candied Sweet Potatoes</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td></td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="sweet potatoes">
+
+          <details>
+            <summary><span class="ingredient-name">sweet potatoes</span>, <span class="ingredient-name">unsweetened apple cider</span>, <span class="ingredient-name">dark brown sugar</span><span class="ingredient-more"> +2 more</span></summary><span class="ingredient-list"><span class="ingredient-name">unsalted butter</span><span class="ingredient-name">cinnamon stick</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield"></td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.chana-masala.html">Chana Masala</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>6 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, dietary, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="oil">
+
+          <details>
+            <summary><span class="ingredient-name">oil</span>, <span class="ingredient-name">onion</span>, <span class="ingredient-name">cumin</span><span class="ingredient-more"> +12 more</span></summary><span class="ingredient-list"><span class="ingredient-name">salt</span><span class="ingredient-name">garlic</span><span class="ingredient-name">fresh ginger</span><span class="ingredient-name">fresh cilantro</span><span class="ingredient-name">fresh green chiles</span><span class="ingredient-name">coriander</span><span class="ingredient-name">chili powder</span><span class="ingredient-name">turmeric</span><span class="ingredient-name">finely diced or pureed tomatoes</span><span class="ingredient-name">chickpeas</span><span class="ingredient-name">garam masala</span><span class="ingredient-name">lemon juice</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">6 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.chicken-and-vegetable-pot-pie.html">Chicken & Vegetable Pot Pie</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="cooked chicken">
+
+          <details>
+            <summary><span class="ingredient-name">cooked chicken</span>, <span class="ingredient-name">butter</span>, <span class="ingredient-name">flour</span><span class="ingredient-more"> +7 more</span></summary><span class="ingredient-list"><span class="ingredient-name">milk</span><span class="ingredient-name">ground black pepper</span><span class="ingredient-name">frozen peas and carrots</span><span class="ingredient-name">parmesan cheese</span><span class="ingredient-name">pie crusts</span><span class="ingredient-name">egg</span><span class="ingredient-name">water</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.chicken-and-veggie-enchiladas.html">Chicken & Veggie Enchiladas</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>8 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="chicken or turkey">
+
+          <details>
+            <summary><span class="ingredient-name">chicken or turkey</span>, <span class="ingredient-name">bell peppers</span>, <span class="ingredient-name">onions</span><span class="ingredient-more"> +5 more</span></summary><span class="ingredient-list"><span class="ingredient-name">cumin</span><span class="ingredient-name">enchilada sauce</span><span class="ingredient-name">flour tortillas</span><span class="ingredient-name">black olives</span><span class="ingredient-name">mexican cheese</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.chicken-katsu-recipe.html">Chicken Katsu Recipe</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="boneless skinless chicken thighs">
+
+          <details>
+            <summary><span class="ingredient-name">boneless skinless chicken thighs</span>, <span class="ingredient-name">kosher salt</span>, <span class="ingredient-name">black pepper</span><span class="ingredient-more"> +5 more</span></summary><span class="ingredient-list"><span class="ingredient-name">all-purpose flour</span><span class="ingredient-name">eggs</span><span class="ingredient-name">sour cream</span><span class="ingredient-name">panko breadcrumbs</span><span class="ingredient-name">neutral oil</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.chicken-soup.html">Chicken Soup</a>
-          
+
         </td>
-        
-        <td class="tags">soup, chicken</td>
-        
-        <td>8 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="olive oil">
+
+          <details>
+            <summary><span class="ingredient-name">olive oil</span>, <span class="ingredient-name">chicken thighs</span>, <span class="ingredient-name">celery</span><span class="ingredient-more"> +9 more</span></summary><span class="ingredient-list"><span class="ingredient-name">carrots</span><span class="ingredient-name">onions</span><span class="ingredient-name">zucchini</span><span class="ingredient-name">mushrooms</span><span class="ingredient-name">garlic</span><span class="ingredient-name">chicken broth</span><span class="ingredient-name">cumin</span><span class="ingredient-name">turmeric</span><span class="ingredient-name">pasta</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.chicken-tikka-masala.html">Chicken Tikka Masala</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="tikka masala sauce">
+
+          <details>
+            <summary><span class="ingredient-name">tikka masala sauce</span>, <span class="ingredient-name">chicken thighs</span>, <span class="ingredient-name">olive oil</span><span class="ingredient-more"> +3 more</span></summary><span class="ingredient-list"><span class="ingredient-name">onion</span><span class="ingredient-name">bell pepper</span><span class="ingredient-name">diced tomatoes</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.chicken-with-creamy-mushroom-sauce.html">Chicken with Creamy Mushroom Sauce</a>
-          
+
         </td>
-        
-        <td class="tags">chicken, mushroom sauce, creamy sauce, western</td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="chicken breasts">
+
+          <details>
+            <summary><span class="ingredient-name">chicken breasts</span>, <span class="ingredient-name">salt</span>, <span class="ingredient-name">flour</span><span class="ingredient-more"> +8 more</span></summary><span class="ingredient-list"><span class="ingredient-name">unsalted butter</span><span class="ingredient-name">unsalted butter</span><span class="ingredient-name">mushrooms</span><span class="ingredient-name">garlic</span><span class="ingredient-name">dry white wine</span><span class="ingredient-name">chicken or vegetable stock</span><span class="ingredient-name">heavy cream</span><span class="ingredient-name">parmesan</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.chili-recipe.html">Chili Recipe (Vegetarian)</a>
-          
+
         </td>
-        
-        <td class="tags">vegetarian, chili, slow cooker</td>
-        
-        <td></td>
-        
+
+        <td class="tags" data-label="Tags">dietary, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="onion">
+
+          <details>
+            <summary><span class="ingredient-name">onion</span>, <span class="ingredient-name">red bell peppers</span>, <span class="ingredient-name">garlic</span><span class="ingredient-more"> +10 more</span></summary><span class="ingredient-list"><span class="ingredient-name">chili flakes</span><span class="ingredient-name">carrots</span><span class="ingredient-name">frozen corn</span><span class="ingredient-name">crushed tomatoes</span><span class="ingredient-name">kidney beans</span><span class="ingredient-name">black beans</span><span class="ingredient-name">sugar</span><span class="ingredient-name">ground cumin</span><span class="ingredient-name">chili powder</span><span class="ingredient-name">salt</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield"></td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.chocolate-biscotti.html">Chocolate Biscotti</a>
-          
+
         </td>
-        
-        <td class="tags">Italian, chocolate, biscotti</td>
-        
-        <td>24 cookies</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="butter">
+
+          <details>
+            <summary><span class="ingredient-name">butter</span>, <span class="ingredient-name">granulated sugar</span>, <span class="ingredient-name">all-purpose flour</span><span class="ingredient-more"> +6 more</span></summary><span class="ingredient-list"><span class="ingredient-name">cocoa powder</span><span class="ingredient-name">baking powder</span><span class="ingredient-name">table salt</span><span class="ingredient-name">eggs</span><span class="ingredient-name">vanilla extract</span><span class="ingredient-name">mini chocolate chips</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">24 cookies</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.chocolate-olive-oil-cake.html">Chocolate Olive Oil Cake</a>
-          
+
         </td>
-        
-        <td class="tags">cake, chocolate, vegan</td>
-        
-        <td>8 servings</td>
-        
+
+        <td class="tags" data-label="Tags">dietary, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="all-purpose flour">
+
+          <details>
+            <summary><span class="ingredient-name">all-purpose flour</span>, <span class="ingredient-name">unsweetened cocoa</span>, <span class="ingredient-name">baking soda</span><span class="ingredient-more"> +11 more</span></summary><span class="ingredient-list"><span class="ingredient-name">fine sea salt</span><span class="ingredient-name">granulated sugar</span><span class="ingredient-name">dark brown sugar</span><span class="ingredient-name">olive oil</span><span class="ingredient-name">water or coffee</span><span class="ingredient-name">cider vinegar</span><span class="ingredient-name">semisweet chocolate chips</span><span class="ingredient-name">cocoa powder</span><span class="ingredient-name">olive oil (glaze)</span><span class="ingredient-name">light corn syrup</span><span class="ingredient-name">flaky sea salt</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.corn-chowder.html">Corn Chowder</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="butter">
+
+          <details>
+            <summary><span class="ingredient-name">butter</span>, <span class="ingredient-name">green onions</span>, <span class="ingredient-name">red bell pepper</span><span class="ingredient-more"> +8 more</span></summary><span class="ingredient-list"><span class="ingredient-name">celery</span><span class="ingredient-name">potatoes</span><span class="ingredient-name">corn kernels</span><span class="ingredient-name">bay leaf</span><span class="ingredient-name">chicken stock</span><span class="ingredient-name">salt</span><span class="ingredient-name">milk</span><span class="ingredient-name">ground black pepper</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.corn-quesadillas.html">Corn Quesadillas</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="shredded cheese">
+
+          <details>
+            <summary><span class="ingredient-name">shredded cheese</span>, <span class="ingredient-name">frozen corn</span>, <span class="ingredient-name">green onions</span><span class="ingredient-more"> +5 more</span></summary><span class="ingredient-list"><span class="ingredient-name">fresh cilantro</span><span class="ingredient-name">sour cream</span><span class="ingredient-name">chipotle in adobo sauce</span><span class="ingredient-name">flour tortillas</span><span class="ingredient-name">oil</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.couscous-feta-salad.html">Couscous Feta Salad</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="dry couscous">
+
+          <details>
+            <summary><span class="ingredient-name">dry couscous</span>, <span class="ingredient-name">water</span>, <span class="ingredient-name">olive oil</span><span class="ingredient-more"> +6 more</span></summary><span class="ingredient-list"><span class="ingredient-name">cucumber</span><span class="ingredient-name">tomatoes</span><span class="ingredient-name">red onion</span><span class="ingredient-name">feta</span><span class="ingredient-name">balsamic vinegar</span><span class="ingredient-name">olive oil</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.crab-salad.html">Crab Salad (Seafood Salad)</a>
-          
+
         </td>
-        
-        <td class="tags">crab, seafood, American, no-cook</td>
-        
-        <td>2 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="imitation crab meat">
+
+          <details>
+            <summary><span class="ingredient-name">imitation crab meat</span>, <span class="ingredient-name">shallot</span>, <span class="ingredient-name">mayonnaise</span><span class="ingredient-more"> +5 more</span></summary><span class="ingredient-list"><span class="ingredient-name">celery</span><span class="ingredient-name">paprika</span><span class="ingredient-name">dill</span><span class="ingredient-name">kosher salt</span><span class="ingredient-name">black pepper</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">2 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.creamy-broccoli-pasta.html">Creamy Broccoli Pasta</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="fresh broccoli">
+
+          <details>
+            <summary><span class="ingredient-name">fresh broccoli</span>, <span class="ingredient-name">small pasta</span>, <span class="ingredient-name">water</span><span class="ingredient-more"> +7 more</span></summary><span class="ingredient-list"><span class="ingredient-name">whole milk plain Greek yogurt</span><span class="ingredient-name">olive oil</span><span class="ingredient-name">garlic</span><span class="ingredient-name">salt</span><span class="ingredient-name">black pepper</span><span class="ingredient-name">red pepper flakes</span><span class="ingredient-name">grated parmesan or romano</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.creamy-gnocchi-with-sun-dried-tomatoes.html">Creamy Gnocchi with Sun-Dried Tomatoes</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>6 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="onion">
+
+          <details>
+            <summary><span class="ingredient-name">onion</span>, <span class="ingredient-name">sun-dried tomatoes in oil</span>, <span class="ingredient-name">italian seasoning</span><span class="ingredient-more"> +8 more</span></summary><span class="ingredient-list"><span class="ingredient-name">garlic</span><span class="ingredient-name">red pepper flakes</span><span class="ingredient-name">chicken</span><span class="ingredient-name">gnocchi</span><span class="ingredient-name">broth</span><span class="ingredient-name">roasted vegetable puree</span><span class="ingredient-name">heavy cream</span><span class="ingredient-name">parmesan</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">6 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.creamy-sriracha-mayo-recipe.html">Creamy Sriracha Mayo Recipe</a>
-          
+
         </td>
-        
-        <td class="tags">recipe, sauce, spicy, sriracha</td>
-        
-        <td>20 tablespoons</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="mayo">
+
+          <details>
+            <summary><span class="ingredient-name">mayo</span>, <span class="ingredient-name">sriracha chili sauce</span>, <span class="ingredient-name">lemon juice</span><span class="ingredient-more"> +1 more</span></summary><span class="ingredient-list"><span class="ingredient-name">garlic</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">20 tablespoons</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.creamy-tomato-soup.html">Creamy Tomato Soup</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>6 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method, flavor_profile</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="butter">
+
+          <details>
+            <summary><span class="ingredient-name">butter</span>, <span class="ingredient-name">olive oil</span>, <span class="ingredient-name">onion</span><span class="ingredient-more"> +9 more</span></summary><span class="ingredient-list"><span class="ingredient-name">thyme</span><span class="ingredient-name">basil</span><span class="ingredient-name">salt</span><span class="ingredient-name">diced tomatoes</span><span class="ingredient-name">tomato paste</span><span class="ingredient-name">flour</span><span class="ingredient-name">chicken broth</span><span class="ingredient-name">sugar</span><span class="ingredient-name">heavy cream</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">6 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.creamy-tortellini-soup.html">Creamy Tortellini Soup</a>
-          
+
         </td>
-        
-        <td class="tags">weeknight, tortellini, sausage, kale, creamy</td>
-        
-        <td>4–6 servings</td>
-        
+
+        <td class="tags" data-label="Tags">context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="olive oil">
+
+          <details>
+            <summary><span class="ingredient-name">olive oil</span>, <span class="ingredient-name">Italian sausage</span>, <span class="ingredient-name">garlic</span><span class="ingredient-more"> +9 more</span></summary><span class="ingredient-list"><span class="ingredient-name">sweet onion</span><span class="ingredient-name">Italian seasoning</span><span class="ingredient-name">all-purpose flour</span><span class="ingredient-name">chicken stock</span><span class="ingredient-name">tomato sauce</span><span class="ingredient-name">refrigerated three cheese tortellini</span><span class="ingredient-name">kale</span><span class="ingredient-name">heavy cream</span><span class="ingredient-name">fresh basil</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4–6 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.crispy-slow-cooker-carnitas.html">Crispy Slow Cooker Carnitas</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>6-8 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="lean boneless pork roast">
+
+          <details>
+            <summary><span class="ingredient-name">lean boneless pork roast</span>, <span class="ingredient-name">beer</span>, <span class="ingredient-name">white onion</span><span class="ingredient-more"> +6 more</span></summary><span class="ingredient-list"><span class="ingredient-name">garlic</span><span class="ingredient-name">chipotle powder</span><span class="ingredient-name">ground cumin</span><span class="ingredient-name">black pepper</span><span class="ingredient-name">chili powder</span><span class="ingredient-name">fine sea salt</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">6-8 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.cucumber-salad.html">Cucumber Salad</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="cucumbers">
+
+          <details>
+            <summary><span class="ingredient-name">cucumbers</span>, <span class="ingredient-name">sugar</span>, <span class="ingredient-name">salt</span><span class="ingredient-more"> +2 more</span></summary><span class="ingredient-list"><span class="ingredient-name">red wine vinegar</span><span class="ingredient-name">red onion</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.curried-chicken-salad.html">Curried Chicken Salad</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>6 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="chicken thighs or breasts">
+
+          <details>
+            <summary><span class="ingredient-name">chicken thighs or breasts</span>, <span class="ingredient-name">mayonnaise</span>, <span class="ingredient-name">dry white wine</span><span class="ingredient-more"> +5 more</span></summary><span class="ingredient-list"><span class="ingredient-name">chutney</span><span class="ingredient-name">curry powder</span><span class="ingredient-name">celery stalks</span><span class="ingredient-name">scallions</span><span class="ingredient-name">whole roasted cashews or almonds</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">6 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.dairy-free-quiche-lorraine.html">Dairy Free Quiche Lorraine</a>
-          
+
         </td>
-        
-        <td class="tags">dairy-free, quiche, French, brunch</td>
-        
-        <td>8 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, dietary, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="olive oil">
+
+          <details>
+            <summary><span class="ingredient-name">olive oil</span>, <span class="ingredient-name">shallots</span>, <span class="ingredient-name">bacon</span><span class="ingredient-more"> +7 more</span></summary><span class="ingredient-list"><span class="ingredient-name">eggs</span><span class="ingredient-name">dairy free milk</span><span class="ingredient-name">nutritional yeast</span><span class="ingredient-name">coarse salt</span><span class="ingredient-name">ground nutmeg</span><span class="ingredient-name">black pepper</span><span class="ingredient-name">pie crust</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.davids-chicken-and-mushrooms.html">David's Chicken & Mushrooms</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="chicken thighs">
+
+          <details>
+            <summary><span class="ingredient-name">chicken thighs</span>, <span class="ingredient-name">mushrooms</span>, <span class="ingredient-name">chicken broth</span><span class="ingredient-more"> +2 more</span></summary><span class="ingredient-list"><span class="ingredient-name">flour</span><span class="ingredient-name">frozen peas and carrots</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.dumpling-noodle-soup.html">Dumpling Noodle Soup</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="thin dried wheat, egg, or rice noodles">
+
+          <details>
+            <summary><span class="ingredient-name">thin dried wheat, egg, or rice noodles</span>, <span class="ingredient-name">sesame oil</span>, <span class="ingredient-name">fresh ginger</span><span class="ingredient-more"> +7 more</span></summary><span class="ingredient-list"><span class="ingredient-name">garlic</span><span class="ingredient-name">ground turmeric</span><span class="ingredient-name">vegetable stock</span><span class="ingredient-name">white miso paste</span><span class="ingredient-name">frozen dumplings</span><span class="ingredient-name">baby bok choy</span><span class="ingredient-name">broccoli</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.easy-broccoli-quiche.html">Easy Broccoli Quiche</a>
-          
+
         </td>
-        
-        <td class="tags">vegetarian, broccoli, quiche, easy</td>
-        
-        <td>6 servings</td>
-        
+
+        <td class="tags" data-label="Tags">dietary, method, context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="pie crust">
+
+          <details>
+            <summary><span class="ingredient-name">pie crust</span>, <span class="ingredient-name">salted butter</span>, <span class="ingredient-name">onion</span><span class="ingredient-more"> +7 more</span></summary><span class="ingredient-list"><span class="ingredient-name">garlic</span><span class="ingredient-name">broccoli</span><span class="ingredient-name">mozzarella</span><span class="ingredient-name">eggs</span><span class="ingredient-name">milk</span><span class="ingredient-name">salt</span><span class="ingredient-name">black pepper</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">6 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.easy-pad-thai.html">Easy Pad Thai</a>
-          
+
         </td>
-        
-        <td class="tags">pad thai, Thai, noodles</td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="fish sauce">
+
+          <details>
+            <summary><span class="ingredient-name">fish sauce</span>, <span class="ingredient-name">tamarind paste</span>, <span class="ingredient-name">tomato paste</span><span class="ingredient-more"> +11 more</span></summary><span class="ingredient-list"><span class="ingredient-name">sambal oelek</span><span class="ingredient-name">brown sugar</span><span class="ingredient-name">rice noodles</span><span class="ingredient-name">vegetable oil</span><span class="ingredient-name">chicken thighs</span><span class="ingredient-name">shrimp</span><span class="ingredient-name">garlic</span><span class="ingredient-name">garlic chives</span><span class="ingredient-name">bean sprouts</span><span class="ingredient-name">peanuts</span><span class="ingredient-name">cilantro</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.everyday-instant-pot-dal.html">Everyday Instant Pot Dal</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="light cooking oil">
+
+          <details>
+            <summary><span class="ingredient-name">light cooking oil</span>, <span class="ingredient-name">cumin seeds</span>, <span class="ingredient-name">garlic</span><span class="ingredient-more"> +8 more</span></summary><span class="ingredient-list"><span class="ingredient-name">ginger</span><span class="ingredient-name">onion</span><span class="ingredient-name">turmeric powder</span><span class="ingredient-name">red chilli powder</span><span class="ingredient-name">coriander powder</span><span class="ingredient-name">tomato</span><span class="ingredient-name">red lentils</span><span class="ingredient-name">water</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.fluffy-almond-flour-pancakes.html">Fluffy Almond Flour Pancakes</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>10 pancakes</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, dietary</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="eggs">
+
+          <details>
+            <summary><span class="ingredient-name">eggs</span>, <span class="ingredient-name">vanilla extract</span>, <span class="ingredient-name">whole milk</span><span class="ingredient-more"> +5 more</span></summary><span class="ingredient-list"><span class="ingredient-name">stevia glycerite</span><span class="ingredient-name">kosher salt</span><span class="ingredient-name">almond flour</span><span class="ingredient-name">baking soda</span><span class="ingredient-name">avocado oil spray</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">10 pancakes</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.french-macarons.html">French Macarons</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>40 shells</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="egg whites">
+
+          <details>
+            <summary><span class="ingredient-name">egg whites</span>, <span class="ingredient-name">cream of tartar</span>, <span class="ingredient-name">extract</span><span class="ingredient-more"> +5 more</span></summary><span class="ingredient-list"><span class="ingredient-name">superfine sugar</span><span class="ingredient-name">gel food coloring</span><span class="ingredient-name">almond flour</span><span class="ingredient-name">confectioners sugar</span><span class="ingredient-name">macaron filling</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">40 shells</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.ginger-pork-lettuce-wraps.html">Ginger Pork Lettuce Wraps</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="sesame oil">
+
+          <details>
+            <summary><span class="ingredient-name">sesame oil</span>, <span class="ingredient-name">onion</span>, <span class="ingredient-name">ground pork</span><span class="ingredient-more"> +13 more</span></summary><span class="ingredient-list"><span class="ingredient-name">mushrooms</span><span class="ingredient-name">red bell pepper</span><span class="ingredient-name">oil</span><span class="ingredient-name">garlic</span><span class="ingredient-name">water chestnuts</span><span class="ingredient-name">shredded cabbage</span><span class="ingredient-name">hoisin sauce</span><span class="ingredient-name">water</span><span class="ingredient-name">ginger</span><span class="ingredient-name">rice vinegar</span><span class="ingredient-name">soy sauce</span><span class="ingredient-name">red pepper flakes</span><span class="ingredient-name">romaine or bibb lettuce</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.glazed-carrots.html">Glazed Carrots</a>
-          
+
         </td>
-        
-        <td class="tags">carrots, glazed, side dish, vegetable</td>
-        
-        <td>8 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="carrots">
+
+          <details>
+            <summary><span class="ingredient-name">carrots</span>, <span class="ingredient-name">butter</span>, <span class="ingredient-name">brown sugar</span><span class="ingredient-more"> +2 more</span></summary><span class="ingredient-list"><span class="ingredient-name">salt</span><span class="ingredient-name">ground white pepper</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.gochujang-roasted-carrots.html">Gochujang Roasted Carrots</a>
-          
+
         </td>
-        
-        <td class="tags">Korean, carrots, roasted, vegetarian</td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, dietary, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="carrots">
+
+          <details>
+            <summary><span class="ingredient-name">carrots</span>, <span class="ingredient-name">vegetable oil</span>, <span class="ingredient-name">sesame oil</span><span class="ingredient-more"> +5 more</span></summary><span class="ingredient-list"><span class="ingredient-name">soy sauce</span><span class="ingredient-name">gochujang</span><span class="ingredient-name">honey</span><span class="ingredient-name">rice wine vinegar</span><span class="ingredient-name">water</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.grilled-broccoli.html">Grilled Broccoli</a>
-          
+
         </td>
-        
-        <td class="tags">grilled, broccoli, vegetarian, side dish</td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">dietary, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="tamari">
+
+          <details>
+            <summary><span class="ingredient-name">tamari</span>, <span class="ingredient-name">balsamic vinegar</span>, <span class="ingredient-name">extra-virgin olive oil</span><span class="ingredient-more"> +4 more</span></summary><span class="ingredient-list"><span class="ingredient-name">broccoli</span><span class="ingredient-name">kosher salt</span><span class="ingredient-name">fresh parsley</span><span class="ingredient-name">flaky sea salt</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.ground-turkey-and-potato-skillet.html">Ground Turkey & Potato Skillet</a>
-          
+
         </td>
-        
-        <td class="tags">one pot, skillet, ground turkey, potatoes, weeknight dinner</td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method, context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="lean ground turkey">
+
+          <details>
+            <summary><span class="ingredient-name">lean ground turkey</span>, <span class="ingredient-name">salt</span>, <span class="ingredient-name">black pepper</span><span class="ingredient-more"> +14 more</span></summary><span class="ingredient-list"><span class="ingredient-name">garlic powder</span><span class="ingredient-name">chili powder</span><span class="ingredient-name">dried oregano</span><span class="ingredient-name">olive or avocado oil</span><span class="ingredient-name">potatoes</span><span class="ingredient-name">canned tomato sauce</span><span class="ingredient-name">water</span><span class="ingredient-name">garlic</span><span class="ingredient-name">dried oregano</span><span class="ingredient-name">dried basil</span><span class="ingredient-name">dried parsley</span><span class="ingredient-name">salt</span><span class="ingredient-name">black pepper</span><span class="ingredient-name">onion powder</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.healthy-blueberry-muffins.html">Healthy Blueberry Muffins</a>
-          
+
         </td>
-        
-        <td class="tags">blueberry, healthy, whole wheat, baked</td>
-        
-        <td>12 muffins</td>
-        
+
+        <td class="tags" data-label="Tags">dietary, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="flour">
+
+          <details>
+            <summary><span class="ingredient-name">flour</span>, <span class="ingredient-name">baking powder</span>, <span class="ingredient-name">baking soda</span><span class="ingredient-more"> +9 more</span></summary><span class="ingredient-list"><span class="ingredient-name">fine sea salt</span><span class="ingredient-name">ground cinnamon</span><span class="ingredient-name">melted coconut oil or extra-virgin olive oil</span><span class="ingredient-name">honey or maple syrup</span><span class="ingredient-name">eggs</span><span class="ingredient-name">plain Greek yogurt</span><span class="ingredient-name">vanilla extract</span><span class="ingredient-name">blueberries</span><span class="ingredient-name">turbinado sugar</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">12 muffins</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.healthy-sloppy-joes.html">Healthy Sloppy Joes</a>
-          
+
         </td>
-        
-        <td class="tags">sloppy joes, ground beef, American, healthy</td>
-        
-        <td>6 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, dietary</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="extra virgin olive oil">
+
+          <details>
+            <summary><span class="ingredient-name">extra virgin olive oil</span>, <span class="ingredient-name">lean ground beef</span>, <span class="ingredient-name">celery</span><span class="ingredient-more"> +11 more</span></summary><span class="ingredient-list"><span class="ingredient-name">carrots</span><span class="ingredient-name">green bell pepper</span><span class="ingredient-name">yellow or red onion</span><span class="ingredient-name">garlic</span><span class="ingredient-name">salt</span><span class="ingredient-name">brown sugar</span><span class="ingredient-name">red wine vinegar or apple cider vinegar</span><span class="ingredient-name">Worcestershire sauce</span><span class="ingredient-name">tomato sauce</span><span class="ingredient-name">ketchup</span><span class="ingredient-name">low sodium beef broth or water</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">6 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.homemade-drop-biscuits-recipe.html">Homemade Drop Biscuits Recipe (No Milk)</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>15 biscuits</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="all-purpose flour">
+
+          <details>
+            <summary><span class="ingredient-name">all-purpose flour</span>, <span class="ingredient-name">baking powder</span>, <span class="ingredient-name">salt</span><span class="ingredient-more"> +4 more</span></summary><span class="ingredient-list"><span class="ingredient-name">cold water</span><span class="ingredient-name">honey</span><span class="ingredient-name">white vinegar</span><span class="ingredient-name">unsalted butter</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">15 biscuits</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.homemade-hot-chocolate-mix.html">Homemade Hot Chocolate Mix</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>13 servings</td>
-        
+
+        <td class="tags" data-label="Tags">context, season</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="granulated sugar">
+
+          <details>
+            <summary><span class="ingredient-name">granulated sugar</span>, <span class="ingredient-name">unsweetened cocoa powder</span>, <span class="ingredient-name">kosher salt</span><span class="ingredient-more"> +1 more</span></summary><span class="ingredient-list"><span class="ingredient-name">ground cinnamon</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">13 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.honey-apple-galette-with-pistachio-sugar.html">Honey Apple Galette With Pistachio Sugar</a>
-          
+
         </td>
-        
-        <td class="tags">galette, apple, pastry, dessert</td>
-        
-        <td>8 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="all-purpose flour">
+
+          <details>
+            <summary><span class="ingredient-name">all-purpose flour</span>, <span class="ingredient-name">kosher salt</span>, <span class="ingredient-name">unsalted butter</span><span class="ingredient-more"> +11 more</span></summary><span class="ingredient-list"><span class="ingredient-name">ice water</span><span class="ingredient-name">Granny Smith apples</span><span class="ingredient-name">unsalted butter (filling)</span><span class="ingredient-name">granulated sugar (filling)</span><span class="ingredient-name">honey</span><span class="ingredient-name">lemon zest</span><span class="ingredient-name">lemon juice</span><span class="ingredient-name">kosher salt (filling)</span><span class="ingredient-name">raw unsalted pistachios</span><span class="ingredient-name">granulated sugar (topping)</span><span class="ingredient-name">egg</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.honey-lemon-vinaigrette.html">Honey Lemon Vinaigrette</a>
-          
+
         </td>
-        
-        <td class="tags">vinaigrette, dressing, lemon, honey, quick</td>
-        
-        <td>1 cup</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="fresh lemon juice">
+
+          <details>
+            <summary><span class="ingredient-name">fresh lemon juice</span>, <span class="ingredient-name">fresh lemon zest</span>, <span class="ingredient-name">honey</span><span class="ingredient-more"> +4 more</span></summary><span class="ingredient-list"><span class="ingredient-name">white vinegar</span><span class="ingredient-name">dijon mustard</span><span class="ingredient-name">extra virgin olive oil</span><span class="ingredient-name">salt and pepper</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">1 cup</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.how-to-make-instant-pot-farro.html">How to Make Instant Pot Farro</a>
-          
+
         </td>
-        
-        <td class="tags">instant pot, pressure cooker, farro, whole grain, quick</td>
-        
-        <td></td>
-        
+
+        <td class="tags" data-label="Tags">dietary, method, context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="farro">
+
+          <span class="ingredient-name">farro</span>, <span class="ingredient-name">water</span>
+
+        </td>
+
+        <td data-label="Yield"></td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.instant-pot-applesauce.html">Instant Pot Applesauce</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>5–6 cups</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="granny smith apples">
+
+          <details>
+            <summary><span class="ingredient-name">granny smith apples</span>, <span class="ingredient-name">honeycrisp apples</span>, <span class="ingredient-name">water</span><span class="ingredient-more"> +2 more</span></summary><span class="ingredient-list"><span class="ingredient-name">fresh lemon juice</span><span class="ingredient-name">ground cinnamon</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">5–6 cups</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.instant-pot-baked-potato-soup.html">Instant Pot Baked Potato Soup</a>
-          
+
         </td>
-        
-        <td class="tags">soup, potato, instant pot, comfort food</td>
-        
-        <td>8 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method, context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="potatoes">
+
+          <details>
+            <summary><span class="ingredient-name">potatoes</span>, <span class="ingredient-name">chicken broth</span>, <span class="ingredient-name">butter</span><span class="ingredient-more"> +8 more</span></summary><span class="ingredient-list"><span class="ingredient-name">cream cheese</span><span class="ingredient-name">shredded cheddar cheese</span><span class="ingredient-name">sour cream</span><span class="ingredient-name">salt</span><span class="ingredient-name">black pepper</span><span class="ingredient-name">milk or heavy cream</span><span class="ingredient-name">real bacon bits</span><span class="ingredient-name">green onion</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.instant-pot-black-beans.html">Instant Pot Black Beans</a>
-          
+
         </td>
-        
-        <td class="tags">instant pot, pressure cooker, black beans, vegan, budget-friendly, meal prep</td>
-        
-        <td>8 servings</td>
-        
+
+        <td class="tags" data-label="Tags">dietary, method, context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="dried black beans">
+
+          <details>
+            <summary><span class="ingredient-name">dried black beans</span>, <span class="ingredient-name">onion</span>, <span class="ingredient-name">garlic</span><span class="ingredient-more"> +8 more</span></summary><span class="ingredient-list"><span class="ingredient-name">chili flakes</span><span class="ingredient-name">ground cumin</span><span class="ingredient-name">ground coriander</span><span class="ingredient-name">bay leaf</span><span class="ingredient-name">dried mint</span><span class="ingredient-name">flavourful broth or stock</span><span class="ingredient-name">lime</span><span class="ingredient-name">salt</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.instant-pot-cilantro-lime-rice-recipe.html">Instant Pot Cilantro Lime Rice Recipe</a>
-          
+
         </td>
-        
-        <td class="tags">cilantro lime rice, instant pot rice recipe, pressure cooker</td>
-        
-        <td>5 1-cup servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="long grain white rice">
+
+          <details>
+            <summary><span class="ingredient-name">long grain white rice</span>, <span class="ingredient-name">water</span>, <span class="ingredient-name">lime zest</span><span class="ingredient-more"> +3 more</span></summary><span class="ingredient-list"><span class="ingredient-name">fresh cilantro</span><span class="ingredient-name">freshly squeezed lime juice</span><span class="ingredient-name">vegetable oil</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">5 1-cup servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.instant-pot-parmesan-risotto.html">Instant Pot Parmesan Risotto</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>6 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="butter">
+
+          <details>
+            <summary><span class="ingredient-name">butter</span>, <span class="ingredient-name">onion</span>, <span class="ingredient-name">garlic</span><span class="ingredient-more"> +6 more</span></summary><span class="ingredient-list"><span class="ingredient-name">arborio rice</span><span class="ingredient-name">chicken broth</span><span class="ingredient-name">grated parmesan</span><span class="ingredient-name">salt</span><span class="ingredient-name">black pepper</span><span class="ingredient-name">parsley or green onions</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">6 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.instant-pot-ramen-noodles.html">Instant Pot Ramen Noodles</a>
-          
+
         </td>
-        
-        <td class="tags">Asian, instant pot, 21 Day Fix, dorm room dinner</td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="sesame oil">
+
+          <details>
+            <summary><span class="ingredient-name">sesame oil</span>, <span class="ingredient-name">ginger</span>, <span class="ingredient-name">garlic</span><span class="ingredient-more"> +8 more</span></summary><span class="ingredient-list"><span class="ingredient-name">chicken stock</span><span class="ingredient-name">water</span><span class="ingredient-name">chicken thighs</span><span class="ingredient-name">coconut aminos</span><span class="ingredient-name">ramen noodle cakes</span><span class="ingredient-name">baby kale</span><span class="ingredient-name">carrots</span><span class="ingredient-name">kosher or sea salt</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.instant-pot-red-beans-and-rice.html">Instant Pot Red Beans and Rice</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td></td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="onion">
+
+          <details>
+            <summary><span class="ingredient-name">onion</span>, <span class="ingredient-name">green bell pepper</span>, <span class="ingredient-name">dried red kidney beans</span><span class="ingredient-more"> +5 more</span></summary><span class="ingredient-list"><span class="ingredient-name">garlic</span><span class="ingredient-name">creole seasoning</span><span class="ingredient-name">bay leaves</span><span class="ingredient-name">water</span><span class="ingredient-name">sausage</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield"></td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.instant-pot-teriyaki-turkey-meatballs.html">Instant Pot Teriyaki Turkey Meatballs</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>6 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="ground turkey">
+
+          <details>
+            <summary><span class="ingredient-name">ground turkey</span>, <span class="ingredient-name">bread crumbs</span>, <span class="ingredient-name">egg</span><span class="ingredient-more"> +12 more</span></summary><span class="ingredient-list"><span class="ingredient-name">green onion</span><span class="ingredient-name">garlic powder</span><span class="ingredient-name">canola oil</span><span class="ingredient-name">sesame seeds</span><span class="ingredient-name">low sodium soy sauce</span><span class="ingredient-name">rice vinegar</span><span class="ingredient-name">garlic</span><span class="ingredient-name">ginger</span><span class="ingredient-name">canola oil</span><span class="ingredient-name">brown sugar</span><span class="ingredient-name">black pepper</span><span class="ingredient-name">cornstarch</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">6 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.kashi-oatmeal-chocolate-chip-cookies.html">Kashi Oatmeal Chocolate Chip Cookies</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>8 cookies</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="all-purpose or whole wheat flour">
+
+          <details>
+            <summary><span class="ingredient-name">all-purpose or whole wheat flour</span>, <span class="ingredient-name">old fashioned oats</span>, <span class="ingredient-name">brown sugar</span><span class="ingredient-more"> +7 more</span></summary><span class="ingredient-list"><span class="ingredient-name">baking soda</span><span class="ingredient-name">honey, agave, or maple syrup</span><span class="ingredient-name">coconut oil</span><span class="ingredient-name">flax egg</span><span class="ingredient-name">vanilla</span><span class="ingredient-name">milk</span><span class="ingredient-name">dark chocolate chips</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 cookies</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.kitchen-sink-cookies.html">Kitchen Sink Cookies (Panera Copycat!)</a>
-          
+
         </td>
-        
-        <td class="tags">kitchen sink cookies, panera copycat recipe, cookie</td>
-        
-        <td>9 large cookies</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="unsalted butter">
+
+          <details>
+            <summary><span class="ingredient-name">unsalted butter</span>, <span class="ingredient-name">light brown sugar</span>, <span class="ingredient-name">granulated sugar</span><span class="ingredient-more"> +10 more</span></summary><span class="ingredient-list"><span class="ingredient-name">egg</span><span class="ingredient-name">vanilla extract</span><span class="ingredient-name">baking soda</span><span class="ingredient-name">salt</span><span class="ingredient-name">all-purpose flour</span><span class="ingredient-name">chocolate chips</span><span class="ingredient-name">pretzels</span><span class="ingredient-name">caramels</span><span class="ingredient-name">chocolate chips (topping)</span><span class="ingredient-name">pretzels (topping)</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">9 large cookies</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.korean-beef-bowl.html">Korean Beef Bowl</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="brown sugar">
+
+          <details>
+            <summary><span class="ingredient-name">brown sugar</span>, <span class="ingredient-name">reduced sodium soy sauce</span>, <span class="ingredient-name">sesame oil</span><span class="ingredient-more"> +8 more</span></summary><span class="ingredient-list"><span class="ingredient-name">crushed red pepper flakes</span><span class="ingredient-name">ground ginger</span><span class="ingredient-name">vegetable oil</span><span class="ingredient-name">garlic</span><span class="ingredient-name">ground beef</span><span class="ingredient-name">onion</span><span class="ingredient-name">green onions</span><span class="ingredient-name">sesame seeds</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.macaroni-and-hamburger.html">Macaroni & Hamburger</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>6 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="whole wheat macaroni">
+
+          <details>
+            <summary><span class="ingredient-name">whole wheat macaroni</span>, <span class="ingredient-name">olive oil</span>, <span class="ingredient-name">ground beef</span><span class="ingredient-more"> +3 more</span></summary><span class="ingredient-list"><span class="ingredient-name">onions</span><span class="ingredient-name">diced tomatoes</span><span class="ingredient-name">frozen corn</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">6 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.mediterranean-stuffed-pork-tenderloin.html">Mediterranean Stuffed Pork Tenderloin</a>
-          
+
         </td>
-        
-        <td class="tags">baked pork tenderloin, pork tenderloin recipe, stuffed pork tenderloin</td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="pork tenderloin">
+
+          <details>
+            <summary><span class="ingredient-name">pork tenderloin</span>, <span class="ingredient-name">olive oil</span>, <span class="ingredient-name">red pepper flakes</span><span class="ingredient-more"> +12 more</span></summary><span class="ingredient-list"><span class="ingredient-name">baby spinach</span><span class="ingredient-name">salt</span><span class="ingredient-name">sundried tomatoes</span><span class="ingredient-name">feta cheese</span><span class="ingredient-name">balsamic vinegar</span><span class="ingredient-name">olive oil</span><span class="ingredient-name">dijon mustard</span><span class="ingredient-name">rosemary</span><span class="ingredient-name">garlic</span><span class="ingredient-name">lemon zest</span><span class="ingredient-name">kosher salt</span><span class="ingredient-name">black pepper</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.mexican-street-corn-salad.html">Mexican Street Corn Salad</a>
-          
+
         </td>
-        
-        <td class="tags">corn salad, mexican recipes, mexican street corn salad, esquites</td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="corn">
+
+          <details>
+            <summary><span class="ingredient-name">corn</span>, <span class="ingredient-name">olive oil</span>, <span class="ingredient-name">red bell pepper</span><span class="ingredient-more"> +13 more</span></summary><span class="ingredient-list"><span class="ingredient-name">red onion</span><span class="ingredient-name">fresh cilantro</span><span class="ingredient-name">green onions</span><span class="ingredient-name">jalapeno pepper</span><span class="ingredient-name">avocado</span><span class="ingredient-name">lime juice</span><span class="ingredient-name">ground cumin</span><span class="ingredient-name">smoked paprika</span><span class="ingredient-name">black pepper</span><span class="ingredient-name">salt</span><span class="ingredient-name">sour cream</span><span class="ingredient-name">mayonnaise</span><span class="ingredient-name">cotija cheese</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.middle-eastern-lentil-soup.html">Middle Eastern Lentil Soup</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="olive oil">
+
+          <details>
+            <summary><span class="ingredient-name">olive oil</span>, <span class="ingredient-name">yellow onion</span>, <span class="ingredient-name">carrots</span><span class="ingredient-more"> +13 more</span></summary><span class="ingredient-list"><span class="ingredient-name">potato</span><span class="ingredient-name">red lentils</span><span class="ingredient-name">water</span><span class="ingredient-name">chicken or vegetable stock cubes</span><span class="ingredient-name">dried mint</span><span class="ingredient-name">cumin</span><span class="ingredient-name">paprika</span><span class="ingredient-name">turmeric</span><span class="ingredient-name">cayenne pepper</span><span class="ingredient-name">salt</span><span class="ingredient-name">black pepper</span><span class="ingredient-name">flour</span><span class="ingredient-name">butter</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.miso-dumpling-soup.html">Miso Dumpling Soup (15 Minutes)</a>
-          
+
         </td>
-        
-        <td class="tags">Japanese, dumplings, miso, quick</td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="frozen vegetable dumplings (potstickers)">
+
+          <details>
+            <summary><span class="ingredient-name">frozen vegetable dumplings (potstickers)</span>, <span class="ingredient-name">sesame oil</span>, <span class="ingredient-name">garlic</span><span class="ingredient-more"> +7 more</span></summary><span class="ingredient-list"><span class="ingredient-name">ginger</span><span class="ingredient-name">white miso paste</span><span class="ingredient-name">chili oil</span><span class="ingredient-name">green onion</span><span class="ingredient-name">vegetable broth</span><span class="ingredient-name">carrots</span><span class="ingredient-name">spinach</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.moist-chocolate-cake.html">Moist Chocolate Cake</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>12 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="all-purpose flour">
+
+          <details>
+            <summary><span class="ingredient-name">all-purpose flour</span>, <span class="ingredient-name">granulated sugar</span>, <span class="ingredient-name">brown sugar</span><span class="ingredient-more"> +17 more</span></summary><span class="ingredient-list"><span class="ingredient-name">cocoa powder</span><span class="ingredient-name">baking soda</span><span class="ingredient-name">baking powder</span><span class="ingredient-name">salt</span><span class="ingredient-name">buttermilk</span><span class="ingredient-name">coffee</span><span class="ingredient-name">vegetable oil</span><span class="ingredient-name">eggs</span><span class="ingredient-name">vanilla extract</span><span class="ingredient-name">unsalted butter</span><span class="ingredient-name">powdered sugar</span><span class="ingredient-name">cocoa powder</span><span class="ingredient-name">salt</span><span class="ingredient-name">chocolate chips</span><span class="ingredient-name">honey</span><span class="ingredient-name">heavy cream</span><span class="ingredient-name">vanilla extract</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">12 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.mushroom-onion-and-sage-stuffing.html">Mushroom, Onion, and Sage Stuffing</a>
-          
+
         </td>
-        
-        <td class="tags">stuffing, dressing, side dish, mushroom, Thanksgiving</td>
-        
-        <td>9 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method, season</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="french bread">
+
+          <details>
+            <summary><span class="ingredient-name">french bread</span>, <span class="ingredient-name">white onion</span>, <span class="ingredient-name">celery</span><span class="ingredient-more"> +10 more</span></summary><span class="ingredient-list"><span class="ingredient-name">mushrooms</span><span class="ingredient-name">garlic</span><span class="ingredient-name">sage</span><span class="ingredient-name">thyme</span><span class="ingredient-name">butter</span><span class="ingredient-name">eggs</span><span class="ingredient-name">chicken stock</span><span class="ingredient-name">milk</span><span class="ingredient-name">salt</span><span class="ingredient-name">pepper</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">9 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.oven-fried-chicken-ii.html">Oven Fried Chicken II</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>10 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="chicken thighs">
+
+          <details>
+            <summary><span class="ingredient-name">chicken thighs</span>, <span class="ingredient-name">eggs</span>, <span class="ingredient-name">all-purpose flour</span><span class="ingredient-more"> +3 more</span></summary><span class="ingredient-list"><span class="ingredient-name">Italian seasoned bread crumbs</span><span class="ingredient-name">paprika</span><span class="ingredient-name">vegetable oil</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">10 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.pappardelle-with-mushrooms.html">Pappardelle with Mushrooms</a>
-          
+
         </td>
-        
-        <td class="tags">mushrooms, pasta, vegetarian</td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">dietary</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="mushrooms">
+
+          <details>
+            <summary><span class="ingredient-name">mushrooms</span>, <span class="ingredient-name">olive oil</span>, <span class="ingredient-name">garlic</span><span class="ingredient-more"> +5 more</span></summary><span class="ingredient-list"><span class="ingredient-name">red pepper flakes</span><span class="ingredient-name">lemon</span><span class="ingredient-name">pappardelle</span><span class="ingredient-name">grated parmesan</span><span class="ingredient-name">butter</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.pasta-e-piselli.html">Pasta e Piselli (Pasta with Peas)</a>
-          
+
         </td>
-        
-        <td class="tags">Italian, Italian-American, one-pot</td>
-        
-        <td>8 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="ditalini pasta">
+
+          <details>
+            <summary><span class="ingredient-name">ditalini pasta</span>, <span class="ingredient-name">extra virgin olive oil</span>, <span class="ingredient-name">sweet onion</span><span class="ingredient-more"> +7 more</span></summary><span class="ingredient-list"><span class="ingredient-name">garlic</span><span class="ingredient-name">red pepper flakes</span><span class="ingredient-name">water</span><span class="ingredient-name">salt</span><span class="ingredient-name">black pepper</span><span class="ingredient-name">baby peas</span><span class="ingredient-name">Pecorino Romano cheese</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.perfect-pie-dough.html">Perfect Pie Dough</a>
-          
+
         </td>
-        
-        <td class="tags">pie dough, pie crust, pastry, make-ahead</td>
-        
-        <td>1 9- or 10-inch pie crust</td>
-        
+
+        <td class="tags" data-label="Tags">context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="unbleached all-purpose flour">
+
+          <details>
+            <summary><span class="ingredient-name">unbleached all-purpose flour</span>, <span class="ingredient-name">granulated sugar</span>, <span class="ingredient-name">fine sea salt</span><span class="ingredient-more"> +2 more</span></summary><span class="ingredient-list"><span class="ingredient-name">unsalted butter</span><span class="ingredient-name">ice water</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">1 9- or 10-inch pie crust</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.perfect-pot-roast.html">Perfect Pot Roast</a>
-          
+
         </td>
-        
-        <td class="tags">pot roast, beef, comfort food</td>
-        
-        <td>10 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method, context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="chuck roast">
+
+          <details>
+            <summary><span class="ingredient-name">chuck roast</span>, <span class="ingredient-name">olive oil</span>, <span class="ingredient-name">onions</span><span class="ingredient-more"> +5 more</span></summary><span class="ingredient-list"><span class="ingredient-name">carrots</span><span class="ingredient-name">red wine</span><span class="ingredient-name">beef stock</span><span class="ingredient-name">fresh thyme</span><span class="ingredient-name">fresh rosemary</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">10 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.poached-cod-with-tomatoes.html">Poached Cod with Tomatoes</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="olive oil">
+
+          <details>
+            <summary><span class="ingredient-name">olive oil</span>, <span class="ingredient-name">red bell pepper</span>, <span class="ingredient-name">onion</span><span class="ingredient-more"> +6 more</span></summary><span class="ingredient-list"><span class="ingredient-name">yellow squash</span><span class="ingredient-name">tomatoes</span><span class="ingredient-name">butter or cannellini beans</span><span class="ingredient-name">cod</span><span class="ingredient-name">salt</span><span class="ingredient-name">black pepper</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.pork-breakfast-chops.html">Pork Breakfast Chops</a>
-          
+
         </td>
-        
-        <td class="tags">pork, pan-fried, easy</td>
-        
-        <td>8 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method, context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="seasoned salt">
+
+          <details>
+            <summary><span class="ingredient-name">seasoned salt</span>, <span class="ingredient-name">ground black pepper</span>, <span class="ingredient-name">cayenne pepper</span><span class="ingredient-more"> +4 more</span></summary><span class="ingredient-list"><span class="ingredient-name">pork breakfast chops</span><span class="ingredient-name">all-purpose flour</span><span class="ingredient-name">canola oil</span><span class="ingredient-name">butter</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.potato-leek-soup.html">Potato Leek Soup</a>
-          
+
         </td>
-        
-        <td class="tags">French, creamy, potato, leek, freezer-friendly</td>
-        
-        <td>6 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="unsalted butter">
+
+          <details>
+            <summary><span class="ingredient-name">unsalted butter</span>, <span class="ingredient-name">leeks</span>, <span class="ingredient-name">garlic</span><span class="ingredient-more"> +7 more</span></summary><span class="ingredient-list"><span class="ingredient-name">Yukon Gold potatoes</span><span class="ingredient-name">low sodium chicken or vegetable broth</span><span class="ingredient-name">bay leaves</span><span class="ingredient-name">fresh thyme</span><span class="ingredient-name">salt</span><span class="ingredient-name">ground black pepper</span><span class="ingredient-name">heavy cream</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">6 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.quick-and-easy-red-lentil-dahl.html">Quick & Easy Red Lentil Dahl</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>8 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, dietary</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="olive oil">
+
+          <details>
+            <summary><span class="ingredient-name">olive oil</span>, <span class="ingredient-name">yellow onion</span>, <span class="ingredient-name">garlic</span><span class="ingredient-more"> +11 more</span></summary><span class="ingredient-list"><span class="ingredient-name">fresh ginger</span><span class="ingredient-name">garam masala</span><span class="ingredient-name">ground turmeric</span><span class="ingredient-name">red pepper chili flakes</span><span class="ingredient-name">dried red lentils</span><span class="ingredient-name">diced tomatoes</span><span class="ingredient-name">full fat coconut milk</span><span class="ingredient-name">vegetable broth</span><span class="ingredient-name">salt</span><span class="ingredient-name">lemon</span><span class="ingredient-name">baby spinach</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.quick-pickled-red-onion.html">Quick Pickled Red Onion</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>2 cups</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="red onion">
+
+          <details>
+            <summary><span class="ingredient-name">red onion</span>, <span class="ingredient-name">kosher salt</span>, <span class="ingredient-name">granulated sugar</span><span class="ingredient-more"> +2 more</span></summary><span class="ingredient-list"><span class="ingredient-name">vinegar</span><span class="ingredient-name">water</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">2 cups</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.ratatouille.html">Ratatouille</a>
-          
+
         </td>
-        
-        <td class="tags">vegetarian, stovetop</td>
-        
-        <td>6 servings</td>
-        
+
+        <td class="tags" data-label="Tags">dietary, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="olive oil">
+
+          <details>
+            <summary><span class="ingredient-name">olive oil</span>, <span class="ingredient-name">onion</span>, <span class="ingredient-name">red bell peppers</span><span class="ingredient-more"> +3 more</span></summary><span class="ingredient-list"><span class="ingredient-name">zucchini</span><span class="ingredient-name">garlic</span><span class="ingredient-name">stewed tomatoes</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">6 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.rice-pilaf.html">Rice Pilaf</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="rice">
+
+          <details>
+            <summary><span class="ingredient-name">rice</span>, <span class="ingredient-name">chicken broth</span>, <span class="ingredient-name">butter</span><span class="ingredient-more"> +3 more</span></summary><span class="ingredient-list"><span class="ingredient-name">onion</span><span class="ingredient-name">mushrooms</span><span class="ingredient-name">celery</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.roasted-potatoes-and-kielbasa.html">Roasted Potatoes and Kielbasa (One-Pan Recipe)</a>
-          
+
         </td>
-        
-        <td class="tags">one-pan, potatoes, kielbasa, roasted</td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="small red potatoes">
+
+          <details>
+            <summary><span class="ingredient-name">small red potatoes</span>, <span class="ingredient-name">extra light olive oil</span>, <span class="ingredient-name">fresh parsley</span><span class="ingredient-more"> +3 more</span></summary><span class="ingredient-list"><span class="ingredient-name">sea salt</span><span class="ingredient-name">garlic</span><span class="ingredient-name">kielbasa</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.roasted-shiitake-bibimbap.html">Roasted Shiitake Bibimbap</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>2 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="sushi rice">
+
+          <details>
+            <summary><span class="ingredient-name">sushi rice</span>, <span class="ingredient-name">sweet potato</span>, <span class="ingredient-name">shiitake mushrooms</span><span class="ingredient-more"> +12 more</span></summary><span class="ingredient-list"><span class="ingredient-name">cucumber</span><span class="ingredient-name">garlic</span><span class="ingredient-name">dark brown sugar</span><span class="ingredient-name">soy sauce</span><span class="ingredient-name">gochujang</span><span class="ingredient-name">rice vinegar</span><span class="ingredient-name">sesame oil</span><span class="ingredient-name">baby spinach</span><span class="ingredient-name">sriracha sauce</span><span class="ingredient-name">canola oil</span><span class="ingredient-name">water</span><span class="ingredient-name">eggs</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">2 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.salmon-burgers-with-slaw.html">Salmon Burgers with Slaw</a>
-          
+
         </td>
-        
-        <td class="tags">salmon, burgers, slaw, seafood</td>
-        
-        <td>3–4 burgers</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="salmon">
+
+          <details>
+            <summary><span class="ingredient-name">salmon</span>, <span class="ingredient-name">eggs</span>, <span class="ingredient-name">breadcrumbs</span><span class="ingredient-more"> +10 more</span></summary><span class="ingredient-list"><span class="ingredient-name">salt</span><span class="ingredient-name">garlic powder</span><span class="ingredient-name">fresh herbs</span><span class="ingredient-name">lemon juice</span><span class="ingredient-name">green cabbage</span><span class="ingredient-name">plain greek yogurt</span><span class="ingredient-name">white distilled vinegar</span><span class="ingredient-name">salt</span><span class="ingredient-name">garlic powder</span><span class="ingredient-name">fresh herbs</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">3–4 burgers</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.shakshuka-with-feta.html">Shakshuka With Feta</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4–6 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="extra-virgin olive oil">
+
+          <details>
+            <summary><span class="ingredient-name">extra-virgin olive oil</span>, <span class="ingredient-name">onion</span>, <span class="ingredient-name">red bell pepper</span><span class="ingredient-more"> +11 more</span></summary><span class="ingredient-list"><span class="ingredient-name">garlic</span><span class="ingredient-name">ground cumin</span><span class="ingredient-name">sweet paprika</span><span class="ingredient-name">ground cayenne</span><span class="ingredient-name">whole plum tomatoes</span><span class="ingredient-name">kosher salt</span><span class="ingredient-name">black pepper</span><span class="ingredient-name">feta</span><span class="ingredient-name">eggs</span><span class="ingredient-name">fresh cilantro</span><span class="ingredient-name">hot sauce</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4–6 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.shepherds-pie.html">Shepherd's Pie</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method, context, primary_ingredient, flavor_profile</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="ground meat">
+
+          <details>
+            <summary><span class="ingredient-name">ground meat</span>, <span class="ingredient-name">mushrooms</span>, <span class="ingredient-name">carrots</span><span class="ingredient-more"> +14 more</span></summary><span class="ingredient-list"><span class="ingredient-name">onions</span><span class="ingredient-name">celery</span><span class="ingredient-name">peas</span><span class="ingredient-name">garlic</span><span class="ingredient-name">dark beer</span><span class="ingredient-name">chicken stock</span><span class="ingredient-name">tomato paste</span><span class="ingredient-name">rosemary</span><span class="ingredient-name">thyme</span><span class="ingredient-name">Worcestershire sauce</span><span class="ingredient-name">potatoes</span><span class="ingredient-name">eggs</span><span class="ingredient-name">butter</span><span class="ingredient-name">shredded cheese</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.shrimp-fettuccine-alfredo.html">Shrimp Fettuccine Alfredo</a>
-          
+
         </td>
-        
-        <td class="tags">pasta, shrimp, alfredo, Food Network Kitchen</td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="fettuccine">
+
+          <details>
+            <summary><span class="ingredient-name">fettuccine</span>, <span class="ingredient-name">shrimp</span>, <span class="ingredient-name">unsalted butter</span><span class="ingredient-more"> +3 more</span></summary><span class="ingredient-list"><span class="ingredient-name">heavy cream</span><span class="ingredient-name">nutmeg</span><span class="ingredient-name">Parmigiano-Reggiano cheese</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.simple-zucchini-bread.html">Simple Zucchini Bread</a>
-          
+
         </td>
-        
-        <td class="tags">zucchini, loaf, vegetarian</td>
-        
-        <td>1 8.5x4.5 inch loaf</td>
-        
+
+        <td class="tags" data-label="Tags">dietary, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="light brown sugar">
+
+          <details>
+            <summary><span class="ingredient-name">light brown sugar</span>, <span class="ingredient-name">apple juice</span>, <span class="ingredient-name">vegetable oil</span><span class="ingredient-more"> +11 more</span></summary><span class="ingredient-list"><span class="ingredient-name">eggs</span><span class="ingredient-name">vanilla extract</span><span class="ingredient-name">baking powder</span><span class="ingredient-name">baking soda</span><span class="ingredient-name">table salt</span><span class="ingredient-name">cinnamon</span><span class="ingredient-name">all-purpose flour</span><span class="ingredient-name">zucchini</span><span class="ingredient-name">walnuts</span><span class="ingredient-name">raisins or currants</span><span class="ingredient-name">light brown sugar</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">1 8.5x4.5 inch loaf</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.slow-cooker-beef-stew.html">Slow Cooker Beef Stew</a>
-          
+
         </td>
-        
-        <td class="tags">slow cooker, beef, stew, comfort food</td>
-        
-        <td>10 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method, context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="olive oil">
+
+          <details>
+            <summary><span class="ingredient-name">olive oil</span>, <span class="ingredient-name">boneless beef chuck roast</span>, <span class="ingredient-name">mushrooms</span><span class="ingredient-more"> +11 more</span></summary><span class="ingredient-list"><span class="ingredient-name">carrots</span><span class="ingredient-name">garlic</span><span class="ingredient-name">yellow potatoes</span><span class="ingredient-name">onion</span><span class="ingredient-name">beef broth</span><span class="ingredient-name">dry red wine</span><span class="ingredient-name">tomato paste</span><span class="ingredient-name">Dijon mustard</span><span class="ingredient-name">dried thyme</span><span class="ingredient-name">pearl barley or farro</span><span class="ingredient-name">bay leaves</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">10 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.slow-cooker-corn-chowder.html">Slow Cooker Corn Chowder</a>
-          
+
         </td>
-        
-        <td class="tags">slow cooker, corn, chowder, vegetarian-adaptable</td>
-        
-        <td>4–6 servings</td>
-        
+
+        <td class="tags" data-label="Tags">dietary, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="red bell pepper">
+
+          <details>
+            <summary><span class="ingredient-name">red bell pepper</span>, <span class="ingredient-name">lemon juice</span>, <span class="ingredient-name">frozen corn</span><span class="ingredient-more"> +9 more</span></summary><span class="ingredient-list"><span class="ingredient-name">Yukon gold potatoes</span><span class="ingredient-name">low-sodium chicken or vegetable broth</span><span class="ingredient-name">yellow onion</span><span class="ingredient-name">garlic</span><span class="ingredient-name">fresh thyme</span><span class="ingredient-name">kosher salt</span><span class="ingredient-name">freshly ground black pepper</span><span class="ingredient-name">half-and-half or heavy cream</span><span class="ingredient-name">unsalted butter</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4–6 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.slow-cooked-southwest-chicken.html">Slow-Cooked Southwest Chicken</a>
-          
+
         </td>
-        
-        <td class="tags">slow cooker, chicken, southwest, low-fat</td>
-        
-        <td>6 servings</td>
-        
+
+        <td class="tags" data-label="Tags">dietary, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="black beans">
+
+          <details>
+            <summary><span class="ingredient-name">black beans</span>, <span class="ingredient-name">reduced-sodium chicken broth</span>, <span class="ingredient-name">diced tomatoes with mild green chiles</span><span class="ingredient-more"> +6 more</span></summary><span class="ingredient-list"><span class="ingredient-name">chicken breast</span><span class="ingredient-name">chunky salsa</span><span class="ingredient-name">frozen corn</span><span class="ingredient-name">dried parsley flakes</span><span class="ingredient-name">ground cumin</span><span class="ingredient-name">pepper</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">6 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.soft-and-chewy-chocolate-chip-cookies.html">Soft and Chewy Chocolate Chip Cookies</a>
-          
+
         </td>
-        
-        <td class="tags">cookies, chocolate chip, baking</td>
-        
-        <td>24 cookies</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="brown sugar">
+
+          <details>
+            <summary><span class="ingredient-name">brown sugar</span>, <span class="ingredient-name">unsalted butter</span>, <span class="ingredient-name">eggs</span><span class="ingredient-more"> +5 more</span></summary><span class="ingredient-list"><span class="ingredient-name">vanilla</span><span class="ingredient-name">baking soda</span><span class="ingredient-name">kosher salt</span><span class="ingredient-name">all-purpose flour</span><span class="ingredient-name">chocolate chips</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">24 cookies</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.soy-vay-veri-veri-teriyaki-clone.html">Soy Vay Veri Veri Teriyaki Clone</a>
-          
+
         </td>
-        
-        <td class="tags">teriyaki, sauce, marinade, freezer friendly</td>
-        
-        <td>16 servings</td>
-        
+
+        <td class="tags" data-label="Tags">context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="soy sauce">
+
+          <details>
+            <summary><span class="ingredient-name">soy sauce</span>, <span class="ingredient-name">sugar</span>, <span class="ingredient-name">brown sugar</span><span class="ingredient-more"> +9 more</span></summary><span class="ingredient-list"><span class="ingredient-name">garlic</span><span class="ingredient-name">ginger</span><span class="ingredient-name">sesame seeds</span><span class="ingredient-name">sesame oil</span><span class="ingredient-name">onion</span><span class="ingredient-name">onion powder</span><span class="ingredient-name">garlic powder</span><span class="ingredient-name">ginger powder</span><span class="ingredient-name">cornstarch</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">16 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.spaghetti-carbonara.html">Spaghetti Carbonara</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="spaghetti">
+
+          <details>
+            <summary><span class="ingredient-name">spaghetti</span>, <span class="ingredient-name">eggs</span>, <span class="ingredient-name">Parmesan</span><span class="ingredient-more"> +3 more</span></summary><span class="ingredient-list"><span class="ingredient-name">bacon</span><span class="ingredient-name">garlic</span><span class="ingredient-name">fresh parsley</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.sparkling-apple-cider-gin-cocktail.html">Sparkling Apple Cider Gin Cocktail</a>
-          
+
         </td>
-        
-        <td class="tags">holiday, gin, apple cider, sparkling, easy</td>
-        
-        <td>1 serving</td>
-        
+
+        <td class="tags" data-label="Tags">context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="gin">
+
+          <details>
+            <summary><span class="ingredient-name">gin</span>, <span class="ingredient-name">lemon juice</span>, <span class="ingredient-name">orange bitters</span><span class="ingredient-more"> +1 more</span></summary><span class="ingredient-list"><span class="ingredient-name">sparkling apple cider</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">1 serving</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.split-pea-soup.html">Split Pea Soup (Instant Pot)</a>
-          
+
         </td>
-        
-        <td class="tags">instant pot, split pea, ham, slow cooker option</td>
-        
-        <td>8 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="butter">
+
+          <details>
+            <summary><span class="ingredient-name">butter</span>, <span class="ingredient-name">onion</span>, <span class="ingredient-name">celery</span><span class="ingredient-more"> +5 more</span></summary><span class="ingredient-list"><span class="ingredient-name">carrots</span><span class="ingredient-name">ham bone or diced ham</span><span class="ingredient-name">dry split peas</span><span class="ingredient-name">chicken or veggie stock</span><span class="ingredient-name">bay leaves</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.sweet-pickled-radishes.html">Sweet Pickled Radishes</a>
-          
+
         </td>
-        
-        <td class="tags">pickles, radishes, refrigerator pickles</td>
-        
-        <td>1 pint jar</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="radishes">
+
+          <details>
+            <summary><span class="ingredient-name">radishes</span>, <span class="ingredient-name">white vinegar</span>, <span class="ingredient-name">sugar</span><span class="ingredient-more"> +6 more</span></summary><span class="ingredient-list"><span class="ingredient-name">water</span><span class="ingredient-name">pickling salt</span><span class="ingredient-name">mustard seeds</span><span class="ingredient-name">ground spice</span><span class="ingredient-name">bay leaf</span><span class="ingredient-name">dried red pepper flakes</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">1 pint jar</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.sweet-potato-chickpea-buddha-bowl-with-peanut-sauce.html">Sweet Potato Chickpea Buddha Bowl with Peanut Sauce</a>
-          
+
         </td>
-        
-        <td class="tags">buddha bowl, vegan, meal prep, grain bowl</td>
-        
-        <td></td>
-        
+
+        <td class="tags" data-label="Tags">dietary, context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="sweet potato">
+
+          <details>
+            <summary><span class="ingredient-name">sweet potato</span>, <span class="ingredient-name">chickpeas</span>, <span class="ingredient-name">spices/seasonings</span><span class="ingredient-more"> +8 more</span></summary><span class="ingredient-list"><span class="ingredient-name">grain</span><span class="ingredient-name">edamame</span><span class="ingredient-name">broccoli</span><span class="ingredient-name">peanut sauce</span><span class="ingredient-name">avocado</span><span class="ingredient-name">cilantro</span><span class="ingredient-name">peanuts</span><span class="ingredient-name">red pepper flakes</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield"></td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.taco-pasta-salad.html">Taco Pasta Salad</a>
-          
+
         </td>
-        
-        <td class="tags">pasta, taco, cold, make-ahead</td>
-        
-        <td>6 servings</td>
-        
+
+        <td class="tags" data-label="Tags">context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="pasta shells">
+
+          <details>
+            <summary><span class="ingredient-name">pasta shells</span>, <span class="ingredient-name">black beans</span>, <span class="ingredient-name">corn kernels</span><span class="ingredient-more"> +8 more</span></summary><span class="ingredient-list"><span class="ingredient-name">tomato</span><span class="ingredient-name">salsa</span><span class="ingredient-name">olive oil</span><span class="ingredient-name">lime juice</span><span class="ingredient-name">taco seasoning</span><span class="ingredient-name">garlic</span><span class="ingredient-name">shredded cheese</span><span class="ingredient-name">avocado</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">6 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.taco-salad.html">Taco Salad</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="ground beef or turkey">
+
+          <details>
+            <summary><span class="ingredient-name">ground beef or turkey</span>, <span class="ingredient-name">salsa</span>, <span class="ingredient-name">sour cream</span><span class="ingredient-more"> +10 more</span></summary><span class="ingredient-list"><span class="ingredient-name">oil</span><span class="ingredient-name">onion</span><span class="ingredient-name">garlic</span><span class="ingredient-name">plum tomatoes</span><span class="ingredient-name">kidney or black beans</span><span class="ingredient-name">cumin</span><span class="ingredient-name">chili powder</span><span class="ingredient-name">fresh cilantro</span><span class="ingredient-name">romaine lettuce</span><span class="ingredient-name">shredded cheese</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.teriyaki-turkey-rice-bowl.html">Teriyaki Turkey Rice Bowl</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="teriyaki sauce">
+
+          <details>
+            <summary><span class="ingredient-name">teriyaki sauce</span>, <span class="ingredient-name">oil</span>, <span class="ingredient-name">onion</span><span class="ingredient-more"> +5 more</span></summary><span class="ingredient-list"><span class="ingredient-name">garlic</span><span class="ingredient-name">ground turkey</span><span class="ingredient-name">broccoli</span><span class="ingredient-name">carrots</span><span class="ingredient-name">cooked rice</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.thai-cucumber-salad.html">Thai Cucumber Salad</a>
-          
+
         </td>
-        
-        <td class="tags">thai, cucumber, summer, side dish, asian-inspired</td>
-        
-        <td>6 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, dietary, season</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="rice vinegar">
+
+          <details>
+            <summary><span class="ingredient-name">rice vinegar</span>, <span class="ingredient-name">granulated sugar</span>, <span class="ingredient-name">toasted sesame oil</span><span class="ingredient-more"> +5 more</span></summary><span class="ingredient-list"><span class="ingredient-name">red pepper flakes</span><span class="ingredient-name">salt</span><span class="ingredient-name">cucumbers</span><span class="ingredient-name">green onions</span><span class="ingredient-name">peanuts</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">6 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.thai-peanut-sauce.html">Thai Peanut Sauce</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>1 batch</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="peanut butter">
+
+          <details>
+            <summary><span class="ingredient-name">peanut butter</span>, <span class="ingredient-name">low sodium soy sauce</span>, <span class="ingredient-name">maple syrup</span><span class="ingredient-more"> +7 more</span></summary><span class="ingredient-list"><span class="ingredient-name">toasted sesame oil</span><span class="ingredient-name">rice vinegar</span><span class="ingredient-name">warm water</span><span class="ingredient-name">ground ginger</span><span class="ingredient-name">garlic</span><span class="ingredient-name">lime juice</span><span class="ingredient-name">red pepper flakes</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">1 batch</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.thai-peanut-sauce-jessica-hylton.html">Thai Peanut Sauce</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>9 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="natural peanut butter">
+
+          <details>
+            <summary><span class="ingredient-name">natural peanut butter</span>, <span class="ingredient-name">ground ginger</span>, <span class="ingredient-name">maple syrup</span><span class="ingredient-more"> +5 more</span></summary><span class="ingredient-list"><span class="ingredient-name">low sodium soy sauce</span><span class="ingredient-name">rice wine vinegar</span><span class="ingredient-name">sesame seeds</span><span class="ingredient-name">hot water</span><span class="ingredient-name">crushed red pepper flakes</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">9 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.thai-peanut-sweet-potato-buddha-bowl.html">Thai Peanut Sweet Potato Buddha Bowl</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">dietary, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="sweet potatoes">
+
+          <details>
+            <summary><span class="ingredient-name">sweet potatoes</span>, <span class="ingredient-name">chickpeas</span>, <span class="ingredient-name">soy sauce</span><span class="ingredient-more"> +12 more</span></summary><span class="ingredient-list"><span class="ingredient-name">maple syrup</span><span class="ingredient-name">sriracha</span><span class="ingredient-name">garlic</span><span class="ingredient-name">red pepper flakes</span><span class="ingredient-name">oil</span><span class="ingredient-name">grain</span><span class="ingredient-name">broccoli</span><span class="ingredient-name">edamame</span><span class="ingredient-name">avocado</span><span class="ingredient-name">peanut sauce</span><span class="ingredient-name">peanuts</span><span class="ingredient-name">cilantro</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.the-best-apple-crisp.html">The Best Apple Crisp</a>
-          
+
         </td>
-        
-        <td class="tags">apple, crisp, fall</td>
-        
-        <td>8 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, method, season</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="apples">
+
+          <details>
+            <summary><span class="ingredient-name">apples</span>, <span class="ingredient-name">granulated sugar</span>, <span class="ingredient-name">cinnamon (filling)</span><span class="ingredient-more"> +7 more</span></summary><span class="ingredient-list"><span class="ingredient-name">vanilla extract</span><span class="ingredient-name">all-purpose flour</span><span class="ingredient-name">old-fashioned oats</span><span class="ingredient-name">brown sugar</span><span class="ingredient-name">salt</span><span class="ingredient-name">cinnamon (topping)</span><span class="ingredient-name">butter</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.the-best-instant-pot-lentil-soup.html">The Best Instant Pot Lentil Soup</a>
-          
+
         </td>
-        
-        <td class="tags">coconut milk, curry, instant pot, lentil soup, turmeric</td>
-        
-        <td>3 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, dietary, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="coconut oil">
+
+          <details>
+            <summary><span class="ingredient-name">coconut oil</span>, <span class="ingredient-name">onion</span>, <span class="ingredient-name">garlic</span><span class="ingredient-more"> +14 more</span></summary><span class="ingredient-list"><span class="ingredient-name">ginger</span><span class="ingredient-name">celery</span><span class="ingredient-name">carrots</span><span class="ingredient-name">curry powder</span><span class="ingredient-name">turmeric</span><span class="ingredient-name">cumin</span><span class="ingredient-name">salt</span><span class="ingredient-name">black pepper</span><span class="ingredient-name">red lentils</span><span class="ingredient-name">green lentils</span><span class="ingredient-name">coconut milk</span><span class="ingredient-name">tomatoes</span><span class="ingredient-name">vegetable broth</span><span class="ingredient-name">spinach</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">3 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.the-best-meatloaf-recipe-of-your-life.html">The Best Meatloaf Recipe Of Your Life</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>8 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="fresh breadcrumbs">
+
+          <details>
+            <summary><span class="ingredient-name">fresh breadcrumbs</span>, <span class="ingredient-name">whole milk</span>, <span class="ingredient-name">olive oil</span><span class="ingredient-more"> +16 more</span></summary><span class="ingredient-list"><span class="ingredient-name">onion</span><span class="ingredient-name">salt</span><span class="ingredient-name">garlic</span><span class="ingredient-name">ketchup</span><span class="ingredient-name">Worcestershire sauce</span><span class="ingredient-name">parsley</span><span class="ingredient-name">black pepper</span><span class="ingredient-name">eggs</span><span class="ingredient-name">ground beef</span><span class="ingredient-name">ground pork</span><span class="ingredient-name">garlic powder</span><span class="ingredient-name">onion powder</span><span class="ingredient-name">mustard powder</span><span class="ingredient-name">celery seeds</span><span class="ingredient-name">molasses</span><span class="ingredient-name">prepared horseradish</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.the-best-swedish-meatballs-recipe.html">The Best Swedish Meatballs Recipe</a>
-          
+
         </td>
-        
-        <td class="tags">swedish meatballs, gravy</td>
-        
-        <td>8 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="breadcrumbs">
+
+          <details>
+            <summary><span class="ingredient-name">breadcrumbs</span>, <span class="ingredient-name">milk</span>, <span class="ingredient-name">cream</span><span class="ingredient-more"> +19 more</span></summary><span class="ingredient-list"><span class="ingredient-name">egg</span><span class="ingredient-name">garlic</span><span class="ingredient-name">salt</span><span class="ingredient-name">black pepper</span><span class="ingredient-name">white pepper</span><span class="ingredient-name">Grillkrydda</span><span class="ingredient-name">onion</span><span class="ingredient-name">ground beef</span><span class="ingredient-name">ground pork</span><span class="ingredient-name">parsley</span><span class="ingredient-name">butter (meatballs)</span><span class="ingredient-name">olive oil</span><span class="ingredient-name">butter (gravy)</span><span class="ingredient-name">all-purpose flour</span><span class="ingredient-name">vegetable broth</span><span class="ingredient-name">beef broth</span><span class="ingredient-name">heavy cream</span><span class="ingredient-name">soy sauce</span><span class="ingredient-name">dijon mustard</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.tomato-relish.html">Tomato Relish</a>
-          
+
         </td>
-        
-        <td class="tags">relish, tomato, condiment, preserving</td>
-        
-        <td>2 kg</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="tomatoes">
+
+          <details>
+            <summary><span class="ingredient-name">tomatoes</span>, <span class="ingredient-name">onion</span>, <span class="ingredient-name">salt</span><span class="ingredient-more"> +6 more</span></summary><span class="ingredient-list"><span class="ingredient-name">mustard powder</span><span class="ingredient-name">curry powder</span><span class="ingredient-name">sugar</span><span class="ingredient-name">vinegar</span><span class="ingredient-name">cornflour</span><span class="ingredient-name">vinegar (extra)</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">2 kg</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.toum.html">Toum (Garlic Whip)</a>
-          
+
         </td>
-        
-        <td class="tags">garlic, Lebanese, emulsion, sauce, Middle Eastern</td>
-        
-        <td>4 1/2 cups</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="garlic">
+
+          <details>
+            <summary><span class="ingredient-name">garlic</span>, <span class="ingredient-name">kosher salt</span>, <span class="ingredient-name">lemon juice</span><span class="ingredient-more"> +2 more</span></summary><span class="ingredient-list"><span class="ingredient-name">oil</span><span class="ingredient-name">ice water</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 1/2 cups</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.tuna-and-white-bean-salad.html">Tuna-and-White-Bean Salad</a>
-          
+
         </td>
-        
-        <td class="tags">tuna, white bean, Tuscan, no-cook, quick</td>
-        
-        <td></td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, method, context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="tuna packed in oil">
+
+          <details>
+            <summary><span class="ingredient-name">tuna packed in oil</span>, <span class="ingredient-name">canned white beans</span>, <span class="ingredient-name">red onion</span><span class="ingredient-more"> +6 more</span></summary><span class="ingredient-list"><span class="ingredient-name">capers</span><span class="ingredient-name">watercress</span><span class="ingredient-name">olive oil</span><span class="ingredient-name">red- or white-wine vinegar</span><span class="ingredient-name">salt</span><span class="ingredient-name">black pepper</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield"></td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.tzatziki.html">Tzatziki</a>
-          
+
         </td>
-        
-        <td class="tags">Greek, tzatziki, vegetarian, quick</td>
-        
-        <td>2.5 cups</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, dietary, context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="Persian cucumbers">
+
+          <details>
+            <summary><span class="ingredient-name">Persian cucumbers</span>, <span class="ingredient-name">plain whole-milk Greek yogurt</span>, <span class="ingredient-name">dill</span><span class="ingredient-more"> +2 more</span></summary><span class="ingredient-list"><span class="ingredient-name">lemon juice</span><span class="ingredient-name">garlic</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">2.5 cups</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.ultimate-bean-dip.html">Ultimate Bean Dip</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>1 batch</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="cream cheese">
+
+          <details>
+            <summary><span class="ingredient-name">cream cheese</span>, <span class="ingredient-name">refried beans</span>, <span class="ingredient-name">salsa</span><span class="ingredient-more"> +3 more</span></summary><span class="ingredient-list"><span class="ingredient-name">taco seasoning</span><span class="ingredient-name">pepper jack cheese</span><span class="ingredient-name">fresh cilantro</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">1 batch</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.ultra-crispy-smashed-potatoes.html">Ultra Crispy Smashed Potatoes</a>
-          
+
         </td>
-        
-        <td class="tags">smashed potatoes, crispy, potato</td>
-        
-        <td>12 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="potatoes (small)">
+
+          <details>
+            <summary><span class="ingredient-name">potatoes (small)</span>, <span class="ingredient-name">potatoes (medium)</span>, <span class="ingredient-name">salt (for boiling)</span><span class="ingredient-more"> +5 more</span></summary><span class="ingredient-list"><span class="ingredient-name">unsalted butter</span><span class="ingredient-name">olive oil</span><span class="ingredient-name">salt (for sprinkling)</span><span class="ingredient-name">black pepper</span><span class="ingredient-name">parsley</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">12 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.unstuffed-bell-peppers.html">Unstuffed Bell Peppers</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="ground beef or turkey">
+
+          <details>
+            <summary><span class="ingredient-name">ground beef or turkey</span>, <span class="ingredient-name">yellow onion</span>, <span class="ingredient-name">green bell pepper</span><span class="ingredient-more"> +7 more</span></summary><span class="ingredient-list"><span class="ingredient-name">garlic</span><span class="ingredient-name">salt</span><span class="ingredient-name">tomato sauce</span><span class="ingredient-name">tomato paste</span><span class="ingredient-name">instant white rice</span><span class="ingredient-name">water</span><span class="ingredient-name">shredded cheese</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.vegetarian-burrito-bowls.html">Vegetarian Burrito Bowls</a>
-          
+
         </td>
-        
-        <td class="tags">vegetarian, bowls, Mexican-inspired, quick</td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, dietary, context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="olive oil">
+
+          <details>
+            <summary><span class="ingredient-name">olive oil</span>, <span class="ingredient-name">basmati rice</span>, <span class="ingredient-name">salt</span><span class="ingredient-more"> +9 more</span></summary><span class="ingredient-list"><span class="ingredient-name">water</span><span class="ingredient-name">garlic</span><span class="ingredient-name">black beans</span><span class="ingredient-name">chili powder</span><span class="ingredient-name">cumin</span><span class="ingredient-name">avocado</span><span class="ingredient-name">lime juice</span><span class="ingredient-name">corn kernels</span><span class="ingredient-name">cherry tomatoes</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.vegetarian-lentil-tortilla-soup.html">Vegetarian Lentil Tortilla Soup</a>
-          
+
         </td>
-        
-        <td class="tags">vegetarian, soup, Mexican, lentil, make-ahead</td>
-        
-        <td>6 cups</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, dietary, method, context</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="onion">
+
+          <details>
+            <summary><span class="ingredient-name">onion</span>, <span class="ingredient-name">avocado oil</span>, <span class="ingredient-name">bell pepper</span><span class="ingredient-more"> +14 more</span></summary><span class="ingredient-list"><span class="ingredient-name">jalapeno pepper</span><span class="ingredient-name">vegetable broth</span><span class="ingredient-name">canned tomato sauce</span><span class="ingredient-name">salsa verde</span><span class="ingredient-name">tomato paste</span><span class="ingredient-name">black beans</span><span class="ingredient-name">pinto beans</span><span class="ingredient-name">corn</span><span class="ingredient-name">dried red lentils</span><span class="ingredient-name">chili powder</span><span class="ingredient-name">garlic powder</span><span class="ingredient-name">cumin</span><span class="ingredient-name">cayenne pepper</span><span class="ingredient-name">heavy cream</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">6 cups</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.waffles-i.html">Waffles I</a>
-          
+
         </td>
-        
-        <td class="tags">waffles, breakfast</td>
-        
-        <td></td>
-        
+
+        <td class="tags" data-label="Tags"></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="eggs">
+
+          <details>
+            <summary><span class="ingredient-name">eggs</span>, <span class="ingredient-name">all-purpose flour</span>, <span class="ingredient-name">milk</span><span class="ingredient-more"> +5 more</span></summary><span class="ingredient-list"><span class="ingredient-name">vegetable oil</span><span class="ingredient-name">white sugar</span><span class="ingredient-name">baking powder</span><span class="ingredient-name">salt</span><span class="ingredient-name">vanilla extract</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield"></td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.white-bean-and-ham-soup.html">White Bean & Ham Soup</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>4 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="olive oil">
+
+          <details>
+            <summary><span class="ingredient-name">olive oil</span>, <span class="ingredient-name">onions</span>, <span class="ingredient-name">celery stalks</span><span class="ingredient-more"> +6 more</span></summary><span class="ingredient-list"><span class="ingredient-name">carrots</span><span class="ingredient-name">dried thyme</span><span class="ingredient-name">garlic</span><span class="ingredient-name">smoked ham hocks</span><span class="ingredient-name">dried Great Northern beans</span><span class="ingredient-name">chicken stock</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">4 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.yellow-curry-with-chicken.html">Yellow Curry with Chicken (Instant Pot)</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>6 servings</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="olive oil">
+
+          <details>
+            <summary><span class="ingredient-name">olive oil</span>, <span class="ingredient-name">onion</span>, <span class="ingredient-name">garlic</span><span class="ingredient-more"> +15 more</span></summary><span class="ingredient-list"><span class="ingredient-name">potatoes</span><span class="ingredient-name">boneless skinless chicken</span><span class="ingredient-name">chickpeas</span><span class="ingredient-name">brown sugar</span><span class="ingredient-name">ginger</span><span class="ingredient-name">ground turmeric</span><span class="ingredient-name">curry powder</span><span class="ingredient-name">ground coriander</span><span class="ingredient-name">salt</span><span class="ingredient-name">crushed red pepper</span><span class="ingredient-name">chicken broth</span><span class="ingredient-name">coconut milk</span><span class="ingredient-name">cornstarch</span><span class="ingredient-name">water</span><span class="ingredient-name">lime juice</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">6 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.your-strawberry-jam-recipe.html">Your Strawberry Jam Recipe (Ball RealFruit Low/No-Sugar Pectin)</a>
-          
+
         </td>
-        
-        <td class="tags">strawberry, jam, canning, low sugar, no sugar, Ball RealFruit</td>
-        
-        <td>3 half pints (8 oz)</td>
-        
+
+        <td class="tags" data-label="Tags">dietary, method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="strawberries">
+
+          <details>
+            <summary><span class="ingredient-name">strawberries</span>, <span class="ingredient-name">unsweetened fruit juice or thawed concentrate or water</span>, <span class="ingredient-name">Ball RealFruit Low or No-Sugar Needed Pectin</span><span class="ingredient-more"> +2 more</span></summary><span class="ingredient-list"><span class="ingredient-name">granulated sugar or sugar substitute or honey</span><span class="ingredient-name">butter or margarine</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">3 half pints (8 oz)</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.yule-log-cake.html">Yule Log Cake (Bûche de Noël)</a>
-          
+
         </td>
-        
-        <td class="tags">yule log, christmas, buche de noel, chocolate, cake</td>
-        
-        <td>8 servings</td>
-        
+
+        <td class="tags" data-label="Tags">cuisine, method, season</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="all-purpose flour">
+
+          <details>
+            <summary><span class="ingredient-name">all-purpose flour</span>, <span class="ingredient-name">Hershey's Special Dark cocoa powder</span>, <span class="ingredient-name">baking powder</span><span class="ingredient-more"> +12 more</span></summary><span class="ingredient-list"><span class="ingredient-name">salt</span><span class="ingredient-name">eggs</span><span class="ingredient-name">granulated sugar</span><span class="ingredient-name">sour cream</span><span class="ingredient-name">butter</span><span class="ingredient-name">vanilla extract</span><span class="ingredient-name">heavy whipping cream</span><span class="ingredient-name">powdered sugar</span><span class="ingredient-name">vanilla extract</span><span class="ingredient-name">salt</span><span class="ingredient-name">mascarpone cheese</span><span class="ingredient-name">semi-sweet chocolate</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">8 servings</td>
+
       </tr>
-      
+
       <tr>
-        <td>
-          
+        <td data-label="Recipe">
+
           <a href="wc-kitchen.zucchini-bread-muffins.html">Zucchini Bread Muffins</a>
-          
+
         </td>
-        
-        <td class="tags"></td>
-        
-        <td>12 muffins</td>
-        
+
+        <td class="tags" data-label="Tags">method</td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="all-purpose flour">
+
+          <details>
+            <summary><span class="ingredient-name">all-purpose flour</span>, <span class="ingredient-name">baking powder</span>, <span class="ingredient-name">baking soda</span><span class="ingredient-more"> +12 more</span></summary><span class="ingredient-list"><span class="ingredient-name">salt</span><span class="ingredient-name">ground cinnamon</span><span class="ingredient-name">ground nutmeg</span><span class="ingredient-name">vegetable oil</span><span class="ingredient-name">granulated sugar</span><span class="ingredient-name">brown sugar</span><span class="ingredient-name">eggs</span><span class="ingredient-name">pure vanilla extract</span><span class="ingredient-name">milk</span><span class="ingredient-name">zucchini</span><span class="ingredient-name">semi-sweet chocolate chips</span><span class="ingredient-name">coarse sugar</span></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">12 muffins</td>
+
       </tr>
-      
+
     </tbody>
   </table>
+
+  <script>
+    const searchInput = document.querySelector('#recipe-search');
+    const searchField = document.querySelector('.recipe-search-field');
+    const suggestionsList = document.querySelector('#recipe-search-suggestions');
+    const alphaIndex = document.querySelector('#recipe-alpha-index');
+    const sortHeaders = Array.from(document.querySelectorAll('th.sortable'));
+    const recipeBody = document.querySelector('#recipe-table tbody');
+    const recipeRows = Array.from(recipeBody.querySelectorAll('tr'));
+    const ingredientDetails = Array.from(document.querySelectorAll('.ingredient-cell details'));
+    const collator = new Intl.Collator(undefined, { numeric: true, sensitivity: 'base' });
+    let sortColumn = 0;
+    let sortDirection = 1;
+    let activeLetter = null;
+    const alphaButtons = [];
+    const suggestions = Array.from(new Set(
+      recipeRows.flatMap((row) =>
+        Array.from(row.querySelectorAll('td'))
+          .flatMap((cell) => {
+            const ingredientNames = Array.from(cell.querySelectorAll('.ingredient-name'))
+              .map((ingredient) => ingredient.textContent.trim())
+              .filter(Boolean);
+            return ingredientNames.length ? ingredientNames : [cell.textContent.trim()];
+          })
+          .filter(Boolean)
+      )
+    )).sort((a, b) => a.localeCompare(b));
+
+    ingredientDetails.forEach((details) => {
+      details.addEventListener('toggle', () => {
+        if (!details.open) return;
+        ingredientDetails.forEach((otherDetails) => {
+          if (otherDetails !== details) otherDetails.open = false;
+        });
+      });
+    });
+
+    document.addEventListener('click', (event) => {
+      if (event.target.closest('.ingredient-cell details')) return;
+      ingredientDetails.forEach((details) => {
+        details.open = false;
+      });
+    });
+
+    function recipeName(row) {
+      return row.cells[0].textContent.trim();
+    }
+
+    function recipeMatchesLetter(name, letter) {
+      return name
+        .toLocaleLowerCase()
+        .split(/\s+/)
+        .some((word) => word.replace(/^[^a-z0-9]+/u, '').startsWith(letter.toLocaleLowerCase()));
+    }
+
+    function updateAlphaButtons() {
+      alphaButtons.forEach((button) => {
+        const letter = button.dataset.letter;
+        const hasMatches = recipeRows.some((row) => recipeMatchesLetter(recipeName(row), letter));
+        button.disabled = !hasMatches;
+        button.classList.toggle('active', letter === activeLetter);
+        button.setAttribute('aria-pressed', letter === activeLetter ? 'true' : 'false');
+      });
+    }
+
+    function filterRows() {
+      const query = searchInput.value.trim().toLocaleLowerCase();
+      recipeRows.forEach((row) => {
+        const matchesSearch = !query || row.textContent.toLocaleLowerCase().includes(query);
+        const matchesLetter = !activeLetter || recipeMatchesLetter(recipeName(row), activeLetter);
+        row.hidden = !(matchesSearch && matchesLetter);
+      });
+    }
+
+    function hideSuggestions() {
+      suggestionsList.hidden = true;
+      suggestionsList.replaceChildren();
+      searchField.classList.remove('open');
+      searchInput.setAttribute('aria-expanded', 'false');
+    }
+
+    function showSuggestions() {
+      const query = searchInput.value.trim().toLocaleLowerCase();
+      if (!query) {
+        hideSuggestions();
+        return;
+      }
+      const matches = suggestions.filter((value) => value.toLocaleLowerCase().includes(query));
+      suggestionsList.replaceChildren();
+      matches.slice(0, 12).forEach((value) => {
+        const item = document.createElement('li');
+        item.textContent = value;
+        item.setAttribute('role', 'option');
+        item.addEventListener('mousedown', (event) => {
+          event.preventDefault();
+          searchInput.value = value;
+          filterRows();
+          hideSuggestions();
+        });
+        suggestionsList.appendChild(item);
+      });
+      const hasMatches = matches.length > 0;
+      suggestionsList.hidden = !hasMatches;
+      searchField.classList.toggle('open', hasMatches);
+      searchInput.setAttribute('aria-expanded', hasMatches ? 'true' : 'false');
+    }
+
+    searchInput.addEventListener('input', () => {
+      filterRows();
+      showSuggestions();
+    });
+
+    searchInput.addEventListener('focus', showSuggestions);
+    searchInput.addEventListener('blur', () => {
+      window.setTimeout(hideSuggestions, 100);
+    });
+
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach((letter) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'recipe-alpha-letter';
+      button.dataset.letter = letter;
+      button.textContent = letter;
+      button.setAttribute('aria-pressed', 'false');
+      button.addEventListener('click', () => {
+        activeLetter = activeLetter === letter ? null : letter;
+        updateAlphaButtons();
+        filterRows();
+      });
+      alphaIndex.appendChild(button);
+      alphaButtons.push(button);
+    });
+    updateAlphaButtons();
+
+    function updateHeaderState() {
+      sortHeaders.forEach((header) => {
+        const column = Number(header.dataset.column);
+        if (column === sortColumn) {
+          header.setAttribute('aria-sort', sortDirection === 1 ? 'ascending' : 'descending');
+        } else {
+          header.removeAttribute('aria-sort');
+        }
+      });
+    }
+
+    function sortRows() {
+      recipeRows
+        .sort((a, b) => {
+          const aCell = a.cells[sortColumn];
+          const bCell = b.cells[sortColumn];
+          const aValue = aCell.dataset.sortValue ?? aCell.textContent.trim();
+          const bValue = bCell.dataset.sortValue ?? bCell.textContent.trim();
+          const primary = collator.compare(
+            aValue,
+            bValue
+          ) * sortDirection;
+          return primary || collator.compare(
+            a.cells[0].textContent.trim(),
+            b.cells[0].textContent.trim()
+          ) * sortDirection;
+        })
+        .forEach((row) => recipeBody.appendChild(row));
+      updateHeaderState();
+    }
+
+    sortHeaders.forEach((header) => {
+      header.addEventListener('click', () => {
+        const column = Number(header.dataset.column);
+        if (column === sortColumn) {
+          sortDirection *= -1;
+        } else {
+          sortColumn = column;
+          sortDirection = 1;
+        }
+        sortRows();
+      });
+    });
+
+    sortRows();
+  </script>
+
 </body>
 </html>
