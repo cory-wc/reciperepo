@@ -82,23 +82,27 @@ small,
   h1 { text-align: center; }
   .meta { text-align: center; color: #666; margin-bottom: 1.5rem; }
 
-  .index-header { position: relative; }
-  .index-header .meta {
+  .recipe-category-bar {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  .recipe-category-bar .meta {
     position: absolute;
-    top: 0;
+    bottom: 0.65rem;
     right: 0;
     margin: 0;
-    padding: 0.3rem 0.65rem;
+    padding: 0.15rem 0.45rem;
     border: 1px solid var(--color-border, #dddddd);
     border-radius: 999px;
     background: var(--color-hover, #f5f3f0);
+    font-size: 0.75rem;
     line-height: 1.2;
   }
   .recipe-category-tabs {
     display: flex;
     gap: 1.25rem;
-    margin: 0 0 1.5rem;
-    padding: 0 0 0.65rem;
+    margin: 0;
+    padding: 0 8.5rem 0.65rem 0;
     overflow-x: auto;
     border-bottom: 1px solid #aaa;
     scrollbar-width: thin;
@@ -702,26 +706,29 @@ td {
 <body class="index-page">
   <header class="index-header">
     <h1>Willineau Recipes</h1>
-    <p class="meta text-caption">Updated: 2026-08-05</p>
+
   </header>
 
-  <nav class="recipe-category-tabs" aria-label="Filter recipes by category">
+  <div class="recipe-category-bar">
+    <nav class="recipe-category-tabs" aria-label="Filter recipes by category">
 
-    <button type="button" class="recipe-category-tab active" data-category="all" aria-pressed="true">All</button>
+      <button type="button" class="recipe-category-tab active" data-category="all" aria-pressed="true">All</button>
 
-    <button type="button" class="recipe-category-tab" data-category="main" aria-pressed="false">Main dish</button>
+      <button type="button" class="recipe-category-tab" data-category="main" aria-pressed="false">Main dish</button>
 
-    <button type="button" class="recipe-category-tab" data-category="sides" aria-pressed="false">Sides</button>
+      <button type="button" class="recipe-category-tab" data-category="sides" aria-pressed="false">Sides</button>
 
-    <button type="button" class="recipe-category-tab" data-category="dessert" aria-pressed="false">Dessert</button>
+      <button type="button" class="recipe-category-tab" data-category="dessert" aria-pressed="false">Dessert</button>
 
-    <button type="button" class="recipe-category-tab" data-category="breakfast" aria-pressed="false">Breakfast</button>
+      <button type="button" class="recipe-category-tab" data-category="breakfast" aria-pressed="false">Breakfast</button>
 
-    <button type="button" class="recipe-category-tab" data-category="lunch" aria-pressed="false">Lunch</button>
+      <button type="button" class="recipe-category-tab" data-category="lunch" aria-pressed="false">Lunch</button>
 
-    <button type="button" class="recipe-category-tab" data-category="dinner" aria-pressed="false">Dinner</button>
+      <button type="button" class="recipe-category-tab" data-category="dinner" aria-pressed="false">Dinner</button>
 
-  </nav>
+    </nav>
+    <p class="meta text-caption">Updated: 2026-08-05</p>
+  </div>
   <div class="recipe-search">
     <label for="recipe-search">Search recipes</label>
     <div class="recipe-search-field">
