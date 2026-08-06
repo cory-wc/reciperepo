@@ -137,7 +137,14 @@ small,
     position: relative;
     z-index: 1000;
   }
-  .recipe-search-input-wrap { position: relative; }
+  .recipe-search-input-wrap {
+    position: relative;
+    border-radius: 0.25rem;
+  }
+  .recipe-search-field.open .recipe-search-input-wrap {
+    border-radius: 0.25rem 0.25rem 0 0;
+    overflow: hidden;
+  }
   .recipe-search-icon {
     position: absolute;
     left: 0.65rem;
@@ -167,10 +174,19 @@ small,
     color: inherit;
     font: inherit;
     background: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
   }
-  .recipe-search-field.open .recipe-search-input-wrap input {
+  .recipe-search-input-wrap:focus-within input {
+    border-color: #2563eb;
+  }
+  .recipe-search-field.open .recipe-search-input-wrap input,
+  .recipe-search-field.open .recipe-search-input-wrap input:focus,
+  .recipe-search-field.open .recipe-search-input-wrap input:focus-visible {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    border-bottom-color: transparent;
   }
   .recipe-search-suggestions {
     position: absolute;
@@ -191,7 +207,7 @@ small,
   .recipe-search-suggestions li {
     padding: 0.55rem 0.65rem;
     color: #504a43;
-    border-top: 1px solid #504a43;
+    border-top: 1px solid var(--color-border, #dddddd);
     cursor: pointer;
   }
   .recipe-search-suggestions li:hover,
@@ -631,7 +647,7 @@ td {
 }
 
 .recipe-search-suggestions li {
-  border-color: var(--color-border-strong);
+  border-color: var(--color-border);
   color: var(--color-text);
 }
 
