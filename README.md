@@ -40,6 +40,80 @@ For extract from photos, set `OPENAI_API_KEY` or `ANTHROPIC_API_KEY` in `.env`.
 
 Do not edit `pdfs/`, `site/`, or `recipes/index.yaml` by hand — regenerate with `recipe render`, `recipe pdf`, and `recipe index`.
 
+## Update, build, and view the site locally
+
+The website is static HTML generated from recipe YAML by the `recipe` CLI. There is no separate npm/webpack build step.
+
+### Activate the tool
+
+From the repo root, activate the virtual environment once per terminal session:
+
+```bash
+source .venv/bin/activate
+```
+
+### Update recipes
+
+1. Edit the recipe YAML in `recipes/wc-kitchen.my-recipe.yaml` (or move a finished draft from `recipes/in-progress/` into `recipes/`).
+2. Validate and regenerate outputs for that recipe:
+
+```bash
+recipe validate wc-kitchen.my-recipe
+recipe render wc-kitchen.my-recipe
+recipe index
+```
+
+3. If you also need an updated printable card, run `recipe pdf wc-kitchen.my-recipe`.
+
+**Metadata-only changes** (tags, category, yield text): after validate, `recipe index` alone is usually enough.
+
+**Site template changes** (search, sorting, layout): edit [`templates/index.html.j2`](templates/index.html.j2) or [`templates/recipe.html.j2`](templates/recipe.html.j2), then regenerate with `recipe index` and/or `recipe render`.
+
+### Build the site
+
+**Single recipe:**
+
+```bash
+recipe validate wc-kitchen.my-recipe
+recipe render wc-kitchen.my-recipe   # writes site/wc-kitchen.my-recipe.html
+recipe index                         # writes site/index.html and recipes/index.yaml
+```
+
+**All recipes:**
+
+```bash
+recipe validate --all
+recipe render --all --allow-missing
+recipe index --allow-missing
+```
+
+**Optional PDFs** (requires `playwright install chromium`):
+
+```bash
+recipe pdf wc-kitchen.my-recipe      # one recipe
+recipe pdf --all                     # all recipes + index.pdf
+```
+
+Generated files land in `site/` (HTML) and `pdfs/` (printable cards). The all-recipes page is `site/index.html`.
+
+### View locally
+
+**Quick preview:** open the generated index in your browser:
+
+```bash
+open site/index.html
+```
+
+**Local server** (recommended while iterating — keeps relative links working cleanly):
+
+```bash
+python3 -m http.server 8000 --directory site
+```
+
+Then visit [http://localhost:8000](http://localhost:8000). Refresh after rebuilding.
+
+**Typical loop:** edit YAML or templates → run `recipe render` / `recipe index` → refresh the browser.
+
 ## Day-to-day workflows
 
 Recipe ids and filenames use `wc-kitchen.{slug}` (see [notes.md](notes.md#naming)).

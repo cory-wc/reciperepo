@@ -38,6 +38,7 @@ steps:
 X-categories:
   dish_type:
   - preserve
+  - side
   meal_type:
   - anytime
 X-tags:

@@ -68,6 +68,7 @@ X-categories:
   - soup
   meal_type:
   - dinner
+  - lunch
 X-tags:
   method:
   - stovetop

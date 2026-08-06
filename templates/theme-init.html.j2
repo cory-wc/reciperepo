@@ -1,0 +1,12 @@
+<script>
+  (() => {
+    let theme = 'light';
+    try {
+      theme = localStorage.getItem('recipe-theme')
+        || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    } catch (error) {
+      theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.dataset.theme = theme;
+  })();
+</script>
