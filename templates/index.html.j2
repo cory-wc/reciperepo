@@ -2,63 +2,745 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ title }}</title>
+{% if mode == 'screen' %}
+{% include 'theme-init.html.j2' %}
+{% endif %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <style>
+  {% include 'typography.css.j2' %}
   {% if mode == 'print' %}
   @page { size: Letter; margin: 0.75in; }
   {% endif %}
   body {
-    font-family: Georgia, 'Times New Roman', serif;
     color: #2e2b28;
-    {% if mode == 'screen' %}
-    max-width: 720px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    {% endif %}
   }
-  h1 { text-align: center; font-size: {% if mode == 'print' %}24pt{% else %}2rem{% endif %}; }
-  .meta { text-align: center; color: #666; font-size: 0.9rem; margin-bottom: 1.5rem; }
-  table { width: 100%; border-collapse: collapse; font-size: {% if mode == 'print' %}11pt{% else %}1rem{% endif %}; }
+  h1 { text-align: center; }
+  .meta { text-align: center; color: #666; margin-bottom: 1.5rem; }
+{% if mode == 'screen' %}
+  .recipe-category-bar {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  .recipe-category-bar .meta {
+    position: absolute;
+    bottom: 0.65rem;
+    right: 0;
+    margin: 0;
+    padding: 0.15rem 0.45rem;
+    border: 1px solid var(--color-border, #dddddd);
+    border-radius: 999px;
+    background: var(--color-hover, #f5f3f0);
+    font-size: 0.75rem;
+    line-height: 1.2;
+  }
+  .recipe-category-tabs {
+    display: flex;
+    gap: 1.25rem;
+    margin: 0;
+    padding: 0 8.5rem 0.65rem 0;
+    overflow-x: auto;
+    border-bottom: 1px solid #aaa;
+    scrollbar-width: thin;
+  }
+  .recipe-category-tab {
+    flex: 0 0 auto;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #666;
+    font: inherit;
+    cursor: pointer;
+  }
+  .recipe-category-tab:hover {
+    color: #2e2b28;
+  }
+  .recipe-category-tab.active {
+    color: #2e2b28;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.35rem;
+  }
+  .recipe-search { margin-bottom: 1.25rem; }
+  .recipe-search label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.35rem;
+    font-size: 1.25rem;
+    line-height: 1.15;
+  }
+  .recipe-search-field {
+    position: relative;
+    z-index: 1000;
+  }
+  .recipe-search-input-wrap { position: relative; }
+  .recipe-search-icon {
+    position: absolute;
+    left: 0.65rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    color: #666;
+    pointer-events: none;
+  }
+  .recipe-search-icon svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .recipe-search input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.55rem 0.65rem 0.55rem 2.25rem;
+    border: 1px solid #aaa;
+    border-radius: 0.25rem;
+    color: inherit;
+    font: inherit;
+    background: #fff;
+  }
+  .recipe-search-field.open .recipe-search-input-wrap input {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .recipe-search-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-top: none;
+    border-radius: 0 0 0.25rem 0.25rem;
+    max-height: 12rem;
+    overflow-y: auto;
+    z-index: 1001;
+  }
+  .recipe-search-suggestions li {
+    padding: 0.55rem 0.65rem;
+    color: #504a43;
+    border-top: 1px solid #504a43;
+    cursor: pointer;
+  }
+  .recipe-search-suggestions li:hover,
+  .recipe-search-suggestions li[aria-selected="true"] {
+    background: #f5f3f0;
+  }
+  .recipe-alpha-index {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 1.25rem;
+  }
+  .recipe-alpha-letter {
+    border: none;
+    background: transparent;
+    color: #504a43;
+    padding: 0.15rem 0;
+    font: inherit;
+    line-height: 1.2;
+    cursor: pointer;
+    flex: 1 1 0;
+    min-width: 0;
+    text-align: center;
+  }
+  .recipe-alpha-letter:hover:not(:disabled) {
+    color: #2e2b28;
+    text-decoration: underline;
+  }
+  .recipe-alpha-letter.active {
+    color: #2e2b28;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  .recipe-alpha-letter:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+  th.sortable { cursor: pointer; user-select: none; }
+  th.sortable:hover { color: #504a43; }
+  th.sortable::after {
+    content: '↕';
+    margin-left: 0.35rem;
+    font-size: 0.75em;
+    opacity: 0.35;
+  }
+  th.sortable[aria-sort="ascending"]::after {
+    content: '↑';
+    opacity: 1;
+  }
+  th.sortable[aria-sort="descending"]::after {
+    content: '↓';
+    opacity: 1;
+  }
+  #recipe-table tbody td:not(:first-child) {
+    font-size: 0.875rem;
+  }
+  .ingredient-cell summary {
+    display: inline;
+    cursor: pointer;
+    list-style: none;
+  }
+  .ingredient-cell summary::-webkit-details-marker {
+    display: none;
+  }
+  .ingredient-cell summary::marker {
+    content: '';
+  }
+  .ingredient-list {
+    display: inline;
+  }
+  .ingredient-list .ingredient-name::before {
+    content: ', ';
+  }
+  .ingredient-more {
+    white-space: nowrap;
+  }
+  .ingredient-cell details[open] .ingredient-more {
+    display: none;
+  }
+  .ingredient-filter-button,
+  .tag-filter-button {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 0.14em;
+    cursor: pointer;
+  }
+  .ingredient-filter-button:hover,
+  .ingredient-filter-button.active,
+  .tag-filter-button:hover,
+  .tag-filter-button.active {
+    color: #2e2b28;
+    text-decoration-style: solid;
+  }
+  .ingredient-filter-button.active,
+  .tag-filter-button.active {
+    font-weight: 600;
+  }
+  .active-ingredient-filters,
+  .active-tag-filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    margin: -0.5rem 0 1.25rem;
+  }
+  .active-ingredient-filters-label,
+  .active-tag-filters-label {
+    color: #666;
+  }
+  .active-ingredient-filter,
+  .clear-ingredient-filters,
+  .active-tag-filter,
+  .clear-tag-filters {
+    border: 1px solid #aaa;
+    border-radius: 999px;
+    background: transparent;
+    color: #504a43;
+    font: inherit;
+    cursor: pointer;
+  }
+  .active-ingredient-filter,
+  .active-tag-filter {
+    padding: 0.15rem 0.5rem;
+  }
+  .active-ingredient-filter + .active-ingredient-filter,
+  .active-tag-filter + .active-tag-filter {
+    margin-left: 0.4rem;
+  }
+  .clear-ingredient-filters,
+  .clear-tag-filters {
+    padding: 0.15rem 0.6rem;
+    margin-left: 0.2rem;
+  }
+{% endif %}
+  table { width: 100%; border-collapse: collapse; }
   th, td { text-align: left; padding: 0.35rem 0.5rem; border-bottom: 1px solid #ddd; }
-  th { font-weight: 700; border-bottom: 2px solid #504a43; }
-  .tags { color: #666; font-size: 0.85em; }
+  th {
+    font-weight: 700;
+    line-height: 1.15;
+    font-size: 1.25rem;
+    border-bottom: 2px solid #504a43;
+  }
+  .tags { color: #666; }
   a { color: #504a43; text-decoration: none; }
   a:hover { text-decoration: underline; }
-  .pdf-ref { font-family: Arial, sans-serif; font-size: 0.85em; color: #666; }
+  .pdf-ref { color: #666; }
+{% if mode == 'print' %}
+  h1 { font-size: 24pt; font-weight: 400; }
+  table { font-size: 11pt; }
+  .tags, .pdf-ref { font-size: 0.875rem; }
+{% endif %}
+{% if mode == 'screen' %}
+{% include 'responsive.css.j2' %}
+{% include 'theme.css.j2' %}
+{% endif %}
 </style>
 </head>
-<body>
-  <h1>{{ title }}</h1>
-  <p class="meta">Generated {{ generated_at }}{% if sort_by != 'name' %} · sorted by {{ sort_by }}{% endif %}</p>
-  <table>
+<body class="index-page">
+  <header class="index-header">
+    <h1>{{ title }}</h1>
+{% if mode == 'print' %}    <p class="meta text-caption">Updated: {{ generated_at }}{% if sort_by != 'name' %} · sorted by {{ sort_by }}{% endif %}</p>{% endif %}
+  </header>
+{% if mode == 'screen' %}
+  <div class="recipe-category-bar">
+    <nav class="recipe-category-tabs" aria-label="Filter recipes by category">
+{% for slug, label in [('all', 'All'), ('main', 'Main dish'), ('sides', 'Sides'), ('dessert', 'Dessert'), ('breakfast', 'Breakfast'), ('lunch', 'Lunch'), ('dinner', 'Dinner')] %}
+      <button type="button" class="recipe-category-tab{% if slug == 'all' %} active{% endif %}" data-category="{{ slug }}" aria-pressed="{{ 'true' if slug == 'all' else 'false' }}">{{ label }}</button>
+{% endfor %}
+    </nav>
+    <p class="meta text-caption">Updated: {{ generated_at }}{% if sort_by != 'name' %} · sorted by {{ sort_by }}{% endif %}</p>
+  </div>
+  <div class="recipe-search">
+    <label for="recipe-search">Search recipes</label>
+    <div class="recipe-search-field">
+      <div class="recipe-search-input-wrap">
+        <span class="recipe-search-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+          </svg>
+        </span>
+        <input id="recipe-search" type="search" placeholder="Search by recipe, tag, ingredient, or yield" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="recipe-search-suggestions" aria-autocomplete="list">
+      </div>
+      <ul id="recipe-search-suggestions" class="recipe-search-suggestions" role="listbox" hidden></ul>
+    </div>
+    <nav id="recipe-alpha-index" class="recipe-alpha-index text-small" aria-label="Filter recipes by letter"></nav>
+  </div>
+  <div id="active-tag-filters" class="active-tag-filters text-small" aria-live="polite" hidden>
+    <span class="active-tag-filters-label">Tags:</span>
+    <span id="active-tag-filter-list"></span>
+    <button id="clear-tag-filters" type="button" class="clear-tag-filters">Clear</button>
+  </div>
+  <div id="active-ingredient-filters" class="active-ingredient-filters text-small" aria-live="polite" hidden>
+    <span class="active-ingredient-filters-label">Ingredients:</span>
+    <span id="active-ingredient-filter-list"></span>
+    <button id="clear-ingredient-filters" type="button" class="clear-ingredient-filters">Clear</button>
+  </div>
+{% endif %}
+  <table id="recipe-table">
     <thead>
       <tr>
+{% if mode == 'screen' %}
+        <th class="sortable" data-column="0" aria-sort="ascending"><span id="recipe-count" aria-live="polite" aria-atomic="true">{{ recipes | length }}</span> Recipes</th>
+        <th class="sortable" data-column="1">Tags</th>
+        <th class="sortable" data-column="2">Ingredients</th>
+        <th class="sortable" data-column="3">Yield</th>
+{% else %}
         <th>Recipe</th>
-        {% if mode == 'screen' %}<th>Tags</th>{% endif %}
         <th>Yield</th>
-        {% if mode == 'print' %}<th>PDF file</th>{% endif %}
+{% endif %}
+{% if mode == 'print' %}        <th>PDF file</th>{% endif %}
       </tr>
     </thead>
     <tbody>
-      {% for recipe in recipes %}
-      <tr>
-        <td>
-          {% if mode == 'screen' %}
+{% for recipe in recipes %}
+      <tr data-filter-tabs="{{ recipe.filter_tabs | join(' ') }}">
+        <td data-label="Recipe">
+{% if mode == 'screen' %}
           <a href="{{ recipe.links.html.split('/')[-1] }}">{{ recipe.name }}</a>
-          {% else %}
+{% else %}
           {{ recipe.name }}
-          {% endif %}
+{% endif %}
         </td>
-        {% if mode == 'screen' %}
-        <td class="tags">{{ (recipe.tags or []) | join(', ') }}</td>
-        {% endif %}
-        <td>{{ recipe.yield }}</td>
-        {% if mode == 'print' %}
-        <td class="pdf-ref">{{ recipe.links.pdf.split('/')[-1] }}</td>
-        {% endif %}
+{% if mode == 'screen' %}
+        <td class="tags" data-label="Tags">{% for tag in recipe.tags or [] %}<button type="button" class="tag-filter-button" data-tag="{{ tag | lower }}" aria-pressed="false">{{ tag }}</button>{% if not loop.last %}, {% endif %}{% endfor %}</td>
+{% set ingredient_names = recipe.ingredients or [] %}
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="{{ ingredient_names[0] if ingredient_names else '' }}">
+{% if ingredient_names | length > 3 %}
+          <details>
+            <summary>{% for ingredient in ingredient_names[:3] %}<button type="button" class="ingredient-name ingredient-filter-button" data-ingredient="{{ ingredient | lower }}" aria-pressed="false">{{ ingredient }}</button>{% if not loop.last %}, {% endif %}{% endfor %}<span class="ingredient-more"> +{{ (ingredient_names | length) - 3 }} more</span></summary><span class="ingredient-list">{% for ingredient in ingredient_names[3:] %}<button type="button" class="ingredient-name ingredient-filter-button" data-ingredient="{{ ingredient | lower }}" aria-pressed="false">{{ ingredient }}</button>{% endfor %}</span>
+          </details>
+{% else %}
+          {% for ingredient in ingredient_names %}<button type="button" class="ingredient-name ingredient-filter-button" data-ingredient="{{ ingredient | lower }}" aria-pressed="false">{{ ingredient }}</button>{% if not loop.last %}, {% endif %}{% endfor %}
+{% endif %}
+        </td>
+{% endif %}
+        <td data-label="Yield">{{ recipe.yield }}</td>
+{% if mode == 'print' %}
+        <td class="pdf-ref" data-label="PDF file">{{ recipe.links.pdf.split('/')[-1] }}</td>
+{% endif %}
       </tr>
-      {% endfor %}
+{% endfor %}
     </tbody>
   </table>
+{% if mode == 'screen' %}
+  <script>
+    const searchInput = document.querySelector('#recipe-search');
+    const searchField = document.querySelector('.recipe-search-field');
+    const suggestionsList = document.querySelector('#recipe-search-suggestions');
+    const alphaIndex = document.querySelector('#recipe-alpha-index');
+    const activeTagFilters = document.querySelector('#active-tag-filters');
+    const activeTagFilterList = document.querySelector('#active-tag-filter-list');
+    const clearTagFilters = document.querySelector('#clear-tag-filters');
+    const activeIngredientFilters = document.querySelector('#active-ingredient-filters');
+    const activeIngredientFilterList = document.querySelector('#active-ingredient-filter-list');
+    const clearIngredientFilters = document.querySelector('#clear-ingredient-filters');
+    const recipeCount = document.querySelector('#recipe-count');
+    const categoryButtons = Array.from(document.querySelectorAll('.recipe-category-tab'));
+    const sortHeaders = Array.from(document.querySelectorAll('th.sortable'));
+    const recipeBody = document.querySelector('#recipe-table tbody');
+    const recipeRows = Array.from(recipeBody.querySelectorAll('tr'));
+    const ingredientDetails = Array.from(document.querySelectorAll('.ingredient-cell details'));
+    const tagButtons = Array.from(document.querySelectorAll('.tag-filter-button'));
+    const ingredientButtons = Array.from(document.querySelectorAll('.ingredient-filter-button'));
+    const collator = new Intl.Collator(undefined, { numeric: true, sensitivity: 'base' });
+    let sortColumn = 0;
+    let sortDirection = 1;
+    let activeLetter = null;
+    let activeCategory = 'all';
+    const selectedTags = new Set();
+    const selectedIngredients = new Set();
+    const tagLabels = new Map(
+      tagButtons.map((button) => [button.dataset.tag, button.textContent.trim()])
+    );
+    const rowTags = new Map(
+      recipeRows.map((row) => [
+        row,
+        new Set(
+          Array.from(row.querySelectorAll('.tag-filter-button'))
+            .map((button) => button.dataset.tag)
+        )
+      ])
+    );
+    const ingredientLabels = new Map(
+      ingredientButtons.map((button) => [button.dataset.ingredient, button.textContent.trim()])
+    );
+    const rowIngredients = new Map(
+      recipeRows.map((row) => [
+        row,
+        new Set(
+          Array.from(row.querySelectorAll('.ingredient-filter-button'))
+            .map((button) => button.dataset.ingredient)
+        )
+      ])
+    );
+    const alphaButtons = [];
+    const suggestions = Array.from(new Set(
+      recipeRows.flatMap((row) =>
+        Array.from(row.querySelectorAll('td'))
+          .flatMap((cell) => {
+            const ingredientNames = Array.from(cell.querySelectorAll('.ingredient-name'))
+              .map((ingredient) => ingredient.textContent.trim())
+              .filter(Boolean);
+            return ingredientNames.length ? ingredientNames : [cell.textContent.trim()];
+          })
+          .filter(Boolean)
+      )
+    )).sort((a, b) => a.localeCompare(b));
+
+    ingredientDetails.forEach((details) => {
+      details.addEventListener('toggle', () => {
+        if (!details.open) return;
+        ingredientDetails.forEach((otherDetails) => {
+          if (otherDetails !== details) otherDetails.open = false;
+        });
+      });
+    });
+
+    document.addEventListener('click', (event) => {
+      if (event.target.closest('.ingredient-cell details')) return;
+      ingredientDetails.forEach((details) => {
+        details.open = false;
+      });
+    });
+
+    function recipeName(row) {
+      return row.cells[0].textContent.trim();
+    }
+
+    function recipeMatchesLetter(name, letter) {
+      return name
+        .toLocaleLowerCase()
+        .split(/\s+/)
+        .some((word) => word.replace(/^[^a-z0-9]+/u, '').startsWith(letter.toLocaleLowerCase()));
+    }
+
+    function rowMatchesCategory(row) {
+      if (activeCategory === 'all') return true;
+      return row.dataset.filterTabs.split(/\s+/).includes(activeCategory);
+    }
+
+    function rowMatchesSearch(row, query) {
+      return !query || row.textContent.toLocaleLowerCase().includes(query);
+    }
+
+    function rowMatchesTags(row) {
+      const tags = rowTags.get(row);
+      return Array.from(selectedTags).every((tag) => tags.has(tag));
+    }
+
+    function rowMatchesIngredients(row) {
+      const ingredients = rowIngredients.get(row);
+      return Array.from(selectedIngredients).every((ingredient) => ingredients.has(ingredient));
+    }
+
+    function updateTagFilterControls() {
+      tagButtons.forEach((button) => {
+        const isActive = selectedTags.has(button.dataset.tag);
+        button.classList.toggle('active', isActive);
+        button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      });
+
+      activeTagFilterList.replaceChildren();
+      selectedTags.forEach((tag) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'active-tag-filter';
+        button.textContent = `${tagLabels.get(tag) ?? tag} ×`;
+        button.setAttribute('aria-label', `Remove ${tagLabels.get(tag) ?? tag} filter`);
+        button.addEventListener('click', () => {
+          selectedTags.delete(tag);
+          updateTagFilterControls();
+          filterRows();
+        });
+        activeTagFilterList.appendChild(button);
+      });
+      activeTagFilters.hidden = selectedTags.size === 0;
+    }
+
+    function updateIngredientFilterControls() {
+      ingredientButtons.forEach((button) => {
+        const isActive = selectedIngredients.has(button.dataset.ingredient);
+        button.classList.toggle('active', isActive);
+        button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      });
+
+      activeIngredientFilterList.replaceChildren();
+      selectedIngredients.forEach((ingredient) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'active-ingredient-filter';
+        button.textContent = `${ingredientLabels.get(ingredient) ?? ingredient} ×`;
+        button.setAttribute('aria-label', `Remove ${ingredientLabels.get(ingredient) ?? ingredient} filter`);
+        button.addEventListener('click', () => {
+          selectedIngredients.delete(ingredient);
+          updateIngredientFilterControls();
+          filterRows();
+        });
+        activeIngredientFilterList.appendChild(button);
+      });
+      activeIngredientFilters.hidden = selectedIngredients.size === 0;
+    }
+
+    function updateAlphaButtons() {
+      const query = searchInput.value.trim().toLocaleLowerCase();
+      alphaButtons.forEach((button) => {
+        const letter = button.dataset.letter;
+        const hasMatches = recipeRows.some((row) =>
+          rowMatchesCategory(row)
+          && rowMatchesSearch(row, query)
+          && rowMatchesTags(row)
+          && rowMatchesIngredients(row)
+          && recipeMatchesLetter(recipeName(row), letter)
+        );
+        button.disabled = !hasMatches;
+        button.classList.toggle('active', letter === activeLetter);
+        button.setAttribute('aria-pressed', letter === activeLetter ? 'true' : 'false');
+      });
+    }
+
+    function filterRows() {
+      const query = searchInput.value.trim().toLocaleLowerCase();
+      const activeLetterHasMatches = !activeLetter || recipeRows.some((row) =>
+        rowMatchesCategory(row)
+        && rowMatchesSearch(row, query)
+        && rowMatchesTags(row)
+        && rowMatchesIngredients(row)
+        && recipeMatchesLetter(recipeName(row), activeLetter)
+      );
+      if (!activeLetterHasMatches) activeLetter = null;
+      recipeRows.forEach((row) => {
+        const matchesCategory = rowMatchesCategory(row);
+        const matchesSearch = rowMatchesSearch(row, query);
+        const matchesTags = rowMatchesTags(row);
+        const matchesIngredients = rowMatchesIngredients(row);
+        const matchesLetter = !activeLetter || recipeMatchesLetter(recipeName(row), activeLetter);
+        row.hidden = !(matchesCategory && matchesSearch && matchesTags && matchesIngredients && matchesLetter);
+      });
+      recipeCount.textContent = recipeRows.filter((row) => !row.hidden).length;
+      updateAlphaButtons();
+    }
+
+    function hideSuggestions() {
+      suggestionsList.hidden = true;
+      suggestionsList.replaceChildren();
+      searchField.classList.remove('open');
+      searchInput.setAttribute('aria-expanded', 'false');
+    }
+
+    function showSuggestions() {
+      const query = searchInput.value.trim().toLocaleLowerCase();
+      if (!query) {
+        hideSuggestions();
+        return;
+      }
+      const matches = suggestions.filter((value) => value.toLocaleLowerCase().includes(query));
+      suggestionsList.replaceChildren();
+      matches.slice(0, 12).forEach((value) => {
+        const item = document.createElement('li');
+        item.textContent = value;
+        item.setAttribute('role', 'option');
+        item.addEventListener('mousedown', (event) => {
+          event.preventDefault();
+          searchInput.value = value;
+          filterRows();
+          hideSuggestions();
+        });
+        suggestionsList.appendChild(item);
+      });
+      const hasMatches = matches.length > 0;
+      suggestionsList.hidden = !hasMatches;
+      searchField.classList.toggle('open', hasMatches);
+      searchInput.setAttribute('aria-expanded', hasMatches ? 'true' : 'false');
+    }
+
+    searchInput.addEventListener('input', () => {
+      filterRows();
+      showSuggestions();
+    });
+
+    searchInput.addEventListener('focus', showSuggestions);
+    searchInput.addEventListener('blur', () => {
+      window.setTimeout(hideSuggestions, 100);
+    });
+
+    tagButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const tag = button.dataset.tag;
+        if (selectedTags.has(tag)) {
+          selectedTags.delete(tag);
+        } else {
+          selectedTags.add(tag);
+        }
+        updateTagFilterControls();
+        filterRows();
+      });
+    });
+
+    clearTagFilters.addEventListener('click', () => {
+      selectedTags.clear();
+      updateTagFilterControls();
+      filterRows();
+    });
+
+    ingredientButtons.forEach((button) => {
+      button.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        const ingredient = button.dataset.ingredient;
+        if (selectedIngredients.has(ingredient)) {
+          selectedIngredients.delete(ingredient);
+        } else {
+          selectedIngredients.add(ingredient);
+        }
+        updateIngredientFilterControls();
+        filterRows();
+      });
+    });
+
+    clearIngredientFilters.addEventListener('click', () => {
+      selectedIngredients.clear();
+      updateIngredientFilterControls();
+      filterRows();
+    });
+
+    categoryButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        activeCategory = button.dataset.category;
+        categoryButtons.forEach((otherButton) => {
+          const isActive = otherButton === button;
+          otherButton.classList.toggle('active', isActive);
+          otherButton.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+        });
+        filterRows();
+      });
+    });
+
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach((letter) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'recipe-alpha-letter';
+      button.dataset.letter = letter;
+      button.textContent = letter;
+      button.setAttribute('aria-pressed', 'false');
+      button.addEventListener('click', () => {
+        activeLetter = activeLetter === letter ? null : letter;
+        updateAlphaButtons();
+        filterRows();
+      });
+      alphaIndex.appendChild(button);
+      alphaButtons.push(button);
+    });
+    updateAlphaButtons();
+
+    function updateHeaderState() {
+      sortHeaders.forEach((header) => {
+        const column = Number(header.dataset.column);
+        if (column === sortColumn) {
+          header.setAttribute('aria-sort', sortDirection === 1 ? 'ascending' : 'descending');
+        } else {
+          header.removeAttribute('aria-sort');
+        }
+      });
+    }
+
+    function sortRows() {
+      recipeRows
+        .sort((a, b) => {
+          const aCell = a.cells[sortColumn];
+          const bCell = b.cells[sortColumn];
+          const aValue = aCell.dataset.sortValue ?? aCell.textContent.trim();
+          const bValue = bCell.dataset.sortValue ?? bCell.textContent.trim();
+          const primary = collator.compare(
+            aValue,
+            bValue
+          ) * sortDirection;
+          return primary || collator.compare(
+            a.cells[0].textContent.trim(),
+            b.cells[0].textContent.trim()
+          ) * sortDirection;
+        })
+        .forEach((row) => recipeBody.appendChild(row));
+      updateHeaderState();
+    }
+
+    sortHeaders.forEach((header) => {
+      header.addEventListener('click', () => {
+        const column = Number(header.dataset.column);
+        if (column === sortColumn) {
+          sortDirection *= -1;
+        } else {
+          sortColumn = column;
+          sortDirection = 1;
+        }
+        sortRows();
+      });
+    });
+
+    sortRows();
+  </script>
+{% endif %}
 </body>
 </html>

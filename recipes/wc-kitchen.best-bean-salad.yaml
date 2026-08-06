@@ -90,6 +90,7 @@ X-categories:
   - salad
   meal_type:
   - dinner
+  - lunch
 X-tags:
   dietary:
   - vegetarian

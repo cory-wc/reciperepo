@@ -82,6 +82,7 @@ X-categories:
   - salad
   meal_type:
   - dinner
+  - lunch
 X-source-verification:
   status: verified
   notes:

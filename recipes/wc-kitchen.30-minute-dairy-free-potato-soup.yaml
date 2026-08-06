@@ -94,6 +94,7 @@ X-categories:
   - soup
   meal_type:
   - dinner
+  - lunch
 X-tags:
   dietary:
   - dairy_free

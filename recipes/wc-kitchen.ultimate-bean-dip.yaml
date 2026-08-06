@@ -53,6 +53,7 @@ steps:
 X-categories:
   dish_type:
   - sauce
+  - appetizer
   meal_type:
   - anytime
 X-tags:
