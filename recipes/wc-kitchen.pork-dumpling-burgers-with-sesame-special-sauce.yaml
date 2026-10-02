@@ -1,0 +1,162 @@
+recipe_uuid: wc-kitchen.pork-dumpling-burgers-with-sesame-special-sauce
+recipe_name: Pork Dumpling Burgers with Sesame Special Sauce
+description: Ginger-scallion pork patties with purple cabbage slaw and a spicy sesame mayo on brioche buns.
+source_authors:
+  - Mishka Makes Food
+source_url: https://mishkamakesfood.substack.com/p/pork-dumpling-burgers-w-sesame-special
+
+yields:
+  - amount: 4
+    unit: thick burgers
+  - amount: 6
+    unit: regular burgers
+
+ingredients:
+  - Patties:
+  - ground pork:
+      amounts:
+        - amount: 1.5
+          unit: lb
+        - amount: 700
+          unit: g
+  - light soy sauce:
+      amounts:
+        - amount: 3
+          unit: tbsp
+        - amount: 45
+          unit: ml
+  - sesame oil:
+      amounts:
+        - amount: 1
+          unit: tsp
+        - amount: 5
+          unit: ml
+  - scallions, greens finely diced:
+      amounts:
+        - amount: 1
+          unit: large bunch
+  - fresh ginger, grated:
+      amounts:
+        - amount: 1
+          unit: inch piece
+        - amount: 3
+          unit: cm
+  - garlic, minced:
+      amounts:
+        - amount: 4
+          unit: cloves
+  - panko breadcrumbs:
+      amounts:
+        - amount: 0.5
+          unit: cup
+        - amount: 30
+          unit: g
+  - cooking spray:
+      amounts:
+        - unit: as needed
+  - Purple cabbage slaw:
+  - purple cabbage, shredded:
+      amounts:
+        - amount: 4
+          unit: cups
+        - amount: 0.5
+          unit: head
+  - sugar:
+      amounts:
+        - amount: 1
+          unit: tsp
+        - amount: 5
+          unit: g
+  - salt:
+      amounts:
+        - amount: 1
+          unit: tsp
+        - amount: 5
+          unit: g
+  - unseasoned rice vinegar:
+      amounts:
+        - amount: 2-4
+          unit: tbsp
+        - amount: 30-60
+          unit: ml
+  - sesame seeds:
+      amounts:
+        - unit: to taste
+  - Spicy sesame special sauce:
+  - mayonnaise:
+      amounts:
+        - amount: 1
+          unit: cup
+        - amount: 240
+          unit: g
+  - Sriracha:
+      amounts:
+        - amount: 3
+          unit: tbsp
+        - amount: 45
+          unit: ml
+  - lime:
+      amounts:
+        - amount: 1
+          unit: zest
+        - amount: 0.5
+          unit: juice
+  - sesame oil:
+      amounts:
+        - amount: 1
+          unit: tsp
+        - amount: 5
+          unit: ml
+  - Korean chili flakes (gochugaru):
+      amounts:
+        - amount: 2
+          unit: tbsp
+  - To serve:
+  - brioche burger buns, toasted:
+      amounts:
+        - amount: 4-6
+          unit: buns
+
+steps:
+  - Make the patties. Combine pork, soy sauce, sesame oil, scallions, ginger, garlic, and panko. Mix thoroughly by hand or stand mixer until sticky and cohesive but still fluffy. Form 4 thick patties, or 6-8 smaller ones.
+  - Prepare the slaw. Toss cabbage with salt and sugar and massage until it softens and releases liquid. Rest 5-10 minutes, then drain. Add rice vinegar to taste and sesame seeds, and toss.
+  - Make the sauce. Mix all sauce ingredients in a medium bowl. Adjust seasoning and refrigerate until needed.
+  - Cook the patties. Heat a skillet or grill pan over medium heat with a light coating of oil. Sear until deeply browned on one side, flip, and continue cooking. Finish thick patties in a 375°F oven.
+  - Assemble. Toast the buns. Spread sauce on the bottom bun, then add the patty, slaw, and top bun.
+
+notes:
+  - "Low-calorie swaps: ground chicken for pork, light mayo for regular, and either low-carb buns or 2 pieces of butter lettuce per burger in place of the bun."
+  - "Macros per serving (1 large burger, 4 servings). Original: 1035 cal, 30 g protein, 80 g fat, 47 g carbs, 5 g fiber. Low-calorie with low-carb bun: 602 cal, 44 g protein, 32 g fat, 36 g carbs, 15 g fiber. Low-calorie with lettuce wrap: 514 cal, 37 g protein, 31 g fat, 23 g carbs, 4 g fiber."
+
+X-categories:
+  dish_type:
+    - burgers+sandwiches
+  meal_type:
+    - dinner
+
+X-tags:
+  cuisine:
+    - asian
+  method:
+    - stovetop
+    - oven
+    - grill
+  context:
+    - family_dinner
+  primary_ingredient:
+    - pork
+  flavor_profile:
+    - savory
+    - spicy
+    - tangy
+
+X-nutrition:
+  calories: 1035
+  protein: 30 g
+  fat: 80 g
+  carbohydrates: 47 g
+  fiber: 5 g
+X-source-verification:
+  status: needs-review
+  notes:
+    - Extracted from a markdown copy of the Mishka Makes Food post; not yet checked against the source page
