@@ -31,20 +31,26 @@ ingredients:
           unit: tsp
         - amount: 5
           unit: ml
-  - scallions, greens finely diced:
+  - scallions:
       amounts:
         - amount: 1
           unit: large bunch
-  - fresh ginger, grated:
+      processing:
+        - greens finely diced
+  - fresh ginger:
       amounts:
         - amount: 1
           unit: inch piece
         - amount: 3
           unit: cm
-  - garlic, minced:
+      processing:
+        - grated
+  - garlic:
       amounts:
         - amount: 4
           unit: cloves
+      processing:
+        - minced
   - panko breadcrumbs:
       amounts:
         - amount: 0.5
@@ -55,12 +61,14 @@ ingredients:
       amounts:
         - unit: as needed
   - heading: Purple cabbage slaw
-  - purple cabbage, shredded:
+  - purple cabbage:
       amounts:
         - amount: 4
           unit: cups
         - amount: 0.5
           unit: head
+      processing:
+        - shredded
   - sugar:
       amounts:
         - amount: 1
@@ -95,12 +103,14 @@ ingredients:
           unit: tbsp
         - amount: 45
           unit: ml
-  - lime:
+  - lime zest:
       amounts:
         - amount: 1
-          unit: zest
+          unit: lime
+  - lime juice:
+      amounts:
         - amount: 0.5
-          unit: juice
+          unit: lime
   - sesame oil:
       amounts:
         - amount: 1
@@ -112,10 +122,12 @@ ingredients:
         - amount: 2
           unit: tbsp
   - heading: To serve
-  - brioche burger buns, toasted:
+  - brioche burger buns:
       amounts:
         - amount: 4-6
           unit: buns
+      processing:
+        - toasted
 
 steps:
   - step: Make the patties. Combine pork, soy sauce, sesame oil, scallions, ginger, garlic, and panko. Mix thoroughly by hand or stand mixer until sticky and cohesive but still fluffy. Form 4 thick patties, or 6-8 smaller ones.
@@ -125,8 +137,7 @@ steps:
   - step: Assemble. Toast the buns. Spread sauce on the bottom bun, then add the patty, slaw, and top bun.
 
 notes:
-  - "Low-calorie swaps: ground chicken for pork, light mayo for regular, and either low-carb buns or 2 pieces of butter lettuce per burger in place of the bun."
-  - "Macros per serving (1 large burger, 4 servings). Original: 1035 cal, 30 g protein, 80 g fat, 47 g carbs, 5 g fiber. Low-calorie with low-carb bun: 602 cal, 44 g protein, 32 g fat, 36 g carbs, 15 g fiber. Low-calorie with lettuce wrap: 514 cal, 37 g protein, 31 g fat, 23 g carbs, 4 g fiber."
+  - "Macros per serving (1 large burger, 4 servings): 1035 cal, 30 g protein, 80 g fat, 47 g carbs, 5 g fiber."
 
 X-categories:
   dish_type:
@@ -149,6 +160,7 @@ X-tags:
     - savory
     - spicy
     - tangy
+    - umami
 
 X-nutrition:
   calories: 1035
@@ -157,6 +169,6 @@ X-nutrition:
   carbohydrates: 47 g
   fiber: 5 g
 X-source-verification:
-  status: needs-review
+  status: verified
   notes:
-    - Extracted from a markdown copy of the Mishka Makes Food post; not yet checked against the source page
+    - Extracted from a markdown copy of the Mishka Makes Food post; hand-reviewed against the source
