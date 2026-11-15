@@ -1,0 +1,156 @@
+recipe_uuid: wc-kitchen.greek-sheet-pan-chicken
+recipe_name: Greek Sheet Pan Chicken
+description: Lemon-oregano marinated chicken thighs roasted on one pan with zucchini, peppers, tomatoes, olives, and feta.
+source_url: https://downshiftology.com/recipes/greek-sheet-pan-chicken/
+source_authors:
+- Lisa Bryan
+yields:
+- amount: 6
+  unit: servings
+ingredients:
+- name_group: Marinade
+- olive oil:
+    amounts:
+    - amount: 0.5
+      unit: cups
+- lemon juice:
+    amounts:
+    - amount: 3
+      unit: tablespoons
+    notes: about 1 lemon
+- garlic:
+    amounts:
+    - amount: 4
+      unit: cloves
+    processing:
+    - minced
+- dried oregano:
+    amounts:
+    - amount: 2
+      unit: teaspoons
+- dried thyme:
+    amounts:
+    - amount: 1
+      unit: teaspoons
+- Dijon mustard:
+    amounts:
+    - amount: 1
+      unit: teaspoons
+- kosher salt:
+    amounts:
+    - amount: 1
+      unit: teaspoons
+- black pepper:
+    amounts:
+    - amount: 0.5
+      unit: teaspoons
+    processing:
+    - freshly ground
+- name_group: Chicken
+- boneless skinless chicken thighs:
+    amounts:
+    - amount: 5
+      unit: whole
+    notes: substituted for the original's bone-in, skin-on thighs
+- name_group: Vegetables
+- zucchini:
+    amounts:
+    - amount: 1
+      unit: medium
+    processing:
+    - halved lengthwise
+    - sliced
+- yellow bell pepper:
+    amounts:
+    - amount: 1
+      unit: whole
+    processing:
+    - cut into 1-inch pieces
+- red onion:
+    amounts:
+    - amount: 0.5
+      unit: large
+    processing:
+    - thinly sliced into wedges
+- cherry or grape tomatoes:
+    amounts:
+    - amount: 1
+      unit: pint
+- name_group: Finishing
+- kalamata olives:
+    amounts:
+    - amount: 0.5
+      unit: cups
+    processing:
+    - pitted
+- feta cheese:
+    amounts:
+    - amount: 0.25
+      unit: cups
+- fresh parsley:
+    amounts:
+    - amount: 2
+      unit: tablespoons
+    processing:
+    - finely chopped
+steps:
+- step: Preheat the oven to 425°F (220°C). In a small bowl, whisk together the marinade
+    ingredients.
+- step: Place the chicken thighs in a bowl, pour in two-thirds of the marinade, and
+    toss by hand until well coated. Let marinate 10 to 15 minutes.
+- step: While the chicken marinates, spread the zucchini, bell pepper, red onion,
+    and tomatoes on a baking sheet. Drizzle with the remaining marinade and toss to
+    coat.
+- step: Nestle the chicken thighs among the vegetables and bake for 20 minutes.
+- step: Remove the sheet from the oven and scatter the olives and feta over the top.
+    Return to the oven for 5 to 10 minutes, until the vegetables are soft and the
+    chicken reaches 165°F (74°C) internally.
+- step: Sprinkle with chopped parsley before serving.
+notes:
+- 'Adapted from the original: boneless skinless thighs replace bone-in, skin-on thighs.
+  The original bakes 30 minutes, then 10 to 15 minutes more; the times here are shortened
+  to 20 and 5 to 10 minutes because boneless thighs cook faster. Cook to 165°F internal.'
+- Liquid on the pan is normal. To reduce it, swap in artichoke hearts or cabbage for
+  some of the zucchini and tomatoes.
+- If the chicken is not browning, move the rack higher or broil for the last minute
+  or two.
+- Vegetable swaps from the source are potatoes, artichokes, cauliflower, or eggplant.
+- 'Serving suggestion (optional): tzatziki. Serve with farro, couscous, orzo, or rice.'
+- Marinate the chicken overnight.
+- Any other summer squash can replace the zucchini.
+- Leave out the tomatoes if they are not available.
+- Refrigerate 3 to 4 days or freeze up to 3 months. Reheat in the microwave 2 to 3
+  minutes, or air fry at 375°F (190°C) for 5 to 8 minutes.
+X-categories:
+  dish_type:
+  - main
+  - one_dish
+  meal_type:
+  - dinner
+X-tags:
+  cuisine:
+  - greek
+  method:
+  - oven
+  primary_ingredient:
+  - chicken
+  flavor_profile:
+  - savory
+  - tangy
+  context:
+  - leftovers_friendly
+X-prep_time: 15 minutes
+X-total_time: 45 minutes
+X-nutrition:
+  calories: 315
+  protein: 24 g
+  fat: 20 g
+  carbohydrates: 10 g
+  fiber: 3 g
+X-source-verification:
+  status: needs-review
+  notes:
+  - Extracted from the source page and adapted for 5 boneless skinless thighs (source
+    uses 6 bone-in, skin-on).
+  - Shortened bake times and the 45 minute total time are adaptation estimates, not
+    from the source.
