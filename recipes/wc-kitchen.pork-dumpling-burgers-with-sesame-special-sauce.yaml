@@ -12,7 +12,7 @@ yields:
     unit: regular burgers
 
 ingredients:
-  - Patties:
+  - heading: Patties
   - ground pork:
       amounts:
         - amount: 1.5
@@ -54,7 +54,7 @@ ingredients:
   - cooking spray:
       amounts:
         - unit: as needed
-  - Purple cabbage slaw:
+  - heading: Purple cabbage slaw
   - purple cabbage, shredded:
       amounts:
         - amount: 4
@@ -82,7 +82,7 @@ ingredients:
   - sesame seeds:
       amounts:
         - unit: to taste
-  - Spicy sesame special sauce:
+  - heading: Spicy sesame special sauce
   - mayonnaise:
       amounts:
         - amount: 1
@@ -111,18 +111,18 @@ ingredients:
       amounts:
         - amount: 2
           unit: tbsp
-  - To serve:
+  - heading: To serve
   - brioche burger buns, toasted:
       amounts:
         - amount: 4-6
           unit: buns
 
 steps:
-  - Make the patties. Combine pork, soy sauce, sesame oil, scallions, ginger, garlic, and panko. Mix thoroughly by hand or stand mixer until sticky and cohesive but still fluffy. Form 4 thick patties, or 6-8 smaller ones.
-  - Prepare the slaw. Toss cabbage with salt and sugar and massage until it softens and releases liquid. Rest 5-10 minutes, then drain. Add rice vinegar to taste and sesame seeds, and toss.
-  - Make the sauce. Mix all sauce ingredients in a medium bowl. Adjust seasoning and refrigerate until needed.
-  - Cook the patties. Heat a skillet or grill pan over medium heat with a light coating of oil. Sear until deeply browned on one side, flip, and continue cooking. Finish thick patties in a 375°F oven.
-  - Assemble. Toast the buns. Spread sauce on the bottom bun, then add the patty, slaw, and top bun.
+  - step: Make the patties. Combine pork, soy sauce, sesame oil, scallions, ginger, garlic, and panko. Mix thoroughly by hand or stand mixer until sticky and cohesive but still fluffy. Form 4 thick patties, or 6-8 smaller ones.
+  - step: Prepare the slaw. Toss cabbage with salt and sugar and massage until it softens and releases liquid. Rest 5-10 minutes, then drain. Add rice vinegar to taste and sesame seeds, and toss.
+  - step: Make the sauce. Mix all sauce ingredients in a medium bowl. Adjust seasoning and refrigerate until needed.
+  - step: Cook the patties. Heat a skillet or grill pan over medium heat with a light coating of oil. Sear until deeply browned on one side, flip, and continue cooking. Finish thick patties in a 375°F oven.
+  - step: Assemble. Toast the buns. Spread sauce on the bottom bun, then add the patty, slaw, and top bun.
 
 notes:
   - "Low-calorie swaps: ground chicken for pork, light mayo for regular, and either low-carb buns or 2 pieces of butter lettuce per burger in place of the bun."
