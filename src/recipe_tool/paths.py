@@ -28,6 +28,15 @@ class RepoPaths:
     def recipe_yaml(self, recipe_id: str) -> Path:
         return self.recipes / f"{recipe_id}.yaml"
 
+    def drafts(self) -> Path:
+        return self.recipes / "in-progress"
+
+    def draft_yaml(self, recipe_id: str) -> Path:
+        return self.drafts() / f"{recipe_id}.yaml"
+
+    def recipe_id_taken(self, recipe_id: str) -> bool:
+        return self.recipe_yaml(recipe_id).exists() or self.draft_yaml(recipe_id).exists()
+
     def recipe_pdf(self, recipe_id: str) -> Path:
         return self.pdfs / f"{recipe_id}.pdf"
 

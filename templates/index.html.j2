@@ -19,6 +19,7 @@
     color: #2e2b28;
   }
   h1 { text-align: center; }
+  .add-recipe { text-align: center; margin: 0 0 1rem; }
   .meta { text-align: center; color: #666; margin-bottom: 1.5rem; }
 {% if mode == 'screen' %}
   .recipe-category-bar {
@@ -317,6 +318,9 @@
 <body class="index-page">
   <header class="index-header">
     <h1>{{ title }}</h1>
+{% if mode == 'screen' %}
+    <p class="add-recipe text-caption"><a href="https://github.com/cory-wc/reciperepo/actions/workflows/ingest.yml">Add a recipe</a></p>
+{% endif %}
 {% if mode == 'print' %}    <p class="meta text-caption">Updated: {{ generated_at }}{% if sort_by != 'name' %} · sorted by {{ sort_by }}{% endif %}</p>{% endif %}
   </header>
 {% if mode == 'screen' %}

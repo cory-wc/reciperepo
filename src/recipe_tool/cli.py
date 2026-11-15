@@ -5,6 +5,7 @@ import sys
 from pathlib import Path
 
 from .extract.runner import run_extract, run_extract_pending
+from .add import publish_recipe, run_add
 from .index import generate_index
 from .load import dump_recipe
 from .paths import RepoPaths
@@ -147,6 +148,26 @@ def cmd_extract(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_add(args: argparse.Namespace) -> int:
+    paths = RepoPaths()
+    recipe_id = run_add(
+        args.url,
+        paths,
+        published=args.published,
+        recipe_id=args.id,
+        browser=args.browser,
+        dry_run=args.dry_run,
+        force=args.force,
+    )
+    print(recipe_id)
+    return 0
+
+
+def cmd_publish(args: argparse.Namespace) -> int:
+    publish_recipe(args.recipe_id, RepoPaths())
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="recipe", description="ORF recipe collection tool")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -201,6 +222,19 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--dry-run", action="store_true")
     p.add_argument("--force", action="store_true")
     p.set_defaults(func=cmd_extract)
+
+    p = sub.add_parser("add", help="Add a recipe from a public URL")
+    p.add_argument("url", help="Full recipe page URL")
+    p.add_argument("--id", help="Recipe id (wc-kitchen.slug). Required format if set.")
+    p.add_argument("--published", action="store_true", help="Write to recipes/ instead of in-progress/")
+    p.add_argument("--browser", action="store_true", help="Reload in a browser if the page has no recipe")
+    p.add_argument("--dry-run", action="store_true")
+    p.add_argument("--force", action="store_true", help="Overwrite an existing recipe id")
+    p.set_defaults(func=cmd_add)
+
+    p = sub.add_parser("publish", help="Move an in-progress recipe into recipes/ and rebuild it")
+    p.add_argument("recipe_id")
+    p.set_defaults(func=cmd_publish)
 
     return parser
 

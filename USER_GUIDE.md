@@ -33,16 +33,25 @@ Details for naming and metadata: [`notes.md`](notes.md).
 
 ## Add a recipe from a website
 
-1. Copy the full recipe page URL (not just the site homepage)
-2. Run:
+On the recipe index, choose **Add a recipe**. That opens GitHub’s Run workflow page. You need write access, and the run waits until you approve it.
 
-   `recipe extract wc-kitchen.my-recipe --url "https://example.com/full/recipe/path"`
+1. Paste the full recipe page URL in **Recipe URL 1**. URL 2 through URL 5 are optional.
+2. Leave **Use workflow from** on `main`. Leave the browser checkbox off unless a previous run said the page had no recipe data.
+3. Run the workflow and approve the `ingest` environment.
+4. Open the pull request. Read the YAML and the generated page. Close it to discard the recipe, or edit the YAML on the branch.
+5. Merge. The site updates from the existing Pages workflow.
 
-3. Open the YAML file; fix amounts and steps
-4. Set `X-source-verification.status` to `reviewed` when checked
-5. Publish (below)
+The form does not take a photo or a PDF, and it does not use an API key. A recipe id is optional and only used when you submit one URL. It must look like `wc-kitchen.short-name`.
 
-If you also saved a print or screenshot, keep `X-original-source` pointing at the file in `originals/`.
+On your own machine, the same extract is:
+
+`recipe add "https://example.com/full/recipe/path"`
+
+That writes `recipes/in-progress/`. When the YAML looks right:
+
+`recipe publish wc-kitchen.my-recipe`
+
+Photos and PDFs still use `recipe extract --source` below.
 
 ---
 
