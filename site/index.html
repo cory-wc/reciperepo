@@ -80,6 +80,7 @@ small,
     color: #2e2b28;
   }
   h1 { text-align: center; }
+  .add-recipe { text-align: center; margin: 0 0 1rem; }
   .meta { text-align: center; color: #666; margin-bottom: 1.5rem; }
 
   .recipe-category-bar {
@@ -723,6 +724,9 @@ td {
   <header class="index-header">
     <h1>Willineau Recipes</h1>
 
+    <p class="add-recipe text-caption"><a href="https://github.com/cory-wc/reciperepo/actions/workflows/ingest.yml">Add a recipe</a></p>
+
+
   </header>
 
   <div class="recipe-category-bar">
@@ -776,7 +780,7 @@ td {
     <thead>
       <tr>
 
-        <th class="sortable" data-column="0" aria-sort="ascending"><span id="recipe-count" aria-live="polite" aria-atomic="true">140</span> Recipes</th>
+        <th class="sortable" data-column="0" aria-sort="ascending"><span id="recipe-count" aria-live="polite" aria-atomic="true">141</span> Recipes</th>
         <th class="sortable" data-column="1">Tags</th>
         <th class="sortable" data-column="2">Ingredients</th>
         <th class="sortable" data-column="3">Yield</th>
@@ -1980,6 +1984,27 @@ td {
         </td>
 
         <td data-label="Yield">4 servings</td>
+
+      </tr>
+
+      <tr data-filter-tabs="main dinner">
+        <td data-label="Recipe">
+
+          <a href="wc-kitchen.greek-sheet-pan-chicken.html">Greek Sheet Pan Chicken</a>
+
+        </td>
+
+        <td class="tags" data-label="Tags"><button type="button" class="tag-filter-button" data-tag="greek" aria-pressed="false">greek</button>, <button type="button" class="tag-filter-button" data-tag="oven" aria-pressed="false">oven</button>, <button type="button" class="tag-filter-button" data-tag="chicken" aria-pressed="false">chicken</button>, <button type="button" class="tag-filter-button" data-tag="savory" aria-pressed="false">savory</button>, <button type="button" class="tag-filter-button" data-tag="tangy" aria-pressed="false">tangy</button>, <button type="button" class="tag-filter-button" data-tag="leftovers_friendly" aria-pressed="false">leftovers_friendly</button></td>
+
+        <td class="ingredient-cell" data-label="Ingredients" data-sort-value="olive oil">
+
+          <details>
+            <summary><button type="button" class="ingredient-name ingredient-filter-button" data-ingredient="olive oil" aria-pressed="false">olive oil</button>, <button type="button" class="ingredient-name ingredient-filter-button" data-ingredient="lemon juice" aria-pressed="false">lemon juice</button>, <button type="button" class="ingredient-name ingredient-filter-button" data-ingredient="garlic" aria-pressed="false">garlic</button><span class="ingredient-more"> +13 more</span></summary><span class="ingredient-list"><button type="button" class="ingredient-name ingredient-filter-button" data-ingredient="dried oregano" aria-pressed="false">dried oregano</button><button type="button" class="ingredient-name ingredient-filter-button" data-ingredient="dried thyme" aria-pressed="false">dried thyme</button><button type="button" class="ingredient-name ingredient-filter-button" data-ingredient="dijon mustard" aria-pressed="false">Dijon mustard</button><button type="button" class="ingredient-name ingredient-filter-button" data-ingredient="kosher salt" aria-pressed="false">kosher salt</button><button type="button" class="ingredient-name ingredient-filter-button" data-ingredient="black pepper" aria-pressed="false">black pepper</button><button type="button" class="ingredient-name ingredient-filter-button" data-ingredient="boneless skinless chicken thighs" aria-pressed="false">boneless skinless chicken thighs</button><button type="button" class="ingredient-name ingredient-filter-button" data-ingredient="zucchini" aria-pressed="false">zucchini</button><button type="button" class="ingredient-name ingredient-filter-button" data-ingredient="yellow bell pepper" aria-pressed="false">yellow bell pepper</button><button type="button" class="ingredient-name ingredient-filter-button" data-ingredient="red onion" aria-pressed="false">red onion</button><button type="button" class="ingredient-name ingredient-filter-button" data-ingredient="cherry or grape tomatoes" aria-pressed="false">cherry or grape tomatoes</button><button type="button" class="ingredient-name ingredient-filter-button" data-ingredient="kalamata olives" aria-pressed="false">kalamata olives</button><button type="button" class="ingredient-name ingredient-filter-button" data-ingredient="feta cheese" aria-pressed="false">feta cheese</button><button type="button" class="ingredient-name ingredient-filter-button" data-ingredient="fresh parsley" aria-pressed="false">fresh parsley</button></span>
+          </details>
+
+        </td>
+
+        <td data-label="Yield">6 servings</td>
 
       </tr>
 

@@ -120,10 +120,25 @@ Recipe ids and filenames use `wc-kitchen.{slug}` (see [notes.md](notes.md#naming
 
 ### Add a recipe
 
-**From a URL or photo (extract):**
+**From a URL:**
+
+On the site, choose **Add a recipe**. Paste up to five recipe page URLs and run the workflow. Approve the `ingest` environment, then read the pull request and merge it to publish. The form takes URLs only and does not need a model API key. Setup that has to exist on GitHub before the first run:
+
+1. `.github/workflows/ingest.yml` is on `main`.
+2. **Settings → Actions → General → Workflow permissions** has **Allow GitHub Actions to create and approve pull requests** turned on.
+3. A GitHub Environment named `ingest` has you as a required reviewer and allows deployments from `main` only. Do not put a model key on it.
+4. The workflow only runs for the `cory-wc` account. Add another login to the allow-list in the workflow if someone else should press Run.
+
+Locally:
 
 ```bash
-recipe extract wc-kitchen.my-recipe --url "https://example.com/recipe/12345/..."
+recipe add "https://example.com/recipe/12345/..."          # recipes/in-progress/
+recipe publish wc-kitchen.my-recipe                        # move, validate, render, pdf, index
+```
+
+**From a photo or PDF:**
+
+```bash
 recipe extract wc-kitchen.my-recipe --source originals/scan.jpg
 recipe extract --pending   # bulk: one YAML per unreferenced file in originals/
 ```

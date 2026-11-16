@@ -9,7 +9,9 @@ recipe_tool.egg-info/top_level.txt
 schema/__init__.py
 schema/orf_models.py
 src/recipe_tool/__init__.py
+src/recipe_tool/add.py
 src/recipe_tool/cli.py
+src/recipe_tool/ids.py
 src/recipe_tool/index.py
 src/recipe_tool/load.py
 src/recipe_tool/metadata_audit.py
@@ -18,11 +20,14 @@ src/recipe_tool/pdf.py
 src/recipe_tool/render.py
 src/recipe_tool/shop.py
 src/recipe_tool/status.py
+src/recipe_tool/taxonomy.py
 src/recipe_tool/validate.py
 src/recipe_tool/extract/__init__.py
+src/recipe_tool/extract/ingredients.py
 src/recipe_tool/extract/llm.py
 src/recipe_tool/extract/pdf.py
 src/recipe_tool/extract/runner.py
 src/recipe_tool/extract/text.py
 src/recipe_tool/extract/url.py
 src/recipe_tool/extract/vision.py
+tests/test_url_ingest.py

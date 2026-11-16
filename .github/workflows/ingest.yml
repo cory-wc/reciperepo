@@ -1,0 +1,97 @@
+name: Add a recipe
+
+on:
+  workflow_dispatch:
+    inputs:
+      url_1:
+        description: Recipe URL 1
+        required: true
+        type: string
+      url_2:
+        description: Recipe URL 2 (optional)
+        required: false
+        type: string
+      url_3:
+        description: Recipe URL 3 (optional)
+        required: false
+        type: string
+      url_4:
+        description: Recipe URL 4 (optional)
+        required: false
+        type: string
+      url_5:
+        description: Recipe URL 5 (optional)
+        required: false
+        type: string
+      recipe_id:
+        description: Recipe id for a single URL (optional)
+        required: false
+        type: string
+      use_browser:
+        description: Reload pages in a browser if a page has no recipe data
+        required: false
+        type: boolean
+        default: false
+
+concurrency:
+  group: ingest
+  cancel-in-progress: false
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    environment: ingest
+    timeout-minutes: 30
+    if: github.ref == 'refs/heads/main' && contains(fromJSON('["cory-wc"]'), github.actor)
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+          persist-credentials: true
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: "3.11"
+
+      - name: Install package
+        run: pip install -e .
+
+      - name: Install Playwright Chromium
+        run: playwright install chromium
+
+      - name: Ingest URLs
+        env:
+          URL_1: ${{ inputs.url_1 }}
+          URL_2: ${{ inputs.url_2 }}
+          URL_3: ${{ inputs.url_3 }}
+          URL_4: ${{ inputs.url_4 }}
+          URL_5: ${{ inputs.url_5 }}
+          RECIPE_ID: ${{ inputs.recipe_id }}
+          USE_BROWSER: ${{ inputs.use_browser }}
+        run: python3 .github/scripts/ingest_urls.py
+
+      - name: Open pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          branch=$(tr -d '\n' < build/ingest-branch.txt)
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          python3 - <<'PY'
+          import json, subprocess
+          report = json.load(open("build/ingest-report.json", encoding="utf-8"))
+          paths = ["recipes/index.yaml", "site/index.html", "pdfs/index.pdf"]
+          for item in report["successes"]:
+              rid = item["recipe_id"]
+              paths.extend(
+                  [f"recipes/{rid}.yaml", f"site/{rid}.html", f"pdfs/{rid}.pdf"]
+              )
+          subprocess.check_call(["git", "add", "--", *paths])
+          PY
+          git commit -m "Add recipes from submitted URLs"
+          git push origin "HEAD:${branch}"
+          gh pr create --title "$(tr -d '\n' < build/ingest-title.txt)" --body-file build/pr-body.md

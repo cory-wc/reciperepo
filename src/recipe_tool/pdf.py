@@ -34,13 +34,15 @@ def generate_recipe_pdf(recipe_id: str, paths: RepoPaths | None = None) -> Path:
     return pdf_path
 
 
-def generate_index_pdf(paths: RepoPaths | None = None) -> Path:
+def generate_index_pdf(paths: RepoPaths | None = None, *, allow_missing: bool = True) -> Path:
     paths = paths or RepoPaths()
     from .index import build_index, render_index_html
 
-    build_index(paths, allow_missing=True)
+    build_index(paths, allow_missing=allow_missing)
     html_path = paths.build / "index.print.html"
-    render_index_html(paths, mode="print", output_path=html_path)
+    render_index_html(
+        paths, mode="print", output_path=html_path, allow_missing=allow_missing
+    )
     pdf_path = paths.index_pdf()
     html_to_pdf(html_path, pdf_path)
     return pdf_path
